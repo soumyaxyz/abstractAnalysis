@@ -126,7 +126,7 @@ class BaseModel(object):
                 nepoch_no_imprv = 0
                 if save_session:
                     self.save_session()
-                    if zip_to_drive not None:
+                    if zip_to_drive is not None:
                         zip_to_drive()
                 best_score = score
                 self.logger.info("- new best score!")
