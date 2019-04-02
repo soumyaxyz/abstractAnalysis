@@ -17,7 +17,7 @@ class Config():
         ## parse args
         self.parser = parser
         # training parameters
-        parser.add_argument('--nepochs', default='1', type=int,
+        parser.add_argument('--nepochs', default='40', type=int,
                     help='number of epochs')
         parser.add_argument('--dropout', default='0.5', type=float,
                     help='number of epochs')
