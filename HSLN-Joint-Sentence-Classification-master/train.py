@@ -9,11 +9,11 @@ parser = argparse.ArgumentParser()
 def save_res():
   import subprocess
   
-  os.system.("zip -r results.zip results")
+  os.system("zip -r results.zip results")
 
   # Install the PyDrive wrapper & import libraries.
   # This only needs to be done once per notebook.
-  os.system.("pip install -U -q PyDrive")
+  os.system("pip install -U -q PyDrive")
   from pydrive.auth import GoogleAuth
   from pydrive.drive import GoogleDrive
   from google.colab import auth
@@ -35,7 +35,7 @@ def save_res():
   uploaded.Upload()
   print('Re-uploaded file with ID {}'.format(uploaded.get('id')))
 
-  os.system.("rm results.zip")
+  os.system("rm results.zip")
 
 
 def main():
