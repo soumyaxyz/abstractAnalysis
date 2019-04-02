@@ -6,6 +6,36 @@ import os
 
 parser = argparse.ArgumentParser()
 
+def save_res():
+  !zip -r results.zip results
+
+  # Install the PyDrive wrapper & import libraries.
+  # This only needs to be done once per notebook.
+  !pip install -U -q PyDrive
+  from pydrive.auth import GoogleAuth
+  from pydrive.drive import GoogleDrive
+  from google.colab import auth
+  from oauth2client.client import GoogleCredentials
+
+  # Authenticate and create the PyDrive client.
+  # This only needs to be done once per notebook.
+  auth.authenticate_user()
+  gauth = GoogleAuth()
+  gauth.credentials = GoogleCredentials.get_application_default()
+  drive = GoogleDrive(gauth)
+
+    
+
+  file_id = '1n0GwvL_YNE6Kr_wpWW2v0oNcaD6vA4Ae'
+
+  uploaded = drive.CreateFile({'id': file_id})
+  uploaded.SetContentFile('results.zip')
+  uploaded.Upload()
+  print('Re-uploaded file with ID {}'.format(uploaded.get('id')))
+
+  !rm results.zip
+
+
 def main():
     # create instance of config
     config = Config(parser)
@@ -25,7 +55,7 @@ def main():
                     config.processing_tag, config.max_iter)
 
     # train model
-    model.train(train, dev)
+    model.train(train, dev,  zip_to_drive=None)
 
     # evaluate model
     model.restore_session(config.dir_model)
