@@ -102,7 +102,7 @@ class BaseModel(object):
                 self.sess.graph)
 
 
-    def train(self, train, dev, save_session=True):
+    def train(self, train, dev, save_session=True, zip_to_drive=None):
         """Performs training with early stopping and lr exponential decay
 
         Args:
@@ -126,6 +126,8 @@ class BaseModel(object):
                 nepoch_no_imprv = 0
                 if save_session:
                     self.save_session()
+                    if zip_to_drive not None:
+                        zip_to_drive()
                 best_score = score
                 self.logger.info("- new best score!")
             else:
