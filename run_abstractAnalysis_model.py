@@ -17,7 +17,7 @@ import numpy as np
 import collections, os, re, traceback, pdb
 
 
-def get_data(data_path, maxlen=200, maxlen_char_word = 40):
+def get_test_data(data_path,  word2idx, maxlen, maxlen_word):
 	#  data_path = 'data/pubmed_non_rct.txt'
 	
 	input_data = list(open(data_path, 'r'))
@@ -51,32 +51,36 @@ def get_data(data_path, maxlen=200, maxlen_char_word = 40):
 										   
 
 	senc_adr = []
-	labels  = set()
 	words   = set()
 	lines   = []
 
 	vec_senc_adr = []
 	vec_senc = []
 	vec_adr = []
+
+	word2idx_tst = dict()
 	
 	for data_line in final_data:
-		labels.add(data_line[0])
 		for word in data_line[1:][0]:
-			# import pdb; pdb.set_trace() 
 			words.add(word)
+			try:
+				word2idx_tst[word] = word2idx[word]
+			except:
+				word2idx_tst[word] = -1
 
 
-	labels  = list(labels)
-	words   = list(words)
-
-	word2idx    = {w: i+1 for i, w in enumerate(words)}
-	label2idx   = {l: i+1 for i, l in enumerate(labels)}
 	
-	idx2label   = dict((k,v) for v,k in label2idx.items())
-	idx2word    = dict((k,v) for v,k in word2idx.items())
+	words   = list(words)	
+	# pdb.set_trace() 
+
+	label2idx   = {l: i+1 for i, l in enumerate(labels)}
+
+	# idx2label   = dict((k,v) for v,k in label2idx.items())
+	idx2word    = dict((k,v) for v,k in word2idx_tst.items())
 	
 	# idx2label[0]    = 'PAD'
 	idx2word[0]     = 'PAD'
+	idx2word[-1]     = 'unknown'
 	
 	# vec_senc_adr = []
 	vec_sentence = []
@@ -85,7 +89,177 @@ def get_data(data_path, maxlen=200, maxlen_char_word = 40):
 	char_per_word = []
 	char_word = []
 	char_senc = []
-	# maxlen_char_word = 0
+	# maxlen_word = 0
+	# a = []
+	charcounts = collections.Counter()
+	
+	for i in final_data:
+		vec_sentence.append([word2idx_tst[word] for word in i[1]])
+		vec_label.append(label2idx[i[0]]-1)
+		# tok_senc_adr.append(i[1])  
+		for w in i[1]:  # word in sentence
+			for c in w.lower(): # character in word
+				char_per_word.append(c)
+				charcounts[c] += 1
+				
+			if len(char_per_word) > 40:
+				# a.append(char_per_word)
+				char_per_word = char_per_word[:40]
+			# if len(char_per_word) > maxlen_word:
+			# 	maxlen_word = len(char_per_word)
+
+			char_word.append(char_per_word)
+			char_per_word = []
+
+		char_senc.append(char_word)
+		char_word = []
+
+	chars = [charcount[0] for charcount in charcounts.most_common()]
+	char2idx = {c: i+1 for i, c in enumerate(chars)}
+
+	
+	char_word_lex = []
+	char_lex = []
+	char_word = []
+	for senc in char_senc:
+		for word in senc:
+			for charac in word:
+				char_word_lex.append([char2idx[charac]])
+			
+			char_word.append(char_word_lex)
+			char_word_lex = []
+			
+		char_lex.append(char_word)
+		char_word = []
+	  
+	
+
+	char_per_word = []  
+	char_per_senc = [] 
+	char_senc = []
+	for s in char_lex:
+		for w in s:
+			for c in w:
+				for e in c:
+					char_per_word.append(e)
+			char_per_senc.append(char_per_word)
+			char_per_word = []
+		char_senc.append(char_per_senc)
+		char_per_senc = []
+
+	# maxlen_now = max([len(l) for l in vec_sentence])
+
+	# if maxlen_now > maxlen:
+	# 	maxlen = maxlen_now # 174
+	   
+	pad_char_all = []
+	for senc in char_senc:
+		if len(senc) > maxlen: # snip sentence longer than the longest traning sentence
+			senc = senc[:maxlen]
+		else:
+			while len(senc) < maxlen:
+				senc.insert(0, [])
+		pad_senc = pad_sequences(senc, maxlen=maxlen_word)
+		pad_char_all.append(pad_senc)
+		pad_senc = []
+
+
+		
+	X_words = np.array(pad_char_all)           
+   
+
+
+	idx2char  = dict((k,v) for v,k in char2idx.items())
+	idx2char[0] = 'PAD'
+	charsize =  max(idx2char.keys()) + 1
+	
+	
+	# print maxlen
+
+	vocsize =  len(words)+1
+	nclasses = len(labels)#+1
+	
+	
+
+	X = pad_sequences(vec_sentence, maxlen=maxlen)
+	Y = to_categorical(vec_label)   
+
+	# import pdb; pdb.set_trace()
+	return maxlen, maxlen_word, vocsize, charsize, nclasses, X, X_words, Y
+
+
+
+
+def get_data(data_path, maxlen=130, maxlen_word = 25):
+	#  data_path = 'data/pubmed_non_rct.txt'
+	
+	input_data = list(open(data_path, 'r'))
+
+	tt = TweetTokenizer()
+	labels = [u'BACKGROUND', u'OBJECTIVE', u'METHODS', u'RESULTS',  u'CONCLUSIONS']
+	raw_data = []    
+	final_data = []    
+
+	
+	for line in input_data:
+			line = line.strip()           
+
+			if not line.startswith('###'):#, 0,len(line)):
+				if line:                                       
+					raw_data.append(line) # The original traning data                                
+					data = tt.tokenize(line)
+					label = data[0]
+					data =  data[1:] 
+					data = [word.lower() for word in data if word.isalnum()]
+
+					if label in labels:
+						if len(data)<=3:
+							if label == final_data[-1][0]:
+								final_data[-1][1]+=data
+							else : 
+								# skip this line
+								pass                            
+						else :
+							final_data.append([label, data]) #
+										   
+
+	senc_adr = []
+	# labels  = set()
+	words   = set()
+	lines   = []
+
+	vec_senc_adr = []
+	vec_senc = []
+	vec_adr = []
+	
+	for data_line in final_data:
+		# labels.add(data_line[0])
+		for word in data_line[1:][0]:
+			# import pdb; pdb.set_trace() 
+			words.add(word)
+
+
+	# labels  = list(labels)
+	words   = list(words)
+
+	word2idx    = {w: i+1 for i, w in enumerate(words)}
+	label2idx   = {l: i+1 for i, l in enumerate(labels)}
+	
+	# idx2label   = dict((k,v) for v,k in label2idx.items())
+	idx2word    = dict((k,v) for v,k in word2idx.items())
+	
+	# idx2label[0]    = 'PAD'
+	idx2word[0]     = 'PAD'
+	idx2word[-1]     = 'unknown'
+	
+	# vec_senc_adr = []
+	vec_sentence = []
+	vec_label = []
+	tok_senc_adr = []
+	char_per_word = []
+	char_word = []
+	char_senc = []
+	# maxlen_word = 0
 	# a = []
 	charcounts = collections.Counter()
 	
@@ -101,8 +275,8 @@ def get_data(data_path, maxlen=200, maxlen_char_word = 40):
 			if len(char_per_word) > 40:
 				# a.append(char_per_word)
 				char_per_word = char_per_word[:40]
-			if len(char_per_word) > maxlen_char_word:
-				maxlen_char_word = len(char_per_word)
+			if len(char_per_word) > maxlen_word:
+				maxlen_word = len(char_per_word)
 
 			char_word.append(char_per_word)
 			char_per_word = []
@@ -152,7 +326,7 @@ def get_data(data_path, maxlen=200, maxlen_char_word = 40):
 	for senc in char_senc:
 		while len(senc) < maxlen:
 			senc.insert(0, [])
-		pad_senc = pad_sequences(senc, maxlen=maxlen_char_word)
+		pad_senc = pad_sequences(senc, maxlen=maxlen_word)
 		pad_char_all.append(pad_senc)
 		pad_senc = []
 
@@ -178,46 +352,50 @@ def get_data(data_path, maxlen=200, maxlen_char_word = 40):
 	Y = to_categorical(vec_label)   
 
 	# import pdb; pdb.set_trace()
-	return idx2word, idx2label, maxlen, maxlen_char_word, vocsize, charsize, nclasses, X, X_words, Y
+	return idx2word,  word2idx, label2idx, maxlen, maxlen_word, vocsize, charsize, nclasses, X, X_words, Y
 
 
 
-def data_fetch(	data_path_train='/users/debarshi/soumya/PubMedData/output/train_clean.txt', 
+def data_fetch(	embed_to_n = None,
+				data_path_train='/users/debarshi/soumya/PubMedData/output/train_clean.txt', 
+				data_path_val = '/users/debarshi/soumya/PubMedData/output/dev_clean.txt',
 				data_path_test = '/users/debarshi/soumya/PubMedData/output/test_clean.txt', 
 				w2v_glove_300d_path = '/users/debarshi/soumya/abstractAnalysis/ANMLAD/pubmed_adr/word2vec_format_glove.42B.300d.txt',
 				embed_dim = 300,
-				char_embed_dim = 100
+				char_embed_dim = 100				
 				):
 
-	idx2word, idx2label, maxlen, maxlen_word, vocsize, charsize, nclasses,  X, X_words, Y = get_data(data_path_train)
-	# _, _, maxlen_new, maxlen_word_new, _, charsize_test,  _,  X_test, X_test_words, Y_test = get_data(data_path_test, maxlen, maxlen_word)
+	idx2word,  word2idx, label2idx, maxlen, maxlen_word, vocsize, charsize, nclasses,  X_train , X_train_words, Y_train  = get_data(data_path_train)
+	_, _, _, _,  _,  X_test, X_test_words, Y_test = get_test_data(data_path_test, word2idx, maxlen, maxlen_word)
+	_, _, _, _,  _,  X_val, X_val_words, Y_val = get_test_data(data_path_val, word2idx, maxlen, maxlen_word)
+	
 
 	# if maxlen_new != maxlen or maxlen_word_new != maxlen_word:
 	# 	idx2word, idx2label, maxlen, maxlen_word, vocsize, charsize_train,  nclasses,  X_train, X_train_words, Y_train = get_data(data_path_train, maxlen_new, maxlen_word_new)
 
 	# charsize = max( charsize_train,  charsize_test) 
-	data_size = X.shape[0]
-	traning_size = int(data_size*.9)
 
+	# data_size = X.shape[0]
+	# traning_size = int(data_size*.9)
+	# X_train = X[:traning_size,:] 
+	# X_train_words =X_words[:traning_size,:,:]
+	# Y_train = Y[:traning_size,:]
 
-	# try:
-	X_train = X[:traning_size,:] 
-	X_train_words =X_words[:traning_size,:,:]
-	Y_train = Y[:traning_size,:]
-
-	X_test = X[traning_size:,:]  
-	X_test_words = X_words[traning_size:,:, :]  
-	Y_test = Y[traning_size:,:] 			
+	# X_val = X[traning_size:,:]  
+	# X_val_words = X_words[traning_size:,:, :]  
+	# Y_val = Y[traning_size:,:] 			
 	# except Exception as e:
-	# 	pdb.set_trace() 
-
+	# 	pdb.set_trace() 	
 
 	print('Loading word embeddings...')
-	w2v = KeyedVectors.load_word2vec_format(w2v_glove_300d_path, binary=False, unicode_errors='ignore', limit=5000)
+	if embed_to_n is None:
+		w2v = KeyedVectors.load_word2vec_format(w2v_glove_300d_path, binary=False, unicode_errors='ignore')
+	else:
+		w2v = KeyedVectors.load_word2vec_format(w2v_glove_300d_path, binary=False, unicode_errors='ignore', limit=embed_to_n)
 	# w2v = KeyedVectors.load_word2vec_format(glove_300d_path, binary=False, unicode_errors='ignore')
 	print('word embeddings loading done!')
 
-	data = (idx2word, idx2label, maxlen, maxlen_word, vocsize, charsize, nclasses,  X_train, X_train_words, Y_train, X_test, X_test_words, Y_test, w2v , embed_dim, char_embed_dim)
+	data = (idx2word,  maxlen, maxlen_word, vocsize, charsize, nclasses,  X_train, X_train_words, Y_train, X_val, X_val_words, Y_val, X_test, X_test_words, Y_test, w2v , embed_dim, char_embed_dim)
 
 	return data
 
@@ -233,8 +411,10 @@ def init_embedding_weights(i2w, w2vmodel):
 	# Return: np.array with dim [vocabsize, embeddingsize]
 
 	d = 300
-	V = len(i2w)
-	assert sorted(i2w.keys()) == list(range(V))  # verify indices are sequential
+	V = len(i2w) -1  # -1 represents unknown words, thus removed from count
+
+	# pdb.set_trace()
+	assert sorted(i2w.keys())[1:] == list(range(V))  # verify indices are sequential
 
 	emb = np.zeros([V,d])
 	num_unknownwords = 0
@@ -242,19 +422,18 @@ def init_embedding_weights(i2w, w2vmodel):
 	for i,l in i2w.items():
 		if i==0:
 			continue
-		if l in w2vmodel.vocab:
-			emb[i, :] = w2vmodel[l]
-		else:
+		if i==-1 or l not in w2vmodel.vocab:
 			num_unknownwords += 1
 			unknow_words.append(l)
-			emb[i] = np.random.uniform(-1, 1, d)
+			emb[i] = np.random.uniform(-1, 1, d)			
+		else:
+			emb[i, :] = w2vmodel[l]			
 	return emb, num_unknownwords, unknow_words 
 
 
 def model_basic(data):
 
-	idx2word, idx2label, maxlen, maxlen_word, vocsize,  charsize, nclasses, _, _, _, _,_, _, w2v , embed_dim, char_embed_dim = data
-	
+	idx2word,  maxlen, maxlen_word, vocsize,  charsize, nclasses, _, _, _, _, _, _, _,_, _, w2v , embed_dim, char_embed_dim = data
 	try:
 				
 		# Build the model
@@ -362,7 +541,7 @@ def load_model_weight(model):
 		return None
 
 
-def main(load_model_weight_from_disk= True, save_model_weight_to_disk=True):
+def main(load_model_weight_from_disk= True, save_model_weight_to_disk=True, embed_top_n =  None):
 	# Definition of some parameters
 	try:
 		
@@ -372,7 +551,7 @@ def main(load_model_weight_from_disk= True, save_model_weight_to_disk=True):
 		NUM_EPOCHS = 10
 		BATCH_SIZE = 16
 
-		data =  data_fetch()   # defaults	
+		data =  data_fetch(embed_top_n)   # rest defaults	
 		# if load_model_from_disk:
 		# 	model =  load_model()
 		# else:
@@ -392,7 +571,7 @@ def main(load_model_weight_from_disk= True, save_model_weight_to_disk=True):
 
 		print('Training...')
 
-		_, _, _, _, _, _, _,  X_train, X_train_words, Y_train, X_test, X_test_words, Y_test, _, _, _ = data
+		_, _, _, _, _, _,  X_train, X_train_words, Y_train,  X_val, X_val_words, Y_val, X_test, X_test_words, Y_test, _, _, _ = data
 
 
 
@@ -413,8 +592,8 @@ def main(load_model_weight_from_disk= True, save_model_weight_to_disk=True):
 		# print 'passed checkpoint 11\n\n'
 		history = model.fit([X_train, X_train_words], Y_train, 
 						batch_size=BATCH_SIZE, 
-						validation_split=0.1,
-		     			# validation_data=([X_test, X_test_words], Y_test), 
+						# validation_split=0.1,
+		     			validation_data=([X_val, X_val_words], Y_val), 
 						epochs=NUM_EPOCHS, 
 						callbacks=callbacks)
 		# print 'passed checkpoint 9: training\n\n'
@@ -458,5 +637,5 @@ def main(load_model_weight_from_disk= True, save_model_weight_to_disk=True):
 
 
 if __name__== "__main__":
-	# main(load_model_weight_from_disk= True, save_model_weight_to_disk=True):
+	# main(load_model_weight_from_disk= True, save_model_weight_to_disk=True, embed_top_n =  None):
 	main(True, True)
