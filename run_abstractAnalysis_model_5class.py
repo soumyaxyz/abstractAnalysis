@@ -16,18 +16,6 @@ import keras.backend as K
 import numpy as np
 import collections, os, re, traceback, pdb
 
-def label_transform(label):
-	switcher = { 
-	    u'BACKGROUND'	: u'BACKGROUND+OBJECTIVE', 
-	    u'OBJECTIVE'	: u'BACKGROUND+OBJECTIVE', 
-	    u'METHODS'		: u'METHODS',
-	    u'RESULTS'		: u'RESULTS+CONCLUSIONS',  
-	    u'CONCLUSIONS'	: u'RESULTS+CONCLUSIONS',
-	}
-	return switcher.get(label, u'UNDEFINED')  
-
-
-
 
 def get_test_data(data_path,  word2idx, maxlen, maxlen_word):
 	#  data_path = 'data/pubmed_non_rct.txt'
@@ -35,8 +23,7 @@ def get_test_data(data_path,  word2idx, maxlen, maxlen_word):
 	input_data = list(open(data_path, 'r'))
 
 	tt = TweetTokenizer()
-	init_labels = [u'BACKGROUND', u'OBJECTIVE', u'METHODS', u'RESULTS',  u'CONCLUSIONS']
-	labels = [u'BACKGROUND+OBJECTIVE', u'METHODS', u'RESULTS+CONCLUSIONS']
+	labels = [u'BACKGROUND', u'OBJECTIVE', u'METHODS', u'RESULTS',  u'CONCLUSIONS']
 	raw_data = []    
 	final_data = []    
 
@@ -52,8 +39,7 @@ def get_test_data(data_path,  word2idx, maxlen, maxlen_word):
 					data =  data[1:] 
 					data = [word.lower() for word in data if word.isalnum()]
 
-					if label in init_labels:
-						label = label_transform(label)	
+					if label in labels:
 						if len(data)<=3:
 							if label == final_data[-1][0]:
 								final_data[-1][1]+=data
@@ -202,14 +188,15 @@ def get_test_data(data_path,  word2idx, maxlen, maxlen_word):
 	return maxlen, maxlen_word, vocsize, charsize, nclasses, X, X_words, Y
 
 
+
+
 def get_data(data_path, maxlen=130, maxlen_word = 25):
 	#  data_path = 'data/pubmed_non_rct.txt'
 	
 	input_data = list(open(data_path, 'r'))
 
 	tt = TweetTokenizer()
-	init_labels = [u'BACKGROUND', u'OBJECTIVE', u'METHODS', u'RESULTS',  u'CONCLUSIONS']
-	labels = [u'BACKGROUND+OBJECTIVE', u'METHODS', u'RESULTS+CONCLUSIONS']
+	labels = [u'BACKGROUND', u'OBJECTIVE', u'METHODS', u'RESULTS',  u'CONCLUSIONS']
 	raw_data = []    
 	final_data = []    
 
@@ -225,8 +212,7 @@ def get_data(data_path, maxlen=130, maxlen_word = 25):
 					data =  data[1:] 
 					data = [word.lower() for word in data if word.isalnum()]
 
-					if label in init_labels:
-						label = label_transform(label)	
+					if label in labels:
 						if len(data)<=3:
 							if label == final_data[-1][0]:
 								final_data[-1][1]+=data
@@ -236,7 +222,6 @@ def get_data(data_path, maxlen=130, maxlen_word = 25):
 						else :
 							final_data.append([label, data]) #
 										   
-
 
 	senc_adr = []
 	# labels  = set()
@@ -259,10 +244,6 @@ def get_data(data_path, maxlen=130, maxlen_word = 25):
 
 	word2idx    = {w: i+1 for i, w in enumerate(words)}
 	label2idx   = {l: i+1 for i, l in enumerate(labels)}
-
-	# label2idx = {'BACKGROUND': 1, 'OBJECTIVE': 1, 'METHODS': 3, 'RESULTS': 5, 'CONCLUSIONS': 5}
-
-
 	
 	# idx2label   = dict((k,v) for v,k in label2idx.items())
 	idx2word    = dict((k,v) for v,k in word2idx.items())
@@ -370,13 +351,12 @@ def get_data(data_path, maxlen=130, maxlen_word = 25):
 	X = pad_sequences(vec_sentence, maxlen=maxlen)
 	Y = to_categorical(vec_label)   
 
-	# pdb.set_trace()
+	# import pdb; pdb.set_trace()
 	return idx2word,  word2idx, label2idx, maxlen, maxlen_word, vocsize, charsize, nclasses, X, X_words, Y
 
 
 
-
-def data_fetch(	embed_to_n = -1,
+def data_fetch(	embed_to_n = None,
 				data_path_train='/users/debarshi/soumya/PubMedData/output/train_clean.txt', 
 				data_path_val = '/users/debarshi/soumya/PubMedData/output/dev_clean.txt',
 				data_path_test = '/users/debarshi/soumya/PubMedData/output/test_clean.txt', 
@@ -389,7 +369,7 @@ def data_fetch(	embed_to_n = -1,
 	_, _, _, _,  _,  X_test, X_test_words, Y_test = get_test_data(data_path_test, word2idx, maxlen, maxlen_word)
 	_, _, _, _,  _,  X_val, X_val_words, Y_val = get_test_data(data_path_val, word2idx, maxlen, maxlen_word)
 	
-	# pdb.set_trace()
+
 	# if maxlen_new != maxlen or maxlen_word_new != maxlen_word:
 	# 	idx2word, idx2label, maxlen, maxlen_word, vocsize, charsize_train,  nclasses,  X_train, X_train_words, Y_train = get_data(data_path_train, maxlen_new, maxlen_word_new)
 
@@ -408,7 +388,7 @@ def data_fetch(	embed_to_n = -1,
 	# 	pdb.set_trace() 	
 
 	print('Loading word embeddings...')
-	if embed_to_n == -1:
+	if embed_to_n is None:
 		w2v = KeyedVectors.load_word2vec_format(w2v_glove_300d_path, binary=False, unicode_errors='ignore')
 	else:
 		w2v = KeyedVectors.load_word2vec_format(w2v_glove_300d_path, binary=False, unicode_errors='ignore', limit=embed_to_n)
@@ -562,14 +542,14 @@ def load_model_weight(model):
 		return None
 
 
-def main(num_epoch = 10, embed_top_n =  -1, load_model_weight_from_disk= True, save_model_weight_to_disk=True):
+def main(embed_top_n =  None, load_model_weight_from_disk= True, save_model_weight_to_disk=True):
 	# Definition of some parameters
 	try:
 		
 		seed = 20
 		np.random.seed(seed)
 		
-		NUM_EPOCHS = num_epoch
+		NUM_EPOCHS = 10
 		BATCH_SIZE = 16
 
 		data =  data_fetch(embed_top_n)   # rest defaults	
@@ -656,30 +636,27 @@ def main(num_epoch = 10, embed_top_n =  -1, load_model_weight_from_disk= True, s
 		traceback.print_exc()
 		pdb.set_trace() 
 
-
-
 import sys
 args = sys.argv
 
 try:
-	num_epoch =  int(args[1])
+	embed_top_n =  int(args[1])
 except Exception as e:
-	num_epoch 	= 10
+	embed_top_n 	= None
 try:
-	embed_top_n =  int(args[2])
-except Exception as e:
-	embed_top_n 	= -1 # all
-try:
-	load_model_weight_from_disk =  Bool(args[3])
+	load_model_weight_from_disk =  Bool(args[2])
 except Exception as e:
 	load_model_weight_from_disk 	= True
 try:
-	save_model_weight_to_disk =  Bool(args[4])
+	save_model_weight_to_disk =  Bool(args[3])
 except Exception as e:
-	save_model_weight_to_disk 	= True
-
+	save_model_weight_to_disk 	= 12.5
+# try:
+# 	test =  float(args[4])
+# except Exception as e:
+# 	test 	= 12.5
 
 
 if __name__== "__main__":
 	# main(load_model_weight_from_disk= True, save_model_weight_to_disk=True, embed_top_n =  None):
-	main(num_epoch, embed_top_n, load_model_weight_from_disk, save_model_weight_to_disk)
+	main(embed_top_n, load_model_weight_from_disk, save_model_weight_to_disk)
