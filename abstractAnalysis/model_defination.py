@@ -15,6 +15,8 @@ import numpy as np
 import model_defination
 
 
+
+
 class abstract_segmentation_model():
 	def __init__(self, model_name, dataset, embeddings):
 		self.model 			= self.get_model(model_name, dataset, embeddings)
@@ -67,6 +69,47 @@ class abstract_segmentation_model():
 # class model_stub():
 # 	def
 
+
+class model_toy():
+
+	def get_model_defination(self, dataset, embeddings):
+		try:
+						
+			# Build the model
+			print('Building the model...')			
+			main_input = Input(shape=[dataset.abs_len, dataset.maxlen], dtype='float32', name='input') # (None, 36)
+
+			# unused
+			char_input = Input(shape=[dataset.abs_len, dataset.maxlen,  dataset.maxlen_word], dtype='float32', name='char_input') # (None, 36, 25)
+			
+			# main_input_r = Lambda(lambda x: K.reshape(x, shape=(-1, dataset.maxlen)))(main_input)	
+
+			norm = main_input
+			# norm = BatchNormalization()(norm)
+			feedforward = Dense(dataset.nclasses, name='feed_forword')(norm)
+
+			# final_output = CRF(dataset.nclasses, learn_mode='marginal', sparse_target=True)(feedforward)
+			final_output = Activation('softmax')(feedforward) # (None, 36, 5) # (None, 36, 5)
+
+			model = Model(inputs=[main_input, char_input], outputs=final_output, name='output')
+			model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+			# model.summary()
+			# plot_model(model, to_file='model.png', show_shapes=True)
+
+			
+		except Exception as e:
+			# print 'passed checkpoint E1\n\n'
+			# model.summary()
+			# plot_model(model, to_file='model.png', show_shapes=True)
+
+			traceback.print_exc()
+			pdb.set_trace() 
+
+	
+		return model
+
+
 ## Dernoncourt et al.
 
 class model_initial():
@@ -105,7 +148,7 @@ class model_initial():
 		# pdb.set_trace()
 
 
-		biLSTM_char_embed = Bidirectional(CuDNNLSTM(embeddings.char_embed_dim, return_sequences=False))(char_embed)
+		biLSTM_char_embed = Bidirectional(LSTM(embeddings.char_embed_dim, return_sequences=False))(char_embed)
 
 
 		# fwd_state = GRU(150, return_state=True)(char_embed)[-2]
@@ -127,7 +170,7 @@ class model_initial():
 
 		# with_atention = Lambda(lambda x: K.reshape(x, shape=(-1, dataset.abs_len, 2*64 )))(with_atention)
 
-		biLSTM = Bidirectional(CuDNNLSTM(64, return_sequences=False))(combined_embed)
+		biLSTM = Bidirectional(LSTM(64, return_sequences=False))(combined_embed)
 		biLSTM = Dropout(0.5)(biLSTM)
 
 		biLSTM_r = Lambda(lambda x: K.reshape(x, shape=(-1, dataset.abs_len, 2*64)))(biLSTM)
@@ -301,7 +344,7 @@ class model_Jin():
 		### sentence encoding layer		
 
 			# pdb.set_trace();
-			blstm_layer = Bidirectional(CuDNNLSTM(lstm_dim, return_sequences=True))(embed)
+			blstm_layer = Bidirectional(LSTM(lstm_dim, return_sequences=True))(embed)
 			
 			# attention_layer = Attention()(blstm_layer)
 			attention_layer  = blstm_layer
@@ -321,7 +364,7 @@ class model_Jin():
 
 		### context enriching layer
 
-			biLSTM = Bidirectional(CuDNNLSTM(lstm_dim, return_sequences=False))(sentence_encoding_layer)
+			biLSTM = Bidirectional(LSTM(lstm_dim, return_sequences=False))(sentence_encoding_layer)
 			biLSTM = Dropout(0.5)(biLSTM)
 			
 			biLSTM_r = Lambda(lambda x: K.reshape(x, shape=(-1, dataset.abs_len, 2*lstm_dim)))(biLSTM)

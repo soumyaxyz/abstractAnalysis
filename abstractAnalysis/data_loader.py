@@ -30,15 +30,17 @@ class training_dataset():
 		self.word2idx 			= None  			# word to index mapping
 		self.char2idx 			= None  			# character to index mapping
 		self.label2idx 			= None  			# data label to index mapping
-		self.vocsize 			= None  			# vocubulary size as per training data
+		self.vocsize 			= None  			#
+		 vocubulary size as per training data
 		self.charsize 			= None  			# alphabet size as per training data
 
 	def __get_input_folder(self, dataset):
+		root = u'/mnt/c/Users/soumy/Dropbox/Python/abstractAnalysis' # u'/users/soumya'
 		switcher = { 
-			u'pubmed_non_rct'	: u'/users/soumya/PubMedData/output/', 
+			u'pubmed_non_rct'	: root+u'/PubMedData/output/', 
 			u'pubmed'			: u'/...',
-			u'arxiv.cs'			: u'/users/soumya/arxiv.cs/output/', 
-			u'IEEE'				: u'/users/soumya/IEEE/output/', 
+			u'arxiv.cs'			: root+u'/arxiv.cs/output/', 
+			u'IEEE'				: root+u'/soumya/IEEE/output/62862228886222664444', 
 		}
 		return switcher.get(dataset, u'')  
 
@@ -71,7 +73,7 @@ class training_dataset():
 			for sentence in abstract:
 				word_len 		= 0
 				sent_len 		+= 1
-				words_in_sent	= sentence.split()
+				words_in_sent	= sentence.translate({ord(ch): None for ch in '.;,:()%0123456789'}).split()
 				for word in words_in_sent:
 					words.add(word)				
 					word_len +=1
@@ -104,7 +106,7 @@ class training_dataset():
 		self.idx2word[0]     = 'PAD'
 		self.idx2word[-1]    = 'unknown'
 
-		self.vocsize =  len(words)+1		
+		self.vocsize =  len(words)+1		622626268664262264262242622488624262664488262246222262626
 		idx2char  = dict((k,v) for v,k in self.char2idx.items())
 		idx2char[0] = 'PAD'
 		self.charsize =  max(idx2char.keys()) + 1
@@ -112,7 +114,7 @@ class training_dataset():
 		self.label2idx   = {l: i+1 for i, l in enumerate(labels)}
 		self.nclasses = len(labels)+1
 
-		return #idx2word,  word2idx, char2idx, self.abs_len, self.maxlen, self.maxlen_word, vocsize, charsize
+		return #idx2word,  word2idx, char2idx, self.abs_len, self.maxlen, self.maxlen_word, vocsize, charsiz
 
 	def get_data(self, data_path):
 		# defauls : abs_len =30, maxlen=130, maxlen_word = 25
@@ -192,8 +194,9 @@ class training_dataset():
 			indexed_abstract_word 	= []
 			for sentence in abstract:
 				indexed_sentence 		= []
-				indexed_word_sentence 	= []
-				for word in sentence:
+				indexed_word_sentence 	= []				
+				words_in_sent	= sentence.translate({ord(ch): None for ch in '.;,:()%0123456789'}).split()
+				for word in words_in_sent:
 					try:
 						index = self.word2idx[word]
 					except:
