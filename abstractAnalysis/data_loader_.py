@@ -26,10 +26,10 @@ class training_dataset():
 		# self.wordlengths		= []
 
 		self.nclasses 			= None 				# number of output classes
-		self.idx2word 			= None  			# index to word mapping
-		self.word2idx 			= None  			# word to index mapping
-		self.char2idx 			= None  			# character to index mapping
-		self.label2idx 			= None  			# data label to index mapping
+		self.idx2word 			= dict()  			# index to word mapping
+		self.word2idx 			= dict()  			# word to index mapping
+		self.char2idx 			= dict() 			# character to index mapping
+		self.label2idx 			= dict()  			# data label to index mapping
 		self.vocsize 			= None  			# vocubulary size as per training data
 		self.charsize 			= None  			# alphabet size as per training data
 
@@ -64,49 +64,51 @@ class training_dataset():
 	        and c in string.ascii_letters
 	    )
 
-	def __define_data_dicts(self, structured_training_data, labels):
-		words   	= set()
+	def __define_data_dicts(self, traning_data):
 		charcounts 	= collections.Counter()
-		for abstract in structured_training_data:
-			sent_len = 0
-			for sentence in abstract:
-				word_len 		= 0
-				sent_len 		+= 1
-				pdb.set_trace()
-				# words_in_sent	= sentence.translate({ord(ch): None for ch in '.;,:()%0123456789'}).split()
-				for word in sentence:
-					words.add(word)				
-					word_len +=1
-					char_len = 0
-					for char in word:
-						charcounts[self.unicodeToAscii(char)] += 1
-						char_len +=1
+		labels 		= set()
+		with open(traning_data) as fileobject:
+			for line in fileobject: 
+				line = line.strip()
+				if line:   
+					if line.startswith('#'):#, 0,len(line)):				
+						# do nothing; skip
+					else:
+						data = tt.tokenize(line)						
+						label = data[0]
+						if self.conv_to_3_class:
+								label = self.label_transform(label)
 
-					# import pdb; pdb.set_trace()
+						sentence =  data[1:] 
+						# sentence = [word.lower() for word in sentence if word.isalnum()]
+						sentence = [word.lower() for word in sentence if word.isalpha()]
 
-					if self.maxlen_word < char_len:
-						# print('maxlen_word '+str(char_len)+ ': '+ word)
-						self.maxlen_word = char_len
-					# self.wordlengths.append(word_len)
-				if self.maxlen < word_len:					
-					# print('maxlen '+str(word_len)+ ': '+ sentence+'\n')
-					self.maxlen = word_len
-			if self.abs_len < sent_len:
-				self.abs_len = sent_len
-		
-		words   = list(words)
-		 #for converting words to indices
-		self.word2idx    = {w: i+1 for i, w in enumerate(words)}
+						for word in sentence:
+							#converting words to indices
+							try:
+								word_idx = self.word2idx[word]
+							except KeyError as e:
+								self.word2idx[word] = len(self.word2idx)+1
+							#for converting char to indices
+							char_len = 0
+							for char in word:
+								charcounts[self.unicodeToAscii(char)] += 1
+								char_len +=1	
+		#for converting words to indices
+		# self.word2idx    already define above
+
+		#for converting char to indices
 		chars 		= [charcount[0] for charcount in charcounts.most_common()]
 		self.char2idx 	= {c: i+1 for i, c in enumerate(chars)}
 
 		# for converting indices back to words
-		self.idx2word    = dict((k,v) for v,k in self.word2idx.items())
-		
+		self.idx2word    = dict((k,v) for v,k in self.word2idx.items())		
 		self.idx2word[0]     = 'PAD'
 		self.idx2word[-1]    = 'unknown'
 
-		self.vocsize =  len(words)+1		
+		self.vocsize =  len(word_idx)+1	
+
+		# for converting indices back to char	
 		idx2char  = dict((k,v) for v,k in self.char2idx.items())
 		idx2char[0] = 'PAD'
 		self.charsize =  max(idx2char.keys()) + 1

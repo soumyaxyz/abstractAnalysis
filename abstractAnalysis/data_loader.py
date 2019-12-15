@@ -30,8 +30,7 @@ class training_dataset():
 		self.word2idx 			= None  			# word to index mapping
 		self.char2idx 			= None  			# character to index mapping
 		self.label2idx 			= None  			# data label to index mapping
-		self.vocsize 			= None  			#
-		 vocubulary size as per training data
+		self.vocsize 			= None  			# vocubulary size as per training data
 		self.charsize 			= None  			# alphabet size as per training data
 
 	def __get_input_folder(self, dataset):
@@ -40,7 +39,7 @@ class training_dataset():
 			u'pubmed_non_rct'	: root+u'/PubMedData/output/', 
 			u'pubmed'			: u'/...',
 			u'arxiv.cs'			: root+u'/arxiv.cs/output/', 
-			u'IEEE'				: root+u'/soumya/IEEE/output/62862228886222664444', 
+			u'IEEE'				: root+u'/soumya/IEEE/output/', 
 		}
 		return switcher.get(dataset, u'')  
 
@@ -106,7 +105,7 @@ class training_dataset():
 		self.idx2word[0]     = 'PAD'
 		self.idx2word[-1]    = 'unknown'
 
-		self.vocsize =  len(words)+1		622626268664262264262242622488624262664488262246222262626
+		self.vocsize =  len(words)+1		
 		idx2char  = dict((k,v) for v,k in self.char2idx.items())
 		idx2char[0] = 'PAD'
 		self.charsize =  max(idx2char.keys()) + 1
@@ -114,7 +113,7 @@ class training_dataset():
 		self.label2idx   = {l: i+1 for i, l in enumerate(labels)}
 		self.nclasses = len(labels)+1
 
-		return #idx2word,  word2idx, char2idx, self.abs_len, self.maxlen, self.maxlen_word, vocsize, charsiz
+		return #idx2word,  word2idx, char2idx, self.abs_len, self.maxlen, self.maxlen_word, vocsize, charsize
 
 	def get_data(self, data_path):
 		# defauls : abs_len =30, maxlen=130, maxlen_word = 25
