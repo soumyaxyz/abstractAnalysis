@@ -34,12 +34,11 @@ class training_dataset():
 		self.charsize 			= None  			# alphabet size as per training data
 
 	def __get_input_folder(self, dataset):
-		root = u'/mnt/c/Users/soumy/Dropbox/Python/abstractAnalysis' # u'/users/soumya'
 		switcher = { 
-			u'pubmed_non_rct'	: root+u'/PubMedData/output/', 
+			u'pubmed_non_rct'	: u'/users/soumya/PubMedData/output/', 
 			u'pubmed'			: u'/...',
-			u'arxiv.cs'			: root+u'/arxiv.cs/output/', 
-			u'IEEE'				: root+u'/soumya/IEEE/output/', 
+			u'arxiv.cs'			: u'/users/soumya/arxiv.cs/output/', 
+			u'IEEE'				: u'/users/soumya/IEEE/output/', 
 		}
 		return switcher.get(dataset, u'')  
 
@@ -72,8 +71,8 @@ class training_dataset():
 			for sentence in abstract:
 				word_len 		= 0
 				sent_len 		+= 1
-				words_in_sent	= sentence.translate({ord(ch): None for ch in '.;,:()%0123456789'}).split()
-				for word in words_in_sent:
+				# words_in_sent	= sentence.translate({ord(ch): None for ch in '.,;:()1234567890'}).split()
+				for word in sentence:
 					words.add(word)				
 					word_len +=1
 					char_len = 0
@@ -125,9 +124,11 @@ class training_dataset():
 		labels = [u'BACKGROUND', u'OBJECTIVE', u'METHODS', u'RESULTS',  u'CONCLUSIONS', u'0', u'1',u'2']
 		#  evantual shape labels = [u'BACKGROUND+OBJECTIVE', u'METHODS', u'RESULTS+CONCLUSIONS']
 		metadata 			= []     
-		structured_data 	= [] 
+		structured_lines 	= [] 
+		structured_data 	= []
 		structured_labels 	= []
-		metadata_buffer 	= ''       
+		metadata_buffer 	= ''
+		buffered_lines	 	= []       
 		buffered_abstract 	= []  
 		buffered_labels 	= []  
 
@@ -138,6 +139,7 @@ class training_dataset():
 						metadata.append(metadata_buffer+'\n')
 						structured_data.append(buffered_abstract)	
 						structured_labels.append(buffered_labels)
+						structured_lines.append(buffered_lines)
 						metadata_buffer 	= ''
 						buffered_abstract 	= []  
 						buffered_labels 	= [] 
@@ -169,7 +171,8 @@ class training_dataset():
 									pass 
 							else:
 								# pdb.set_trace()
-								buffered_abstract.append(line.split('\t')[-1])   # saving the text from the line of the abstract
+								buffered_lines.append(line.split('\t')[-1])   # saving the text from the line of the abstract
+								buffered_abstract.append(data)
 								buffered_labels.append(label)
 		if self.conv_to_3_class: 							   
 			labels = list(set([self.label_transform(label) for label in labels]))
@@ -180,7 +183,7 @@ class training_dataset():
 		#data_as_tensor = (X, X_words, Y)
 		data_as_tensor  = self.__get_final_data(structured_data, structured_labels)		
 		# pdb.set_trace() 			
-		return data_as_tensor, structured_data, metadata
+		return data_as_tensor, structured_lines, metadata
 
 	def __get_final_data(self, structured_data, structured_labels):
 		#Defaults : abs_len =30, maxlen=130, maxlen_word = 25
@@ -193,9 +196,9 @@ class training_dataset():
 			indexed_abstract_word 	= []
 			for sentence in abstract:
 				indexed_sentence 		= []
-				indexed_word_sentence 	= []				
-				words_in_sent	= sentence.translate({ord(ch): None for ch in '.;,:()%0123456789'}).split()
-				for word in words_in_sent:
+				indexed_word_sentence 	= []
+				# word_in_sent = sentence.translate({ord(ch): None for ch in '.,;:1234567890'}).split()
+				for word in sentence:
 					try:
 						index = self.word2idx[word]
 					except:

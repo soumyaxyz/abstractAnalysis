@@ -33,13 +33,16 @@ class training_dataset():
 		self.vocsize 			= None  			# vocubulary size as per training data
 		self.charsize 			= None  			# alphabet size as per training data
 
+		self.labels 			= [u'BACKGROUND', u'OBJECTIVE', u'METHODS', u'RESULTS',  u'CONCLUSIONS', u'0', u'1',u'2']
+		self.tokenizer 			= TweetTokenizer()
+
 	def __get_input_folder(self, dataset):
 		root = u'/mnt/c/Users/soumy/Dropbox/Python/abstractAnalysis' # u'/users/soumya'
 		switcher = { 
 			u'pubmed_non_rct'	: root+u'/PubMedData/output/', 
 			u'pubmed'			: u'/...',
 			u'arxiv.cs'			: root+u'/arxiv.cs/output/', 
-			u'IEEE'				: root+u'/soumya/IEEE/output/62862228886222664444', 
+			u'IEEE'				: root+u'/soumya/IEEE/output/', 
 		}
 		return switcher.get(dataset, u'')  
 
@@ -64,36 +67,40 @@ class training_dataset():
 	        and c in string.ascii_letters
 	    )
 
-	def __define_data_dicts(self, traning_data):
+	def __define_data_dicts(self):
 		charcounts 	= collections.Counter()
 		labels 		= set()
-		with open(traning_data) as fileobject:
+		self.labels	= [u'BACKGROUND', u'OBJECTIVE', u'METHODS', u'RESULTS',  u'CONCLUSIONS', u'0', u'1',u'2']
+		with open(self.data_path_train) as fileobject:
 			for line in fileobject: 
 				line = line.strip()
 				if line:   
 					if line.startswith('#'):#, 0,len(line)):				
-						# do nothing; skip
+						pass # do nothing; skip
 					else:
-						data = tt.tokenize(line)						
+						data = self.tokenizer.tokenize(line)
 						label = data[0]
-						if self.conv_to_3_class:
-								label = self.label_transform(label)
 
-						sentence =  data[1:] 
-						# sentence = [word.lower() for word in sentence if word.isalnum()]
-						sentence = [word.lower() for word in sentence if word.isalpha()]
+						if label in self.labels:	 #otherwise ignore sample					
+							if self.conv_to_3_class:
+									label = self.label_transform(label)
+							labels.add(label)
 
-						for word in sentence:
-							#converting words to indices
-							try:
-								word_idx = self.word2idx[word]
-							except KeyError as e:
-								self.word2idx[word] = len(self.word2idx)+1
-							#for converting char to indices
-							char_len = 0
-							for char in word:
-								charcounts[self.unicodeToAscii(char)] += 1
-								char_len +=1	
+							sentence =  data[1:] 
+							# sentence = [word.lower() for word in sentence if word.isalnum()]
+							sentence = [word.lower() for word in sentence if word.isalpha()]
+
+							for word in sentence:
+								#converting words to indices
+								try:
+									word_idx = self.word2idx[word]
+								except KeyError as e:
+									self.word2idx[word] = len(self.word2idx)+1
+								#for converting char to indices
+								char_len = 0
+								for char in word:
+									charcounts[self.unicodeToAscii(char)] += 1
+									char_len +=1	
 		#for converting words to indices
 		# self.word2idx    already define above
 
@@ -106,7 +113,7 @@ class training_dataset():
 		self.idx2word[0]     = 'PAD'
 		self.idx2word[-1]    = 'unknown'
 
-		self.vocsize =  len(word_idx)+1	
+		self.vocsize =  len(self.word2idx)+1	
 
 		# for converting indices back to char	
 		idx2char  = dict((k,v) for v,k in self.char2idx.items())
@@ -118,71 +125,95 @@ class training_dataset():
 
 		return #idx2word,  word2idx, char2idx, self.abs_len, self.maxlen, self.maxlen_word, vocsize, charsiz
 
-	def get_data(self, data_path):
+	class new_data_batch():
+		def __init__(self):
+			self.metadata 			= []     
+			self.data 				= [] 
+			self.lines				= []
+			self.labels 			= []
+			self.metadata_buffer 	= ''       
+			self.buffered_abstract 	= [] 
+			self.buffered_lines 	= [] 
+			self.buffered_labels 	= [] 
+			self.current_batch_size = 0 
+
+	def get_data(self, data_path, batch_size, reconstractable = False):
 		# defauls : abs_len =30, maxlen=130, maxlen_word = 25
-		tt = TweetTokenizer()
-		labels = [u'BACKGROUND', u'OBJECTIVE', u'METHODS', u'RESULTS',  u'CONCLUSIONS', u'0', u'1',u'2']
 		#  evantual shape labels = [u'BACKGROUND+OBJECTIVE', u'METHODS', u'RESULTS+CONCLUSIONS']
-		metadata 			= []     
-		structured_data 	= [] 
-		structured_labels 	= []
-		metadata_buffer 	= ''       
-		buffered_abstract 	= []  
-		buffered_labels 	= []  
+		# metadata 			= []     
+		# structured_data 	= [] 
+		# structured_labels 	= []
 
 		#  data_path = 'data/pubmed_non_rct.txt'
 		with open(data_path) as fileobject:
-			for line in fileobject: 
-				line = line.strip()  
-				if line.startswith('#'):#, 0,len(line)):				
-					if buffered_abstract:
-						metadata.append(metadata_buffer+'\n')
-						structured_data.append(buffered_abstract)	
-						structured_labels.append(buffered_labels)
-						metadata_buffer 	= ''
-						buffered_abstract 	= []  
-						buffered_labels 	= [] 
+			data_batch 			= self.new_data_batch()
+			for line in fileobject:
+				data_batch = self.__get_batch(line, data_batch) 
+				# pdb.set_trace()
+				if data_batch.current_batch_size == batch_size:
+					#data_as_tensor = (X, X_words, Y)
+					data_as_tensor  = self.__get_final_data(data_batch.data, data_batch.labels)		
+					# pdb.set_trace() 
+					if reconstractable:	
+						yield data_as_tensor, data_batch.lines, data_batch.metadata	
+					else:
+						yield data_as_tensor
+					data_batch 	= self.new_data_batch()		 	
+		# last batch
+		data_as_tensor  = self.__get_final_data(data_batch.data, data_batch.labels)			
+		if reconstractable:	
+			yield data_as_tensor, data_batch.lines, data_batch.metadata	
+		else:
+			yield data_as_tensor
 
-					metadata_buffer += line+'\n'					
+	def __get_batch(self, line, data_batch):
+		line = line.strip()  
+		if line.startswith('#'):#, 0,len(line)):				
+			if data_batch.buffered_abstract:
+				data_batch.metadata.append(data_batch.metadata_buffer+'\n')
+				data_batch.data.append(data_batch.buffered_abstract)	
+				data_batch.labels.append(data_batch.buffered_labels)
+				data_batch.lines.append(data_batch.buffered_lines)
+				data_batch.metadata_buffer 		= ''
+				data_batch.buffered_abstract 	= []  
+				data_batch.buffered_labels 		= []
+				data_batch.buffered_lines 		= [] 
+				data_batch.current_batch_size 	+= 1
 
-				else:					
-					if line:                          
-						data = tt.tokenize(line)
-						label = data[0]
-						data =  data[1:] 
-						data = [word.lower() for word in data if word.isalnum()]
-						# data = [word.lower() for word in data if word.isalpha()]
+			data_batch.metadata_buffer += line+'\n'		
+		else:					
+			if line:                          
+				data = self.tokenizer.tokenize(line)
+				label = data[0]
+				data =  data[1:] 
+				# data = [word.lower() for word in data if word.isalnum()]
+				data = [word.lower() for word in data if word.isalpha()]
 
-						if label in labels:
+				if label in self.labels:
 
-							if self.conv_to_3_class:
-								label = self.label_transform(label)	
+					if self.conv_to_3_class:
+						label = self.label_transform(label)	
 
-							if len(data)<=3:
-								try:
-									if label == buffered_labels[-1]:
-										buffered_abstract[-1]+=data # append to previous line
-										#label is same
-									else : 
-										# skip this line
-										pass 
-								except Exception as e:
-									# skip this line
-									pass 
-							else:
-								# pdb.set_trace()
-								buffered_abstract.append(data)   # saving the text from the line of the abstract
-								buffered_labels.append(label)
-		if self.conv_to_3_class: 							   
-			labels = list(set([self.label_transform(label) for label in labels]))
-
-											   
-		if self.nclasses is None:		
-			self.__define_data_dicts(structured_data, labels) 	
-		#data_as_tensor = (X, X_words, Y)
-		data_as_tensor  = self.__get_final_data(structured_data, structured_labels)		
-		# pdb.set_trace() 			
-		return data_as_tensor, structured_data, metadata
+					if len(data)<=3:
+						try:
+							if label == buffered_labels[-1]:				# append to previous line
+								data_batch.buffered_abstract[-1]	+= data 			
+								data_batch.buffered_lines[-1]		+= line.partition(' ')[2]
+								#label is same
+							else : 
+								# skip this line
+								pass 
+						except Exception as e:
+							# skip this line
+							pass 
+					else:
+						data_batch.buffered_lines.append(line.partition(' ')[2])  # saving the text from the line of the abstract
+						data_batch.buffered_abstract.append(data) 
+						data_batch.buffered_labels.append(label)
+				# else:
+					# print ('Unexpected label !')
+					# pdb.set_trace()
+		return data_batch
 
 	def __get_final_data(self, structured_data, structured_labels):
 		#Defaults : abs_len =30, maxlen=130, maxlen_word = 25
@@ -191,7 +222,7 @@ class training_dataset():
 		X_words = []
 		Y 		= []
 
-		pdb.set_trace()
+		# pdb.set_trace()
 
 		for abstract in structured_data:
 			indexed_abstract 		= []
@@ -199,8 +230,8 @@ class training_dataset():
 			for sentence in abstract:
 				indexed_sentence 		= []
 				indexed_word_sentence 	= []				
-				words_in_sent	= sentence.translate({ord(ch): None for ch in '.;,:()%0123456789'}).split()
-				for word in words_in_sent:
+				# words_in_sent	= sentence.translate({ord(ch): None for ch in '.;,:()%0123456789'}).split()
+				for word in sentence:
 					try:
 						index = self.word2idx[word]
 					except:
@@ -240,10 +271,11 @@ class training_dataset():
 		Y 		= to_categorical(Y, self.nclasses)		
 		return (X, X_words, Y)
 
-	def data_fetch(self):
-		train, _, _		= self.get_data(self.data_path_train)
-		test, _, _		= self.get_data(self.data_path_test)
-		val, _, _		= self.get_data(self.data_path_val)
+	def data_fetch(self, batch_size):
+		self.__define_data_dicts()
+		train	= self.get_data(self.data_path_train, batch_size)
+		test	= self.get_data(self.data_path_test, batch_size)
+		val		= self.get_data(self.data_path_val, batch_size)
 		return train, val, test 
 
 	def get_sizes(self):
@@ -265,8 +297,8 @@ class secondary_dataset():
 		}
 		return switcher.get(label, u'4')
 
-	def get_evaluation_data(self, data_file):
-		return self.oringinal_dataset.get_data(data_file) # eval_data,  orig_sentence, metadata	
+	def get_evaluation_data(self, data_file, batch_size):
+		return self.oringinal_dataset.get_data(data_file, batch_size) # eval_data,  orig_sentence, metadata	
 	
 	def calculate_abstract_wise_confidence(self, prediction):
 		confidences = []

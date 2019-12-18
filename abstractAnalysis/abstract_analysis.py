@@ -4,15 +4,6 @@ import data_loader, embeddings_loader, model_defination
 from keras.utils import plot_model
 from keras.callbacks import TensorBoard, EarlyStopping, ModelCheckpoint
 import keras as K
-
-				# import os
-				# import tensorflow as tf
-				# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-
-				# from tensorflow.python.util import deprecation
-				# deprecation._PRINT_DEPRECATION_WARNINGS = False
-
-
 	
 # import importlib
 # importlib.reload(...)
@@ -36,7 +27,6 @@ def main(num_epoch = 10, embed_top_n =  -1, load_model_weight_from_disk= True, s
 		train, val, test 	= dataset.data_fetch() 
 
 		
-		pdb.set_trace()
 
 		(X_train, X_train_words, Y_train)	= train
 		(X_val, X_val_words, Y_val)			= val
@@ -44,8 +34,8 @@ def main(num_epoch = 10, embed_top_n =  -1, load_model_weight_from_disk= True, s
 
 		
 
-		# 
-		model_name							= 'model_toy'
+		
+		model_name							= 'model_Jin'   						# model_Dernoncourt, model_Jin
 		load_file_sufix						= '_3_pubmed_non_rct' 											# model_weights_3_pubmed_non_rct
 		save_file_sufix 					= '_'+str(X_train.shape[0] + X_val.shape[0] + X_test.shape[0])
 
