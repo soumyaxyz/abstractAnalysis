@@ -1,0 +1,278 @@
+
+
+# 106
+### http://arxiv.org/abs/1309.2904v1
+## A System-Theoretic Clean Slate Approach to Provably Secure Ad Hoc Wireless Networking
+
+-1 	Traditionally, wireless network protocols have been designed for performance.
+-1 	Subsequently, as attacks have been identified, patches have been developed.
+-1 	This has resulted in an "arms race" development process of discovering vulnerabilities and then patching them.
+-1 	The fundamental difficulty with this approach is that other vulnerabilities may still exist.
+-1 	No provable security or performance guarantees can ever be provided.
+-1 	We develop a system-theoretic approach to security that provides a complete protocol suite with provable guarantees, as well as proof of min-max optimality with respect to any given utility function of source-destination rates.
+-1 	Our approach is based on a model capturing the essential features of an adhoc wireless network that has been infiltrated with hostile nodes.
+-1 	We consider any collection of nodes, some good and some bad, possessing specified capabilities vis-a-vis cryptography, wireless communication and clocks.
+-1 	The good nodes do not know the bad nodes.
+-1 	The bad nodes can collaborate perfectly, and are capable of any disruptive acts ranging from simply jamming to non-cooperation with the protocols in any manner they please.
+-1 	The protocol suite caters to the complete life-cycle, all the way from birth of nodes, through all phases of ad hoc network formation, leading to an optimized network carrying data reliably.
+-1 	It provably achieves the min-max of the utility function, where the max is over all protocol suites published and followed by the good nodes, while the min is over all Byzantine behaviors of the bad nodes.
+-1 	Under the protocol suite, the bad nodes do not benefit from any actions other than jamming or cooperating.
+-1 	This approach supersedes much previous work that deals with several types of attacks.
+
+
+# 107
+### http://arxiv.org/abs/1309.5049v3
+## Uni-MUMAC: A Unified Down/Up-link MU-MIMO MAC Protocol for IEEE 802.11ac WLANs
+
+-1 	Due to the dominance of the downlink traffic in Wireless Local Area Networks (WLANs), a large number of previous research efforts have been put to enhance the transmission from the Access Point (AP) to stations (STAs).
+-1 	The downlink Multi-User Multiple-Input Multiple-Output (MU-MIMO) technique, supported by the latest IEEE amendment-802.
+-1 	11ac, is considered as one of the key enhancements leading WLANs to the Gigabit era.
+-1 	However, as cloud uploading services, Peer-to-Peer (P2P) and telepresence applications get popular, the need for a higher uplink capacity becomes inevitable.
+-1 	In this paper, a unified down/up-link Medium Access Control (MAC) protocol called Uni-MUMAC is proposed to enhance the performance of IEEE 802.
+-1 	11ac WLANs by exploring the multi-user spatial multiplexing technique.
+-1 	Specifically, in the downlink, we implement an IEEE 802.
+-1 	11ac-compliant MU-MIMO transmission scheme to allow the AP to simultaneously send frames to a group of STAs.
+-1 	In the uplink, we extend the traditional one round channel access contention to two rounds, which coordinate multiple STAs to transmit frames to the AP simultaneously.
+-1 	2-nd round Contention Window (CW2nd), a parameter that makes the length of the 2-nd contention round elastic according to the traffic condition, is introduced.
+-1 	Uni-MUMAC is evaluated through simulations in saturated and non-saturated conditions when both downlink and uplink traffic are present in the system.
+-1 	We also propose an analytic saturation model to validate the simulation results.
+-1 	By properly setting CW2nd and other parameters, Uni-MUMAC is compared to a prominent multi-user transmission scheme in the literature.
+-1 	The results exhibit that Uni-MUMAC not only performs well in the downlink-dominant scenario, but it is also able to balance both the downlink and uplink throughput in the emerging uplink bandwidth-hungry scenario.
+
+
+# 108
+### http://arxiv.org/abs/1310.5794v1
+## An Operational Approach For Wimax At Ultra High Bandwidth With Spectrum 60 Ghz
+
+-1 	WiMax is a promising network of today industry.
+-1 	It provides P2P and P2MP point to multipoint broadband services up to thirty miles.
+-1 	Its operational frequency range is 10 GHz to 60 GHz.
+-1 	It provides data rate of 75Mbps per channel; with an end-to-end encryption called CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol).
+-1 	CCMP is an Advanced Encryption Standard AES based encryption method, which delivers secure communication.
+-1 	Telecom industry seeks secure, cheaper, wireless metro area network, that full fill the today internet demand in most efficient way.
+-1 	Our research explores the new dimension of WiMax with HEMT High Electron Mobility Transistor using un-licensed Band.
+-1 	The Aim of this paper is to simulate 60GHz unlicensed WiMax band in Matlab.
+-1 	This research explores millimeter waves, related electronics, mathematics of WiMax and simulated graph comparison.
+-1 	It determines available capacity verses coverage area and transmission bit error probability.
+-1 	Further it highlights the ideal modulation condition in different terrains.
+-1 	Research proofs that WiMax will be the future promising wireless network.
+
+
+# 109
+### http://arxiv.org/abs/1310.6880v2
+## Capacity Analysis of IEEE 802.11ah WLANs for M2M Communications
+
+-1 	Focusing on the increasing market of the sensors and actuators networks, the IEEE 802.
+-1 	11ah Task Group is currently working on the standardization of a new amendment.
+-1 	This new amendment will operate at the sub-1GHz band, ensure transmission ranges up to 1 Km, data rates above 100 kbps and very low power operation.
+-1 	With IEEE 802.
+-1 	11ah, the WLANs will offer a solution for applications such as smart metering, plan automation, eHealth or surveillance.
+-1 	Moreover, thanks to a hierarchical signalling, the IEEE 802.
+-1 	11ah will be able to manage a higher number of stations (STAs) and improve the 802.
+-1 	11 Power Saving Mechanisms.
+-1 	In order to support a high number of STAs, two different signalling modes are proposed, TIM and Non-TIM Offset.
+-1 	In this paper we present a theoretical model to predict the maximum number of STAs supported by both modes depending on the traffic load and the data rate used.
+-1 	Moreover, the IEEE 802.
+-1 	11ah performance and energy consumption for both signalling modes and for different traffic patterns and data rates is evaluated.
+-1 	Results show that both modes achieve similar Packet Delivery Ratio values but the energy consumed with the TIM Offset is, in average, a 11.
+-1 	7% lower.
+
+
+# 110
+### http://arxiv.org/abs/1311.3181v1
+## Comparative Study of Various VOIP Applications in 802.11a Wireless Network Scenario
+
+-1 	Today, Voice over Wireless Local Area Network (VOWLAN) is the most accepted Internet application.
+-1 	There are a large number of literatures regarding the performance of various WLAN networks.
+-1 	Most of them focus on simulations and modeling, but there are also some experiments with real networks.
+-1 	This paper explains the comparison of performance of two different VOIP (Voice over Internet Protocol) applications over the same IEEE 802.
+-1 	11a wireless network.
+-1 	Radio link standard 802.
+-1 	11a have maximum transmission rate of 54Mbps.
+-1 	First protocol is session initiation protocol (SIP) and second is H.
+-1 	323 protocol.
+-1 	First one has an agent called SIP proxy.
+-1 	Second have a gateway reflects the characteristics of a Switched Circuit Network (SCN).
+-1 	With this comparison we have required to obtain a better understanding of wireless network suitability for voice communication in IP network.
+
+
+# 111
+### http://arxiv.org/abs/1311.3184v1
+## Comparative Study of QOS Parameters of SIP protocol in 802.11a and 802.11b Network
+
+-1 	Present day, the internet telephony growth is much faster than previous.
+-1 	Now we are familiar with digitized packet of voice stream.
+-1 	So, we have required VOIP communication.
+-1 	SIP is one type of VOIP protocol.
+-1 	This one has a SIP proxy.
+-1 	There have one of the important communication environment Wireless LAN (WLAN).
+-1 	WLAN have different radio link standard.
+-1 	Here I am comparing SIP protocol in two radio link standard 802.
+-1 	11a and 802.
+-1 	11b environment.
+-1 	The first one have maximum transmission rate of 54Mbps and second one have maximum transmission rate of 11Mbps.
+-1 	In this paper I want to show the results in a comparative plot.
+-1 	These comparisons include server /client throughput, packet drops, end to end delay etc.
+
+
+# 112
+### http://arxiv.org/abs/1311.3483v1
+## Subsiding routing misbehavior in MANET using "Mirror Model"
+
+-1 	Noncooperation or failure to work together is a big challenge that surely degrades the performance and reliability of Mobile Adhoc Networks.
+-1 	In MANETs, nodes have dual responsibilities of forwarding and routing, that's why it needs unison with nodes.
+-1 	To sort out non-cooperation a real life behavior should be implemented, so that misbehavior is nullified.
+-1 	In this paper, we present the "Mirror Model" that strictly enforces cooperation due to its punishment strategy.
+-1 	Node's behavior is watched by its neighbors in PON mode, to update the NPF, NPRF values for a threshold time.
+-1 	After the expiry of the threshold time each node calculates the PFR and broadcasts its neighbors.
+-1 	Similarly all neighbors broadcasted PFR is received and processed by the node to define the 'G' and 'BP' values.
+-1 	The G value is used to isolate selfish nodes from the routing paths and BP denotes the amount of packets to be dropped by an honest node against a selfish node in spite of its misbehavior/packet drops.
+-1 	Cooperation within the neighbors, certainly result in subsiding misbehavior of selfish nodes, therein enhancing cooperation of the whole MANET.
+-1 	This model ensures honesty and reliability in MANET because it does not eliminate a node, but it behaves in the same way as the node behaved.
+-1 	Therefore, it justifies its name, after all mirrors reflects the same.
+-1 	We have implemented the model in "GloMoSim" on top of the DSR protocol, resulting its effectiveness, as compared to the DSR protocol when the network is misconducting for its selfish needs.
+
+
+# 113
+### http://arxiv.org/abs/1311.4293v1
+## Scalable Oriented-Service Architecture for Heterogeneous and Ubiquitous IoT Domains
+
+-1 	Internet of Things (IoT) grows quickly, and 50 billion of IoT devices will be interconnected by 2020.
+-1 	For the huge number of IoT devices, a high scalable discovery architecture is required to provide autonomous registration and look-up of IoT resources and services.
+-1 	The architecture should enable dynamic updates when new IoT devices are incorporated into Internet, and changes are made to the existing ones.
+-1 	Nowadays in Internet, the most used discovery architecture is the Domain Name System (DNS).
+-1 	DNS offers a scalable solution through two distributed mechanisms: multicast DNS (mDNS) and DNS Service Directory (DNS-SD).
+-1 	Both mechanisms have been applied to discover resources and services in local IoT domains.
+-1 	However, a full architecture has not still been designed to support global discovery, local directories and a search engine for ubiquitous IoT domains.
+-1 	Moreover, the architecture should provide other transversal functionalities such as a common semantic for describing services and resources, and a service layer for interconnecting with M2M platforms and mobile clients.
+-1 	This paper presents an oriented-service architecture based on DNS to support a global discovery, local directories and a distributed search engine to enable a scalable looking-up of IoT resources and services.
+-1 	The architecture provides two lightweight discovery mechanisms based on mDNS and DNS-SD that have been optimized for the constraints of IoT devices to allow autonomous registration.
+-1 	Moreover, we analyse and provide other relevant elements such semantic description and communications interfaces to support the heterogeneity of IoT devices and clients.
+-1 	All these elements contribute to build a scalable architecture for the discovery and access of heterogeneous and ubiquitous IoT domains.
+
+
+# 114
+### http://arxiv.org/abs/1312.4179v3
+## Multi-Parameter Decision Support with Data Transmission over GSM/GPRS Network: a Case Study of Landslide Monitoring
+
+-1 	The planet Earth has hundreds of impact events, with some occurrences causing both in terms of human casualty as well as economic losses.
+-1 	Such attitudes of earth pushed the frontiers to develop innovative monitoring strategies for the earth system.
+-1 	To make that real, although, will require coherent and real-time data by observing the earth behavior contiguously.
+-1 	Wireless Sensor Network (WSN) appears to be the best suitable infrastructure to sense environmental parameters of our interests.
+-1 	In this event of earth observation, another important issue is the monitoring system with high level of precision.
+-1 	There are different types of sensors to measure the behavioral aspects of earth.
+-1 	The sensors integrated with WSN, provide an accurate and contiguous data for analysis and interpretation.
+-1 	This paper briefly addresses earth observation and areas of critical importance to people and society.
+-1 	A case study has also been carried out for disaster like Landslide in the North Eastern region of India.
+-1 	Application software has been developed for the said study for online data acquisition and analysis with pre-disaster early warning system.
+-1 	The system monitors the changing geotechnical condition of this region using various geo-technical sensors like Rain gauge, In-place Inclinometer, Tilt-meter, Piezo-meter and Crack meter.
+-1 	This paper also touches upon the aspects of data transmission over Global System for Mobile Communication (GSM) / General Packet Radio Service (GPRS) to a remote data center.
+
+
+# 115
+### http://arxiv.org/abs/1312.6501v1
+## On-Demand WebRTC Tunneling in Restricted Networks
+
+-1 	In this paper we present the implementation of a WebRTC gateway service that can forward ad-hoc RTP data plane traffic from a browser on one local network to a browser on another local network.
+-1 	The advantage compared to the existing IETF STUN (RFC 5389), TURN (RFC 5766) and ICE (RFC 5245) protocols is that it does not require a public host and port mapping for each participating local host, and it works with more restrictive firewall policies.
+-1 	WebRTC implements ICE which combines STUN and TURN probes to automatically find the best connection between two peers who want to communicate.
+-1 	In corporate networks, simple hole punching and NAT traversal techniques typically do not work, e.g. because of symmetric NATs.
+-1 	Dynamic allocation of ports on an external 3rd party relay service is also typically blocked on restricted hosts.
+-1 	In our use case, doctors at hospitals can only access port 80 through the hospital firewall on external machines, and they need to communicate with patients who are typically behind a NAT in a local WiFi network.
+-1 	VPN solutions only work for staff but not between patients and staff.
+-1 	Our solution solves this problem by redirecting all WebRTC traffic through a gateway service on the local network that has a secure tunnel established with a public gateway.
+-1 	The public gateway redirects traffic from multiple concurrent streams securely between local gateway services that connect to it.
+-1 	The local gateways also communicate with browsers on their local network to mimic a direct browser-to-browser connection without having to change the browser runtime.
+-1 	We have demonstrated that this technique works well within the hospital network and arbitrary patient networks, without the need for any individual host configuration.
+-1 	In our evaluation we show that the latency overhead is 18-20 ms for each concurrent stream added to the same gateway service.
+
+
+# 116
+### http://arxiv.org/abs/1312.6829v1
+## A Localization Strategy Based on N-times Trilateral Centroid with Weight
+
+-1 	Localization based on received signal strength indication (RSSI) is a low cost and low complexity technology, and it is widely applied in distance-based localization of wireless sensor networks (WSNs).
+-1 	Error of existed localization technologies is significant.
+-1 	This paper presents the N-times trilateral centroid weighted localization algorithm (NTCWLA), which can reduce the error considerably.
+-1 	Considering the instability of RSSI, we use the weighted average of many RSSIs as current RSSI.
+-1 	To improve the accuracy we select a number of (no less than three) reliable beacon nodes to increase the localization times.
+-1 	Then we calculate the distances between reliable beacon nodes and the mobile node using an empirical formula.
+-1 	The mobile node is located N times using the trilateral centroid algorithm.
+-1 	Finally, we take the weighted average of the filtered reference coordinates as the mobile node's coordinates.
+-1 	We conduct experiments with the STM32W108 chip which supports IEEE 802.
+-1 	15.
+-1 	4.
+-1 	The results show that the proposed algorithm performs better than the trilateral centroid algorithm.
+
+
+# 117
+### http://arxiv.org/abs/1312.6837v1
+## Evaluating IEEE 802.15.4 for Cyber-Physical Systems
+
+-1 	With rapid advancements in sensing, networking, and computing technologies, recent years have witnessed the emergence of cyber-physical systems (CPS) in a broad range of application domains.
+-1 	CPS is a new class of engineered systems that features the integration of computation, communications, and control.
+-1 	In contrast to general-purpose computing systems, many cyber-physical applications are safety-cricial.
+-1 	These applications impose considerable requirements on quality of service (QoS) of the employed networking infrastruture.
+-1 	Since IEEE 802.
+-1 	15.
+-1 	4 has been widely considered as a suitable protocol for CPS over wireless sensor and actuator networks, it is of vital importance to evaluate its performance extensively.
+-1 	Serving for this purpose, this paper will analyze the performance of IEEE 802.
+-1 	15.
+-1 	4 standard operating in different modes respectively.
+-1 	Extensive simulations have been conducted to examine how network QoS will be impacted by some critical parameters.
+-1 	The results are presented and analyzed, which provide some useful insights for network parameter configuration and optimization for CPS design.
+
+
+# 118
+### http://arxiv.org/abs/1412.0366v1
+## Node Failure Time and Coverage Loss Time Analysis for Maximum Stability Vs Minimum Distance Spanning Tree based Data Gathering in Mobile Sensor Networks
+
+-1 	A mobile sensor network is a wireless network of sensor nodes that move arbitrarily.
+-1 	In this paper, we explore the use of a maximum stability spanning tree-based data gathering (Max.
+-1 	Stability-DG) algorithm and a minimum-distance spanning tree-based data gathering (MST-DG) algorithm for mobile sensor networks.
+-1 	We analyze the impact of these two algorithms on the node failure times and the resulting coverage loss due to node failures.
+-1 	Both the Max.
+-1 	Stability-DG and MST-DG algorithms are based on a greedy strategy of determining a data gathering tree when one is needed and using that tree as long as it exists.
+-1 	The Max.
+-1 	Stability-DG algorithm assumes the availability of the complete knowledge of future topology changes and determines a data gathering tree whose corresponding spanning tree would exist for the longest time since the current time instant; whereas, the MST-DG algorithm determines a data gathering tree whose corresponding spanning tree is the minimum distance tree at the current time instant.
+-1 	We observe the Max.
+-1 	Stability-DG trees to incur a longer network lifetime (time of disconnection of the network of live sensor nodes due to node failures), a larger coverage loss time for a particular fraction of loss of coverage as well as a lower fraction of coverage loss at any time.
+-1 	The tradeoff is that the Max.
+-1 	Stability-DG trees incur a lower node lifetime (the time of first node failure) due to repeated use of a data gathering tree for a longer time.
+
+
+# 119
+### http://arxiv.org/abs/1412.1395v2
+## A High Efficiency MAC Protocol for WLANs: Providing Fairness in Dense Scenarios
+
+-1 	Collisions are a main cause of throughput degradation in WLANs.
+-1 	The current contention mechanism used in IEEE 802.
+-1 	11 networks is called Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA).
+-1 	It uses a Binary Exponential Backoff (BEB) technique to randomise each contender attempt of transmitting, effectively reducing the collision probability.
+-1 	Nevertheless, CSMA/CA relies on a random backoff that while effective and fully decentralised, in principle is unable to completely eliminate collisions, therefore degrading the network throughput as more contenders attempt to share the channel.
+-1 	To overcome these situations, Carrier Sense Multiple Access with Enhanced Collision Avoidance (CSMA/ECA) is able to create a collision-free schedule in a fully decentralised manner using a deterministic backoff after successful transmissions.
+-1 	Hysteresis and Fair Share are two extensions of CSMA/ECA to support a large number of contenders in a collision-free schedule.
+-1 	CSMA/ECA offers better throughput than CSMA/CA and short-term throughput fairness.
+-1 	This work describes CSMA/ECA and its extensions.
+-1 	Additionally, it provides the first evaluation results of CSMA/ECA with non-saturated traffic, channel errors, and its performance when coexisting with CSMA/CA nodes.
+-1 	Furthermore, it describes the effects of imperfect clocks over CSMA/ECA and present a mechanism to leverage the impact of channel errors and the addition/withdrawal of nodes over collision-free schedules.
+-1 	Finally, experimental results on throughput and lost frames from a CSMA/ECA implementation using commercial hardware and open-source firmware are presented.
+
+
+# 120
+### http://arxiv.org/abs/1412.2168v1
+## An Energy Efficient Risk Notification Message Dissemination Protocol for Vehicular Ad hoc Networks
+
+-1 	We propose the design and development of an energy-efficient Risk Notification Message Dissemination Protocol (RNMDP) for vehicular ad hoc networks (VANETs).
+-1 	RNMDP propagates Risk Notification Messages (RNMs) from their location of origin (called the Risk Zone) to vehicles approaching the Risk Zone.
+-1 	RNMDP assumes each node is aware of its current location in the network.
+-1 	The protocol works as follows: A RNM is broadcast in the neighborhood of the Risk Zone.
+-1 	A node receiving the RNM from another node waits for a Rebroadcast-Wait-Time before deciding to rebroadcast the message.
+-1 	The Rebroadcast-Wait-Time for a node is modeled based on the ratio of the distance between the node and the immediate sender of the RNM and the direction of movement of the node.
+-1 	Priority for rebroadcast is given for nodes farthest away from the sender and traveling towards the Risk Zone.
+-1 	Nodes that are traveling in lanes in direction away from the Risk Zone are also considered for rebroadcast, albeit with a larger Rebroadcast-Wait-Time.
+-1 	During the Rebroadcast-Wait-Time, if a node hears the same RNM again rebroadcast in the neighborhood, then the node stops from further broadcasting the message.
+-1 	If a node does not hear the RNM in its neighborhood during the RebroadcastWait-Time, the node broadcasts the message in its neighborhood.
+-1 	A RNM is considered to have been delivered to all the vehicles in the road, if the message reaches the Target Zone.
+-1 	The performance of RNMDP has been compared with that of the commonly used flooding strategy through extensive simulations conducted for highway networks with different number of lanes and lane density.
+-1 	Simulation results indicate that with a slightly larger delay (i.e., no more than 35% of the delay incurred for flooding), RNMDP can achieve the same message delivery ratio attained by flooding, but at a relatively much lower energy loss compared to flooding.

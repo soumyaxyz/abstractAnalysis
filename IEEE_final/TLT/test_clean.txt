@@ -1,0 +1,607 @@
+### 1
+##### doi: 10.1109/TLT.2017.274196
+#### IRT-Based Adaptive Hints to Scaffold Learning in Programming
+
+
+0	  Over the past few decades, many studies conducted in the field of learning science have described that scaffolding plays an important role in human learning.
+0	  To scaffold a learner efficiently, a teacher should predict how much support a learner must have to complete tasks and then decide the optimal degree of assistance to support the learner's development.
+0     Nevertheless, it is difficult to ascertain the optimal degree of assistance for learner development.
+1	  For this study, it is assumed that optimal scaffolding is based on a probabilistic decision rule: Given a teacher's assistance to facilitate the learner development, an optimal probability exists for a learner to solve a task.
+1	  To ascertain that optimal probability, we developed a scaffolding system that provides adaptive hints to adjust the predictive probability of the learner's successful performance to the previously determined certain value, using a probabilistic model, i.e., item response theory (IRT).
+1	  Furthermore, using the scaffolding system, we compared learning performances by changing the predictive probability.
+2     Results show that scaffolding to achieve 0.5 learner success probability provides the best performance.
+2     Additionally, results demonstrate that a scaffolding system providing 0.5 probability decreases the number of hints (amount of support) automatically as a fading function according to the learner's growth capability.
+
+
+### 2
+##### doi: 10.1109/TLT.2017.274370
+#### Rewrite Rules for Debugging Student Programs in Programming Tutors
+
+
+0	  Data-driven intelligent tutoring systems learn to provide feedback based on past student behavior, reducing the effort required for their development.
+0	  A major obstacle to applying data-driven methods in the programming domain is the lack of meaningful observable actions for describing the students problem-solving process.
+1     We propose rewrite rules as a language-independent formalization of programming actions in terms of code edits.
+1	  We describe a method for automatically extracting rewrite rules from students program-writing traces, and a method for debugging new programs using these rules.
+1	  We used these methods to automatically provide hints in a web application for learning programming.
+2     In-class evaluation showed that students receiving automatic feedback solved problems faster and submitted fewer incorrect programs.
+2     We believe that rewrite rules provide a good basis for further research into how humans write and debug programs.
+
+
+### 3
+##### doi: 10.1109/TLT.2017.278775
+#### A Framework for Analyzing and Evaluating Architectures and Control Strategies in Distributed Remote Laboratories
+
+
+0	  Remote Access Laboratories (RALs) have been used to develop experimental knowledge about practical engineering topics for a while.
+0	  Distributed remote laboratories aim to share experiment among institutions and individuals through a distributed architecture.
+0     Experiments from diverse areas are combined as part of a larger system.
+0	  Multiple control strategies are used to integrate experiments in Remote Laboratory Management Systems (RLMSs).
+1	  This work defines two main categories to analyze the various implementations, white box and black box approaches.
+0     Experiments can be on a spectrum between these two extremes, sharing properties of both.
+0     When integrating an existing experiment into a new distributed RAL system, it is useful to evaluate the experiment with respect to its host or new RLMS for determining the best strategies to assimilate it.
+1     This paper provides a framework for such evaluation based on a number of properties of experiments.
+1     The proposed framework is called SHASS (Software, Hardware, Assessment, Support, and Share-ability) based on several factors such as the hardware used, the software to create the program, methods of sharing, user's support, and assessment of user's performance.
+1     It can be used to evaluate quality and identify options for improvements within an experiment's existing RLMS as well.
+2     Using this framework, a black box and white box approach are compared using two examples - federated and Peer-to-Peer RAL.
+2	  The evaluation focuses on technical capabilities and development possibilities.
+2     A set of four experiments are also analysed to illustrate the utility of the framework in creating and improving experiments with respect to their RLMS.
+
+
+### 4
+##### doi: 10.1109/TLT.2017.276622
+#### Understanding Learning Resources Metadata for Primary and Secondary Education
+
+
+0	  Educational resources can be easily found on the Web.
+0	  Most search engines base their algorithms on a resource's text or popularity, requiring teachers to navigate the results until they find an appropriate resource.
+0     This makes searching for resources a tedious and cumbersome task.
+0     Specialized repositories contain resources that are annotated with metadata that aim to facilitate the discovery of quality resources.
+0     Nevertheless, the abundance and variety of content make searching a complex task.
+0	  Recommender systems can assist teachers in finding the proper content by determining clusters of similar users and inferring users interest in a resource, assembling clusters of similar resources, or a mix of both.
+0	  Probabilistic model-based (PMB) techniques, on the other hand, make it possible to classify resources into more than one cluster with various degrees of probability.
+1	  In this paper, we used recommender systems and PMB techniques to analyze a dataset produced by primary and secondary level teachers over the course of four years and under natural conditions.
+2	  We found that a hybrid recommendation, the Collaborative Topic Regression (CTR) technique, performs better than other approaches despite the high sparseness of the dataset.
+2     In addition, learning resources annotated with curriculum metadata had a positive impact on recommender's accuracy whereas free-text or other metadata negatively impacted the results.
+
+
+### 5
+##### doi: 10.1109/TLT.2017.276359
+#### The Effect of Different Features for Educational Computer-Based Competition Environments
+
+
+0	  Educational computer-based competition environments need to be designed with a set of features that enhance the learning process.
+0	  Although recently some frameworks for the design of educational computer-based systems (e.g., educational games) have been proposed, they do not focus on the details of the competition.
+0	  Therefore, the design of educational computer-based competition environments is still an open issue.
+1	  We propose the 4NESS framework for the design of such competition environments.
+1	  This framework classifies the competition features into four dimensions: easiness, fairness, awareness, and adaptiveness.
+1	  We designed the ISCARE educational computer-based competition environment implementing these four dimensions to evaluate and validate some included features for competition, and conducted experiments during three consecutive years.
+2     Students considered the computer-based competition environment with the proposed features, including a modification of the Swiss system, to be very easy to use, fair for pairing students, moderately fair for calculating scores, with good awareness of their state during the competition and that of their peers, and with contents of appropriate level, especially for the group working with adaptive contents.
+2     Adaptation of contents made students increase their learning gains in 0.5 sigmas during the competition.
+2     Pairings were seen as with students of similar levels.
+2     And final scores were moderately fair: while the order tends to be similar as compared to the results in the post-test, students grades with high performance tend to be lower in the competition environment.
+
+
+### 6
+##### doi: 10.1109/TLT.2018.285680
+#### Blending Digital and Face-to-Face Interaction Using a Co-Located Social Media App in Class
+
+
+0	  Improving face-to-face (f2f) interaction in large classrooms is a challenging task as student participation can be hard to initiate.
+0	  Thanks to the wide adoption of personal mobile devices, it is possible to blend digital and face-to-face interaction and integrate co-located social media applications in the classroom.
+1	  To better understand how such applications can interweave digital and f2f interaction, we performed a detailed analysis of real-world use cases of a particular co-located social media app: SpeakUp.
+1     In a nutshell, SpeakUp allows the creation of temporary location-bound chat rooms that are accessible by nearby users who can post and rate messages anonymously.
+2     We find that the use of co-located social media is associated with an increase in content-related interaction in the class.
+2     Furthermore, it is associated with an increase in the perceived learning outcomes of students compared to a control group.
+2     We further provide design guidelines to blend digital and f2f interaction using co-located social media in the classroom based on 11 case studies covering over 2,000 students.
+
+
+### 7
+##### doi: 10.1109/TLT.2017.278886
+#### DEDOS: An Authoring Toolkit to Create Educational Multimedia Activities for Multiple Devices
+
+
+0	  Information and Communication Technologies offer new possibilities for teachers to enhance their teaching methods.
+0	  The increasing use of personal computers, tablets, interactive whiteboards, or even multitouch tabletops in the classrooms seems to attract the interest of the students.
+0     However, there are not many tools that allow teachers to create multimedia activities for all these technologies in an effortless way.
+0     Most of current authoring tools either focus on creating content for only one device or they do not fully exploit the benefits of rich content for designing engaging educational activities.
+1	  In this paper, we present an authoring toolkit composed by two applications: DEDOS-Editor, which allow teachers to design their own learning activities, and DEDOS-Web, which allows the students to perform those activities adapting them to multiple devices.
+2	  To test both tools, we have performed two evaluations.
+2	  One with teachers to test the authoring tools and a second one with primary school students to test if the activities designed with this tool enhance their learning process.
+2     Results show that DEDOS-Editor is an easy to learn authoring tool which helps teachers to complement their learning methods while DEDOS-Web is flexible enough to create several learning scenarios from just one set of activities, factors which lead to achieving positive learning outcomes.
+
+
+### 8
+##### doi: 10.1109/TLT.2018.280849
+#### Game of Blazons: Helping Teachers Conduct Learning Situations That Integrate Web Tools and Multiple Types of Augmented Reality
+
+
+0	  Several studies have explored how to help teachers carry out learning situations involving Augmented Reality (AR), a technology that has shown different affordances for learning.
+0	  However, these works tend to rely on specific types of AR, focus on particular types of spaces, and are generally disconnected from other technologies widely used in education, such as VLEs or Web 2.0 tools.
+0     These constraints limit the possible range of activities that can be conducted and their integration into the existing classroom practice.
+1     GLUEPS-AR is a system that can help overcome these limitations, aiding teachers in the creation and enactment of learning situations that may combine multiple types of AR with other common web tools.
+1	  This paper presents an evaluation study conducted on Game of Blazons, a learning situation carried out by two university teachers using GLUEPS-AR, and framed within two days of outdoor activities in a village in Spain.
+2	  The evaluation showed that GLUEPS-AR provided an affordable support to the participant teachers to integrate several activities that made use of multiple types of AR, common web tools, and augmented paper, into a unique learning situation.
+
+
+### 9
+##### doi: 10.1109/TLT.2017.277225
+#### MEBook: Multimedia Social Greetings Intervention for Children with Autism Spectrum Disorders
+
+
+0	  Autism spectrum disorder (ASD) is a developmental disorder that impairs the development of social and communication skills.
+0	  There is evidence that children with ASD prefer images of self over others[1] .
+0     These studies may explain the effectiveness of video self-modeling (VSM), an evidence-based ASD intervention in which one learns by watching oneself on video performing a target behavior.
+0     VSM content is difficult to create as target behaviors are sporadic.
+1     In this paper, we propose the MEBook system which uses a Kinect sensor to inject self-images into a gesture-based social narrative to teach children with ASD proper greeting behaviors.
+1     MEBook consists of two components.
+1     The first component is a social narrative.
+1     A social narrative is an animated story about the main character meeting and greeting different cartoon characters in a particular setting.
+1     Self-modeling is achieved by first replacing the main characters face with an image of the learner, and then animating the learner's body and voice to match the narration.
+1     The second component is a positive reinforcement practice session in which the subject is prompted to greet different cartoon characters.
+1	  Through depth-based body posture tracking, proper greeting behaviors are recognized and immediately reinforced with praise and visual confetti.
+2	  Novel computational multimedia tools are proposed to turn video recordings of successful attempts into VSM content, thereby alleviating the tedious production process.
+2     A multiple-baseline single subject pilot study has been conducted and the preliminary results show that MEBook is potentially effective in teaching greeting behaviors to children with ASD.
+
+
+### 10
+##### doi: 10.1109/TLT.2017.277350
+#### Educational Functions and Design of Badge Systems: A Conceptual Literature Review
+
+
+0	  In today's technological era, emerging educational technologies, such as digital badges, have shown the potential for fostering student learning.
+1	  To examine the major considerations undergirding the design of digital badges used in an educational context, a conceptual literature review of multidisciplinary electronic databases oriented towards computing and education was undertaken.
+2	  The three core design dimensions found in our analysis were the specific function of badges, the structure of badge systems, and the different types of design and interaction features used with badges.
+2     We highlight the main effects of studies addressing these dimensions and provide recommendations and suggestions for further research to educational stakeholders who seek to better understand how to implement badges within their own institutions.
+
+
+### 11
+##### doi: 10.1109/TLT.2018.281019
+#### a Web-Based Tool for Engineering Design Education
+
+
+1	  This article describes the development of the Design Evaluation and Feedback Tool (DEFT), a custom-built web-based system that collects and reports data to support teaching, learning, and research in project-based engineering design education.
+1	  The DEFT system collects data through short weekly questionnaires for students and instructors in engineering design classes, and uses these data to produce weekly reports for both types of user.
+1	  The system is intended to engage students in reflective reporting on their experiential learning, to support educators in coaching student designers, and to serve as a data collection tool for education researchers.
+1	  DEFT was developed through an iterative design and evaluation process, involving 185 students and 18 instructors at two universities.
+2	  The system was evaluated using a combination of participation observation, user interviews, and anonymous questionnaires, and the results guided subsequent improvements to the system.
+2     This article describes the development and evaluation process, provides an overview of the resulting system, and ends by discussing the potential for DEFT to be used in evaluating and improving project-based design classes.
+
+
+### 12
+##### doi: 10.1109/TLT.2018.285375
+#### An Investigation of the Effects of Measuring Authentic Contexts on Geometry Learning Achievement
+
+
+0	  Geometry students have few opportunities to apply geometric concepts and solve geometry problems in authentic contexts.
+0	  We developed a Ubiquitous Geometry (UG) system to teach geometry to elementary students by using it to measure common objects in authentic contexts.
+1	  The instant study investigates the effects of UG on student geometry estimation ability, geometry learning achievement, spatial ability, and learning geometric concepts and explores the correlations.
+1	  Participants were 82 fifth grade students divided into the experiment group (EG), the ruler measurement group (RG), and the control group (CG).
+2     The results revealed that the EG students performed significantly better than the others in geometry estimation ability, geometry learning achievement, spatial ability, and understanding geometric concepts.
+2     We found that geometry estimation ability is significantly related to spatial ability and geometry learning achievement, which means fostering estimation ability through measuring authentic objects could help students to learn geometry.
+2     Finally, students perceived that UG engaged them more in geometry and improved their interest in learning because the activity designs related more to their daily life, thereby enhancing their sense of confidence and satisfaction.
+2     Conclusions include that UG effectively enhances student geometry estimation ability, geometry learning achievement, spatial ability, and understanding of geometric concepts.
+
+
+### 13
+##### doi: 10.1109/TLT.2018.285877
+#### Approaching Sustainability Learning Via Digital Serious Games
+
+
+0	  Finding proper ways to address learning about sustainability is a relevant issue.
+0	  Sustainability learning has to face some inherent complexities, due to two main factors: the interdisciplinary domains related to sustainability issues, such as ecology, economics, politics, and culture, and the involvement of several social structures, such as individuals, families, and communities.
+0	  One recent research proposal is to exploit serious games to foster learning in this area.
+0     This resulted in a significant increase in the number of approaches discussed in the literature over the last few years.
+0     Notwithstanding this growing scenario, sustainability serious games still lack a reasoned evaluation, in order to clarify their possible applications and to define effective design strategies to approach them.
+0	  To this end, in this paper, we investigate the current state of the art of serious games for sustainability, identifying, and discussing the most common applications.
+1	  The research process included both scientific publications and unpublished materials.
+1	  References were searched according to guiding questions, which helped focus the extraction of information, and through recursive browsing of their citations.
+1	  Based on the research results, we propose a taxonomy for sustainability serious games and a classification of reviewed works according to this taxonomy.
+2	  We also analyze design strategies, drawn from the literature, expressly conceived for the development of effective sustainability serious games.
+2     Finally, we discuss the current challenges and present possible areas of research in this field.
+
+
+### 14
+##### doi: 10.1109/TLT.2019.292672
+#### Collaborative Educational Environments Incorporating Mixed Reality Technologies: A Systematic Mapping Study
+
+
+0	  In this paper, we report findings from a systematic mapping study, conducted to review the existing literature on collaborative educational environments incorporating mixed reality technologies.
+0	  There is increasing interest in mixed reality technologies in education, especially with the introduction of new over head mounted displays (OHMDs), such as HoloLens, Oculus Rift, and HTC Vive.
+0	  with the consideration of areas, such as education, dynamic technology, and complex environments, a research area is identified.
+1	  We carried out an extensive review of the literature from 2007 to 2017 and conducted an analysis of the works on mixed reality technologies and its subcategories applied to collaborative education environments.
+2     Results highlighted the lack of research across the mixed reality spectrum, especially in the augmented virtuality subcategory, as well as technical limitations such as response time in the development of mixed reality technologies for collaborative environments.
+2     Furthermore, the difficulty of teaching professionals to replicate mixed reality experiments in real environments, due to the technical skills required, was identified.
+2     The main contribution of this paper is the discussion of the current works with visualization of the present state of the area, which is aimed to encourage educators to develop mixed reality artefacts and conduct further research to support collaborative educational environments.
+
+
+### 15
+##### doi: 10.1109/TLT.2018.285879
+#### Exploring Student Interactions With Preparation Activities in a Flipped Classroom Experience
+
+
+0	  The success of the flipped classroom (FC) is effectively reliant on the level of student engagement with the preparatory activities prior to attending face-to-face teaching sessions.
+0	  Information about the nature and level of student engagement with these activities can help instructors make informed decisions regarding how to best support student learning.
+0	  Despite the comprehensive data collection enabled by the increasing presence of education technologies, few studies have used these data to investigate the range of strategies students employ in FC models.
+1	  This study addresses this deficit by proposing an analytical approach that allows for exploring, first, the strategies students use to interact with online preparation activities; and, second, evolution of those strategies over the duration of a course delivered with a FC pedagogy.
+2     The proposed approach identified eight learning strategies and six trajectories of strategy change over the duration of the course, with statistically significant effects of strategy change trajectories on academic performance.
+
+
+### 16
+##### doi: 10.1109/TLT.2018.285158
+#### How Teachers Make Dashboard Information Actionable
+
+
+1	  This study investigates how teachers use dashboards in primary school classrooms.
+1	  While learners practice on a tablet real-time data indicating learner progress and performance is displayed on teacher dashboards.
+1     This study examines how teachers use the dashboards, applying Verberts’ learning analytics process model.
+1     Teacher dashboard consultations and resulting pedagogical actions were observed in 38 mathematics lessons.
+1     In stimulated recall interviews, the 38 teachers were asked to elaborate on how they reflect on and make sense of the information on the dashboard.
+2     The results showed that teachers consulted the dashboard on average 8.3 times per lesson.
+2     Teachers activated existing knowledge about students and the class to interpret dashboard information.
+2     Task and process feedback were the pedagogical actions most often used following dashboard consultation.
+2     Additionally, teachers who consulted the dashboard more often activated more and more diverse pedagogical knowledge to interpret the data and, consequently, gave more and more diverse feedback.
+2     These results indicated that teacher dashboards were indeed influencing teachers’ pedagogical actions in their daily classroom activities.
+2     This study provided the first evidence that dashboards progressively impact teaching practice and initiate more profound behavioral changes as teachers become more proficient in using them.
+
+
+### 17
+##### doi: 10.1109/TLT.2018.283311
+#### Inquiry-Based Learning With RoboGen: An Open-Source Software and Hardware Platform for Robotics and Artificial Intelligence
+
+
+0	  It has often been found that students appreciate hands-on work, and find that they learn more with courses that include a project than those relying solely on conventional lectures and tests.
+0	  This type of project driven learning is a key component of “Inquiry-based learning” (IBL), which aims at teaching methodology as well as content by incorporating the student as an actor rather than a spectator.
+0	  Robotics applications are especially well-suited for IBL due to the value of trial and error experience, the multiple possibilities for students to implement their own ideas, and the importance of programming, problem-solving, and electro-mechanical skills in real world engineering and science jobs.
+0     Furthermore, robotics platforms can be useful teaching media and learning tools for a variety of topics.
+1     Here, we present RoboGen: an open-source, web-based, software, and hardware platform for Robotics and Artificial Intelligence with a particular focus on Evolutionary Robotics.
+2     We describe the platform in detail, compare it to existing alternatives, and present results of its use as a platform for Inquiry-based learning within a master's level course at the Ecole Polytechnique Fédérale de Lausanne.
+
+
+### 18
+##### doi: 10.1109/TLT.2018.284071
+#### Persuasive Technologies in m-Learning for Training Professionals: How to Keep Learners Engaged With Adaptive Triggering
+
+
+0	  Global corporations are characterized by a large number of employees and geographically dispersed offices.
+0	  Moreover, the competitiveness in the global market requires them to invest in their human resources to be able to remain a step ahead of competition.
+0	  Implementing large scale classical education in such environments is challenging and costly.
+0	  Mobile e-learning (m-learning) allows users to tailor their professional training and education to their needs and time constraints.
+0     However, in self-paced education, it is very hard to keep user retention and engagement.
+1	  To achieve the latter, we have designed and developed an m-learning platform for corporate environments based on the triggering persuasive technology principle that try to incite users in regularly using the platform.
+1	  We have evaluated the application in-the-wild in corporate environments of differently sized companies with 300 users.
+1	  Users were subjected to three different conditions: no triggering, simple regular triggering, and adaptive triggering.
+2     The results show that the use of adaptive triggering in m-learning increases user engagement as well as course completion rates more than simple regular triggering and no triggering.
+
+
+### 19
+##### doi: 10.1109/TLT.2018.285680
+#### Prediction in MOOCs: A Review and Future Research Directions
+
+
+0	  This paper surveys the state of the art on prediction in MOOCs through a systematic literature review (SLR).
+0	  The main objectives are: first, to identify the characteristics of the MOOCs used for prediction, second, to describe the prediction outcomes, third, to classify the prediction features, fourth, to determine the techniques used to predict the variables, and, fifth, to identify the metrics used to evaluate the predictive models.
+2     Results show there is strong interest in predicting dropouts in MOOCs.
+2     A variety of predictive models are used, though regression and support vector machines stand out.
+2     There is also wide variety in the choice of prediction features, but clickstream data about platform use stands out.
+2     Future research should focus on developing and applying predictive models that can be used in more heterogeneous contexts (in terms of platforms, thematic areas, and course durations), on predicting new outcomes and making connections among them (e.g., predicting learners’ expectancies), on enhancing the predictive power of current models by improving algorithms or adding novel higher-order features (e.g., efficiency, constancy, etc.
+
+
+### 20
+##### doi: 10.1109/TLT.2018.286174
+#### Reducing Cognitive Load During Closed Concept Map Construction and Consequences on Reading Comprehension and Retention
+
+
+0	  Computer-assisted concept map building from provided pieces by using Kit-build is an activity which can promote comprehension and retention.
+0	  However, users are burdened with searching for pieces and organizing the layout, which are believed to increase the overall cognitive load of the activity.
+1	  In this paper, we describe the Airmap interface, which uses automatic layout management and spatial separation to improve cognitive load during concept map building.
+1	  Two experiments were done in which participants ($N= 60, N=50$) built a map after reading a text.
+2     Results show that Airmap is successful in reducing cognitive load without significant differences in immediate reading comprehension.
+2     However, there is a significant difference in performance after a two week retention period.
+2     Results give new insight into the retention enhancing aspects of building closed concept maps, indicating that the cognitive load reduced by the new interface is of the germane type, affecting how deep in memory users commit the information.
+
+
+### 21
+##### doi: 10.1109/TLT.2018.285930
+#### Systematic Review of Discussion Forums in Massive Open Online Courses (MOOCs)
+
+
+0	  Discussion forums are the primary and most widely used venue for social learning and communication in MOOC context.
+0	  There has been an interest in the last few years to study the interactions and participation behavior in this environment.
+1	  This systematic review studied eighty-four papers published between 2013–2017 to provide a state of the art, and suggest future directions in the literature from two perspectives: descriptive analysis and content analysis.
+1	  The descriptive analysis aggregates the reviewed papers into five dimensions: time of the publication, stakeholders involved in the analysis, objectives, methods, and data sources used in the studies.
+1	  The content analysis aims to highlight the main issues addressed and the major contributions of the papers covered by the literature review.
+2	  These contributions can be categorized into three major areas, first, explore the relationship between forums participation and retention or learning outcomes and evaluate ways to increase the participation activity and learning outcomes, second, analyze participants’ contribution in the forum and how to organize the content and efficiently monitor them, finally, analyze participants’ interactions and how it influences learning.
+2     At the end, we offer some suggestions to further advance this area of research.
+
+
+### 22
+##### doi: 10.1109/TLT.2018.286541
+#### The Evaluation of a Serious Game to Improve Cross-Cultural Competence
+
+
+0	  Despite the growth in the use of serious games to train and evaluate cross-cultural compete
+1	  This study presents a framework for generating content for serious games targeting culturally appropriate communication and an evaluation of a game designed with the framework showing improved performance.
+1     This framework provides a means for game developers to leverage existing Cultural Dimension Theory to target training objectives tailored to specific participant types.
+1     A study experiment with 25 participants compares the effects a training system using this framework has on participants’ in-game score versus no training.
+2     Results show significant differences in game score when controlling for Cultural Intelligence.
+2     Additionally, the results show significant differences in variance between the trained group and the control group.
+2     These findings contribute to the current understanding of content development methods with respect to Cultural Training Serious Games.
+2     These findings warrant further investigation to understand the significance to other cultural training applications.
+
+
+### 23
+##### doi: 10.1109/TLT.2017.271416
+#### Understanding the Role of Micro-Blogging in B-Learning Activities: Kelluwen Experiences in Chilean Public Schools
+
+
+0	  With the goal of incorporating the use of social network tools into the formal curriculum of public schools in Chile, Kelluwen developed a b-learning approach in which students work in groups and engage in peer review dynamics.
+0	  To support such activities, the Kelluwen platform provides a complementary micro-blogging tool called Worklog.
+1	  In this study, we analyze data collected from Worklog messages generated by 101 cohorts of students from different schools and different levels, who participated in Kelluwen activities.
+1	  We first used machine learning techniques to discover three types of messages which coincide with three dialogic functions; referential, phatic, and emotional.
+1	  We then analyze how different factors of the cohort and group setup relate to the presence of different dialogic functions in Worklog.
+2     Results show the positive effect of pairing groups of students from different schools, and the positive influence of teacher participation.
+2     Our work contributes to the discussion on the role of technological social tools on the implementation of complex b-learning activities in schools, as well as demonstrating how automatic and semi-automatic data analysis techniques can be used to better understand such complex interventions.
+
+
+### 24
+##### doi: 10.1109/TLT.2017.273234
+#### User-Centric Evaluation of Recommender Systems in Social Learning Platforms: Accuracy is Just the Tip of the Iceberg
+
+
+0	  Recommender systems provide users with content they might be interested in.
+0	  Conventionally, recommender systems are evaluated mostly by using prediction accuracy metrics only.
+0     But, the ultimate goal of a recommender system is to increase user satisfaction.
+0     Therefore, evaluations that measure user satisfaction should also be performed before deploying a recommender system in a real target environment.
+0     Such evaluations are laborious and complicated compared to the traditional, data-centric evaluations, though.
+1	  In this study, we carried out a user-centric evaluation of state-of-the-art recommender systems as well as a graph-based approach in the ecologically valid setting of an authentic social learning platform.
+1     We also conducted a data-centric evaluation on the same data to investigate the added value of user-centric evaluations and how user satisfaction of a recommender system is related to its performance in terms of accuracy metrics.
+2     Our findings suggest that user-centric evaluation results are not necessarily in line with data-centric evaluation results.
+2     We conclude that the traditional evaluation of recommender systems in terms of prediction accuracy only does not suffice to judge performance of recommender systems on the user side.
+2     Moreover, the user-centric evaluation provides valuable insights in how candidate algorithms perform on each of the five quality metrics for recommendations: usefulness, accuracy, novelty, diversity, and serendipity.
+
+
+### 25
+##### doi: 10.1109/TLT.2017.272241
+#### Supporting Student Engagement Through Explorable Visual Narratives
+
+
+1	  This paper introduces VisEN, a novel visual narrative framework that has been shown to facilitate, support, and enhance student engagement in an adaptive Online Learning Environment (OLE).
+1	  VisEN provides explorable visual narratives personalized to students in order to support them in engaging with course content.
+2     The evaluation of VisEN showed that the explorable visual narratives encouraged the majority of `improving engagement students', that completed the Information Management and Data Engineering module as part of their undergraduate degree, to engage with assigned activities, and subsequently these learners enhanced their engagement levels.
+2     Visualizations have been used in OLEs to support students by presenting student data.
+2     Information Visualization research has demonstrated the value of visual narratives in communicating a message, by highlighting facts and making the message more memorable.
+2     In addition, visual data exploration can support users in understandings the message.
+2	  However, in OLEs, explorable visual narratives have not been used to date to support student engagement or to guide learners through a message that they could explore and understand.
+2     This paper evaluates the impact that explorable visual narratives had on student course engagement during two successive academic years.
+
+
+### 26
+##### doi: 10.1109/TLT.2017.272338
+#### Jutge.org: Characteristics and Experiences
+
+
+0	  Jutge.org is an open educational online programming judge designed for students and instructors, featuring a repository of problems that is well organized by courses, topics, and difficulty.
+0	  Internally, Jutge.org uses a secure and efficient architecture and integrates modern verification techniques, formal methods, static code analysis, and data mining.
+0	  Jutge.org has exhaustively been used during the last decade at the Universitat Politècnica de Catalunya to strengthen the learning-by-doing approach in several courses.
+2     This paper presents the main characteristics of Jutge.org and shows its use and impact on a wide range of courses covering basic programming, data structures, algorithms, artificial intelligence, functional programming, and circuit design.
+
+
+### 27
+##### doi: 10.1109/TLT.2017.274017
+#### Can Knowledge Awareness Tools Help Seek Learning Partners with Complementary Knowledge?
+
+
+1	  The present study aims to empiricaly demonstrate the viability and benefits of an awareness-based approach to diversify knowledge between potential learning partners.
+1	  Groups of four learners studied lesson material on biology.
+1	  After a knowledge test, the groups were to form collaborative learning dyads.
+1     Based on the test, a novel knowledge discrepancy calculation tool discerned group configurations with maximal and minimal discrepancies in knowledge between potential learning partners.
+1	  In the experimental condition, groups were made aware of the results of this calculation; in the control condition, groups were asked to form dyads absent any additional guidance.
+2     The significant majority of groups in the experimental condition formed dyads with maximal knowledge discrepancy between partners.
+2	  The majority of groups in the control condition formed dyads based on factors unrelated to learning.
+2     We anticipated that in dyads with discrepant knowledge, partners will be better able to fill each other's knowledge gaps.
+2     Although a significant difference between conditions did not transpire, there was a significant correlation between knowledge discrepancy and learning gain across conditions.
+2     The implications of these findings for effective learning group organization are discussed; implementation of the calculation tool in classrooms and MOOCs is proposed.
+
+
+### 28
+##### doi: 10.1109/TLT.2017.272388
+#### CCESK: A Chinese Character Educational System Based on Kinect
+
+
+1	  In this paper, a Chinese character educational system based on Kinect is proposed for guiding beginners to learn the basics of Chinese characters in a more intuitive way.
+1	  It extracts 19 common components, denoted as alphabets, from Chinese characters.
+1	  Nineteen postures were designed according to the shapes of these alphabets.
+1     Instead of memorizing Chinese characters through repetitive copying, students can first associate an alphabet with the corresponding designed posture.
+1	  Then, they break down a Chinese character into a set of alphabets in order to perform the sequence of corresponding postures so that they can easily remember the whole character.
+1	  Our proposed system contains two major functions: (1) the learning function that is responsible for delivering the courseware, and (2) the testing function that is used to let students acquire their learning progress through some tests.
+1	  A rule-based algorithm is designed to recognize the students' input postures captured from the Kinect motion sensor so as to determine whether the students have performed the correct postures.
+1	  We conducted a survey which involved 90 students to try our proposed system as well as two other learning modes for comparison.
+1	  Moreover, we have interviewed those 30 students who had tried our proposed system with some open-ended questions.
+2     The positive results show that the proposed system can promote students' experiences in learning Chinese characters.
+
+
+### 29
+##### doi: 10.1109/TLT.2017.272017
+#### Detecting Plagiarism Based on the Creation Process
+
+
+0	  All methodologies for detecting plagiarism to date have focused on the final digital “outcome”, such as a document or source code.
+0	  Our novel approach takes the creation process into account using logged events collected by special software or by the macro recorders found in most office applications.
+1	  We look at an author's interaction logs with the software used to create the work.
+1	  Detection relies on comparing the histograms of multiple logs' command use.
+1	  A work is classified as plagiarism if its log deviates too much from logs of “honestly created” works or if its log is too similar to another log.
+2	  The technique supports the detection of plagiarism for digital outcomes that stem from unique tasks, such as theses and equal tasks such as assignments for which the same problem sets are solved by multiple students.
+1	  Focusing on the latter case, we evaluate this approach using logs collected by an interactive development environment (IDE) from more than 60 students who completed three programming assignments.
+
+
+### 30
+##### doi: 10.1109/TLT.2017.272073
+#### Predicting Students Disengaged Behaviors in an Online Meaning-Generation Task
+
+
+0	  In an intelligent tutoring system (ITS), it can be useful to know when a student has disengaged from a task and might benefit from a particular intervention.
+0	  However, predicting disengagement on a trial-by-trial basis is a challenging problem, particularly in complex cognitive domains.
+1	  In the present work, data-driven methods were used to address two aspects of this problem: identification of predictive features at the single-trial level, and selection of accurate and robust models.
+1	  Experiment data were collected in a middle-school classroom using a vocabulary training ITS.
+1	  On each trial, the ITS presented a low-frequency (Tier 2 or frontier) word and prompted students to type in the word's meaning.
+1	  Single-trial measures-including the orthographic and semantic accuracy of each response, and context-sensitive measures such as interaction patterns across trials-were computed throughout the task.
+2     There were two key findings.
+2     First, as expected, different features predicted when a student was likely to be more engaged (e.g., high semantic accuracy) or less engaged (e.g., repetition of same or similar words across consecutive trials).
+2     Second, there was added value in representing context-sensitive information, which captures patterns of performance over time, as well as trial-specific information.
+2     These findings provide useful insights into effective methods for representing and modeling temporal patterns of student engagement in an ITS, especially those related to language learning.
+2     Such models may be useful in the design and implementation of adaptive tutors in complex cognitive domains like language learning.
+
+
+
+### 31
+##### doi: 10.1109/TLT.2017.273177
+#### Design of Large Scale Virtual Equipment for Interactive HIL Control System Labs
+
+
+1	  This paper presents a method to design high-quality 3D equipment for virtual laboratories.
+0	  A virtual control laboratory is designed on large-scale educational purpose with merits of saving expenses for universities and can provide more opportunities for students.
+0     The proposed laboratory with more than 30 virtual instruments aims at offering students a convenient experiment as well as an extensible framework for experiments in a collaborative way.
+2     Hardware-in-the-loop (HIL) simulations with realistic 3D animations can be an efficient and safe way for verification of control algorithms.
+1     Advanced 3D technologies are adopted to achieve convincing performance.
+1     In addition, accurate mechanical movements are designed for virtual devices using real-time data from hardware-based simulations.
+1	  Many virtual devices were created using this method and tested through experiments to show the efficacy.
+2     This method is also suitable for other virtual applications.
+1	  The system has been applied to a creative automatic control experiment course in the Harbin Institute of Technology.
+2     The assessment and student surveys show that the system is effective in student's learning.
+
+
+### 32
+##### doi: 10.1109/TLT.2017.272067
+#### Learning Analytics Dashboards to Support Adviser-Student Dialogue
+
+
+1	  This paper presents LISSA (“Learning dashboard for Insights and Support during Study Advice”), a learning analytics dashboard designed, developed, and evaluated in collaboration with study advisers.
+0	  The overall objective is to facilitate communication between study advisers and students by visualizing grade data that is commonly available in any institution.
+1	  More specifically, the dashboard attempts to support the dialogue between adviser and student through an overview of study progress, peer comparison, and by triggering insights based on facts as a starting point for discussion and argumentation.
+2	  We report on the iterative design process and evaluation results of a deployment in 97 advising sessions.
+2	  We have found that the dashboard supports the current adviser-student dialogue, helps them motivate students, triggers conversation, and provides tools to add personalization, depth, and nuance to the advising session.
+2     It provides insights at a factual, interpretative, and reflective level and allows both adviser and student to take an active role during the session.
+
+
+### 33
+##### doi: 10.1109/TLT.2017.278765
+#### Linked Data in Education: A Survey and a Synthesis of Actual Research and Future Challenges
+
+
+0	  Linked Data principles and technologies are being investigated in various areas.
+0	  In the Educational context, many studies are using Linked Data trying to solve problems of interoperability of educational data and resources, enriching educational content, and personalizing and recommending educational content and practices.
+1	  This article presents a systematic mapping of proposals which have been adopting Linked Data to support education, and, based on analysis of these proposals, we discuss the tools, vocabularies, and datasets being used, providing a research landscape of the area.
+2     We also present challenges and trends which can foster future research in this area.
+
+
+### 34
+##### doi: 10.1109/TLT.2016.259477
+#### Can a Non-Cognitive Learning Companion Increase the Effectiveness of a Meta-Cognitive Learning Strategy?
+
+
+0	  This project aimed to improve students' learning and task performance using a non-cognitive learning companion in the context of both a tutor and a meta-tutor.
+0	  The tutor taught students how to construct models of dynamic systems and the meta-tutor taught students a learning strategy.
+1     The non-cognitive learning companion was designed to increase students' effort and persistence in using the learning strategy.
+1     It decided when to intervene and what to say using both log data and affective state monitoring via a facial expression camera and a posture sensor.
+2     Experiments with high school students showed that the non-cognitive learning companion increased students' learning and performance.
+2     However, it had no effect on performance during a transfer phase in which the learning companion, meta-tutor, and tutor were all absent.
+2     The transfer phase null effect must be interpreted with caution due to low power, a possible floor effect, and other issues.
+
+
+### 35
+##### doi: 10.1109/TLT.2016.262330
+#### A Framework for Educational Technologies that Support Representational Competencies
+
+
+0	  Visual representations are ubiquitous in STEM disciplines.
+0	  Yet, students' difficulties in learning with visual representations are well documented.
+0     Therefore, to succeed in STEM, students need representational competencies-the ability to use visual representations for problem solving and learning.
+0     Educational technologies that support students' acquisition of representational competencies can significantly enhance their success in STEM disciplines.
+0     Current design frameworks for educational technologies do not offer sufficient guidance to develop supports for representational competencies.
+1     This paper presents a new design framework that describes an iterative, step-by-step approach for the design of educational technologies that support representational competencies (SUREC) in a way that aligns with the demands specific to the target discipline.
+1	  The paper illustrates how this framework was used to inform the design of an intelligent tutoring system for undergraduate chemistry.
+2     An evaluation study suggests that the SUREC framework yielded an effective educational technology that enhances students' learning of content knowledge.
+
+
+### 36
+##### doi: 10.1109/TLT.2016.258216
+#### A Novel Group Engagement Score for Virtual Learning Environments
+
+
+0	  STEM (Science, Technology, Engineering, and Math) education is currently receiving much attention from governments and educational institutions.
+1	  Our work is based on active learning and video-based learning approaches to support STEM education.
+1	  Here, we aimed to increase student's engagement through reflective processes that embrace video film-making, and subsequent on-line discussion and evaluation of those videos.
+1	  We propose a group engagement score that takes into account both individual activity and similarity of participation, thus allowing corrective actions to be taken when unengaged students or groups are identified.
+1	  We tested these ideas using our own social learning platform that combines the principal features of Social Networks with tools that facilitate collaborative learning design.
+1	  This platform stimulates students' learning by means of two main reflective processes: participatory production and peer-review.
+2	  We evaluated this platform and the learning approach it supports in an Object Oriented Programming course and identified interesting differences between group engagement and video ratings.
+2     Our principal conclusion is that greater teacher and student awareness of the ongoing activities and group engagement are needed.
+
+
+### 37
+##### doi: 10.1109/TLT.2016.259195
+#### Towards New Multiplatform Hybrid Online Laboratory Models
+
+
+0	  Online laboratories have traditionally been split between virtual labs, with simulated components; and remote labs, with real components.
+0	  The former tend to provide less realism but to be easily scalable and less expensive to maintain, while the latter are fully real but tend to require a higher maintenance effort and be more error-prone.
+1	  This technical paper describes an architecture for hybrid labs merging the two approaches, in which virtual and real components interact with each other.
+0	  The goal is to leverage the advantages of each type of lab.
+1     The architecture is fully web-based and multiplatform, which is in line with the industry and the remote laboratory community trends.
+0	  Only recently has this become technically feasible for graphic-intensive laboratories due to previous limitations in browser-based graphical technologies.
+1	  This architecture relies on the recent HTML5 and WebGL standards to overcome these limitations, and makes use of the Unity technology.
+2	  To ensure that the proposed architecture is suitable, we set requirements based on the literature, we compare it with other approaches, and we examine its scope, strengths, and weaknesses.
+2	  Additionally, we illustrate it with a concrete hybrid lab and we evaluate its benefits and potential through educational experiments.
+
+
+### 38
+##### doi: 10.1109/TLT.2016.259346
+#### A Novel Wiki-Based Remote Laboratory Platform for Engineering Education
+
+
+0	  With the unprecedented growth of e-learning, more and more new IT technologies are used to develop e-learning tools.
+0	  As one of the most common forms of social computing, Wiki technology has been used to develop the collaborative and cooperative learning platform to support multiple users learning online effectively.
+1	  In this paper, we propose a new software architecture to create a novel wiki-based remote laboratory platform by combining the advantages of both Wiki technology and remote laboratory technology.
+1	  This platform is implemented based on a unified framework for remote laboratory development and an open source wiki software package, MediaWiki.
+1	  To illustrate the effectiveness of this platform, two remote experiments, Smart Vibration Platform (SVP) and Proportional-Integral-Derivative (PID) motor speed control, are integrated into this platform.
+2	  This new wiki-based remote laboratory has been used for teaching Mechanical Engineering courses and creating students' assignments at the University of Houston.
+
+
+### 39
+##### doi: 10.1109/TLT.2016.263212
+#### A Case Study in User Support for Managing OpenSim Based Multi User Learning Environments
+
+
+0	  Immersive 3D Multi User Learning Environments (MULE) have shown sufficient success to warrant their consideration as a mainstream educational paradigm.
+0	  These are based on 3D Multi User Virtual Environment platforms (MUVE), and although they have been used for various innovative educational projects their complex permission systems and large numbers of functions can make their management potentially challenging.
+0     It follows that an inadequately managed MULE can be ineffective with respect to intended learning outcomes.
+0	  The purpose of this research was to determine how management challenges manifest themselves and how to support educators in learning and applying MULE management skills.
+1	  We utilized the popular OpenSim platform for this study.
+1	  First, a survey of the need for user support (${\mathrm{N\,= \,43}}$) is described.
+1	  Next, the design and evaluation of a guidance tool using graph topologic visualization of OpenSim functions is presented (${\mathrm{N\,= \,211}}$).
+1	  The tool is further evaluated in the delivery of a course module.
+1	  The analysis and user feedback indicated that the tool provides accurate information and helpful support for MULE management.
+1	  As the final phase of the research, training environments were developed for both basic and advanced OpenSim MULE management.
+2     Evaluations of their usability and perceived educational value were carried out with participants (${\mathrm{N\,= \,68}}$); the outcomes suggest that training for advanced MULE management is more useful for all users, without requiring more time or effort, regardless of the degree of complexity of the MULE being designed.
+
+
+### 40
+##### doi: 10.1109/TLT.2016.259953
+#### Impact of Using a Robot Patient for Nursing Skill Training in Patient Transfer
+
+
+0	  In the past few decades, simulation training has been used to help nurses improve their patient-transfer skills.
+0	  However, the effectiveness of such training remains limited because it lacks effective ways of simulating patients' actions realistically.
+0     It is difficult for nurses to use the skills learned from simulation training to transfer an actual patient.
+0     Therefore, we developed a robot patient that could simulate the behavior of patients' limbs for patient-transfer training.
+1	  This study examined the performance of the robot used in training and evaluated its training effectiveness.
+1	  Four nursing teachers individually transferred the robot patient and then scored the robot patient's ability to simulate patients' actions and its suitability for skill training.
+1	  An experiment using pre-post control group design was carried out to examine the robot patient's training effectiveness compared with the human simulated patient.
+1	  The participants were 20 nursing students and one nursing teacher who was responsible for scoring the students' skills in the pre-test and post-test.
+1	  All of the students were assigned to train with either the proposed robot patient or a healthy person simulating the patient.
+2     The results show that all four nursing teachers regarded the robot patient's actions as realistic.
+2     In addition, all four teachers agreed that the robot patient was suitable for skill training.
+2     The results also show that the proposed robot patient is more challenging than the current method, which employs a healthy person to simulate the patient.
+2     Significant skill improvement (p <; 0.01) was observed in the experimental group when transferring the robot patient.
+
+

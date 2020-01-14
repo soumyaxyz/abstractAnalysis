@@ -1,0 +1,284 @@
+
+
+# 46
+### http://arxiv.org/abs/1006.3373v1
+## Design and Implementation VOIP Service on Open IMS and Asterisk Servers Interconnected through Enum Server
+
+-1 	Asterisk and Open IMS use SIP signal protocol to enable both of them can be connected.
+-1 	To facilitate both relationships, Enum server- that is able to translate the numbering address such as PSTN (E.
+-1 	164) to URI address (Uniform Resource Identifier)- can be used.
+-1 	In this research, we interconnect Open IMS and Asterisk server Enum server.
+-1 	We then analyze the server performance and PDD (Post Dial Delay) values resulted by the system.
+-1 	As the result of the experiment, we found that, for a call from Open IMS user to analog Asterisk telephone (FXS) with a arrival call each servers is 30 call/sec, the maximum PDD value is 493.
+-1 	656 ms.
+-1 	Open IMS is able to serve maximum 30 call/s with computer processor 1.
+-1 	55 GHz, while the Asterisk with computer processor 3.
+-1 	0 GHz, may serve up to 55 call/sec.
+-1 	Enum on server with 1.
+-1 	15 GHz computer processor have the capability of serving maximum of 8156 queries/sec.
+
+
+# 47
+### http://arxiv.org/abs/1006.4225v2
+## Optimal Spectrum Sharing in MIMO Cognitive Radio Networks via Semidefinite Programming
+
+-1 	In this paper, we study the optimal secondary-link beamforming pattern that balances between the SU's throughput and the interference it causes to PUs in MIMO cognitive radio networks.
+-1 	In particular, we aim to maximize the throughput of the SU, while keeping the interference temperature at the primary receivers below a certain threshold.
+-1 	Unlike traditional MIMO systems, SUs may not have the luxury of knowing the channel state information (CSI) on the links to PUs.
+-1 	This presents a key challenge for a secondary transmitter to steer interference away from primary receivers.
+-1 	In this paper, we consider three scenarios, namely when the secondary transmitter has complete, partial, or no knowledge about the channels to the primary receivers.
+-1 	In particular, when complete CSI is not available, the interference-temperature constraints are to be satisfied with high probability, thus resulting in chance constraints that are typically hard to deal with.
+-1 	Our contribution is fourfold.
+-1 	First, by analyzing the distributional characteristics of MIMO channels, we propose a unified homogeneous QCQP formulation that can be applied to all three scenarios.
+-1 	The homogeneous QCQP formulation, though non-convex, is amenable to semidefinite programming (SDP) relaxation methods.
+-1 	Secondly, we show that the SDP relaxation admits no gap when the number of primary links is no larger than two.
+-1 	Thirdly, we propose a randomized polynomial-time algorithm for constructing a near-optimal solution to the QCQP problem when there are more than two primary links.
+-1 	Finally, we show that when the secondary transmitter has no CSI on the links to primary receivers, the optimal solution to the QCQP problem can be found by a simple matrix eigenvalue-eigenvector computation, which can be done much more efficiently than solving the QCQP directly.
+
+
+# 48
+### http://arxiv.org/abs/1006.4406v1
+## Slow Adaptive OFDMA Systems Through Chance Constrained Programming
+
+-1 	Adaptive OFDMA has recently been recognized as a promising technique for providing high spectral efficiency in future broadband wireless systems.
+-1 	The research over the last decade on adaptive OFDMA systems has focused on adapting the allocation of radio resources, such as subcarriers and power, to the instantaneous channel conditions of all users.
+-1 	However, such "fast" adaptation requires high computational complexity and excessive signaling overhead.
+-1 	This hinders the deployment of adaptive OFDMA systems worldwide.
+-1 	This paper proposes a slow adaptive OFDMA scheme, in which the subcarrier allocation is updated on a much slower timescale than that of the fluctuation of instantaneous channel conditions.
+-1 	Meanwhile, the data rate requirements of individual users are accommodated on the fast timescale with high probability, thereby meeting the requirements except occasional outage.
+-1 	Such an objective has a natural chance constrained programming formulation, which is known to be intractable.
+-1 	To circumvent this difficulty, we formulate safe tractable constraints for the problem based on recent advances in chance constrained programming.
+-1 	We then develop a polynomial-time algorithm for computing an optimal solution to the reformulated problem.
+-1 	Our results show that the proposed slow adaptation scheme drastically reduces both computational cost and control signaling overhead when compared with the conventional fast adaptive OFDMA.
+-1 	Our work can be viewed as an initial attempt to apply the chance constrained programming methodology to wireless system designs.
+-1 	Given that most wireless systems can tolerate an occasional dip in the quality of service, we hope that the proposed methodology will find further applications in wireless communications.
+
+
+# 49
+### http://arxiv.org/abs/1010.4986v1
+## A Testbed Implementation for Securing OLSR in Mobile Ad hoc Networks
+
+-1 	Contemporary personal computing devices are increasingly required to be portable and mobile enabling user's wireless access, to wired network infrastructures and services.
+-1 	This approach to mobile computing and communication is only appropriate in situations where a coherent infrastructure is available.
+-1 	There are many situations where these requirements are not fulfilled such as; developing nations, rural areas, natural disasters, and military conflicts to name but a few.
+-1 	A practical solution is to use mobile devices interconnected via a wireless medium to form a network, known as a Mobile Ad-hoc Network (MANET), and provide the services normally found in wired networks.
+-1 	Security in MANETs is an issue of paramount importance due to the wireless nature of the communication links.
+-1 	Additionally due to the lack of central administration security issues are different from conventional networks.
+-1 	For the purposes of this article we have used the "WMN test-bed" to enable secure routing in MANETs.
+-1 	The use of cryptography is an efficient proven way of securing data in communications, but some cryptographic algorithms are not as efficient as others and require more processing power, which is detrimental to MANETs.
+-1 	In this article we have assessed different cryptographic approaches to securing the OLSR (Optimised Link State Routing) protocol to provide a basis for research.
+-1 	We conclude the paper with a series of performance evaluation results regarding different cryptographic and hashing schemes.
+-1 	Our findings clearly show that the most efficient combination of algorithms used for authentication and encryption are SHA-1 and AES respectively.
+-1 	Using this combination over their counterparts will lead to a considerable reduction in processing time and delay on the network, creating an efficient transaction moving towards satisfying resource constraints and security requirements.
+
+
+# 50
+### http://arxiv.org/abs/1101.2759v1
+## Routing Security Issues in Wireless Sensor Networks: Attacks and Defenses
+
+-1 	Wireless Sensor Networks (WSNs) are rapidly emerging as an important new area in wireless and mobile computing research.
+-1 	Applications of WSNs are numerous and growing, and range from indoor deployment scenarios in the home and office to outdoor deployment scenarios in adversary's territory in a tactical battleground (Akyildiz et al.,
+-1 	2002).
+-1 	For military environment, dispersal of WSNs into an adversary's territory enables the detection and tracking of enemy soldiers and vehicles.
+-1 	For home/office environments, indoor sensor networks offer the ability to monitor the health of the elderly and to detect intruders via a wireless home security system.
+-1 	In each of these scenarios, lives and livelihoods may depend on the timeliness and correctness of the sensor data obtained from dispersed sensor nodes.
+-1 	As a result, such WSNs must be secured to prevent an intruder from obstructing the delivery of correct sensor data and from forging sensor data.
+-1 	To address the latter problem, end-to-end data integrity checksums and post-processing of senor data can be used to identify forged sensor data (Estrin et al.,
+-1 	1999; Hu et al.,
+-1 	2003a; Ye et al.,
+-1 	2004).
+-1 	The focus of this chapter is on routing security in WSNs.
+-1 	Most of the currently existing routing protocols for WSNs make an optimization on the limited capabilities of the nodes and the application-specific nature of the network, but do not any the security aspects of the protocols.
+-1 	Although these protocols have not been designed with security as a goal, it is extremely important to analyze their security properties.
+-1 	When the defender has the liabilities of insecure wireless communication, limited node capabilities, and possible insider threats, and the adversaries can use powerful laptops with high energy and long range communication to attack the network, designing a secure routing protocol for WSNs is obviously a non-trivial task.
+
+
+# 51
+### http://arxiv.org/abs/1101.3835v1
+## Relay Selection with Partial Information in Wireless Sensor Networks
+
+-1 	Our work is motivated by geographical forwarding of sporadic alarm packets to a base station in a wireless sensor network (WSN), where the nodes are sleep-wake cycling periodically and asynchronously.
+-1 	When a node (referred to as the source) gets a packet to forward, either by detecting an event or from an upstream node, it has to wait for its neighbors in a forwarding set (referred to as relays) to wake-up.
+-1 	Each of the relays is associated with a random reward (e.g., the progress made towards the sink) that is iid.
+-1 	To begin with, the source is uncertain about the number of relays, their wake-up times and the reward values, but knows their distributions.
+-1 	At each relay wake-up instant, when a relay reveals its reward value, the source's problem is to forward the packet or to wait for further relays to wake-up.
+-1 	In this setting, we seek to minimize the expected waiting time at the source subject to a lower bound on the average reward.
+-1 	In terms of the operations research literature, our work can be considered as a variant of the asset selling problem.
+-1 	We formulate the relay selection problem as a partially observable Markov decision process (POMDP), where the unknown state is the number of relays.
+-1 	We begin by considering the case where the source knows the number of relays.
+-1 	For the general case, where the source only knows a pmf on the number of relays, it has to maintain a posterior pmf on the number of relays and forward the packet iff the pmf is in an optimum stopping set.
+-1 	We show that the optimum stopping set is convex and obtain inner and outer bounds to this set.
+-1 	The computational complexity of the above policies motivates us to formulate an alternative simplified model, the optimal policy for which is a simple threshold rule.
+-1 	We provide simulation results to compare the performance of the various one-hop and end-to-end forwarding policies.
+
+
+# 52
+### http://arxiv.org/abs/1102.0682v1
+## A Study of IEEE 802.15.4 Security Framework for Wireless Body Area Network
+
+-1 	A Wireless Body Area Network (WBAN) is a collection of low-power and lightweight wireless sensor nodes that are used to monitor the human body functions and the surrounding environment.
+-1 	It supports a number of innovative and interesting applications, including ubiquitous healthcare and Consumer Electronics (CE) applications.
+-1 	Since WBAN nodes are used to collect sensitive (life-critical) information and may operate in hostile environments, they require strict security mechanisms to prevent malicious interaction with the system.
+-1 	In this paper, we first highlight major security requirements and Denial of Service (DoS) attacks in WBAN at Physical, Medium Access Control (MAC), Network, and Transport layers.
+-1 	Then we discuss the IEEE 802.
+-1 	15.
+-1 	4 security framework and identify the security vulnerabilities and major attacks in the context of WBAN.
+-1 	Different types of attacks on the Contention Access Period (CAP) and Contention Free Period (CFP) parts of the superframe are analyzed and discussed.
+-1 	It is observed that a smart attacker can successfully corrupt an increasing number of GTS slots in the CFP period and can considerably affect the Quality of Service (QoS) in WBAN (since most of the data is carried in CFP period).
+-1 	As we increase the number of smart attackers the corrupted GTS slots are eventually increased, which prevents the legitimate nodes to utilize the bandwidth efficiently.
+-1 	This means that the direct adaptation of IEEE 802.
+-1 	15.
+-1 	4 security framework for WBAN is not totally secure for certain WBAN applications.
+-1 	New solutions are required to integrate high level security in WBAN.
+
+
+# 53
+### http://arxiv.org/abs/1102.3607v1
+## Fairness issues in a chain of IEEE 802.11 stations
+
+-1 	We study a simple general scenario of ad hoc networks based on IEEE 802.
+-1 	11 wireless communications, consisting in a chain of transmitters, each of them being in the carrier sense area of its neighbors.
+-1 	Each transmitter always attempts to send some data frames to one receiver in its transmission area, forming a pair sender-receiver.
+-1 	This scenario includes the three pairs fairness problem, and allows to study some fairness issues of the IEEE 802.
+-1 	11 medium access mechanism.
+-1 	We show by simulation that interesting phenomena appear, depending on the number n of pairs in the chain and of its parity.
+-1 	We also point out a notable asymptotic behavior.
+-1 	We introduce a powerful modeling, by simply considering the probability for a transmitter to send data while its neighbors are waiting.
+-1 	This model leads to a non-linear system of equations, which matches very well the simulations, and which allows to study both small and very large chains.
+-1 	We then analyze the fairness issue in the chain regarding some parameters, as well as the asymptotic behavior.
+-1 	By studying very long chains, we notice good asymptotic fairness of the IEEE 802.
+-1 	11 medium sharing mechanism.
+-1 	As an application, we show how to increase the fairness in a chain of three pairs.
+
+
+# 54
+### http://arxiv.org/abs/1102.4106v1
+## An Overview of IEEE 802.15.6 Standard
+
+-1 	Wireless Body Area Networks (WBAN) has emerged as a key technology to provide real-time health monitoring of a patient and diagnose many life threatening diseases.
+-1 	WBAN operates in close vicinity to, on, or inside a human body and supports a variety of medical and non-medical applications.
+-1 	IEEE 802 has established a Task Group called IEEE 802.
+-1 	15.
+-1 	6 for the standardization of WBAN.
+-1 	The purpose of the group is to establish a communication standard optimized for low-power in-body/on-body nodes to serve a variety of medical and non-medical applications.
+-1 	This paper explains the most important features of the new IEEE 802.
+-1 	15.
+-1 	6 standard.
+-1 	The standard defines a Medium Access Control (MAC) layer supporting several Physical (PHY) layers.
+-1 	We briefly overview the PHY and MAC layers specifications together with the bandwidth efficiency of IEEE 802.
+-1 	15.
+-1 	6 standard.
+-1 	We also discuss the security paradigm of the standard.
+
+
+# 55
+### http://arxiv.org/abs/1102.4176v1
+## Contract-Based Cooperative Spectrum Sharing
+
+-1 	Providing proper economic incentives is essential for the success of dynamic spectrum sharing.
+-1 	Cooperative spectrum sharing is one effective way to achieve this goal.
+-1 	In cooperative spectrum sharing, secondary users (SUs) relay traffics for primary users (PUs), in exchange for dedicated transmission time for the SUs' own communication needs.
+-1 	In this paper, we study the cooperative spectrum sharing under incomplete information, where SUs' types (capturing their heterogeneity in relay channel gains and evaluations of power consumptions) are private information and not known by PUs.
+-1 	Inspired by the contract theory, we model the network as a labor market.
+-1 	The single PU is the employer who offers a contract to the SUs.
+-1 	The contract consists of a set of contract items representing combinations of spectrum accessing time (i.e., reward) and relaying power (i.e., contribution).
+-1 	The SUs are employees, and each of them selects the best contract item to maximize his payoff.
+-1 	We study the optimal contract design for both weak and strong incomplete information scenarios.
+-1 	First, we provide necessary and sufficient conditions for feasible contracts in both scenarios.
+-1 	In the weak incomplete information scenario, we further derive the optimal contract that achieves the same maximum PU's utility as in the complete information benchmark.
+-1 	In the strong incomplete information scenario, we propose a Decompose-and-Compare algorithm that achieves a close-to-optimal contract.
+-1 	We future show that the PU's average utility loss due to the suboptimal algorithm and the strong incomplete information are both relatively small (less than 2% and 1:3%, respectively, in our numerical results with two SU types).
+
+
+# 56
+### http://arxiv.org/abs/1103.1518v1
+## One Bad Apple Spoils the Bunch: Exploiting P2P Applications to Trace and Profile Tor Users
+
+-1 	Tor is a popular low-latency anonymity network.
+-1 	However, Tor does not protect against the exploitation of an insecure application to reveal the IP address of, or trace, a TCP stream.
+-1 	In addition, because of the linkability of Tor streams sent together over a single circuit, tracing one stream sent over a circuit traces them all.
+-1 	Surprisingly, it is unknown whether this linkability allows in practice to trace a significant number of streams originating from secure (i.e., proxied) applications.
+-1 	In this paper, we show that linkability allows us to trace 193% of additional streams, including 27% of HTTP streams possibly originating from "secure" browsers.
+-1 	In particular, we traced 9% of Tor streams carried by our instrumented exit nodes.
+-1 	Using BitTorrent as the insecure application, we design two attacks tracing BitTorrent users on Tor.
+-1 	We run these attacks in the wild for 23 days and reveal 10,000 IP addresses of Tor users.
+-1 	Using these IP addresses, we then profile not only the BitTorrent downloads but also the websites visited per country of origin of Tor users.
+-1 	We show that BitTorrent users on Tor are over-represented in some countries as compared to BitTorrent users outside of Tor.
+-1 	By analyzing the type of content downloaded, we then explain the observed behaviors by the higher concentration of pornographic content downloaded at the scale of a country.
+-1 	Finally, we present results suggesting the existence of an underground BitTorrent ecosystem on Tor.
+
+
+# 57
+### http://arxiv.org/abs/1103.2212v2
+## Stability and Queueing Analysis of IEEE 802.11 Distributed Coordination Function
+
+-1 	A widely adopted two-dimensional Markov chain model of the IEEE 802.
+-1 	11 DCF was introduced by Bianchi to characterize the backoff behavior of a single node under a saturated traffic condition.
+-1 	Using this approach, we propose a queuing model for the 802.
+-1 	11 DCF under a non-saturated traffic environment.
+-1 	The input buffer of each node is modeled as a Geo/G/1 queue, and the packet service time distribution is derived from Markov state space of 802.
+-1 	11 DCF with the underlying scheduling algorithm.
+-1 	The DCF defines two access mechanisms, namely the Basic access mechanism and the request-to-send/clear-to-send (RTS/CTS) access mechanism.
+-1 	Based on our model, performance analyses of both schemes are studied with probabilistic exponential backoff scheduling.
+-1 	We obtain the characteristic equation of network throughput and expressions of packet queueing delay.
+-1 	Specifically, we obtain the stable throughput and bounded delay regions with respect to the retransmission factor according to the basic queueing analysis.
+-1 	For both access schemes, the bounded delay region is a subset of the stable throughput region.
+-1 	Our results show that the RTS/CTS access mechanism is more stable and performs better than the Basic access mechanism.
+-1 	The analysis in this paper is verified by simulation results.
+
+
+# 58
+### http://arxiv.org/abs/1103.3340v1
+## A Dynamic Multimedia User-Weight Classification Scheme for IEEE_802.11 WLANs
+
+-1 	In this paper we expose a dynamic traffic-classification scheme to support multimedia applications such as voice and broadband video transmissions over IEEE 802.
+-1 	11 Wireless Local Area Networks (WLANs).
+-1 	Obviously, over a Wi-Fi link and to better serve these applications - which normally have strict bounded transmission delay or minimum link rate requirement - a service differentiation technique can be applied to the media traffic transmitted by the same mobile node using the well-known 802.
+-1 	11e Enhanced Distributed Channel Access (EDCA) protocol.
+-1 	However, the given EDCA mode does not offer user differentiation, which can be viewed as a deficiency in multi-access wireless networks.
+-1 	Accordingly, we propose a new inter-node priority access scheme for IEEE 802.
+-1 	11e networks which is compatible with the EDCA scheme.
+-1 	The proposed scheme joins a dynamic user-weight to each mobile station depending on its outgoing data, and therefore deploys inter-node priority for the channel access to complement the existing EDCA inter-frame priority.
+-1 	This provides efficient quality of service control across multiple users within the same coverage area of an access point.
+-1 	We provide performance evaluations to compare the proposed access model with the basic EDCA 802.
+-1 	11 MAC protocol mode to elucidate the quality improvement achieved for multimedia communication over 802.
+-1 	11 WLANs.
+
+
+# 59
+### http://arxiv.org/abs/1103.4769v1
+## High-Energy-First (HEF) Heuristic for Energy-Efficient Target Coverage Problem
+
+-1 	Target coverage problem in wireless sensor networks is concerned with maximizing the lifetime of the network while continuously monitoring a set of targets.
+-1 	A sensor covers targets which are within the sensing range.
+-1 	For a set of sensors and a set of targets, the sensor-target coverage relationship is assumed to be known.
+-1 	A sensor cover is a set of sensors that covers all the targets.
+-1 	The target coverage problem is to determine a set of sensor covers with maximum aggregated lifetime while constraining the life of each sensor by its initial battery life.
+-1 	The problem is proved to be NP-complete and heuristic algorithms to solve this problem are proposed.
+-1 	In the present study, we give a unified interpretation of earlier algorithms and propose a new and efficient algorithm.
+-1 	We show that all known algorithms are based on a common reasoning though they seem to be derived from different algorithmic paradigms.
+-1 	We also show that though some algorithms guarantee bound on the quality of the solution, this bound is not meaningful and not practical too.
+-1 	Our interpretation provides a better insight to the solution techniques.
+-1 	We propose a new greedy heuristic which prioritizes sensors on residual battery life.
+-1 	We show empirically that the proposed algorithm outperforms all other heuristics in terms of quality of solution.
+-1 	Our experimental study over a large set of randomly generated problem instances also reveals that a very na\"ive greedy approach yields solutions which is reasonably (appx.
+-1 	10%) close to the actual optimal solutions.
+
+
+# 60
+### http://arxiv.org/abs/1105.3864v2
+## Component Based Clustering in Wireless Sensor Networks
+
+-1 	Clustering is an important research topic for wireless sensor networks (WSNs).
+-1 	A large variety of approaches has been presented focusing on different performance metrics.
+-1 	Even though all of them have many practical applications, an extremely limited number of software implementations is available to the research community.
+-1 	Furthermore, these very few techniques are implemented for specific WSN systems or are integrated in complex applications.
+-1 	Thus it is very difficult to comparatively study their performance and almost impossible to reuse them in future applications under a different scope.
+-1 	In this work we study a large body of well established algorithms.
+-1 	We identify their main building blocks and propose a component-based architecture for developing clustering algorithms that (a) promotes exchangeability of algorithms thus enabling the fast prototyping of new approaches, (b) allows cross-layer implementations to realize complex applications, (c) offers a common platform to comparatively study the performance of different approaches, (d) is hardware and OS independent.
+-1 	We implement 5 well known algorithms and discuss how to implement 11 more.
+-1 	We conduct an extended simulation study to demonstrate the faithfulness of our implementations when compared to the original implementations.
+-1 	Our simulations are at very large scale thus also demonstrating the scalability of the original algorithms beyond their original presentations.
+-1 	We also conduct experiments to assess their practicality in real WSNs.
+-1 	We demonstrate how the implemented clustering algorithms can be combined with routing and group key establishment algorithms to construct WSN applications.
+-1 	Our study clearly demonstrates the applicability of our approach and the benefits it offers to both research & development communities.

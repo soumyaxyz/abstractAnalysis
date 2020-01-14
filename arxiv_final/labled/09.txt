@@ -1,0 +1,249 @@
+
+
+# 121
+### http://arxiv.org/abs/1412.7684v1
+## Efficient Switch Architectures for Pre-configured Backup Protection with Sharing in Elastic Optical Networks (EON)
+
+0 	In this paper, we address the problem of providing survivability in elastic optical networks (EONs).
+0 	EONs use fine granular frequency slots or flexible grids, when compared to the conventional fixed grid networks and therefore utilize the frequency spectrum efficiently.
+1 	For providing survivability in EONs, we consider a recently proposed survivability method for conventional fixed grid networks, known as pre-configured backup protection with sharing (PBPS), because of its benefits over the traditional survivability approaches such as dedicated and shared protection.
+1 	In PBPS, backup paths can be pre-configured and at the same time they can share resources.Therefore, both short recovery time and efficient resource usage can be achieved.
+2 	We find that the existing switch architectures do not support both PBPS and EONs.
+2 	Specifically, we identify and illustrate that, if a switch architecture is not carefully designed, several key problems/issues might arise in certain scenarios. Such problems include unnecessary resource consumption, inability of using existing free resources, and incapability of sharing backup paths. These problems appear when PBPS is adopted in EONs and they do not arise in fixed grid networks.
+1 	In this paper, we propose new switch architectures which support both PBPS and EONs.
+1 	Particularly, we illustrate that, our switch architectures avoid the specific problems/issues mentioned above. Therefore, our switch architectures support using resources more efficiently and reducing blocking of requests.
+
+
+# 122
+### http://arxiv.org/abs/1412.8617v1
+## Color Filtering Localization for Three-Dimensional Underwater Acoustic Sensor Networks
+
+0 	Accurate localization for mobile nodes has been an important and fundamental problem in underwater acoustic sensor networks (UASNs).
+0 	The detection information returned from a mobile node is meaningful only if its location is known.
+1 	In this paper, we propose two localization algorithms based on color filtering technology called PCFL and ACFL.
+1 	PCFL and ACFL aim at collaboratively accomplishing accurate localization of underwater mobile nodes with minimum energy expenditure. They both adopt the overlapping signal region of task anchors which can communicate with the mobile node directly as the current sampling area.
+1 	PCFL employs the projected distances between each of the task projections and the mobile node, while ACFL adopts the direct distance between each of the task anchors and the mobile node.
+1 	Also the proportion factor of distance is proposed to weight the RGB values.
+1 	By comparing the nearness degrees of the RGB sequences between the samples and the mobile node, samples can be filtered out. And the normalized nearness degrees are considered as the weighted standards to calculate coordinates of the mobile nodes.
+2 	The simulation results show that the proposed methods have excellent localization performance and can timely localize the mobile node.
+2 	The average localization error of PCFL can decline by about 30. 4% than the AFLA method.
+
+
+# 123
+### http://arxiv.org/abs/1007.1548v1
+## Stability Analysis of GI/G/c/K Retrial Queue with Constant Retrial Rate
+
+0 	We consider a GI/G/c/K-type retrial queueing system with constant retrial rate.
+0 	The system consists of a primary queue and an orbit queue.
+0 	The primary queue has $c$ identical servers and can accommodate the maximal number of $K$ jobs.
+1 	If a newly arriving job finds the full primary queue, it joins the orbit.
+1 	The original primary jobs arrive to the system according to a renewal process.
+0 	The jobs have general i. i.	d. service times.
+1 	A job in front of the orbit queue retries to enter the primary queue after an exponentially distributed time independent of the orbit queue length.
+0 	Telephone exchange systems, Medium Access Protocols and short TCP transfers are just some applications of the proposed queueing system.
+1 	For this system we establish minimal sufficient stability conditions.
+0 	Our model is very general.
+0 	In addition, to the known particular cases (e.g., M/G/1/1 or M/M/c/c systems), the proposed model covers as particular cases the deterministic service model and the Erlang model with constant retrial rate.
+0 	The latter particular cases have not been considered in the past.
+2 	The obtained stability conditions have clear probabilistic interpretation.
+
+
+# 124
+### http://arxiv.org/abs/1007.2280v1
+## Phase Changes in the Evolution of the IPv4 and IPv6 AS-Level Internet Topologies
+
+0 	In this paper we investigate the evolution of the IPv4 and IPv6 Internet topologies at the autonomous system (AS) level over a long period of time.
+0 	We provide abundant empirical evidence that there is a phase transition in the growth trend of the two networks.
+0 	For the IPv4 network, the phase change occurred in 2001.
+0 	Before then the network's size grew exponentially, and thereafter it followed a linear growth.
+0 	Changes are also observed around the same time for the maximum node degree, the average node degree and the average shortest path length.
+0 	For the IPv6 network, the phase change occurred in late 2006.
+2 	It is notable that the observed phase transitions in the two networks are different, for example the size of IPv6 network initially grew linearly and then shifted to an exponential growth.
+2 	Our results show that following decades of rapid expansion up to the beginning of this century, the IPv4 network has now evolved into a mature, steady stage characterised by a relatively slow growth with a stable network structure; whereas the IPv6 network, after a slow startup process, has just taken off to a full speed growth.
+-1 	We also provide insight into the possible impact of IPv6-over-IPv4 tunneling deployment scheme on the evolution of the IPv6 network.
+0 	The Internet topology generators so far are based on an inexplicit assumption that the evolution of Internet follows non-changing dynamic mechanisms.	This assumption, however, is invalidated by our results.
+-1 	Our work reveals insights into the Internet evolution and provides inputs to future AS-Level Internet models.
+
+
+# 125
+### http://arxiv.org/abs/1007.4066v2
+## A Tutorial on Broadcasting Packets over Multiple-Channels in a Multi-Inferface Network Setting in NS-2
+
+0 	With the proliferation of cheaper electronic devices, wireless communication over multiple-channels in a multi-interface network is now possible.
+0 	For instace, wireless sensor nodes can now operate over multiplechannels.
+0 	Moreover, cognitive radio sensor networks are also evolving, which also operates over multiple-channels.
+0 	In the market, we can find antennas that can support the operation of multiple channels, for e.g. the cc2420 antenna that is used for communication between wireless sensor nodes consists of 16 programmable channels.
+0 	The proper utilization of multiple-channels reduces the interference between the nodes and increase the network throughput.
+1 	Recently, a Cognitive Radio Cognitive Network (CRCN) patch for NS-2 simulator has proposed to support multi-channel multi-interface capability in NS-2.
+0 	In this tutorial, we consider how to simulate a multi-channel multiinterface wireless network using the NS-2 simulator.
+0 	This tutorial is trageted to the novice users who wants to understand the implementation of multi-channel multi-interface in NS-2.
+1 	We take the Cognitive Radio Cognitive Network (CRCN) patch for NS-2 simulator and demonstrate broadcasting over multiple-channels in a multi-interface network setting.
+2 	In our seeting, node braodcasts the Hello packets to its neighbors.
+2 	Neighboring nodes receive the Hello packets if and only if they are tuned to the same channel.
+2 	We demonstrate through example that the tuning of receivers can be done in two fashions.
+
+
+# 126
+### http://arxiv.org/abs/1007.5239v2
+## TCP Reno over Adaptive CSMA
+
+0 	An interesting distributed adaptive CSMA MAC protocol, called adaptive CSMA, was proposed recently to schedule any strictly feasible achievable rates inside the capacity region.
+0 	Of particular interest is the fact that the adaptive CSMA can achieve a system utility arbitrarily close to that is achievable under a central scheduler.However, a specially designed transport-layer rate controller is needed for this result.
+0 	An outstanding question is whether the widely-installed TCP Reno is compatible with adaptive CSMA and can achieve the same result.
+2 	The answer to this question will determine how close to practical deployment adaptive CSMA is.	Our answer is yes and no.
+1	First, we observe that running TCP Reno directly over adaptive CSMA results in severe starvation problems.
+2 	Effectively, its performance is no better than that of TCP Reno over legacy CSMA (IEEE 802.11), and the potentials of adaptive CSMA cannot be realized.
+2 	Fortunately, we find that multi-connection TCP Reno over adaptive CSMA with active queue management can materialize the advantages of adaptive CSMA.
+2 	NS-2 simulations demonstrate that our solution can alleviate starvation and achieve fair and efficient rate allocation.
+0 	Multi-connection TCP can be implemented at either application or transport layer.
+0 	Application-layer implementation requires no kernel modification, making the solution readily deployable in networks running adaptive CSMA.
+
+
+# 127
+### http://arxiv.org/abs/1212.3381v1
+## Optimal Pricing Effect on Equilibrium Behaviors of Delay-Sensitive Users in Cognitive Radio Networks
+
+0 	This paper studies price-based spectrum access control in cognitive radio networks, which characterizes network operators' service provisions to delay-sensitive secondary users (SUs) via pricing strategies.
+0 	Based on the two paradigms of shared-use and exclusive-use dynamic spectrum access (DSA), we examine three network scenarios corresponding to three types of secondary markets.
+0	In the first monopoly market with one operator using opportunistic shared-use DSA, we study the operator's pricing effect on the equilibrium behaviors of self-optimizing SUs in a queueing system. %
+0 	This queue represents the congestion of the multiple SUs sharing the operator's single \ON-\OFF channel that models the primary users (PUs) traffic.
+1 	We provide a queueing delay analysis with the general distributions of the SU service time and PU traffic using the renewal theory.
+1 	In terms of SUs, we show that there exists a unique Nash equilibrium in a non-cooperative game where SUs are players employing individual optimal strategies.
+1 	We also provide a sufficient condition and iterative algorithms for equilibrium convergence.
+1 	In terms of operators, two pricing mechanisms are proposed with different goals: revenue maximization and social welfare maximization.
+1 	In the second monopoly market, an operator exploiting exclusive-use DSA has many channels that will be allocated separately to each entering SU.
+2 	We also analyze the pricing effect on the equilibrium behaviors of the SUs and the revenue-optimal and socially-optimal pricing strategies of the operator in this market.
+0 	In the third duopoly market, we study a price competition between two operators employing shared-use and exclusive-use DSA, respectively, as a two-stage Stackelberg game.
+1 	Using a backward induction method, we show that there exists a unique equilibrium for this game and investigate the equilibrium convergence.
+
+
+# 128
+### http://arxiv.org/abs/1407.2125v2
+## Noisy Distance Measurements Using 3-D Localization with Rb-Rf Methods
+
+0 	Wireless sensor networks are dynamically formed over the varying topologies.
+0 	Wireless sensor networks can assist in conducting the rescue operations and can provide search in timely manner.
+0 	Long time monitoring applications are environment monitoring, security surveillance and habitat monitoring.
+0 	Further, where it can be deployed in time critical situations when disaster happens.
+0 	As we are dealing with the human lives here, we can not just rely on the localization schemes that depend upon the connectivity information Rf i.e. range-free algorithms only.
+0 	Further, rescue operations are carried out in highly noisy environments, so distance based Rb(range-based) localization algorithms generate high error in distance measurements.
+1 	An efficient algorithm is needed that can measure the location of the sensor nodes near to the living being or being attached to them in 3-D space with a high accuracy.
+1 	To achieve such kind of accuracy a combination of both the strategies is required.
+1 	The proposed method which incorporates both the Rb(range-based)&Rfrange-free strategies that successfully localizes nodes in a sensor network with noisy distance measurements.
+1 	We also have depicted the effect of scalability on the performance of the algorithm.
+2 	Results show that as the scalability of the network increases with the number of beacon nodes; the performance of the algorithm goes high above 90 percent .
+1 	The granularity of the areas estimated may be easily adjusted by changing the system parameters which makes the proposed algorithm flexible.
+
+
+# 129
+### http://arxiv.org/abs/1407.5385v1
+## Nontransitive Ranking to Enhance Routing Decision in MANETS
+
+0 	An ad hoc network is an infrastructureless network in which nodes perform terminal as well as routing functions.
+0 	A routing protocol is the only substitute to complete the communications in the absence of an access point.
+1 	In spite of that mobile nodes or so called routers uses some mechanism for calculating the best route when it has multiple routes for the same destination.
+1 	On the basis of one or more metrics routes are ranked from best to worst.
+1 	But, in an ad hoc network many factors can affect this decision, such as the delay, load, route lifetime etc.
+1 	Thus measuring and finding routes on the basis of crisp mathematical model for all these attributes is complicated.
+1 	That why, the fuzzy approach for best route determination is required for MANET because some of the metrics are fuzzy or vague and the classical ranking of routes and transitivity in the ranking does not hold.
+1 	The proposed Nontransitive Route Ranking subjective comparison of one route with others and performs nontransitive ranking to rank routes from best to worst.
+2 	The pairwise comparisons of each route with others give more accurate and fair comparison.
+2 	The proposed ranking is easier than classical ranking in which metrics have assigned some value and these values are combined to obtain the ranking.
+2 	Experimental result shows the efficiency of the proposed model.
+0 	Keywords: Fuzzy, Rank, Nontransitive, Route, Ranking, Relativity
+
+
+# 130
+### http://arxiv.org/abs/0801.4054v2
+## Bounded Mean-Delay Throughput and Non-Starvation Conditions in Aloha Network
+
+0 	This paper considers the requirements to ensure bounded mean queuing delay and non-starvation in a slotted Aloha network operating the exponential backoff protocol.
+0 	It is well-known that the maximum possible throughput of a slotted Aloha system with a large number of nodes is 1/e = 0.3679.
+0 	Indeed, a saturation throughput of 1/e can be achieved with an exponential backoff factor of r = e/(e-1)=1.5820.
+0 	The binary backoff factor of r = 2 is assumed in the majority of prior work, and in many practical multiple-access networks such as the Ethernet and WiFi.
+0 	For slotted Aloha, the saturation throughput 0.3466 for r = 2 is reasonably close to the maximum of 1/e, and one could hardly raise objection to adopting r = 2 in the system.
+0 	However, this paper shows that if mean queuing delay is to be bounded, then the sustainable throughput when r = 2 is only 0.2158, a drastic 41% drop from 1/e .
+0  Fortunately, the optimal setting of r = 1.3757 under the bounded mean-delay requirement allows us to achieve sustainable throughput of 0.3545, a penalty of only less than 4% relative to 1/e.
+2 	A general conclusion is that the value of r may significantly affect the queuing delay performance.
+2 	Besides analyzing mean queuing delay, this paper also delves into the phenomenon of starvation, wherein some nodes are deprived of service for an extended period of time while other nodes hog the system.
+1 	Specifically, we propose a quantitative definition for starvation and show that the conditions to guarantee bounded mean delay and non-starved operation are one of the same, thus uniting these two notions.
+2 	Finally, we show that when mean delay is large and starvation occurs, the performance results obtained from simulation experiments may not converge.
+2 	A quantitative discussion of this issue is provided in this paper.
+
+
+# 131
+### http://arxiv.org/abs/1508.05017v3
+## On the Packet Allocation of Multi-Band Aggregation Wireless Networks
+
+0 	The use of heterogeneous networks with multiple radio access technologies (RATs) is a system concept that both academia and industry are studying.
+0 	In such system, integrated use of available multiple RATs is essential to achieve beyond additive throughput and connectivity gains using multi-dimensional diversity.
+0 	This paper considers an aggregation module called opportunistic multi-MAC aggregation (OMMA).
+0 	It resides between the IP layer and the air interface protocol stacks, common to all RATs in the device.
+1 	We present a theoretical framework for such system while considering a special case of multi-RAT systems, i.e., a multi-band wireless LAN (WLAN) system.
+1 	An optimal packet distribution approach is derived which minimizes the average packet latency (the sum of queueing delay and serving delay) over multiple bands.
+1 	It supports multiple user terminals with different QoS classes simultaneously.
+1 	We further propose a packet scheduling algorithm, OMMA Leaky Bucket, which minimizes the packet end-to-end delay, i.e., the sum of average packet latency and average packet reordering delay.
+1 	We also describe the system architecture of the proposed OMMA system, which is applicable for the general case of the multi- RAT devices.
+1 	It includes functional description, discovery and association processes, and dynamic RAT update management.
+2 	We finally present simulation results for a multi-band WLAN system.
+2 	It shows the performance gains of the proposed OMMA Leaky Bucket scheme in comparison to other existing packet scheduling mechanisms.
+
+
+# 132
+### http://arxiv.org/abs/1512.02594v1
+## Suporte à Mobilidade em Redes Mesh Sem Fio: estratégias comuns versus SDN
+
+0 	Wireless mesh networks have been presented as a robust, scalable and low cost solution to provide connectivity in long distance areas.
+0 	However, given its nature, routing strategies must support seamless mobility of nodes while enabling operation with a good performance and fast self-recovery from links fault.
+0 	The routing approaches that meet these requirements are based on protocols usually used in ad-hoc networks (e.g. OLSR and B.A.T.M.A.N.) and, more recently, in the SDN paradigm (e.g. OpenWiMesh), each one of them having its own pros and cons.
+0 	Therefore, it is important to evaluate the benefits and impacts of each approach, taking into account models and metrics inherent to the mobility.
+1 	In this paper, we propose a simplified implementation of mobility support in OpenWiMesh and evaluate its performance compared to other protocols, using differents mobility and data traffic models.
+1 	The chosen metrics are based on packet loss, occupation of the links with control traffic and delay.
+2 	Simulated results show that the SDN approach perform better than the classic protocols, beyond flexibility and programmability of SDN itself.
+
+
+# 133
+### http://arxiv.org/abs/1512.03770v2
+## Flexibility of Networks: a new measure for network design space analysis?
+
+0 	Flexibility is often claimed as a competitive advantage when proposing new network designs.
+0 	However, most proposals provide only qualitative arguments for their improved support of flexibility.
+0 	Quantitative arguments vary a lot among different proposals.
+0 	A general understanding for flexibility is not yet clearly defined, leaving it to the reader to draw the right conclusions based on background information.
+0 	The term flexibility is commonly defined as the ability to adapt to changes.
+0 	For networks, flexibility would refer to the ability to adapt the available network resources, such as flows or topology, to changes of design requirements, e.g., shorter latency budgets or different traffic distributions.
+0 	Recent concepts such as Software Defined Networking, Network Virtualization and Network Function Virtualization have emerged claiming to provide more flexibility in networks.
+0 	Nevertheless, a deeper understanding of what flexibility means and how it could be quantified to compare different network designs remains open.
+0 	In this paper, we ask whether flexibility can be a new measure for network design space analysis.
+1 	As it is quite challenging to formulate a flexibility measure that covers all network aspects, we propose an initial set of flexibility aspects to start grounding guidelines.
+1 	Our initial selection is backed up by an analysis of Software Defined Networking, Network Virtualization and Network Function Virtualization for their support of the selected flexibility aspects.
+1 	Our research methodology is based on a systematic approach that leads to network design guidelines with respect to flexibility.
+
+
+# 134
+### http://arxiv.org/abs/1602.00097v1
+## Dynamic Virtual Machine Management via Approximate Markov Decision Process
+
+0 	Efficient virtual machine (VM) management can dramatically reduce energy consumption in data centers.
+0 	Existing VM management algorithms fall into two categories based on whether the VMs' resource demands are assumed to be static or dynamic.
+0 	The former category fails to maximize the resource utilization as they cannot adapt to the dynamic nature of VMs' resource demands.
+0 	Most approaches in the latter category are heuristical and lack theoretical performance guarantees.
+1 	In this work, we formulate dynamic VM management as a large-scale Markov Decision Process (MDP) problem and derive an optimal solution.
+1 	Our analysis of real-world data traces supports our choice of the modeling approach.
+1 	However, solving the large-scale MDP problem suffers from the curse of dimensionality.
+1 	Therefore, we further exploit the special structure of the problem and propose an approximate MDP-based dynamic VM management method, called MadVM.
+1 	We prove the convergence of MadVM and analyze the bound of its approximation error.
+1 	Moreover, MadVM can be implemented in a distributed system, which should suit the needs of real data centers.
+1 	Extensive simulations based on two real-world workload traces show that MadVM achieves significant performance gains over two existing baseline approaches in power consumption, resource shortage and the number of VM migrations.
+1 	Specifically, the more intensely the resource demands fluctuate, the more MadVM outperforms.
+
+
+# 135
+### http://arxiv.org/abs/1602.02091v1
+## Towards Innovative Physical Layer Design for Mobile WSN Platforms
+
+0 	We today live in the era of dynamic and mobile wireless enabled platforms.
+0 	This kind of stringent communication capability in the face of volatile and turbulent mobility demands a fresh look at physical layer in general and antenna design in particular.
+0 	The dimension of the antenna is 30x35x1.6 mm^3.
+0 	Multiplicity of bands is very useful for compatibility purposes where legacy robotic platforms generally operate in MHz range while latest robotic platforms are capable to handle GHz communication regimes and can pump data very at much greater speeds.
+0 	Seven frequency bands are obtained at 700 MHz, 2.4 GHz, 3.6 GHz, 4.37 GHz, 5.8 GHz, 6.93 GHz and 7.7 GHz with bandwidth of 1.1 GHz, 0.7 GHz, 0.8 GHz, 0.23 GHz, 0.90 GHz, 0.19 GHz and 0.12 GHz respectively.

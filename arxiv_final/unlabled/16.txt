@@ -1,0 +1,287 @@
+
+
+# 226
+### http://arxiv.org/abs/1705.08954v2
+## A Geometric Analysis Method for Evaluation of Coexistence between DSRC and Wi-Fi at 5.9 GHz
+
+-1 	Co-channel coexistence between Dedicated Short-Range Communications (DSRC) and Wi-Fi needs thorough study.
+-1 	The reason is that although the 5.
+-1 	850-5.
+-1 	925 GHz (5.
+-1 	9 GHz) band has been reserved for DSRC so far, the U.
+-1 	S.
+-1 	government is moving swiftly on opening the band to be shared with Wi-Fi.
+-1 	However, most prior work lacks sufficient scientific rigor by relying on performance metrics such as packet delivery rate (PDR) and packet delay that cannot accurately measure performance of a vehicular network that primarily uses broadcast in dissemination of packets.
+-1 	Precise analysis of such broadcast operation is essential for rigorous investigation of DSRC-Wi-Fi coexistence because most safety-critical applications of DSRC operate based on broadcast.
+-1 	This paper proposes a new metric that can more accurately characterize the performance of a broadcast-based DSRC network.
+-1 	The new metric is used to (i) characterize coexistence of DSRC with IEEE 802.
+-1 	11ac-based Wi-Fi and (ii) suggest selection of key medium access control (MAC) parameters for DSRC: inter-broadcast interval (IBI) and contention window (CW).
+
+
+# 227
+### http://arxiv.org/abs/1705.10728v1
+## Cost-optimal caching for D2D networks with user mobility: Modeling, analysis, and computational approaches
+
+-1 	Caching popular files at user equipments (UEs) provides an effective way to alleviate the burden of the backhaul networks.
+-1 	Generally, popularity-based caching is not a system-wide optimal strategy, especially for user mobility scenarios.
+-1 	Motivated by this observation, we consider optimal caching with presence of mobility.
+-1 	A cost-optimal caching problem (COCP) for device-to-device (D2D) networks is modelled, in which the impact of user mobility, cache size, and total number of encoded segments are all accounted for.
+-1 	Compared with the related studies, our investigation guarantees that the collected segments are non-overlapping, takes into account the cost of downloading from the network, and provides a rigorous problem complexity analysis.
+-1 	The hardness of the problem is proved via a reduction from the satisfiability problem.
+-1 	Next, a lower-bounding function of the objective function is derived.
+-1 	By the function, an approximation of COCP (ACOCP) achieving linearization is obtained, which features two advantages.
+-1 	First, the ACOCP approach can use an off-the-shelf integer linear programming algorithm to obtain the global optimal solution, and it can effectively deliver solutions for small-scale and mediumscale system scenarios.
+-1 	Second, and more importantly, based on the ACOCP approach, one can derive the lower bound of global optimum of COCP, thus enabling performance benchmarking of any suboptimal algorithm.
+-1 	To tackle large scenarios with low complexity, we first prove that the optimal caching placement of one user, giving other users' caching placements, can be derived in polynomial time.
+-1 	Then, based on this proof, a mobility aware user-by-user (MAUU) algorithm is developed.
+-1 	Simulation results verify the effectivenesses of the two approaches by comparing them to the lower bound of global optimum and conventional caching algorithms.
+
+
+# 228
+### http://arxiv.org/abs/1706.01057v1
+## Optimal Relaying in Energy Harvesting Wireless Networks with Wireless-Powered Relays
+
+-1 	In this paper, we consider a wireless cooperative network with an energy harvesting relay which is powered by the energy harvested from ambient RF waves, such as that of a data packet.
+-1 	At any given time, the relay operates either in the energy harvesting (EH) mode or the data decoding (DD) mode, but not both.
+-1 	Separate energy and data buffers are kept at the relay to store the harvested energy and decoded data packets, respectively.
+-1 	In this paper, we optimize a time switching policy that switches between the EH mode and DD mode to maximize the system throughput or minimize the average transmission delay.
+-1 	Both static and dynamic time switching policies are derived.
+-1 	In particular, static policies are the ones where EH or DD mode is selected with a pre-determined probability.
+-1 	In contrast, in a dynamic policy, the mode is selected dynamically according to the states of data and energy buffers.
+-1 	We prove that the throughput-optimal static and dynamic policies keep the relay data buffer at the boundary of stability.
+-1 	More specifically, we show that the throughput-optimal dynamic policy has a threshold-based structure.
+-1 	Moreover, we prove that the delay-optimal dynamic policy also has a threshold-based structure and keeps at most one packet at the relay.
+-1 	We notice that the delay-optimal and throughput-optimal dynamic policies coincide in most cases.
+-1 	However, it is not true for optimal static policies.
+-1 	Finally, through extensive numerical results, we show the efficiency of optimal dynamic policies compared with the static ones in different conditions.
+
+
+# 229
+### http://arxiv.org/abs/1706.02252v1
+## Dynamic Distributed Mobility Management System based on Multiple Mix-Zones over Road Networks
+
+-1 	Vehicle have access to the internet for communications to facilitate the need of mobility management and point of interest distribution in emerging Intelligent Transportation System (ITS) .
+-1 	Therefore, its obvious that by changing the road side unit frequently , may require fast handover management to mobile user (MU) for the configuration of new IP address , however the ongoing session remain un-disturbed .
+-1 	Recent study has shown that , the current version of IP mobility protocols are the centralized solutions, In centralized environment data traffic and data management is being routed to an anchor entity.
+-1 	In some situations , the vehicles may be routed in the form of group to pass from one RSU to another RSU.
+-1 	In response the traffic and mobility exchanged messages are increased and it will dramatically affect the performance of network.
+-1 	To cope with these challenges a new construct named DDMM (Dynamic Distributed Mobility management) has been anticipated by IETF DDMM organization.
+-1 	It has been designed on the basis of network-based CMM protocol, which is known as Proxy Mobile IPv6(PMIPv6).
+-1 	However , it has been realized that there can be significance difference among network based DDMM and PMIPv6 with respect to handover latency and packet loss.
+-1 	Therefore , we have envisioned fast handover for network-based DDMM (Dynamic Distributed Mobility management) which is based on fast handover for PMIPv6(PFMIPv6).
+-1 	However , it has been required to include modifications on PFMIPV6 to take on DDMM.
+-1 	We have designed some important additions to support this model, when MU hold IP flows and has many different anchor entities.
+-1 	In addition we also derived analytical expressions to check and made comparison about the handover performance of the given DDMM schemes.
+-1 	It has been revealed that DDMM has outperformed in terms of handover latency , session recovery and packet loss as compared with previous schemes.
+
+
+# 230
+### http://arxiv.org/abs/1706.03695v1
+## COPSS-lite: Lightweight ICN Based Pub/Sub for IoT Environments
+
+-1 	Information Centric Networking is a new networking paradigm that treats content as first class entity.
+-1 	It provides content to users without regards to the current location of the content.
+-1 	The publish/subscribe systems have gained popularity in Internet.
+-1 	Pub/sub systems dismisses the need for users to request every content of their interest.
+-1 	Instead, the content is supplied to interested users (subscribers) as and when it is published.
+-1 	CCN/NDN are popular ICN proposals widely accepted in the ICN community however, they do not provide an efficient pub/sub mechanism.
+-1 	COPSS enhances CCN/NDN with an efficient pub/sub capability.
+-1 	Internet of Things (IoT) is a growing topic of interest in both Academia and Industry.
+-1 	The current designs for IoT relies on IP.
+-1 	However, the IoT devices are constrained in their available resources and IP is heavy for their operation.
+-1 	We observed that IoT's are information centric in nature and hence ICN is a more suitable candidate to support IoT environments.
+-1 	Although NDN and COPSS work well for the Internet, their current full fledged implementations cannot be used by the resource constrained IoT devices.
+-1 	CCN-lite is a light weight, inter-operable version of the CCNx protocol for supporting the IoT devices.
+-1 	However, CCN-lite like its ancestors lacks the support for an efficient pub/sub mechanism.
+-1 	In this paper, we developed COPSS-lite, an efficient and light weight implementation of pub/sub for IoT.
+-1 	COPSS-lite is developed to enhance CCN-lite and also support multi-hop connection by incorporating the famous RPL protocol for low power and lossy networks.
+-1 	We provide a preliminary evaluation to show proof of operability with real world sensor devices in IoT lab.
+-1 	Our results show that COPSS-lite is compact, operates on all platforms that support CCN-lite and we observe significant performance benefits with COPSS-lite in IoT environments.
+
+
+# 231
+### http://arxiv.org/abs/1706.06935v1
+## Agile Millimeter Wave Networks with Provable Guarantees
+
+-1 	There is much interest in integrating millimeter wave radios (mmWave) into wireless LANs and 5G cellular networks to benefit from their multiple GHz of available spectrum.
+-1 	Yet unlike existing technologies, e.g., WiFi, mmWave radios require highly directional antennas.
+-1 	Since the antennas have pencil-beams, the transmitter and receiver need to align their antenna beams before they can communicate.
+-1 	Existing solutions scan the entire space to find the best alignment.
+-1 	Such a process has been shown to introduce up to seconds of delay, and is unsuitable for wireless networks where an access point has to quickly switch between users and accommodate mobile clients.
+-1 	This paper presents Rapid-Link, a new protocol that can find the best mmWave beam alignment without scanning the space.
+-1 	Given all possible directions for setting the antenna beam, Rapid-Link provably finds the optimal direction in logarithmic number of measurements.
+-1 	Further, Rapid-Link works within the existing 802.
+-1 	11ad standard for mmWave LAN, and can support both clients and access points.
+-1 	We have implemented Rapid-Link in a mmWave radio and evaluated it empirically.
+-1 	Our results show that it reduces beam alignment delay by orders of magnitude.
+-1 	In particular, for highly directional mmWave devices operating under 802.
+-1 	11ad, the delay drops from over a second to 2.
+-1 	5 ms.
+
+
+# 232
+### http://arxiv.org/abs/1706.09115v2
+## Fairness of Congestion-Based Congestion Control: Experimental Evaluation and Analysis
+
+-1 	BBR is a new congestion-based congestion control algorithm proposed by Google.
+-1 	A BBR flow sequentially measures the bottleneck bandwidth and round-trip delay of the network pipe, and uses the measured results to govern its sending behavior, maximizing the delivery bandwidth while minimizing the delay.
+-1 	However, our deployment in geo-distributed cloud servers reveals a severe RTT fairness problem: a BBR flow with longer RTT dominates a competing flow with shorter RTT.
+-1 	Somewhat surprisingly, our deployment of BBR on the Internet and an in-house cluster unearthed a consistent bandwidth disparity among competing flows.
+-1 	Long BBR flows are bound to seize bandwidth from short ones.
+-1 	Intrigued by this unexpected behavior, we ask, is the phenomenon intrinsic to BBR?
+-1 	how's the severity?
+-1 	and what's the root cause?
+-1 	To this end, we conduct thorough measurements and develop a theoretical model on bandwidth dynamics.
+-1 	We find, as long as the competing flows are of different RTTs, bandwidth disparities will arise.
+-1 	With an RTT ratio of 10, even flow starvation can happen.
+-1 	We blame it on BBR's connivance at sending an excessive amount of data when probing bandwidth.
+-1 	Specifically, the amount of data is in proportion to RTT, making long RTT flows overwhelming short ones.
+-1 	Based on this observation, we design a derivative of BBR that achieves guaranteed flow fairness, at the meantime without losing any merits.
+-1 	We have implemented our proposed solution in Linux kernel and evaluated it through extensive experiments.
+
+
+# 233
+### http://arxiv.org/abs/1707.02024v1
+## Comparison of Flow Scheduling Policies for Mix of Regular and Deadline Traffic in Datacenter Environments
+
+-1 	Datacenters are the main infrastructure on top of which cloud computing services are offered.
+-1 	Such infrastructure may be shared by a large number of tenants and applications generating a spectrum of datacenter traffic.
+-1 	Delay sensitive applications and applications with specific Service Level Agreements (SLAs), generate deadline constrained flows, while other applications initiate flows that are desired to be delivered as early as possible.
+-1 	As a result, datacenter traffic is a mix of two types of flows: deadline and regular.
+-1 	There are several scheduling policies for either traffic type with focus on minimizing completion times or deadline miss rate.
+-1 	In this report, we apply several scheduling policies to mix traffic scenario while varying the ratio of regular to deadline traffic.
+-1 	We consider FCFS (First Come First Serve), SRPT (Shortest Remaining Processing Time) and Fair Sharing as deadline agnostic approaches and a combination of Earliest Deadline First (EDF) with either FCFS or SRPT as deadline-aware schemes.
+-1 	In addition, for the latter, we consider both cases of prioritizing deadline traffic (Deadline First) and prioritizing regular traffic (Deadline Last).
+-1 	We study both light-tailed and heavy-tailed flow size distributions and measure mean, median and tail flow completion times (FCT) for regular flows along with Deadline Miss Rate (DMR) and average lateness for deadline flows.
+-1 	We also consider two operation regimes of lightly-loaded (low utilization) and heavily-loaded (high utilization).
+-1 	We find that performance of deadline-aware schemes is highly dependent on fraction of deadline traffic.
+-1 	With light-tailed flow sizes, we find that FCFS performs better in terms of tail times and average lateness while SRPT performs better in average times and deadline miss rate.
+-1 	For heavy-tailed flow sizes, except for tail times, SRPT performs better in all other metrics.
+
+
+# 234
+### http://arxiv.org/abs/1707.08883v1
+## Analog On-Tag Hashing: Towards Selective Reading as Hash Primitives in Gen2 RFID Systems
+
+-1 	Deployment of billions of Commercial off-the-shelf (COTS) RFID tags has drawn much of the attention of the research community because of the performance gaps of current systems.
+-1 	In particular, hash-enabled protocol (HEP) is one of the most thoroughly studied topics in the past decade.
+-1 	HEPs are designed for a wide spectrum of notable applications (e.g., missing detection) without need to collect all tags.
+-1 	HEPs assume that each tag contains a hash function, such that a tag can select a random but predicable time slot to reply with a one-bit presence signal that shows its existence.
+-1 	However, the hash function has never been implemented in COTS tags in reality, which makes HEPs a 10-year untouchable mirage.
+-1 	This work designs and implements a group of analog on-tag hash primitives (called Tash) for COTS Gen2-compatible RFID systems, which moves prior HEPs forward from theory to practice.
+-1 	In particular, we design three types of hash primitives, namely, tash function, tash table function and tash operator.
+-1 	All of these hash primitives are implemented through selective reading, which is a fundamental and mandatory functionality specified in Gen2 protocol, without any hardware modification and fabrication.
+-1 	We further apply our hash primitives in two typical HEP applications (i.e., cardinality estimation and missing detection) to show the feasibility and effectiveness of Tash.
+-1 	Results from our prototype, which is composed of one ImpinJ reader and 3, 000 Alien tags, demonstrate that the new design lowers 60% of the communication overhead in the air.
+-1 	The tash operator can additionally introduce an overhead drop of 29.
+-1 	7%.
+
+
+# 235
+### http://arxiv.org/abs/1708.04560v1
+## A Review of Internet of Things Architecture, Technologies and Analysis Smartphone-based Attacks Against 3D printers
+
+-1 	Human beings cannot be happy with any kind of tiredness based work, so they focused on machines to work on behalf of humans.
+-1 	The Internet-based latest technology provides the platforms for human beings to relax and unburden feeling.
+-1 	The Internet of Things (IoT) field efficiently helps human beings with smart decisions through Machine-to-Machine (M2M) communication all over the world.
+-1 	It has been difficult to ignore the importance of the IoT field with the new development of applications such as a smartphone in the present era.
+-1 	The IoT field sensor plays a vital role in sensing the intelligent object/things and making an intelligent decision after sensing the objects.
+-1 	The rapid development of new applications using smartphones in the world caused all users of the IoT community to be faced with one major challenge of security in the form of side channel attacks against highly intensive 3D printing systems.
+-1 	The smartphone formulated Intellectual property (IP) of side channel attacks investigate against 3D printer in the physical domain through reconstructed G-code file through primitive operations.
+-1 	The smartphone (Nexus 5) solved the main problems such as orientation fixing, model accuracy of frame size and validate the feasibility and effectiveness in real case studies against the 3D printer.
+-1 	The 3D printing estimated value reached 20.
+-1 	2 billion of dollars in 2021.
+-1 	The thermal camera is used for exploring the side channel attacks after reconstructing the objects against 3D printers.
+-1 	The researcher analyzed IoT security relevant issues which were avoided in future by enhanced strong security mechanism strategy, encryption, and machine learning-based algorithms, latest technologies, schemes and protocols utilized in an efficient way.
+-1 	Keywords: - Internet of Things (IoT), Machine-to-Machine (M2M), Security, 3D printer, smartphone
+
+
+# 236
+### http://arxiv.org/abs/1708.05091v2
+## Millimeter Wave Channel Measurements in a Railway Depot
+
+-1 	Millimeter wave (mmWave) communication is a key enabling technology with the potential to deliver high capacity, high peak data rate communications for future railway services.
+-1 	Knowledge of the radio characteristics is of paramount importance for the successful deployment of such systems.
+-1 	In this paper mmWave channel measurements are reported for a railway environment using a wideband channel sounder operating at 60GHz.
+-1 	Highly directional antennas are deployed at both ends of the link.
+-1 	Data is reported for path loss, root mean square (RMS) delay spread and K-factor.
+-1 	Static and mobile measurements are considered.
+-1 	Analysis shows that the signal strength is strongly dependent (up to 25dB) on the azimuth orientation of the directional transmit and receive antennas.
+-1 	A path loss exponent of n=2.
+-1 	04 was extracted from the Line-of-Sight measurements with optimally aligned antennas.
+-1 	RMS delay spreads ranged from 1ns to 22ns depending on antenna alignment.
+-1 	50% of the measured K-factors were found to be less than 6dB.
+-1 	We conclude this is the result of ground reflections in the vertical Tx-Rx plane.
+
+
+# 237
+### http://arxiv.org/abs/1708.06313v1
+## A survey on fiber nonlinearity compensation for 400 Gbps and beyond optical communication systems
+
+-1 	Optical communication systems represent the backbone of modern communication networks.
+-1 	Since their deployment, different fiber technologies have been used to deal with optical fiber impairments such as dispersion-shifted fibers and dispersion-compensation fibers.
+-1 	In recent years, thanks to the introduction of coherent detection based systems, fiber impairments can be mitigated using digital signal processing (DSP) algorithms.
+-1 	Coherent systems are used in the current 100 Gbps wavelength-division multiplexing (WDM) standard technology.
+-1 	They allow the increase of spectral efficiency by using multi-level modulation formats, and are combined with DSP techniques to combat the linear fiber distortions.
+-1 	In addition to linear impairments, the next generation 400 Gbps/1 Tbps WDM systems are also more affected by the fiber nonlinearity due to the Kerr effect.
+-1 	At high input power, the fiber nonlinear effects become more important and their compensation is required to improve the transmission performance.
+-1 	Several approaches have been proposed to deal with the fiber nonlinearity.
+-1 	In this paper, after a brief description of the Kerr-induced nonlinear effects, a survey on the fiber nonlinearity compensation (NLC) techniques is provided.
+-1 	We focus on the well-known NLC techniques and discuss their performance, as well as their implementation and complexity.
+-1 	An extension of the inter-subcarrier nonlinear interference canceler approach is also proposed.
+-1 	A performance evaluation of the well-known NLC techniques and the proposed approach is provided in the context of Nyquist and super-Nyquist superchannel systems.
+
+
+# 238
+### http://arxiv.org/abs/1709.01320v1
+## OpenSIP: Toward Software-Defined SIP Networking
+
+-1 	VoIP is becoming a low-priced and efficient replacement for PSTN in communication industries.
+-1 	With a widely growing adoption rate, SIP is an application layer signaling protocol, standardized by the IETF, for creating, modifying, and terminating VoIP sessions.
+-1 	Generally speaking, SIP routes a call request to its destination by using SIP proxies.
+-1 	With the increasing use of SIP, traditional configurations pose certain drawbacks, such as ineffective routing, un-optimized management of proxy resources (including CPU and memory), and overload conditions.
+-1 	This paper presents OpenSIP to upgrade the SIP network framework with emerging technologies, such as SDN and NFV.
+-1 	SDN provides for management that decouples the data and control planes along with a software-based centralized control that results in effective routing and resource management.
+-1 	Moreover, NFV assists SDN by virtualizing various network devices and functions.
+-1 	However, current SDN elements limit the inspected fields to layer 2-4 headers, whereas SIP routing information resides in the layer-7 header.
+-1 	A benefit of OpenSIP is that it enforces policies on SIP networking that are agnostic to higher layers with the aid of a Deep Packet Inspection (DPI) engine.
+-1 	Among the benefits of OpenSIP is programmability, cost reduction, unified management, routing, as well as efficient load balancing.
+-1 	The present study implements OpenSIP on a real testbed which includes Open vSwitch and the Floodlight controller.
+-1 	The results show that the proposed architecture has a low overhead and satisfactory performance and, in addition, can take advantage of a flexible scale-out design during application deployment.
+
+
+# 239
+### http://arxiv.org/abs/1709.02471v1
+## Parameterization of SWIM Mobility Model Using Contact Traces
+
+-1 	Opportunistic networks (OppNets) are focused to exploit direct, localised communications which occur in a peer-to-peer manner mostly based on people's movements and their contact durations.
+-1 	Therefore, the use of realistic mobility models is critical to evaluate the data dissemination in OppNets.
+-1 	One of the mobility models that is available in OMNeT++ which can be used to mimic human movement patterns is Small Worlds in Motion (SWIM).
+-1 	The SWIM model is based on the intuition that humans often visit nearby locations and if the visited location is far away, then it is probably due to the popularity of the location.
+-1 	As an alternative to mobility of a node, pairwise contact probabilities are also used to evaluate the data dissemination in OppNets.
+-1 	Pairwise contact probabilities can be used to predict that a node will be met by a particular node.
+-1 	These probabilities can be derived in many ways.
+-1 	One of the ways is to calculate the average probability with which a node will meet another particular node at any point of time.
+-1 	Another way is to calculate the probability with which a node will meet another based on the time of day.
+-1 	The way of calculating pairwise contact probability depends on the scenario.
+-1 	In this work, the pairwise contact probabilities obtained from the real traces are used to tune the parameters of the SWIM mobility model.
+-1 	The traces and the SWIM model are compared in terms of contact durations, inter-contact times and, number of pairwise contacts.
+-1 	How to decide SWIM parameters using real contact traces are being addressed.
+
+
+# 240
+### http://arxiv.org/abs/1709.03723v1
+## DEARF: Delay and Energy Aware RAW Formation Scheme to Support Delay Sensitive M2M Traffic in IEEE 802.11ah Networks
+
+-1 	The IEEE 802.
+-1 	11ah amendment is designed to support upto 8K M2M devices over the Sub-GHz channel.
+-1 	To achieve this, it introduces new modifications to the PHY and MAC layers.
+-1 	A dynamic Restricted Access Window~(RAW) mechanism is introduced at the MAC layer.
+-1 	RAW splits the access for different devices into small chunks of time.
+-1 	Using the RAW mechanism, we propose a novel Delay and Energy Aware RAW Formation (DEARF) scheme to support delay sensitive devices along with other delay tolerant devices.
+-1 	We exploit this to introduce four new RAWs.
+-1 	These new RAWs help split the access into contention free for delay sensitive devices and contention based for other devices.
+-1 	For scheduling resources between these devices, we give the DEARF resource allocation and evaluate the scheme with help of simulations.
+-1 	Devices suffer a higher delay but, at high loads, devices using the proposed scheme are able to save 30% energy per packet and upto 330% energy per device.
+-1 	Packet delivery ratio is 100% at low loads and 90% at high loads as compared to 95% and 27% given by the traditional access.
+-1 	Other delay tolerant devices save upto 16% on energy per packet transmitted and 23% on delay at high loads.

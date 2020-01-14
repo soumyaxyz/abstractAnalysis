@@ -1,0 +1,252 @@
+﻿
+
+# 16
+### http://arxiv.org/abs/cs/0504073v1
+## Rendezvous Regions: A Scalable Architecture for Resource Discovery and Service Location in Large-Scale Mobile Networks
+
+0	In large-scale wireless networks such as mobile ad hoc and sensor networks, efficient and robust service discovery and data-access mechanisms are both essential and challenging.
+0 	Rendezvous-based mechanisms provide a valuable solution for provisioning a wide range of services.
+1 	In this paper, we describe Rendezvous Regions (RRs) - a novel scalable rendezvous-based architecture for wireless networks.
+0 	RR is a general architecture proposed for service location and bootstrapping in ad hoc networks, in addition to data-centric storage, configuration, and task assignment in sensor networks.
+0 	In RR the network topology is divided into geographical regions, where each region is responsible for a set of keys representing the services or data of interest.
+0 	Each key is mapped to a region based on a hash-table-like mapping scheme.
+0 	A few elected nodes inside each region are responsible for maintaining the mapped information.
+0 	The service or data provider stores the information in the corresponding region and the seekers retrieve it from there.
+1 	We run extensive detailed simulations, and high-level simulations and analysis, to investigate the design space, and study the architecture in various environments including node mobility and failures.
+1 	We evaluate it against other approaches to identify its merits and limitations.
+2 	The results show high success rate and low overhead even with dynamics.
+2 	RR scales to large number of nodes and is highly robust and efficient to node failures.
+2 	It is also robust to node mobility and location inaccuracy with a significant advantage over point-based rendezvous mechanisms.
+
+
+# 17
+### http://arxiv.org/abs/cs/0604017v3
+## AS Relationships: Inference and Validation
+
+0 	Research on performance, robustness, and evolution of the global Internet is fundamentally handicapped without accurate and thorough knowledge of the nature and structure of the contractual relationships between Autonomous Systems (ASs).
+1 	In this work we introduce novel heuristics for inferring AS relationships.
+1 	Our heuristics improve upon previous works in several technical aspects, which we outline in detail and demonstrate with several examples.
+1 	Seeking to increase the value and reliability of our inference results, we then focus on validation of inferred AS relationships.
+1 	We perform a survey with ASs' network administrators to collect information on the actual connectivity and policies of the surveyed ASs.
+1 	Based on the survey results, we find that our new AS relationship inference techniques achieve high levels of accuracy: we correctly infer 96.5% customer to provider (c2p), 82.8% peer to peer (p2p), and 90.3% sibling to sibling (s2s) relationships.
+1 	We then cross-compare the reported AS connectivity with the AS connectivity data contained in BGP tables.
+1 	We find that BGP tables miss up to 86.2% of the true adjacencies of the surveyed ASs.
+2 	The majority of the missing links are of the p2p type, which highlights the limitations of present measuring techniques to capture links of this type.
+1 	Finally, to make our results easily accessible and practically useful for the community, we open an AS relationship repository where we archive, on a weekly basis, and make publicly available the complete Internet AS-level topology annotated with AS relationship information for every pair of AS neighbors.
+
+
+# 18
+### http://arxiv.org/abs/cs/0609026v1
+## Rarest First and Choke Algorithms Are Enough
+
+0 	The performance of peer-to-peer file replication comes from its piece and peer selection strategies.
+0 	Two such strategies have been introduced by the BitTorrent protocol: the rarest first and choke algorithms.
+0 	Whereas it is commonly admitted that BitTorrent performs well, recent studies have proposed the replacement of the rarest first and choke algorithms in order to improve efficiency and fairness.
+1 	In this paper, we use results from real experiments to advocate that the replacement of the rarest first and choke algorithms cannot be justified in the context of peer-to-peer file replication in the Internet.
+1 	We instrumented a BitTorrent client and ran experiments on real torrents with different characteristics.
+0 	Our experimental evaluation is peer oriented, instead of tracker oriented, which allows us to get detailed information on all exchanged messages and protocol events.
+1 	We go beyond the mere observation of the good efficiency of both algorithms.
+1 	We show that the rarest first algorithm guarantees close to ideal diversity of the pieces among peers.
+2 	In particular, on our experiments, replacing the rarest first algorithm with source or network coding solutions cannot be justified.
+1 	We also show that the choke algorithm in its latest version fosters reciprocation and is robust to free riders.
+2 	In particular, the choke algorithm is fair and its replacement with a bit level tit-for-tat solution is not appropriate.
+1 	Finally, we identify new areas of improvements for efficient peer-to-peer file replication protocols.
+
+
+# 19
+### http://arxiv.org/abs/cs/0609069v1
+## Coverage and Connectivity in Three-Dimensional Networks
+
+0 	Most wireless terrestrial networks are designed based on the assumption that the nodes are deployed on a two-dimensional (2D) plane.
+0 	However, this 2D assumption is not valid in underwater, atmospheric, or space communications.
+0 	In fact, recent interest in underwater acoustic ad hoc and sensor networks hints at the need to understand how to design networks in 3D.
+0 	Unfortunately, the design of 3D networks is surprisingly more difficult than the design of 2D networks.
+0 	For example, proofs of Kelvin's conjecture and Kepler's conjecture required centuries of research to achieve breakthroughs, whereas their 2D counterparts are trivial to solve.
+1 	In this paper, we consider the coverage and connectivity issues of 3D networks, where the goal is to find a node placement strategy with 100% sensing coverage of a 3D space, while minimizing the number of nodes required for surveillance.
+2 	Our results indicate that the use of the Voronoi tessellation of 3D space to create truncated octahedral cells results in the best strategy.
+2 	In this truncated octahedron placement strategy, the transmission range must be at least 1.7889 times the sensing range in order to maintain connectivity among nodes.
+2 	If the transmission range is between 1.4142 and 1.7889 times the sensing range, then a hexagonal prism placement strategy or a rhombic dodecahedron placement strategy should be used.
+2 	Although the required number of nodes in the hexagonal prism and the rhombic dodecahedron placement strategies is the same, this number is 43.25% higher than the number of nodes required by the truncated octahedron placement strategy.
+1 	We verify by simulation that our placement strategies indeed guarantee ubiquitous coverage.
+2 	We believe that our approach and our results presented in this paper could be used for extending the processes of 2D network design to 3D networks.
+
+
+# 20
+### http://arxiv.org/abs/cs/0609086v1
+## About the Capacity of Flat and Self-Organized Ad Hoc and Hybrid Networks
+
+0 	Ad hoc networking specific challenges foster a strong research effort on efficient protocols design.
+0 	Routing protocols based on a self-organized structure have been studied principally for the robustness and the scalability they provide.
+0 	On the other hand, self-organization schemes may decrease the network capacity since they concentrate the traffic on privileged links.
+0 	This paper presents four models for evaluating the capacity of a routing schemes on 802.11 like networks.
+0 	Our approach consists in modeling the radio resource sharing principles of 802.11 like MAC protocols as a set of linear constraints.
+1 	We have implemented two models of fairness.
+0 	The first one assumes that nodes have a fair access to the channel, while the second one assumes that on the radio links.
+1 	We then develop a pessimistic and an optimistic scenario of spatial re-utilization of the medium, yielding a lower bound and an upper bound on the network capacity for each fairness case.
+0 	Our models are independent of the routing protocols and provide therefore a relevant framework for their comparison.
+1 	We apply our models to a comparative analysis of the well-known shortest path base flat routing protocol OLSR against two main self-organized structure approaches, VSR, and Wu & Li's protocols.
+2 	This study concludes on the relevance of self-organized approaches from the network capacity point of view.
+
+
+# 21
+### http://arxiv.org/abs/cs/0609098v1
+## Reducing the Makespan in Hierarchical Reliable Multicast Tree
+
+0 	In hierarchical reliable multicast environment, makespan is the time that is required to fully and successfully transmit a packet from the sender to all receivers.
+0 	Low makespan is vital for achieving high throughput with a TCP-like window based sending scheme.
+0 	In hierarchical reliable multicast methods, the number of repair servers and their locations influence the makespan.
+1 	In this paper we propose a new method to decide the locations of repair servers that can reduce the makespan in hierarchical reliable multicast networks.
+0 	Our method has a formulation based on mixed integer programming to analyze the makespan minimization problem.
+0 	A notable aspect of the formulation is that heterogeneous links and packet losses are taken into account in the formulation.
+1 	Three different heuristics are presented to find the locations of repair servers in reasonable time in the formulation.
+0 	Through simulations, three heuristics are carefully analyzed and compared on networks with different sizes.
+1 	We also evaluate our proposals on PGM (Pragmatic General Multicast) reliable multicast protocol using ns-2 simulation.
+2 	The results show that the our best heuristic is close to the lower bound by a factor of 2.3 in terms of makespan and by a factor of 5.5 in terms of the number of repair servers.
+
+
+# 22
+### http://arxiv.org/abs/0712.2083v1
+## VoIP over Multiple IEEE 802.11 Wireless LANs
+
+0 	Prior work indicates that 802.11 is extremely inefficient for VoIP transport.
+0 	Only 12 and 60 VoIP sessions can be supported in an 802.11b and an 802.11g WLAN, respectively.
+0 	This paper shows that the bad news does not stop there.
+0 	When there are multiple WLANs in the vicinity of each other, the already-low VoIP capacity can be further eroded in a significant manner.
+0 	For example, in a 5-by-5, 25-cell multi-WLAN network, the VoIP capacities for 802.11b and 802.11g are only 1.63 and 10.34 sessions per AP, respectively.
+0 	This paper investigates several solutions to improve the VoIP capacity.
+1 	Based on a conflict graph model, we propose a clique-analytical call-admission scheme, which increases the VoIP capacity by 52% and 37% in 802.11b and 802.11g respectively.
+2 	If all the three orthogonal frequency channels available in 11b and 11g are used, the capacity can be nearly tripled by the call-admission scheme.
+0 	This paper also proposes for the first time the use of coarse-grained time-division multiple access (CoTDMA) in conjunction with the basic 802.11 CSMA to eliminate the performance-degrading exposed-node and hidden-node problems.
+2 	We find that CoTDMA can further increase the VoIP capacity in the multi-WLAN scenario by an additional 35%.
+
+
+# 23
+### http://arxiv.org/abs/0712.2274v1
+## Distributed MAC Strategy for Exploiting Multi-user Diversity in Multi-rate IEEE 802.11 Wireless LANs
+
+0 	Fast rate adaptation has been established as an effective way to improve the PHY-layer raw date rate of wireless networks.
+0 	However, within the current IEEE 802.11 legacy, MAC-layer throughput is dominated by users with the lowest data rates, resulting in underutilization of bandwidth.
+1 	In this paper, we propose and analyze a novel distributed MAC strategy, referred to as Rate-aware DCF (R-DCF), to leverage the potential of rate adaptation in IEEE 802.11 WLANs.
+0 	The key feature of R-DCF is that by introducing different mini slots according to the instantaneous channel conditions, only contending stations with the highest data rate can access the channel.
+0 	In this way, the R-DCF protocol not only exploits multi-user diversity in a fully distributed manner but also reduces the loss of throughput due to collisions.
+1 	Through analysis, we develop an analytical model to derive the throughput of R-DCF in general multi-rate WLANs.
+1 	Using the analytical model we investigate the performance of R-DCF protocol in various network settings with different rate adaptation strategies and channel variations.
+1 	Based on the analysis, we further derive the maximal throughput achievable by R-DCF.
+0 	For practical implementation, an offline adaptive backoff method is developed to achieve a close-to-optimal performance at low runtime complexity.
+2 	The superiority of R-DCF is proven via extensive analyses and simulations.
+
+
+# 24
+### http://arxiv.org/abs/0807.1153v1
+## CSI: A Paradigm for Behavior-oriented Delivery Services in Mobile Human Networks
+
+0 	We propose behavior-oriented services as a new paradigm of communication in mobile human networks.
+0 	Our study is motivated by the tight user-network coupling in future mobile societies.
+-1 	In such a paradigm, messages are sent to inferred behavioral profiles, instead of explicit IDs.
+0 	Our paper provides a systematic framework in providing such services.
+0 	First, user behavioral profiles are constructed based on traces collected from two large wireless networks, and their spatio-temporal stability is analyzed.
+0 	The implicit relationship discovered between mobile users could be utilized to provide a service for message delivery and discovery in various network environments.
+1 	As an example application, we provide a detailed design of such a service in challenged opportunistic network architecture, named CSI.
+1 	We provide a fully distributed solution using behavioral profile space gradients and small world structures.
+2 	Our analysis shows that user behavioral profiles are surprisingly stable, i.e., the similarity of the behavioral profile of a user to its future behavioral profile is above 0.8 for two days and 0.75 for one week, and remains above 0.6 for five weeks.
+2 	The correlation coefficient of the similarity metrics between a user pair at different time instants is above 0.7 for four days, 0.62 for a week, and remains above 0.5 for two weeks.
+2 	Leveraging such a stability in user behaviors, the CSI service achieves delivery rate very close to the delay-optimal strategy (above 94%), with minimal overhead (less than 84% of the optimal).
+2 	We believe that this new paradigm will act as an enabler of multiple new services in mobile societies, and is potentially applicable in server-based, heterogeneous or infrastructure-less wireless environments.
+
+
+# 25
+### http://arxiv.org/abs/0812.4744v1
+## On Wireless Link Scheduling and Flow Control
+
+0 	This thesis focuses on link scheduling in wireless mesh networks by taking into account physical layer characteristics.
+0 	The assumption made throughout is that a packet is received successfully only if the Signal to Interference and Noise Ratio (SINR) at the receiver exceeds the communication threshold.
+0 	The thesis also discusses the complementary problem of flow control. 
+1 	(1) We consider various problems on centralized link scheduling in Spatial Time Division Multiple Access (STDMA) wireless mesh networks.
+1 	We motivate the use of spatial reuse as performance metric and provide an explicit characterization of spatial reuse.
+1 	We propose link scheduling algorithms based on certain graph models (communication graph, SINR graph) of the network.
+2 	Our algorithms achieve higher spatial reuse than that of existing algorithms, with only a slight increase in computational complexity. 
+1 	(2) We investigate random access algorithms in wireless networks.
+1 	We assume that the receiver is capable of power-based capture and propose a splitting algorithm that varies transmission powers of users on the basis of quaternary channel feedback.
+1 	We model the algorithm dynamics by a Discrete Time Markov Chain and consequently show that its maximum stable throughput is 0.5518.
+2 	Our algorithm achieves higher maximum stable throughput and significantly lower delay than the First Come First Serve (FCFS) splitting algorithm with uniform transmission power. 
+1 	(3) We consider the problem of flow control in packet networks from an information-theoretic perspective.
+1 	We derive the maximum entropy of a flow which conforms to traffic constraints imposed by a generalized token bucket regulator (GTBR), by taking into account the covert information present in randomness of packet lengths.
+
+
+# 26
+### http://arxiv.org/abs/0906.3038v1
+## A measurement driven, 802.11 anti-jamming system
+
+0 	Dense, unmanaged 802.11 deployments tempt saboteurs into launching jamming attacks by injecting malicious interference.
+0 	Nowadays, jammers can be portable devices that transmit intermittently at low power in order to conserve energy.
+1 	In this paper, we first conduct extensive experiments on an indoor 802.11 network to assess the ability of two physical layer functions, rate adaptation and power control, in mitigating jamming.
+1 	In the presence of a jammer we find that: (a) the use of popular rate adaptation algorithms can significantly degrade network performance and, (b) appropriate tuning of the carrier sensing threshold allows a transmitter to send packets even when being jammed and enables a receiver capture the desired signal.
+1 	Based on our findings, we build ARES, an Anti-jamming REinforcement System, which tunes the parameters of rate adaptation and power control to improve the performance in the presence of jammers.
+0 	ARES ensures that operations under benign conditions are unaffected.
+1 	To demonstrate the effectiveness and generality of ARES, we evaluate it in three wireless testbeds: (a) an 802.11n WLAN with MIMO nodes, (b) an 802.11a/g mesh network with mobile jammers and (c) an 802.11a WLAN.
+2 	We observe that ARES improves the network throughput across all testbeds by up to 150%.
+
+
+# 27
+### http://arxiv.org/abs/0907.5489v2
+## On Delay Constrained Multicast Capacity of Large-Scale Mobile Ad-Hoc Networks
+
+0 	This paper studies the delay constrained multicast capacity of large scale mobile ad hoc networks (MANETs).
+1 	We consider a MANET consists of $n_s$ multicast sessions.
+0 	Each multicast session has one source and $p$ destinations.
+0 	The wireless mobiles move according to a two-dimensional i.i.d. mobility model.
+0 	Each source sends identical information to the $p$ destinations in its multicast session, and the information is required to be delivered to all the $p$ destinations within $D$ time-slots.
+1 	Given the delay constraint $D,$ we first prove that the capacity per multicast session is $O(\min\{1, (\log p)(\log (n_sp)) \sqrt{\frac{D}{n_s}}\}).
+0 	$ Given non-negative functions $f(n)$ and $g(n)$: $f(n)=O(g(n))$ means there exist positive constants $c$ and $m$ such that $f(n) \leq cg(n)$ for all $ n\geq m;$ $f(n)=\Omega(g(n))$ means there exist positive constants $c$ and $m$ such that $f(n)\geq cg(n)$ for all $n\geq m;$ $f(n)=\Theta(g(n))$ means that both $f(n)=\Omega(g(n))$ and $f(n)=O(g(n))$ hold; $f(n)=o(g(n))$ means that $\lim_{n\to \infty} f(n)/g(n)=0;$ and $f(n)=\omega(g(n))$ means that $\lim_{n\to \infty} g(n)/f(n)=0.
+1 	$ We then propose a joint coding/scheduling algorithm achieving a throughput of $\Theta(\min\{1,\sqrt{\frac{D}{n_s}}\}).
+2 	$ Our simulations show that the joint coding/scheduling algorithm achieves a throughput of the same order ($\Theta(\min\{1, \sqrt{\frac{D}{n_s}}\})$) under random walk model and random waypoint model.
+
+
+# 28
+### http://arxiv.org/abs/0908.0711v3
+## Passive network tomography for erroneous networks: A network coding approach
+
+0 	Passive network tomography uses end-to-end observations of network communication to characterize the network, for instance to estimate the network topology and to localize random or adversarial glitches.
+0 	Under the setting of linear network coding this work provides a comprehensive study of passive network tomography in the presence of network (random or adversarial) glitches.
+0 	To be concrete, this work is developed along two directions: 
+0 	1.Tomographic upper and lower bounds (i.e., the most adverse conditions in each problem setting under which network tomography is possible, and corresponding schemes (computationally efficient, if possible) that achieve this performance) are presented for random linear network coding (RLNC).
+1 	We consider RLNC designed with common randomness, i.e., the receiver knows the random code-books all nodes. 
+1 	(To justify this, we show an upper bound for the problem of topology estimation in networks using RLNC without common randomness.)
+1 	In this setting we present the first set of algorithms that characterize the network topology exactly.
+2 	Our algorithm for topology estimation with random network errors has time complexity that is polynomial in network parameters.
+1 	For the problem of network error localization given the topology information, we present the first computationally tractable algorithm to localize random errors, and prove it is computationally intractable to localize adversarial errors.
+0 	2.New network coding schemes are designed that improve the tomographic performance of RLNC while maintaining the desirable low-complexity, throughput-optimal, distributed linear network coding properties of RLNC.
+1 	In particular, we design network codes based on Reed-Solomon codes so that a maximal number of adversarial errors can be localized in a computationally efficient manner even without the information of network topology.
+
+
+# 29
+### http://arxiv.org/abs/0911.3528v1
+## Estimating Network Link Characteristics using Packet-Pair Dispersion: A Discrete Time Queueing Theoretic View
+
+0 	Packet-dispersion based measurement tools insert pairs of probe packets with a known separation into the network for transmission over a unicast path or a multicast tree.
+0 	Samples of the separation between the probe pairs at the destination(s) are observed.
+0 	Heuristic techniques are then used by these tools to estimate the path characteristics from the observations.
+1 	In this paper we present a queueing theoretic setting for packet-dispersion based probing.
+1 	Analogous to network tomography, we develop techniques to estimate the parameters of the arrival process to the individual links from the samples of the output separations, i.e., from the end-to-end measurements.
+0 	The links are modeled as independent discrete time queues with i.i.d. arrivals.
+1 	We first obtain an algorithm to obtain the (joint) distribution of the separation between the probes at the destination(s) for a given distribution of the spacing at the input.
+0 	The parameter estimates of the arrival process are obtained as the minimizer of a cost function between the empirical and calculated distributions.
+1 	We also carry out extensive simulations and numerical experiments to study the performance of the estimation algorithm under the fairly `harsh' conditions of non stationarity of the arrival process.
+2 	We find that the estimations work fairly well for two queues in series and for multicast.
+
+
+# 30
+### http://arxiv.org/abs/0911.4357v1
+## Splitting Algorithms for Fast Relay Selection: Generalizations, Analysis, and a Unified View
+
+0 	Relay selection for cooperative communications promises significant performance improvements, and is, therefore, attracting considerable attention.
+0 	While several criteria have been proposed for selecting one or more relays, distributed mechanisms that perform the selection have received relatively less attention.
+1 	In this paper, we develop a novel, yet simple, asymptotic analysis of a splitting-based multiple access selection algorithm to find the single best relay.
+0 	The analysis leads to simpler and alternate expressions for the average number of slots required to find the best user.
+0 	By introducing a new `contention load' parameter, the analysis shows that the parameter settings used in the existing literature can be improved upon.
+0 	New and simple bounds are also derived.
+1 	Furthermore, we propose a new algorithm that addresses the general problem of selecting the best $Q \ge 1$ relays, and analyze and optimize it.
+2 	Even for a large number of relays, the algorithm selects the best two relays within 4.406 slots and the best three within 6.491 slots, on average.
+1 	We also propose a new and simple scheme for the practically relevant case of discrete metrics.
+2 	Altogether, our results develop a unifying perspective about the general problem of distributed selection in cooperative systems and several other multi-node systems.
+

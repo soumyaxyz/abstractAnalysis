@@ -1,0 +1,281 @@
+
+
+# 151
+### http://arxiv.org/abs/1009.1604v1
+## DynaChanAl: Dynamic Channel Allocation with Minimal End-to-end Delay for Wireless Sensor Networks
+
+0 	With recent advances in wireless communication, networking, and low power sensor technology, wireless sensor network (WSN) systems have begun to take significant roles in various applications ranging from environmental sensing to mobile healthcare sensing.
+0 	While some WSN applications only require a lim- ited amount of bandwidth, new emerging applications operate with a notice- ably large amount of data transfers.
+0 	One way to deal with such applications is to maximize the available capacity by utilizing the use of multiple wireless channels.
+1 	This work proposes DynaChannAl, a distributed dynamic wireless channel algorithm with the goal of effectively distributing nodes on multiple wireless channels in WSN systems.
+1 	Specifically, DynaChannAl targets applica- tions where mobile nodes connect to a pre-existing wireless backbone and takes the expected end-to-end queuing delay as its core metric.
+1 	We use the link qual- ity indicator (LQI) values provided by IEEE 802.15.4 radios white-list potential links with good link quality and evaluate such links with the aggregated packet transmission latency at each hop.
+1 	Our approach is useful for applications that require minimal end-to-end delay (i.e., healthcare applications).
+1 	DynaChannAl is a light weight and highly adoptable scheme that can be easily incorporated with various pre-developed components and pre-deployed applications.
+2 	We eval- uate DynaChannAl in on a 45 node WSN testbed.
+2 	As the first study to consider end-to-end latency as the core metric for channel allocation in WSN systems, the experimental results indicate that DynaChannAl successfully distributes multi- ple (mobile) source nodes on different wireless channels and enables the nodes to select wireless channel and links that can minimize the end-to-end latency.
+
+
+# 152
+### http://arxiv.org/abs/1009.3415v1
+## Temporal Starvation in CSMA Wireless Networks
+
+0 	It is well known that links in CSMA wireless networks are prone to starvation.
+0 	Prior works focused almost exclusively on equilibrium starvation.
+0 	In this paper, we show that links in CSMA wireless networks are also susceptible to temporal starvation.
+0 	Specifically, although some links have good equilibrium throughputs and do not suffer from equilibrium starvation, they can still have no throughput for extended periods from time to time.
+0 	Given its impact on quality of service, it is important to understand and characterize temporal starvation.
+1 	To this end, we develop a "trap theory" to analyze temporal throughput fluctuation.
+1 	The trap theory serves two functions.
+1 	First, it allows us to derive new mathematical results that shed light on the transient behavior of CSMA networks.
+1 	For example, we show that the duration of a trap, during which some links receive no throughput, is insensitive to the distributions of the backoff countdown and transmission time (packet duration) in the CSMA protocol.
+1 	Second, we can develop analytical tools for computing the "degrees of starvation" for CSMA networks to aid network design.
+1 	For example, given a CSMA network, we can determine whether it suffers from starvation, and if so, which links will starve.
+1 	Furthermore, the likelihood and durations of temporal starvation can also be computed.
+2 	We believe that the ability to identify and characterize temporal starvation as established in this paper will serve as an important first step toward the design of effective remedies for it.
+
+
+# 153
+### http://arxiv.org/abs/1009.4563v1
+## A Cluster Based Replication Architecture for Load Balancing in Peer-to-Peer Content Distribution
+
+0 	In P2P systems, large volumes of data are declustered naturally across a large number of peers.
+0 	But it is very difficult to control the initial data distribution because every user has the freedom to share any data with other users.
+0 	The system scalability can be improved by distributing the load across multiple servers which is proposed by replication.
+0 	The large scale content distribution systems were improved broadly using the replication techniques.
+0 	The demanded contents can be brought closer to the clients by multiplying the source of information geographically, which in turn reduce both the access latency and the network traffic.
+0 	In addition to this, due to the intrinsic dynamism of the P2P environment, static data distribution cannot be expected to guarantee good load balancing.
+0 	If the hot peers become bottleneck, it leads to increased user response time and significant performance degradation of the system.
+0 	Hence an effective load balancing mechanism is necessary in such cases and it can be attained efficiently by intelligent data replication.
+1 	In this paper, we propose a cluster based replication architecture for load-balancing in peer-to-peer content distribution systems.
+1 	In addition to an intelligent replica placement technique, it also consists of an effective load balancing technique.
+1 	In the intelligent replica placement technique, peers are grouped into strong and weak clusters based on their weight vector which comprises available capacity, CPU speed, access latency and memory size.
+1 	In order to achieve complete load balancing across the system, an intracluster and inter-cluster load balancing algorithms are proposed.
+2 	We are able to show that our proposed architecture attains less latency and better throughput with reduced bandwidth usage, through the simulation results.
+
+
+# 154
+### http://arxiv.org/abs/1107.1633v1
+## Throughput Computation in CSMA Wireless Networks with Collision Effects
+
+-1 	It is known that link throughputs of CSMA wireless networks can be computed from a time-reversible Markov chain arising from an ideal CSMA network model (ICN).
+-1 	In particular, this model yields general closed-form equations of link throughputs.
+-1 	However, an idealized and important assumption made in ICN is that the backoff countdown process is in "contiuous-time" and carrier sensing is instantaneous.
+-1 	As a result, there is no collision in ICN.
+-1 	In practical CSMA protocols such as IEEE 802.
+-1 	11, the stations count down in "mini-timeslot" and the process is therefore a "discrete-time" process.
+-1 	In particular, two stations may end their backoff process in the same mini-timeslot and then transmit simultaneously, resulting in a packet collision.
+-1 	This paper is an attempt to study how to compute link throughputs after taking such backoff collision effects into account.
+-1 	We propose a generalized ideal CSMA network model (GICN) to characterize the collision states as well as the interactions and dependency among links in the network.
+-1 	We show that link throughputs and collision probability can be computed from GICN.
+-1 	Simulation results validate GICN's accuracy.
+-1 	Interestingly, we also find that the original ICN model yields fairly accurate results despite the fact that collisions are not modeled.
+
+
+# 155
+### http://arxiv.org/abs/1107.5468v1
+## Measuring Pulsed Interference in 802.11 Links
+
+-1 	Wireless 802.
+-1 	11 links operate in unlicensed spectrum and so must accommodate other unlicensed transmitters which generate pulsed interference.
+-1 	We propose a new approach for detecting the presence of pulsed interference affecting 802.
+-1 	11 links, and for estimating temporal statistics of this interference.
+-1 	This approach builds on recent work on distinguishing collision losses from noise losses in 802.
+-1 	11 links.
+-1 	When the intervals between interference pulses are i.
+-1 	i.
+-1 	d.,
+-1 	the approach is not confined to estimating the mean and variance of these intervals but can recover the complete probability distribution.
+-1 	The approach is a transmitter-side technique that provides per-link information and is compatible with standard hardware.
+-1 	We demonstrate the effectiveness of the proposed approach using extensive experimental measurements.
+-1 	In addition to applications to monitoring, management and diagnostics, the fundamental information provided by our approach can potentially be used to adapt the frame durations used in a network so as to increase capacity in the presence of pulsed interference.
+
+
+# 156
+### http://arxiv.org/abs/1209.2154v1
+## Cognitive Radio Networks: Realistic or Not?
+
+-1 	A large volume of research has been conducted in the cognitive radio (CR) area the last decade.
+-1 	However, the deployment of a commercial CR network is yet to emerge.
+-1 	A large portion of the existing literature does not build on real world scenarios, hence, neglecting various important interactions of the research with commercial telecommunication networks.
+-1 	For instance, a lot of attention has been paid to spectrum sensing as the front line functionality that needs to be completed in an efficient and accurate manner to enable an opportunistic CR network architecture.
+-1 	This is necessary to detect the existence of spectrum holes without which no other procedure can be fulfilled.
+-1 	However, simply sensing (cooperatively or not) the energy received from a primary transmitter cannot enable correct dynamic spectrum access.
+-1 	For example, the low strength of a primary transmitter's signal does not assure that there will be no interference to a nearby primary receiver.
+-1 	In addition, the presence of a primary transmitter's signal does not mean that CR network users cannot access the spectrum since there might not be any primary receiver in the vicinity.
+-1 	Despite the existing elegant and clever solutions to the DSA problem no robust, implementable scheme has emerged.
+-1 	In this paper, we challenge the basic premises of the proposed schemes.
+-1 	We further argue that addressing the technical challenges we face in deploying robust CR networks can only be achieved if we radically change the way we design their basic functionalities.
+-1 	In support of our argument, we present a set of real-world scenarios, inspired by realistic settings in commercial telecommunications networks, focusing on spectrum sensing as a basic and critical functionality in the deployment of CRs.
+-1 	We use these scenarios to show why existing DSA paradigms are not amenable to realistic deployment in complex wireless environments.
+
+
+# 157
+### http://arxiv.org/abs/1302.4720v1
+## Multiple Target Tracking with RF Sensor Networks
+
+-1 	RF sensor networks are wireless networks that can localize and track people (or targets) without needing them to carry or wear any electronic device.
+-1 	They use the change in the received signal strength (RSS) of the links due to the movements of people to infer their locations.
+-1 	In this paper, we consider real-time multiple target tracking with RF sensor networks.
+-1 	We perform radio tomographic imaging (RTI), which generates images of the change in the propagation field, as if they were frames of a video.
+-1 	Our RTI method uses RSS measurements on multiple frequency channels on each link, combining them with a fade level-based weighted average.
+-1 	We describe methods to adapt machine vision methods to the peculiarities of RTI to enable real time multiple target tracking.
+-1 	Several tests are performed in an open environment, a one-bedroom apartment, and a cluttered office environment.
+-1 	The results demonstrate that the system is capable of accurately tracking in real-time up to 4 targets in cluttered indoor environments, even when their trajectories intersect multiple times, without mis-estimating the number of targets found in the monitored area.
+-1 	The highest average tracking error measured in the tests is 0.
+-1 	45 m with two targets, 0.
+-1 	46 m with three targets, and 0.
+-1 	55 m with four targets.
+
+
+# 158
+### http://arxiv.org/abs/1302.7028v1
+## Shortest Path versus Multi-Hub Routing in Networks with Uncertain Demand
+
+-1 	We study a class of robust network design problems motivated by the need to scale core networks to meet increasingly dynamic capacity demands.
+-1 	Past work has focused on designing the network to support all hose matrices (all matrices not exceeding marginal bounds at the nodes).
+-1 	This model may be too conservative if additional information on traffic patterns is available.
+-1 	Another extreme is the fixed demand model, where one designs the network to support peak point-to-point demands.
+-1 	We introduce a capped hose model to explore a broader range of traffic matrices which includes the above two as special cases.
+-1 	It is known that optimal designs for the hose model are always determined by single-hub routing, and for the fixed- demand model are based on shortest-path routing.
+-1 	We shed light on the wider space of capped hose matrices in order to see which traffic models are more shortest path-like as opposed to hub-like.
+-1 	To address the space in between, we use hierarchical multi-hub routing templates, a generalization of hub and tree routing.
+-1 	In particular, we show that by adding peak capacities into the hose model, the single-hub tree-routing template is no longer cost-effective.
+-1 	This initiates the study of a class of robust network design (RND) problems restricted to these templates.
+-1 	Our empirical analysis is based on a heuristic for this new hierarchical RND problem.
+-1 	We also propose that it is possible to define a routing indicator that accounts for the strengths of the marginals and peak demands and use this information to choose the appropriate routing template.
+-1 	We benchmark our approach against other well-known routing templates, using representative carrier networks and a variety of different capped hose traffic demands, parameterized by the relative importance of their marginals as opposed to their point-to-point peak demands.
+
+
+# 159
+### http://arxiv.org/abs/1302.7289v2
+## Homology-based Distributed Coverage Hole Detection in Wireless Sensor Networks
+
+-1 	Homology theory provides new and powerful solutions to address the coverage problems in wireless sensor networks (WSNs).
+-1 	They are based on algebraic objects, such as Cech complex and Rips complex.
+-1 	Cech complex gives accurate information about coverage quality but requires a precise knowledge of the relative locations of nodes.
+-1 	This assumption is rather strong and hard to implement in practical deployments.
+-1 	Rips complex provides an approximation of Cech complex.
+-1 	It is easier to build and does not require any knowledge of nodes location.
+-1 	This simplicity is at the expense of accuracy.
+-1 	Rips complex can not always detect all coverage holes.
+-1 	It is then necessary to evaluate its accuracy.
+-1 	This work proposes to use the proportion of the area of undiscovered coverage holes as performance criteria.
+-1 	Investigations show that it depends on the ratio between communication and sensing radii of a sensor.
+-1 	Closed-form expressions for lower and upper bounds of the accuracy are also derived.
+-1 	For those coverage holes which can be discovered by Rips complex, a homology-based distributed algorithm is proposed to detect them.
+-1 	Simulation results are consistent with the proposed analytical lower bound, with a maximum difference of 0.
+-1 	5%.
+-1 	Upper bound performance depends on the ratio of communication and sensing radii.
+-1 	Simulations also show that the algorithm can localize about 99% coverage holes in about 99% cases.
+
+
+# 160
+### http://arxiv.org/abs/1409.1177v2
+## A New IEEE 802.15.4 Simulation Model for OMNeT++ / INET
+
+-1 	This paper introduces a new IEEE 802.
+-1 	15.
+-1 	4 simulation model for OMNeT++ / INET.
+-1 	802.
+-1 	15.
+-1 	4 is an important underlying standard for wireless sensor networks and Internet of Things scenarios.
+-1 	The presented implementation is designed to be compatible with OMNeT++ 4.
+-1 	x and INET 2.
+-1 	x and laid-out to be expandable for newer revisions of the 802.
+-1 	15.
+-1 	4 standard.
+-1 	The source code is available online https://github.com/michaelkirsche/IEEE802154INET-Standalone
+
+
+# 161
+### http://arxiv.org/abs/1409.8267v1
+## Network Utility Aware Traffic Loading Balancing in Backhaul-constrained Cache-enabled Small Cell Networks with Hybrid Power Supplies
+
+-1 	Explosive data traffic growth leads to a continuous surge in capacity demands across mobile networks.
+-1 	In order to provision high network capacity, small cell base stations (SCBSs) are widely deployed.
+-1 	Owing to the close proximity to mobile users, SCBSs can effectively enhance the network capacity and offloading traffic load from macro BSs (MBSs).
+-1 	However, the cost-effective backhaul may not be readily available for SCBSs, thus leading to backhaul constraints in small cell networks (SCNs).
+-1 	Enabling cache in BSs may mitigate the backhaul constraints in SCNs.
+-1 	Moreover, the dense deployment of SCBSs may incur excessive energy consumption.
+-1 	To alleviate brown power consumption, renewable energy will be explored to power BSs.
+-1 	In such a network, it is challenging to dynamically balance traffic load among BSs to optimize the network utilities.
+-1 	In this paper, we investigate the traffic load balancing in backhaul-constrained cache-enabled small cell networks powered by hybrid energy sources.
+-1 	We have proposed a network utility aware (NUA) traffic load balancing scheme that optimizes user association to strike a tradeoff between the green power utilization and the traffic delivery latency.
+-1 	On balancing the traffic load, the proposed NUA traffic load balancing scheme considers the green power utilization, the traffic delivery latency in both BSs and their backhaul, and the cache hit ratio.
+-1 	The NUA traffic load balancing scheme allows dynamically adjusting the tradeoff between the green power utilization and the traffic delivery latency.
+-1 	We have proved the convergence and the optimality of the proposed NUA traffic load balancing scheme.
+-1 	Through extensive simulations, we have compared performance of the NUA traffic load balancing scheme with other schemes and showed its advantages in backhaul-constrained cache-enabled small cell networks with hybrid power supplies.
+
+
+# 162
+### http://arxiv.org/abs/1410.0336v1
+## Cross-Layer Extended Persistent Timeout Policy for SCTP and DSDV
+
+-1 	Cross layer techniques applied to various protocols stacks provide fair information sharing between OSI model layers.
+-1 	The performance gains have been demonstrated for many studied systems within protocols interactions.
+-1 	The example is illustrative of the reliable transport protocols that use retransmissions to achieve that reliability function.
+-1 	The performance gains of the persistent timeout policy for the management of the retransmission timeout have been produce in some recent works when applying that persistent timeout policy only to reliable transport protocol.
+-1 	The goal was to give an appropriate behavior in response to a bad state of the wireless channel that occurs and temporally blocks the transmission of data.
+-1 	The channel state is given by the 802.
+-1 	11 link layer through cross-layer mechanism.
+-1 	In this paper, the persistent policy is extended to the network layer and is applied to a stack that uses a reactive routing protocol, namely the Destination Sequenced Distance-Vector (DSDV) protocol that also generates additional periodic traffic regardless to the channel state.
+-1 	We are measuring the influence in terms of performance gains of the extended persistent policy because of the additional periodic signalization messages deriving from the used routing protocol.
+-1 	After the introduction in section I; Section II of this paper presents an overview of the Stream Control Transmission Protocol (SCTP).
+-1 	Section III describes the behavior of the DSDV protocol.
+-1 	Section IV presents the extended persistent timeout policy principle and Section V presents the simulation results used to compare the using of the traditional and the extended persistent timeout policies applied to the same protocol stack using SCTP and DSDV.
+
+
+# 163
+### http://arxiv.org/abs/1410.0337v1
+## Cross layer Interaction Models for SCTP and OLSR
+
+-1 	The evolution from wired system to the wireless environment opens a set of challenge for the improvement of the wireless system performances because of many of their weakness compared to wired networks.
+-1 	To achieve this goal, cross layer techniques are used to facilitate the sharing of information between the layers of the OSI model.
+-1 	In some precedent works, the Reverse Cross Layer (RCL) method has been proposed to facilitate the design of cross layer conceptual models.
+-1 	The method has the advantage to highlight the impact of each cross layer interaction on each protocol in order to update its source code and to describe the intuitive gains that can be achieve.
+-1 	The method may be applied to a given protocol stack or to an existent cross layer model to integrate new interactions.
+-1 	In this paper, we are applying the RCL method on the stack that uses the Stream Control Transport Protocol (SCTP) at the transport layer and the Optimized Link State Routing (OLSR) at the network layer.
+-1 	Cross layer conceptual models are produced based on new cross layer interactions that are proposed to populate the environment subsystem built with the application of the RCL method.
+-1 	The improvement of the environment subsystem is specified through the performance gains provide by the new interactions.
+-1 	The implementation of the interactions that impact the SCTP protocol is described in the Interaction Description Array.
+-1 	After the introduction, Section II of this paper presents an overview of the SCTP protocol.
+-1 	Section III is related to the overview of the OLSR protocol.
+-1 	Section IV is used for the application of the RCL method and the different interaction arrays it generates.
+-1 	Section V presents the improvement of the environment subsystem and the definition of the performance gain of each Cross Layer Atomic Action (CLAA).
+
+
+# 164
+### http://arxiv.org/abs/1410.3978v1
+## Technical Report: A Methodology for Studying 802.11p VANET Broadcasting Performance with Practical Vehicle Distribution
+
+-1 	In a Vehicular Ad-hoc Network (VANET), the performance of the communication protocol is influenced heavily by the vehicular density dynamics.
+-1 	However, most of the previous works on VANET performance modeling paid little attention to vehicle distribution, or simply assumed homogeneous car distribution.
+-1 	It is obvious that vehicles are distributed non-homogeneously along a road segment due to traffic signals and speed limits at different portions of the road, as well as vehicle interactions that are significant on busy streets.
+-1 	In light of the inadequacy, we present in this paper an original methodology to study the broadcasting performance of 802.
+-1 	11p VANETs with practical vehicle distribution in urban environments.
+-1 	Firstly, we adopt the empirically verified stochastic traffic models, which incorporates the effect of urban settings (such as traffic lights and vehicle interactions) on car distribution and generates practical vehicular density profiles.
+-1 	Corresponding 802.
+-1 	11p protocol and performance models are then developed.
+-1 	When coupled with the traffic models, they can predict broadcasting efficiency, delay, as well as throughput performance of 802.
+-1 	11p VANETs based on the knowledge of car density at each location on the road.
+-1 	Extensive simulation is conducted to verify the accuracy of the developed mathematical models with the consideration of vehicle interaction.
+-1 	In general, our results demonstrate the applicability of the proposed methodology on modeling protocol performance in practical signalized road networks, and shed insights into the design and development of future communication protocols and networking functions for VANETs.
+
+
+# 165
+### http://arxiv.org/abs/1501.01657v1
+## A General Model for MAC Protocol Selection in Wireless Sensor Networks
+
+-1 	Wireless Sensor Networks (WSNs) are being deployed for different applications, each having its own structure, goals and requirements.
+-1 	Medium access control (MAC) protocols play a significant role in WSNs and hence should be tuned to the applications.
+-1 	However, there is no for selecting MAC protocols for different situations.
+-1 	Therefore, it is hard to decide which MAC protocol is good for a given situation.
+-1 	Having a precise model for each MAC protocol, on the other hand, is almost impossible.
+-1 	Using the intuition that the protocols in the same behavioral category perform similarly, our goal in this paper is to introduce a general model that selects the protocol(s) that satisfy the given requirements from the category that performs better for a given context.
+-1 	We define the Combined Performance Function (CPF) to demonstrate the performance of different categories protocols for different contexts.
+-1 	Having the general model, we then discuss the model scalability for adding new protocols, categories, requirements, and performance criteria.
+-1 	Considering energy consumption and delay as the initial performance criteria of the model, we focus on deriving mathematical models for them.
+-1 	The results extracted from CPF are the same as the well-known rule of thumb for the MAC protocols that verifies our model.
+-1 	We validate our models with the help of simulation study.
+-1 	We also implemented the current CPF model in a web page to make the model online and useful.

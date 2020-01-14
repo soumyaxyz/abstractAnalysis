@@ -1,0 +1,294 @@
+
+
+# 196
+### http://arxiv.org/abs/1610.05579v1
+## A Scalable Multi-Stage Packet-Switch for Data Center Networks
+
+-1 	The growing trends of data centers over last decades including social networking, cloud-based applications and storage technologies enabled many advances to take place in the networking area.
+-1 	Recent changes imply continuous demand for bandwidth to manage the large amount of packetized traffic.
+-1 	Cluster switches and routers make the switching fabric in a Data Center Network (DCN) environment and provide interconnectivity between elements of the same DC and inter DCs.
+-1 	To handle the constantly variable loads, switches need deliver outstanding throughput along with resiliency and scalability for DCN requirements.
+-1 	Conventional DCN switches adopt crossbars or/and blocks of memories mounted in a multistage fashion (commonly 2-Tiers or 3-Tiers).
+-1 	However, current multistage switches, with their space-memory variants, are either too complex to implement, have poor performance, or not cost effective.
+-1 	We propose a novel and highly scalable multistage switch based on Networks-on-Chip (NoC) fabrics for DCNs.
+-1 	In particular, we describe a three-stage Clos packet-switch with a Round Robin packets dispatching scheme where each central stage module is based on a Unidirectional NoC (UDN), instead of the conventional single-hop crossbar.
+-1 	The design, referred to as Clos-UDN, overcomes shortcomings of traditional multistage architectures as it (i) Obviates the need for a complex and costly input modules, by means of few, yet simple, input FIFO queues. (
+-1 	ii) Avoids the need for a complex and synchronized scheduling process over a high number of input-output modules and/or port pairs. (
+-1 	iii) Provides speedup, load balancing and path-diversity thanks to a dynamic dispatching scheme as well as the NoC based fabric nature.
+-1 	Simulations show that the Clos-UDN outperforms some common multistage switches under a range of input traffics, making it highly appealing for ultra-high capacity DC networks.
+
+
+# 197
+### http://arxiv.org/abs/1611.00688v1
+## Mitigating Inter-network Interference in LoRa Networks
+
+-1 	Long Range (LoRa) is a popular technology used to construct Low-Power Wide-Area Network (LPWAN) networks.
+-1 	Given the popularity of LoRa it is likely that multiple independent LoRa networks are deployed in close proximity.
+-1 	In this situation, neighbouring networks interfere and methods have to be found to combat this interference.
+-1 	In this paper we investigate the use of directional antennae and the use of multiple base stations as methods of dealing with inter-network interference.
+-1 	Directional antennae increase signal strength at receivers without increasing transmission energy cost.
+-1 	Thus, the probability of successfully decoding the message in an interference situation is improved.
+-1 	Multiple base stations can alternatively be used to improve the probability of receiving a message in a noisy environment.
+-1 	We compare the effectiveness of these two approaches via simulation.
+-1 	Our findings show that both methods are able to improve LoRa network performance in interference settings.
+-1 	However, the results show that the use of multiple base stations clearly outperforms the use of directional antennae.
+-1 	For example, in a setting where data is collected from 600 nodes which are interfered by four networks with 600 nodes each, using three base stations improves the Data Extraction Rate (DER) from 0.
+-1 	24 to 0.
+-1 	56 while the use of directional antennae provides an increase to only 0.
+-1 	32.
+
+
+# 198
+### http://arxiv.org/abs/1611.02624v1
+## A Comparative Look into Public IXP Datasets
+
+-1 	Internet eXchange Points (IXPs) are core components of the Internet infrastructure where Internet Service Providers (ISPs) meet and exchange traffic.
+-1 	During the last few years, the number and size of IXPs have increased rapidly, driving the flattening and shortening of Internet paths.
+-1 	However, understanding the present status of the IXP ecosystem and its potential role in shaping the future Internet requires rigorous data about IXPs, their presence, status, participants, etc.
+-1 	In this work, we do the first cross-comparison of three well-known publicly available IXP databases, namely of PeeringDB, Euro-IX, and PCH.
+-1 	A key challenge we address is linking IXP identifiers across databases maintained by different organizations.
+-1 	We find different AS-centric versus IXP-centric views provided by the databases as a result of their data collection approaches.
+-1 	In addition, we highlight differences and similarities w.
+-1 	r.
+-1 	t.
+-1 	IXP participants, geographical coverage, and co-location facilities.
+-1 	As a side-product of our linkage heuristics, we make publicly available the union of the three databases, which includes 40.
+-1 	2 % more IXPs and 66.
+-1 	3 % more IXP participants than the commonly-used PeeringDB.
+-1 	We also publish our analysis code to foster reproducibility of our experiments and shed preliminary insights into the accuracy of the union dataset.
+
+
+# 199
+### http://arxiv.org/abs/1611.02920v1
+## Energy Efficient Barring Factor Enabled Extended Access Barring for IoT Devices in LTE-Advanced
+
+-1 	Synchronized Random Access Channel (RACH) attempts by Internet of Things (IoT) devices could result in Radio Access Network (RAN) overload in LTE-A.
+-1 	3GPP adopted Barring Bitmap Enabled-Extended Access Barring (EAB-BB) mechanism that announces the EAB information (i.e., a list of barred Access Classes) through a barring bitmap as the baseline solution to mitigate the RAN overload.
+-1 	EAB-BB was analyzed for its optimal performance in a recent work.
+-1 	However, there has been no work that analyzes Barring Factor Enabled-Extended Access Barring (EAB-BF), an alternative mechanism that was considered during the standardization process.
+-1 	Due to the modeling complexity involved, not only has it been difficult to analyze EAB-BF, but also, a much more far-reaching issue, like the effect of these schemes on key network performance parameter, like eNodeB energy consumption, has been overlooked.
+-1 	In this regard, for the first time, we develop a novel analytical model for EAB-BF to obtain its performance metrics.
+-1 	Results obtained from our analysis and simulation are seen to match very well.
+-1 	Furthermore, we also build an eNodeB energy consumption model to serve the IoT RACH requests.
+-1 	We then show that our analytical and energy consumption models can be combined to obtain EAB-BF settings that can minimize eNodeB energy consumption, while simultaneously providing optimal Quality of Service (QoS) performance.
+-1 	Results obtained reveal that the optimal performance of EAB-BF is better than that of EAB-BB.
+-1 	Furthermore, we also show that not only all the three 3GPP-proposed EAB-BF settings considered during standardization provide sub-optimal QoS to devices, but also result in excessive eNodeB energy consumption, thereby acutely penalizing the network.
+-1 	Finally, we provide corrections to these 3GPP-settings that can lead to significant gains in EAB-BF performance.
+
+
+# 200
+### http://arxiv.org/abs/1611.05376v2
+## hMAC: Enabling Hybrid TDMA/CSMA on IEEE 802.11 Hardware
+
+-1 	We present our current work-in-progress on the design and implementation of a hybrid TDMA/CSMA medium access architecture, hereafter referred to as hMAC, which can be used on top of commercial IEEE 802.
+-1 	11 off-the-shelf hardware.
+-1 	The software only solution is based on the popular Linux ATH9K softMAC driver and hence can be used with standard Linux systems using Atheros based wireless network devices.
+-1 	The proposed hMAC exploits the standard 802.
+-1 	11 power saving functionality present in the ATH9K device driver to enable control of the software packet queues.
+-1 	This allows the assignment of TDMA time slots on wireless link and traffic class basis.
+-1 	While the solution is placed only in the device driver, the CSMA/CA functionality on hardware level is still active.
+-1 	This enables inter-working with standard unmodified 802.
+-1 	11 devices.
+-1 	We tested our prototypical hMAC implementation in a small test-bed.
+-1 	Therefore, we implemented a centralized interference management scheme in which pairs of links suffering from a hidden node problem are assigned to TDMA time slots on a per-link basis.
+-1 	To show the benefits of the proposed hMAC approach we compared the results with standard 802.
+-1 	11 DCF and classical, i.e. per-node, TDMA.
+-1 	Finally, to enable collaboration with the research community, the hMAC source code is provided as open-source.
+
+
+# 201
+### http://arxiv.org/abs/1611.06609v1
+## MAC Protocols for IEEE 802.11ax: Avoiding Collisions on Dense Networks
+
+-1 	Wireless networks have become the main form of Internet access.
+-1 	Statistics show that the global mobile Internet penetration should exceed 70\% until 2019.
+-1 	Wi-Fi is an important player in this change.
+-1 	Founded on IEEE 802.
+-1 	11, this technology has a crucial impact in how we share broadband access both in domestic and corporate networks.
+-1 	However, recent works have indicated performance issues in Wi-Fi networks, mainly when they have been deployed without planning and under high user density.
+-1 	Hence, different collision avoidance techniques and Medium Access Control protocols have been designed in order to improve Wi-Fi performance.
+-1 	Analyzing the collision problem, this work strengthens the claims found in the literature about the low Wi-Fi performance under dense scenarios.
+-1 	Then, in particular, this article overviews the MAC protocols used in the IEEE 802.
+-1 	11 standard and discusses solutions to mitigate collisions.
+-1 	Finally, it contributes presenting future trends in MAC protocols.
+-1 	This assists in foreseeing expected improvements for the next generation of Wi-Fi devices.
+
+
+# 202
+### http://arxiv.org/abs/1612.03449v3
+## IEEE 802.11p-based Packet Broadcast in Radio Channels with Hidden Stations and Congestion Control
+
+-1 	The Decentralized Congestion Control (DCC) algorithms specified in ETSI ITS standards [1] address the IEEE 802.
+-1 	11p MAC and provide reliability of periodic broadcast messages at high density of vehicles.
+-1 	However, the deterministic relation between controllable parameters, e.g. transmit power, frame duration, frame transmit rate and channel clear assessment threshold, and the effects of DCC algorithms, e.g. channel busy duration, frame interference-free reception probability and frame channel access delay, is still unknown since a correct mathematical analysis of the hidden station problem in CSMA networks is lacking.
+-1 	In this work, the hidden station problem in a linear IEEE 802.
+-1 	11p broadcast network is analyzed based on analytical results developed in [18] employing a modified MAC protocol model based on [3].
+-1 	Simulation results validate the new analytical model for linear IEEE 802.
+-1 	11p networks w.
+-1 	r.
+-1 	t reliability and latency performances of Cooperative Awareness Message broadcast.
+-1 	Evidence is given that the model not only is valid for single-lane highways but also provides good approximate results for multi-lane highway scenarios.
+-1 	Our MAC layer analytical model of IEEE 802.
+-1 	11p broadcast reveals the quantitative relation between DCC parameters and congestion control effects in closed-form solution for linear vehicular networks.
+
+
+# 203
+### http://arxiv.org/abs/1612.06126v3
+## ProxyTorrent: Untangling the Free HTTP(S) Proxy Ecosystem
+
+-1 	Free web proxies promise anonymity and censorship circumvention at no cost.
+-1 	Several websites publish lists of free proxies organized by country, anonymity level, and performance.
+-1 	These lists index hundreds of thousand of hosts discovered via automated tools and crowd-sourcing.
+-1 	A complex free proxy ecosystem has been forming over the years, of which very little is known.
+-1 	In this paper we shed light on this ecosystem via ProxyTorrent, a distributed measurement platform that leverages both active and passive measurements.
+-1 	Active measurements discover free proxies, assess their performance, and detect potential malicious activities.
+-1 	Passive measurements relate to proxy performance and usage in the wild, and are collected by free proxies users via a Chrome plugin we developed.
+-1 	ProxyTorrent has been running since January 2017, monitoring up to 180,000 free proxies and totaling more than 1,500 users.
+-1 	Our analysis shows that less than 2% of the proxies announced on the web indeed proxy traffic on behalf of users; further, only half of these proxies have decent performance and can be used reliably.
+-1 	Around 10% of the working proxies exhibit malicious behaviors, e.g., ads injection and TLS interception, and these proxies are also the ones providing the best performance.
+-1 	Through the analysis of more than 2 Terabytes of proxied traffic, we show that web browsing is the primary user activity.
+-1 	Geo-blocking avoidance is not a prominent use-case, with the exception of countries hosting popular geo-blocked content.
+
+
+# 204
+### http://arxiv.org/abs/1701.02150v1
+## An SDN Approach for an Energy Efficient Heterogeneous Communication Network in Disaster Scenarios
+
+-1 	Wireless access technologies have been extensively developed aiming to give users the ability to connect to their expected networks anytime, anywhere.
+-1 	This leads to an increment of the number of wireless interfaces integrated into a single mobile device, hence, it allows the device to be able to connect to multiple access networks.
+-1 	However, in some specific cases such as natural disasters, having an uncorrupted and timely information exchanging means is critical for affected victims to survive or to connect to the outside world.
+-1 	This is because the essential network infrastructures in these cases could be destroyed causing a large number of systems to stop working.
+-1 	In that cases, the victims need a heterogeneous communications network in which they can communicate, without a doubt, by using different wireless access technologies, i.e., Bluetooth or Wi-Fi.
+-1 	The network must also be able to smoothly change the access technologies, or called a vertical handover, to ensure QoS for ongoing applications.
+-1 	In addition, the network must have a mechanism to save energy.
+-1 	For hese reasons, an SDN approach, which has been proposed in a previous work, is considered.
+-1 	The performance of the system has been validated by a set of experiments in a real testbed.
+-1 	The obtained results show that the proposed vertical handover can save at least 24.
+-1 	42 per cent of the energy consumed by the wireless communication.
+-1 	The handover delay with different UDP traffic is less than 150ms.
+-1 	Moreover, the network allows a device using Bluetooth to talk with another one using Wi-Fi over a heterogeneous connection where the end-to-end jitter is mainly below 20ms and the packet loss rate is as small as 0.
+-1 	2 per cent.
+
+
+# 205
+### http://arxiv.org/abs/1701.02421v1
+## IEEE 802.15.6-based Prototype System for WBAN: Design and Implementation
+
+-1 	Various current trends such as ever growing population and accelerated aging effects have effectively promoted the growth of Wireless Body Area Network (WBAN).
+-1 	Being the specialized standard of WBAN, the burgeoning IEEE 802.
+-1 	15.
+-1 	6 is on its way to refinement and perfection.
+-1 	Since experiments are the foundation of research in WBAN that reproduce system operating patterns, yet existing platforms in WBAN are mainly simulations that could not highly conform to reality with strict requirements to some degree.
+-1 	Thus, a reliable and efficient system based on the IEEE 802.
+-1 	15.
+-1 	6, named WBAN prototype system, is proposed and implemented in this paper.
+-1 	The prototype system is ascertained to be valid, authentic and efficient via analyses of scenario tests.
+-1 	Running in circumstances much closer to reality, the system obtains experimental results that meet rigid requirements preferably.
+-1 	Furthermore, based on the valid platform we created, optimizations of two parameters in the IEEE 802.
+-1 	15.
+-1 	6 by actual measurements are derived.
+-1 	We obtain an optimum number of transmission retries and relationship of payload length within 30 with FER, making a trade-off between waste of resource and high packet loss rate.
+
+
+# 206
+### http://arxiv.org/abs/1701.02809v1
+## DyMo: Dynamic Monitoring of Large Scale LTE-Multicast Systems
+
+-1 	LTE evolved Multimedia Broadcast/Multicast Service (eMBMS) is an attractive solution for video delivery to very large groups in crowded venues.
+-1 	However, deployment and management of eMBMS systems is challenging, due to the lack of realtime feedback from the User Equipment (UEs).
+-1 	Therefore, we present the Dynamic Monitoring (DyMo) system for low-overhead feedback collection.
+-1 	DyMo leverages eMBMS for broadcasting Stochastic Group Instructions to all UEs.
+-1 	These instructions indicate the reporting rates as a function of the observed Quality of Service (QoS).
+-1 	This simple feedback mechanism collects very limited QoS reports from the UEs.
+-1 	The reports are used for network optimization, thereby ensuring high QoS to the UEs.
+-1 	We present the design aspects of DyMo and evaluate its performance analytically and via extensive simulations.
+-1 	Specifically, we show that DyMo infers the optimal eMBMS settings with extremely low overhead, while meeting strict QoS requirements under different UE mobility patterns and presence of network component failures.
+-1 	For instance, DyMo can detect the eMBMS Signal-to-Noise Ratio (SNR) experienced by the 0.
+-1 	1% percentile of the UEs with Root Mean Square Error (RMSE) of 0.
+-1 	05% with only 5 to 10 reports per second regardless of the number of UEs.
+
+
+# 207
+### http://arxiv.org/abs/1701.07106v2
+## On Hardening Problems in Critical Infrastructure Systems
+
+-1 	The power and communication networks are highly interdependent and form a part of the critical infrastructure of a country.
+-1 	Similarly, dependencies exist within the networks itself.
+-1 	It is essential to have a model which captures these dependencies precisely.
+-1 	Previous research has proposed certain models but these models have certain limitations.
+-1 	The limitations of the aforementioned models have been overcome by the Implicative Interdependency Model, which uses Boolean Logic to denote the dependencies.
+-1 	This paper formulates the Entity Hardening problem and the Targeted Entity Hardening problem using the Implicative Interdependency Model.
+-1 	The Entity Hardening problem describes a situation where an operator, with a limited budget, must decide which entities to harden, which in turn would minimize the damage, provided a set of entities fail initially.
+-1 	The Targeted Entity Hardening problem is a restricted version of the Entity Hardening problem.
+-1 	This problem presents a scenario where, the protection of certain entities is of higher priority.
+-1 	If these entities were to be nonfunctional, the economic and societal damage would be higher when compared to other entities being nonfunctional.
+-1 	It has been shown that both problems are NP-Complete.
+-1 	An Integer Linear Program (ILP) has been devised to find the optimal solution.
+-1 	A heuristic has been described whose accuracy is found by comparing its performance with the optimal solution using real-world and simulated data.
+
+
+# 208
+### http://arxiv.org/abs/1701.07878v1
+## Spectrum Allocation in Cognitive Networks
+
+-1 	Cognitive Network is a technique which is used to improve the spectrum utilization.
+-1 	Current network scenario is experiencing the huge spectrum scarcity problem due to the fixed assignment policy so in this method great amount of spectrum remain unused.
+-1 	To overcome this limitation the spectrum allocation must be in dynamic manner.
+-1 	In this paper the spectrum allocation is discussed thoroughly.
+-1 	Interference is the most important factor that needs to be considered.
+-1 	It is caused by the environment (noise) or by other radio users.
+-1 	It limits the possibility of spectrum reuse.
+-1 	Channel assignment is one of the techniques used to control interference in the network.
+-1 	There exist a trade-off between network capacity and level of contention.
+-1 	In cognitive radio networks spectrum assignment or spectrum allocation or frequency assignment is used to avoid interference.
+-1 	It is the process of simultaneous selection of operating central frequency and bandwidth.
+-1 	In doing so, the process of sensing the spectrum becomes very crucial; it must be reliable, accurate and efficient.
+-1 	The accuracy of sensing affects the overall operation of cognitive networks.
+-1 	Accurate results not only lead to higher utilization of the spectrum but also preserve the privacy of primary user.
+-1 	Accuracy of sensing is highly affected by the natural causes like noise, shadowing, fading etc.
+-1 	There are many other challenges as well, like, hardware requirements, hidden node problem, security, sensing frequency and duration, decision fusion etc.
+
+
+# 209
+### http://arxiv.org/abs/1702.02201v1
+## Power Networks: The Digital Approach
+
+-1 	In the current analog grid, power is available at all times, to all users, indiscriminately.
+-1 	This makes the grid vulnerable to demand fluctuations and much effort has been invested to mitigate their effect.
+-1 	The Digital Power Network (DPN) is an energy-on-demand approach to power grids.
+-1 	In the new (digital) approach, the user initiates an energy request.
+-1 	This action alleviates uncertainties in energy demands.
+-1 	The service provider may grant the request fully or partially.
+-1 	Energy is then transmitted in discrete units, analogous to packets of data over a computer network.
+-1 	The packetized energy is routed to the user address.
+-1 	Because energy demands are known ahead of time, the energy provider may optimize the power distribution of the entire power network and isolate pockets of instabilities.
+-1 	For example, under severe energy constraints the energy provider may queue some energy requests and grant these requests later.
+-1 	Alternative energy resources may be seamlessly incorporated into the power network as yet another address in the system and since their energy is coded, they would be connected to specific users directly.
+-1 	In its simplest form, this grid can be realized by overlaying an auxiliary (communication) network on top of an energy delivery network (the current transmission lines) and coupling the two through an array of addressable digital power switches.
+-1 	Optimization of energy requests is the topic of this paper.
+-1 	We investigate the role of the network queue and provide a snapshot of its behavior in time.
+-1 	The DPN with a limited channel capacity and the optimal path for energy flow in a standard IEEE 39 bus are considered, as well.
+
+
+# 210
+### http://arxiv.org/abs/1702.03257v1
+## Impact of IEEE 802.11n/ac PHY/MAC High Throughput Enhancements over Transport/Application Layer Protocols - A Survey
+
+-1 	Since the inception of Wireless Local Area Networks (WLANs) in the year 1997, it has tremendously grown in the last few years.
+-1 	IEEE 802.
+-1 	11 is popularly known as WLAN.
+-1 	To provide the last mile wireless broadband connectivity to users, IEEE 802.
+-1 	11 is enriched with IEEE 802.
+-1 	11a, IEEE 802.
+-1 	11b and IEEE 802.
+-1 	11g.
+-1 	More recently, IEEE 802.
+-1 	11n, IEEE 802.
+-1 	11ac and IEEE 802.
+-1 	11ad are introduced with enhancements to the physical (PHY) layer and medium access control (MAC) sublayer to provide much higher data rates and thus these amendments are called High Throughput WLANs (HT-WLANs).
+-1 	For both standards, PHY is enhanced with multiple-input multiple-output (MIMO) antenna technologies, channel bonding, short guard intervals (SGI), enhanced modulation and coding schemes (MCS).
+-1 	At the same time, MAC layer overhead is reduced by introducing frame aggregation and block acknowledgement technologies.
+-1 	However, existing studies reveal that although PHY and MAC enhancements promise to improve physical data rate significantly, they yield negative impact over upper layer protocols -- mainly for reliable end-to-end transport/application layer protocols.
+-1 	As a consequence, a large number of schools have focused researches on HT-WLANs to improve the coordination among PHY/MAC and upper layer protocols and thus, boost up the performance benefit.
+-1 	In this survey, we discuss the impact of enhancements of PHY/MAC layer in HT-WLANs over transport/application layer protocols.
+-1 	list down different open challenges that can be explored for the development of next generation HT-WLAN technologies.

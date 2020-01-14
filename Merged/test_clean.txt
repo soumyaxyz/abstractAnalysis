@@ -1,0 +1,1915 @@
+# 126
+### http://arxiv.org/abs/1007.5239v2
+## TCP Reno over Adaptive CSMA
+
+0 	An interesting distributed adaptive CSMA MAC protocol, called adaptive CSMA, was proposed recently to schedule any strictly feasible achievable rates inside the capacity region.
+0 	Of particular interest is the fact that the adaptive CSMA can achieve a system utility arbitrarily close to that is achievable under a central scheduler.However, a specially designed transport-layer rate controller is needed for this result.
+0 	An outstanding question is whether the widely-installed TCP Reno is compatible with adaptive CSMA and can achieve the same result.
+0 	The answer to this question will determine how close to practical deployment adaptive CSMA is.	Our answer is yes and no.
+1	First, we observe that running TCP Reno directly over adaptive CSMA results in severe starvation problems.
+2 	Effectively, its performance is no better than that of TCP Reno over legacy CSMA (IEEE 802.11), and the potentials of adaptive CSMA cannot be realized.
+2 	Fortunately, we find that multi-connection TCP Reno over adaptive CSMA with active queue management can materialize the advantages of adaptive CSMA.
+2 	NS-2 simulations demonstrate that our solution can alleviate starvation and achieve fair and efficient rate allocation.
+2 	Multi-connection TCP can be implemented at either application or transport layer.
+2 	Application-layer implementation requires no kernel modification, making the solution readily deployable in networks running adaptive CSMA.
+
+
+# 127
+### http://arxiv.org/abs/1212.3381v1
+## Optimal Pricing Effect on Equilibrium Behaviors of Delay-Sensitive Users in Cognitive Radio Networks
+
+0 	This paper studies price-based spectrum access control in cognitive radio networks, which characterizes network operators' service provisions to delay-sensitive secondary users (SUs) via pricing strategies.
+0 	Based on the two paradigms of shared-use and exclusive-use dynamic spectrum access (DSA), we examine three network scenarios corresponding to three types of secondary markets.
+0	In the first monopoly market with one operator using opportunistic shared-use DSA, we study the operator's pricing effect on the equilibrium behaviors of self-optimizing SUs in a queueing system. %
+0 	This queue represents the congestion of the multiple SUs sharing the operator's single \ON-\OFF channel that models the primary users (PUs) traffic.
+1 	We provide a queueing delay analysis with the general distributions of the SU service time and PU traffic using the renewal theory.
+1 	In terms of SUs, we show that there exists a unique Nash equilibrium in a non-cooperative game where SUs are players employing individual optimal strategies.
+1 	We also provide a sufficient condition and iterative algorithms for equilibrium convergence.
+1 	In terms of operators, two pricing mechanisms are proposed with different goals: revenue maximization and social welfare maximization.
+1 	In the second monopoly market, an operator exploiting exclusive-use DSA has many channels that will be allocated separately to each entering SU.
+2 	We also analyze the pricing effect on the equilibrium behaviors of the SUs and the revenue-optimal and socially-optimal pricing strategies of the operator in this market.
+1 	In the third duopoly market, we study a price competition between two operators employing shared-use and exclusive-use DSA, respectively, as a two-stage Stackelberg game.
+2 	Using a backward induction method, we show that there exists a unique equilibrium for this game and investigate the equilibrium convergence.
+
+
+# 128
+### http://arxiv.org/abs/1407.2125v2
+## Noisy Distance Measurements Using 3-D Localization with Rb-Rf Methods
+
+0 	Wireless sensor networks are dynamically formed over the varying topologies.
+0 	Wireless sensor networks can assist in conducting the rescue operations and can provide search in timely manner.
+0 	Long time monitoring applications are environment monitoring, security surveillance and habitat monitoring.
+0 	Further, where it can be deployed in time critical situations when disaster happens.
+0 	As we are dealing with the human lives here, we can not just rely on the localization schemes that depend upon the connectivity information Rf i.e. range-free algorithms only.
+0 	Further, rescue operations are carried out in highly noisy environments, so distance based Rb(range-based) localization algorithms generate high error in distance measurements.
+1 	An efficient algorithm is needed that can measure the location of the sensor nodes near to the living being or being attached to them in 3-D space with a high accuracy.
+1 	To achieve such kind of accuracy a combination of both the strategies is required.
+1 	The proposed method which incorporates both the Rb(range-based)&Rfrange-free strategies that successfully localizes nodes in a sensor network with noisy distance measurements.
+1 	We also have depicted the effect of scalability on the performance of the algorithm.
+2 	Results show that as the scalability of the network increases with the number of beacon nodes; the performance of the algorithm goes high above 90 percent .
+1 	The granularity of the areas estimated may be easily adjusted by changing the system parameters which makes the proposed algorithm flexible.
+
+
+# 129
+### http://arxiv.org/abs/1407.5385v1
+## Nontransitive Ranking to Enhance Routing Decision in MANETS
+
+0 	An ad hoc network is an infrastructureless network in which nodes perform terminal as well as routing functions.
+0 	A routing protocol is the only substitute to complete the communications in the absence of an access point.
+1 	In spite of that mobile nodes or so called routers uses some mechanism for calculating the best route when it has multiple routes for the same destination.
+1 	On the basis of one or more metrics routes are ranked from best to worst.
+1 	But, in an ad hoc network many factors can affect this decision, such as the delay, load, route lifetime etc.
+1 	Thus measuring and finding routes on the basis of crisp mathematical model for all these attributes is complicated.
+1 	That why, the fuzzy approach for best route determination is required for MANET because some of the metrics are fuzzy or vague and the classical ranking of routes and transitivity in the ranking does not hold.
+1 	The proposed Nontransitive Route Ranking subjective comparison of one route with others and performs nontransitive ranking to rank routes from best to worst.
+2 	The pairwise comparisons of each route with others give more accurate and fair comparison.
+2 	The proposed ranking is easier than classical ranking in which metrics have assigned some value and these values are combined to obtain the ranking.
+2 	Experimental result shows the efficiency of the proposed model.
+# 	Keywords: Fuzzy, Rank, Nontransitive, Route, Ranking, Relativity
+
+
+# 130
+### http://arxiv.org/abs/0801.4054v2
+## Bounded Mean-Delay Throughput and Non-Starvation Conditions in Aloha Network
+
+0 	This paper considers the requirements to ensure bounded mean queuing delay and non-starvation in a slotted Aloha network operating the exponential backoff protocol.
+0 	It is well-known that the maximum possible throughput of a slotted Aloha system with a large number of nodes is 1/e = 0.3679.
+0 	Indeed, a saturation throughput of 1/e can be achieved with an exponential backoff factor of r = e/(e-1)=1.5820.
+0 	The binary backoff factor of r = 2 is assumed in the majority of prior work, and in many practical multiple-access networks such as the Ethernet and WiFi.
+0 	For slotted Aloha, the saturation throughput 0.3466 for r = 2 is reasonably close to the maximum of 1/e, and one could hardly raise objection to adopting r = 2 in the system.
+0 	However, this paper shows that if mean queuing delay is to be bounded, then the sustainable throughput when r = 2 is only 0.2158, a drastic 41% drop from 1/e .
+0  Fortunately, the optimal setting of r = 1.3757 under the bounded mean-delay requirement allows us to achieve sustainable throughput of 0.3545, a penalty of only less than 4% relative to 1/e.
+2 	A general conclusion is that the value of r may significantly affect the queuing delay performance.
+2 	Besides analyzing mean queuing delay, this paper also delves into the phenomenon of starvation, wherein some nodes are deprived of service for an extended period of time while other nodes hog the system.
+1 	Specifically, we propose a quantitative definition for starvation and show that the conditions to guarantee bounded mean delay and non-starved operation are one of the same, thus uniting these two notions.
+2 	Finally, we show that when mean delay is large and starvation occurs, the performance results obtained from simulation experiments may not converge.
+2 	A quantitative discussion of this issue is provided in this paper.
+
+
+# 131
+### http://arxiv.org/abs/1508.05017v3
+## On the Packet Allocation of Multi-Band Aggregation Wireless Networks
+
+0 	The use of heterogeneous networks with multiple radio access technologies (RATs) is a system concept that both academia and industry are studying.
+0 	In such system, integrated use of available multiple RATs is essential to achieve beyond additive throughput and connectivity gains using multi-dimensional diversity.
+0 	This paper considers an aggregation module called opportunistic multi-MAC aggregation (OMMA).
+0 	It resides between the IP layer and the air interface protocol stacks, common to all RATs in the device.
+1 	We present a theoretical framework for such system while considering a special case of multi-RAT systems, i.e., a multi-band wireless LAN (WLAN) system.
+1 	An optimal packet distribution approach is derived which minimizes the average packet latency (the sum of queueing delay and serving delay) over multiple bands.
+1 	It supports multiple user terminals with different QoS classes simultaneously.
+1 	We further propose a packet scheduling algorithm, OMMA Leaky Bucket, which minimizes the packet end-to-end delay, i.e., the sum of average packet latency and average packet reordering delay.
+1 	We also describe the system architecture of the proposed OMMA system, which is applicable for the general case of the multi- RAT devices.
+1 	It includes functional description, discovery and association processes, and dynamic RAT update management.
+2 	We finally present simulation results for a multi-band WLAN system.
+2 	It shows the performance gains of the proposed OMMA Leaky Bucket scheme in comparison to other existing packet scheduling mechanisms.
+
+
+# 132
+### http://arxiv.org/abs/1512.02594v1
+## Suporte à Mobilidade em Redes Mesh Sem Fio: estratégias comuns versus SDN
+
+0 	Wireless mesh networks have been presented as a robust, scalable and low cost solution to provide connectivity in long distance areas.
+0 	However, given its nature, routing strategies must support seamless mobility of nodes while enabling operation with a good performance and fast self-recovery from links fault.
+0 	The routing approaches that meet these requirements are based on protocols usually used in ad-hoc networks (e.g. OLSR and B.A.T.M.A.N.) and, more recently, in the SDN paradigm (e.g. OpenWiMesh), each one of them having its own pros and cons.
+0 	Therefore, it is important to evaluate the benefits and impacts of each approach, taking into account models and metrics inherent to the mobility.
+1 	In this paper, we propose a simplified implementation of mobility support in OpenWiMesh and evaluate its performance compared to other protocols, using differents mobility and data traffic models.
+1 	The chosen metrics are based on packet loss, occupation of the links with control traffic and delay.
+2 	Simulated results show that the SDN approach perform better than the classic protocols, beyond flexibility and programmability of SDN itself.
+
+
+# 133
+### http://arxiv.org/abs/1512.03770v2
+## Flexibility of Networks: a new measure for network design space analysis?
+
+0 	Flexibility is often claimed as a competitive advantage when proposing new network designs.
+0 	However, most proposals provide only qualitative arguments for their improved support of flexibility.
+0 	Quantitative arguments vary a lot among different proposals.
+0 	A general understanding for flexibility is not yet clearly defined, leaving it to the reader to draw the right conclusions based on background information.
+0 	The term flexibility is commonly defined as the ability to adapt to changes.
+0 	For networks, flexibility would refer to the ability to adapt the available network resources, such as flows or topology, to changes of design requirements, e.g., shorter latency budgets or different traffic distributions.
+0 	Recent concepts such as Software Defined Networking, Network Virtualization and Network Function Virtualization have emerged claiming to provide more flexibility in networks.
+0 	Nevertheless, a deeper understanding of what flexibility means and how it could be quantified to compare different network designs remains open.
+0 	In this paper, we ask whether flexibility can be a new measure for network design space analysis.
+1 	As it is quite challenging to formulate a flexibility measure that covers all network aspects, we propose an initial set of flexibility aspects to start grounding guidelines.
+1 	Our initial selection is backed up by an analysis of Software Defined Networking, Network Virtualization and Network Function Virtualization for their support of the selected flexibility aspects.
+1 	Our research methodology is based on a systematic approach that leads to network design guidelines with respect to flexibility.
+
+
+# 134
+### http://arxiv.org/abs/1602.00097v1
+## Dynamic Virtual Machine Management via Approximate Markov Decision Process
+
+0 	Efficient virtual machine (VM) management can dramatically reduce energy consumption in data centers.
+0 	Existing VM management algorithms fall into two categories based on whether the VMs' resource demands are assumed to be static or dynamic.
+0 	The former category fails to maximize the resource utilization as they cannot adapt to the dynamic nature of VMs' resource demands.
+0 	Most approaches in the latter category are heuristical and lack theoretical performance guarantees.
+1 	In this work, we formulate dynamic VM management as a large-scale Markov Decision Process (MDP) problem and derive an optimal solution.
+1 	Our analysis of real-world data traces supports our choice of the modeling approach.
+1 	However, solving the large-scale MDP problem suffers from the curse of dimensionality.
+1 	Therefore, we further exploit the special structure of the problem and propose an approximate MDP-based dynamic VM management method, called MadVM.
+1 	We prove the convergence of MadVM and analyze the bound of its approximation error.
+1 	Moreover, MadVM can be implemented in a distributed system, which should suit the needs of real data centers.
+1 	Extensive simulations based on two real-world workload traces show that MadVM achieves significant performance gains over two existing baseline approaches in power consumption, resource shortage and the number of VM migrations.
+1 	Specifically, the more intensely the resource demands fluctuate, the more MadVM outperforms.
+
+
+# 135
+### http://arxiv.org/abs/1602.02091v1
+## Towards Innovative Physical Layer Design for Mobile WSN Platforms
+
+0 	We today live in the era of dynamic and mobile wireless enabled platforms.
+0 	This kind of stringent communication capability in the face of volatile and turbulent mobility demands a fresh look at physical layer in general and antenna design in particular.
+0 	The dimension of the antenna is 30x35x1.6 mm^3.
+2 	Multiplicity of bands is very useful for compatibility purposes where legacy robotic platforms generally operate in MHz range while latest robotic platforms are capable to handle GHz communication regimes and can pump data very at much greater speeds.
+2	Seven frequency bands are obtained at 700 MHz, 2.4 GHz, 3.6 GHz, 4.37 GHz, 5.8 GHz, 6.93 GHz and 7.7 GHz with bandwidth of 1.1 GHz, 0.7 GHz, 0.8 GHz, 0.23 GHz, 0.90 GHz, 0.19 GHz and 0.12 GHz respectively.
+
+
+# 151
+### http://arxiv.org/abs/1009.1604v1
+## DynaChanAl: Dynamic Channel Allocation with Minimal End-to-end Delay for Wireless Sensor Networks
+
+0 	With recent advances in wireless communication, networking, and low power sensor technology, wireless sensor network (WSN) systems have begun to take significant roles in various applications ranging from environmental sensing to mobile healthcare sensing.
+0 	While some WSN applications only require a lim- ited amount of bandwidth, new emerging applications operate with a notice- ably large amount of data transfers.
+0 	One way to deal with such applications is to maximize the available capacity by utilizing the use of multiple wireless channels.
+1 	This work proposes DynaChannAl, a distributed dynamic wireless channel algorithm with the goal of effectively distributing nodes on multiple wireless channels in WSN systems.
+1 	Specifically, DynaChannAl targets applica- tions where mobile nodes connect to a pre-existing wireless backbone and takes the expected end-to-end queuing delay as its core metric.
+1 	We use the link qual- ity indicator (LQI) values provided by IEEE 802.15.4 radios white-list potential links with good link quality and evaluate such links with the aggregated packet transmission latency at each hop.
+1 	Our approach is useful for applications that require minimal end-to-end delay (i.e., healthcare applications).
+1 	DynaChannAl is a light weight and highly adoptable scheme that can be easily incorporated with various pre-developed components and pre-deployed applications.
+2 	We eval- uate DynaChannAl in on a 45 node WSN testbed.
+2 	As the first study to consider end-to-end latency as the core metric for channel allocation in WSN systems, the experimental results indicate that DynaChannAl successfully distributes multi- ple (mobile) source nodes on different wireless channels and enables the nodes to select wireless channel and links that can minimize the end-to-end latency.
+
+
+# 152
+### http://arxiv.org/abs/1009.3415v1
+## Temporal Starvation in CSMA Wireless Networks
+
+0 	It is well known that links in CSMA wireless networks are prone to starvation.
+0 	Prior works focused almost exclusively on equilibrium starvation.
+0 	In this paper, we show that links in CSMA wireless networks are also susceptible to temporal starvation.
+0 	Specifically, although some links have good equilibrium throughputs and do not suffer from equilibrium starvation, they can still have no throughput for extended periods from time to time.
+0 	Given its impact on quality of service, it is important to understand and characterize temporal starvation.
+1 	To this end, we develop a "trap theory" to analyze temporal throughput fluctuation.
+1 	The trap theory serves two functions.
+1 	First, it allows us to derive new mathematical results that shed light on the transient behavior of CSMA networks.
+1 	For example, we show that the duration of a trap, during which some links receive no throughput, is insensitive to the distributions of the backoff countdown and transmission time (packet duration) in the CSMA protocol.
+1 	Second, we can develop analytical tools for computing the "degrees of starvation" for CSMA networks to aid network design.
+1 	For example, given a CSMA network, we can determine whether it suffers from starvation, and if so, which links will starve.
+1 	Furthermore, the likelihood and durations of temporal starvation can also be computed.
+2 	We believe that the ability to identify and characterize temporal starvation as established in this paper will serve as an important first step toward the design of effective remedies for it.
+
+
+# 153
+### http://arxiv.org/abs/1009.4563v1
+## A Cluster Based Replication Architecture for Load Balancing in Peer-to-Peer Content Distribution
+
+0 	In P2P systems, large volumes of data are declustered naturally across a large number of peers.
+0 	But it is very difficult to control the initial data distribution because every user has the freedom to share any data with other users.
+0 	The system scalability can be improved by distributing the load across multiple servers which is proposed by replication.
+0 	The large scale content distribution systems were improved broadly using the replication techniques.
+0 	The demanded contents can be brought closer to the clients by multiplying the source of information geographically, which in turn reduce both the access latency and the network traffic.
+0 	In addition to this, due to the intrinsic dynamism of the P2P environment, static data distribution cannot be expected to guarantee good load balancing.
+0 	If the hot peers become bottleneck, it leads to increased user response time and significant performance degradation of the system.
+0 	Hence an effective load balancing mechanism is necessary in such cases and it can be attained efficiently by intelligent data replication.
+1 	In this paper, we propose a cluster based replication architecture for load-balancing in peer-to-peer content distribution systems.
+1 	In addition to an intelligent replica placement technique, it also consists of an effective load balancing technique.
+1 	In the intelligent replica placement technique, peers are grouped into strong and weak clusters based on their weight vector which comprises available capacity, CPU speed, access latency and memory size.
+1 	In order to achieve complete load balancing across the system, an intracluster and inter-cluster load balancing algorithms are proposed.
+2 	We are able to show that our proposed architecture attains less latency and better throughput with reduced bandwidth usage, through the simulation results.
+
+# 154
+### http://arxiv.org/abs/1107.1633v1
+## Throughput Computation in CSMA Wireless Networks with Collision Effects
+
+0 	It is known that link throughputs of CSMA wireless networks can be computed from a time-reversible Markov chain arising from an ideal CSMA network model (ICN).
+0 	In particular, this model yields general closed-form equations of link throughputs.
+0 	However, an idealized and important assumption made in ICN is that the backoff countdown process is in "contiuous-time" and carrier sensing is instantaneous.
+0 	As a result, there is no collision in ICN.
+0 	In practical CSMA protocols such as IEEE 802.11, the stations count down in "mini-timeslot" and the process is therefore a "discrete-time" process.
+0 	In particular, two stations may end their backoff process in the same mini-timeslot and then transmit simultaneously, resulting in a packet collision.
+0 	This paper is an attempt to study how to compute link throughputs after taking such backoff collision effects into account.
+1 	We propose a generalized ideal CSMA network model (GICN) to characterize the collision states as well as the interactions and dependency among links in the network.
+2 	We show that link throughputs and collision probability can be computed from GICN.
+2 	Simulation results validate GICN's accuracy.
+2 	Interestingly, we also find that the original ICN model yields fairly accurate results despite the fact that collisions are not modeled.
+
+
+# 155
+### http://arxiv.org/abs/1107.5468v1
+## Measuring Pulsed Interference in 802.11 Links
+
+0 	Wireless 802.11 links operate in unlicensed spectrum and so must accommodate other unlicensed transmitters which generate pulsed interference.
+1 	We propose a new approach for detecting the presence of pulsed interference affecting 802.11 links, and for estimating temporal statistics of this interference.
+1 	This approach builds on recent work on distinguishing collision losses from noise losses in 802.11 links.
+1 	When the intervals between interference pulses are i.i.d.,the approach is not confined to estimating the mean and variance of these intervals but can recover the complete probability distribution.
+1 	The approach is a transmitter-side technique that provides per-link information and is compatible with standard hardware.
+1 	We demonstrate the effectiveness of the proposed approach using extensive experimental measurements.
+1 	In addition to applications to monitoring, management and diagnostics, the fundamental information provided by our approach can potentially be used to adapt the frame durations used in a network so as to increase capacity in the presence of pulsed interference.
+
+
+# 156
+### http://arxiv.org/abs/1209.2154v1
+## Cognitive Radio Networks: Realistic or Not?
+
+0 	A large volume of research has been conducted in the cognitive radio (CR) area the last decade.
+0 	However, the deployment of a commercial CR network is yet to emerge.
+0 	A large portion of the existing literature does not build on real world scenarios, hence, neglecting various important interactions of the research with commercial telecommunication networks.
+0 	For instance, a lot of attention has been paid to spectrum sensing as the front line functionality that needs to be completed in an efficient and accurate manner to enable an opportunistic CR network architecture.
+0 	This is necessary to detect the existence of spectrum holes without which no other procedure can be fulfilled.
+0 	However, simply sensing (cooperatively or not) the energy received from a primary transmitter cannot enable correct dynamic spectrum access.
+0 	For example, the low strength of a primary transmitter's signal does not assure that there will be no interference to a nearby primary receiver.
+0 	In addition, the presence of a primary transmitter's signal does not mean that CR network users cannot access the spectrum since there might not be any primary receiver in the vicinity.
+0 	Despite the existing elegant and clever solutions to the DSA problem no robust, implementable scheme has emerged.
+1 	In this paper, we challenge the basic premises of the proposed schemes.
+1 	We further argue that addressing the technical challenges we face in deploying robust CR networks can only be achieved if we radically change the way we design their basic functionalities.
+1 	In support of our argument, we present a set of real-world scenarios, inspired by realistic settings in commercial telecommunications networks, focusing on spectrum sensing as a basic and critical functionality in the deployment of CRs.
+1 	We use these scenarios to show why existing DSA paradigms are not amenable to realistic deployment in complex wireless environments.
+
+
+# 157
+### http://arxiv.org/abs/1302.4720v1
+## Multiple Target Tracking with RF Sensor Networks
+
+0 	RF sensor networks are wireless networks that can localize and track people (or targets) without needing them to carry or wear any electronic device.
+0 	They use the change in the received signal strength (RSS) of the links due to the movements of people to infer their locations.
+1 	In this paper, we consider real-time multiple target tracking with RF sensor networks.
+1 	We perform radio tomographic imaging (RTI), which generates images of the change in the propagation field, as if they were frames of a video.
+1 	Our RTI method uses RSS measurements on multiple frequency channels on each link, combining them with a fade level-based weighted average.
+1 	We describe methods to adapt machine vision methods to the peculiarities of RTI to enable real time multiple target tracking.
+1 	Several tests are performed in an open environment, a one-bedroom apartment, and a cluttered office environment.
+2 	The results demonstrate that the system is capable of accurately tracking in real-time up to 4 targets in cluttered indoor environments, even when their trajectories intersect multiple times, without mis-estimating the number of targets found in the monitored area.
+2 	The highest average tracking error measured in the tests is 0.45 m with two targets, 0.46 m with three targets, and 0.55 m with four targets.
+
+
+# 158
+### http://arxiv.org/abs/1302.7028v1
+## Shortest Path versus Multi-Hub Routing in Networks with Uncertain Demand
+
+0 	We study a class of robust network design problems motivated by the need to scale core networks to meet increasingly dynamic capacity demands.
+0 	Past work has focused on designing the network to support all hose matrices (all matrices not exceeding marginal bounds at the nodes).
+0 	This model may be too conservative if additional information on traffic patterns is available.
+0 	Another extreme is the fixed demand model, where one designs the network to support peak point-to-point demands.
+1 	We introduce a capped hose model to explore a broader range of traffic matrices which includes the above two as special cases.
+1 	It is known that optimal designs for the hose model are always determined by single-hub routing, and for the fixed- demand model are based on shortest-path routing.
+1 	We shed light on the wider space of capped hose matrices in order to see which traffic models are more shortest path-like as opposed to hub-like.
+1 	To address the space in between, we use hierarchical multi-hub routing templates, a generalization of hub and tree routing.
+1 	In particular, we show that by adding peak capacities into the hose model, the single-hub tree-routing template is no longer cost-effective.
+1 	This initiates the study of a class of robust network design (RND) problems restricted to these templates.
+1 	Our empirical analysis is based on a heuristic for this new hierarchical RND problem.
+1 	We also propose that it is possible to define a routing indicator that accounts for the strengths of the marginals and peak demands and use this information to choose the appropriate routing template.
+2 	We benchmark our approach against other well-known routing templates, using representative carrier networks and a variety of different capped hose traffic demands, parameterized by the relative importance of their marginals as opposed to their point-to-point peak demands.
+
+
+# 159
+### http://arxiv.org/abs/1302.7289v2
+## Homology-based Distributed Coverage Hole Detection in Wireless Sensor Networks
+
+0 	Homology theory provides new and powerful solutions to address the coverage problems in wireless sensor networks (WSNs).
+0 	They are based on algebraic objects, such as Cech complex and Rips complex.
+0 	Cech complex gives accurate information about coverage quality but requires a precise knowledge of the relative locations of nodes.
+0 	This assumption is rather strong and hard to implement in practical deployments.
+0 	Rips complex provides an approximation of Cech complex.
+0 	It is easier to build and does not require any knowledge of nodes location.
+0 	This simplicity is at the expense of accuracy.
+0 	Rips complex can not always detect all coverage holes.
+0 	It is then necessary to evaluate its accuracy.
+1 	This work proposes to use the proportion of the area of undiscovered coverage holes as performance criteria.
+1 	Investigations show that it depends on the ratio between communication and sensing radii of a sensor.
+1 	Closed-form expressions for lower and upper bounds of the accuracy are also derived.
+1 	For those coverage holes which can be discovered by Rips complex, a homology-based distributed algorithm is proposed to detect them.
+2 	Simulation results are consistent with the proposed analytical lower bound, with a maximum difference of 0.5%.Upper bound performance depends on the ratio of communication and sensing radii.
+2 	Simulations also show that the algorithm can localize about 99% coverage holes in about 99% cases.
+
+
+# 160
+### http://arxiv.org/abs/1409.1177v2
+## A New IEEE 802.15.4 Simulation Model for OMNeT++ / INET
+
+1 	This paper introduces a new IEEE 802.15.4 simulation model for OMNeT++ / INET.
+0	802.15.4 is an important underlying standard for wireless sensor networks and Internet of Things scenarios.
+2 	The presented implementation is designed to be compatible with OMNeT++ 4.x and INET 2.x and laid-out to be expandable for newer revisions of the 802.15.4 standard.
+2 	The source code is available online https://github.com/michaelkirsche/IEEE802154INET-Standalone
+
+
+# 161
+### http://arxiv.org/abs/1409.8267v1
+## Network Utility Aware Traffic Loading Balancing in Backhaul-constrained Cache-enabled Small Cell Networks with Hybrid Power Supplies
+
+0 	Explosive data traffic growth leads to a continuous surge in capacity demands across mobile networks.
+0 	In order to provision high network capacity, small cell base stations (SCBSs) are widely deployed.
+0 	Owing to the close proximity to mobile users, SCBSs can effectively enhance the network capacity and offloading traffic load from macro BSs (MBSs).
+0 	However, the cost-effective backhaul may not be readily available for SCBSs, thus leading to backhaul constraints in small cell networks (SCNs).
+0 	Enabling cache in BSs may mitigate the backhaul constraints in SCNs.
+0 	Moreover, the dense deployment of SCBSs may incur excessive energy consumption.
+0 	To alleviate brown power consumption, renewable energy will be explored to power BSs.
+0 	In such a network, it is challenging to dynamically balance traffic load among BSs to optimize the network utilities.
+1 	In this paper, we investigate the traffic load balancing in backhaul-constrained cache-enabled small cell networks powered by hybrid energy sources.
+1 	We have proposed a network utility aware (NUA) traffic load balancing scheme that optimizes user association to strike a tradeoff between the green power utilization and the traffic delivery latency.
+1 	On balancing the traffic load, the proposed NUA traffic load balancing scheme considers the green power utilization, the traffic delivery latency in both BSs and their backhaul, and the cache hit ratio.
+1 	The NUA traffic load balancing scheme allows dynamically adjusting the tradeoff between the green power utilization and the traffic delivery latency.
+2 	We have proved the convergence and the optimality of the proposed NUA traffic load balancing scheme.
+2 	Through extensive simulations, we have compared performance of the NUA traffic load balancing scheme with other schemes and showed its advantages in backhaul-constrained cache-enabled small cell networks with hybrid power supplies.
+
+
+# 162
+### http://arxiv.org/abs/1410.0336v1
+## Cross-Layer Extended Persistent Timeout Policy for SCTP and DSDV
+
+0 	Cross layer techniques applied to various protocols stacks provide fair information sharing between OSI model layers.
+0 	The performance gains have been demonstrated for many studied systems within protocols interactions.
+0 	The example is illustrative of the reliable transport protocols that use retransmissions to achieve that reliability function.
+0 	The performance gains of the persistent timeout policy for the management of the retransmission timeout have been produce in some recent works when applying that persistent timeout policy only to reliable transport protocol.
+0 	The goal was to give an appropriate behavior in response to a bad state of the wireless channel that occurs and temporally blocks the transmission of data.The channel state is given by the 802.11 link layer through cross-layer mechanism.
+1 	In this paper, the persistent policy is extended to the network layer and is applied to a stack that uses a reactive routing protocol, namely the Destination Sequenced Distance-Vector (DSDV) protocol that also generates additional periodic traffic regardless to the channel state.
+1 	We are measuring the influence in terms of performance gains of the extended persistent policy because of the additional periodic signalization messages deriving from the used routing protocol.
+1 	After the introduction in section I; Section II of this paper presents an overview of the Stream Control Transmission Protocol (SCTP).
+2 	Section III describes the behavior of the DSDV protocol.
+2 	Section IV presents the extended persistent timeout policy principle and Section V presents the simulation results used to compare the using of the traditional and the extended persistent timeout policies applied to the same protocol stack using SCTP and DSDV.
+
+
+# 163
+### http://arxiv.org/abs/1410.0337v1
+## Cross layer Interaction Models for SCTP and OLSR
+
+0 	The evolution from wired system to the wireless environment opens a set of challenge for the improvement of the wireless system performances because of many of their weakness compared to wired networks.
+0 	To achieve this goal, cross layer techniques are used to facilitate the sharing of information between the layers of the OSI model.
+0 	In some precedent works, the Reverse Cross Layer (RCL) method has been proposed to facilitate the design of cross layer conceptual models.
+0 	The method has the advantage to highlight the impact of each cross layer interaction on each protocol in order to update its source code and to describe the intuitive gains that can be achieve.
+0 	The method may be applied to a given protocol stack or to an existent cross layer model to integrate new interactions.
+1 	In this paper, we are applying the RCL method on the stack that uses the Stream Control Transport Protocol (SCTP) at the transport layer and the Optimized Link State Routing (OLSR) at the network layer.
+1 	Cross layer conceptual models are produced based on new cross layer interactions that are proposed to populate the environment subsystem built with the application of the RCL method.
+1 	The improvement of the environment subsystem is specified through the performance gains provide by the new interactions.
+1 	The implementation of the interactions that impact the SCTP protocol is described in the Interaction Description Array.
+1 	After the introduction, Section II of this paper presents an overview of the SCTP protocol.
+1 	Section III is related to the overview of the OLSR protocol.
+1 	Section IV is used for the application of the RCL method and the different interaction arrays it generates.
+2 	Section V presents the improvement of the environment subsystem and the definition of the performance gain of each Cross Layer Atomic Action (CLAA).
+
+
+# 164
+### http://arxiv.org/abs/1410.3978v1
+## Technical Report: A Methodology for Studying 802.11p VANET Broadcasting Performance with Practical Vehicle Distribution
+
+0 	In a Vehicular Ad-hoc Network (VANET), the performance of the communication protocol is influenced heavily by the vehicular density dynamics.
+0 	However, most of the previous works on VANET performance modeling paid little attention to vehicle distribution, or simply assumed homogeneous car distribution.
+0 	It is obvious that vehicles are distributed non-homogeneously along a road segment due to traffic signals and speed limits at different portions of the road, as well as vehicle interactions that are significant on busy streets.
+1 	In light of the inadequacy, we present in this paper an original methodology to study the broadcasting performance of 802.11p VANETs with practical vehicle distribution in urban environments.
+1 	Firstly, we adopt the empirically verified stochastic traffic models, which incorporates the effect of urban settings (such as traffic lights and vehicle interactions) on car distribution and generates practical vehicular density profiles.
+1 	Corresponding 802.11p protocol and performance models are then developed.
+1 	When coupled with the traffic models, they can predict broadcasting efficiency, delay, as well as throughput performance of 802.11p VANETs based on the knowledge of car density at each location on the road.
+1 	Extensive simulation is conducted to verify the accuracy of the developed mathematical models with the consideration of vehicle interaction.
+2 	In general, our results demonstrate the applicability of the proposed methodology on modeling protocol performance in practical signalized road networks, and shed insights into the design and development of future communication protocols and networking functions for VANETs.
+
+
+# 165
+### http://arxiv.org/abs/1501.01657v1
+## A General Model for MAC Protocol Selection in Wireless Sensor Networks
+
+0 	Wireless Sensor Networks (WSNs) are being deployed for different applications, each having its own structure, goals and requirements.
+0 	Medium access control (MAC) protocols play a significant role in WSNs and hence should be tuned to the applications.
+0	However, there is no for selecting MAC protocols for different situations.
+0 	Therefore, it is hard to decide which MAC protocol is good for a given situation.
+0 	Having a precise model for each MAC protocol, on the other hand, is almost impossible.
+0 	Using the intuition that the protocols in the same behavioral category perform similarly, our goal in this paper is to introduce a general model that selects the protocol(s) that satisfy the given requirements from the category that performs better for a given context.
+1 	We define the Combined Performance Function (CPF) to demonstrate the performance of different categories protocols for different contexts.
+1 	Having the general model, we then discuss the model scalability for adding new protocols, categories, requirements, and performance criteria.
+1 	Considering energy consumption and delay as the initial performance criteria of the model, we focus on deriving mathematical models for them.
+2 	The results extracted from CPF are the same as the well-known rule of thumb for the MAC protocols that verifies our model.
+1 	We validate our models with the help of simulation study.
+1 	We also implemented the current CPF model in a web page to make the model online and useful.
+
+# 61
+### http://arxiv.org/abs/1105.4261v1
+## Physical-Layer Network Coding: Tutorial, Survey, and Beyond
+
+0 	The concept of physical-layer network coding (PNC) was proposed in 2006 for application in wireless networks.
+0 	Since then it has developed into a subfield of network coding with wide followings.
+0 	The basic idea of PNC is to exploit the network coding operation that occurs naturally when electromagnetic (EM) waves are superimposed on one another.
+0 	This simple idea turns out to have profound and fundamental ramifications.
+0 	Subsequent works by various researchers have led to many new results in the domains of 1) wireless communication; 2) wireless information theory; and 3) wireless networking.
+0	The purpose of this paper is fourfold.
+1 	First, we give a brief tutorial on the basic concept of PNC.
+1 	Second, we survey and discuss recent key results in the three aforementioned areas.
+1 	Third, we examine a critical issue in PNC: synchronization.
+0 	It has been a common belief that PNC requires tight synchronization.
+0 	Our recent results suggest, however, that PNC may actually benefit from asynchrony.
+1 	Fourth, we propose that PNC is not just for wireless networks; it can also be useful in optical networks.
+1 	We provide an example showing that the throughput of a passive optical network (PON) could potentially be raised by 100% with PNC.
+
+
+# 62
+### http://arxiv.org/abs/1105.6024v1
+## Optimum Sleep-Wake Scheduling of Sensors for Quickest Event Detection in Small Extent Wireless Sensor Networks
+
+1 	We consider the problem of quickest event detection with sleep-wake scheduling in small extent wireless sensor networks in which, at each time slot, each sensor node in the awake state observes a sample and communicates the information to the fusion centre.
+0 	The sensor nodes in the sleep state do not sample or communicate any information to the fusion centre (FC), thereby conserving energy.
+0 	At each time slot, the FC, after having received the samples from the sensor nodes in the wake state, makes a decision to stop (and thus declare that the event has occurred) or to continue observing.
+0 	If it decides to continue, the FC also makes the decision of choosing the number of sensor nodes to be in the wake state in the next time slot.
+1 	We consider three alternative approaches to the problem of choosing the number of sensor nodes to be in the wake state in time slot k+1, based on the information available at time slot k, namely, 
+1 	1.optimal control of M_{k+1}, the number of sensor nodes to be in the awake state in time slot k+1, 
+1 	2.optimal control of q_{k+1}, the probability of a sensor node to be in the awake state in time slot k+1, and
+1 	3.optimal probability q that a sensor node is in the awake state in any time slot.
+2 	In each case, we formulate the problem as a sequential decision process.
+2 	We show that a sufficient statistic for the decision at time k is the a posteriori probability of change Pi_k.
+2 	Also, we show that the optimal stopping rule is a threshold rule on Pi_k.
+2	The optimal policy for M_{k+1} can keep very few sensors wake during the prechange phase and then quickly increase the number of sensors in the wake state when a change is "suspected".
+2 	Among the three sleep-wake algorithms described, we observe that the total cost is minimum for the optimum control of M_{k+1} and is maximum for the optimum control on q.
+
+
+# 63
+### http://arxiv.org/abs/1108.2606v1
+## Tensor-Based Link Prediction in Intermittently Connected Wireless Networks
+
+0 	Through several studies, it has been highlighted that mobility patterns in mobile networks are driven by human behaviors.
+0 	This effect has been particularly observed in intermittently connected networks like DTN (Delay Tolerant Networks).
+0 	Given that common social intentions generate similar human behavior, it is relevant to exploit this knowledge in the network protocols design, e.g. to identify the closeness degree between two nodes.
+1 	In this paper, we propose a temporal link prediction technique for DTN which quantifies the behavior similarity between each pair of nodes and makes use of it to predict future links.
+0 	Our prediction method keeps track of the spatio-temporal aspects of nodes behaviors organized as a third-order tensor that aims to records the evolution of the network topology.
+1 	After collapsing the tensor information, we compute the degree of similarity for each pair of nodes using the Katz measure.
+0 	This metric gives us an indication on the link occurrence between two nodes relying on their closeness.
+1 	We show the efficiency of this method by applying it on three mobility traces: two real traces and one synthetic trace.
+1 	Through several simulations, we demonstrate the effectiveness of the technique regarding another approach based on a similarity metric used in DTN.
+0 	The validity of this method is proven when the computation of score is made in a distributed way (i.e. with local information).
+2 	We attest that the tensor-based technique is effective for temporal link prediction applied to the intermittently connected networks.
+2 	Furthermore, we think that this technique can go beyond the realm of DTN and we believe this can be further applied on every case of figure in which there is a need to derive the underlying social structure of a network of mobile users.
+
+
+# 64
+### http://arxiv.org/abs/1108.2776v1
+## Vehicular Ad Hoc and Sensor Networks; Principles and Challenges
+
+0 	The rapid increase of vehicular traffic and congestion on the highways began hampering the safe and efficient movement of traffic.
+0 	Consequently, year by year, we see the ascending rate of car accidents and casualties in most of the countries.
+0 	Therefore, exploiting the new technologies, e.g. wireless sensor networks, is required as a solution of reduction of these saddening and reprehensible statistics.
+0 	This has motivated us to propose a novel and comprehensive system to utilize Wireless Sensor Networks for vehicular networks.
+1 	We coin the vehicular network employing wireless Sensor networks as Vehicular Ad Hoc and Sensor Network, or VASNET in short.
+1 	The proposed VASNET is particularly for highway traffic.
+1	VASNET is a self-organizing Ad Hoc and sensor network comprised of a large number of sensor nodes.
+1 	In VASNET there are two kinds of sensor nodes, some are embedded on the vehicles-vehicular nodes- and others are deployed in predetermined distances besides the highway road, known as Road Side Sensor nodes (RSS).
+1 	The vehicular nodes are used to sense the velocity of the vehicle for instance.
+1 	We can have some Base Stations (BS) such as Police Traffic Station, Firefighting Group and Rescue Team.
+1 	The base stations may be stationary or mobile.
+2 	VASNET provides capability of wireless communication between vehicular nodes and stationary nodes, to increase safety and comfort for vehicles on the highway roads.
+2 	In this paper we explain main fundamentals and challenges of VASNET.
+
+
+# 65
+### http://arxiv.org/abs/1108.5494v1
+## Geographic Trough Filling for Internet Datacenters
+
+0 	To reduce datacenter energy consumption and cost, current practice has considered demand-proportional resource provisioning schemes, where servers are turned on/off according to the load of requests.
+0 	Most existing work considers instantaneous (Internet) requests only, which are explicitly or implicitly assumed to be delay-sensitive.
+0 	On the other hand, in datacenters, there exist a vast amount of delay-tolerant jobs, such as background/maintainance jobs.
+1 	In this paper, we explicitly differentiate delay-sensitive jobs and delay tolerant jobs.
+1 	We focus on the problem of using delay-tolerant jobs to fill the extra capacity of datacenters, referred to as trough/valley filling.
+1 	Giving a higher priority to delay-sensitive jobs, our schemes complement to most existing demand-proportional resource provisioning schemes.
+1 	Our goal is to design intelligent trough filling mechanisms that are energy efficient and also achieve good delay performance.
+1 	Specifically, we propose two joint dynamic speed scaling and traffic shifting schemes, one subgradient-based and the other queue-based.
+1 	Our schemes assume little statistical information of the system, which is usually difficult to obtain in practice.
+1 	In both schemes, energy cost saving comes from dynamic speed scaling, statistical multiplexing, electricity price diversity, and service efficiency diversity.
+1 	In addition, good delay performance is achieved in the queue-based scheme via load shifting and capacity allocation based on queue conditions.
+1 	Practical issues that may arise in datacenter networks are considered, including capacity and bandwidth constraint, service agility constraint, and load shifting cost.
+2 	We use both artificial and real datacenter traces to evaluate the proposed schemes.
+
+
+# 66
+### http://arxiv.org/abs/1109.1147v1
+## P2P Domain Classification using Decision Tree
+
+0 	In Peer-to-Peer context, a challenging problem is how to find the appropriate peer to deal with a given query without overly consuming bandwidth?
+0 	Different methods proposed routing strategies of queries taking into account the P2P network at hand.
+1 	This paper considers an unstructured P2P system based on an organization of peers around Super-Peers that are connected to Super-Super- Peer according to their semantic domains; By analyzing the queries log file, a predictive model that avoids flooding queries in the P2P network is constructed after predicting the appropriate Super-Peer, and hence the peer to answer the query.
+0 	A challenging problem in a schema-based Peer-to-Peer (P2P) system is how to locate peers that are relevant to a given query.
+1 	In this paper, architecture, based on (Super-)Peers is proposed, focusing on query routing.
+1 	The approach to be implemented, groups together (Super-)Peers that have similar interests for an efficient query routing method.
+1 	In such groups, called Super-Super-Peers (SSP), Super-Peers submit queries that are often processed by members of this group.
+1 	A SSP is a specific Super-Peer which contains knowledge about: 1.its Super-Peers and 2.The other SSP.
+1 	Knowledge is extracted by using data mining techniques (e.g. Decision Tree algorithms) starting from queries of peers that transit on the network.
+2 	The advantage of this distributed knowledge is that, it avoids making semantic mapping between heterogeneous data sources owned by (Super-)Peers, each time the system decides to route query to other (Super-) Peers.
+2 	The set of SSP improves the robustness in queries routing mechanism, and the scalability in P2P Network.
+2 	Compared with a baseline approach,the proposal architecture shows the effect of the data mining with better performance in respect to response time and precision.
+
+
+# 67
+### http://arxiv.org/abs/1109.4306v2
+## Enabling Adaptive Rate and Relay Selection for 802.11 Mobile Ad Hoc Networks
+
+0 	Mobile ad hoc networks (MANETs) are self-configuring wireless networks that lack permanent infrastructure and are formed among mobile nodes on demand.
+0 	Rapid node mobility results in dramatic channel variation, or fading, that degrades MANET performance.
+0 	Employing channel state information (CSI) at the transmitter can improve the throughput of routing and medium access control (MAC) protocols for mobile ad hoc networks.
+0 	Several routing algorithms in the literature explicitly incorporate the fading signal strength into the routing metric, thus selecting the routes with strong channel conditions.
+0 	While these studies show that adaptation to the time-variant channel gain is beneficial in MANETs, they do not address the effect of the outdated fading CSI at the transmitter.
+0 	For realistic mobile node speeds, the channel gain is rapidly varying, and becomes quickly outdated due the feedback delay.
+1 	We analyze the link throughput of joint rate adaptation and adaptive relay selection in the presence of imperfect CSI.
+1 	Moreover, for an 802.11 network that employs geographic opportunistic routing with adaptive rate and relay selection, we propose a novel method to reduce the effect of the feedback delay at the MAC layer in the presence of Rayleigh fading.
+1 	This method exploits channel reciprocity and fading prediction and does not require significant modification to the existing 802.11 frame structure.
+2 	Extensive network simulations demonstrate that the proposed approach significantly improves the throughput, delay, and packet delivery ratio for high mobile velocities relative to previously proposed approaches that employ outdated CSI at the transmitter.
+
+
+# 68
+### http://arxiv.org/abs/1110.2270v1
+## Noise Analysis and Detection Based on RF Energy Duration in wireless LAN
+
+0 	Noise is the major problem while working with wireless LAN.
+1 	In this paper we analyze the noise by using active receiving antenna and also propose the detection mechanism based on RF energy duration.
+0 	The standard back off mechanism of 802.11 wireless LAN (WLAN) increases the contention window when a transmission failure occurs in order to alleviate contentions in a WLAN.
+0 	In addition, many proposed schemes for 802.11 WLAN behave adaptively to transmission failures.
+0 	Transmission failures in WLANs occur mostly by two causes: collision and channel noise.
+0 	However, in 802.11 WLAN, a station cannot know the cause of a transmission failure, thus the adaptive schemes assume the ideal situation in which all transmission failures occur by only one of two causes.
+0 	For this reason, they may behave erroneously in a real world where transmission failures occur by both causes.
+1 	In this paper, we propose a novel scheme to detect collision, which utilizes transmission time information and RF energy duration on the channel.
+2 	By detecting collisions, a station can differentiate the causes of transmission failures and the adaptive schemes can operate correctly by using the detection information.
+
+
+# 69
+### http://arxiv.org/abs/1110.3425v1
+## CellSense: An Accurate Energy-Efficient GSM Positioning System
+
+0 	Context-aware applications have been gaining huge interest in the last few years.
+0 	With cell phones becoming ubiquitous computing devices, cell phone localization has become an important research problem.
+1 	In this paper, we present CellSense, a prob- abilistic RSSI-based fingerprinting location determination system for GSM phones.
+1 	We discuss the chal- lenges of implementing a probabilistic fingerprinting localization technique in GSM networks and present the details of the CellSense systemand how it addresses these challenges.
+1 	We then extend the proposed system using a hybrid technique that combines probabilistic and deterministic estimation to achieve both high ac- curacy and low computational overhead.
+0 	Moreover, the accuracy of the hybrid technique is robust to changes in its parameter values.
+1 	To evaluate our proposed system, we implemented CellSense on Android-based phones.
+2 	Results from two different testbeds, representing urban and rural environments, for three different cellular providers show that CellSense provides at least 108.57% enhancement in accuracy in rural areas and at least 89.03% in urban areas compared to the current state of the art RSSI-based GSM localization systems.
+2 	In additional, the proposed hybrid technique provides more than 6 times and 5.4 times reduction in computational requirements compared to the state of the art RSSI-based GSM localization systems for the rural and urban testbeds respectively.
+2 	We also evaluate the effect of changing the different system parameters on the accuracy-complexity tradeoff and how the cell towers density and fingerprint density affect the system performance.
+
+
+# 70
+### http://arxiv.org/abs/1110.3579v1
+## Network on Chip: a New Approach of QoS Metric Modeling Based on Calculus Theory
+
+0 	A NoC is composed by IP cores (Intellectual Propriety) and switches connected among themselves by communication channels.
+0 	End-to-End Delay (EED) communication is accomplished by the exchange of data among IP cores.
+0	Often, the structure of particular messages is not adequate for the communication purposes.
+0 	This leads to the concept of packet switching.
+0 	In the context of NoCs, packets are composed by header, payload, and trailer.
+0 	Packets are divided into small pieces called Flits.
+0 	It appears of importance, to meet the required performance in NoC hardware resources.
+0 	It should be specified in an earlier step of the system design.
+0 	The main attention should be given to the choice of some network parameters such as the physical buffer size in the node.
+0 	The EED and packet loss are some of the critical QoS metrics.
+0 	Some real-time and multimedia applications bound up these parameters and require specific hardware resources and particular management approaches in the NoC switch.
+0 	A traffic contract (SLA, Service Level Agreement) specifies the ability of a network or protocol to give guaranteed performance, throughput or latency bounds based on mutually agreed measures, usually by prioritizing traffic.
+0 	A defined Quality of Service (QoS) may be required for some types of network real time traffic or multimedia applications.
+0 	The main goal of this paper is, using the Network on Chip modeling architecture, to define a QoS metric.
+1 	We focus on the network delay bound and packet losses.
+1 	This approach is based on the Network Calculus theory, a mathematical model to represent the data flows behavior between IPs interconnected over NoC.
+1 	We propose an approach of QoS-metric based on QoS-parameter prioritization factors for multi applications-service using calculus model.
+
+
+# 71
+### http://arxiv.org/abs/1111.2619v1
+## A Security Architecture for Data Aggregation and Access Control in Smart Grids
+
+1 	We propose an integrated architecture for smart grids, that supports data aggregation and access control.
+0 	Data can be aggregated by home area network, building area network and neighboring area network in such a way that the privacy of customers is protected.
+1 	We use homomorphic encryption technique to achieve this.
+0 	The consumer data that is collected is sent to the substations where it is monitored by remote terminal units (RTU).
+0 	The proposed access control mechanism gives selective access to consumer data stored in data repositories and used by different smart grid users.
+0 	Users can be maintenance units, utility centers, pricing estimator units or analyzing and prediction groups.
+1 	We solve this problem of access control using cryptographic technique of attribute-based encryption.
+1 	RTUs and users have attributes and cryptographic keys distributed by several key distribution centers (KDC).
+1 	RTUs send data encrypted under a set of attributes.
+1 	Users can decrypt information provided they have valid attributes.
+1 	The access control scheme is distributed in nature and does not rely on a single KDC to distribute keys.
+0 	Bobba \emph{et al.}\cite{BKAA09} proposed an access control scheme, which relies on a centralized KDC and is thus prone to single-point failure.
+0 	The other requirement is that the KDC has to be online, during data transfer which is not required in our scheme.
+1 	Our access control scheme is collusion resistant, meaning that users cannot collude and gain access to data, when they are not authorized to access.
+2 	We theoretically analyze our schemes and show that the computation overheads are low enough to be carried out in smart grids.
+2 	To the best of our knowledge, ours is the first work on smart grids, which integrates these two important security components (privacy preserving data aggregation and access control) and presents an overall security architecture in smart grids.
+
+
+# 72
+### http://arxiv.org/abs/1112.0097v1
+## 1-D Coordinate Based on Local Information for MAC and Routing Issues in WSNs
+
+0 	More and more critical Wireless Sensor Networks (WSNs) applications are emerging.
+0 	Those applications need reliability and respect of time constraints.
+0 	The underlying mechanisms such as MAC and routing must handle such requirements.
+1	Our approach to the time constraint problem is to bound the hop-count between a node and the sink and the time it takes to do a hop so the end-to-end delay can be bounded and the communications are thus real-time.
+1 	For reliability purpose we propose to select forwarder nodes depending on how they are connected in the direction of the sink.
+1 	In order to be able to do so we need a coordinate (or a metric) that gives information on hop-count, that allows to strongly differentiate nodes and gives information on the connectivity of each node keeping in mind the intrinsic constraints of WSWs such as energy consumption, autonomy, etc.
+1 	Due to the efficiency and scalability of greedy routing in WSNs and the financial cost of GPS chips, Virtual Coordinate Systems (VCSs) for WSNs have been proposed.
+1 	A category of VCSs is based on the hop-count from the sink, this scheme leads to many nodes having the same coordinate.
+1 	The main advantage of this system is that the hops number of a packet from a source to the sink is known.
+1 	Nevertheless, it does not allow to differentiate the nodes with the same hop-count.
+1 	In this report we propose a novel hop-count-based VCS which aims at classifying the nodes having the same hop-count depending on their connectivity and at differentiating nodes in a 2-hop neighborhood.
+2 	Those properties make the coordinates, which also can be viewed as a local identifier, a very powerful metric which can be used in WSNs mechanisms.
+
+
+# 73
+### http://arxiv.org/abs/1112.1480v1
+## Multiuser Cellular Network
+
+0 	Modern radio communication is faced with a problem about how to distribute restricted frequency to users in a certain space.
+0 	Since our task is to minimize the number of repeaters, a natural idea is enlarging coverage area.
+0 	However, coverage has restrictions.
+0 	First, service area has to be divided economically as repeater's coverage is limited.
+0 	In this paper, our fundamental method is to adopt seamless cellular network division.
+0 	Second, underlying physics content in frequency distribution problem is interference between two close frequencies.
+1 	Consequently, we choose a proper frequency width of 0.1MHz and a relevantly reliable setting to apply one frequency several times.
+1 	We make a few general assumptions to simplify real situation.
+1 	For instance, immobile users yield to homogenous distribution; repeaters can receive and transmit information in any given frequency in duplex operation; coverage is mainly decided by antenna height.
+1 	Two models are built up to solve 1000 users and 10000 users situations respectively.
+1 	In order to utilize restricted frequency and PL code, three stratified terms - "cell", "cluster", "group" - are introduced to describe the models in detail.
+2 	Under our analysis, 91 repeaters for 1000 users and 469 repeaters for 10000 users are viable results.
+1 	Next, to test stability and sensitivity of models, we give total consideration to the variation of sum of users, antenna height, and frequency width and service radius.
+2 	Evaluation about models is offered qualitatively.
+2 	Finally, two practical cases are put forward to gain a partial knowledge of mountainous area.
+2 	The brief method in dealing with mountains is classified discussion in two ideal conditions.
+2	It may provide some constructive suggestions to avoid shortcomings or take proper measures in similar locations.
+
+
+# 74
+### http://arxiv.org/abs/1112.4955v2
+## Coded Path Protection: Efficient Conversion of Sharing to Coding
+
+0 	Link failures in wide area networks are common and cause significant data losses.
+0 	Mesh-based protection schemes offer high capacity efficiency but they are slow and require complex signaling.
+0 	Additionally, real-time reconfiguration of a cross-connect threatens their transmission integrity.
+0 	On the other hand, coding-based protection schemes are proactive.
+0 	Therefore, they have higher restoration speed, lower signaling complexity, and higher transmission integrity.
+0 	This paper introduces a coding-based protection scheme, named Coded Path Protection (CPP).
+0 	In CPP, a backup copy of the primary data is encoded with other data streams, resulting in capacity savings.
+0 	This paper presents an optimal and simple capacity placement and coding group formation algorithm.
+0 	The algorithm converts the sharing structure of any solution of a Shared Path Protection (SPP) technique into a coding structure with minimum extra capacity.
+1 	We conducted quantitative and qualitative comparisons of our technique with the SPP and, another technique, known as p-cycle protection.
+2 	Simulation results confirm that the CPP is significantly faster than the SPP and p-cycle techniques.
+2 	CPP incurs marginal extra capacity on top of SPP.
+2 	Its capacity efficiency is lower than the p-cycle technique for dense networks but can be higher for sparse networks.
+2 	In addition, unlike p-cycle protection, CPP is inherently suitable for the wavelength continuity constraint in optical networks.
+
+
+# 75
+### http://arxiv.org/abs/1203.2041v1
+## Towards MAC/Anycast Diversity in IEEE 802.11n MIMO Networks
+
+0 	Opportunistic Routing (OR) is a novel routing technique for wireless mesh networks that exploits the broadcast nature of the wireless medium.
+0 	OR combines frames from multiple receivers and therefore creates a form of Spatial Diversity, called MAC Diversity.
+0 	The gain from OR is especially high in networks where the majority of links has a high packet loss probability.
+0 	The updated IEEE 802.11n standard improves the physical layer with the ability to use multiple transmit and receive antennas, i.e. Multiple-Input and Multiple-Output (MIMO), and therefore already offers spatial diversity on the physical layer, i.e. called Physical Diversity, which improves the reliability of a wireless link by reducing its error rate.
+1 	In this paper we quantify the gain from MAC diversity as utilized by OR in the presence of PHY diversity as provided by a MIMO system like 802.11n.
+1 	We experimented with an IEEE 802.11n indoor testbed and analyzed the nature of packet losses.
+2 	Our experiment results show negligible MAC diversity gains for both interference-prone 2.4 GHz and interference-free 5 GHz channels when using 802.11n.
+2 	This is different to the observations made with single antenna systems based on 802.11b/g, as well as in initial studies with 802.11n.
+
+### 1
+##### doi: 10.1109/TLT.2017.274196
+#### IRT-Based Adaptive Hints to Scaffold Learning in Programming
+
+
+0	  Over the past few decades, many studies conducted in the field of learning science have described that scaffolding plays an important role in human learning.
+0	  To scaffold a learner efficiently, a teacher should predict how much support a learner must have to complete tasks and then decide the optimal degree of assistance to support the learner's development.
+0     Nevertheless, it is difficult to ascertain the optimal degree of assistance for learner development.
+1	  For this study, it is assumed that optimal scaffolding is based on a probabilistic decision rule: Given a teacher's assistance to facilitate the learner development, an optimal probability exists for a learner to solve a task.
+1	  To ascertain that optimal probability, we developed a scaffolding system that provides adaptive hints to adjust the predictive probability of the learner's successful performance to the previously determined certain value, using a probabilistic model, i.e., item response theory (IRT).
+1	  Furthermore, using the scaffolding system, we compared learning performances by changing the predictive probability.
+2     Results show that scaffolding to achieve 0.5 learner success probability provides the best performance.
+2     Additionally, results demonstrate that a scaffolding system providing 0.5 probability decreases the number of hints (amount of support) automatically as a fading function according to the learner's growth capability.
+
+
+### 2
+##### doi: 10.1109/TLT.2017.274370
+#### Rewrite Rules for Debugging Student Programs in Programming Tutors
+
+
+0	  Data-driven intelligent tutoring systems learn to provide feedback based on past student behavior, reducing the effort required for their development.
+0	  A major obstacle to applying data-driven methods in the programming domain is the lack of meaningful observable actions for describing the students problem-solving process.
+1     We propose rewrite rules as a language-independent formalization of programming actions in terms of code edits.
+1	  We describe a method for automatically extracting rewrite rules from students program-writing traces, and a method for debugging new programs using these rules.
+1	  We used these methods to automatically provide hints in a web application for learning programming.
+2     In-class evaluation showed that students receiving automatic feedback solved problems faster and submitted fewer incorrect programs.
+2     We believe that rewrite rules provide a good basis for further research into how humans write and debug programs.
+
+
+### 3
+##### doi: 10.1109/TLT.2017.278775
+#### A Framework for Analyzing and Evaluating Architectures and Control Strategies in Distributed Remote Laboratories
+
+
+0	  Remote Access Laboratories (RALs) have been used to develop experimental knowledge about practical engineering topics for a while.
+0	  Distributed remote laboratories aim to share experiment among institutions and individuals through a distributed architecture.
+0     Experiments from diverse areas are combined as part of a larger system.
+0	  Multiple control strategies are used to integrate experiments in Remote Laboratory Management Systems (RLMSs).
+1	  This work defines two main categories to analyze the various implementations, white box and black box approaches.
+0     Experiments can be on a spectrum between these two extremes, sharing properties of both.
+0     When integrating an existing experiment into a new distributed RAL system, it is useful to evaluate the experiment with respect to its host or new RLMS for determining the best strategies to assimilate it.
+1     This paper provides a framework for such evaluation based on a number of properties of experiments.
+1     The proposed framework is called SHASS (Software, Hardware, Assessment, Support, and Share-ability) based on several factors such as the hardware used, the software to create the program, methods of sharing, user's support, and assessment of user's performance.
+1     It can be used to evaluate quality and identify options for improvements within an experiment's existing RLMS as well.
+2     Using this framework, a black box and white box approach are compared using two examples - federated and Peer-to-Peer RAL.
+2	  The evaluation focuses on technical capabilities and development possibilities.
+2     A set of four experiments are also analysed to illustrate the utility of the framework in creating and improving experiments with respect to their RLMS.
+
+
+### 4
+##### doi: 10.1109/TLT.2017.276622
+#### Understanding Learning Resources Metadata for Primary and Secondary Education
+
+
+0	  Educational resources can be easily found on the Web.
+0	  Most search engines base their algorithms on a resource's text or popularity, requiring teachers to navigate the results until they find an appropriate resource.
+0     This makes searching for resources a tedious and cumbersome task.
+0     Specialized repositories contain resources that are annotated with metadata that aim to facilitate the discovery of quality resources.
+0     Nevertheless, the abundance and variety of content make searching a complex task.
+0	  Recommender systems can assist teachers in finding the proper content by determining clusters of similar users and inferring users interest in a resource, assembling clusters of similar resources, or a mix of both.
+0	  Probabilistic model-based (PMB) techniques, on the other hand, make it possible to classify resources into more than one cluster with various degrees of probability.
+1	  In this paper, we used recommender systems and PMB techniques to analyze a dataset produced by primary and secondary level teachers over the course of four years and under natural conditions.
+2	  We found that a hybrid recommendation, the Collaborative Topic Regression (CTR) technique, performs better than other approaches despite the high sparseness of the dataset.
+2     In addition, learning resources annotated with curriculum metadata had a positive impact on recommender's accuracy whereas free-text or other metadata negatively impacted the results.
+
+
+### 5
+##### doi: 10.1109/TLT.2017.276359
+#### The Effect of Different Features for Educational Computer-Based Competition Environments
+
+
+0	  Educational computer-based competition environments need to be designed with a set of features that enhance the learning process.
+0	  Although recently some frameworks for the design of educational computer-based systems (e.g., educational games) have been proposed, they do not focus on the details of the competition.
+0	  Therefore, the design of educational computer-based competition environments is still an open issue.
+1	  We propose the 4NESS framework for the design of such competition environments.
+1	  This framework classifies the competition features into four dimensions: easiness, fairness, awareness, and adaptiveness.
+1	  We designed the ISCARE educational computer-based competition environment implementing these four dimensions to evaluate and validate some included features for competition, and conducted experiments during three consecutive years.
+2     Students considered the computer-based competition environment with the proposed features, including a modification of the Swiss system, to be very easy to use, fair for pairing students, moderately fair for calculating scores, with good awareness of their state during the competition and that of their peers, and with contents of appropriate level, especially for the group working with adaptive contents.
+2     Adaptation of contents made students increase their learning gains in 0.5 sigmas during the competition.
+2     Pairings were seen as with students of similar levels.
+2     And final scores were moderately fair: while the order tends to be similar as compared to the results in the post-test, students grades with high performance tend to be lower in the competition environment.
+
+
+### 6
+##### doi: 10.1109/TLT.2018.285680
+#### Blending Digital and Face-to-Face Interaction Using a Co-Located Social Media App in Class
+
+
+0	  Improving face-to-face (f2f) interaction in large classrooms is a challenging task as student participation can be hard to initiate.
+0	  Thanks to the wide adoption of personal mobile devices, it is possible to blend digital and face-to-face interaction and integrate co-located social media applications in the classroom.
+1	  To better understand how such applications can interweave digital and f2f interaction, we performed a detailed analysis of real-world use cases of a particular co-located social media app: SpeakUp.
+1     In a nutshell, SpeakUp allows the creation of temporary location-bound chat rooms that are accessible by nearby users who can post and rate messages anonymously.
+2     We find that the use of co-located social media is associated with an increase in content-related interaction in the class.
+2     Furthermore, it is associated with an increase in the perceived learning outcomes of students compared to a control group.
+2     We further provide design guidelines to blend digital and f2f interaction using co-located social media in the classroom based on 11 case studies covering over 2,000 students.
+
+
+### 7
+##### doi: 10.1109/TLT.2017.278886
+#### DEDOS: An Authoring Toolkit to Create Educational Multimedia Activities for Multiple Devices
+
+
+0	  Information and Communication Technologies offer new possibilities for teachers to enhance their teaching methods.
+0	  The increasing use of personal computers, tablets, interactive whiteboards, or even multitouch tabletops in the classrooms seems to attract the interest of the students.
+0     However, there are not many tools that allow teachers to create multimedia activities for all these technologies in an effortless way.
+0     Most of current authoring tools either focus on creating content for only one device or they do not fully exploit the benefits of rich content for designing engaging educational activities.
+1	  In this paper, we present an authoring toolkit composed by two applications: DEDOS-Editor, which allow teachers to design their own learning activities, and DEDOS-Web, which allows the students to perform those activities adapting them to multiple devices.
+2	  To test both tools, we have performed two evaluations.
+2	  One with teachers to test the authoring tools and a second one with primary school students to test if the activities designed with this tool enhance their learning process.
+2     Results show that DEDOS-Editor is an easy to learn authoring tool which helps teachers to complement their learning methods while DEDOS-Web is flexible enough to create several learning scenarios from just one set of activities, factors which lead to achieving positive learning outcomes.
+
+
+### 8
+##### doi: 10.1109/TLT.2018.280849
+#### Game of Blazons: Helping Teachers Conduct Learning Situations That Integrate Web Tools and Multiple Types of Augmented Reality
+
+
+0	  Several studies have explored how to help teachers carry out learning situations involving Augmented Reality (AR), a technology that has shown different affordances for learning.
+0	  However, these works tend to rely on specific types of AR, focus on particular types of spaces, and are generally disconnected from other technologies widely used in education, such as VLEs or Web 2.0 tools.
+0     These constraints limit the possible range of activities that can be conducted and their integration into the existing classroom practice.
+1     GLUEPS-AR is a system that can help overcome these limitations, aiding teachers in the creation and enactment of learning situations that may combine multiple types of AR with other common web tools.
+1	  This paper presents an evaluation study conducted on Game of Blazons, a learning situation carried out by two university teachers using GLUEPS-AR, and framed within two days of outdoor activities in a village in Spain.
+2	  The evaluation showed that GLUEPS-AR provided an affordable support to the participant teachers to integrate several activities that made use of multiple types of AR, common web tools, and augmented paper, into a unique learning situation.
+
+
+### 9
+##### doi: 10.1109/TLT.2017.277225
+#### MEBook: Multimedia Social Greetings Intervention for Children with Autism Spectrum Disorders
+
+
+0	  Autism spectrum disorder (ASD) is a developmental disorder that impairs the development of social and communication skills.
+0	  There is evidence that children with ASD prefer images of self over others[1] .
+0     These studies may explain the effectiveness of video self-modeling (VSM), an evidence-based ASD intervention in which one learns by watching oneself on video performing a target behavior.
+0     VSM content is difficult to create as target behaviors are sporadic.
+1     In this paper, we propose the MEBook system which uses a Kinect sensor to inject self-images into a gesture-based social narrative to teach children with ASD proper greeting behaviors.
+1     MEBook consists of two components.
+1     The first component is a social narrative.
+1     A social narrative is an animated story about the main character meeting and greeting different cartoon characters in a particular setting.
+1     Self-modeling is achieved by first replacing the main characters face with an image of the learner, and then animating the learner's body and voice to match the narration.
+1     The second component is a positive reinforcement practice session in which the subject is prompted to greet different cartoon characters.
+1	  Through depth-based body posture tracking, proper greeting behaviors are recognized and immediately reinforced with praise and visual confetti.
+2	  Novel computational multimedia tools are proposed to turn video recordings of successful attempts into VSM content, thereby alleviating the tedious production process.
+2     A multiple-baseline single subject pilot study has been conducted and the preliminary results show that MEBook is potentially effective in teaching greeting behaviors to children with ASD.
+
+
+### 10
+##### doi: 10.1109/TLT.2017.277350
+#### Educational Functions and Design of Badge Systems: A Conceptual Literature Review
+
+
+0	  In today's technological era, emerging educational technologies, such as digital badges, have shown the potential for fostering student learning.
+1	  To examine the major considerations undergirding the design of digital badges used in an educational context, a conceptual literature review of multidisciplinary electronic databases oriented towards computing and education was undertaken.
+2	  The three core design dimensions found in our analysis were the specific function of badges, the structure of badge systems, and the different types of design and interaction features used with badges.
+2     We highlight the main effects of studies addressing these dimensions and provide recommendations and suggestions for further research to educational stakeholders who seek to better understand how to implement badges within their own institutions.
+
+
+### 11
+##### doi: 10.1109/TLT.2018.281019
+#### a Web-Based Tool for Engineering Design Education
+
+
+1	  This article describes the development of the Design Evaluation and Feedback Tool (DEFT), a custom-built web-based system that collects and reports data to support teaching, learning, and research in project-based engineering design education.
+1	  The DEFT system collects data through short weekly questionnaires for students and instructors in engineering design classes, and uses these data to produce weekly reports for both types of user.
+1	  The system is intended to engage students in reflective reporting on their experiential learning, to support educators in coaching student designers, and to serve as a data collection tool for education researchers.
+1	  DEFT was developed through an iterative design and evaluation process, involving 185 students and 18 instructors at two universities.
+2	  The system was evaluated using a combination of participation observation, user interviews, and anonymous questionnaires, and the results guided subsequent improvements to the system.
+2     This article describes the development and evaluation process, provides an overview of the resulting system, and ends by discussing the potential for DEFT to be used in evaluating and improving project-based design classes.
+
+
+### 12
+##### doi: 10.1109/TLT.2018.285375
+#### An Investigation of the Effects of Measuring Authentic Contexts on Geometry Learning Achievement
+
+
+0	  Geometry students have few opportunities to apply geometric concepts and solve geometry problems in authentic contexts.
+0	  We developed a Ubiquitous Geometry (UG) system to teach geometry to elementary students by using it to measure common objects in authentic contexts.
+1	  The instant study investigates the effects of UG on student geometry estimation ability, geometry learning achievement, spatial ability, and learning geometric concepts and explores the correlations.
+1	  Participants were 82 fifth grade students divided into the experiment group (EG), the ruler measurement group (RG), and the control group (CG).
+2     The results revealed that the EG students performed significantly better than the others in geometry estimation ability, geometry learning achievement, spatial ability, and understanding geometric concepts.
+2     We found that geometry estimation ability is significantly related to spatial ability and geometry learning achievement, which means fostering estimation ability through measuring authentic objects could help students to learn geometry.
+2     Finally, students perceived that UG engaged them more in geometry and improved their interest in learning because the activity designs related more to their daily life, thereby enhancing their sense of confidence and satisfaction.
+2     Conclusions include that UG effectively enhances student geometry estimation ability, geometry learning achievement, spatial ability, and understanding of geometric concepts.
+
+
+### 13
+##### doi: 10.1109/TLT.2018.285877
+#### Approaching Sustainability Learning Via Digital Serious Games
+
+
+0	  Finding proper ways to address learning about sustainability is a relevant issue.
+0	  Sustainability learning has to face some inherent complexities, due to two main factors: the interdisciplinary domains related to sustainability issues, such as ecology, economics, politics, and culture, and the involvement of several social structures, such as individuals, families, and communities.
+0	  One recent research proposal is to exploit serious games to foster learning in this area.
+0     This resulted in a significant increase in the number of approaches discussed in the literature over the last few years.
+0     Notwithstanding this growing scenario, sustainability serious games still lack a reasoned evaluation, in order to clarify their possible applications and to define effective design strategies to approach them.
+0	  To this end, in this paper, we investigate the current state of the art of serious games for sustainability, identifying, and discussing the most common applications.
+1	  The research process included both scientific publications and unpublished materials.
+1	  References were searched according to guiding questions, which helped focus the extraction of information, and through recursive browsing of their citations.
+1	  Based on the research results, we propose a taxonomy for sustainability serious games and a classification of reviewed works according to this taxonomy.
+2	  We also analyze design strategies, drawn from the literature, expressly conceived for the development of effective sustainability serious games.
+2     Finally, we discuss the current challenges and present possible areas of research in this field.
+
+
+### 14
+##### doi: 10.1109/TLT.2019.292672
+#### Collaborative Educational Environments Incorporating Mixed Reality Technologies: A Systematic Mapping Study
+
+
+0	  In this paper, we report findings from a systematic mapping study, conducted to review the existing literature on collaborative educational environments incorporating mixed reality technologies.
+0	  There is increasing interest in mixed reality technologies in education, especially with the introduction of new over head mounted displays (OHMDs), such as HoloLens, Oculus Rift, and HTC Vive.
+0	  with the consideration of areas, such as education, dynamic technology, and complex environments, a research area is identified.
+1	  We carried out an extensive review of the literature from 2007 to 2017 and conducted an analysis of the works on mixed reality technologies and its subcategories applied to collaborative education environments.
+2     Results highlighted the lack of research across the mixed reality spectrum, especially in the augmented virtuality subcategory, as well as technical limitations such as response time in the development of mixed reality technologies for collaborative environments.
+2     Furthermore, the difficulty of teaching professionals to replicate mixed reality experiments in real environments, due to the technical skills required, was identified.
+2     The main contribution of this paper is the discussion of the current works with visualization of the present state of the area, which is aimed to encourage educators to develop mixed reality artefacts and conduct further research to support collaborative educational environments.
+
+
+### 15
+##### doi: 10.1109/TLT.2018.285879
+#### Exploring Student Interactions With Preparation Activities in a Flipped Classroom Experience
+
+
+0	  The success of the flipped classroom (FC) is effectively reliant on the level of student engagement with the preparatory activities prior to attending face-to-face teaching sessions.
+0	  Information about the nature and level of student engagement with these activities can help instructors make informed decisions regarding how to best support student learning.
+0	  Despite the comprehensive data collection enabled by the increasing presence of education technologies, few studies have used these data to investigate the range of strategies students employ in FC models.
+1	  This study addresses this deficit by proposing an analytical approach that allows for exploring, first, the strategies students use to interact with online preparation activities; and, second, evolution of those strategies over the duration of a course delivered with a FC pedagogy.
+2     The proposed approach identified eight learning strategies and six trajectories of strategy change over the duration of the course, with statistically significant effects of strategy change trajectories on academic performance.
+
+
+### 16
+##### doi: 10.1109/TLT.2018.285158
+#### How Teachers Make Dashboard Information Actionable
+
+
+1	  This study investigates how teachers use dashboards in primary school classrooms.
+1	  While learners practice on a tablet real-time data indicating learner progress and performance is displayed on teacher dashboards.
+1     This study examines how teachers use the dashboards, applying Verberts’ learning analytics process model.
+1     Teacher dashboard consultations and resulting pedagogical actions were observed in 38 mathematics lessons.
+1     In stimulated recall interviews, the 38 teachers were asked to elaborate on how they reflect on and make sense of the information on the dashboard.
+2     The results showed that teachers consulted the dashboard on average 8.3 times per lesson.
+2     Teachers activated existing knowledge about students and the class to interpret dashboard information.
+2     Task and process feedback were the pedagogical actions most often used following dashboard consultation.
+2     Additionally, teachers who consulted the dashboard more often activated more and more diverse pedagogical knowledge to interpret the data and, consequently, gave more and more diverse feedback.
+2     These results indicated that teacher dashboards were indeed influencing teachers’ pedagogical actions in their daily classroom activities.
+2     This study provided the first evidence that dashboards progressively impact teaching practice and initiate more profound behavioral changes as teachers become more proficient in using them.
+
+
+### 17
+##### doi: 10.1109/TLT.2018.283311
+#### Inquiry-Based Learning With RoboGen: An Open-Source Software and Hardware Platform for Robotics and Artificial Intelligence
+
+
+0	  It has often been found that students appreciate hands-on work, and find that they learn more with courses that include a project than those relying solely on conventional lectures and tests.
+0	  This type of project driven learning is a key component of “Inquiry-based learning” (IBL), which aims at teaching methodology as well as content by incorporating the student as an actor rather than a spectator.
+0	  Robotics applications are especially well-suited for IBL due to the value of trial and error experience, the multiple possibilities for students to implement their own ideas, and the importance of programming, problem-solving, and electro-mechanical skills in real world engineering and science jobs.
+0     Furthermore, robotics platforms can be useful teaching media and learning tools for a variety of topics.
+1     Here, we present RoboGen: an open-source, web-based, software, and hardware platform for Robotics and Artificial Intelligence with a particular focus on Evolutionary Robotics.
+2     We describe the platform in detail, compare it to existing alternatives, and present results of its use as a platform for Inquiry-based learning within a master's level course at the Ecole Polytechnique Fédérale de Lausanne.
+
+
+### 18
+##### doi: 10.1109/TLT.2018.284071
+#### Persuasive Technologies in m-Learning for Training Professionals: How to Keep Learners Engaged With Adaptive Triggering
+
+
+0	  Global corporations are characterized by a large number of employees and geographically dispersed offices.
+0	  Moreover, the competitiveness in the global market requires them to invest in their human resources to be able to remain a step ahead of competition.
+0	  Implementing large scale classical education in such environments is challenging and costly.
+0	  Mobile e-learning (m-learning) allows users to tailor their professional training and education to their needs and time constraints.
+0     However, in self-paced education, it is very hard to keep user retention and engagement.
+1	  To achieve the latter, we have designed and developed an m-learning platform for corporate environments based on the triggering persuasive technology principle that try to incite users in regularly using the platform.
+1	  We have evaluated the application in-the-wild in corporate environments of differently sized companies with 300 users.
+1	  Users were subjected to three different conditions: no triggering, simple regular triggering, and adaptive triggering.
+2     The results show that the use of adaptive triggering in m-learning increases user engagement as well as course completion rates more than simple regular triggering and no triggering.
+
+
+### 19
+##### doi: 10.1109/TLT.2018.285680
+#### Prediction in MOOCs: A Review and Future Research Directions
+
+
+0	  This paper surveys the state of the art on prediction in MOOCs through a systematic literature review (SLR).
+0	  The main objectives are: first, to identify the characteristics of the MOOCs used for prediction, second, to describe the prediction outcomes, third, to classify the prediction features, fourth, to determine the techniques used to predict the variables, and, fifth, to identify the metrics used to evaluate the predictive models.
+2     Results show there is strong interest in predicting dropouts in MOOCs.
+2     A variety of predictive models are used, though regression and support vector machines stand out.
+2     There is also wide variety in the choice of prediction features, but clickstream data about platform use stands out.
+2     Future research should focus on developing and applying predictive models that can be used in more heterogeneous contexts (in terms of platforms, thematic areas, and course durations), on predicting new outcomes and making connections among them (e.g., predicting learners’ expectancies), on enhancing the predictive power of current models by improving algorithms or adding novel higher-order features (e.g., efficiency, constancy, etc.
+
+
+### 20
+##### doi: 10.1109/TLT.2018.286174
+#### Reducing Cognitive Load During Closed Concept Map Construction and Consequences on Reading Comprehension and Retention
+
+
+0	  Computer-assisted concept map building from provided pieces by using Kit-build is an activity which can promote comprehension and retention.
+0	  However, users are burdened with searching for pieces and organizing the layout, which are believed to increase the overall cognitive load of the activity.
+1	  In this paper, we describe the Airmap interface, which uses automatic layout management and spatial separation to improve cognitive load during concept map building.
+1	  Two experiments were done in which participants ($N= 60, N=50$) built a map after reading a text.
+2     Results show that Airmap is successful in reducing cognitive load without significant differences in immediate reading comprehension.
+2     However, there is a significant difference in performance after a two week retention period.
+2     Results give new insight into the retention enhancing aspects of building closed concept maps, indicating that the cognitive load reduced by the new interface is of the germane type, affecting how deep in memory users commit the information.
+
+
+### 21
+##### doi: 10.1109/TLT.2018.285930
+#### Systematic Review of Discussion Forums in Massive Open Online Courses (MOOCs)
+
+
+0	  Discussion forums are the primary and most widely used venue for social learning and communication in MOOC context.
+0	  There has been an interest in the last few years to study the interactions and participation behavior in this environment.
+1	  This systematic review studied eighty-four papers published between 2013–2017 to provide a state of the art, and suggest future directions in the literature from two perspectives: descriptive analysis and content analysis.
+1	  The descriptive analysis aggregates the reviewed papers into five dimensions: time of the publication, stakeholders involved in the analysis, objectives, methods, and data sources used in the studies.
+1	  The content analysis aims to highlight the main issues addressed and the major contributions of the papers covered by the literature review.
+2	  These contributions can be categorized into three major areas, first, explore the relationship between forums participation and retention or learning outcomes and evaluate ways to increase the participation activity and learning outcomes, second, analyze participants’ contribution in the forum and how to organize the content and efficiently monitor them, finally, analyze participants’ interactions and how it influences learning.
+2     At the end, we offer some suggestions to further advance this area of research.
+
+
+### 22
+##### doi: 10.1109/TLT.2018.286541
+#### The Evaluation of a Serious Game to Improve Cross-Cultural Competence
+
+
+0	  Despite the growth in the use of serious games to train and evaluate cross-cultural compete
+1	  This study presents a framework for generating content for serious games targeting culturally appropriate communication and an evaluation of a game designed with the framework showing improved performance.
+1     This framework provides a means for game developers to leverage existing Cultural Dimension Theory to target training objectives tailored to specific participant types.
+1     A study experiment with 25 participants compares the effects a training system using this framework has on participants’ in-game score versus no training.
+2     Results show significant differences in game score when controlling for Cultural Intelligence.
+2     Additionally, the results show significant differences in variance between the trained group and the control group.
+2     These findings contribute to the current understanding of content development methods with respect to Cultural Training Serious Games.
+2     These findings warrant further investigation to understand the significance to other cultural training applications.
+
+
+### 23
+##### doi: 10.1109/TLT.2017.271416
+#### Understanding the Role of Micro-Blogging in B-Learning Activities: Kelluwen Experiences in Chilean Public Schools
+
+
+0	  With the goal of incorporating the use of social network tools into the formal curriculum of public schools in Chile, Kelluwen developed a b-learning approach in which students work in groups and engage in peer review dynamics.
+0	  To support such activities, the Kelluwen platform provides a complementary micro-blogging tool called Worklog.
+1	  In this study, we analyze data collected from Worklog messages generated by 101 cohorts of students from different schools and different levels, who participated in Kelluwen activities.
+1	  We first used machine learning techniques to discover three types of messages which coincide with three dialogic functions; referential, phatic, and emotional.
+1	  We then analyze how different factors of the cohort and group setup relate to the presence of different dialogic functions in Worklog.
+2     Results show the positive effect of pairing groups of students from different schools, and the positive influence of teacher participation.
+2     Our work contributes to the discussion on the role of technological social tools on the implementation of complex b-learning activities in schools, as well as demonstrating how automatic and semi-automatic data analysis techniques can be used to better understand such complex interventions.
+
+
+### 24
+##### doi: 10.1109/TLT.2017.273234
+#### User-Centric Evaluation of Recommender Systems in Social Learning Platforms: Accuracy is Just the Tip of the Iceberg
+
+
+0	  Recommender systems provide users with content they might be interested in.
+0	  Conventionally, recommender systems are evaluated mostly by using prediction accuracy metrics only.
+0     But, the ultimate goal of a recommender system is to increase user satisfaction.
+0     Therefore, evaluations that measure user satisfaction should also be performed before deploying a recommender system in a real target environment.
+0     Such evaluations are laborious and complicated compared to the traditional, data-centric evaluations, though.
+1	  In this study, we carried out a user-centric evaluation of state-of-the-art recommender systems as well as a graph-based approach in the ecologically valid setting of an authentic social learning platform.
+1     We also conducted a data-centric evaluation on the same data to investigate the added value of user-centric evaluations and how user satisfaction of a recommender system is related to its performance in terms of accuracy metrics.
+2     Our findings suggest that user-centric evaluation results are not necessarily in line with data-centric evaluation results.
+2     We conclude that the traditional evaluation of recommender systems in terms of prediction accuracy only does not suffice to judge performance of recommender systems on the user side.
+2     Moreover, the user-centric evaluation provides valuable insights in how candidate algorithms perform on each of the five quality metrics for recommendations: usefulness, accuracy, novelty, diversity, and serendipity.
+
+
+### 25
+##### doi: 10.1109/TLT.2017.272241
+#### Supporting Student Engagement Through Explorable Visual Narratives
+
+
+1	  This paper introduces VisEN, a novel visual narrative framework that has been shown to facilitate, support, and enhance student engagement in an adaptive Online Learning Environment (OLE).
+1	  VisEN provides explorable visual narratives personalized to students in order to support them in engaging with course content.
+2     The evaluation of VisEN showed that the explorable visual narratives encouraged the majority of `improving engagement students', that completed the Information Management and Data Engineering module as part of their undergraduate degree, to engage with assigned activities, and subsequently these learners enhanced their engagement levels.
+2     Visualizations have been used in OLEs to support students by presenting student data.
+2     Information Visualization research has demonstrated the value of visual narratives in communicating a message, by highlighting facts and making the message more memorable.
+2     In addition, visual data exploration can support users in understandings the message.
+2	  However, in OLEs, explorable visual narratives have not been used to date to support student engagement or to guide learners through a message that they could explore and understand.
+2     This paper evaluates the impact that explorable visual narratives had on student course engagement during two successive academic years.
+
+
+### 26
+##### doi: 10.1109/TLT.2017.272338
+#### Jutge.org: Characteristics and Experiences
+
+
+0	  Jutge.org is an open educational online programming judge designed for students and instructors, featuring a repository of problems that is well organized by courses, topics, and difficulty.
+0	  Internally, Jutge.org uses a secure and efficient architecture and integrates modern verification techniques, formal methods, static code analysis, and data mining.
+0	  Jutge.org has exhaustively been used during the last decade at the Universitat Politècnica de Catalunya to strengthen the learning-by-doing approach in several courses.
+2     This paper presents the main characteristics of Jutge.org and shows its use and impact on a wide range of courses covering basic programming, data structures, algorithms, artificial intelligence, functional programming, and circuit design.
+
+
+### 27
+##### doi: 10.1109/TLT.2017.274017
+#### Can Knowledge Awareness Tools Help Seek Learning Partners with Complementary Knowledge?
+
+
+1	  The present study aims to empiricaly demonstrate the viability and benefits of an awareness-based approach to diversify knowledge between potential learning partners.
+1	  Groups of four learners studied lesson material on biology.
+1	  After a knowledge test, the groups were to form collaborative learning dyads.
+1     Based on the test, a novel knowledge discrepancy calculation tool discerned group configurations with maximal and minimal discrepancies in knowledge between potential learning partners.
+1	  In the experimental condition, groups were made aware of the results of this calculation; in the control condition, groups were asked to form dyads absent any additional guidance.
+2     The significant majority of groups in the experimental condition formed dyads with maximal knowledge discrepancy between partners.
+2	  The majority of groups in the control condition formed dyads based on factors unrelated to learning.
+2     We anticipated that in dyads with discrepant knowledge, partners will be better able to fill each other's knowledge gaps.
+2     Although a significant difference between conditions did not transpire, there was a significant correlation between knowledge discrepancy and learning gain across conditions.
+2     The implications of these findings for effective learning group organization are discussed; implementation of the calculation tool in classrooms and MOOCs is proposed.
+
+
+### 28
+##### doi: 10.1109/TLT.2017.272388
+#### CCESK: A Chinese Character Educational System Based on Kinect
+
+
+1	  In this paper, a Chinese character educational system based on Kinect is proposed for guiding beginners to learn the basics of Chinese characters in a more intuitive way.
+1	  It extracts 19 common components, denoted as alphabets, from Chinese characters.
+1	  Nineteen postures were designed according to the shapes of these alphabets.
+1     Instead of memorizing Chinese characters through repetitive copying, students can first associate an alphabet with the corresponding designed posture.
+1	  Then, they break down a Chinese character into a set of alphabets in order to perform the sequence of corresponding postures so that they can easily remember the whole character.
+1	  Our proposed system contains two major functions: (1) the learning function that is responsible for delivering the courseware, and (2) the testing function that is used to let students acquire their learning progress through some tests.
+1	  A rule-based algorithm is designed to recognize the students' input postures captured from the Kinect motion sensor so as to determine whether the students have performed the correct postures.
+1	  We conducted a survey which involved 90 students to try our proposed system as well as two other learning modes for comparison.
+1	  Moreover, we have interviewed those 30 students who had tried our proposed system with some open-ended questions.
+2     The positive results show that the proposed system can promote students' experiences in learning Chinese characters.
+
+
+### 29
+##### doi: 10.1109/TLT.2017.272017
+#### Detecting Plagiarism Based on the Creation Process
+
+
+0	  All methodologies for detecting plagiarism to date have focused on the final digital “outcome”, such as a document or source code.
+0	  Our novel approach takes the creation process into account using logged events collected by special software or by the macro recorders found in most office applications.
+1	  We look at an author's interaction logs with the software used to create the work.
+1	  Detection relies on comparing the histograms of multiple logs' command use.
+1	  A work is classified as plagiarism if its log deviates too much from logs of “honestly created” works or if its log is too similar to another log.
+2	  The technique supports the detection of plagiarism for digital outcomes that stem from unique tasks, such as theses and equal tasks such as assignments for which the same problem sets are solved by multiple students.
+1	  Focusing on the latter case, we evaluate this approach using logs collected by an interactive development environment (IDE) from more than 60 students who completed three programming assignments.
+
+
+### 30
+##### doi: 10.1109/TLT.2017.272073
+#### Predicting Students Disengaged Behaviors in an Online Meaning-Generation Task
+
+
+0	  In an intelligent tutoring system (ITS), it can be useful to know when a student has disengaged from a task and might benefit from a particular intervention.
+0	  However, predicting disengagement on a trial-by-trial basis is a challenging problem, particularly in complex cognitive domains.
+1	  In the present work, data-driven methods were used to address two aspects of this problem: identification of predictive features at the single-trial level, and selection of accurate and robust models.
+1	  Experiment data were collected in a middle-school classroom using a vocabulary training ITS.
+1	  On each trial, the ITS presented a low-frequency (Tier 2 or frontier) word and prompted students to type in the word's meaning.
+1	  Single-trial measures-including the orthographic and semantic accuracy of each response, and context-sensitive measures such as interaction patterns across trials-were computed throughout the task.
+2     There were two key findings.
+2     First, as expected, different features predicted when a student was likely to be more engaged (e.g., high semantic accuracy) or less engaged (e.g., repetition of same or similar words across consecutive trials).
+2     Second, there was added value in representing context-sensitive information, which captures patterns of performance over time, as well as trial-specific information.
+2     These findings provide useful insights into effective methods for representing and modeling temporal patterns of student engagement in an ITS, especially those related to language learning.
+2     Such models may be useful in the design and implementation of adaptive tutors in complex cognitive domains like language learning.
+
+
+
+### 31
+##### doi: 10.1109/TLT.2017.273177
+#### Design of Large Scale Virtual Equipment for Interactive HIL Control System Labs
+
+
+1	  This paper presents a method to design high-quality 3D equipment for virtual laboratories.
+0	  A virtual control laboratory is designed on large-scale educational purpose with merits of saving expenses for universities and can provide more opportunities for students.
+0     The proposed laboratory with more than 30 virtual instruments aims at offering students a convenient experiment as well as an extensible framework for experiments in a collaborative way.
+2     Hardware-in-the-loop (HIL) simulations with realistic 3D animations can be an efficient and safe way for verification of control algorithms.
+1     Advanced 3D technologies are adopted to achieve convincing performance.
+1     In addition, accurate mechanical movements are designed for virtual devices using real-time data from hardware-based simulations.
+1	  Many virtual devices were created using this method and tested through experiments to show the efficacy.
+2     This method is also suitable for other virtual applications.
+1	  The system has been applied to a creative automatic control experiment course in the Harbin Institute of Technology.
+2     The assessment and student surveys show that the system is effective in student's learning.
+
+
+### 32
+##### doi: 10.1109/TLT.2017.272067
+#### Learning Analytics Dashboards to Support Adviser-Student Dialogue
+
+
+1	  This paper presents LISSA (“Learning dashboard for Insights and Support during Study Advice”), a learning analytics dashboard designed, developed, and evaluated in collaboration with study advisers.
+0	  The overall objective is to facilitate communication between study advisers and students by visualizing grade data that is commonly available in any institution.
+1	  More specifically, the dashboard attempts to support the dialogue between adviser and student through an overview of study progress, peer comparison, and by triggering insights based on facts as a starting point for discussion and argumentation.
+2	  We report on the iterative design process and evaluation results of a deployment in 97 advising sessions.
+2	  We have found that the dashboard supports the current adviser-student dialogue, helps them motivate students, triggers conversation, and provides tools to add personalization, depth, and nuance to the advising session.
+2     It provides insights at a factual, interpretative, and reflective level and allows both adviser and student to take an active role during the session.
+
+
+### 33
+##### doi: 10.1109/TLT.2017.278765
+#### Linked Data in Education: A Survey and a Synthesis of Actual Research and Future Challenges
+
+
+0	  Linked Data principles and technologies are being investigated in various areas.
+0	  In the Educational context, many studies are using Linked Data trying to solve problems of interoperability of educational data and resources, enriching educational content, and personalizing and recommending educational content and practices.
+1	  This article presents a systematic mapping of proposals which have been adopting Linked Data to support education, and, based on analysis of these proposals, we discuss the tools, vocabularies, and datasets being used, providing a research landscape of the area.
+2     We also present challenges and trends which can foster future research in this area.
+
+
+### 34
+##### doi: 10.1109/TLT.2016.259477
+#### Can a Non-Cognitive Learning Companion Increase the Effectiveness of a Meta-Cognitive Learning Strategy?
+
+
+0	  This project aimed to improve students' learning and task performance using a non-cognitive learning companion in the context of both a tutor and a meta-tutor.
+0	  The tutor taught students how to construct models of dynamic systems and the meta-tutor taught students a learning strategy.
+1     The non-cognitive learning companion was designed to increase students' effort and persistence in using the learning strategy.
+1     It decided when to intervene and what to say using both log data and affective state monitoring via a facial expression camera and a posture sensor.
+2     Experiments with high school students showed that the non-cognitive learning companion increased students' learning and performance.
+2     However, it had no effect on performance during a transfer phase in which the learning companion, meta-tutor, and tutor were all absent.
+2     The transfer phase null effect must be interpreted with caution due to low power, a possible floor effect, and other issues.
+
+
+### 35
+##### doi: 10.1109/TLT.2016.262330
+#### A Framework for Educational Technologies that Support Representational Competencies
+
+
+0	  Visual representations are ubiquitous in STEM disciplines.
+0	  Yet, students' difficulties in learning with visual representations are well documented.
+0     Therefore, to succeed in STEM, students need representational competencies-the ability to use visual representations for problem solving and learning.
+0     Educational technologies that support students' acquisition of representational competencies can significantly enhance their success in STEM disciplines.
+0     Current design frameworks for educational technologies do not offer sufficient guidance to develop supports for representational competencies.
+1     This paper presents a new design framework that describes an iterative, step-by-step approach for the design of educational technologies that support representational competencies (SUREC) in a way that aligns with the demands specific to the target discipline.
+1	  The paper illustrates how this framework was used to inform the design of an intelligent tutoring system for undergraduate chemistry.
+2     An evaluation study suggests that the SUREC framework yielded an effective educational technology that enhances students' learning of content knowledge.
+
+
+### 36
+##### doi: 10.1109/TLT.2016.258216
+#### A Novel Group Engagement Score for Virtual Learning Environments
+
+
+0	  STEM (Science, Technology, Engineering, and Math) education is currently receiving much attention from governments and educational institutions.
+1	  Our work is based on active learning and video-based learning approaches to support STEM education.
+1	  Here, we aimed to increase student's engagement through reflective processes that embrace video film-making, and subsequent on-line discussion and evaluation of those videos.
+1	  We propose a group engagement score that takes into account both individual activity and similarity of participation, thus allowing corrective actions to be taken when unengaged students or groups are identified.
+1	  We tested these ideas using our own social learning platform that combines the principal features of Social Networks with tools that facilitate collaborative learning design.
+1	  This platform stimulates students' learning by means of two main reflective processes: participatory production and peer-review.
+2	  We evaluated this platform and the learning approach it supports in an Object Oriented Programming course and identified interesting differences between group engagement and video ratings.
+2     Our principal conclusion is that greater teacher and student awareness of the ongoing activities and group engagement are needed.
+
+
+### 37
+##### doi: 10.1109/TLT.2016.259195
+#### Towards New Multiplatform Hybrid Online Laboratory Models
+
+
+0	  Online laboratories have traditionally been split between virtual labs, with simulated components; and remote labs, with real components.
+0	  The former tend to provide less realism but to be easily scalable and less expensive to maintain, while the latter are fully real but tend to require a higher maintenance effort and be more error-prone.
+1	  This technical paper describes an architecture for hybrid labs merging the two approaches, in which virtual and real components interact with each other.
+0	  The goal is to leverage the advantages of each type of lab.
+1     The architecture is fully web-based and multiplatform, which is in line with the industry and the remote laboratory community trends.
+0	  Only recently has this become technically feasible for graphic-intensive laboratories due to previous limitations in browser-based graphical technologies.
+1	  This architecture relies on the recent HTML5 and WebGL standards to overcome these limitations, and makes use of the Unity technology.
+2	  To ensure that the proposed architecture is suitable, we set requirements based on the literature, we compare it with other approaches, and we examine its scope, strengths, and weaknesses.
+2	  Additionally, we illustrate it with a concrete hybrid lab and we evaluate its benefits and potential through educational experiments.
+
+
+### 38
+##### doi: 10.1109/TLT.2016.259346
+#### A Novel Wiki-Based Remote Laboratory Platform for Engineering Education
+
+
+0	  With the unprecedented growth of e-learning, more and more new IT technologies are used to develop e-learning tools.
+0	  As one of the most common forms of social computing, Wiki technology has been used to develop the collaborative and cooperative learning platform to support multiple users learning online effectively.
+1	  In this paper, we propose a new software architecture to create a novel wiki-based remote laboratory platform by combining the advantages of both Wiki technology and remote laboratory technology.
+1	  This platform is implemented based on a unified framework for remote laboratory development and an open source wiki software package, MediaWiki.
+1	  To illustrate the effectiveness of this platform, two remote experiments, Smart Vibration Platform (SVP) and Proportional-Integral-Derivative (PID) motor speed control, are integrated into this platform.
+2	  This new wiki-based remote laboratory has been used for teaching Mechanical Engineering courses and creating students' assignments at the University of Houston.
+
+
+### 39
+##### doi: 10.1109/TLT.2016.263212
+#### A Case Study in User Support for Managing OpenSim Based Multi User Learning Environments
+
+
+0	  Immersive 3D Multi User Learning Environments (MULE) have shown sufficient success to warrant their consideration as a mainstream educational paradigm.
+0	  These are based on 3D Multi User Virtual Environment platforms (MUVE), and although they have been used for various innovative educational projects their complex permission systems and large numbers of functions can make their management potentially challenging.
+0     It follows that an inadequately managed MULE can be ineffective with respect to intended learning outcomes.
+0	  The purpose of this research was to determine how management challenges manifest themselves and how to support educators in learning and applying MULE management skills.
+1	  We utilized the popular OpenSim platform for this study.
+1	  First, a survey of the need for user support (${\mathrm{N\,= \,43}}$) is described.
+1	  Next, the design and evaluation of a guidance tool using graph topologic visualization of OpenSim functions is presented (${\mathrm{N\,= \,211}}$).
+1	  The tool is further evaluated in the delivery of a course module.
+1	  The analysis and user feedback indicated that the tool provides accurate information and helpful support for MULE management.
+1	  As the final phase of the research, training environments were developed for both basic and advanced OpenSim MULE management.
+2     Evaluations of their usability and perceived educational value were carried out with participants (${\mathrm{N\,= \,68}}$); the outcomes suggest that training for advanced MULE management is more useful for all users, without requiring more time or effort, regardless of the degree of complexity of the MULE being designed.
+
+
+### 40
+##### doi: 10.1109/TLT.2016.259953
+#### Impact of Using a Robot Patient for Nursing Skill Training in Patient Transfer
+
+
+0	  In the past few decades, simulation training has been used to help nurses improve their patient-transfer skills.
+0	  However, the effectiveness of such training remains limited because it lacks effective ways of simulating patients' actions realistically.
+0     It is difficult for nurses to use the skills learned from simulation training to transfer an actual patient.
+0     Therefore, we developed a robot patient that could simulate the behavior of patients' limbs for patient-transfer training.
+1	  This study examined the performance of the robot used in training and evaluated its training effectiveness.
+1	  Four nursing teachers individually transferred the robot patient and then scored the robot patient's ability to simulate patients' actions and its suitability for skill training.
+1	  An experiment using pre-post control group design was carried out to examine the robot patient's training effectiveness compared with the human simulated patient.
+1	  The participants were 20 nursing students and one nursing teacher who was responsible for scoring the students' skills in the pre-test and post-test.
+1	  All of the students were assigned to train with either the proposed robot patient or a healthy person simulating the patient.
+2     The results show that all four nursing teachers regarded the robot patient's actions as realistic.
+2     In addition, all four teachers agreed that the robot patient was suitable for skill training.
+2     The results also show that the proposed robot patient is more challenging than the current method, which employs a healthy person to simulate the patient.
+2     Significant skill improvement (p <; 0.01) was observed in the experimental group when transferring the robot patient.
+
+
+### 1
+##### 10.1109/TPAMI.2019.2952095
+#### Learning to Localize Sound Sources in Visual Scenes: Analysis and Applications
+
+
+0	  Visual events are usually accompanied by sounds in our daily lives.
+0	  However, can the machines learn to correlate the visual scene and sound, as well as localize the sound source only by observing them like humans?
+1	  To investigate its empirical learnability, in this work we first present a novel unsupervised algorithm to address the problem of localizing sound sources in visual scenes.
+1	  In order to achieve this goal, a two-stream network structure which handles each modality, with attention mechanism is developed for sound source localization.
+1	  The network naturally reveals the localized response in the scene without human annotation.
+1	  In addition, a new sound source dataset is developed for performance evaluation.
+2	  Nevertheless, our empirical evaluation shows that the unsupervised method generates false conclusions in some cases.
+2	  Thereby, we show that this false conclusion cannot be fixed without human prior knowledge due to the well-known correlation and causality mismatch misconception.
+2	  We show that the false conclusion can be effectively corrected even with a small amount of supervision, i.e., semi-supervised setup.
+2	  We present the versatility of the learned audio and visual embeddings on the cross-modal content alignment and we incorporate this proposed algorithm into sound saliency based automatic camera view panning in 360 degree videos.
+
+
+### 2
+##### 10.1109/TPAMI.2019.2952114
+#### InLoc: Indoor Visual Localization with Dense Matching and View Synthesis
+
+
+0	  We seek to predict the 6 degree-of-freedom (6DoF) pose of a query photograph with respect to a large indoor 3D map.
+0	  The contributions of this work are three-fold.
+1	  First, we develop a new large-scale visual localization method targeted for indoor spaces.
+1	  The method proceeds along three steps: (i) efficient retrieval of candidate poses that scales to large-scale environments, (ii) pose estimation using dense matching rather than sparse local features to deal with weakly textured indoor scenes, and (iii) pose verification by virtual view synthesis that is robust to significant changes in viewpoint, scene layout, and occlusion.
+1	  Second, we release a new dataset with reference 6DoF poses for large-scale indoor localization.
+1	  Query photographs are captured by mobile phones at a different time than the reference 3D map, thus presenting a realistic indoor localization scenario.
+2	  Third, we demonstrate that our method significantly outperforms current state-of-the-art indoor localization approaches on this new challenging data.
+#	  Code and data are publicly available.
+
+
+### 3
+##### 10.1109/TPAMI.2019.2952353
+#### Assessing Transferability from Simulation to Reality for Reinforcement Learning
+
+
+0	  Learning robot control policies from physics simulations is of great interest to the robotics community as it may render the learning process faster, cheaper, and safer by alleviating the need for expensive real-world experiments.
+0	  However, the direct transfer of learned behavior from simulation to reality is a major challenge.
+0	  Optimizing a policy on a slightly faulty simulator can easily lead to the maximization of the ‘Simulation Optimization Bias’ (SOB).
+0	  In this case, the optimizer exploits modeling errors of the simulator such that the resulting behavior can potentially damage the robot.
+1	  We tackle this challenge by applying domain randomization, i.e., randomizing the parameters of the physics simulations during learning.
+1	  We propose an algorithm called Simulation-based Policy Optimization with Transferability Assessment (SPOTA) which uses an estimator of the SOB to formulate a stopping criterion for training.
+2	  The introduced estimator quantifies the over-fitting to the set of domains experienced while training.
+2	  Our experimental results on two different second order nonlinear systems show that the new simulation-based policy search algorithm is able to learn a control policy exclusively from a randomized simulator, which can be applied directly to real systems without any additional training.
+
+
+### 4
+##### 10.1109/TPAMI.2019.2952096
+#### Scalar Quantization as Sparse Least Square Optimization
+
+
+0	  Quantization aims to form new vectors or matrices with shared values close to the original.
+0	  In recent years, the popularity of scalar quantization has been soaring as it has been found huge utilities in reducing the resource cost of neural networks.
+0	  Popular clustering-based techniques suffers substantially from the problems of dependency on the seed, empty or out-of-the-range clusters, and high time complexity.
+1	  To overcome the problems, scalar quantization is examined from a new perspective, namely sparse least square optimization.
+1	  Specifically, several quantization algorithms based on l1 least square are proposed and implemented.
+1	  In addition, similar schemes with l1+ l2 and l0 regularization are proposed.
+1	  Furthermore, to compute quantization results with given amount of values/clusters, this paper proposes an iterative method and a clustering-based method, and both of them are built on sparse least square.
+1	  The algorithms proposed are tested under three data scenarios and their computational performance, including information loss, time consumption and distribution of values of sparse vectors are compared.
+2	  The paper offers a new perspective to probe the area of quantization, and the algorithms proposed are superior especially under bit-width reducing scenarios, when the required post-quantization resolution is not significantly lower than the original scalar.
+
+
+### 5
+##### 10.1109/TPAMI.2019.2951664
+#### Affine Invariants of Vector Fields
+
+
+0	  Vector fields are a special kind of multidimensional data, which are in a certain sense similar to digital color images, but are distinct from them in several aspects.
+0	  In each pixel, the field is assigned to a vector that shows the direction and the magnitude of the quantity, which has been measured.
+0	  To detect the patterns of interest in the field, special matching methods must be developed.
+1	  In this paper, we propose a method for the description and matching of vector field patterns under an unknown affine transformation of the field.
+1	  Unlike digital images, transformations of vector fields act not only on the spatial coordinates but also on the field values, which makes the detection different from the image case.
+1	  To measure the similarity between the template and the field patch, we propose original invariants with respect to total affine transformation.
+1	  They are designed from the vector field moments.
+2	  It is demonstrated by experiments on real data from fluid mechanics that they perform significantly better than potential competitors.
+
+
+### 6
+##### 10.1109/TPAMI.2019.2951667
+#### A Temporally-Aware Interpolation Network for Video Frame Inpainting
+
+
+0	  In this work, we explore video frame inpainting, a task that lies at the intersection of general video inpainting, frame interpolation, and video prediction.
+0	  Although our problem can be addressed by applying methods from other video interpolation or extrapolation tasks, doing so fails to leverage the additional context information that our problem provides.
+1	  To this end, we devise a method specifically designed for video frame inpainting that is composed of two modules: a bidirectional video prediction module and a temporally-aware frame interpolation module.
+1	  The prediction module makes two intermediate predictions of the missing frames, each conditioned on the preceding and following frames respectively, using a shared convolutional LSTM-based encoder-decoder.
+1	  The interpolation module blends the intermediate predictions by using time information and hidden activations from the video prediction module to resolve disagreements between the predictions.
+2	  Our experiments demonstrate that our approach produces smoother and more accurate results than state-of-the-art methods for general video inpainting, frame interpolation, and video prediction.
+
+
+### 7
+##### 10.1109/TPAMI.2019.2946796
+#### SpaRTA Tracking across occlusions via partitioning of 3D clouds of points
+
+
+0	  Any 3D tracking algorithm has to deal with occlusions: multiple targets get so close to each other that the loss of their identities becomes likely, hence potentially affecting the very quality of the data with interrupted trajectories and identity switches.
+1	  Here, we present a novel tracking method that addresses the problem of occlusions within large groups of featureless objects by means of three steps: i) it represents each target as a cloud of points in 3D; ii) once a 3D cluster corresponding to an occlusion occurs, it defines a partitioning problem by introducing a cost function that uses both attractive and repulsive spatio-temporal proximity links; iii) it minimizes the cost function through a semi-definite optimization technique specifically designed to cope with the presence of multi-minima landscapes.
+1	  The algorithm is designed to work on 3D data regardless of the experimental method used: multi--camera systems, lidars, radars and RGB-D systems.
+2	  By performing tests on public data-sets, we show that the new algorithm produces a significant improvement over the state-of-the-art tracking methods, both by reducing the number of identity switches and by increasing the accuracy of the estimated positions of the targets in real space.
+
+
+### 8
+##### 10.1109/TPAMI.2019.2950923
+#### Effects of Image Degradation and Degradation Removal to CNN-based Image Classification
+
+
+0	  Just like many other topics in computer vision, image classification has achieved significant progress recently by using deep learning neural networks, especially the Convolutional Neural Networks (CNNs).
+0	  Most of the existing works focused on classifying very clear natural images, evidenced by the widely used image databases such as Caltech-256, PASCAL VOCs and ImageNet.
+0	  However, in many real applications, the acquired images may contain certain degradations that lead to various kinds of blurring, noise, and distortions.
+0	  One important and interesting problem is the effect of such degradations to the performance of CNN-based image classification and whether degradation removal helps CNN-based image classification.
+1	  More specifically, we wonder whether image classification performance drops with each kind of degradation, whether this drop can be avoided by including degraded images into training, and whether existing computer vision algorithms that attempt to remove such degradations can help improve the image classification performance.
+1	  In this paper, we empirically study those problems for nine kinds of degraded images - hazy images, motion-blurred images, fish-eye images, underwater images, low resolution images, salt-and-peppered images, images with white Gaussian noise, Gaussian-blurred images and out-of-focus images.
+2	  We expect this work can draw more interests from the community to study the classification of degraded images.
+
+
+### 9
+##### 10.1109/TPAMI.2019.2950631
+#### Ideals of the Multiview Variety
+
+
+0	  The multiview variety of an arrangement of cameras is the Zariski closure of the images of world points in the cameras.
+0	  The prime vanishing ideal of this complex projective variety is called the multiview ideal.
+1	  We show that the bifocal and trifocal polynomials from the cameras generate the multiview ideal when the foci are distinct.
+0	  In the computer vision literature, many sets of (determinantal) polynomials have been proposed to describe the multiview variety.
+1	  We establish precise algebraic relationships between the multiview ideal and these various ideals.
+2	  When the camera foci are noncoplanar, we prove that the ideal of bifocal polynomials saturate to give the multiview ideal.
+2	  Finally, we prove that all the ideals we consider coincide when dehomogenized, to cut out the space of finite images.
+
+
+### 10
+##### 10.1109/TPAMI.2019.2948619
+#### Joint Embedding of Graphs
+
+
+0	  Feature extraction and dimension reduction for networks is critical in a wide variety of domains.
+0	  Efficiently and accurately learning features for multiple graphs has important applications in statistical inference on graphs.
+1	  We propose a method to jointly embed multiple undirected graphs.
+1	  Given a set of graphs, the joint embedding method identifies a linear subspace spanned by rank one symmetric matrices and projects adjacency matrices of graphs into this subspace.
+1	  The projection coefficients can be treated as features of the graphs, while the embedding components can represent vertex features.
+1	  We also propose a random graph model for multiple graphs that generalizes other classical models for graphs.
+1	  We show through theory and numerical experiments that under the model, the joint embedding method produces estimates of parameters with small errors.
+2	  Via simulation experiments, we demonstrate that the joint embedding method produces features which lead to state of the art performance in classifying graphs.
+2	  Applying the joint embedding method to human brain graphs, we find it extracts interpretable features with good prediction accuracy in different tasks.
+
+
+### 11
+##### 10.1109/TPAMI.2019.2950025
+#### Visual Semantic Information Pursuit: A Survey
+
+
+0	  Visual semantic information comprises two important parts: the meaning of each visual semantic unit and the coherent visual semantic relation conveyed by these visual semantic units.
+0	  Essentially, the former one is a visual perception task while the latter one corresponds to visual context reasoning.
+0	  Remarkable advances in visual perception have been achieved due to the success of deep learning.
+0	  In contrast, visual semantic information pursuit, a visual scene semantic interpretation task combining visual perception and visual context reasoning, is still in its early stage.
+0	  It is the core task of many different computer vision applications, such as object detection, visual semantic segmentation, visual relationship detection or scene graph generation.
+0	  Since it helps to enhance the accuracy and the consistency of the resulting interpretation, visual context reasoning is often incorporated with visual perception in current deep end-to-end visual semantic information pursuit methods.
+0	  Surprisingly, a comprehensive review for this exciting area is still lacking.
+1	  In this survey, we present a unified theoretical paradigm for all these methods, followed by an overview of the major developments and the future trends in each potential direction.
+1	  The common benchmark datasets, the evaluation metrics and the comparisons of the corresponding methods are also introduced.
+
+
+### 12
+##### 10.1109/TPAMI.2019.2949299
+#### 3D Fingerprint Recognition based on Ridge-valley-guided 3D Reconstruction and 3D Topology Polymer Feature Extraction
+
+
+0	  Automated fingerprint recognition system (AFRS) for 3D fingerprints is essential and highly promising in biometric security.
+0	  Despite the progress in 3D AFRSs, high-quality real-time 3D fingerprint reconstruction and high-accuracy 3D fingerprint recognition remain two challenging issues.
+1	  To address these issues, we propose a robust 3D AFRS based on ridge-valley-guided 3D fingerprint reconstruction and 3D topology feature extraction.
+1	  The proposed 3D fingerprint reconstruction considers the unique fingerprint characteristic of ridge-valley (RV) and achieves real-time reconstruction.
+1	  Different from traditional triangulation-based methods that establish correspondence between points by cross-correlation-based searching, we propose to establish RV correspondence (RVC) between ridges/valleys by defining and calculating a RVC matrix based on the topology of RV curves.
+1	  To enhance depth reconstruction, curve-based smoothing is proposed to refine our novel RV disparity map.
+1	  The proposed 3D fingerprint recognition is based on three-dimensional topology polymer (TTP) feature extraction.
+1	  The TTP codes 3D topology by projecting the 3D minutiae onto multiple planes and extracting their corresponding 2D topologies, which has proven to be effective and efficient.
+2	  Comprehensive experimental results demonstrate that our method outperforms the state-of-the-art methods in terms of both reconstruction and recognition accuracy.
+2	  Thanks to the significantly short running time, our method is applicable to practical applications.
+
+
+### 13
+##### 10.1109/TPAMI.2019.2950198
+#### Exploring Explicit Domain Supervision for Latent Space Disentanglement in Unpaired Image-to-Image Translation
+
+
+0	  Image-to-image translation tasks have been widely investigated with Generative Adversarial Networks (GANs).
+0	  However, existing approaches are mostly designed in an unsupervised manner while little attention has been paid to domain information within unpaired data.
+1	  In this paper, we treat domain information as explicit supervision and design an unpaired image-to-image translation framework, Domain-supervised GAN (DosGAN), which takes the first step towards the exploration of explicit domain supervision.
+1	  In contrast to representing domain characteristics using different generators or domain codes, we pre-train a classification network to explicitly classify the domain of an image.
+1	  After pre-training, this network is used to extract the domain-specific features of each image.
+1	  Such features, together with the domain-independent features extracted by another encoder (shared across different domains), are used to generate image in target domain.
+2	  Extensive experiments on multiple facial attribute translation, multiple identity translation, multiple season translation and conditional edges-to-shoes/handbags demonstrate the effectiveness of our method.
+2	  In addition, we can transfer the domain-specific feature extractor obtained on the Facescrub dataset with domain supervision information to unseen domains, such as faces in the CelebA dataset.
+2	  We also succeed in achieving conditional translation with any two images in CelebA, while previous models like StarGAN cannot handle this task.
+
+
+### 14
+##### 10.1109/TPAMI.2019.2950317
+#### Bilinear image translation for temporal analysis of photo collections
+
+
+1	  We propose an approach for analyzing unpaired visual data annotated with time stamps by generating how images would have looked like if they were from different times.
+1	  To isolate and transfer time dependent appearance variations, we introduce a new trainable bilinear factor separation module.
+1	  We analyze its relation to classical factored representations and concatenation-based auto-encoders.
+1	  We demonstrate this new module has clear advantages compared to standard concatenation when used in a bottleneck encoder-decoder convolutional neural network architecture.
+1	  We also show that it can be inserted in a recent adversarial image translation architecture, enabling transfer to multiple different target time periods using a single network.
+1	  We apply our model to a challenging collection of more than 13,000 cars manufactured between 1920 and 2000 and a dataset of high school yearbook portraits from 1930 to 2009.
+1	  This allows us, for a given new input image, to generate a "history-lapse video" revealing changes over time by simply varying the latent variable corresponding to time.
+2	  We show that by analyzing the generated history-lapse videos we can identify object deformations across time, extracting interesting changes in visual style over decades.
+
+
+### 15
+##### 10.1109/TPAMI.2019.2949414
+#### Forecasting People Trajectories and Head Poses by Jointly Reasoning on Tracklets and Vislets
+
+
+0	  In this work, we explore the correlation between people trajectories and their head orientations.
+1	  We argue that people trajectory and head pose forecasting can be modelled as a joint problem.
+0	  Recent approaches on trajectory forecasting leverage short-term trajectories (aka tracklets) of pedestrians to predict their future paths.
+0	  In addition, sociological cues, such as expected destination or pedestrian interaction, are often combined with tracklets.
+1	  In this paper, we propose MiXing-LSTM (MX-LSTM) to capture the interplay between positions and head orientations (vislets) thanks to a joint unconstrained optimization of full covariance matrices during the LSTM backpropagation.
+1	  We additionally exploit the head orientations as a proxy for the visual attention, when modeling social interactions.
+2	  MX-LSTM predicts future pedestrians location and head pose, increasing the standard capabilities of the current approaches on long-term trajectory forecasting.
+2	  Compared to the state-of-the-art, our approach shows better performances on an extensive set of public benchmarks.
+2	  MX-LSTM is particularly effective when people move slowly, i.e. the most challenging scenario for all other models.
+2	  The proposed approach also allows for accurate predictions on a longer time horizon.
+
+
+### 16
+##### 10.1109/TPAMI.2019.2949302
+#### Corner detection using second-order generalized Gaussian directional derivative representations
+
+
+0	  Corner detection is a critical component of many image analysis and image understanding tasks such as object recognition and image matching.
+0	  Our research indicates that existing corner detection algorithms cannot properly depict the difference between edges and corners and this results in wrong corner detections.
+1	  In this paper, the capability of second-order generalized (isotropic and anisotropic) Gaussian directional derivative filters to suppress Gaussian noise is evaluated.
+1	  The second-order generalized Gaussian directional derivative representations of step edge, L-type corner, Y- or T-type corner, X-type corner, and star-type corner are investigated and obtained.
+1	  A number of properties for edges and corners are discovered which enable us to propose a new image corner detection method.
+1	  Finally, the criteria on detection accuracy and average repeatability under affine image transformation, JPEG compression, and noise degradation, and the criteria on region repeatability are used to evaluate the proposed detector against nine state-of-the-art methods.
+2	  The experimental results show that our proposed detector outperforms all the other tested detectors.
+
+
+### 17
+##### 10.1109/TPAMI.2019.2949562
+#### Weakly-Supervised Learning of Category-specific 3D Object Shapes
+
+
+0	  Category-specific 3D object shape models have greatly boosted the recent advances in object detection, recognition and segmentation.
+0	  However, even the most advanced approach for learning 3D object shapes still requires heavy manual annotations on large-scale 2D images.
+0	  In particular, annotating figure-ground segmentation is unbearably labor-intensive and time-consuming.
+1	  To alleviate the costs of such manual annotations, we make an effort to learn category-specific 3D shape models by using weakly-labeled 2D images, where only object categories and keypoints are annotated.
+1	  By exploring the underlying relationship between two tasks: object segmentation and category-specific 3D shape reconstruction, we propose a novel weakly-supervised learning framework to jointly address these two tasks and collaborate them to boost the final performance of the learned 3D shape models.
+2	  Moreover, learning without using figure-ground segmentation leads to ambiguous solutions.
+1	  To this end, we develop the confidence weighting schemes in the viewpoint estimation and 3D shape learning procedure.
+2	  These schemes effectively reduce the confusion caused by the noisy data and thus increase the chances for obtaining more reliable 3D object shapes.
+2	  Comprehensive experiments on the challenging PASCAL VOC benchmark show that our framework achieves comparable performance of the state-of-the-art methods that use expensive manual segmentation annotations
+
+
+### 18
+##### 10.1109/TPAMI.2019.2948348
+#### Adversarial Margin Maximization Networks
+
+
+0	  The tremendous recent success of deep neural networks (DNNs) has sparked a surge of interest in understanding their predictive ability.
+0	  Unlike the human visual system which is able to generalize robustly and learn with little supervision, DNNs normally require a massive amount of data to learn new concepts.
+0	  In addition, research works also show that DNNs are vulnerable to adversarial examples---maliciously generated images which seem perceptually similar to the natural ones but are actually formed to fool learning models, which means the models have problem generalizing to unseen data with certain type of distortions.
+1	  In this paper, we analyze the generalization ability of DNNs comprehensively and attempt to improve it from a geometric point of view.
+1	  We propose adversarial margin maximization (AMM), a learning-based regularization which exploits an adversarial perturbation as a proxy.
+2	  It encourages a large margin in the input space, just like the support vector machines.
+1	  With a differentiable formulation of the perturbation, we train the regularized DNNs simply through back-propagation in an end-to-end manner.
+2	  Experimental results on various datasets (including MNIST, CIFAR-10/100, SVHN and ImageNet) and different DNN architectures demonstrate the superiority of our method over previous state-of-the-arts.
+#	  Code and models for reproducing our results will be made publicly available.
+
+
+### 19
+##### 10.1109/TPAMI.2019.2948352
+#### Orthogonal Deep Neural Networks
+
+
+0	  In this paper, we introduce the algorithms of Orthogonal Deep Neural Networks (OrthDNNs) to connect with recent interest of spectrally regularized deep learning methods.
+0	  OrthDNNs are theoretically motivated by generalization analysis of modern DNNs, with the aim to find solution properties of network weights that guarantee better generalization.
+1	  To this end, we first prove that DNNs are of local isometry on data distributions of practical interest; by using a new covering of the sample space and introducing the local isometry property of DNNs into generalization analysis, we establish a new generalization error bound that is characterized by singular value spectrum of each of networks' weight matrices.
+2	  We prove that the optimal bound w.r.t. the degree of isometry is attained when each weight matrix has a spectrum of equal singular values, among which that with orthonormal rows/columns is the most straightforward choice, suggesting the algorithms of OrthDNNs.
+1	  We present both algorithms of strict and approximate OrthDNNs, and for the later ones we propose Singular Value Bounding, which performs as well as strict OrthDNNs but at a much lower computational cost.
+1	  We also propose algorithms to make compatible use of batch normalization with OrthDNNs.
+2	  Extensive comparative studies show the efficacy of OrthDNNs.
+
+
+### 20
+##### 10.1109/TPAMI.2019.2948011
+#### Large scale shadow annotation and detection using lazy annotation and stacked CNNs
+
+
+0	  Recent shadow detection algorithms have shown initial success on small datasets of images from specific domains.
+0	  However, shadow detection on broader image domains is still challenging due to the lack of representative annotated training data.
+1	  In this paper we propose "lazy annotation", an efficient annotation method where an annotator only needs to mark the important shadow areas and some non-shadow areas.
+1	  This yields data with noisy labels that are not yet useful for training a shadow detector.
+1	  We address the problem of label noise by jointly learning a shadow region classifier and recovering the labels in the training set.
+2	  Experimental results show that a classifier trained with recovered labels achieves comparable performance to a classifier trained on the properly annotated data.
+1	  These results motivated us to collect a new dataset that is 20 times larger than existing datasets and contains a large variety of scenes and image types.
+1	  In addition, we propose a stacked Convolutional Neural Network architecture that efficiently trains on patch level shadow examples while incorporating image level semantic information.
+2	  Our proposed pipeline, trained on recovered labels, performs at state-of-the art level.
+
+
+### 21
+##### 10.1109/TPAMI.2019.2947440
+#### Interpreting the Rhetoric of Visual Advertisements
+
+
+0	  Visual media have important persuasive power, but prior computer vision approaches have predominantly ignored the persuasive aspects of images.
+1	  In this work, we propose a suite of data and techniques that enable progress on understanding the messages that visual advertisements convey.
+1	  We make available a dataset of 64,832 image ads and 3,477 video ads, annotated with ten types of information: the topic and sentiment of the ad; whether it is funny, exciting, or effective; what action it prompts the viewer to do, and what arguments it provides for why this action should be taken; symbolic associations that the ad relies on; the metaphorical object transformations on which especially creative ads rely; and the climax in video ads.
+1	  We develop methods that use multimodal cues, i.e. both visuals and slogans, for both the image and video domains.
+1	  Our methods rely on finding poignant content spatially and temporally.
+1	  We also examine the creative story construction in ads: for videos, we learn to predict when the climax occurs (if any), and how effective the story is; for images, we analyze how object transformations in ads metaphorically depict product properties.
+
+
+### 22
+##### 10.1109/TPAMI.2019.2947374
+#### Learning Depth with Convolutional Spatial Propagation Network
+
+
+0	  Depth prediction is one of the fundamental problems in computer vision.
+1	  In this paper, we propose a simple yet effective convolutional spatial propagation network (CSPN) to learn the affinity matrix for various depth estimation tasks.
+2	  We can append this module to any output from a state-of-the-art (SOTA) network to improve their performances.
+1	  In practice, we further extend CSPN in two aspects: 1) take a sparse depth map as additional input, which is useful for the task of sparse to dense (a.k.a depth completion); 2) we propose 3D CSPN to handle features with one additional dimension, which is effective in the task of stereo matching using 3D cost volume.
+2	  For the tasks of depth completion, we experimented the proposed CPSN conjunct algorithms over NYU v2 and KITTI datasets, where we show that our proposed algorithms not only produce high quality (e.g., 30% more reduction in depth error), but also run faster (e.g., 2 to 5 × faster) than previous SOTA spatial propagation network.
+2	  We also evaluated our stereo matching algorithm on the Scene Flow and KITTI Stereo datasets, and rank 1st on both the KITTI Stereo 2012 and 2015 benchmarks, which demonstrates the effectiveness of the proposed module again.
+
+
+### 23
+##### 10.1109/TPAMI.2019.2947427
+#### Appearance and Pose-Conditioned Human Image Generation using Deformable GANs
+
+
+0	  In this paper, we address the problem of generating person images conditioned on both pose and appearance information.
+1	  Specifically, given an image xa of a person and a target pose P(xb), extracted from a different image xb, we synthesize a new image of that person in pose P(xb), while preserving the visual details in xa.
+1	  In order to deal with pixel-to-pixel misalignments caused by the pose differences between P(xa) and P(xb), we introduce deformable skip connections in the generator of our Generative Adversarial Network.
+1	  Moreover, a nearest-neighbour loss is proposed instead of the common L1 and L2 losses in order to match the details of the generated image with the target image.
+2	  Quantitative and qualitative results, using common datasets and protocols recently proposed for this task, show that our approach is competitive with respect to the state of the art.
+1	  Moreover, we conduct an extensive evaluation using off-the-shell person re-identification (Re-ID) systems trained with person-generation based augmented data, which is one of the main important applications for this task.
+2	  Our experiments show that our Deformable GANs can significantly boost the Re-ID accuracy and are even better than data-augmentation methods specifically trained using Re-ID losses.
+
+
+### 24
+##### 10.1109/TPAMI.2019.2947048
+#### SurfelMeshing: Online Surfel-Based Mesh Reconstruction
+
+
+1	  We address the problem of mesh reconstruction from live RGB-D video, assuming a calibrated camera and poses provided externally (e.g., by a SLAM system).
+1	  In contrast to most existing approaches, we do not fuse depth measurements in a volume but in a dense surfel cloud.
+1	  We asynchronously (re)triangulate the smoothed surfels to reconstruct a surface mesh.
+1	  This novel approach enables to maintain a dense surface representation of the scene during SLAM which can quickly adapt to loop closures.
+2	  This is possible by deforming the surfel cloud and asynchronously remeshing the surface where necessary.
+2	  The surfel-based representation also naturally supports strongly varying scan resolution.
+2	  In particular, it reconstructs colors at the input camera's resolution.
+2	  Moreover, in contrast to many volumetric approaches, ours can reconstruct thin objects since objects do not need to enclose a volume.
+2	  We demonstrate our approach in a number of experiments, showing that it produces reconstructions that are competitive with the state-of-the-art, and we discuss its advantages and limitations.
+#	  The algorithm (excluding loop closure functionality) is available as open source at https://github.com/puzzlepaint/surfelmeshing.
+
+
+### 25
+##### 10.1109/TPAMI.2019.2946806
+#### Deep Depth from Uncalibrated Small Motion Clip
+
+
+0	  We propose a novel approach to infer a high-quality depth map from a set of images with small viewpoint variations.
+0	  In general, techniques for depth estimation from small motion consist of camera pose estimation and dense reconstruction.
+1	  In contrast to prior approaches that recover scene geometry and camera motions using pre-calibrated cameras, we introduce a self-calibrating bundle adjustment method tailored for small motion which enables computation of camera poses without the need for camera calibration.
+1	  For dense depth reconstruction, we present a convolutional neural network called DPSNet (Deep Plane Sweep Network) whose design is inspired by best practices of traditional geometry-based approaches.
+1	  Rather than directly estimating depth or optical flow correspondence from image pairs as done in many previous deep learning methods, DPSNet takes a plane sweep approach that involves building a cost volume from deep features using the plane sweep algorithm, regularizing the cost volume, and regressing the depth map from the cost volume.
+1	  The cost volume is constructed using a differentiable warping process that allows for end-to-end training of the network.
+2	  Through the effective incorporation of conventional multiview stereo concepts within a deep learning framework, the proposed method achieves state-of-the-art results on a variety of challenging datasets.
+
+
+### 26
+##### 10.1109/TPAMI.2019.2946823
+#### Fine-grained Video Captioning via Graph-based Multi-granularity Interaction Learning
+
+
+0	  Team sports auto-narrative requires simultaneous modeling of fine-grained individual actions and uncovering of spatio-temporal dependency structures of frequent group interactions, and then accurate mapping of these complex interaction details into long and detailed commentary.
+1	  We propose a novel framework - Graph-based Learning for Multi-Granularity Interaction Representation (GLMGIR) for fine-grained team sports auto-narrative task.
+1	  A multi-granular interaction module is proposed to extract among-subjects' interactive actions in a progressive way for encoding both intra- and inter-team interactions.
+1	  Based on the above multi-granular representations, a multi-granular attention module is developed to consider action/event descriptions of multiple spatio-temporal resolutions.
+1	  Both modules are integrated seamlessly and work in a collaborative way to generate the final narrative.
+1	  In the meantime, we collect a new video dataset called Sports Video Narrative dataset (SVN).
+1	  It is a novel direction as it contains 6K team sports videos with 10K ground-truth narratives.
+1	  Furthermore, as previous metrics, DO NOT cope with fine-grained sports narrative task well, we hence develop a novel evaluation metric named Fine-grained Captioning Evaluation (FCE), which measures how accurate the generated linguistic description reflects fine-grained action details as well as the overall spatio-temporal interactional structure.
+2	  Extensive experiments on our SVN dataset have demonstrated the effectiveness of the proposed framework for fine-grained team sports video auto-narrative.
+
+
+### 27
+##### 10.1109/TPAMI.2019.2946370
+#### Bayesian Joint Matrix Decomposition for Data Integration with Heterogeneous Noise
+
+
+0	  Matrix decomposition is a popular and fundamental approach in machine learning and data mining.
+0	  It has been successfully applied into various fields.
+0	  Most matrix decomposition methods focus on decomposing a data matrix from one single source.
+0	  However, it is common that data are from different sources with heterogeneous noise.
+0	  A few of matrix decomposition methods have been extended for such multi-view data integration and pattern discovery.
+0	  While only few methods were designed to consider the heterogeneity of noise in such multi-view data for data integration explicitly.
+1	  To this end, we propose a joint matrix decomposition framework (BJMD), which models the heterogeneity of noise by Gaussian distribution in a Bayesian framework.
+1	  We develop two algorithms to solve this model: one is a variational Bayesian inference algorithm, which makes full use of the posterior distribution; and another is a maximum a posterior algorithm, which is more scalable and can be easily paralleled.
+2	  Extensive experiments on synthetic and real-world datasets demonstrate that BJMD is superior or competitive to the state-of-the-art methods.
+
+
+### 28
+##### 10.1109/TPAMI.2019.2946567
+#### Sinusoidal Sampling Enhanced Compressive Camera for High Speed Imaging
+
+
+0	  Compressive sensing technique allows capturing fast phenomena at much higher frame rate than the camera sensor, by recovering a frame sequence from their encoded combination.
+0	  However, most conventional compressive video sensing methods limit the achieved frame rate improvement to tenfold and only support low resolution recovery.
+1	  Making use of camera's redundant spatial resolution for further frame rate improve, here we report a novel compressive video acquisition technique termed Sinusoidal Sampling Enhanced Compressive Camera (S2EC2) to encode denser frames within a snapshot.
+1	  Specifically, we decompose the dense frames into groups and apply combinational coding: random codes within each group for compressive acquisition; group specific sinusoidal codes to multiplex different groups onto the high resolution sensor.
+1	  The sinusoidal codes designed for these groups would shift their frequency components by different offsets in the Fourier domain and staggered the dominant frequencies of the coded measurements of these groups.
+1	  Correspondingly, the reconstruction successfully separate coded measurements of different groups and recovers frames within each group.
+1	  Besides, we also solve the implementation problem of insufficient gray scale spatial light modulation speed, and build a prototype achieving 2000 fps reconstruction with a 15.6 fps camera (the actual compression ratio is 0.009).
+2	  The extensive experiments validate the proposed approach.
+
+
+### 29
+##### 10.1109/TPAMI.2019.2946159
+#### Complex-Valued Disparity: Unified Depth Model of Depth from Stereo, Depth from Focus, and Depth from Defocus Based on the Light Field Gradient
+
+
+1	  This paper proposes a unified depth model based on the light field gradient, in which estimated disparity is represented by the complex number.
+1	  The complex-valued disparity by the proposed depth model can be represented in both the Cartesian and polar coordinates.
+1	  In the Cartesian representation, the proposed depth model is represented by real and imaginary parts of the disparity.
+1	  The real part can be used for disparity estimation with respect to the in-focus plane, whereas the imaginary part represents the non-Lambertian-ness.
+1	  In the polar representation, the proposed depth model is expressed by the disparity magnitude and disparity angle.
+2	  The disparity magnitude shows the relationship among depth from stereo, depth from focus, and depth from defocus, whereas the disparity angle shows whether or not the bundles of rays are flipped with respect to the in-focus plane.
+2	  For disparity analysis, we present the real response, imaginary response, magnitude response, and angle response, which are represented by the three-dimensional volume.
+2	  Experimental results on synthetic and real light field images show that the real and magnitude responses of the proposed depth model are valid for local disparity estimation.
+
+
+### 30
+##### 10.1109/TPAMI.2019.2945942
+#### A review of domain adaptation without target labels
+
+
+0	  Domain adaptation has become a prominent problem setting in machine learning and related fields.
+0	  This review asks the question: how can a classifier learn from a source domain and generalize to a target domain?
+1	  We present a categorization of approaches, divided into, what we refer to as, sample-based, feature-based and inference-based methods.
+1	  Sample-based methods focus on weighting individual observations during training based on their importance to the target domain.
+1	  Feature-based methods revolve around on mapping, projecting and representing features such that a source classifier performs well on the target domain and inference-based methods incorporate adaptation into the parameter estimation procedure, for instance through constraints on the optimization procedure.
+1	  Additionally, we review a number of conditions that allow for formulating bounds on the cross-domain generalization error.
+2	  Our categorization highlights recurring ideas and raises questions important to further research.
+
+
+### 31
+##### 10.1109/TPAMI.2019.2945574
+#### Approximate Graph Laplacians for Multimodal Data Clustering
+
+
+0	  One of the important approaches of handling data heterogeneity in multimodal data clustering is modeling each modality using a separate similarity graph.
+0	  Information from the multiple graphs is integrated by combining them into a unified graph.
+0	  A major challenge here is how to preserve cluster information while removing noise from individual graphs.
+1	  In this regard, a novel algorithm, termed as CoALa, is proposed that integrates noise-free approximations of multiple similarity graphs.
+1	  The proposed method first approximates a graph using the most informative eigenpairs of its Laplacian which contain cluster information.
+1	  The approximate Laplacians are then integrated for the construction of a low-rank subspace that best preserves overall cluster information of multiple graphs.
+2	  However, this approximate subspace differs from the full-rank subspace which integrates information from all the eigenpairs of each Laplacian.
+1	  Matrix perturbation theory is used to theoretically evaluate how far approximate subspace deviates from the full-rank one for a given value of approximation rank.
+1	  Finally, spectral clustering is performed on the approximate subspace to identify the clusters.
+2	  Experimental results on several real-life cancer and benchmark data sets demonstrate that the proposed algorithm significantly and consistently outperforms state-of-the-art integrative clustering approaches.
+
+
+### 32
+##### 10.1109/TPAMI.2019.2944806
+#### MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video
+
+
+0	  The past few years have witnessed great success in applying deep learning to enhance the quality of compressed image/video.
+0	  The existing approaches mainly focus on enhancing the quality of a single frame, not considering the similarity between consecutive frames.
+0	  Since heavy fluctuation exists across compressed video frames as investigated in this paper, frame similarity can be utilized for quality enhancement of low-quality frames given their neighbouring high-quality frames.
+0	  This task is Multi-Frame Quality Enhancement (MFQE).
+1	  Accordingly, this paper proposes an MFQE approach for compressed video, as the first attempt in this direction.
+1	  In our approach, we firstly develop a Bidirectional Long Short-Term Memory (BiLSTM) based detector to locate Peak Quality Frames (PQFs) in compressed video.
+1	  Then, a novel Multi-Frame Convolutional Neural Network (MF-CNN) is designed to enhance the quality of compressed video, in which the non-PQF and its nearest two PQFs are the input.
+1	  In MF-CNN, motion between the non-PQF and PQFs is compensated by a motion compensation subnet.
+1	  Subsequently, a quality enhancement subnet fuses the non-PQF and compensated PQFs, and then reduces the compression artifacts of the non-PQF.
+1	  Also, PQF quality is enhanced in the same way.
+2	  Finally, experiments validate the effectiveness and generalization ability of our MFQE approach in advancing the state-of-the-art quality enhancement of compressed video.
+
+
+### 33
+##### 10.1109/TPAMI.2019.2944808
+#### SEWA DB: A Rich Database for Audio-Visual Emotion and Sentiment Research in the Wild
+
+
+0	  Natural human-computer interaction and audio-visual human behaviour sensing systems, which would achieve robust performance in-the-wild are more needed than ever as digital devices are becoming indispensable part of our life more and more.
+0	  Accurately annotated real-world data are the crux in devising such systems.
+0	  However, existing databases usually consider controlled settings, low demographic variability, and a single task.
+1	  In this paper, we introduce the SEWA database of more than 2000 minutes of audio-visual data of 398 people coming from six cultures, 50% female, and uniformly spanning the age range of 18 to 65 years old.
+1	  Subjects were recorded in two different contexts: while watching adverts and while discussing adverts in a video chat.
+2	  The database includes rich annotations of the recordings in terms of facial landmarks, facial action units (FAU), various vocalisations, mirroring, and continuously valued valence, arousal, liking, agreement, and prototypic examples of (dis)liking.
+2	  This database aims to be an extremely valuable resource for researchers in affective computing and automatic human sensing and is expected to push forward the research in human behaviour analysis, including cultural studies.
+2	  Along with the database, we provide extensive baseline experiments for automatic FAU detection and automatic valence, arousal and (dis)liking intensity estimation.
+
+
+### 34
+##### 10.1109/TPAMI.2019.2945027
+#### High-dimensional Dense Residual Convolutional Neural Network for Light Field Reconstruction
+
+
+0	  We consider the problem of high-dimensional light field reconstruction and develop a learning-based framework for spatial and angular super-resolution.
+0	  Many current approaches either require disparity clues or restore the spatial and angular details separately.
+0	  Such methods have difficulties with non-Lambertian surfaces or occlusions.
+1	  In contrast, we formulate light field super-resolution (LFSR) as tensor restoration and develop a learning framework based on a two-stage restoration with 4-dimensional (4D) convolution.
+1	  This allows our model to learn the features capturing the geometry information encoded in multiple adjacent views.
+2	  Such geometric features vary near the occlusion regions and indicate the foreground object border.
+1	  To train a feasible network, we propose a novel normalization operation based on a group of views in the feature maps, design a stage-wise loss function, and develop the multi-range training strategy to further improve the performance.
+1	  Evaluations are conducted on a number of light field datasets including real-world scenes, synthetic data, and microscope light fields.
+2	  The proposed method achieves superior performance and less execution time comparing with other state-of-the-art schemes.
+
+
+### 35
+##### 10.1109/TPAMI.2019.2944597
+#### A Graph-based Approach for Making Consensus-based Decisions in Image Search and Person Re-identification
+
+
+0	  Image matching and retrieval is the underlying problem in various directions of computer vision research, such as image search, biometrics, and person re-identification.
+0	  The problem involves searching for the closest match to a query image in a database of images.
+0	  This work presents a method for generating a consensus amongst multiple algorithms for image matching and retrieval.
+1	  The proposed algorithm, Shortest Hamiltonian Path Estimation (SHaPE), maps the process of ranking candidates based on a set of scores to a graph-theoretic problem.
+1	  This mapping is extended to incorporate results from multiple sets of scores obtained from different matching algorithms.
+1	  The problem of consensus-based decision-making is solved by searching for a suitable path in the graph under specified constraints using a two-step process.
+1	  First, a greedy algorithm is employed to generate an approximate solution.
+1	  In the second step, the graph is extended and the problem is solved by applying Ant Colony Optimization.
+2	  Experiments are performed for image search and person re-identification to illustrate the efficiency of SHaPE in image matching and retrieval.
+2	  Although SHaPE is presented in the context of image retrieval, it can be applied, in general, to any problem involving the ranking of candidates based on multiple sets of scores.
+
+
+### 36
+##### 10.1109/TPAMI.2019.2944377
+#### Video Anomaly Detection With Sparse Coding Inspired Deep Neural Networks
+
+
+1	  This paper presents an anomaly detection method that is based on a sparse coding inspired Deep Neural Networks (DNN).
+1	  Specifically, we propose a Temporally-coherent Sparse Coding (TSC), where a temporally-coherent term is used to preserve the similarity between two neighboring frames.
+1	  The optimization of sparse coefficients in TSC is equivalent to a special stacked Recurrent Neural Networks (sRNN) architecture.
+1	  Further, to reduce the computational cost in alternatively updating the dictionary and sparse coefficients in TSC optimization and to alleviate hyperparameters selection in TSC, we stack one more layer on top of the TSC-inspired sRNN to reconstruct the inputs, and arrive at an sRNN-AE.
+1	  We further improve sRNN-AE in the following aspects: i) we propose to learn a data-dependent similarity measurement between neighboring frames in sRNN-AE; ii) we reduce the depth of the sRNN in sRNN-AE; iii) we conduct temporal pooling over the appearance features of several consecutive frames for motion characterization.
+1	  We also build a large-scale anomaly detection dataset for performance evaluation.
+2	  Extensive experiments on both a toy dataset under controlled settings and real datasets demonstrate the effectiveness of our sRNN-AE method for anomaly detection.
+
+
+### 37
+##### 10.1109/TPAMI.2019.2943860
+#### Nonlinear Regression via Deep Negative Correlation Learning
+
+
+0	  Nonlinear regression has been extensively employed in many computer vision problems (e.g., crowd counting, age estimation, affective computing).
+0	  Under the umbrella of deep learning, two common solutions exist i) transforming nonlinear regression to a robust loss function which is jointly optimizable with the deep convolutional network, and ii) utilizing ensemble of deep networks.
+0	  Although some improved performance is achieved, the former may be lacking due to the intrinsic limitation of choosing a single hypothesis and the latter usually suffers from much larger computational complexity.
+0	  To cope with those issues, we propose to regress via an efficient "divide and conquer" manner.
+1	  The core of our approach is the generalization of negative correlation learning that has been shown, both theoretically and empirically, to work well for non-deep regression problems.
+1	  Without extra parameters, the proposed method controls the bias-variance-covariance trade-off systematically and usually yields a deep regression ensemble where each base model is both "accurate" and "diversified."
+2	  Moreover, we show that each sub-problem in the proposed method has less Rademacher Complexity and thus is easier to optimize.
+2	  Extensive experiments on several diverse and challenging tasks including crowd counting, personality analysis, age estimation, and image super-resolution demonstrate the superiority over challenging baselines.
+
+
+### 38
+##### 10.1109/TPAMI.2019.2943456
+#### Interpretable Visual Question Answering by Reasoning on Dependency Trees
+
+
+0	  Collaborative reasoning for understanding each image-question pair is very critical but underexplored for an interpretable visual question answering system.
+0	  Although very recent works also attempted to use explicit compositional processes to assemble multiple subtasks embedded in the questions, their models heavily rely on annotations or handcrafted rules to obtain valid reasoning processes, leading to either heavy workloads or poor performance on composition reasoning.
+1	  In this paper, to better align image and language domains in diverse and unrestricted cases, we propose a novel neural network model that performs global reasoning on a dependency tree parsed from the question, and we thus phrase our model as parse-tree-guided reasoning network (PTGRN).
+1	  This network consists of three collaborative modules: i) an attention module to exploit the local visual evidence for each word parsed from the question, ii) a gated residual composition module to compose the previously mined evidence, and iii) a parse-tree-guided propagation module to pass the mined evidence along the parse tree.
+2	  Our PTGRN is thus capable of building an interpretable VQA system that gradually derives the image cues following a question-driven parse-tree reasoning route.
+2	  Experiments on relational datasets demonstrate the superiority of our PTGRN over current state-of-the-art VQA methods.
+
+
+### 39
+##### 10.1109/TPAMI.2019.2942928
+#### Progressive Fusion for Unsupervised Binocular Depth Estimation using Cycled Networks
+
+
+0	  Recent deep monocular depth estimation approaches based on supervised regression have achieved remarkable performance.
+0	  However, they require costly ground truth annotations during training.
+0	  To cope with this issue, in this paper we present a novel unsupervised deep learning approach for predicting depth maps.
+1	  We introduce a new network architecture, named Progressive Fusion Network (PFN), that is specifically designed for stereo depth estimation.
+1	  This network is based on a multi-scale refinement strategy that combines the information provided by both images.
+1	  In addition, we propose to stack twice this network in order to form a cycle.
+1	  This cycle approach can be interpreted as a form of data-augmentation since, at training time, the network learns both from the training set images (in the forward half-cycle) but also from the synthesized images (in the backward half-cycle).
+1	  The architecture is jointly trained with adversarial learning.
+2	  Extensive experiments on the publicly available datasets KITTI, Cityscapes and ApolloScape demonstrate the effectiveness of the proposed model which outperforms previous unsupervised deep learning methods for depth prediction.
+
+
+### 40
+##### 10.1109/TPAMI.2019.2942592
+#### Adversarial Distillation for Learning with Privileged Provisions
+
+
+0	  Knowledge distillation aims to train a student (model) for accurate inference in a resource-constrained environment.
+0	  Traditionally, the student is trained by a high-capacity teacher (model) whose training is resource-intensive.
+0	  The student trained this way is suboptimal because it is difficult to learn the real data distribution from the teacher.
+1	  To address this issue, we propose to train the student against a discriminator in a minimax game.
+2	  Such a minimax game has an issue that it can take an excessively long time for the training to converge.
+1	  To address this issue, we propose adversarial distillation consisting of a student, a teacher, and a discriminator.
+2	  The discriminator is now a multi-class classifier that distinguishes among the real data, the student, and the teacher.
+1	  The student and the teacher aim to fool the discriminator via adversarial losses, while they learn from each other via distillation losses.
+2	  By optimizing the adversarial and the distillation losses simultaneously, the student and the teacher can learn the real data distribution.
+1	  To accelerate the training, we propose to obtain low-variance gradient updates from the discriminator using a Gumbel-Softmax trick.
+2	  We conduct extensive experiments to demonstrate the superiority of the proposed adversarial distillation under both accuracy and training speed.
+
+
+

@@ -1,0 +1,286 @@
+
+
+# 181
+### http://arxiv.org/abs/1603.09578v1
+## Wireless Coverage Area Computation and Optimization
+
+-1 	A wireless network's design must include the optimization of the area of coverage of its wireless transmitters - mobile and base stations in cellular networks, wireless access points in WLANs, or nodes on a transmit schedule in a wireless ad-hoc network.
+-1 	Typically, the coverage optimization for the common channels is solved by spatial multiplexing, i.e. keeping the access networks far apart.
+-1 	However, with increasing densities of wireless network deployments (including the Internet-of-Things) and paucity of spectrum, and new developments like whitespace devices and self-organizing, cognitive networks, there is a need to manage interference and optimize coverage by efficient algorithms that correctly set the transmit powers to ensure that transmissions only use the power necessary.
+-1 	In this work we study methods for computing and optimizing interference-limited coverage maps of a set of transmitters.
+-1 	We progress successively through increasingly realistic network scenarios.
+-1 	We begin with a disk model with a fixed set of transmitters and present an optimal algorithm for computing the coverage map.
+-1 	We then enhance the model to include updates to the network, in the form of addition or deletion of one transmitter.
+-1 	In this dynamic setting, we present an optimal algorithm to maintain updates to the coverage map.
+-1 	We then move to a more realistic interference model - the SINR model.
+-1 	For the SINR model we first show geometric bases for coverage maps.
+-1 	We then present a method to approximate the measure of the coverage area.
+-1 	Finally, we present an algorithm that uses this measure to optimize the coverage area with minimum total transmit power.
+
+
+# 182
+### http://arxiv.org/abs/1604.01675v1
+## Modeling QoE of Video Streaming in Wireless Networks with Large-Scale Measurement of User Behavior
+
+-1 	Unraveling quality of experience (QoE) of video streaming is very challenging in bandwidth shared wireless networks.
+-1 	It is unclear how QoE metrics such as starvation probability and buffering time interact with dynamics of streaming traffic load.
+-1 	In this paper, we collect view records from one of the largest streaming providers in China over two weeks and perform an in-depth measurement study on flow arrival and viewing time that shed light on the real traffic pattern.
+-1 	Our most important observation is that the viewing time of streaming users fits a hyper-exponential distribution quite well.
+-1 	This implies that all the views can be categorized into two classes, short and long views with separated time scales.
+-1 	We then map the measured traffic pattern to bandwidth shared cellular networks and propose an analytical framework to compute the closed-form starvation probability on the basis of ordinary differential equations (ODEs).
+-1 	Our framework can be naturally extended to investigate practical issues including the progressive downloading and the finite video duration.
+-1 	Extensive trace-driven simulations validate the accuracy of our models.
+-1 	Our study reveals that the starvation metrics of the short and long views possess different sensitivities to the scheduling priority at base station.
+-1 	Hence, a better QoE tradeoff between the short and long views has a potential to be leveraged by offering them different scheduling weights.
+-1 	The flow differentiation involves tremendous technical and non-technical challenges because video content is owned by content providers but not the network operators and the viewing time of each session is unknown beforehand.
+-1 	To overcome these difficulties, we propose an online Bayesian approach to infer the viewing time of each incoming flow with the "least" information from content providers.
+
+
+# 183
+### http://arxiv.org/abs/1604.08625v1
+## Throughput and range characterization of IEEE 802.11ah
+
+-1 	The most essential part of Internet of Things (IoT) infrastructure is the wireless communication system that acts as a bridge for the delivery of data and control messages.
+-1 	However, the existing wireless technologies lack the ability to support a huge amount of data exchange from many battery driven devices spread over a wide area.
+-1 	In order to support the IoT paradigm, the IEEE 802.
+-1 	11 standard committee is in process of introducing a new standard, called IEEE 802.
+-1 	11ah.
+-1 	This is one of the most promising and appealing standards, which aims to bridge the gap between traditional mobile networks and the demands of the IoT.
+-1 	In this paper, we first discuss the main PHY and MAC layer amendments proposed for IEEE 802.
+-1 	11ah.
+-1 	Furthermore, we investigate the operability of IEEE 802.
+-1 	11ah as a backhaul link to connect devices over a long range.
+-1 	Additionally, we compare the aforementioned standard with previous notable IEEE 802.
+-1 	11 amendments (i.e. IEEE 802.
+-1 	11n and IEEE 802.
+-1 	11ac) in terms of throughput (with and without frame aggregation) by utilizing the most robust modulation schemes.
+-1 	The results show an improved performance of IEEE 802.
+-1 	11ah (in terms of power received at long range while experiencing different packet error rates) as compared to previous IEEE 802.
+-1 	11 standards.
+
+
+# 184
+### http://arxiv.org/abs/1605.03678v1
+## Energy-aware Traffic Engineering in Hybrid SDN/IP Backbone Networks
+
+-1 	Software Defined Networking (SDN) can effectively improve the performance of traffic engineering and has promising application foreground in backbone networks.
+-1 	Therefore, new energy saving schemes must take SDN into account, which is extremely important considering the rapidly increasing energy consumption from Telecom and ISP networks.
+-1 	At the same time, the introduction of SDN in a current network must be incremental in most cases, for both technical and economic reasons.
+-1 	During this period, operators have to manage hybrid networks, where SDN and traditional protocols coexist.
+-1 	In this paper, we study the energy efficient traffic engineering problem in hybrid SDN/IP networks.
+-1 	We first formulate the mathematic optimization model considering SDN/IP hybrid routing mode.
+-1 	As the problem is NP-hard, we propose the fast heuristic algorithm named HEATE (Hybrid Energy-Aware Traffic Engineering).
+-1 	In our proposed HEATE algorithm, the IP routers perform the shortest path routing using the distribute OSPF link weight optimization.
+-1 	The SDNs perform the multi-path routing with traffic flow splitting by the global SDN controller.
+-1 	The HEATE algorithm finds the optimal setting of OSPF link weight and splitting ratio of SDNs.
+-1 	Thus traffic flow is aggregated onto partial links and the underutilized links can be turned off to save energy.
+-1 	By computer simulation results, we show that our algorithm has a significant improvement in energy efficiency in hybrid SDN/IP networks.
+
+
+# 185
+### http://arxiv.org/abs/1605.07685v1
+## Characterizing and Avoiding Routing Detours Through Surveillance States
+
+-1 	An increasing number of countries are passing laws that facilitate the mass surveillance of Internet traffic.
+-1 	In response, governments and citizens are increasingly paying attention to the countries that their Internet traffic traverses.
+-1 	In some cases, countries are taking extreme steps, such as building new Internet Exchange Points (IXPs), which allow networks to interconnect directly, and encouraging local interconnection to keep local traffic local.
+-1 	We find that although many of these efforts are extensive, they are often futile, due to the inherent lack of hosting and route diversity for many popular sites.
+-1 	By measuring the country-level paths to popular domains, we characterize transnational routing detours.
+-1 	We find that traffic is traversing known surveillance states, even when the traffic originates and ends in a country that does not conduct mass surveillance.
+-1 	Then, we investigate how clients can use overlay network relays and the open DNS resolver infrastructure to prevent their traffic from traversing certain jurisdictions.
+-1 	We find that 84\% of paths originating in Brazil traverse the United States, but when relays are used for country avoidance, only 37\% of Brazilian paths traverse the United States.
+-1 	Using the open DNS resolver infrastructure allows Kenyan clients to avoid the United States on 17\% more paths.
+-1 	Unfortunately, we find that some of the more prominent surveillance states (e.g., the U.
+-1 	S.)
+-1 	are also some of the least avoidable countries.
+
+
+# 186
+### http://arxiv.org/abs/1605.09350v1
+## Computing backup forwarding rules in Software-Defined Networks
+
+-1 	The past century of telecommunications has shown that failures in networks are prevalent.
+-1 	Although much has been done to prevent failures, network nodes and links are bound to fail eventually.
+-1 	Failure recovery processes are therefore needed.
+-1 	Failure recovery is mainly influenced by (1) detection of the failure, and (2) circumvention of the detected failure.
+-1 	However, especially in SDNs where controllers recompute network state reactively, this leads to high delays.
+-1 	Hence, next to primary rules, backup rules should be installed in the switches to quickly detour traffic once a failure occurs.
+-1 	In this work, we propose algorithms for computing an all-to-all primary and backup network forwarding configuration that is capable of circumventing link and node failures.
+-1 	Omitting the high delay invoked by controller recomputation through preconfiguration, our proposal's recovery delay is close to the detection time which is significantly below the 50 ms rule of thumb.
+-1 	After initial recovery, we recompute network configuration to guarantee protection from future failures.
+-1 	Our algorithms use packet-labeling to guarantee correct and shortest detour forwarding.
+-1 	The algorithms and labeling technique allow packets to return to the primary path and are able to discriminate between link and node failures.
+-1 	The computational complexity of our solution is comparable to that of all-to-all-shortest paths computations.
+-1 	Our experimental evaluation on both real and generated networks shows that network configuration complexity highly decreases compared to classic disjoint paths computations.
+-1 	Finally, we provide a proof-of-concept OpenFlow controller in which our proposed configuration is implemented, demonstrating that it readily can be applied in production networks.
+
+
+# 187
+### http://arxiv.org/abs/1607.03254v1
+## NxWLAN: Neighborhood eXtensible WLAN
+
+-1 	The increased usage of IEEE 802.
+-1 	11 Wireless LAN (WLAN) in residential environments by unexperienced users leads to dense, unplanned and chaotic residential WLAN deployments.
+-1 	Often WLAN Access Points (APs) are deployed unprofitable in terms of radio coverage and interference conditions.
+-1 	In many cases the usage of the neighbor's AP would be beneficial as it would provide better radio coverage in some parts of the residential user's apartment.
+-1 	Moreover, the network performance can be dramatically improved by balancing the network load over spatially co-located APs.
+-1 	We address this problem by presenting Neighborhood extensible WLAN (NxWLAN) which enables the secure extension of user's home WLANs through usage of neighboring APs in residential environments with zero configuration efforts and without revealing WPA2 encryption keys to untrusted neighbor APs.
+-1 	NxWLAN makes use of virtualization techniques utilizing neighboring AP by deploying on-demand a Wireless Termination Point (WTP) on the neighboring AP and by tunneling encrypted 802.
+-1 	11 traffic to the Virtual Access Point (VAP) residing on the home AP.
+-1 	This allows the client devices to always authenticate against the home AP using the WPA2-PSK passphrase already stored in the device without any additional registration process.
+-1 	We implemented NxWLAN prototypically using off-the-shelf hardware and open source software.
+-1 	As the OpenFlow is not suited for forwarding native 802.
+-1 	11 frames, we built software switch using P4 language.
+-1 	The performance evaluation in a small 802.
+-1 	11 indoor testbed showed the feasibility of our approach.
+-1 	NxWLAN is provided to the community as open source.
+
+
+# 188
+### http://arxiv.org/abs/1607.05037v3
+## A Markov Chain Model for the Decoding Probability of Sparse Network Coding
+
+-1 	Random Linear Network Coding (RLNC) has been proved to offer an efficient communication scheme, leveraging an interesting robustness against packet losses.
+-1 	However, it suffers from a high computational complexity and some novel approaches, which follow the same idea, have been recently proposed.
+-1 	One of such solutions is Tunable Sparse Network Coding (TSNC), where only few packets are combined in each transmissions.
+-1 	The amount of data packets to be combined in each transmissions can be set from a density parameter/distribution, which could be eventually adapted.
+-1 	In this work we present an analytical model that captures the performance of SNC on an accurate way.
+-1 	We exploit an absorbing Markov process where the states are defined by the number of useful packets received by the decoder, i.
+-1 	e the decoding matrix rank, and the number of non-zero columns at such matrix.
+-1 	The model is validated by means of a thorough simulation campaign, and the difference between model and simulation is negligible.
+-1 	A mean square error less than $4 \cdot 10^{-4}$ in the worst cases.
+-1 	We also include in the comparison some of more general bounds that have been recently used, showing that their accuracy is rather poor.
+-1 	The proposed model would enable a more precise assessment of the behavior of sparse network coding techniques.
+-1 	The last results show that the proposed analytical model can be exploited by the TSNC techniques in order to select by the encoder the best density as the transmission evolves.
+
+
+# 189
+### http://arxiv.org/abs/1608.06676v1
+## Future Network: End-to-End Slicing and Hop-On (a Slice)
+
+-1 	The concept of network slice, i.
+-1 	e.,
+-1 	a service customized virtual network (VN) is attracting more and more attentions in the telecommunication industry.
+-1 	A slice is a set of network resources which fits the service attributes and requirements of customer services.
+-1 	The network resources consist of cloud resources and communication link resources.
+-1 	A slice can serve one or more customer services which share the similar service attributes and requirements.
+-1 	To define, create and manage a slice (VN) is one aspect of future networks.
+-1 	Another aspect is the slice operation, i.e., the provisioning of services to customers using created slices.
+-1 	In this paper, the focus is put on the configuration of slices and the operation of slices.
+-1 	In this paper, the detailed description of slice (VN) configuration is provided.
+-1 	A new concept of hop-on (a slice) is described.
+-1 	Given a well defined and configured end-to-end slice (VN), the realtime data traffic delivery over a slice is governed by network operation control entities, which are also pre-configured.
+-1 	Therefore, the procedure of customer traffic delivery over a slice is just like a traveler hopping on tourist bus and then the traffic control officers at key intersections directing the traveler to go through pre-designed routes until the destination is reached.
+
+
+# 190
+### http://arxiv.org/abs/1608.07891v1
+## A Non-stochastic Learning Approach to Energy Efficient Mobility Management
+
+-1 	Energy efficient mobility management is an important problem in modern wireless networks with heterogeneous cell sizes and increased nodes densities.
+-1 	We show that optimization-based mobility protocols cannot achieve long-term optimal energy consumption, particularly for ultra-dense networks (UDN).
+-1 	To address the complex dynamics of UDN, we propose a non-stochastic online-learning approach which does not make any assumption on the statistical behavior of the small base station (SBS) activities.
+-1 	In addition, we introduce handover cost to the overall energy consumption, which forces the resulting solution to explicitly minimize frequent handovers.
+-1 	The proposed Batched Randomization with Exponential Weighting (BREW) algorithm relies on batching to explore in bulk, and hence reduces unnecessary handovers.
+-1 	We prove that the regret of BREW is sublinear in time, thus guaranteeing its convergence to the optimal SBS selection.
+-1 	We further study the robustness of the BREW algorithm to delayed or missing feedback.
+-1 	Moreover, we study the setting where SBSs can be dynamically turned on and off.
+-1 	We prove that sublinear regret is impossible with respect to arbitrary SBS on/off, and then develop a novel learning strategy, called ranking expert (RE), that simultaneously takes into account the handover cost and the availability of SBS.
+-1 	To address the high complexity of RE, we propose a contextual ranking expert (CRE) algorithm that only assigns experts in a given context.
+-1 	Rigorous regret bounds are proved for both RE and CRE with respect to the best expert.
+-1 	Simulations show that not only do the proposed mobility algorithms greatly reduce the system energy consumption, but they are also robust to various dynamics which are common in practical ultra-dense wireless networks.
+
+
+# 191
+### http://arxiv.org/abs/1608.08660v1
+## Tunable QoS-Aware Network Survivability
+
+-1 	Coping with network failures has been recognized as an issue of major importance in terms of social security, stability and prosperity.
+-1 	It has become clear that current networking standards fall short of coping with the complex challenge of surviving failures.
+-1 	The need to address this challenge has become a focal point of networking research.
+-1 	In particular, the concept of \textbf{\emph{tunable survivability}} offers major performance improvements over traditional approaches.
+-1 	Indeed, while the traditional approach aims at providing full (100\%) protection against network failures through disjoint paths, it was realized that this requirement is too restrictive in practice.
+-1 	Tunable survivability provides a quantitative measure for specifying the desired level (0\%-100\%) of survivability and offers flexibility in the choice of the routing paths.
+-1 	Previous work focused on the simpler class of "bottleneck" criteria, such as bandwidth.
+-1 	In this study, we focus on the important and much more complex class of \emph{additive} criteria, such as delay and cost.
+-1 	First, we establish some (in part, counter-intuitive) properties of the optimal solution.
+-1 	Then, we establish efficient algorithmic schemes for optimizing the level of survivability under additive end-to-end QoS bounds.
+-1 	Subsequently, through extensive simulations, we show that, at the price of \emph{negligible} reduction in the level of survivability, a major improvement (up to a factor of $2$) is obtained in terms of end-to-end QoS performance.
+-1 	Finally, we exploit the above findings in the context of a network design problem, in which, for a given investment budget, we aim to improve the survivability of the network links.
+
+
+# 192
+### http://arxiv.org/abs/1609.02375v1
+## Feasibility Study on Disaster Management with Hybrid Network of LTE and Satellite Links
+
+-1 	We are highly vulnerable to either natural or artificial catastrophes and therefore, Public Protection and Disaster Relief (PPDR) operators need reliable wireless communications for successful operations especially in critical rescue missions.
+-1 	PPDR dedicated or commercial terrestrial networks have always been used which at most times lead to unsuccessful operations.
+-1 	This is due to the fact these networks are all infrastructure-based which can be destroyed, fail to deliver the required service or the networks are not able to support and sustain the sudden traffic surge.
+-1 	Long-Term Evolution (LTE) is earmarked as the future candidate technology for PPDR purpose and so much have been put into it in terms of research, perhaps suitable architecture that will meet mission-critical requirements can be developed.
+-1 	This can only work if terrestrial networks will always be available.
+-1 	Unfortunately, in worst case scenarios, infrastructures might get damaged totally or might be destroyed by subsequent disasters.
+-1 	As a result, adequate guarantees can only be possible in the hypothesis of very high financial involvement.
+-1 	Fortunately, considering availability, coverage ubiquity and reliability, satellite technologies have lately proven good.
+-1 	So, to maximize the high channel performance of terrestrial networks and the availability and reliability of non-terrestrial networks, the solution lies in a hybrid system.
+-1 	It is on this ground that this work deals with the integration of LTE and satellite networks in both infrastructure-based and infrastructure-less topologies for PPDR purpose.
+-1 	It is aim at providing people trapped in disaster and field operators with a transparent accessibility and guaranteed coverage even when infrastructures are damaged.
+-1 	The requirements are defined and the model simulated.
+-1 	The network is able to provide network coverage, enhanced capacity and promised greater resilience.
+
+
+# 193
+### http://arxiv.org/abs/1609.06862v1
+## Total Order Reliable Convergecast in WBAN
+
+-1 	This paper is the first extensive work on total order reliable convergecast in multi-hop Wireless Body Area Networks (WBAN).
+-1 	Convergecast is a many-to-one cooperative scheme where each node of the network transmits data towards the same sink.
+-1 	Our contribution is threefold.
+-1 	First, we stress existing WBAN convergecast strategies with respect to their capacity to be reliable and to ensure the total order delivery at sink.
+-1 	That is, packets sent in a specific order should be received in the same order by the sink.
+-1 	When stressed with transmission rates up to 500 packets per second the performances of these strategies decrease dramatically (more than 90% of packets lost).
+-1 	Secondly, we propose a new posture-centric model for WBAN.
+-1 	This model offers a good characterization of the path availability which is further used to fine tune the retransmission rate thresholds.
+-1 	Third, based on our model we propose a new mechanism for reliability and a new converge-cast strategy that outperforms WBAN dedicated strategies but also strategies adapted from DTN and WSN areas.
+-1 	Our extensive performance evaluations use essential parameters for WBAN: packet lost, total order reliability (messages sent in a specific order should be delivered in that specific order) and various human body postures.
+-1 	In particular, our strategy ensures zero packet order inversions for various transmission rates and mobility postures.
+-1 	Interestingly, our strategy respects this property without the need of additional energy-guzzler mechanisms.
+
+
+# 194
+### http://arxiv.org/abs/1610.00355v2
+## Security and Privacy Analysis of NSF Future Internet Architectures
+
+-1 	The Internet Protocol (IP) is the lifeblood of the modern Internet.
+-1 	Its simplicity and universality have fueled the unprecedented and lasting global success of the current Internet.
+-1 	Nonetheless, some limitations of IP have been emerging in recent years.
+-1 	Its original design envisaged supporting perhaps tens of thousands of static hosts operating in a friendly academic-like setting, mainly in order to facilitate email communication and remote access to scarce computing resources.
+-1 	At present IP interconnects billions of static and mobile devices (ranging from supercomputers to IoT gadgets) with a large and dynamic set of popular applications.
+-1 	Starting in mid-1990s, the advent of mobility, wirelessness and the web substantially shifted Internet usage and communication paradigms.
+-1 	This accentuated long-term concerns about the current Internet architecture and prompted interest in alternative designs.
+-1 	The U.
+-1 	S.
+-1 	National Science Foundation (NSF) has been one of the key supporters of efforts to design a set of candidate next-generation Internet architectures.
+-1 	As a prominent design requirement, NSF emphasized "security and privacy by design" in order to avoid the long and unhappy history of incremental patching and retrofitting that characterizes the current Internet architecture.
+-1 	To this end, as a result of a competitive process, four prominent research projects were funded by the NSF in 2010: Nebula, Named-Data Networking (NDN), MobilityFirst (MF), and Expressive Internet Architecture (XIA).
+-1 	This paper provides a comprehensive and neutral analysis of salient security and privacy features (and issues) in these NSF-funded Future Internet Architectures.
+-1 	It also compares the four candidate designs with the current IP-based architecture and discusses similarities, differences, and possible improvements.
+
+
+# 195
+### http://arxiv.org/abs/1610.04688v1
+## ExpressPass: End-to-End Credit-based Congestion Control for Datacenters
+
+-1 	As link speeds increase in datacenter networks, existing congestion control algorithms become less effective in providing fast convergence.
+-1 	TCP-based algorithms that probe for bandwidth take a long time to reach the fair-share and lead to long flow completion times.
+-1 	An ideal congestion control algorithms for datacenter must provide 1) zero data loss, 2) fast convergence, and 3) low buffer occupancy.
+-1 	However, these requirements present conflicting goals.
+-1 	For fast convergence,flows must ramp up quickly, but this risks packet losses and large queues.
+-1 	Thus, even the state-of-the-art algorithms, such as TIMELY and DCQCN, rely on link layer flow control (e.
+-1 	g.,
+-1 	Priority-based Flow Control) to achieve zero loss.
+-1 	This paper presents a new approach, called ExpressPass, an end-to-end credit-based congestion control algorithm for datacenters.
+-1 	ExpressPass is inspired by credit-based flow control, but extends it to work end-to-end.
+-1 	The switches control the amount of credit packets by rate limiting and ensure data packets flow in the reverse direction without any loss.
+-1 	ExpressPass leverages this to ramp up aggressively.
+-1 	ExpressPass converges up to 80 times faster than DCTCP at 10Gbps link, and the gap increases as link speeds become faster.
+-1 	Our simulation with realistic workload shows that ExpressPass significantly reduces the flow completion time especially for small and medium size flows compared to DCTCP, HULL, and DX.

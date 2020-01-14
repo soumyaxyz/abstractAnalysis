@@ -1,0 +1,285 @@
+
+
+# 166
+### http://arxiv.org/abs/1501.06446v1
+## Index Policies for Optimal Mean-Variance Trade-Off of Inter-delivery Times in Real-Time Sensor Networks
+
+-1 	A problem of much current practical interest is the replacement of the wiring infrastructure connecting approximately 200 sensor and actuator nodes in automobiles by an access point.
+-1 	This is motivated by the considerable savings in automobile weight, simplification of manufacturability, and future upgradability.
+-1 	A key issue is how to schedule the nodes on the shared access point so as to provide regular packet delivery.
+-1 	In this and other similar applications, the mean of the inter-delivery times of packets, i.e., throughput, is not sufficient to guarantee service-regularity.
+-1 	The time-averaged variance of the inter-delivery times of packets is also an important metric.
+-1 	So motivated, we consider a wireless network where an Access Point schedules real-time generated packets to nodes over a fading wireless channel.
+-1 	We are interested in designing simple policies which achieve optimal mean-variance tradeoff in interdelivery times of packets by minimizing the sum of time-averaged means and variances over all clients.
+-1 	Our goal is to explore the full range of the Pareto frontier of all weighted linear combinations of mean and variance so that one can fully exploit the design possibilities.
+-1 	We transform this problem into a Markov decision process and show that the problem of choosing which node's packet to transmit in each slot can be formulated as a bandit problem.
+-1 	We establish that this problem is indexable and explicitly derive the Whittle indices.
+-1 	The resulting Index policy is optimal in certain cases.
+-1 	We also provide upper and lower bounds on the cost for any policy.
+-1 	Extensive simulations show that Index policies perform better than previously proposed policies.
+
+
+# 167
+### http://arxiv.org/abs/1502.01887v1
+## A Comparison Study of Coupled and Decoupled Uplink Heterogeneous Cellular Networks
+
+-1 	The evolution of mobile cellular networks has brought great changes of network architecture.
+-1 	For example, heterogeneous cellular network (HetNet) and Ultra dense network (UDN) have been proposed as promising techniques for 5G systems.
+-1 	Dense deployment of base stations (BSs) allows a mobile user to be able to access multiple BSs.
+-1 	Meanwhile the unbalance between UL and DL in HetNets, such as different received SINR threshold and traffic load, etc.,
+-1 	becomes increasingly obvious.
+-1 	All these factors naturally inspire us to consider decoupling of uplink and downlink in radio access network.
+-1 	An interesting question is that whether the decoupled uplink (UL) /downlink (DL) access (DUDA) mode outperforms traditional coupled uplink (UL)/downlink (DL) access (CUDA) mode or not, and how big is the performance difference in terms of system rate, spectrum efficiency (SE) and energy efficiency (EE), etc.
+-1 	in HetNets.
+-1 	In this paper, we aim at thoroughly comparing the performance of the two modes based on stochastic geometry theory.
+-1 	In our analytical model, we take into account dynamic transmit power control in UL communication.
+-1 	Specifically, we employ fractional power control (FPC) to model a location-dependent channel state.
+-1 	Numerical results reveals that DUDA mode significantly outperforms CUDA mode in system rate, SE and EE in HetNets.
+-1 	In addition, DUDA mode improves load balance and potential fairness for both different type BSs and associated UEs.
+
+
+# 168
+### http://arxiv.org/abs/1502.04801v1
+## An IDS scheme against Black hole Attack to Secure AOMDV Routing in MANET
+
+-1 	In Mobile Ad hoc Network (MANET) all the nodes are freely moves in the absence of without ant centralized coordination system.
+-1 	Due to that the attackers or malicious nodes are easily affected that kind of network and responsible for the routing misbehavior.
+-1 	The routing is network is mandatory to deliver data in between source and destination.
+-1 	In this research we work on security field in MANET and proposed a novel security scheme against routing misbehavior through Black hole attack.
+-1 	The Ad hoc On demand Multipath Routing (AOMDV) protocol is consider for routing and also to improves the routing quality as compare to single path routing protocol.
+-1 	The attacker is affected all the possible paths that is selected by sender for sending data in network.
+-1 	The malicious nodes are forward optimistic reply at the time of routing by that their identification is also a complex procedure.
+-1 	The proposed Intrusion Detection System (IDS) scheme is identified the attacker information through hop count mechanism.
+-1 	The routing information of actual data is reached to which intermediate node and the next hop information is exist at that node is confirm by IDS scheme.
+-1 	The black hole attacker node Identification (ID) is forward in network by that in future attacker is not participating in routing procedure.
+-1 	The proposed security scheme detects and provides the deterrence against routing misbehavior through malicious attack.
+-1 	Here we compare the routing performance of AOMDV, Attack and IDS scheme.
+-1 	The performance of normal multipath routing and proposed IDS scheme is almost equal.
+-1 	The attacker has degrades the whole routing performance but observed that in presence of attacker, routing misbehavior is completely block by the proposed IDS scheme and recovers 95 % of data as compare to normal routing.
+-1 	Keywords- -AOMDV, MANET, IDS, Black hole attack, Routing misbehavior.
+
+
+# 169
+### http://arxiv.org/abs/1502.06329v1
+## QoS Provisioning Using Optimal Call Admission Control for Wireless Cellular Networks
+
+-1 	The increasing demand for advanced services in wireless networks raises the problem for quality of service (QoS) provisioning with proper resource management.
+-1 	In this research, such a provisioning technique for wireless networks is performed by Call Admission Control (CAC).
+-1 	A new approach in CAC named by Uniform Fractional Band (UFB) is proposed in this work for the wireless networks for providing proper priority between new calls and handover calls.
+-1 	This UFB scheme is basically a new style of handover priority scheme.
+-1 	Handover priority is provided by two stages in this scheme which help the network to utilize more resources.
+-1 	In addition, the handover call rate estimation and its impact on QoS provisioning is discussed widely to attain the optimum QoS in proposed handover priority scheme.
+-1 	In multiple services providing wireless network, excessive call blocking of lower priority traffic is very often event at very high traffic rate which is a concerning issue for QoS provisioning.
+-1 	To attain such QoS provisioning for multiple services, another CAC scheme is proposed in this research work.
+-1 	This scheme is recognized by Uniform Band Thinning (UBT) scheme which is based on uniform thinning technique (UTT) and this is quite similar idea as UFB scheme.
+-1 	In this scheme, a set of channels experiences the fractionizing policy.
+-1 	This scheme reduces the call blocking probabilities (CBP) of lower priority traffic classes without notably increasing the CBP of the higher priority traffic classes.
+-1 	The analytical functions of this scheme are deduced in general form which is useful to deduce for any number of traffic classes.
+-1 	In addition, numerical analysis of the proposed UBT scheme shows that the performances in terms of call blocking probability, overall call blocking probability, and channel utilization are improved and optimized compared to the conventional fixed guard channel scheme.
+
+
+# 170
+### http://arxiv.org/abs/1509.04366v4
+## Neighbor discovery latency in BLE-like duty-cycled protocols
+
+-1 	Neighbor discovery is the procedure using which two wireless devices initiate a first contact.
+-1 	In low power ad-hoc networks, radios are duty-cycled and the latency until a packet meets a reception phase of another device is determined by a random process.
+-1 	Most research considers slotted protocols, in which the points in time for reception are temporally coupled to beacon transmissions.
+-1 	In contrast, many recent protocols, such as ANT/ANT+ and Bluetooth Low Energy (BLE) use a slotless, periodic-interval based scheme for neighbor discovery.
+-1 	Here, one device periodically broadcasts packets, whereas the other device periodically listens to the channel.
+-1 	Both periods are independent from each other and drawn over continuous time.
+-1 	Such protocols provide 3 degrees of freedom (viz.,
+-1 	the intervals for advertising and scanning and the duration of each scan phase).
+-1 	Though billions of existing BLE devices rely on these protocols, neither their expected latencies nor beneficial configurations with good latency-duty-cycle relations are known.
+-1 	Parametrizations for the participating devices are usually determined based on a "good guess".
+-1 	In this paper, we for the first time present a mathematical theory which can compute the neighbor discovery latencies for all possible parametrizations.
+-1 	Further, our theory shows that upper bounds on the latency can be guaranteed for all parametrizations, except for a finite number of singularities.
+-1 	Therefore, slotless, periodic interval-based protocols can be used in applications with deterministic latency demands, which have been reserved for slotted protocols until now.
+-1 	Our proposed theory can be used for analyzing the neighbor discovery latencies, for tweaking protocol parameters and for developing new protocols.
+
+
+# 171
+### http://arxiv.org/abs/1509.08194v1
+## Distributed Load Management in Anycast-based CDNs
+
+-1 	Anycast is an internet addressing protocol where multiple hosts share the same IP-address.
+-1 	A popular architecture for modern Content Distribution Networks (CDNs) for geo-replicated HTTP-services consists of multiple layers of proxy nodes for service and co-located DNS-servers for load-balancing on different proxies.
+-1 	Both the proxies and the DNS-servers use anycast addressing, which offers simplicity of design and high availability of service at the cost of partial loss of routing control.
+-1 	Due to the very nature of anycast, load-management decisions by a co-located DNS-server also affects loads at nearby proxies in the network.
+-1 	This makes the problem of distributed load management highly challenging.
+-1 	In this paper, we propose an analytical framework to formulate and solve the load-management problem in this context.
+-1 	We consider two distinct algorithms.
+-1 	In the first half of the paper, we pose the load-management problem as a convex optimization problem.
+-1 	Following a dual decomposition technique, we propose a fully-distributed load management algorithm by introducing FastControl packets.
+-1 	This algorithm utilizes the underlying anycast mechanism itself to enable effective coordination among the nodes, thus obviating the need for any external control channel.
+-1 	In the second half of the paper, we consider an alternative greedy load-management heuristic, currently in production in a major commercial CDN.
+-1 	We study its dynamical characteristics and analytically identify its operational and stability properties.
+-1 	Finally, we critically evaluate both the algorithms and explore their optimality-vs-complexity trade-off using trace-driven simulations.
+
+
+# 172
+### http://arxiv.org/abs/1510.02735v2
+## Reliability and Survivability Analysis of Data Center Network Topologies
+
+-1 	The architecture of several data centers have been proposed as alternatives to the conventional three-layer one.
+-1 	Most of them employ commodity equipment for cost reduction.
+-1 	Thus, robustness to failures becomes even more important, because commodity equipment is more failure-prone.
+-1 	Each architecture has a different network topology design with a specific level of redundancy.
+-1 	In this work, we aim at analyzing the benefits of different data center topologies taking the reliability and survivability requirements into account.
+-1 	We consider the topologies of three alternative data center architecture: Fat-tree, BCube, and DCell.
+-1 	Also, we compare these topologies with a conventional three-layer data center topology.
+-1 	Our analysis is independent of specific equipment, traffic patterns, or network protocols, for the sake of generality.
+-1 	We derive closed-form formulas for the Mean Time To Failure of each topology.
+-1 	The results allow us to indicate the best topology for each failure scenario.
+-1 	In particular, we conclude that BCube is more robust to link failures than the other topologies, whereas DCell has the most robust topology when considering switch failures.
+-1 	Additionally, we show that all considered alternative topologies outperform a three-layer topology for both types of failures.
+-1 	We also determine to which extent the robustness of BCube and DCell is influenced by the number of network interfaces per server.
+
+
+# 173
+### http://arxiv.org/abs/1510.05363v1
+## Region Based Energy Balanced Inter-cluster communication Protocol for Sensor networks
+
+-1 	Wireless sensor networks faces unbalanced energy consumption problem over time.
+-1 	Clustering provides an energy efficient method to improve lifespan of the sensor network.
+-1 	Cluster head collects data from other nodes and transmits it towards the sink node.
+-1 	Cluster heads which are far-off from the sink, consumes more power in transmission of information towards the sink.
+-1 	We propose Region Based Energy Balanced Inter-cluster communication protocol (RBEBP) to improve lifespan of the sensor network.
+-1 	Monitored area has been divided into regions; cluster heads are selected from specific region based on the residual energy of nodes in that region.
+-1 	If energy of nodes of the specific region is low, nodes from another region are selected as cluster heads.
+-1 	Optimized selection of cluster heads helps in improving lifespan of the sensor network.
+-1 	In our scheme, cluster heads which are far-off from the sink use another cluster heads as the relay nodes to transmit their data to the sink node.
+-1 	So energy of cluster heads deplete in a uniform way and complete area remain covered by sensor nodes.
+-1 	Simulation results demonstrate that RBEBP can effectively reduce total energy depletion and considerably extend lifespan of the network as compared to LEACH protocol.
+-1 	RBEBP also minimize the problem of energy holes in monitored area and improve the throughput of the network
+
+
+# 174
+### http://arxiv.org/abs/1511.04023v1
+## Time and Location Aware Mobile Data Pricing
+
+-1 	Mobile users' correlated mobility and data consumption patterns often lead to severe cellular network congestion in peak hours and hot spots.
+-1 	This paper presents an optimal design of time and location aware mobile data pricing, which incentivizes users to smooth traffic and reduce network congestion.
+-1 	We derive the optimal pricing scheme through analyzing a two-stage decision process, where the operator determines the time and location aware prices by minimizing his total cost in Stage I, and each mobile user schedules his mobile traffic by maximizing his payoff (i.e., utility minus payment) in Stage II.
+-1 	We formulate the two-stage decision problem as a bilevel optimization problem, and propose a derivative-free algorithm to solve the problem for any increasing concave user utility functions.
+-1 	We further develop low complexity algorithms for the commonly used logarithmic and linear utility functions.
+-1 	The optimal pricing scheme ensures a win-win situation for the operator and users.
+-1 	Simulations show that the operator can reduce the cost by up to 97.
+-1 	52% in the logarithmic utility case and 98.
+-1 	70% in the linear utility case, and users can increase their payoff by up to 79.
+-1 	69% and 106.
+-1 	10% for the two types of utilities, respectively, comparing with a time and location independent pricing benchmark.
+-1 	Our study suggests that the operator should provide price discounts at less crowded time slots and locations, and the discounts need to be significant when the operator's cost of provisioning excessive traffic is high or users' willingness to delay traffic is low.
+
+
+# 175
+### http://arxiv.org/abs/1511.08331v1
+## Value of Information Aware Opportunistic Duty Cycling in Solar Harvesting Sensor Networks
+
+-1 	The energy-harvested Wireless Sensor Networks (WSNs) may operate perpetually with the extra energy supply from ambient natural energy, such as solar energy.
+-1 	Nevertheless, the harvested energy is still limited so it's not able to support the perpetual network operation with full duty cycle.
+-1 	To achieve the perpetual network operation and process the data with high importance, measured by Value of Information (VoI), the network has to operate under partial duty cycle and to improve the efficiency to consume the harvested energy.
+-1 	The challenging problem is how to deal with the stochastic feature of the natural energy and the variable data VoI.
+-1 	We consider the energy consumption during storing and the diversity of the data process including sampling, transmitting and receiving, which consume different power levels.
+-1 	The problem is then mapped as the budget-dynamic Multi-Arm Bandit (MAB) problem by treating the energy as the budget and the data process as arm pulling.
+-1 	This paper proposes an Opportunistic Duty Cycling (ODC) scheme to improve the energy efficiency while satisfying the perpetual network operation.
+-1 	ODC chooses the proper opportunities to store the harvested energy or to spend it on the data process based on the historical information of the energy harvesting and the VoI of the processed data.
+-1 	With this scheme, each sensor node need only estimate the ambient natural energy in short term so as to reduce the computation and the storage for the historical information.
+-1 	It also can distributively adjust its own duty cycle according to its local historical information.
+-1 	This paper also conducts the extensive analysis on the performance of our scheme ODC, and the theoretical results validate the regret, which is the difference between the optimal scheme and ours.
+-1 	Our experimental results also manifest the promising performance of ODC.
+
+
+# 176
+### http://arxiv.org/abs/1603.00406v1
+## Distributed Load Management Algorithms in Anycast-based CDNs
+
+-1 	Anycast is an internet addressing protocol where multiple hosts share the same IP-address.
+-1 	A popular architecture for modern Content Distribution Networks (CDNs) for geo-replicated services consists of multiple layers of proxy nodes for service and co-located DNS-servers for load-balancing among different proxies.
+-1 	Both the proxies and the DNS-servers use anycast addressing, which offers simplicity of design and high availability of service at the cost of partial loss of routing control.
+-1 	Due to the very nature of anycast, redirection actions by a DNS-server also affects loads at nearby proxies in the network.
+-1 	This makes the problem of optimal distributed load management highly challenging.
+-1 	In this paper, we propose and evaluate an analytical framework to formulate and solve the load-management problem in this context.
+-1 	We consider two distinct algorithms.
+-1 	In the first half of the paper, we pose the load-management problem as a convex optimization problem.
+-1 	Following a Kelly-type dual decomposition technique, we propose a fully-distributed load-management algorithm by introducing FastControl packets.
+-1 	This algorithm utilizes the underlying anycast mechanism itself to enable effective coordination among the nodes, thus obviating the need for any external control channel.
+-1 	In the second half of the paper, we consider an alternative greedy load-management heuristic, currently in production in a major commercial CDN.
+-1 	We study its dynamical characteristics and analytically identify its operational and stability properties.
+-1 	Finally, we critically evaluate both the algorithms and explore their optimality-vs-complexity trade-off using trace-driven simulations.
+
+
+# 177
+### http://arxiv.org/abs/1603.07693v1
+## The Sub-band Vectoring Technique for Multi-Operator Environments
+
+-1 	Self- and alien-FEXT disturbances on the same cable severely limit performance in the commonly employed VDSL2 17a, i.e. 17.
+-1 	6 MHz, standard profile.
+-1 	Then, in a multi-operator environment, VDSL2 may be unable to provide the 100 Mbit/s speed required by the EC's policy target, unless vectoring is adopted along with a suitable Multi-Operator Vectoring (MOV) technique.
+-1 	Some vendors recently proposed enlarging the bandwidth up to 35.
+-1 	2~MHz (so-called e-VDSL) as one possible solution to increase the 100 Mbit/s coverage.
+-1 	However, as we show in the paper, the bandwidth advantage is illusory as an "ideal MOV" is not implementable with today's technology, and alien-FEXT practically destroys the envisaged data-rate increase.
+-1 	Therefore, we introduce the Sub-band Vectoring (SBV) technique, as one practical solution, which turns out to be near optimal in terms of achievable data-rate, as well as incremental for those Countries where the NRA adopts sub-loop unbundling regulation.
+-1 	SBV adopts a novel frequency division multiplexing approach, which imposes one fairness condition to equalize data-rate values and overall bandwidth per operator at different distances.
+-1 	The paper shows that e-VDSL with SBV is robust, as it can cope with relatively high values of vectoring impairments.
+-1 	It also shows that the SBV allows up to three co-located operators with e-VDSL to coexist, without imposing any of the burdensome coordination limitations of the ideal MOV architecture.
+-1 	Our results show that the SBV allows achieving up to 210 Mbit/s per user for e-VDSL and up to 620 Mbit/s per user for a bandwidth expanded up to 105.
+-1 	6 MHz, with two telecom operators.
+-1 	Finally, the paper shows that a migration strategy towards usage of the G.
+-1 	fast standard thanks to SBV is achieved in a simple way.
+
+
+# 178
+### http://arxiv.org/abs/1603.08018v1
+## Survivability in IP over WDM networks
+
+-1 	The Internet is emerging as the new universal telecommunication medium.
+-1 	IP over WDM has been envisioned as one of the most attractive architectures for the new Internet.
+-1 	Consequently survivability is a crucial concern in designing IP over WDM networks.
+-1 	This paper presents a survey of the survivability mechanisms for IP over WDM networks and thus is intended to provide a summary of what has been done in this area and help further research.
+-1 	A number of optical layer protection techniques have been discussed.
+-1 	They are examined from the point of view of cost, complexity, and application.
+-1 	Survivability techniques are being made available at multiple layers of the network.
+-1 	This paper also studies the recovery features of each network layer and explains the impact of interaction between layers on survivability.
+-1 	The advantages and issues of multi-layer survivability have been identified.
+-1 	The main idea is that the optical layer can provide fast protection while the higher layers can provide intelligent restoration.
+-1 	With this idea in mind, a new scheme of carrying IP over WDM using MPLS or Multi Protocol Lambda-Switching has been discussed.
+-1 	Finally, an architecture is suggested by means of which the optical layer can perform an automatic protection switch, with priority considerations with the help of signaling from the higher layers.
+
+
+# 179
+### http://arxiv.org/abs/1603.08462v1
+## Survey of Important Issues in UAV Communication Networks
+
+-1 	Unmanned Aerial Vehicles (UAVs) have enormous potential in the public and civil domains.
+-1 	These are particularly useful in applications where human lives would otherwise be endangered.
+-1 	Multi-UAV systems can collaboratively complete missions more efficiently and economically as compared to single UAV systems.
+-1 	However, there are many issues to be resolved before effective use of UAVs can be made to provide stable and reliable context-specific networks.
+-1 	Much of the work carried out in the areas of Mobile Ad Hoc Networks (MANETs), and Vehicular Ad Hoc Networks (VANETs) does not address the unique characteristics of the UAV networks.
+-1 	UAV networks may vary from slow dynamic to dynamic; have intermittent links and fluid topology.
+-1 	While it is believed that ad hoc mesh network would be most suitable for UAV networks yet the architecture of multi-UAV networks has been an understudied area.
+-1 	Software Defined Networking (SDN) could facilitate flexible deployment and management of new services and help reduce cost, increase security and availability in networks.
+-1 	Routing demands of UAV networks go beyond the needs of MANETS and VANETS.
+-1 	Protocols are required that would adapt to high mobility, dynamic topology, intermittent links, power constraints and changing link quality.
+-1 	UAVs may fail and the network may get partitioned making delay and disruption tolerance an important design consideration.
+-1 	Limited life of the node and dynamicity of the network leads to the requirement of seamless handovers where researchers are looking at the work done in the areas of MANETs and VANETs, but the jury is still out.
+-1 	As energy supply on UAVs is limited, protocols in various layers should contribute towards greening of the network.
+-1 	This article surveys the work done towards all of these outstanding issues, relating to this new class of networks, so as to spur further research in these areas.
+
+
+# 180
+### http://arxiv.org/abs/1603.09158v1
+## An Approximation Algorithm for Path Computation and Function Placement in SDNs
+
+-1 	We consider the task of computing (combined) function mapping and routing for requests in Software-Defined Networks (SDNs).
+-1 	Function mapping refers to the assignment of nodes in the substrate network to various processing stages that requests must undergo.
+-1 	Routing refers to the assignment of a path in the substrate network that begins in a source node of the request, traverses the nodes that are assigned functions for this request, and ends in a destination of the request.
+-1 	The algorithm either rejects a request or completely serves a request, and its goal is to maximize the sum of the benefits of the served requests.
+-1 	The solution must abide edge and vertex capacities.
+-1 	We follow the framework suggested by Even for the specification of the processing requirements and routing of requests via processing-and-routing graphs (PR-graphs).
+-1 	In this framework, each request has a demand, a benefit, and PR-graph.
+-1 	Our main result is a randomized approximation algorithm for path computation and function placement with the following guarantee.
+-1 	Let $m$ denote the number of links in the substrate network, $\eps$ denote a parameter such that $0< \eps <1$, and $\opt_f$ denote the maximum benefit that can be attained by a fractional solution (one in which requests may be partly served and flow may be split along multiple paths).
+-1 	Let $\cmin$ denote the minimum edge capacity, and let $\dmax$ denote the maximum demand.
+-1 	Let $\Deltamax$ denote an upper bound on the number of processing stages a request undergoes.
+-1 	If $\cmin/(\Deltamax\cdot\dmax)=\Omega((\log m)/\eps^2)$, then with probability at least $1-\frac{1}{m}-\textit{exp}(-\Omega(\eps^2\cdot \opt_f /(\bmax \cdot \dmax)))$, the algorithm computes a $(1-\eps)$-approximate solution.

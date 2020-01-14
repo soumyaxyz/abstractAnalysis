@@ -1,0 +1,1925 @@
+
+
+# 16
+### http://arxiv.org/abs/cs/0504073v1
+## Rendezvous Regions: A Scalable Architecture for Resource Discovery and Service Location in Large-Scale Mobile Networks
+
+0	In large-scale wireless networks such as mobile ad hoc and sensor networks, efficient and robust service discovery and data-access mechanisms are both essential and challenging.
+0 	Rendezvous-based mechanisms provide a valuable solution for provisioning a wide range of services.
+1 	In this paper, we describe Rendezvous Regions (RRs) - a novel scalable rendezvous-based architecture for wireless networks.
+0 	RR is a general architecture proposed for service location and bootstrapping in ad hoc networks, in addition to data-centric storage, configuration, and task assignment in sensor networks.
+0 	In RR the network topology is divided into geographical regions, where each region is responsible for a set of keys representing the services or data of interest.
+0 	Each key is mapped to a region based on a hash-table-like mapping scheme.
+0 	A few elected nodes inside each region are responsible for maintaining the mapped information.
+0 	The service or data provider stores the information in the corresponding region and the seekers retrieve it from there.
+1 	We run extensive detailed simulations, and high-level simulations and analysis, to investigate the design space, and study the architecture in various environments including node mobility and failures.
+1 	We evaluate it against other approaches to identify its merits and limitations.
+2 	The results show high success rate and low overhead even with dynamics.
+2 	RR scales to large number of nodes and is highly robust and efficient to node failures.
+2 	It is also robust to node mobility and location inaccuracy with a significant advantage over point-based rendezvous mechanisms.
+
+
+# 17
+### http://arxiv.org/abs/cs/0604017v3
+## AS Relationships: Inference and Validation
+
+0 	Research on performance, robustness, and evolution of the global Internet is fundamentally handicapped without accurate and thorough knowledge of the nature and structure of the contractual relationships between Autonomous Systems (ASs).
+1 	In this work we introduce novel heuristics for inferring AS relationships.
+1 	Our heuristics improve upon previous works in several technical aspects, which we outline in detail and demonstrate with several examples.
+1 	Seeking to increase the value and reliability of our inference results, we then focus on validation of inferred AS relationships.
+1 	We perform a survey with ASs' network administrators to collect information on the actual connectivity and policies of the surveyed ASs.
+1 	Based on the survey results, we find that our new AS relationship inference techniques achieve high levels of accuracy: we correctly infer 96.5% customer to provider (c2p), 82.8% peer to peer (p2p), and 90.3% sibling to sibling (s2s) relationships.
+1 	We then cross-compare the reported AS connectivity with the AS connectivity data contained in BGP tables.
+1 	We find that BGP tables miss up to 86.2% of the true adjacencies of the surveyed ASs.
+2 	The majority of the missing links are of the p2p type, which highlights the limitations of present measuring techniques to capture links of this type.
+1 	Finally, to make our results easily accessible and practically useful for the community, we open an AS relationship repository where we archive, on a weekly basis, and make publicly available the complete Internet AS-level topology annotated with AS relationship information for every pair of AS neighbors.
+
+
+# 18
+### http://arxiv.org/abs/cs/0609026v1
+## Rarest First and Choke Algorithms Are Enough
+
+0 	The performance of peer-to-peer file replication comes from its piece and peer selection strategies.
+0 	Two such strategies have been introduced by the BitTorrent protocol: the rarest first and choke algorithms.
+0 	Whereas it is commonly admitted that BitTorrent performs well, recent studies have proposed the replacement of the rarest first and choke algorithms in order to improve efficiency and fairness.
+1 	In this paper, we use results from real experiments to advocate that the replacement of the rarest first and choke algorithms cannot be justified in the context of peer-to-peer file replication in the Internet.
+1 	We instrumented a BitTorrent client and ran experiments on real torrents with different characteristics.
+0 	Our experimental evaluation is peer oriented, instead of tracker oriented, which allows us to get detailed information on all exchanged messages and protocol events.
+1 	We go beyond the mere observation of the good efficiency of both algorithms.
+1 	We show that the rarest first algorithm guarantees close to ideal diversity of the pieces among peers.
+2 	In particular, on our experiments, replacing the rarest first algorithm with source or network coding solutions cannot be justified.
+1 	We also show that the choke algorithm in its latest version fosters reciprocation and is robust to free riders.
+2 	In particular, the choke algorithm is fair and its replacement with a bit level tit-for-tat solution is not appropriate.
+1 	Finally, we identify new areas of improvements for efficient peer-to-peer file replication protocols.
+
+
+# 19
+### http://arxiv.org/abs/cs/0609069v1
+## Coverage and Connectivity in Three-Dimensional Networks
+
+0 	Most wireless terrestrial networks are designed based on the assumption that the nodes are deployed on a two-dimensional (2D) plane.
+0 	However, this 2D assumption is not valid in underwater, atmospheric, or space communications.
+0 	In fact, recent interest in underwater acoustic ad hoc and sensor networks hints at the need to understand how to design networks in 3D.
+0 	Unfortunately, the design of 3D networks is surprisingly more difficult than the design of 2D networks.
+0 	For example, proofs of Kelvin's conjecture and Kepler's conjecture required centuries of research to achieve breakthroughs, whereas their 2D counterparts are trivial to solve.
+1 	In this paper, we consider the coverage and connectivity issues of 3D networks, where the goal is to find a node placement strategy with 100% sensing coverage of a 3D space, while minimizing the number of nodes required for surveillance.
+2 	Our results indicate that the use of the Voronoi tessellation of 3D space to create truncated octahedral cells results in the best strategy.
+2 	In this truncated octahedron placement strategy, the transmission range must be at least 1.7889 times the sensing range in order to maintain connectivity among nodes.
+2 	If the transmission range is between 1.4142 and 1.7889 times the sensing range, then a hexagonal prism placement strategy or a rhombic dodecahedron placement strategy should be used.
+2 	Although the required number of nodes in the hexagonal prism and the rhombic dodecahedron placement strategies is the same, this number is 43.25% higher than the number of nodes required by the truncated octahedron placement strategy.
+1 	We verify by simulation that our placement strategies indeed guarantee ubiquitous coverage.
+2 	We believe that our approach and our results presented in this paper could be used for extending the processes of 2D network design to 3D networks.
+
+
+# 20
+### http://arxiv.org/abs/cs/0609086v1
+## About the Capacity of Flat and Self-Organized Ad Hoc and Hybrid Networks
+
+0 	Ad hoc networking specific challenges foster a strong research effort on efficient protocols design.
+0 	Routing protocols based on a self-organized structure have been studied principally for the robustness and the scalability they provide.
+0 	On the other hand, self-organization schemes may decrease the network capacity since they concentrate the traffic on privileged links.
+0 	This paper presents four models for evaluating the capacity of a routing schemes on 802.11 like networks.
+0 	Our approach consists in modeling the radio resource sharing principles of 802.11 like MAC protocols as a set of linear constraints.
+1 	We have implemented two models of fairness.
+0 	The first one assumes that nodes have a fair access to the channel, while the second one assumes that on the radio links.
+1 	We then develop a pessimistic and an optimistic scenario of spatial re-utilization of the medium, yielding a lower bound and an upper bound on the network capacity for each fairness case.
+0 	Our models are independent of the routing protocols and provide therefore a relevant framework for their comparison.
+1 	We apply our models to a comparative analysis of the well-known shortest path base flat routing protocol OLSR against two main self-organized structure approaches, VSR, and Wu & Li's protocols.
+2 	This study concludes on the relevance of self-organized approaches from the network capacity point of view.
+
+
+# 21
+### http://arxiv.org/abs/cs/0609098v1
+## Reducing the Makespan in Hierarchical Reliable Multicast Tree
+
+0 	In hierarchical reliable multicast environment, makespan is the time that is required to fully and successfully transmit a packet from the sender to all receivers.
+0 	Low makespan is vital for achieving high throughput with a TCP-like window based sending scheme.
+0 	In hierarchical reliable multicast methods, the number of repair servers and their locations influence the makespan.
+1 	In this paper we propose a new method to decide the locations of repair servers that can reduce the makespan in hierarchical reliable multicast networks.
+0 	Our method has a formulation based on mixed integer programming to analyze the makespan minimization problem.
+0 	A notable aspect of the formulation is that heterogeneous links and packet losses are taken into account in the formulation.
+1 	Three different heuristics are presented to find the locations of repair servers in reasonable time in the formulation.
+0 	Through simulations, three heuristics are carefully analyzed and compared on networks with different sizes.
+1 	We also evaluate our proposals on PGM (Pragmatic General Multicast) reliable multicast protocol using ns-2 simulation.
+2 	The results show that the our best heuristic is close to the lower bound by a factor of 2.3 in terms of makespan and by a factor of 5.5 in terms of the number of repair servers.
+
+
+# 22
+### http://arxiv.org/abs/0712.2083v1
+## VoIP over Multiple IEEE 802.11 Wireless LANs
+
+0 	Prior work indicates that 802.11 is extremely inefficient for VoIP transport.
+0 	Only 12 and 60 VoIP sessions can be supported in an 802.11b and an 802.11g WLAN, respectively.
+0 	This paper shows that the bad news does not stop there.
+0 	When there are multiple WLANs in the vicinity of each other, the already-low VoIP capacity can be further eroded in a significant manner.
+0 	For example, in a 5-by-5, 25-cell multi-WLAN network, the VoIP capacities for 802.11b and 802.11g are only 1.63 and 10.34 sessions per AP, respectively.
+0 	This paper investigates several solutions to improve the VoIP capacity.
+1 	Based on a conflict graph model, we propose a clique-analytical call-admission scheme, which increases the VoIP capacity by 52% and 37% in 802.11b and 802.11g respectively.
+2 	If all the three orthogonal frequency channels available in 11b and 11g are used, the capacity can be nearly tripled by the call-admission scheme.
+1 	This paper also proposes for the first time the use of coarse-grained time-division multiple access (CoTDMA) in conjunction with the basic 802.11 CSMA to eliminate the performance-degrading exposed-node and hidden-node problems.
+2 	We find that CoTDMA can further increase the VoIP capacity in the multi-WLAN scenario by an additional 35%.
+
+
+# 23
+### http://arxiv.org/abs/0712.2274v1
+## Distributed MAC Strategy for Exploiting Multi-user Diversity in Multi-rate IEEE 802.11 Wireless LANs
+
+0 	Fast rate adaptation has been established as an effective way to improve the PHY-layer raw date rate of wireless networks.
+0 	However, within the current IEEE 802.11 legacy, MAC-layer throughput is dominated by users with the lowest data rates, resulting in underutilization of bandwidth.
+1 	In this paper, we propose and analyze a novel distributed MAC strategy, referred to as Rate-aware DCF (R-DCF), to leverage the potential of rate adaptation in IEEE 802.11 WLANs.
+0 	The key feature of R-DCF is that by introducing different mini slots according to the instantaneous channel conditions, only contending stations with the highest data rate can access the channel.
+0 	In this way, the R-DCF protocol not only exploits multi-user diversity in a fully distributed manner but also reduces the loss of throughput due to collisions.
+1 	Through analysis, we develop an analytical model to derive the throughput of R-DCF in general multi-rate WLANs.
+1 	Using the analytical model we investigate the performance of R-DCF protocol in various network settings with different rate adaptation strategies and channel variations.
+1 	Based on the analysis, we further derive the maximal throughput achievable by R-DCF.
+1 	For practical implementation, an offline adaptive backoff method is developed to achieve a close-to-optimal performance at low runtime complexity.
+2 	The superiority of R-DCF is proven via extensive analyses and simulations.
+
+
+# 24
+### http://arxiv.org/abs/0807.1153v1
+## CSI: A Paradigm for Behavior-oriented Delivery Services in Mobile Human Networks
+
+0 	We propose behavior-oriented services as a new paradigm of communication in mobile human networks.
+0 	Our study is motivated by the tight user-network coupling in future mobile societies.
+0 	In such a paradigm, messages are sent to inferred behavioral profiles, instead of explicit IDs.
+0 	Our paper provides a systematic framework in providing such services.
+0 	First, user behavioral profiles are constructed based on traces collected from two large wireless networks, and their spatio-temporal stability is analyzed.
+0 	The implicit relationship discovered between mobile users could be utilized to provide a service for message delivery and discovery in various network environments.
+1 	As an example application, we provide a detailed design of such a service in challenged opportunistic network architecture, named CSI.
+1 	We provide a fully distributed solution using behavioral profile space gradients and small world structures.
+2 	Our analysis shows that user behavioral profiles are surprisingly stable, i.e., the similarity of the behavioral profile of a user to its future behavioral profile is above 0.8 for two days and 0.75 for one week, and remains above 0.6 for five weeks.
+2 	The correlation coefficient of the similarity metrics between a user pair at different time instants is above 0.7 for four days, 0.62 for a week, and remains above 0.5 for two weeks.
+2 	Leveraging such a stability in user behaviors, the CSI service achieves delivery rate very close to the delay-optimal strategy (above 94%), with minimal overhead (less than 84% of the optimal).
+2 	We believe that this new paradigm will act as an enabler of multiple new services in mobile societies, and is potentially applicable in server-based, heterogeneous or infrastructure-less wireless environments.
+
+
+# 25
+### http://arxiv.org/abs/0812.4744v1
+## On Wireless Link Scheduling and Flow Control
+
+0 	This thesis focuses on link scheduling in wireless mesh networks by taking into account physical layer characteristics.
+0 	The assumption made throughout is that a packet is received successfully only if the Signal to Interference and Noise Ratio (SINR) at the receiver exceeds the communication threshold.
+0 	The thesis also discusses the complementary problem of flow control. 
+1 	(1) We consider various problems on centralized link scheduling in Spatial Time Division Multiple Access (STDMA) wireless mesh networks.
+1 	We motivate the use of spatial reuse as performance metric and provide an explicit characterization of spatial reuse.
+1 	We propose link scheduling algorithms based on certain graph models (communication graph, SINR graph) of the network.
+2 	Our algorithms achieve higher spatial reuse than that of existing algorithms, with only a slight increase in computational complexity. 
+1 	(2) We investigate random access algorithms in wireless networks.
+1 	We assume that the receiver is capable of power-based capture and propose a splitting algorithm that varies transmission powers of users on the basis of quaternary channel feedback.
+1 	We model the algorithm dynamics by a Discrete Time Markov Chain and consequently show that its maximum stable throughput is 0.5518.
+2 	Our algorithm achieves higher maximum stable throughput and significantly lower delay than the First Come First Serve (FCFS) splitting algorithm with uniform transmission power. 
+1 	(3) We consider the problem of flow control in packet networks from an information-theoretic perspective.
+1 	We derive the maximum entropy of a flow which conforms to traffic constraints imposed by a generalized token bucket regulator (GTBR), by taking into account the covert information present in randomness of packet lengths.
+
+
+# 26
+### http://arxiv.org/abs/0906.3038v1
+## A measurement driven, 802.11 anti-jamming system
+
+0 	Dense, unmanaged 802.11 deployments tempt saboteurs into launching jamming attacks by injecting malicious interference.
+0 	Nowadays, jammers can be portable devices that transmit intermittently at low power in order to conserve energy.
+1 	In this paper, we first conduct extensive experiments on an indoor 802.11 network to assess the ability of two physical layer functions, rate adaptation and power control, in mitigating jamming.
+1 	In the presence of a jammer we find that: (a) the use of popular rate adaptation algorithms can significantly degrade network performance and, (b) appropriate tuning of the carrier sensing threshold allows a transmitter to send packets even when being jammed and enables a receiver capture the desired signal.
+1 	Based on our findings, we build ARES, an Anti-jamming REinforcement System, which tunes the parameters of rate adaptation and power control to improve the performance in the presence of jammers.
+0 	ARES ensures that operations under benign conditions are unaffected.
+1 	To demonstrate the effectiveness and generality of ARES, we evaluate it in three wireless testbeds: (a) an 802.11n WLAN with MIMO nodes, (b) an 802.11a/g mesh network with mobile jammers and (c) an 802.11a WLAN.
+2 	We observe that ARES improves the network throughput across all testbeds by up to 150%.
+
+
+# 27
+### http://arxiv.org/abs/0907.5489v2
+## On Delay Constrained Multicast Capacity of Large-Scale Mobile Ad-Hoc Networks
+
+0 	This paper studies the delay constrained multicast capacity of large scale mobile ad hoc networks (MANETs).
+1 	We consider a MANET consists of $n_s$ multicast sessions.
+0 	Each multicast session has one source and $p$ destinations.
+0 	The wireless mobiles move according to a two-dimensional i.i.d. mobility model.
+0 	Each source sends identical information to the $p$ destinations in its multicast session, and the information is required to be delivered to all the $p$ destinations within $D$ time-slots.
+1 	Given the delay constraint $D,$ we first prove that the capacity per multicast session is $O(\min\{1, (\log p)(\log (n_sp)) \sqrt{\frac{D}{n_s}}\}).
+0 	$ Given non-negative functions $f(n)$ and $g(n)$: $f(n)=O(g(n))$ means there exist positive constants $c$ and $m$ such that $f(n) \leq cg(n)$ for all $ n\geq m;$ $f(n)=\Omega(g(n))$ means there exist positive constants $c$ and $m$ such that $f(n)\geq cg(n)$ for all $n\geq m;$ $f(n)=\Theta(g(n))$ means that both $f(n)=\Omega(g(n))$ and $f(n)=O(g(n))$ hold; $f(n)=o(g(n))$ means that $\lim_{n\to \infty} f(n)/g(n)=0;$ and $f(n)=\omega(g(n))$ means that $\lim_{n\to \infty} g(n)/f(n)=0.
+1 	$ We then propose a joint coding/scheduling algorithm achieving a throughput of $\Theta(\min\{1,\sqrt{\frac{D}{n_s}}\}).
+2 	$ Our simulations show that the joint coding/scheduling algorithm achieves a throughput of the same order ($\Theta(\min\{1, \sqrt{\frac{D}{n_s}}\})$) under random walk model and random waypoint model.
+
+
+# 28
+### http://arxiv.org/abs/0908.0711v3
+## Passive network tomography for erroneous networks: A network coding approach
+
+0 	Passive network tomography uses end-to-end observations of network communication to characterize the network, for instance to estimate the network topology and to localize random or adversarial glitches.
+0 	Under the setting of linear network coding this work provides a comprehensive study of passive network tomography in the presence of network (random or adversarial) glitches.
+0 	To be concrete, this work is developed along two directions: 
+0 	1.Tomographic upper and lower bounds (i.e., the most adverse conditions in each problem setting under which network tomography is possible, and corresponding schemes (computationally efficient, if possible) that achieve this performance) are presented for random linear network coding (RLNC).
+1 	We consider RLNC designed with common randomness, i.e., the receiver knows the random code-books all nodes. 
+1 	(To justify this, we show an upper bound for the problem of topology estimation in networks using RLNC without common randomness.)
+1 	In this setting we present the first set of algorithms that characterize the network topology exactly.
+2 	Our algorithm for topology estimation with random network errors has time complexity that is polynomial in network parameters.
+1 	For the problem of network error localization given the topology information, we present the first computationally tractable algorithm to localize random errors, and prove it is computationally intractable to localize adversarial errors.
+1 	2.New network coding schemes are designed that improve the tomographic performance of RLNC while maintaining the desirable low-complexity, throughput-optimal, distributed linear network coding properties of RLNC.
+1 	In particular, we design network codes based on Reed-Solomon codes so that a maximal number of adversarial errors can be localized in a computationally efficient manner even without the information of network topology.
+
+
+# 29
+### http://arxiv.org/abs/0911.3528v1
+## Estimating Network Link Characteristics using Packet-Pair Dispersion: A Discrete Time Queueing Theoretic View
+
+0 	Packet-dispersion based measurement tools insert pairs of probe packets with a known separation into the network for transmission over a unicast path or a multicast tree.
+0 	Samples of the separation between the probe pairs at the destination(s) are observed.
+0 	Heuristic techniques are then used by these tools to estimate the path characteristics from the observations.
+1 	In this paper we present a queueing theoretic setting for packet-dispersion based probing.
+1 	Analogous to network tomography, we develop techniques to estimate the parameters of the arrival process to the individual links from the samples of the output separations, i.e., from the end-to-end measurements.
+0 	The links are modeled as independent discrete time queues with i.i.d. arrivals.
+1 	We first obtain an algorithm to obtain the (joint) distribution of the separation between the probes at the destination(s) for a given distribution of the spacing at the input.
+0 	The parameter estimates of the arrival process are obtained as the minimizer of a cost function between the empirical and calculated distributions.
+1 	We also carry out extensive simulations and numerical experiments to study the performance of the estimation algorithm under the fairly `harsh' conditions of non stationarity of the arrival process.
+2 	We find that the estimations work fairly well for two queues in series and for multicast.
+
+
+# 30
+### http://arxiv.org/abs/0911.4357v1
+## Splitting Algorithms for Fast Relay Selection: Generalizations, Analysis, and a Unified View
+
+0 	Relay selection for cooperative communications promises significant performance improvements, and is, therefore, attracting considerable attention.
+0 	While several criteria have been proposed for selecting one or more relays, distributed mechanisms that perform the selection have received relatively less attention.
+1 	In this paper, we develop a novel, yet simple, asymptotic analysis of a splitting-based multiple access selection algorithm to find the single best relay.
+0 	The analysis leads to simpler and alternate expressions for the average number of slots required to find the best user.
+0 	By introducing a new `contention load' parameter, the analysis shows that the parameter settings used in the existing literature can be improved upon.
+0 	New and simple bounds are also derived.
+1 	Furthermore, we propose a new algorithm that addresses the general problem of selecting the best $Q \ge 1$ relays, and analyze and optimize it.
+2 	Even for a large number of relays, the algorithm selects the best two relays within 4.406 slots and the best three within 6.491 slots, on average.
+1 	We also propose a new and simple scheme for the practically relevant case of discrete metrics.
+2 	Altogether, our results develop a unifying perspective about the general problem of distributed selection in cooperative systems and several other multi-node systems.
+
+
+# 31
+### http://arxiv.org/abs/0912.4115v2
+## On Channel-Discontinuity-Constraint Routing in Wireless Networks
+
+0	Multi-channel wireless networks are increasingly being employed as infrastructure networks, e.g. in metro areas.
+0 	Nodes in these networks frequently employ directional antennas to improve spatial throughput.
+0 	In such networks, given a source and destination, it is of interest to compute an optimal path and channel assignment on every link in the path such that the path bandwidth is the same as that of the link bandwidth and such a path satisfies the constraint that no two consecutive links on the path are assigned the same channel, referred to as "Channel Discontinuity Constraint" (CDC).
+0 	CDC-paths are also quite useful for TDMA system, where preferably every consecutive links along a path are assigned different time slots.
+0 	This paper contains several contributions.
+1 	We first present an $O(N^{2})$ distributed algorithm for discovering the shortest CDC-path between given source and destination.
+2	This improves the running time of the $O(N^{3})$ centralized algorithm of Ahuja et al. for finding the minimum-weight CDC-path.
+1 	Our second result is a generalized $t$-spanner for CDC-path; For any $\theta>0$ we show how to construct a sub-network containing only $O(\frac{N}{\theta})$ edges, such that that length of shortest CDC-paths between arbitrary sources and destinations increases by only a factor of at most $(1-2\sin{\tfrac{\theta}{2}})^{-2}$.
+1 	We propose a novel algorithm to compute the spanner in a distributed manner using only $O(n\log{n})$ messages.
+2 	An important conclusion of this scheme is in the case of directional antennas are used.
+2	In this case, it is enough to consider only the two closest nodes in each cone.
+
+
+# 32
+### http://arxiv.org/abs/1003.1479v1
+## Analysis, Modification, and Implementation (AMI) of Scheduling Algorithm for the IEEE 802.116e (Mobile WiMAX)
+
+0 	Mobile WiMAX (Worldwide Interoperability for Microwave Access) is being touted as the most promising and potential broadband wireless technology.
+0 	And the popularity rate has been surging to newer heights as the knowledge-backed service era unfolds steadily.
+0	Especially Mobile WiMAX is being projected as a real and strategic boon for developing counties such as India due to its wireless coverage acreage is phenomenally high.
+0	Mobile WiMAX has spurred tremendous interest from operators seeking to deploy high-performance yet cost-effective broadband wireless networks.
+1	The IEEE 802.16e standard based Mobile WiMAX system will be investigated for the purpose of Quality of Service provisioning.
+1	As a technical challenge, radio resource management will be primarily considered and main is the costly spectrum and the increasingly more demanding applications with ever growing number of subscribers.
+0 	It is necessary to provide Quality of Service (QoS) guaranteed with different characteristics.
+1 	As a possible solution the scheduling algorithms will be taken into main consideration and the present well known algorithms will be described.
+2 	In this paper, we have highlighted the following critical issues for Mobile WiMAX technologies.
+2 	This paper specifically discussed about the below mentioned in detail. -
+2 	QoS Requirements For IEEE 802.16 Service Classes, Achieving efficient radio resource management. -
+2	Deficit Round Robin (DRR) Scheduling algorithm. -
+2	Modified Deficit Round Robin (MDRR) scheduling algorithm's attributes, properties and architecture.
+2	System Model And Scenarios Using OPNET Modeler Software. -
+2 	Simulation Limitations And Constraints.
+
+
+# 33
+### http://arxiv.org/abs/1003.3568v1
+## Key distribution in PKC through Quantas
+
+0 	Cryptography literally means "The art & science of secret writing & sending a message between two parties in such a way that its contents cannot be understood by someone other than the intended recipient".and Quantum word is related with "Light".
+0	Thus, Quantum Cryptography is a way of descripting any information in the form of quantum particles.
+0	There are no classical cryptographic systems which are perfectly secure.
+0 	In contrast to Classical cryptography which depends upon Mathematics, Quantum Cryptography utilizes the concepts of Quantum Physics which provides us the security against the cleverest marauders of the present age.
+0	In the view of increasing need of Network and Information Security, we do require methods to overcome the Molecular Computing technologies (A future technology) and other techniques of the various codebrakers.
+1 	Both the parts i.e. Quantum Key distribution and Information transference from Sender to Receiver are much efficient and secure.
+1 	It is based upon BB84 protocol.
+0	It can be of great use for Govt agencies such as Banks, Insurance, Brokerages firms, financial institutions, e-commerce and most important is the Defense & security of any country.
+2 	It is a Cryptographic communication system in which the original users can detect unauthorized eavesdropper and in addition it gives a guarantee of no eavesdropping.
+2	It proves to be the ultra secure mode of communication b/w two intended parties.
+
+
+# 34
+### http://arxiv.org/abs/1003.5104v1
+## Resilient networking in wireless sensor networks
+
+0	This report deals with security in wireless sensor networks (WSNs), especially in network layer.
+0	Multiple secure routing protocols have been proposed in the literature.
+0 	However, they often use the cryptography to secure routing functionalities.
+0 	The cryptography alone is not enough to defend against multiple attacks due to the node compromise.
+0	Therefore, we need more algorithmic solutions.
+0	In this report, we focus on the behavior of routing protocols to determine which properties make them more resilient to attacks.
+0 	Our aim is to find some answers to the following questions.
+0 	Are there any existing protocols, not designed initially for security, but which already contain some inherently resilient properties against attacks under which some portion of the network nodes is compromised?
+0 	If yes, which specific behaviors are making these protocols more resilient?
+1 	We propose in this report an overview of security strategies for WSNs in general, including existing attacks and defensive measures.
+2	In this report we focus at the network layer in particular, and an analysis of the behavior of four particular routing protocols is provided to determine their inherent resiliency to insider attacks.
+2 	The protocols considered are: Dynamic Source Routing (DSR), Gradient-Based Routing (GBR), Greedy Forwarding (GF) and Random Walk Routing (RWR).
+
+
+# 35
+### http://arxiv.org/abs/1003.5432v1
+## Computer Network Topology Design in Limelight of Pascal Graph Property
+
+0 	Constantly growing demands of high productivity and security of computer systems and computer networks call the interest of specialists in the environment of construction of optimum topologies of computer mediums.
+0	In earliest phases of design, the study of the topological influence of the processes that happen in computer systems and computer networks allows to obtain useful information which possesses a significant value in the subsequent design.
+0	It has always been tried to represent the different computer network topologies using appropriate graph models.
+0 	Graphs have huge contributions towards the performance improvement factor of a network.
+0 	Some major contributors are de-Bruijn, Hypercube, Mesh and Pascal.
+0	They had been studied a lot and different new features were always a part of research outcome.
+0 	As per the definition of interconnection network it is equivalent that a suitable graph can represent the physical and logical layout very efficiently.
+1 	In this present study Pascal graph is researched again and a new characteristics has been discovered.
+0	From the perspective of network topologies Pascal graph and its properties were first studied more than two decades back.
+0	Since then, a numerous graph models have emerged with potentials to be used as network topologies.
+2	This new property is guaranteed to make an everlasting mark towards the reliability of this graph to be used as a substantial contributor as a computer network topology.
+2	This shows its credentials over so many other topologies.
+2	This study reviews the characteristics of the Pascal graph and the new property is established using appropriate algorithm and the results.
+
+
+# 36
+### http://arxiv.org/abs/1004.0596v1
+## Effect of Inter Packet Delay in performance analysis of coexistence heterogeneous Wireless Packet Networks
+
+0 	As the explosive growth of the ISM band usage continues, there are many scenarios where different systems operate in the same place at the same time.
+0	One of growing concerns is the coexistence of heterogeneous wireless network systems.
+0	For the successful deployment of mission-critical systems such as wireless sensor networks, it is required to provide a solution for the coexistence.
+1	In this paper, we propose a new scheme using inter packet delay for the coexistence of IEEE 802.15.4 LRWPAN and IEEE 802.11b WLAN.
+1 	To evaluate the effectiveness of the proposed scheme, measurement and simulation study are conducted using Qualnet 4.5 simulation software.
+2 	The simulation results show that the proposed scheme is effective in performance improvement for coexistence network of IEEE 802.15.4 for various topologies.
+
+
+# 37
+### http://arxiv.org/abs/1004.1678v1
+## Node Sensing & Dynamic Discovering Routes for Wireless Sensor Networks
+
+0	The applications of Wireless Sensor Networks (WSN) contain a wide variety of scenarios.
+0	In most of them, the network is composed of a significant number of nodes deployed in an extensive area in which not all nodes are directly connected.
+0 	Then, the data exchange is supported by multihop communications.
+0 	Routing protocols are in charge of discovering and maintaining the routes in the network.
+0 	However, the correctness of a particular routing protocol mainly depends on the capabilities of the nodes and on the application requirements.
+1 	This paper presents a dynamic discover routing method for communication between sensor nodes and a base station in WSN.
+1 	This method tolerates failures of arbitrary individual nodes in the network (node failure) or a small part of the network (area failure).
+1 	Each node in the network does only local routing preservation, needs to record only its neighbor nodes' information, and incurs no extra routing overhead during failure free periods.
+1 	It dynamically discovers new routes when an intermediate node or a small part of the network in the path from a sensor node to a base station fails.
+1 	In our planned method, every node decides its path based only on local information, such as its parent node and neighbor nodes' routing information.
+1 	So, it is possible to form a loop in the routing path.
+1 	We believe that the loop problem in sensor network routing is not as serious as that in the Internet routing or traditional mobile ad-hoc routing.
+1 	We are trying to find all possible loops and eliminate the loops as far as possible in WSN.
+
+
+# 38
+### http://arxiv.org/abs/1004.4465v1
+## Mobile Zigbee Sensor Networks
+
+0 	OPNET Modeler accelerates network R&D and improves product quality through high-fidelity modeling and scalable simulation.
+0	It provides a virtual environment for designing protocols and devices, and for testing and demonstrating designs in realistic scenarios prior to production.
+1	OPNET Modeler supports 802.15.4 standard and has been used to make a model of PAN.
+1	Iterations have been performed by changing the Power of the transmitter and the throughput will has been analyzed to arrive at optimal values.
+1	An energy-efficient wireless home network based on IEEE 802.15.4, a novel architecture has been proposed.
+1 	In this architecture, all nodes are classified into stationary nodes and mobile nodes according to the functionality of each node.
+0	Mobile nodes are usually battery-powered, and therefore need low-power operation.
+1	In order to improve power consumption of mobile nodes, effective handover sequence based on MAC broadcast and transmission power control based on LQ (link quality) are employed.
+2	Experimental results demonstrate that by using the proposed architecture, communication time and power consumption of mobile nodes can be reduced by 1.2 seconds and 42.8%, respectively.
+
+
+# 39
+### http://arxiv.org/abs/1004.4759v1
+## Indoor Positioning with Radio Location Fingerprinting
+
+0 	An increasingly important requirement for many novel applications is sensing the positions of people, equipment, etc.
+0	GPS technology has proven itself as a successfull technology for positioning in outdoor environments but indoor no technology has yet gained a similar wide-scale adoption.
+0 	A promising indoor positioning technique is radio-based location fingerprinting, having the major advantage of exploiting already existing radio infrastructures, like IEEE 802.11, which avoids extra deployment costs and effort.
+1 	The research goal of this thesis is to address the limitations of current indoor location fingerprinting systems.
+1 	In particular the aim is to advance location fingerprinting techniques for the challenges of handling heterogeneous clients, scalability to many clients, and interference between communication and positioning.
+2 	The wireless clients used for location fingerprinting are heterogeneous even when only considering clients for the same technology.
+2	Heterogeneity is a challenge for location fingerprinting because it severely decreases the precision of location fingerprinting.
+2 	To support many clients location fingerprinting has to address how to scale estimate calculation, measurement distribution, and distribution of position estimates.
+2 	This is a challenge because of the number of calculations involved and the frequency of measurements and position updates.
+2 	Positioning using location fingerprinting requires the measurement of, for instance, signal strength for nearby base stations.
+2 	However, many wireless communication technologies block communication while collecting such measurements.
+2	This interference is a challenge because it is not desirable that positioning disables communication.
+1	An additional goal is to improve the conceptual foundation of location fingerprinting.
+2 	A better foundation will aid researchers to better survey and design location fingerprinting systems.
+
+
+# 40
+### http://arxiv.org/abs/1004.4821v1
+## Optimum Design of a 4x4 Planar Butler Matrix Array for WLAN Application
+
+0 	In recent years, high-speed wireless communication is in vogue.
+0 	In wireless communication systems, multipath fading, delay and interference occurres by reflection or diffraction.
+0 	In a high-speed wireless communication, it becomes a necessary to separate desired signal from delay or interference signal.
+0	Thus to overcome these problems Smart antenna systems have been developed.
+0	Basically there are two types of smart antenna systems, one is Switched beam system and another Adaptive array system.
+0	This paper presents the optimum design of a 4x4 plannar Butler matrix array as a key component of a switched beam smart antenna system, operating at 5.2 GHz for WLAN with a dielectric substrate, FR4 of er =4.9 and h=1.6mm.
+0 	Conception details, simulation results and measurements are also given for the components (microstrip antenna, hybrid couplers, cross-coupler, phase shifter) used to implement the matrix.
+1	In this dissertation, mathematical calculations for all the components using MATLAB is done and then every individual component is designed using the commercial software SONNET.
+1 	Then these entire components have been combined on a single substrate and simulated using SONNET.
+
+
+# 41
+### http://arxiv.org/abs/1005.0952v1
+## Effective Bandwidth Utilization in IEEE802.11 for VOIP
+
+0	Voice over Internet protocol (VoIP) is one of the most important applications for the IEEE 802.11 wireless local area networks (WLANs).
+0	For network planners who are deploying VoIP over WLANs, one of the important issues is the VoIP capacity.
+0 	VoIP bandwidth consumption over a WAN is one of the most important factors to consider when building a VoIP infrastructure.
+0	Failure to account for VoIP bandwidth requirements will severely limit the reliability of a VoIP system and place a huge burden on the WAN infrastructure.
+0 	Less bandwidth utilization is the key reasons for reduced number of channel accesses in VOIP.
+0 	But in the QoS point of view the free bandwidth of atleast 1-5% will improve the voice quality.
+1	This proposal utilizes the maximum bandwidth by leaving 1-5% free bandwidth.
+1	A Bandwidth Data rate Moderation (BDM) algorithm has been proposed which correlates the data rate specified in IEEE802.11b with the free bandwidth.
+1 	At each time BDM will calculate the bandwidth utilization before sending the packet to improve performance and voice quality of VoIP.
+1	The bandwidth calculation in BDM can be done by using Erlang and VOIP bandwidth calculator.
+2	Finally, ns2 experimental study shows the relationship between bandwidth utilization, free bandwidth and data rate.
+2	The paper concludes that marginal VoIP call rate has been increased by BDM algorithm.
+
+
+# 42
+### http://arxiv.org/abs/1005.4268v1
+## An Adaptive Power Efficient Packet Scheduling Algorithm for Wimax Networks
+
+0 	Admission control schemes and scheduling algorithms are designed to offer QoS services in 802.16/802.16e networks and a number of studies have investigated these issues.
+0 	But the channel condition and priority of traffic classes are very rarely considered in the existing scheduling algorithms.
+0	Although a number of energy saving mechanisms have been proposed for the IEEE 802.16e, to minimize the power consumption of IEEE 802.16e mobile stations with multiple real-time connections has not yet been investigated.
+0	Moreover, they mainly consider non real- time connections in IEEE 802.16e networks.
+1 	In this paper, we propose to design an adaptive power efficient packet scheduling algorithm that provides a minimum fair allocation of the channel bandwidth for each packet flow and additionally minimizes the power consumption.
+1 	In the adaptive scheduling algorithm, packets are transmitted as per allotted slots from different priority of traffic classes adaptively, depending on the channel condition.
+1 	Suppose if the buffer size of the high priority traffic queues with bad channel condition exceeds a threshold, then the priority of those flows will be increased by adjusting the sleep duty cycle of existing low priority traffic, to prevent the starvation.
+2 	By simulation results, we show that our proposed scheduler achieves better channel utilization while minimizing the delay and power consumption.
+
+
+# 43
+### http://arxiv.org/abs/1006.2048v1
+## Stochastic Approximation Algorithm for Optimal Throughput Performance of Wireless LANs
+
+0 	Throughput improvement of the Wireless LANs has been a constant area of research.
+0 	Most of the work in this area, focuses on designing throughput optimal schemes for fully connected networks (no hidden nodes).
+0	But, we demonstrate that the proposed schemes, though perform optimally in fully connected network, achieve significantly lesser throughput even than that of standard IEEE 802.11 in a network with hidden nodes.
+0	This motivates the need for designing schemes that provide near optimal performance even when hidden nodes are present.
+0	The primary reason for the failure of existing protocols in the presence of hidden nodes is that these protocols are based on the model developed by Bianchi.
+0	However this model does not hold when hidden nodes exist.
+0 	Moreover, analyzing networks with hidden nodes is still an open problem.
+0	Thus, designing throughput optimal schemes in networks with hidden nodes is particularly challenging.
+0 	The novelty of our approach is that it is not based on any underlying mathematical model, rather it directly tunes the control variables so as to maximize the throughput.
+1	We demonstrate that this model independent approach achieves maximum throughput in networks with hidden terminals as well.
+1 	Apart from this major contribution, we present stochastic approximation based algorithms for achieving weighted fairness in a connected networks.
+1	We also present a throughput optimal exponential backoff based random access algorithm.
+1	We demonstrate that the exponential backoff based scheme may outperform an optimal p-persistent scheme in networks with hidden terminals.
+2 	This demonstrates the merit of exponential backoff based random access schemes which was deemed unnecessary by results shown by Bianchi.
+
+
+# 44
+### http://arxiv.org/abs/1006.2552v1
+## Similarity Analysis and Modeling in Mobile Societies: The Missing Link
+
+0 	A new generation of "behavior-aware" delay tolerant networks is emerging in what may define future mobile social networks.
+0 	With the introduction of novel behavior-aware protocols, services and architectures, there is a pressing need to understand and realistically model mobile users behavioral characteristics, their similarity and clustering.
+0	Such models are essential for the analysis, performance evaluation, and simulation of future DTNs.
+0 	This paper addresses issues related to mobile user similarity, its definition, analysis and modeling.
+1	To define similarity, we adopt a behavioral-profile based on users location preferences using their on-line association matrix and its SVD, then calculate the behavioral distance to capture user similarity.
+2	This measures the difference of the major spatio-temporal behavioral trends and can be used to cluster users into similarity groups or communities.
+1	We then analyze and contrast similarity distributions of mobile user populations in two settings: (i) based on real measurements from four major campuses with over ten thousand users for a month, and (ii) based on existing mobility models, including random direction and time-varying community models.
+2	Our results show a rich set of similar communities in real mobile societies with distinct behavioral clusters of users.
+2	This is true for all the traces studied, with the trend being consistent over time.
+2	Surprisingly, however, we find that the existing mobility models do not explicitly capture similarity and result in homogeneous users that are all similar to each other.
+2 	Thus the richness and diversity of user behavioral patterns is not captured to any degree in the existing models.
+2 	These findings strongly suggest that similarity should be explicitly captured in future mobility models, which motivates the need to re-visit mobility modeling in the future.
+
+
+# 45
+### http://arxiv.org/abs/1006.2684v1
+## Enhancing the Authentication of Bank Cheque Signatures by Implementing Automated System Using Recurrent Neural Network
+
+0 	The associatie memory feature of the Hopfield type recurrent neural network is used for the pattern storage and pattern authentication.
+0	This paper outlines an optimization relaxation approach for signature verification based on the Hopfield neural network (HNN)which is a recurrent network.
+1 	The standard sample signature of the customer is cross matched with the one supplied on the Cheque.
+1 	The difference percentage is obtained by calculating the different pixels in both the images.
+1 	The network topology is built so that each pixel in the difference image is a neuron in the network.
+1	Each neuron is categorized by its states,which in turn signifies that if the particular pixel is changed.
+2 	The network converges to unwavering condition based on the energy function which is derived in experiments.
+0 	The Hopfield's model allows each node to take on two binary state values (changed/unchanged)for each pixel.
+2	The performance of the proposed technique is evaluated by applying it in various binary and gray scale images.
+2	This paper contributes in finding an automated scheme for verification of authentic signature on bank Cheques.
+2 	The derived energy function allows a trade off between the influence of its neighborhood and its own criterion.
+2 	This device is able to recall as well as complete partially specified inputs.
+1	The network is trained via a storage prescription that forces stable states to correspond to (local)minima of a network "energy" function.
+
+
+
+# 76
+### http://arxiv.org/abs/1203.2167v1
+## Design and Implementation of IEEE 802.15.4 Mac Protocol on FPGA
+
+0 	The IEEE 802.15.4 is a wireless standard introduced for low power, low cost wireless communication with moderate data rates.
+0 	In the next few years, it is expected that Low Rate Wireless Personal Area Networks (LR-WPAN) will be used in a wide variety of embedded applications, including home automation, industrial sensing and control, environmental monitoring and sensing.
+1 	In these applications, numerous embedded devices running on batteries are distributed in an area communicating via wireless radios.
+0 	This work presents a method which can be used for comparing current consumption of wireless data transfer embedded systems.
+0 	This paper implements a small subset of the IEEE 802.15.4 protocol to achieve a point to point communication.
+1 	The implemented protocol uses 802.15.4 MAC compliant data and acknowledgment packets.
+1 	Current consumption is measured while doing one data packet transmission.
+1 	Measurements are compared with existing work.
+1 	IEEE 802.15.4 protocol implementation is done using Verilog language.
+2 	Code implementation is done in such a manner so that it can be ported to any platform with minimal changes.
+2 	It can also be modified to suit any special experimental setup requirements.
+
+
+# 77
+### http://arxiv.org/abs/1203.4841v1
+## Achieving Congestion Diversity in Multi-hop Wireless Mesh Networks
+
+0 	This paper reports on the first systematic study of congestion-aware routing algorithms for wireless mesh networks to achieve an improved end-end delay performance.
+0 	In particular, we compare 802.11 compatible implementations of a set of congestion-aware routing protocols against our implementation of state of the art shortest path routing protocol (SRCR).
+1 	We implement congestion-aware routing algorithms Backpressure (BP), Enhanced-Backpressure (E-BP) adapted from [1], [2] suitably adjusted for 802.11 implementation.
+1 	We then propose and implement Congestion Diversity Protocol (CDP) adapted from [3] recognizing the limitations of BP and E-BP for 802.11-based wireless networks.
+2 	SRCR solely utilizes link qualities, while BP relies on queue differential to route packets.
+2	CDP and E-BP rely on distance metrics which take into account queue backlogs and link qualities in the network.
+2 	E-BP computes its metric by summing the ETX and queue differential, while CDP determines its metric by calculating the least draining time to the destination.
+2 	Our small testbed consisting of twelve 802.11g nodes enables us to empirically compare the performance of congestion-aware routing protocols (BP, E-BP and CDP) against benchmark SRCR.
+2 	For medium to high load UDP traffic, we observe that CDP exhibits significant improvement with respect to both end-end delay and throughput over other protocols with no loss of performance for TCP traffic.
+2 	Backpressure-based routing algorithms (BP and E-BP) show poorer performance for UDP and TCP traffic.
+2 	Finally, we carefully study the effects of the modular approach to congestion-aware routing design in which the MAC layer is left intact
+
+
+# 78
+### http://arxiv.org/abs/1203.5874v2
+## Optimizing Channel Access for Event-Driven Wireless Sensor Networks: Analysis and Enhancements
+
+0 	We study the problem of medium access control in domain of event-driven wireless sensor networks (WSNs).
+0 	In this kind of WSN, sensor nodes send data to sink node only when an event occurs in the monitoring area.
+0 	The nodes in this kind of WSNs encounter correlated traffic as a subset of nodes start sending data by sensing a common event simultaneously.
+0 	We wish to rethink of medium access control (MAC) for this type of traffic characteristics.
+0 	For WSNs, many existing MAC protocols utilize the basic CSMA/CA strategy such as IEEE 802.11 Binary Exponential Backoff (BEB) algorithm to handle the collisions among packets when more than one node need to access the channel.
+1 	We show that this BEB algorithm does not work well without incurring access delay or performance degradation due to increased number of collisions and retransmissions when nodes encounter correlated traffic.
+1 	Based on above observations in mind, We present a Adaptive Random Backoff (ARB) algorithm that is capable of mitigating the impact of correlated traffic and capable of minimizing the chance of collisions.
+2 	ARB is based on minor modifications of BEB.
+2 	We show using numerical analysis that our proposals improve the channel access in terms of latency, throughput, and frame dropping probability as compared with IEEE 802.11 DCF.
+2 	Simulations using NS-2 network simulator are conducted to validate the analytical results.
+
+
+# 79
+### http://arxiv.org/abs/1207.0163v3
+## Optimizing TCP Performance in Multi-AP Residential Broadband Connections via Mini-Slot Access
+
+0 	The high bandwidth demand of Internet applications has recently driven the need of increasing the residential download speed.
+0 	A practical solution to the problem has been proposed aggregating the bandwidth of 802.11 Access Points (APs) backhauls in range via 802.11 connections.
+0 	Since 802.11 devices are usually single-radio, the communication to multiple APs on different radio-channels requires the introduction of a time-division multiple access (TDMA) policy at the client station.
+0 	Current investigation in this area supposes that there is a sufficient number of TCP flows to saturate the Asymmetric Digital Subscriber Line (ADSL) behind the APs.
+0 	However, this may be not guaranteed according to the user traffic pattern.
+0 	As a consequence, a TDMA policy introduces additional delays in the end-to-end transmissions that will cause degradation of the TCP throughput and an under-utilization of the AP backhauls.
+0 	In this paper, we first perform an in-depth experimental analysis with a customized 802.11 driver of how the usage of multi-AP TDMA affects the observed Round-Trip-Time (RTT) of TCP flows.
+0 	Then, we introduce a simple analytical model that accurately predicts the TCP RTT when accessing the wireless medium with a Multi-AP TDMA policy.
+1 	Based on this model, we propose a resource allocation algorithm that runs locally at the station and it greatly reduces the observed TCP RTT with a very low computational cost.
+2 	Our proposed scheme can improve up to 1:5 times the aggregate throughput observed by the station compared to state-of-the-art multi-AP TDMA allocations.
+2 	We also show that the throughput performance of the algorithm is very close to the theoretical upper-bound in key simulation scenarios.
+
+
+# 80
+### http://arxiv.org/abs/1207.4265v1
+## Spot: An accurate and efficient multi-entity device-free WLAN localization system
+
+0 	Device-free (DF) localization in WLANs has been introduced as a value-added service that allows tracking indoor entities that do not carry any devices.
+0 	Previous work in DF WLAN localization focused on the tracking of a single entity due to the intractability of the multi-entity tracking problem whose complexity grows exponentially with the number of humans being tracked.
+0 	In this paper, we introduce Spot as an accurate and efficient system for multi-entity DF detection and tracking.
+0 	Spot is based on a probabilistic energy minimization framework that combines a conditional random field with a Markov model to capture the temporal and spatial relations between the entities' poses.
+1 	A novel cross-calibration technique is introduced to reduce the calibration overhead of multiple entities to linear, regardless of the number of humans being tracked.
+1 	This also helps in increasing the system accuracy.
+1 	We design the energy minimization function with the goal of being efficiently solved in mind.
+1 	We show that the designed function can be mapped to a binary graph-cut problem whose solution has a linear complexity on average and a third order polynomial in the worst case.
+1 	We further employ clustering on the estimated location candidates to reduce outliers and obtain more accurate tracking.
+2 	Experimental evaluation in two typical testbeds, with a side-by-side comparison with the state-of-the-art, shows that Spot can achieve a multi-entity tracking accuracy of less than 1.1m.
+2 	This corresponds to at least 36% enhancement in median distance error over the state-of-the-art DF localization systems, which can only track a single entity.
+2 	In addition, Spot can estimate the number of entities correctly to within one difference error.
+2 	This highlights that Spot achieves its goals of having an accurate and efficient software-only DF tracking solution of multiple entities in indoor environments.
+
+
+# 81
+### http://arxiv.org/abs/1207.5298v4
+## Building Blocks of Physical-layer Network Coding
+
+0 	This paper investigates the fundamental building blocks of physical-layer network coding (PNC).
+0 	Most prior work on PNC focused on its application in a simple two-way-relay channel (TWRC) consisting of three nodes only.
+0 	Studies of the application of PNC in general networks are relatively few.
+0 	This paper is an attempt to fill this gap.
+0 	We put forth two ideas: 1) A general network can be decomposed into small building blocks of PNC, referred to as the PNC atoms, for scheduling of PNC transmissions. 2) We identify nine PNC atoms, with TWRC being one of them.
+2 	Three major results are as follows.
+2 	First, using the decomposition framework, the throughput performance of PNC is shown to be significantly better than those of the traditional multi-hop scheme and the conventional network coding scheme. For example, under heavy traffic volume, PNC can achieve 100% throughput gain relative to the traditional multi-hop scheme.
+2 	Second, PNC decomposition based on a variety of different PNC atoms can yield much better performance than PNC decomposition based on the TWRC atom alone.
+2 	Third, three out of the nine atoms are most important to good performance.
+2 	Specifically, the decomposition based on these three atoms is good enough most of the time, and it is not necessary to use the other six atoms.
+
+
+# 82
+### http://arxiv.org/abs/1207.5736v1
+## Differentiated QoS with Modified C/I Based Scheduling Algorithm
+
+0 	Second-generation (2G) digital cellular systems constitute the majority of cellular communication deployed today.
+0 	A variety of services of 2G systems has increased significantly and this will continue to grow even further in the emerging third-generation (3G) systems.
+0 	Universal Mobile Telecommunication System (UMTS) is a third-generation mobile communications system which uses the Wide-Band Code Division Multiple Access (WCDMA) technique to support a wide variety of services, like speech, video telephony, Internet browsing, etc.
+0 	These services require a wide range of Quality of Service (QoS) requirements.
+0 	QoS is an important issue as the number of multimedia services increases day by day.
+0 	Differentiated QoS methods allow the differentiation of users based on their priority levels and channel conditions so that the network can allocate the bandwidth for a particular request based on the QoS requirements.
+0 	These requirements are controlled by Radio Resource Management (RRM) mechanisms.
+0 	In this paper we have proposed two RRM algorithms which are modification to the existing scheduling algorithms.
+0 	One is Prioritized C/I scheduling, which takes the priorities into consideration, and this algorithm serves the user with highest priority.
+0 	Other algorithm is Modified Inverse C/I scheduling, which takes channel conditions into consideration and serves the users in degraded conditions, thereby improving QoS.
+1 	The performance evaluation of two algorithms is done with EURANE extensions for NS-2.
+2 	Simulation results shows the improvement in QoS for the users who are at equidistance from Base Station (BS) but requesting for different services by implementing Prioritized C/I scheduling and also for the users who are in degraded conditions by implementing Modified Inverse C/I scheduling when compared to Max C/I and Inverse C/I scheduling algorithm respectively.
+
+
+# 83
+### http://arxiv.org/abs/1208.0384v1
+## Global Adaptive Routing Algorithm Without Additional Congestion Propagation Network
+
+0 	Adaptive routing algorithm has been employed in multichip interconnection networks in order to improve network performance.
+0 	Does a algorithm use local or global network state?
+0 	This is the key question in adaptive routing.
+0 	In many traffic patterns, the ignorance of global network state, leading to routing selection based only on local congestion information, tends to violate global load balance.
+0 	To attack the load balance issue in adapting routing, some global adaptive routing algorithms introduce a congestion propagation network to obtain global network status information, such as Regional Congestion Awareness (RCA) and Destination Based Adaptive Routing (DBAR).
+0 	However, the congestion propagation network leads to additional power and area consumption which cannot be ignored.
+0 	From another view, if we just increase the bandwidth between neighbor nodes with the wires used to build the congestion propagation network, the network performance could be improved as well.
+0 	In this paper, we propose a global adaptive routing algorithm without employing the additional congestion propagation network.
+1 	Our algorithm obtains the global network state in a novel way, and can offer significant improvement than the base-line local adaptive routing algorithm (xy-adaptive algorithm which selects routing based on local congestion information in each hop) for both medium and high injection rates.
+1 	In wormhole flow control, all the routing information (flit id, source node id, destination node id, vc id and address) is contained in head flit, and data is carried in body flits.
+1 	As a result, there are always many free bits in the head flit, especially when the bandwidth is 128-bits which is normal in interconnection network design.
+1 	Then, we can use these free bits in the head flit to propagate global congestion information but not increase the number of flits.
+
+
+# 84
+### http://arxiv.org/abs/1208.1896v1
+## Bittorrent Network Traffic Forecasting With ARMA
+
+0 	In recent years, there are some major changes in the way content is being distributed over the network.
+0 	The content distribution techniques have recently started to embrace peer-to-peer (P2P) systems as an alternative to the traditional client-server architecture.
+0 	P2P systemsthat are based on the BitTorrent protocol uses end-users' resources to provide a cost effective distribution of bandwidth intensive content to thousands of users.
+0 	The BitTorrent protocol system offers a scalable mechanism for distributing a large volume of data to a set of peers over the Internet.
+0 	With the growing demand for file sharing and content distribution, BitTorrent has become one of the most popular Internet applications and contributes to a signification fraction of the Internet traffic.
+0 	With the wide usage of the BitTorrent protocol system, it has basically solved one of the major problems where data can be quickly transferred to a group of interested parties.
+0 	The strength of the BitTorrent protocol lies in efficient bandwidth utilization for the downloading and uploading processes.
+0 	However, the usage of BitTorrent protocol also causes latency for other applications in terms of network bandwidth which in turn has caused concerns for the Internet Service Providers, who strives for quality of service for all their customers.
+0 	In this paper, we study the network traffic patterns of theBitTorrent network traffic and investigate its behavior by usingthe time series ARMA model.
+0 	Our experimental results show that BitTorrent network traffic can be modeled and forecasted by using ARMA models.
+1 	We compared and evaluated the forecasted network traffic with the real traffic patterns.
+2 	This modeling can be utilized by the Internet Service Providers to manage their network bandwidth and also detect any abnormality in their network.
+
+
+# 85
+### http://arxiv.org/abs/1208.2314v1
+## Analytical Study of Pre-congestion notification (PCN) techniques
+
+0 	Maintaining the quality of service (QOS) and controlling the network congestion are quite complicated tasks.
+0 	They cause degrading the performance of the network, and disturbing the continuous communication process.
+0 	To overcome these issues, one step towards this dilemma has been taken in form of Pre-congestion notification (PCN) technique.
+0 	PCN uses a packet marking technique within a PCN domain over IP networks.
+0 	It is notified by egress node that works as guard at entry point of network.
+0 	Egress node gives feedback to communicating servers whether rate on the link is exceeded than configured admissible threshold or within the limit.
+0 	Based on this feedback, admission decisions are taken to determine whether to allow/block new coming flows or terminate already accepted.
+0 	The actual question is about selection of right algorithm for PCN domain.
+1 	In this paper, we investigate the analytical behavior of some known PCN algorithms.
+1 	We make slide modifications in originality of PCN algorithms without disquieting working process in order to employ those within similar types of scenarios.
+0 	Our goal is to simulate them either in highly congested or less congested realistic scenarios.
+2 	On the basis of simulation done in ns2, we are able to recommend each PCN algorithm for specific conditions.
+2 	Finally, we develop a benchmark that helps researchers and scientific communities to pick the right algorithm.
+2 	Furthermore, the benchmark is designed to achieve specific objectives according to the users' requirements without congesting the network.
+
+
+# 86
+### http://arxiv.org/abs/1208.2409v1
+## Transmission Delay of Multi-hop Heterogeneous Networks for Medical Applications
+
+0 	Nowadays, with increase in ageing population, Health care market keeps growing.
+0 	There is a need for monitoring of Health issues.
+0 	Body Area Network consists of wireless sensors attached on or inside human body for monitoring vital Health related problems e.g, Electro Cardiogram (ECG), ElectroEncephalogram (EEG), ElectronyStagmography(ENG) etc.
+0 	Data is recorded by sensors and is sent towards Health care center.
+0 	Due to life threatening situations, timely sending of data is essential.
+0 	For data to reach Health care center, there must be a proper way of sending data through reliable connection and with minimum delay.
+1 	In this paper transmission delay of different paths, through which data is sent from sensor to Health care center over heterogeneous multi-hop wireless channel is analyzed.
+1 	Data of medical related diseases is sent through three different paths.
+1 	In all three paths, data from sensors first reaches ZigBee, which is the common link in all three paths.
+1 	After ZigBee there are three available networks, through which data is sent.
+1 	Wireless Local Area Network (WLAN), Worldwide Interoperability for Microwave Access (WiMAX), Universal Mobile Telecommunication System (UMTS) are connected with ZigBee.
+1 	Each network (WLAN, WiMAX, UMTS) is setup according to environmental conditions, suitability of device and availability of structure for that device.
+1 	Data from these networks is sent to IP-Cloud, which is further connected to Health care center.
+0 	Main aim of this paper is to calculate delay of each link in each path over multihop wireless channel.
+
+
+# 87
+### http://arxiv.org/abs/1208.5526v1
+## Coded Path Protection Part 1: Efficient Conversion of Sharing to Coding
+
+0 	Link failures in wide area networks are common and cause significant data losses.
+0 	Mesh-based protection schemes offer high capacity efficiency but they are slow and require complex signaling.
+0 	Additionally, real-time reconfigurations of cross-connects threaten their transmission integrity.
+0 	On the other hand, there are other schemes that are proactive.
+0 	Proactivity results in higher restoration speed, lower signaling complexity, and higher transmission integrity.
+1 	This paper introduces a coding-based proactive protection scheme, named Coded Path Protection (CPP).
+1 	In CPP, a backup stream of the primary data is encoded with other data streams, resulting in capacity savings.
+1 	In addition to a systematic approach of building valid coding structures, this paper presents an optimal and simple capacity placement and coding group formation algorithm.
+1 	The algorithm converts the sharing structure of any solution of a Shared Path Protection (SPP) technique into a coding structure with minimum extra capacity.
+1 	We conducted quantitative and qualitative comparisons of our technique with the SPP.
+2 	Simulation results confirm that CPP provides faster link failure recovery than SPP while it incurs marginal extra capacity beyond that of SPP.
+1 	In this Part 1 of the paper, we describe the theory and an algorithm for converting a given SPP solution into a CPP solution.
+
+
+# 88
+### http://arxiv.org/abs/1210.3047v1
+## A Performance Analysis of LAR Protocol for Vehicular Ad Hoc Networks in City Scenarios
+
+0 	In this paper, performance analysis of Location Aided Routing (LAR) protocol in different city scenarios has been done.
+0 	The mobility model considered is Manhattan model.
+0 	This mobility model used to emulate the movement pattern of nodes i.e., vehicles on streets defined by maps.
+0 	Our objective is to provide a qualitative analysis of the LAR protocol in different city scenarios in Vehicular Ad hoc Networks.
+1 	We have considered three different city scenarios for the analysis of the protocol.
+1 	The simulation work has been conducted using the Glomosim 2.03 simulator.
+2 	The results show that LAR1 protocol achieves maximum packet delivery ratio is 99.68 % and maximum average end-to-end delay is 7.319969 ms when the network is sparsely populated.
+2 	Further, for densely populated network maximum achieved packet delivery ratio is 87.58% and average end-to-end delay is 0.017684 ms.
+
+
+# 89
+### http://arxiv.org/abs/1210.3147v1
+## Performance Analysis of Probabilistic Rebroadcasting in Grid FSR for MANET
+
+0 	Mobile Ad-hoc Network (MANET) is the self organizing collection of mobile nodes.
+0 	The communication in MANET is done via a wireless media.
+0 	Ad hoc wireless networks have massive commercial and military potential because of their mobility support.
+0 	Due to demanding real time multimedia applications, Quality of Services (QoS) support in such infrastructure less networks have become essential.
+0 	QoS routing in mobile Ad-Hoc networks is challenging due to rapid change in network topology.
+0 	In this paper, we focused to reduce flooding performance of the Fisheye State Routing (FSR) protocol in Grid using ns-2 network simulator under different performance metrics scenario in respect to number of Nodes.
+0 	For example, the connection establishment is costly in terms of time and resource where the network is mostly affected by connection request flooding.
+1 	The proposed approach presents a way to reduce flooding in MANETs.
+1 	Flooding is dictated by the propagation of connection-request packets from the source to its neighborhood nodes.
+1 	The proposed architecture embarks on the concept of sharing neighborhood information.
+1 	The proposed approach focuses on exposing its neighborhood peer to another node that is referred to as its friend-node, which had requested/forwarded connection request.
+1 	If there is a high probability for the friend node to communicate through the exposed routes, this could improve the efficacy of bandwidth utilization by reducing flooding, as the routes have been acquired, without any broadcasts.
+1 	Friendship between nodes is quantized based on empirical computations and heuristic algorithms.
+1 	The nodes store the neighborhood information in their cache that is periodically verified for consistency.
+2 	Simulation results show the performance of this proposed method.
+
+
+# 90
+### http://arxiv.org/abs/1210.3702v1
+## Estimation and compensation of inter carrier interference in wimax physical layer under various channel models
+
+0 	WiMAX is Wireless Interoperability for Microwave Access has emerged as a promising solution for transmission of higher data rates for fixed and mobile applications.
+0 	IEEE 802.16d and e are the standards proposed.
+0 	To attain higher data rates the Multi Carrier System with Multiple Input and Multiple Output MIMO is incorporated in the WiMAX.
+0 	And all these sub carriers are considered to be orthogonal to each other.
+0 	As the number of sub carriers is increased there is no guarantee of sustained orthogonality, i.e. at some point the carriers are not independent to each other, and hence where the orthogonality can be loosed which leads to interference and also owing to the synchronization between transmitter and receiver local oscillator, it causes interference known as Inter Carrier Interference (ICI).
+1 	In this scheme at the transmitter side the modulated data and a few predefined pilot symbols are mapped onto the non neighboring sub carriers with weighting coefficients of +1 and -1.
+1 	With the aid of pilot symbols the frequency offset is exactly estimated by using Maximum Likelihood Estimation MLE and hence can be minimized.
+1 	At demodulation stage the received signals are linearly combined along with their weighted oefficients and pilot symbols, called as Pilot Aided Self Cancellation Method PASCS.
+2 	The simulations are carried out on Stanford University Interim (SUI)channels.
+2 	The simulation results shows that by incorporating this method into WiMAX systems it performs better when the Line Of Sight (LOS) component is present in the transmission and also it improves the Bit Error Rate (BER) and Carrier to Interference Ratio (CIR).
+2 	The CIR can be improved 20 dB.
+1 	In this paper the effectiveness of PASCS scheme is compared with the Self Cancellation Method (SCM).
+2 	It provides accurate estimation of frequency offset and when residual CFO is less significant the ICI can be diminished successfully.
+
+# 91
+### http://arxiv.org/abs/1210.5917v1
+## Dynamic Link adaptation Based on Coexistence-Fingerprint Detection for WSN
+
+
+0         Operating in the ISM band, the wireless sensor network (WSN) risks being interfered by other concurrent networks.
+0        Our concerns are the technologies that do not perform listening before transmission such as Bluetooth, and the ones that do not detect other technologies due to their channel sensing techniques like WIFI.
+1         To overcome this issue a WSN node should be able to identify the presence of such technologies.
+2         This will allow deducing the characteristics of the generated traffic of these technologies, and thus the behavior of the channel can be predicted.
+2         These predictions would help to trigger adequate reactions as to avoid or synchronize with the concurrent net- works.
+0         Many works exist on link adaptation, but they concern blind adaptations which are unintelligent and solve momentarily the problem that may reappear over time.
+0         In this paper, we perform several experiments on a real testbed to categorize the model of the bit errors in corrupted received packets.
+1         These experiments are performed under different conditions of channel noise and interferences.
+2         This allows us to identify each corruption pattern as a fingerprint for the interfering technology.
+1         Then we propose the mechanism FIM to identify on the fly the source of the corruption.
+1         With an implementation on "Tmote Sky" motes using Tinyos1.x, We demonstrate the use of FIM for link adaptation in a coexistence environment.
+2         Our mechanism led to throughput improvements of 87%-100% depending on the transmission rate and channel quality.
+
+
+
+
+# 92
+### http://arxiv.org/abs/1211.1782v1
+## Resource Allocation in Mobile WiMAX Network: An Optimal Approach
+
+
+0         In the last few years there has been significant growth in the area of wireless communication.
+0        IEEE 802.16/WiMAX is the network which is designed for providing high speed wide area broadband wireless access; WiMAX is an emerging wireless technology for creating multi-hop Mesh network.
+1         Future generation networks will be characterized by variable and high data rates, Quality of Services (QoS), seamless mobility both within a network and between networks of different technologies and service providers.
+0         A technology is developed to accomplish these necessities is regular by IEEE, is 802.16, also called as WiMAX (Worldwide Interoperability for Microwave Access).
+0        This architecture aims to apply Long range connectivity, High data rates, High security, Low power utilization and Excellent Quality of Services and squat deployment costs to a wireless access technology on a metropolitan level.
+2         In this paper we have observed the performance analysis of location based resource allocation for WiMAX and WLAN-WiMAX client and in second phase we observed the rate-adaptive algorithms.
+1         We know that base station (BS) is observed the ranging first for all subscribers then established the link between them and in final phase they will allocate the resource with Subcarriers allocation according to the demand (UL) i.e. video, voice and data application.
+1         We propose linear approach, Active-Set optimization and Genetic Algorithm for Resource Allocation in downlink Mobile WiMAX networks.
+2         Purpose of proposed algorithms is to optimize total throughput.
+2        Simulation results show that Genetic Algorithm and Active-Set algorithm performs better than previous methods in terms of higher capacities but GA have high complexity then active set.
+
+
+
+
+# 93
+### http://arxiv.org/abs/1211.4294v1
+## Effect of AWGN & Fading (Raleigh & Rician) channels on BER performance of a WiMAX communication System
+
+
+0         The emergence of WIMAX has attracted significant interests from all fields of wireless communications including students, researchers, system engineers and operators.
+0         The WIMAX can also be considered to be the main technology in the implementation of other networks like wireless sensor networks.
+0         Developing an understanding of the WIMAX system can be achieved by looking at the model of the WIMAX system.
+0         This paper discusses the model building of the WIMAX physical layer using computer MATLAB 7.5 versions.
+0        This model is a useful tool for BER (Bit error rate) performance evaluation for the real data communication by the WIMAX physical layer under different communication channels AWGN and fading channel (Rayleigh and Rician), different channel encoding rates and digital modulation schemes which is described in this paper.
+0        This paper investigates the effect of communication channels of IEEE 802.16 OFDM based WIMAX Physical Layer.
+1        The performance measures we presented in this paper are: the bit error rate (BER) versus the ratio of bit energy to noise power spectral density (Eb/No).
+0         The system parameters used in this paper are based on IEEE 802.16 standards.
+2        The simulation model built for this research work, demonstrates that AWGN channel has better performance than Rayleigh and Rician fading channels.
+1         Synthetic data is used to simulate this research work.
+
+
+
+
+# 94
+### http://arxiv.org/abs/1211.5720v1
+## Cognitive Radio Transmission Strategies for Primary Markovian Channels
+
+
+0         A fundamental problem in cognitive radio systems is that the cognitive radio is ignorant of the primary channel state and, hence, of the amount of actual harm it inflicts on the primary license holder.
+0         Sensing the primary transmitter does not help in this regard.
+1         To tackle this issue, we assume in this paper that the cognitive user can eavesdrop on the ACK/NACK Automatic Repeat reQuest (ARQ) fed back from the primary receiver to the primary transmitter.
+1         Assuming a primary channel state that follows a Markov chain, this feedback gives the cognitive radio an indication of the primary link quality.
+1         Based on the ACK/NACK received, we devise optimal transmission strategies for the cognitive radio so as to maximize a weighted sum of primary and secondary throughput.
+1         The actual weight used during network operation is determined by the degree of protection afforded to the primary link.
+1         We begin by formulating the problem for a channel with a general number of states.
+1         We then study a two-state model where we characterize a scheme that spans the boundary of the primary-secondary rate region.
+1         Moreover, we study a three-state model where we derive the optimal strategy using dynamic programming.
+1         We also extend our two-state model to a two-channel case, where the secondary user can decide to transmit on a particular channel or not to transmit at all.
+2         We provide numerical results for our optimal strategies and compare them with simple greedy algorithms for a range of primary channel parameters.
+2         Finally, we investigate the case where some of the parameters are unknown and are learned using hidden Markov models (HMM).
+
+
+# 96
+### http://arxiv.org/abs/1301.1294v2
+## FAST CLOUD: Pushing the Envelope on Delay Performance of Cloud Storage with Coding
+
+
+0        Our paper presents solutions that can significantly improve the delay performance of putting and retrieving data in and out of cloud storage.
+1         We first focus on measuring the delay performance of a very popular cloud storage service Amazon S3.
+2         We establish that there is significant randomness in service times for reading and writing small and medium size objects when assigned distinct keys.
+2         We further demonstrate that using erasure coding, parallel connections to storage cloud and limited chunking (i.e., dividing the object into a few smaller objects) together pushes the envelope on service time distributions significantly (e.g., 76%, 80%, and 85% reductions in mean, 90th, and 99th percentiles for 2 Mbyte files) at the expense of additional storage (e.g., 1.75x).
+2         However, chunking and erasure coding increase the load and hence the queuing delays while reducing the supportable rate region in number of requests per second per node.
+0         Thus, in the second part of our paper we focus on analyzing the delay performance when chunking, FEC, and parallel connections are used together.
+1         Based on this analysis, we develop load adaptive algorithms that can pick the best code rate on a per request basis by using off-line computed queue backlog thresholds.
+2         The solutions work with homogeneous services with fixed object sizes, chunk sizes, operation type (e.g., read or write) as well as heterogeneous services with mixture of object sizes, chunk sizes, and operation types.
+1         We also present a simple greedy solution that opportunistically uses idle connections and picks the erasure coding rate accordingly on the fly.
+2         Both backlog and greedy solutions support the full rate region and provide best mean delay performance when compared to the best fixed coding rate policy.
+2         Our evaluations show that backlog based solutions achieve better delay performance at higher percentile values than the greedy solution.
+
+
+
+
+# 97
+### http://arxiv.org/abs/1301.7245v1
+## Femtocell Architectures with Spectrum Sharing for Cellular Radio Networks
+
+
+0         Femtocells are an emerging technology aimed at providing gains to both network operators and end-users.
+0         These gains come at a cost of increased interference, specifically the cross network interference between the macrocell and femtocell networks.
+0         This interference is one of the main performance limiting factors in allowing an underlaid femtocell network to share the spectrum with the cellular network.
+1         To manage this interference, we first propose a femtocell architecture that orthog- onally partitions the network bandwidth between the macrocell and femtocell networks.
+2         This scheme eliminates the cross network interference thus giving the femtocells more freedom over their use of the spectrum.
+2        Specifically, no interference constraint is imposed by the cellular network allowing femto users to transmit at a constant power on randomly selected channels.
+2         Although simple, this scheme is enough to give gains up to 200% in sum rate.
+1         We then propose a second architecture where both networks share the bandwidth simultaneously.
+1         A femtocell power control scheme that relies on minimal coordination with the macrocell base station is used in conjunction with an interference sensing channel assignment mechanism.
+2         These two schemes together yield sum rate gains up to 200%.
+1         We then develop a technique for macro users to join a nearby femtocell and share a common chan- nel with a femtocell user through the use of successive interfer- ence cancellation.
+2         By adding this mechanism to the power control and channel assignment schemes, we show sum rate gains over 300% and up to 90% power savings for macrocell users.
+
+
+
+
+# 98
+### http://arxiv.org/abs/1303.5365v2
+## Improving Network Efficiency by Removing Energy Holes in WSNs
+
+
+0        Cluster based Wireless Sensor Networks (WSNs) have been widely used for better performance in terms of energy efficiency.
+0         Efficient use of energy is challenging task of designing these protocols.
+0         Energy holedare created due to quickly drain the energy of a few nodes due to non-uniform distribution in the network.
+0         Normally, energy holes make the data routing failure when nodes transmit data back to the base station.
+1         We proposedEnergy-efficient HOleRemoving Mechanism (E-HORM) technique to remove energy holes.
+1         In this technique, we use sleep and awake mechanism for sensor nodes to save energy.
+1         This approach finds the maximum distance node to calculate the maximum energy for data transmission.
+1         We considered it as a threshold energy Eth.
+1         Every node first checks its energy level for data transmission.
+1         If the energy level is less than Eth, it cannot transmit data.
+1         We also explain mathematically the energy consumption and average energy saving of sensor nodes in each round.
+2         Extensive simulations showed that when use this approach for WSNs significantly helps to extend the network lifetime and stability period.
+
+
+
+
+# 99
+### http://arxiv.org/abs/1306.1651v1
+## Accurate Indoor Localization Using Acoustic Direction Finding via Smart Phones
+
+
+1        We propose and implement a novel indoor localization scheme, Swadloon, built upon an accurate acoustic direction finding.
+0         Swadloon leverages sensors of the smartphone without the requirement of any specialized devices.
+0         The scheme Swadloon does not rely on any fingerprints and is very easy to use: a user only needs to shake the phone for a short duration before walking and localization.
+1         Our Swadloon design exploits a key observation: the relative shift and velocity of the phone-shaking movement corresponds to the subtle phase and frequency shift of the Doppler effects experienced in the received acoustic signal by the phone.
+1         A novel method is designed to derive the direction from the phone to the acoustic source by combining the velocity calculated from the subtle Doppler shift with the one from the inertial sensors of the phone.
+1         Then a real-time precise localization and tracking is enabled by using a few anchor speakers with known locations.
+0         Major challenges in implementing Swadloon are to measure the frequency shift precisely and to estimate the shaking velocity accurately when the speed of phone-shaking is low and changes arbitrarily.
+1         We propose rigorous methods to address these challenges, then design and deploy Swadloon in several floors of an indoor building each with area about 2000m^2.
+2         Our extensive experiments show that the mean error of direction finding is around 2.1 degree when the acoustic source is within the range of 32m.
+2         For indoor localization, the 90-percentile errors are under 0.92m, while the maximum error is 1.73m and the mean is about 0.5m.
+2         For real-time tracking, the errors are within 0.4m for walks of 51m.
+
+
+
+
+# 100
+### http://arxiv.org/abs/1306.6428v1
+## Internet Control Plane Event Identification using Model Based Change Point Detection Techniques
+
+
+0        In the raise of many global organizations deploying their data centers and content services in India, the prefix reachability performance study from global destinations garners our attention.
+0         The events such as failures and attacks occurring in the Internet topology have impact on Autonomous System (AS) paths announced in the control plane and reachability of prefixes from spatially distributed ASes.
+0         As a consequence the customer reachability to the services in terms of increased latency and outages for a short or long time are experienced.
+0         The challenge in control plane event detection is when the data plane traffic is able to reach the intended destinations correctly.
+0         However detection of such events are crucial for the operations of content and data center industries.
+1         By monitoring the spatially distributed routing table features like AS path length distributions, spatial prefix reachability distribution and covering to overlap route ratio, we can detect the control plane events.
+1         In our work, we study prefix AS paths from the publicly available route-view data and analyze the global reachability as well as reachability to Indian AS topology.
+1         To capture the spatial events in a single temporal pattern, we propose a counting based measure using prefixes announced by x % of spatial peers.
+2         Employing statistical characteristics change point detection and temporal aberration algorithm on the time series of the proposed measure, we identify the occurrence of long and stochastic control plane events.
+2         The impact and duration of the events are also quantified.
+2         We validate the mechanisms over the proposed measure using the SEA-Me-We4 cable cut event manifestations in the control plane of Indian AS topology.
+0         The cable cut events occurred on 6th June 2012 (long term event) and 17th April 2012 (stochastic event) are considered for validation.
+
+
+
+
+# 101
+### http://arxiv.org/abs/1307.0084v2
+## Catch a Breath: Non-invasive Respiration Rate Monitoring via Wireless Communication
+
+
+0         Radio signals are sensitive to changes in the environment, which for example is reflected on the received signal strength (RSS) measurements of low-cost wireless devices.
+0         This information has been used effectively in the past years e.g. in device-free localization and tracking.
+0         Recent literature has also shown that the fading information of the wireless channel can be exploited to estimate the breathing rate of a person in a non-invasive manner; a research topic we address in this paper.
+0         To the best of our knowledge, we demonstrate for the first time that the respiration rate of a person can be accurately estimated using only a single IEEE 802.15.4 compliant TX-RX pair.
+1         We exploit channel diversity, low-jitter periodic communication, and oversampling to enhance the breathing estimates, and make use of a decimation filter to decrease the computational requirements of breathing estimation.
+1         In addition, we develop a hidden Markov model (HMM) to identify the time instances when breathing estimation is not possible, i.e., during times when other motion than breathing occurs.
+2         We experimentally validate the accuracy of the system and the results suggest that the respiration rate can be estimated with a mean error of 0.03 breaths per minute, the lowest breathing rate error reported to date using IEEE 802.15 4 compliant transceivers.
+2         We also demonstrate that the breathing of two people can be monitored simultaneously, a result not reported in earlier literature.
+
+
+
+
+# 102
+### http://arxiv.org/abs/1307.3402v1
+## Improving Data Security in Infrastructure Networks Based on Unipath Routing
+
+
+0         An infrastructure network is a self-organizing network which uses Access Point (AP) of wireless links that connecting one node with another.
+0         These nodes can communicate without using ad hoc, instead these nodes form an arbitrary topology (BSS/ESS) in which these nodes play the role of routers.
+0         Though the efficiency of Infrastructure networks is high, they are highly vulnerable to security attacks.
+0         Detecting/Preventing these attacks over the network is highly challenging task.
+0         Many solutions are proposed to provide authentication, confidentiality, availability, secure routing and intrusion avoidance in infrastructure networks.
+0         Providing security in such dynamically changing networks is a hard task.
+0         Characteristic of infrastructure network should also be taken into consideration in order to design efficient solutions.
+1         In this study, we focus on efficiently increasing the flow transmission confidentiality in infrastructure networks based on multi-path routing.
+1         In order to increase confidentiality of transmitted data, we take advantage of the existence of multiple paths between nodes in an infrastructure network with the help of Access Point.
+1         In this approach the original data is split into package and are forwarded through access point.
+1         The encrypted packets are then forwarded in different disjoint paths that exist between sender and receiver.
+1         Even if an attacker succeeds to obtain one or more transmitted packets, the probability of reconstructing the original message is very low.
+
+
+
+
+# 103
+### http://arxiv.org/abs/1307.6349v1
+## Communicating Is Crowdsourcing: Wi-Fi Indoor Localization with CSI-based Speed Estimation
+
+
+0         Numerous indoor localization techniques have been proposed recently to meet the intensive demand for location based service, and Wi-Fi fingerprint-based approaches are the most popular and inexpensive solutions.
+0         Among them, one of the main trends is to incorporate the built-in sensors of smartphone and to exploit crowdsourcing potentials.
+0         However the noisy built-in sensors and multi-tasking limitation of underline OS often hinder the effectiveness of these schemes.
+0         In this work, we propose a passive crowdsourcing CSI-based indoor localization scheme, C2 IL.
+0         Our scheme C2 IL only requires the locating-device (e.g., a phone) to have a 802.11n wireless connection, and it does not rely on inertial sensors only existing in some smartphones.
+0         C2 IL is built upon our innovative method to accurately estimate the moving distance purely based on 802.11n Channel State Information (CSI).
+0         Our extensive evaluations show that the moving distance estimation error of our scheme is within 3% of the actual moving distance regardless of varying speeds and environment.
+0         Relying on the accurate moving distance estimation as constraints, we are able to construct a more accurate mapping between RSS fingerprints and location.
+1         To address the challenges of collecting fingerprints, a crowdsourcing- based scheme is designed to gradually establish the mapping and populate the fingerprints.
+1         In C2 IL, we design a trajectory clustering-based localization algorithm to provide precise real-time indoor localization and tracking.
+1         We developed and deployed a practical working system of C2 IL in a large office environment.
+2         Extensive evaluation results indicate that our scheme C2 IL provides accurate localization with error 2m at 80% at very complex indoor environment with minimal overhead.
+
+
+
+
+# 104
+### http://arxiv.org/abs/1307.7111v1
+## LPCH and UDLPCH: Location-aware Routing Techniques in WSNs
+
+
+0        Wireless sensor nodes along with Base Station (BS) constitute a Wireless Sensor Network (WSN).
+0         Nodes comprise of tiny power battery.
+0         Nodes sense the data and send it to BS.
+0         WSNs need protocol for efficient energy consumption of the network.
+0         In direct transmission and minimum transmission energy routing protocols, energy consumption is not well distributed.
+0         However, LEACH (Low-Energy Adaptive Clustering Hierarchy) is a clustering protocol; randomly selects the Cluster Heads (CHs) in each round.
+0         However, random selection of CHs does not guarantee efficient energy consumption of the network.
+1         Therefore, we proposed new clustering techniques in routing protocols, Location-aware Permanent CH (LPCH) and User Defined Location-aware Permanent CH (UDLPCH).
+1         In both protocols, network field is physically divided in to two regions, equal number of nodes are randomly deployed in each region.
+1         In LPCH, number of CHs are selected by LEACH algorithm in first round.
+1         However in UDLPCH, equal and optimum number of CHs are selected in each region, throughout the network life time number of CHs are remain same.
+2         Simulation results show that stability period and throughput of LPCH is greater than LEACH, stability period and throughput of UDLPCH is greater than LPCH.
+
+
+
+
+# 105
+### http://arxiv.org/abs/1309.2208v1
+## A Novel Methodology to Overcome Routing Misbehavior in MANET using Retaliation Model
+
+
+0         MANET is a cooperative network in which nodes are responsible for forwarding as well as routing.
+0         Noncooperation is still a big challenge that certainly degrades the performance and reliability of a MANET.
+0         This paper presents a novel methodology to overcome routing misbehavior in MANET using Retaliation Model.
+1         In this model node misbehavior is watched and an equivalent misbehavior is given in return.
+1         This model employs several parameters such as number of packets forwarded, number of packets received for forwarding, packet forwarding ratio etc. to calculate Grade and Bonus Points.
+1         The Grade is used to isolate selfish nodes from the routing paths and the Bonus Points defines the number of packets dropped by an honest node in retaliation over its misconducts.
+1         The implementation is done in "GloMoSim" on top of the DSR protocol.
+2         We obtained up to 40% packet delivery ratio with a cost of a minimum of 7.5% overhead compared to DSR.
+2         To minimize total control traffic overhead we have included the FG Model with our model and it reduces the overhead up to 75%.
+2         This model enforces cooperation due to its stricter punishment strategy and justifies its name.
+
+
+
+# 121
+### http://arxiv.org/abs/1412.7684v1
+## Efficient Switch Architectures for Pre-configured Backup Protection with Sharing in Elastic Optical Networks (EON)
+
+0 	In this paper, we address the problem of providing survivability in elastic optical networks (EONs).
+0 	EONs use fine granular frequency slots or flexible grids, when compared to the conventional fixed grid networks and therefore utilize the frequency spectrum efficiently.
+1 	For providing survivability in EONs, we consider a recently proposed survivability method for conventional fixed grid networks, known as pre-configured backup protection with sharing (PBPS), because of its benefits over the traditional survivability approaches such as dedicated and shared protection.
+1 	In PBPS, backup paths can be pre-configured and at the same time they can share resources.Therefore, both short recovery time and efficient resource usage can be achieved.
+2 	We find that the existing switch architectures do not support both PBPS and EONs.
+2 	Specifically, we identify and illustrate that, if a switch architecture is not carefully designed, several key problems/issues might arise in certain scenarios. Such problems include unnecessary resource consumption, inability of using existing free resources, and incapability of sharing backup paths. These problems appear when PBPS is adopted in EONs and they do not arise in fixed grid networks.
+1 	In this paper, we propose new switch architectures which support both PBPS and EONs.
+1 	Particularly, we illustrate that, our switch architectures avoid the specific problems/issues mentioned above. Therefore, our switch architectures support using resources more efficiently and reducing blocking of requests.
+
+
+# 122
+### http://arxiv.org/abs/1412.8617v1
+## Color Filtering Localization for Three-Dimensional Underwater Acoustic Sensor Networks
+
+0 	Accurate localization for mobile nodes has been an important and fundamental problem in underwater acoustic sensor networks (UASNs).
+0 	The detection information returned from a mobile node is meaningful only if its location is known.
+1 	In this paper, we propose two localization algorithms based on color filtering technology called PCFL and ACFL.
+1 	PCFL and ACFL aim at collaboratively accomplishing accurate localization of underwater mobile nodes with minimum energy expenditure. They both adopt the overlapping signal region of task anchors which can communicate with the mobile node directly as the current sampling area.
+1 	PCFL employs the projected distances between each of the task projections and the mobile node, while ACFL adopts the direct distance between each of the task anchors and the mobile node.
+1 	Also the proportion factor of distance is proposed to weight the RGB values.
+1 	By comparing the nearness degrees of the RGB sequences between the samples and the mobile node, samples can be filtered out. And the normalized nearness degrees are considered as the weighted standards to calculate coordinates of the mobile nodes.
+2 	The simulation results show that the proposed methods have excellent localization performance and can timely localize the mobile node.
+2 	The average localization error of PCFL can decline by about 30. 4% than the AFLA method.
+
+
+# 123
+### http://arxiv.org/abs/1007.1548v1
+## Stability Analysis of GI/G/c/K Retrial Queue with Constant Retrial Rate
+
+0 	We consider a GI/G/c/K-type retrial queueing system with constant retrial rate.
+0 	The system consists of a primary queue and an orbit queue.
+0 	The primary queue has $c$ identical servers and can accommodate the maximal number of $K$ jobs.
+0 	If a newly arriving job finds the full primary queue, it joins the orbit.
+0 	The original primary jobs arrive to the system according to a renewal process.
+0 	The jobs have general i. i.	d. service times.
+0 	A job in front of the orbit queue retries to enter the primary queue after an exponentially distributed time independent of the orbit queue length.
+0 	Telephone exchange systems, Medium Access Protocols and short TCP transfers are just some applications of the proposed queueing system.
+1 	For this system we establish minimal sufficient stability conditions.
+2 	Our model is very general.
+2 	In addition, to the known particular cases (e.g., M/G/1/1 or M/M/c/c systems), the proposed model covers as particular cases the deterministic service model and the Erlang model with constant retrial rate.
+0 	The latter particular cases have not been considered in the past.
+2 	The obtained stability conditions have clear probabilistic interpretation.
+
+
+# 124
+### http://arxiv.org/abs/1007.2280v1
+## Phase Changes in the Evolution of the IPv4 and IPv6 AS-Level Internet Topologies
+
+0 	In this paper we investigate the evolution of the IPv4 and IPv6 Internet topologies at the autonomous system (AS) level over a long period of time.
+0 	We provide abundant empirical evidence that there is a phase transition in the growth trend of the two networks.
+0 	For the IPv4 network, the phase change occurred in 2001.
+0 	Before then the network's size grew exponentially, and thereafter it followed a linear growth.
+0 	Changes are also observed around the same time for the maximum node degree, the average node degree and the average shortest path length.
+0 	For the IPv6 network, the phase change occurred in late 2006.
+2 	It is notable that the observed phase transitions in the two networks are different, for example the size of IPv6 network initially grew linearly and then shifted to an exponential growth.
+2 	Our results show that following decades of rapid expansion up to the beginning of this century, the IPv4 network has now evolved into a mature, steady stage characterised by a relatively slow growth with a stable network structure; whereas the IPv6 network, after a slow startup process, has just taken off to a full speed growth.
+2 	We also provide insight into the possible impact of IPv6-over-IPv4 tunneling deployment scheme on the evolution of the IPv6 network.
+0 	The Internet topology generators so far are based on an inexplicit assumption that the evolution of Internet follows non-changing dynamic mechanisms.	
+2   This assumption, however, is invalidated by our results.
+2 	Our work reveals insights into the Internet evolution and provides inputs to future AS-Level Internet models.
+
+
+# 125
+### http://arxiv.org/abs/1007.4066v2
+## A Tutorial on Broadcasting Packets over Multiple-Channels in a Multi-Inferface Network Setting in NS-2
+
+0 	With the proliferation of cheaper electronic devices, wireless communication over multiple-channels in a multi-interface network is now possible.
+0 	For instace, wireless sensor nodes can now operate over multiplechannels.
+0 	Moreover, cognitive radio sensor networks are also evolving, which also operates over multiple-channels.
+0 	In the market, we can find antennas that can support the operation of multiple channels, for e.g. the cc2420 antenna that is used for communication between wireless sensor nodes consists of 16 programmable channels.
+0 	The proper utilization of multiple-channels reduces the interference between the nodes and increase the network throughput.
+1 	Recently, a Cognitive Radio Cognitive Network (CRCN) patch for NS-2 simulator has proposed to support multi-channel multi-interface capability in NS-2.
+0 	In this tutorial, we consider how to simulate a multi-channel multiinterface wireless network using the NS-2 simulator.
+0 	This tutorial is trageted to the novice users who wants to understand the implementation of multi-channel multi-interface in NS-2.
+1 	We take the Cognitive Radio Cognitive Network (CRCN) patch for NS-2 simulator and demonstrate broadcasting over multiple-channels in a multi-interface network setting.
+2 	In our seeting, node braodcasts the Hello packets to its neighbors.
+2 	Neighboring nodes receive the Hello packets if and only if they are tuned to the same channel.
+2 	We demonstrate through example that the tuning of receivers can be done in two fashions.
+
+
+# 106
+### http://arxiv.org/abs/1309.2904v1
+## A System-Theoretic Clean Slate Approach to Provably Secure Ad Hoc Wireless Networking
+
+0 	Traditionally, wireless network protocols have been designed for performance.
+0 	Subsequently, as attacks have been identified, patches have been developed.
+0 	This has resulted in an "arms race" development process of discovering vulnerabilities and then patching them.
+0 	The fundamental difficulty with this approach is that other vulnerabilities may still exist.
+0 	No provable security or performance guarantees can ever be provided.
+1 	We develop a system-theoretic approach to security that provides a complete protocol suite with provable guarantees, as well as proof of min-max optimality with respect to any given utility function of source-destination rates.
+1 	Our approach is based on a model capturing the essential features of an adhoc wireless network that has been infiltrated with hostile nodes.
+1 	We consider any collection of nodes, some good and some bad, possessing specified capabilities vis-a-vis cryptography, wireless communication and clocks.
+1 	The good nodes do not know the bad nodes.
+1 	The bad nodes can collaborate perfectly, and are capable of any disruptive acts ranging from simply jamming to non-cooperation with the protocols in any manner they please.
+2   The protocol suite caters to the complete life-cycle, all the way from birth of nodes, through all phases of ad hoc network formation, leading to an optimized network carrying data reliably.
+2 	It provably achieves the min-max of the utility function, where the max is over all protocol suites published and followed by the good nodes, while the min is over all Byzantine behaviors of the bad nodes.
+2 	Under the protocol suite, the bad nodes do not benefit from any actions other than jamming or cooperating.
+2 	This approach supersedes much previous work that deals with several types of attacks.
+
+
+# 107
+### http://arxiv.org/abs/1309.5049v3
+## Uni-MUMAC: A Unified Down/Up-link MU-MIMO MAC Protocol for IEEE 802.11ac WLANs
+
+0 	Due to the dominance of the downlink traffic in Wireless Local Area Networks (WLANs), a large number of previous research efforts have been put to enhance the transmission from the Access Point (AP) to stations (STAs).
+0 	The downlink Multi-User Multiple-Input Multiple-Output (MU-MIMO) technique, supported by the latest IEEE amendment-802.11ac, is considered as one of the key enhancements leading WLANs to the Gigabit era.
+0 	However, as cloud uploading services, Peer-to-Peer (P2P) and telepresence applications get popular, the need for a higher uplink capacity becomes inevitable.
+1 	In this paper, a unified down/up-link Medium Access Control (MAC) protocol called Uni-MUMAC is proposed to enhance the performance of IEEE 802.11ac WLANs by exploring the multi-user spatial multiplexing technique.
+1 	Specifically, in the downlink, we implement an IEEE 802.11ac-compliant MU-MIMO transmission scheme to allow the AP to simultaneously send frames to a group of STAs.
+1 	In the uplink, we extend the traditional one round channel access contention to two rounds, which coordinate multiple STAs to transmit frames to the AP simultaneously.
+1 	2-nd round Contention Window (CW2nd), a parameter that makes the length of the 2-nd contention round elastic according to the traffic condition, is introduced.
+1 	Uni-MUMAC is evaluated through simulations in saturated and non-saturated conditions when both downlink and uplink traffic are present in the system.
+1 	We also propose an analytic saturation model to validate the simulation results.
+2 	By properly setting CW2nd and other parameters, Uni-MUMAC is compared to a prominent multi-user transmission scheme in the literature.
+2 	The results exhibit that Uni-MUMAC not only performs well in the downlink-dominant scenario, but it is also able to balance both the downlink and uplink throughput in the emerging uplink bandwidth-hungry scenario.
+
+
+# 108
+### http://arxiv.org/abs/1310.5794v1
+## An Operational Approach For Wimax At Ultra High Bandwidth With Spectrum 60 Ghz
+
+0   WiMax is a promising network of today industry.
+0 	It provides P2P and P2MP point to multipoint broadband services up to thirty miles.
+0 	Its operational frequency range is 10 GHz to 60 GHz.
+0 	It provides data rate of 75Mbps per channel; with an end-to-end encryption called CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol).
+0 	CCMP is an Advanced Encryption Standard AES based encryption method, which delivers secure communication.
+0 	Telecom industry seeks secure, cheaper, wireless metro area network, that full fill the today internet demand in most efficient way.
+1 	Our research explores the new dimension of WiMax with HEMT High Electron Mobility Transistor using un-licensed Band.
+0 	The Aim of this paper is to simulate 60GHz unlicensed WiMax band in Matlab.
+0 	This research explores millimeter waves, related electronics, mathematics of WiMax and simulated graph comparison.
+1 	It determines available capacity verses coverage area and transmission bit error probability.
+1 	Further it highlights the ideal modulation condition in different terrains.
+2 	Research proofs that WiMax will be the future promising wireless network.
+
+
+# 109
+### http://arxiv.org/abs/1310.6880v2
+## Capacity Analysis of IEEE 802.11ah WLANs for M2M Communications
+
+0 	Focusing on the increasing market of the sensors and actuators networks, the IEEE 802.11ah Task Group is currently working on the standardization of a new amendment.
+0 	This new amendment will operate at the sub-1GHz band, ensure transmission ranges up to 1 Km, data rates above 100 kbps and very low power operation.
+0 	With IEEE 802.11ah, the WLANs will offer a solution for applications such as smart metering, plan automation, eHealth or surveillance.
+0 	Moreover, thanks to a hierarchical signalling, the IEEE 802.11ah will be able to manage a higher number of stations (STAs) and improve the 802.11 Power Saving Mechanisms.
+1 	In order to support a high number of STAs, two different signalling modes are proposed, TIM and Non-TIM Offset.
+1 	In this paper we present a theoretical model to predict the maximum number of STAs supported by both modes depending on the traffic load and the data rate used.
+1 	Moreover, the IEEE 802.11ah performance and energy consumption for both signalling modes and for different traffic patterns and data rates is evaluated.
+2 	Results show that both modes achieve similar Packet Delivery Ratio values but the energy consumed with the TIM Offset is, in average, a 11.7% lower.
+
+
+# 110
+### http://arxiv.org/abs/1311.3181v1
+## Comparative Study of Various VOIP Applications in 802.11a Wireless Network Scenario
+
+0 	Today, Voice over Wireless Local Area Network (VOWLAN) is the most accepted Internet application.
+0 	There are a large number of literatures regarding the performance of various WLAN networks.
+0 	Most of them focus on simulations and modeling, but there are also some experiments with real networks.
+1 	This paper explains the comparison of performance of two different VOIP (Voice over Internet Protocol) applications over the same IEEE 802.11a wireless network.
+0   Radio link standard 802.11a have maximum transmission rate of 54Mbps.
+1 	First protocol is session initiation protocol (SIP) and second is H.323 protocol.
+1 	First one has an agent called SIP proxy.
+1 	Second have a gateway reflects the characteristics of a Switched Circuit Network (SCN).
+2 	With this comparison we have required to obtain a better understanding of wireless network suitability for voice communication in IP network.
+
+
+# 111
+### http://arxiv.org/abs/1311.3184v1
+## Comparative Study of QOS Parameters of SIP protocol in 802.11a and 802.11b Network
+
+0 	Present day, the internet telephony growth is much faster than previous.
+0 	Now we are familiar with digitized packet of voice stream.
+0 	So, we have required VOIP communication.
+0 	SIP is one type of VOIP protocol.
+0 	This one has a SIP proxy.
+0 	There have one of the important communication environment Wireless LAN (WLAN).
+0 	WLAN have different radio link standard.
+1 	Here I am comparing SIP protocol in two radio link standard 802.11a and 802.11b environment.
+2 	The first one have maximum transmission rate of 54Mbps and second one have maximum transmission rate of 11Mbps.
+1 	In this paper I want to show the results in a comparative plot.
+2 	These comparisons include server /client throughput, packet drops, end to end delay etc.
+
+
+# 112
+### http://arxiv.org/abs/1311.3483v1
+## Subsiding routing misbehavior in MANET using "Mirror Model"
+
+0 	Noncooperation or failure to work together is a big challenge that surely degrades the performance and reliability of Mobile Adhoc Networks.
+0 	In MANETs, nodes have dual responsibilities of forwarding and routing, that's why it needs unison with nodes.
+0 	To sort out non-cooperation a real life behavior should be implemented, so that misbehavior is nullified.
+1 	In this paper, we present the "Mirror Model" that strictly enforces cooperation due to its punishment strategy.
+1 	Node's behavior is watched by its neighbors in PON mode, to update the NPF, NPRF values for a threshold time.
+1 	After the expiry of the threshold time each node calculates the PFR and broadcasts its neighbors.
+1 	Similarly all neighbors broadcasted PFR is received and processed by the node to define the 'G' and 'BP' values.
+1 	The G value is used to isolate selfish nodes from the routing paths and BP denotes the amount of packets to be dropped by an honest node against a selfish node in spite of its misbehavior/packet drops.
+2 	Cooperation within the neighbors, certainly result in subsiding misbehavior of selfish nodes, therein enhancing cooperation of the whole MANET.
+2 	This model ensures honesty and reliability in MANET because it does not eliminate a node, but it behaves in the same way as the node behaved.
+2 	Therefore, it justifies its name, after all mirrors reflects the same.
+2 	We have implemented the model in "GloMoSim" on top of the DSR protocol, resulting its effectiveness, as compared to the DSR protocol when the network is misconducting for its selfish needs.
+
+
+# 113
+### http://arxiv.org/abs/1311.4293v1
+## Scalable Oriented-Service Architecture for Heterogeneous and Ubiquitous IoT Domains
+
+0 	Internet of Things (IoT) grows quickly, and 50 billion of IoT devices will be interconnected by 2020.
+0 	For the huge number of IoT devices, a high scalable discovery architecture is required to provide autonomous registration and look-up of IoT resources and services.
+0 	The architecture should enable dynamic updates when new IoT devices are incorporated into Internet, and changes are made to the existing ones.
+0 	Nowadays in Internet, the most used discovery architecture is the Domain Name System (DNS).
+0 	DNS offers a scalable solution through two distributed mechanisms: multicast DNS (mDNS) and DNS Service Directory (DNS-SD).
+0 	Both mechanisms have been applied to discover resources and services in local IoT domains.
+0 	However, a full architecture has not still been designed to support global discovery, local directories and a search engine for ubiquitous IoT domains.
+0 	Moreover, the architecture should provide other transversal functionalities such as a common semantic for describing services and resources, and a service layer for interconnecting with M2M platforms and mobile clients.
+1 	This paper presents an oriented-service architecture based on DNS to support a global discovery, local directories and a distributed search engine to enable a scalable looking-up of IoT resources and services.
+1 	The architecture provides two lightweight discovery mechanisms based on mDNS and DNS-SD that have been optimized for the constraints of IoT devices to allow autonomous registration.
+1 	Moreover, we analyse and provide other relevant elements such semantic description and communications interfaces to support the heterogeneity of IoT devices and clients.
+2 	All these elements contribute to build a scalable architecture for the discovery and access of heterogeneous and ubiquitous IoT domains.
+
+
+# 114
+### http://arxiv.org/abs/1312.4179v3
+## Multi-Parameter Decision Support with Data Transmission over GSM/GPRS Network: a Case Study of Landslide Monitoring
+
+0 	The planet Earth has hundreds of impact events, with some occurrences causing both in terms of human casualty as well as economic losses.
+0 	Such attitudes of earth pushed the frontiers to develop innovative monitoring strategies for the earth system.
+0 	To make that real, although, will require coherent and real-time data by observing the earth behavior contiguously.
+0 	Wireless Sensor Network (WSN) appears to be the best suitable infrastructure to sense environmental parameters of our interests.
+0 	In this event of earth observation, another important issue is the monitoring system with high level of precision.
+0 	There are different types of sensors to measure the behavioral aspects of earth.
+0 	The sensors integrated with WSN, provide an accurate and contiguous data for analysis and interpretation.
+0 	This paper briefly addresses earth observation and areas of critical importance to people and society.
+1 	A case study has also been carried out for disaster like Landslide in the North Eastern region of India.
+1 	Application software has been developed for the said study for online data acquisition and analysis with pre-disaster early warning system.
+1 	The system monitors the changing geotechnical condition of this region using various geo-technical sensors like Rain gauge, In-place Inclinometer, Tilt-meter, Piezo-meter and Crack meter.
+1 	This paper also touches upon the aspects of data transmission over Global System for Mobile Communication (GSM) / General Packet Radio Service (GPRS) to a remote data center.
+
+
+# 115
+### http://arxiv.org/abs/1312.6501v1
+## On-Demand WebRTC Tunneling in Restricted Networks
+
+1 	In this paper we present the implementation of a WebRTC gateway service that can forward ad-hoc RTP data plane traffic from a browser on one local network to a browser on another local network.
+0 	The advantage compared to the existing IETF STUN (RFC 5389), TURN (RFC 5766) and ICE (RFC 5245) protocols is that it does not require a public host and port mapping for each participating local host, and it works with more restrictive firewall policies.
+0 	WebRTC implements ICE which combines STUN and TURN probes to automatically find the best connection between two peers who want to communicate.
+0 	In corporate networks, simple hole punching and NAT traversal techniques typically do not work, e.g. because of symmetric NATs.
+0 	Dynamic allocation of ports on an external 3rd party relay service is also typically blocked on restricted hosts.
+1 	In our use case, doctors at hospitals can only access port 80 through the hospital firewall on external machines, and they need to communicate with patients who are typically behind a NAT in a local WiFi network.
+0 	VPN solutions only work for staff but not between patients and staff.
+1 	Our solution solves this problem by redirecting all WebRTC traffic through a gateway service on the local network that has a secure tunnel established with a public gateway.
+1 	The public gateway redirects traffic from multiple concurrent streams securely between local gateway services that connect to it.
+1 	The local gateways also communicate with browsers on their local network to mimic a direct browser-to-browser connection without having to change the browser runtime.
+2 	We have demonstrated that this technique works well within the hospital network and arbitrary patient networks, without the need for any individual host configuration.
+2 	In our evaluation we show that the latency overhead is 18-20 ms for each concurrent stream added to the same gateway service.
+
+
+# 116
+### http://arxiv.org/abs/1312.6829v1
+## A Localization Strategy Based on N-times Trilateral Centroid with Weight
+
+0 	Localization based on received signal strength indication (RSSI) is a low cost and low complexity technology, and it is widely applied in distance-based localization of wireless sensor networks (WSNs).
+0 	Error of existed localization technologies is significant.
+1 	This paper presents the N-times trilateral centroid weighted localization algorithm (NTCWLA), which can reduce the error considerably.
+1 	Considering the instability of RSSI, we use the weighted average of many RSSIs as current RSSI.
+1 	To improve the accuracy we select a number of (no less than three) reliable beacon nodes to increase the localization times.
+1 	Then we calculate the distances between reliable beacon nodes and the mobile node using an empirical formula.
+1 	The mobile node is located N times using the trilateral centroid algorithm.
+1 	Finally, we take the weighted average of the filtered reference coordinates as the mobile node's coordinates.
+1 	We conduct experiments with the STM32W108 chip which supports IEEE 802.15.4.
+2 	The results show that the proposed algorithm performs better than the trilateral centroid algorithm.
+
+
+# 117
+### http://arxiv.org/abs/1312.6837v1
+## Evaluating IEEE 802.15.4 for Cyber-Physical Systems
+
+0 	With rapid advancements in sensing, networking, and computing technologies, recent years have witnessed the emergence of cyber-physical systems (CPS) in a broad range of application domains.
+0 	CPS is a new class of engineered systems that features the integration of computation, communications, and control.
+0 	In contrast to general-purpose computing systems, many cyber-physical applications are safety-cricial.
+0 	These applications impose considerable requirements on quality of service (QoS) of the employed networking infrastruture.
+0 	Since IEEE 802.15.4 has been widely considered as a suitable protocol for CPS over wireless sensor and actuator networks, it is of vital importance to evaluate its performance extensively.
+1 	Serving for this purpose, this paper will analyze the performance of IEEE 802.15.4 standard operating in different modes respectively.
+1 	Extensive simulations have been conducted to examine how network QoS will be impacted by some critical parameters.
+2 	The results are presented and analyzed, which provide some useful insights for network parameter configuration and optimization for CPS design.
+
+
+# 118
+### http://arxiv.org/abs/1412.0366v1
+## Node Failure Time and Coverage Loss Time Analysis for Maximum Stability Vs Minimum Distance Spanning Tree based Data Gathering in Mobile Sensor Networks
+
+0 	A mobile sensor network is a wireless network of sensor nodes that move arbitrarily.
+0 	In this paper, we explore the use of a maximum stability spanning tree-based data gathering (Max.Stability-DG) algorithm and a minimum-distance spanning tree-based data gathering (MST-DG) algorithm for mobile sensor networks.
+1 	We analyze the impact of these two algorithms on the node failure times and the resulting coverage loss due to node failures.
+1 	Both the Max.Stability-DG and MST-DG algorithms are based on a greedy strategy of determining a data gathering tree when one is needed and using that tree as long as it exists.
+1 	The Max.Stability-DG algorithm assumes the availability of the complete knowledge of future topology changes and determines a data gathering tree whose corresponding spanning tree would exist for the longest time since the current time instant; whereas, the MST-DG algorithm determines a data gathering tree whose corresponding spanning tree is the minimum distance tree at the current time instant.
+2 	We observe the Max.Stability-DG trees to incur a longer network lifetime (time of disconnection of the network of live sensor nodes due to node failures), a larger coverage loss time for a particular fraction of loss of coverage as well as a lower fraction of coverage loss at any time.
+2 	The tradeoff is that the Max.Stability-DG trees incur a lower node lifetime (the time of first node failure) due to repeated use of a data gathering tree for a longer time.
+
+
+# 119
+### http://arxiv.org/abs/1412.1395v2
+## A High Efficiency MAC Protocol for WLANs: Providing Fairness in Dense Scenarios
+
+0 	Collisions are a main cause of throughput degradation in WLANs.
+0 	The current contention mechanism used in IEEE 802.11 networks is called Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA).
+0 	It uses a Binary Exponential Backoff (BEB) technique to randomise each contender attempt of transmitting, effectively reducing the collision probability.
+0 	Nevertheless, CSMA/CA relies on a random backoff that while effective and fully decentralised, in principle is unable to completely eliminate collisions, therefore degrading the network throughput as more contenders attempt to share the channel.
+1 	To overcome these situations, Carrier Sense Multiple Access with Enhanced Collision Avoidance (CSMA/ECA) is able to create a collision-free schedule in a fully decentralised manner using a deterministic backoff after successful transmissions.
+1 	Hysteresis and Fair Share are two extensions of CSMA/ECA to support a large number of contenders in a collision-free schedule.
+1 	CSMA/ECA offers better throughput than CSMA/CA and short-term throughput fairness.
+1 	This work describes CSMA/ECA and its extensions.
+2 	Additionally, it provides the first evaluation results of CSMA/ECA with non-saturated traffic, channel errors, and its performance when coexisting with CSMA/CA nodes.
+2 	Furthermore, it describes the effects of imperfect clocks over CSMA/ECA and present a mechanism to leverage the impact of channel errors and the addition/withdrawal of nodes over collision-free schedules.
+2 	Finally, experimental results on throughput and lost frames from a CSMA/ECA implementation using commercial hardware and open-source firmware are presented.
+
+
+# 120
+### http://arxiv.org/abs/1412.2168v1
+## An Energy Efficient Risk Notification Message Dissemination Protocol for Vehicular Ad hoc Networks
+
+0 	We propose the design and development of an energy-efficient Risk Notification Message Dissemination Protocol (RNMDP) for vehicular ad hoc networks (VANETs).
+0 	RNMDP propagates Risk Notification Messages (RNMs) from their location of origin (called the Risk Zone) to vehicles approaching the Risk Zone.
+0 	RNMDP assumes each node is aware of its current location in the network.
+1 	The protocol works as follows: A RNM is broadcast in the neighborhood of the Risk Zone.
+1 	A node receiving the RNM from another node waits for a Rebroadcast-Wait-Time before deciding to rebroadcast the message.
+1 	The Rebroadcast-Wait-Time for a node is modeled based on the ratio of the distance between the node and the immediate sender of the RNM and the direction of movement of the node.
+1 	Priority for rebroadcast is given for nodes farthest away from the sender and traveling towards the Risk Zone.
+1 	Nodes that are traveling in lanes in direction away from the Risk Zone are also considered for rebroadcast, albeit with a larger Rebroadcast-Wait-Time.
+1 	During the Rebroadcast-Wait-Time, if a node hears the same RNM again rebroadcast in the neighborhood, then the node stops from further broadcasting the message.
+1 	If a node does not hear the RNM in its neighborhood during the RebroadcastWait-Time, the node broadcasts the message in its neighborhood.
+1 	A RNM is considered to have been delivered to all the vehicles in the road, if the message reaches the Target Zone.
+1 	The performance of RNMDP has been compared with that of the commonly used flooding strategy through extensive simulations conducted for highway networks with different number of lanes and lane density.
+2 	Simulation results indicate that with a slightly larger delay (i.e., no more than 35% of the delay incurred for flooding), RNMDP can achieve the same message delivery ratio attained by flooding, but at a relatively much lower energy loss compared to flooding.
+
+
+# 136
+### http://arxiv.org/abs/1602.04440v1
+## A new scheme for maximizing the lifetime of heterogeneous wireless sensor networks
+
+0 	Heterogeneous wireless sensor network consists of wireless sensor nodes with different abilities, such as different computing power and different initial energy.
+0 	We present in this paper a new scheme for maximizing heterogeneous WSN lifetime.
+1 	The proposed scheme employs two types of sensor nodes that are named (consistent with IEEE 802.15.4 standard) Full Function Device (FFD) and Reduced Function Device (RFD).
+0 	The FFDs are the expensive sensor nodes with high power and computational capabilities compared to the RFDs which are cheap sensors with a limited power supply.
+1 	The scheme divides the network into smaller sub-networks (regions) that are built from sectors and tracks.
+0 	The objective of this research is to balance and reduce the communication load on RFDs, reduce the delay, and increase the connectivity and lifetime, by using a limited number of FFDs.
+1 	We investigate the performance of our scheme via numerical simulation and compare it to other related schemes that are presented for homogeneous WSNs with chain topology, such as Pegasis, Epegasis and Chiron.
+2 	In addition to extending the lifetime, our scheme also results in reducing the data transmission delay compared to the related schemes.
+2	Furthermore, the scheme increases the network security and reduces the RFDs power consumption by preventing the direct communication with the base station (BS).
+2 	The FFD is the communication bridge between RFDs and BS.
+2 	The FFD communicate with the BS using the one-hop approach or multi-hop approach through other FFDs.
+
+
+# 137
+### http://arxiv.org/abs/1606.04997v1
+## Adaptive Quorum-Based Channel-Hopping Distributed Coordination Scheme for Cognitive Radio Networks
+
+0 	One of the most important challenges in deploying cognitive radio networks (CRNs) is to find a common control channel (CCC) to all secondary users (SUs) that enables efficient CR communications.
+0 	This challenge is attributed to the dynamic time-varying change of network topology, location and spectrum availability conditions.
+0 	Rendezvous, which is the process of establishing control communications, is an essential requirement to enable efficient communication between any two pair of CR nodes.
+0 	The most popular CR rendezvous protocols are based on quorum systems (QSs).
+0 	Quorum systems are systematic approaches, which have several attractive properties that can be utilized to establish communication without the need of a CCC and so overcome the rendezvous (RDV) problem.
+1 	In this thesis, we propose new channel-hopping-based distributed rendezvous algorithm based on grid-based-quorum techniques.
+2 	The proposed algorithm increases the probability of RDV within a single cycle by allowing CR nodes to meet more often according to intersection property of quorum systems.
+1 	Our proposed algorithm is called Adaptive_Quorum-Based Channel-Hopping Distributed Coordination Scheme for Cognitive Radio Networks.
+1 	The main idea of our algorithm is to dynamically adjusting the selected QS by CR users according to the varying traffic loads in the CRN.
+2 	The proposed algorithm decreases the average time to rendezvous (TTR) and increase the probability of RDV.
+1 	We evaluate the performance of our algorithm through Matlab simulations.
+1 	The performance of proposed algorithm is compared with two different design scheme.
+2	The results show that our algorithm can reduce TTR, increase the RDV, and decrease the energy consumption per successful RDV.
+
+
+# 138
+### http://arxiv.org/abs/1606.05047v1
+## Towards Characterizing International Routing Detours
+
+0 	There are currently no requirements (technical or otherwise) that BGP paths must be contained within national boundaries.
+0 	Indeed, some paths experience international detours, i.e., originate in one country, cross international boundaries and return to the same country.
+0 	In most cases these are sensible traffic engineering or peering decisions at ISPs that serve multiple countries.
+0 	In some cases such detours may be suspicious.
+0 	Characterizing international detours is useful to a number of players: (a) network engineers trying to diagnose persistent problems, (b) policy makers aiming at adhering to certain national communication policies, (c) entrepreneurs looking for opportunities to deploy new networks, or (d) privacy-conscious states trying to minimize the amount of internal communication traversing different jurisdictions.
+0 	In this paper we characterize international detours in the Internet during the month of January 2016.
+1 	To detect detours we sample BGP RIBs every 8 hours from 461 RouteViews and RIPE RIS peers spanning 30 countries.
+1 	Then geolocate visible ASes by geolocating each BGP prefix announced by each AS, mapping its presence at IXPs and geolocation infrastructure IPs.
+1 	Finally, analyze each global BGP RIB entry looking for detours.
+2 	Our analysis shows more than 5K unique BGP prefixes experienced a detour.
+2 	A few ASes cause most detours and a small fraction of prefixes were affected the most.
+2 	We observe about 544K detours.
+2 	Detours either last for a few days or persist the entire month.
+2 	Out of all the detours, more than 90% were transient detours that lasted for 72 hours or less.
+2 	We also show different countries experience different characteristics of detours.
+
+
+# 139
+### http://arxiv.org/abs/1606.07613v1
+## Carrier-Grade Anomaly Detection Using Time-to-Live Header Information
+
+0 	Time-to-Live data in the IP header offers two interesting characteristics: First, different IP stacks pick different start TTL values.Second, each traversed router should decrement the TTL value.
+0 	The combination of both offers host and route fingerprinting options.
+1 	We present the first work to investigate Internet-wide TTL behavior at carrier scale and evaluate its fit to detect anomalies, predominantly spoofed source IP addresses.
+1 	Using purpose-built software, we capture 2 weeks of raw TTL data at a 40 Gbit/s Internet uplink.
+1 	For further insight, we actively measure observed hosts and conduct large-scale hitlist-based measurements, which yields three complementary data sets for IPv4 and IPv6.
+2 	A majority (69% IPv4; 81% IPv6) of passively observed multi-packet hosts exhibit one stable TTL value.
+2 	Active measurements on unstable hosts yield a stable anchor TTL value for more than 85% of responsive hosts.
+1 	We develop a structure to further classify unstable hosts taking, for example, temporal stability into account.
+2 	Correlation of TTL values with BGP data is clear, yet unpredictive.
+2 	The results indicate that carrier-grade TTL anomaly detection can yield significant insights in the following categories: First, the method can flag anomalies based on TTL observations (yet likely at a difficult false positive/false negative trade-off).Second, the method can establish trust that a packet originates from its acclaimed source.
+
+
+# 140
+### http://arxiv.org/abs/1606.08936v1
+## A Time-constraint Satisfying and Cost-reducing node evaluation metric for Message Routing in Mobile Crowd Sensing Networks
+
+0 	In mobile crowd sensing networks data forwarding through opportunistic contacts between participants.
+0 	Data is replicated to encountered participants.
+0 	For optimizing data delivery ratio and reducing redundant data a lot of data forwarding schemes, which selectively replicate data to encountered participants through node's data forwarding metric are proposed.
+0 	However most of them neglect a kind of redundant data whose Time-To-Live is expired.
+1 	For reducing this kind of redundant data we proposed a new method to evaluate node's data forwarding metric, which is used to measure the node's probability of forwarding data to destination within data's constraint time.
+1 	The method is divided into two parts.
+1 	The first is evaluating nodes whether have possibility to contact destination within time constraint based on transient cluster.
+1 	We propose a method to detect node's transient cluster, which is based on node's contact rate.
+1 	Only node, which has possibility to contact destination, has chances to the second step.
+2 	It effectively reduces the computational complexity.
+1 	The second is calculating data forwarding probability of node to destination according to individual ICT (inter contact time) distribution.
+2 	Evaluation results show that our proposed transient cluster detection method is more simple and quick.
+2 	And from two aspects of data delivery ratio and network overhead our approach outperforms other existing data forwarding approach.
+
+
+# 141
+### http://arxiv.org/abs/0809.1061v1
+## A Novel Proportional Fairness Criterion for Throughput Allocation in Multirate IEEE 802.11
+
+0 	This paper focuses on multirate IEEE 802.11 Wireless LAN employing the mandatory Distributed Coordination Function (DCF) option.
+0 	Its aim is threefold.
+1	Upon starting from the multi-dimensional Markovian state transition model proposed by Malone \textit{et.al.}for characterizing the behavior of the IEEE 802.11 protocol at the Medium Access Control layer, it presents an extension accounting for packet transmission failures due to channel errors.
+1	Second, it establishes the conditions under which a network constituted by $N$ stations, each station transmitting with its own bit rate, $R^{(s)}_d$, and packet rate, $\lambda_s$, can be assumed loaded.
+1 	Finally, it proposes a modified Proportional Fairness (PF) criterion, suitable for mitigating the \textit{rate anomaly} problem of multirate loaded IEEE 802.11 Wireless LANs, employing the mandatory DCF option.
+2 	Compared to the widely adopted assumption of saturated network, the proposed fairness criterion can be applied to general loaded networks.
+2 	The throughput allocation resulting from the proposed algorithm is able to greatly increase the aggregate throughput of the DCF, while ensuring fairness levels among the stations of the same order as the ones guaranteed by the classical PF criterion.
+2 	Simulation results are presented for some sample scenarios, confirming the effectiveness of the proposed criterion for optimized throughput allocation.
+
+
+# 142
+### http://arxiv.org/abs/1002.1689v1
+## Saturation Throughput Analysis of IEEE 802.11b Wireless Local Area Networks under High Interference Considering Capture Effects
+
+0 	Distributed contention based Medium Access Control (MAC) protocols are the fundamental components for IEEE 802.11 based Wireless Local Area Networks (WLANs).
+0 	Contention windows (CW) change dynamically to adapt to the current contention level, Upon each packet collision, a station doubles its CW to reduce further collision of packets.
+0 	IEEE 802.11 Distributed Coordination Function (DCF) suffers from a common problem in erroneous channel.
+0 	They cannot distinguish noise lost packets from collision lost packets.
+0 	In both situations a station does not receive its ACK and doubles the CW to reduce further packet collisions.
+0 	This increases backoff overhead unnecessarily in addition to the noise lost packets, reduces the throughput significantly.
+0 	Furthermore, the aggregate throughput of a practical WLAN strongly depends on the channel conditions.
+0 	In real radio environment, the received signal power at the access point from a station is subjected to deterministic path loss, shadowing and fast multipath fading.
+1 	In this paper, we propose a new saturation throughput analysis for IEEE 802.11 DCF considering erroneous channel and capture effects.
+1 	To alleviate the low performance of IEEE 802.11 DCF, we introduce a mechanism that greatly outperforms under noisy environment with low network traffic and compare their performances to the existing standards.
+1 	We extend the multidimensional Markov chain model initially proposed by Bianchi(3) to characterize the behavior of DCF in order to account both real channel conditions and capture effects, especially in a high interference radio environment.
+
+
+# 143
+### http://arxiv.org/abs/1002.1834v1
+## AROMA: Automatic Generation of Radio Maps for Localization Systems
+
+0 	WLAN localization has become an active research field recently.
+0 	Due to the wide WLAN deployment, WLAN localization provides ubiquitous coverage and adds to the value of the wireless network by providing the location of its users without using any additional hardware.
+0 	However, WLAN localization systems usually require constructing a radio map, which is a major barrier of WLAN localization systems' deployment.
+0 	The radio map stores information about the signal strength from different signal strength streams at selected locations in the site of interest.
+0 	Typical construction of a radio map involves measurements and calibrations making it a tedious and time-consuming operation.
+0 	In this paper, we present the AROMA system that automatically constructs accurate active and passive radio maps for both device-based and device-free WLAN localization systems.
+0 	AROMA has three main goals: high accuracy, low computational requirements, and minimum user overhead.
+1 	To achieve high accuracy, AROMA uses 3D ray tracing enhanced with the uniform theory of diffraction (UTD) to model the electric field behavior and the human shadowing effect.
+1 	AROMA also automates a number of routine tasks, such as importing building models and automatic sampling of the area of interest, to reduce the user's overhead.
+1 	Finally, AROMA uses a number of optimization techniques to reduce the computational requirements.
+1 	We present our system architecture and describe the details of its different components that allow AROMA to achieve its goals.
+1 	We evaluate AROMA in two different testbeds.
+2 	Our experiments show that the predicted signal strength differs from the measurements by a maximum average absolute error of 3.18 dBm achieving a maximum localization error of 2.44m for both the device-based and device-free cases.
+
+
+# 144
+### http://arxiv.org/abs/1002.1954v1
+## High Throughput of WiMAX MIMO OFDM Including Adaptive Modulation and Coding
+
+0	WiMAX technology is based on the IEEE 802.16 specification of which IEEE 802.16-2004 and 802.16e amendment are Physical (PHY) layer specifications.
+0 	IEEE 802.16-2004 currently supports several multiple-antenna options including Space-Time Codes (STC), Multiple-Input Multiple-Output (MIMO) antenna systems and Adaptive Antenna Systems (AAS).
+0 	The most recent WiMAX standard (802.16e) supports broadband applications to mobile terminals and laptops.
+1 	Using Adaptive Modulation and Coding (AMC) we analyze the performance of OFDM physical layer in WiMAX based on the simulation results of Bit Error Rate (BER), and data throughput.
+1 	The performance analysis of OFDM PHY is done.
+1 	In this paper, an extension to the basic SISO mode, a number of 2 by 2 MIMO extensions are analysed under different combinations of digital modulation (QPSK, 16QAM and 64QAM) and Convolutional Code (CC) with half, two-third and three quarter rated codes.
+2 	The intent of this paper is to provide an idea of the benefits of multiple antenna systems over single antenna systems in WiMAX type deployments.
+
+
+# 145
+### http://arxiv.org/abs/1002.2403v1
+## Impact of Random Loss on TCP Performance in Mobile Ad hoc Networks (IEEE 802.11), A Simulation-Based Analysis
+
+0 	Initially TCP was designed with the notion in mind that wired networks are generally reliable and any segment loss in a transmission is due to congestion in the network rather than an unreliable medium (The assumptions is that the packet loss caused by damage is much less than 1 percent) .
+0 	This notion doesnt hold in wireless parts of the network.
+0 	Wireless links are highly unreliable and they lose segments all the time due to a number of factors.
+0 	Very few papers are available which uses TCP for MANET.
+0 	In this paper, an attempt have been made to justify the use of TCP variants (Tahoe and Reno) for loss of packet due to random noise introduces in the MANET.
+1 	For the present analysis the simulation has been carried out for TCP variants (Tahoe and Reno) by introduces 0, 10, 20 and 30 percent noise.
+1 	The comparison of TCP variants is made by running simulation for 0, 10, 20 and 30 percent of data packet loss due to noise in the transmission link and the effect of throughput and congestion window has been examined.
+2 	During the simulation we have observed that throughput has been decreased when a drop of multiple segments happens, further we have observed in the case of TCP variant (Reno) throughput is better at 1 percent (Figure 5) which implies a network with short burst of error and low BER, causing only one segment to be lost.
+2 	When multiple segments are lost due to error prone nature of link, Tahoe perform better than Reno (Figure 13), that gives a significant saving of time (64.28 percent) in comparison with Reno (Table 4).
+1 	Several simulations have been run with ns 2 simulator in order to acquire a better understanding of these TCP variants and the way they perform their function.
+2 	We conclude with a discussion of whether these TCP versions can be used in Mobile Ad hoc Network.
+
+
+# 146
+### http://arxiv.org/abs/1002.3084v2
+## Channel Fragmentation in Dynamic Spectrum Access Systems - a Theoretical Study
+
+0 	Dynamic Spectrum Access systems exploit temporarily available spectrum (`white spaces') and can spread transmissions over a number of non-contiguous sub-channels.
+0 	Such methods are highly beneficial in terms of spectrum utilization.
+0 	However, excessive fragmentation degrades performance and hence off-sets the benefits.
+0 	Thus, there is a need to study these processes so as to determine how to ensure acceptable levels of fragmentation.
+1	Hence, we present experimental and analytical results derived from a mathematical model.
+1 	We model a system operating at capacity serving requests for bandwidth by assigning a collection of gaps (sub-channels) with no limitations on the fragment size.
+2 	Our main theoretical result shows that even if fragments can be arbitrarily small, the system does not degrade with time.
+2 	Namely, the average total number of fragments remains bounded.
+2 	Within the very difficult class of dynamic fragmentation models (including models of storage fragmentation), this result appears to be the first of its kind.
+2 	Extensive experimental results describe behavior, at times unexpected, of fragmentation under different algorithms.
+2 	Our model also applies to dynamic linked-list storage allocation, and provides a novel analysis in that domain.
+2 	We prove that, interestingly, the 50% rule of the classical (non-fragmented) allocation model carries over to our model.
+2 	Overall, the paper provides insights into the potential behavior of practical fragmentation algorithms.
+
+
+# 147
+### http://arxiv.org/abs/1002.3328v1
+## Error Performance Analysis to Increase Capacity of A Cellular System Using SDMA
+
+0 	One of the biggest drawbacks of the wireless environment is the limited bandwidth.
+0	However, the users sharing this limited bandwidth have been increasing considerably.
+0 	Space Division Multiple Access (SDMA) is a new technology by which the capacity of existing mobile communication systems can economically be increased.
+0 	This paper has been presented how the capacity can be enhanced by using SDMA with smart antennas in mobile communications system.
+1 	Based on Adaptive Antenna Array (AAA) technology the spatial dimension of the existing system is exploited by means of forming independent radio beams in each of the original channels.
+1 	This paper analyses the comparison of average Bit Error Rate (BER) of SDMA and CDMA technique and the different ways in which SDMA can be introduced to increase the capacity of a cellular system.
+1 	The probability of error is found for a standard omni directional base station antenna, and another set of curves is found for flat top beam having a directivity of 5.1dB.
+1 	It is assumed that k separate flat top beams can be formed by base station and pointed each of the k users within the cell of interest.
+2 	Noticing that for an average probability of error greater than 0.1 in a propagation path loss environment of n=4, the flat top beam will support 200 users, whereas the omni-directional antenna will support only 50 users.
+2 	This increase the number of user is roughly equal to the directivity offered by the flat top beam system, and illustrates the promise SDMA offers for improving capacity in wireless system.
+1 	Here multipath fading is not considered.
+
+
+# 148
+### http://arxiv.org/abs/1002.4833v1
+## Analytical Evaluation of Unfairness Problem in Wireless LANs
+
+0 	The number of users using wireless Local Area Network is increasing exponentially and their behavior is changing day after day.
+0 	Nowadays, users of wireless LAN are using huge amount of bandwidth because of the explosive growth of some services and applications such as video sharing.
+0 	This situation imposes massive pressure on the wireless LAN performance especially in term of fairness among wireless stations.
+0 	The limited resources are not distributed fairly in saturated conditions.
+0 	The most important resource is the access point buffer space.
+0 	This importance is a result of access point being the bottleneck between two different types of networks.
+0 	These two types are wired network with relatively huge bandwidth and wireless network with much smaller bandwidth.
+0 	Also the unfairness problem is keep getting worse because of the greedy nature Transmission Control Protocol (TCP).
+1 	In this paper, we conduct a comprehensive study on wireless LAN dynamics and proposed a new mathematical model that describes the performance and effects of its behavior.
+1 	We validate the proposed model by using the simulation technique.
+2 	The proposed model was able to produce very good approximation in most of the cases.
+2 	It also gave us a great insight into the effective variables in the wireless LAN behavior and what are the dimensions of the unfairness problem.
+
+
+########
+# 46
+### http://arxiv.org/abs/1006.3373v1
+## Design and Implementation VOIP Service on Open IMS and Asterisk Servers Interconnected through Enum Server
+
+0 	Asterisk and Open IMS use SIP signal protocol to enable both of them can be connected.
+0 	To facilitate both relationships, Enum server- that is able to translate the numbering address such as PSTN (E.164) to URI address (Uniform Resource Identifier)- can be used.
+1 	In this research, we interconnect Open IMS and Asterisk server Enum server.
+1 	We then analyze the server performance and PDD (Post Dial Delay) values resulted by the system.
+2 	As the result of the experiment, we found that, for a call from Open IMS user to analog Asterisk telephone (FXS) with a arrival call each servers is 30 call/sec, the maximum PDD value is 493.656 ms.
+2 	Open IMS is able to serve maximum 30 call/s with computer processor 1.55 GHz, while the Asterisk with computer processor 3.0 GHz, may serve up to 55 call/sec.
+2 	Enum on server with 1.15 GHz computer processor have the capability of serving maximum of 8156 queries/sec.
+
+
+# 47
+### http://arxiv.org/abs/1006.4225v2
+## Optimal Spectrum Sharing in MIMO Cognitive Radio Networks via Semidefinite Programming
+
+0 	In this paper, we study the optimal secondary-link beamforming pattern that balances between the SU's throughput and the interference it causes to PUs in MIMO cognitive radio networks.
+0 	In particular, we aim to maximize the throughput of the SU, while keeping the interference temperature at the primary receivers below a certain threshold.
+0 	Unlike traditional MIMO systems, SUs may not have the luxury of knowing the channel state information (CSI) on the links to PUs.
+0 	This presents a key challenge for a secondary transmitter to steer interference away from primary receivers.
+0 	In this paper, we consider three scenarios, namely when the secondary transmitter has complete, partial, or no knowledge about the channels to the primary receivers.
+0 	In particular, when complete CSI is not available, the interference-temperature constraints are to be satisfied with high probability, thus resulting in chance constraints that are typically hard to deal with.
+1 	Our contribution is fourfold.
+1 	First, by analyzing the distributional characteristics of MIMO channels, we propose a unified homogeneous QCQP formulation that can be applied to all three scenarios.
+1 	The homogeneous QCQP formulation, though non-convex, is amenable to semidefinite programming (SDP) relaxation methods.
+2 	Secondly, we show that the SDP relaxation admits no gap when the number of primary links is no larger than two.
+1 	Thirdly, we propose a randomized polynomial-time algorithm for constructing a near-optimal solution to the QCQP problem when there are more than two primary links.
+2 	Finally, we show that when the secondary transmitter has no CSI on the links to primary receivers, the optimal solution to the QCQP problem can be found by a simple matrix eigenvalue-eigenvector computation, which can be done much more efficiently than solving the QCQP directly.
+
+
+# 48
+### http://arxiv.org/abs/1006.4406v1
+## Slow Adaptive OFDMA Systems Through Chance Constrained Programming
+
+0 	Adaptive OFDMA has recently been recognized as a promising technique for providing high spectral efficiency in future broadband wireless systems.
+0 	The research over the last decade on adaptive OFDMA systems has focused on adapting the allocation of radio resources, such as subcarriers and power, to the instantaneous channel conditions of all users.
+0 	However, such "fast" adaptation requires high computational complexity and excessive signaling overhead.
+0 	This hinders the deployment of adaptive OFDMA systems worldwide.
+0 	This paper proposes a slow adaptive OFDMA scheme, in which the subcarrier allocation is updated on a much slower timescale than that of the fluctuation of instantaneous channel conditions.
+0 	Meanwhile, the data rate requirements of individual users are accommodated on the fast timescale with high probability, thereby meeting the requirements except occasional outage.
+0 	Such an objective has a natural chance constrained programming formulation, which is known to be intractable.
+1 	To circumvent this difficulty, we formulate safe tractable constraints for the problem based on recent advances in chance constrained programming.
+1 	We then develop a polynomial-time algorithm for computing an optimal solution to the reformulated problem.
+2 	Our results show that the proposed slow adaptation scheme drastically reduces both computational cost and control signaling overhead when compared with the conventional fast adaptive OFDMA.
+2 	Our work can be viewed as an initial attempt to apply the chance constrained programming methodology to wireless system designs.
+2 	Given that most wireless systems can tolerate an occasional dip in the quality of service, we hope that the proposed methodology will find further applications in wireless communications.
+
+
+# 49
+### http://arxiv.org/abs/1010.4986v1
+## A Testbed Implementation for Securing OLSR in Mobile Ad hoc Networks
+
+0 	Contemporary personal computing devices are increasingly required to be portable and mobile enabling user's wireless access, to wired network infrastructures and services.
+0 	This approach to mobile computing and communication is only appropriate in situations where a coherent infrastructure is available.
+0 	There are many situations where these requirements are not fulfilled such as; developing nations, rural areas, natural disasters, and military conflicts to name but a few.
+0 	A practical solution is to use mobile devices interconnected via a wireless medium to form a network, known as a Mobile Ad-hoc Network (MANET), and provide the services normally found in wired networks.
+0 	Security in MANETs is an issue of paramount importance due to the wireless nature of the communication links.
+0 	Additionally due to the lack of central administration security issues are different from conventional networks.
+1 	For the purposes of this article we have used the "WMN test-bed" to enable secure routing in MANETs.
+0 	The use of cryptography is an efficient proven way of securing data in communications, but some cryptographic algorithms are not as efficient as others and require more processing power, which is detrimental to MANETs.
+1 	In this article we have assessed different cryptographic approaches to securing the OLSR (Optimised Link State Routing) protocol to provide a basis for research.
+2 	We conclude the paper with a series of performance evaluation results regarding different cryptographic and hashing schemes.
+2 	Our findings clearly show that the most efficient combination of algorithms used for authentication and encryption are SHA-1 and AES respectively.
+2 	Using this combination over their counterparts will lead to a considerable reduction in processing time and delay on the network, creating an efficient transaction moving towards satisfying resource constraints and security requirements.
+
+
+# 50
+### http://arxiv.org/abs/1101.2759v1
+## Routing Security Issues in Wireless Sensor Networks: Attacks and Defenses
+
+0 	Wireless Sensor Networks (WSNs) are rapidly emerging as an important new area in wireless and mobile computing research.
+0 	Applications of WSNs are numerous and growing, and range from indoor deployment scenarios in the home and office to outdoor deployment scenarios in adversary's territory in a tactical battleground (Akyildiz et al.,2002).
+0 	For military environment, dispersal of WSNs into an adversary's territory enables the detection and tracking of enemy soldiers and vehicles.
+0 	For home/office environments, indoor sensor networks offer the ability to monitor the health of the elderly and to detect intruders via a wireless home security system.
+0 	In each of these scenarios, lives and livelihoods may depend on the timeliness and correctness of the sensor data obtained from dispersed sensor nodes.
+0 	As a result, such WSNs must be secured to prevent an intruder from obstructing the delivery of correct sensor data and from forging sensor data.
+1 	To address the latter problem, end-to-end data integrity checksums and post-processing of senor data can be used to identify forged sensor data (Estrin et al.,1999; Hu et al.,2003a; Ye et al.,2004).
+1 	The focus of this chapter is on routing security in WSNs.
+0 	Most of the currently existing routing protocols for WSNs make an optimization on the limited capabilities of the nodes and the application-specific nature of the network, but do not any the security aspects of the protocols.
+0 	Although these protocols have not been designed with security as a goal, it is extremely important to analyze their security properties.
+2 	When the defender has the liabilities of insecure wireless communication, limited node capabilities, and possible insider threats, and the adversaries can use powerful laptops with high energy and long range communication to attack the network, designing a secure routing protocol for WSNs is obviously a non-trivial task.
+
+
+# 51
+### http://arxiv.org/abs/1101.3835v1
+## Relay Selection with Partial Information in Wireless Sensor Networks
+
+0 	Our work is motivated by geographical forwarding of sporadic alarm packets to a base station in a wireless sensor network (WSN), where the nodes are sleep-wake cycling periodically and asynchronously.
+1 	When a node (referred to as the source) gets a packet to forward, either by detecting an event or from an upstream node, it has to wait for its neighbors in a forwarding set (referred to as relays) to wake-up.
+1 	Each of the relays is associated with a random reward (e.g., the progress made towards the sink) that is iid.
+1 	To begin with, the source is uncertain about the number of relays, their wake-up times and the reward values, but knows their distributions.
+1 	At each relay wake-up instant, when a relay reveals its reward value, the source's problem is to forward the packet or to wait for further relays to wake-up.
+1 	In this setting, we seek to minimize the expected waiting time at the source subject to a lower bound on the average reward.
+0 	In terms of the operations research literature, our work can be considered as a variant of the asset selling problem.
+1 	We formulate the relay selection problem as a partially observable Markov decision process (POMDP), where the unknown state is the number of relays.
+1 	We begin by considering the case where the source knows the number of relays.
+1 	For the general case, where the source only knows a pmf on the number of relays, it has to maintain a posterior pmf on the number of relays and forward the packet iff the pmf is in an optimum stopping set.
+2 	We show that the optimum stopping set is convex and obtain inner and outer bounds to this set.
+2 	The computational complexity of the above policies motivates us to formulate an alternative simplified model, the optimal policy for which is a simple threshold rule.
+2 	We provide simulation results to compare the performance of the various one-hop and end-to-end forwarding policies.
+
+
+# 52
+### http://arxiv.org/abs/1102.0682v1
+## A Study of IEEE 802.15.4 Security Framework for Wireless Body Area Network
+
+0 	A Wireless Body Area Network (WBAN) is a collection of low-power and lightweight wireless sensor nodes that are used to monitor the human body functions and the surrounding environment.
+0 	It supports a number of innovative and interesting applications, including ubiquitous healthcare and Consumer Electronics (CE) applications.
+0 	Since WBAN nodes are used to collect sensitive (life-critical) information and may operate in hostile environments, they require strict security mechanisms to prevent malicious interaction with the system.
+1 	In this paper, we first highlight major security requirements and Denial of Service (DoS) attacks in WBAN at Physical, Medium Access Control (MAC), Network, and Transport layers.
+1 	Then we discuss the IEEE 802.15.4 security framework and identify the security vulnerabilities and major attacks in the context of WBAN.
+1 	Different types of attacks on the Contention Access Period (CAP) and Contention Free Period (CFP) parts of the superframe are analyzed and discussed.
+2 	It is observed that a smart attacker can successfully corrupt an increasing number of GTS slots in the CFP period and can considerably affect the Quality of Service (QoS) in WBAN (since most of the data is carried in CFP period).
+2 	As we increase the number of smart attackers the corrupted GTS slots are eventually increased, which prevents the legitimate nodes to utilize the bandwidth efficiently.
+2 	This means that the direct adaptation of IEEE 802.15.4 security framework for WBAN is not totally secure for certain WBAN applications.
+2 	New solutions are required to integrate high level security in WBAN.
+
+
+# 53
+### http://arxiv.org/abs/1102.3607v1
+## Fairness issues in a chain of IEEE 802.11 stations
+
+0 	We study a simple general scenario of ad hoc networks based on IEEE 802.11 wireless communications, consisting in a chain of transmitters, each of them being in the carrier sense area of its neighbors.
+0 	Each transmitter always attempts to send some data frames to one receiver in its transmission area, forming a pair sender-receiver.
+0 	This scenario includes the three pairs fairness problem, and allows to study some fairness issues of the IEEE 802.11 medium access mechanism.
+1 	We show by simulation that interesting phenomena appear, depending on the number n of pairs in the chain and of its parity.
+1 	We also point out a notable asymptotic behavior.
+1 	We introduce a powerful modeling, by simply considering the probability for a transmitter to send data while its neighbors are waiting.
+1 	This model leads to a non-linear system of equations, which matches very well the simulations, and which allows to study both small and very large chains.
+1 	We then analyze the fairness issue in the chain regarding some parameters, as well as the asymptotic behavior.
+2 	By studying very long chains, we notice good asymptotic fairness of the IEEE 802.11 medium sharing mechanism.
+2 	As an application, we show how to increase the fairness in a chain of three pairs.
+
+
+# 54
+### http://arxiv.org/abs/1102.4106v1
+## An Overview of IEEE 802.15.6 Standard
+
+0 	Wireless Body Area Networks (WBAN) has emerged as a key technology to provide real-time health monitoring of a patient and diagnose many life threatening diseases.
+0 	WBAN operates in close vicinity to, on, or inside a human body and supports a variety of medical and non-medical applications.
+0 	IEEE 802 has established a Task Group called IEEE 802.15.6 for the standardization of WBAN.
+0 	The purpose of the group is to establish a communication standard optimized for low-power in-body/on-body nodes to serve a variety of medical and non-medical applications.
+1 	This paper explains the most important features of the new IEEE 802.15.6 standard.
+1 	The standard defines a Medium Access Control (MAC) layer supporting several Physical (PHY) layers.
+1 	We briefly overview the PHY and MAC layers specifications together with the bandwidth efficiency of IEEE 802.15.6 standard.
+2 	We also discuss the security paradigm of the standard.
+
+
+# 55
+### http://arxiv.org/abs/1102.4176v1
+## Contract-Based Cooperative Spectrum Sharing
+
+0 	Providing proper economic incentives is essential for the success of dynamic spectrum sharing.
+0 	Cooperative spectrum sharing is one effective way to achieve this goal.
+0 	In cooperative spectrum sharing, secondary users (SUs) relay traffics for primary users (PUs), in exchange for dedicated transmission time for the SUs' own communication needs.
+0 	In this paper, we study the cooperative spectrum sharing under incomplete information, where SUs' types (capturing their heterogeneity in relay channel gains and evaluations of power consumptions) are private information and not known by PUs.
+0 	Inspired by the contract theory, we model the network as a labor market.
+1 	The single PU is the employer who offers a contract to the SUs.
+1 	The contract consists of a set of contract items representing combinations of spectrum accessing time (i.e., reward) and relaying power (i.e., contribution).
+1 	The SUs are employees, and each of them selects the best contract item to maximize his payoff.
+1 	We study the optimal contract design for both weak and strong incomplete information scenarios.
+1 	First, we provide necessary and sufficient conditions for feasible contracts in both scenarios.
+1 	In the weak incomplete information scenario, we further derive the optimal contract that achieves the same maximum PU's utility as in the complete information benchmark.
+1 	In the strong incomplete information scenario, we propose a Decompose-and-Compare algorithm that achieves a close-to-optimal contract.
+2 	We future show that the PU's average utility loss due to the suboptimal algorithm and the strong incomplete information are both relatively small (less than 2% and 1:3%, respectively, in our numerical results with two SU types).
+
+
+# 56
+### http://arxiv.org/abs/1103.1518v1
+## One Bad Apple Spoils the Bunch: Exploiting P2P Applications to Trace and Profile Tor Users
+
+0 	Tor is a popular low-latency anonymity network.
+0 	However, Tor does not protect against the exploitation of an insecure application to reveal the IP address of, or trace, a TCP stream.
+0 	In addition, because of the linkability of Tor streams sent together over a single circuit, tracing one stream sent over a circuit traces them all.
+0 	Surprisingly, it is unknown whether this linkability allows in practice to trace a significant number of streams originating from secure (i.e., proxied) applications.
+0 	In this paper, we show that linkability allows us to trace 193% of additional streams, including 27% of HTTP streams possibly originating from "secure" browsers.
+1 	In particular, we traced 9% of Tor streams carried by our instrumented exit nodes.
+1 	Using BitTorrent as the insecure application, we design two attacks tracing BitTorrent users on Tor.
+1 	We run these attacks in the wild for 23 days and reveal 10,000 IP addresses of Tor users.
+1 	Using these IP addresses, we then profile not only the BitTorrent downloads but also the websites visited per country of origin of Tor users.
+2 	We show that BitTorrent users on Tor are over-represented in some countries as compared to BitTorrent users outside of Tor.
+2 	By analyzing the type of content downloaded, we then explain the observed behaviors by the higher concentration of pornographic content downloaded at the scale of a country.
+2 	Finally, we present results suggesting the existence of an underground BitTorrent ecosystem on Tor.
+
+
+# 57
+### http://arxiv.org/abs/1103.2212v2
+## Stability and Queueing Analysis of IEEE 802.11 Distributed Coordination Function
+
+0 	A widely adopted two-dimensional Markov chain model of the IEEE 802.11 DCF was introduced by Bianchi to characterize the backoff behavior of a single node under a saturated traffic condition.
+0 	Using this approach, we propose a queuing model for the 802.11 DCF under a non-saturated traffic environment.
+1 	The input buffer of each node is modeled as a Geo/G/1 queue, and the packet service time distribution is derived from Markov state space of 802.11 DCF with the underlying scheduling algorithm.
+1 	The DCF defines two access mechanisms, namely the Basic access mechanism and the request-to-send/clear-to-send (RTS/CTS) access mechanism.
+1 	Based on our model, performance analyses of both schemes are studied with probabilistic exponential backoff scheduling.
+1 	We obtain the characteristic equation of network throughput and expressions of packet queueing delay.
+1 	Specifically, we obtain the stable throughput and bounded delay regions with respect to the retransmission factor according to the basic queueing analysis.
+1 	For both access schemes, the bounded delay region is a subset of the stable throughput region.
+2 	Our results show that the RTS/CTS access mechanism is more stable and performs better than the Basic access mechanism.
+2 	The analysis in this paper is verified by simulation results.
+
+
+# 58
+### http://arxiv.org/abs/1103.3340v1
+## A Dynamic Multimedia User-Weight Classification Scheme for IEEE_802.11 WLANs
+
+0 	In this paper we expose a dynamic traffic-classification scheme to support multimedia applications such as voice and broadband video transmissions over IEEE 802.11 Wireless Local Area Networks (WLANs).
+0 	Obviously, over a Wi-Fi link and to better serve these applications - which normally have strict bounded transmission delay or minimum link rate requirement - a service differentiation technique can be applied to the media traffic transmitted by the same mobile node using the well-known 802.11e Enhanced Distributed Channel Access (EDCA) protocol.
+0 	However, the given EDCA mode does not offer user differentiation, which can be viewed as a deficiency in multi-access wireless networks.
+0	Accordingly, we propose a new inter-node priority access scheme for IEEE 802.11e networks which is compatible with the EDCA scheme.
+1 	The proposed scheme joins a dynamic user-weight to each mobile station depending on its outgoing data, and therefore deploys inter-node priority for the channel access to complement the existing EDCA inter-frame priority.
+2 	This provides efficient quality of service control across multiple users within the same coverage area of an access point.
+2 	We provide performance evaluations to compare the proposed access model with the basic EDCA 802.11 MAC protocol mode to elucidate the quality improvement achieved for multimedia communication over 802.11 WLANs.
+
+
+# 59
+### http://arxiv.org/abs/1103.4769v1
+## High-Energy-First (HEF) Heuristic for Energy-Efficient Target Coverage Problem
+
+0 	Target coverage problem in wireless sensor networks is concerned with maximizing the lifetime of the network while continuously monitoring a set of targets.
+0 	A sensor covers targets which are within the sensing range.
+0 	For a set of sensors and a set of targets, the sensor-target coverage relationship is assumed to be known.
+0 	A sensor cover is a set of sensors that covers all the targets.
+0 	The target coverage problem is to determine a set of sensor covers with maximum aggregated lifetime while constraining the life of each sensor by its initial battery life.
+0 	The problem is proved to be NP-complete and heuristic algorithms to solve this problem are proposed.
+0 	In the present study, we give a unified interpretation of earlier algorithms and propose a new and efficient algorithm.
+0 	We show that all known algorithms are based on a common reasoning though they seem to be derived from different algorithmic paradigms.
+0 	We also show that though some algorithms guarantee bound on the quality of the solution, this bound is not meaningful and not practical too.
+0 	Our interpretation provides a better insight to the solution techniques.
+1 	We propose a new greedy heuristic which prioritizes sensors on residual battery life.
+1 	We show empirically that the proposed algorithm outperforms all other heuristics in terms of quality of solution.
+2 	Our experimental study over a large set of randomly generated problem instances also reveals that a very na\"ive greedy approach yields solutions which is reasonably (appx.10%) close to the actual optimal solutions.
+
+
+# 60
+### http://arxiv.org/abs/1105.3864v2
+## Component Based Clustering in Wireless Sensor Networks
+
+0 	Clustering is an important research topic for wireless sensor networks (WSNs).
+0 	A large variety of approaches has been presented focusing on different performance metrics.
+0 	Even though all of them have many practical applications, an extremely limited number of software implementations is available to the research community.
+0 	Furthermore, these very few techniques are implemented for specific WSN systems or are integrated in complex applications.
+0 	Thus it is very difficult to comparatively study their performance and almost impossible to reuse them in future applications under a different scope.
+0 	In this work we study a large body of well established algorithms.
+1 	We identify their main building blocks and propose a component-based architecture for developing clustering algorithms that (a) promotes exchangeability of algorithms thus enabling the fast prototyping of new approaches, (b) allows cross-layer implementations to realize complex applications, (c) offers a common platform to comparatively study the performance of different approaches, (d) is hardware and OS independent.
+1 	We implement 5 well known algorithms and discuss how to implement 11 more.
+1 	We conduct an extended simulation study to demonstrate the faithfulness of our implementations when compared to the original implementations.
+1 	Our simulations are at very large scale thus also demonstrating the scalability of the original algorithms beyond their original presentations.
+1 	We also conduct experiments to assess their practicality in real WSNs.
+2 	We demonstrate how the implemented clustering algorithms can be combined with routing and group key establishment algorithms to construct WSN applications.
+2 	Our study clearly demonstrates the applicability of our approach and the benefits it offers to both research & development communities.
+
+
+# 286
+### http://arxiv.org/abs/1805.07743v4
+## Joint Path Selection and Rate Allocation Framework for 5G Self-Backhauled mmWave Networks
+
+0 	Owing to severe path loss and unreliable transmission over a long distance at higher frequency bands, we investigate the problem of path selection and rate allocation for multi-hop self-backhaul millimeter wave (mmWave) networks.
+0 	Enabling multi-hop mmWave transmissions raises a potential issue of increased latency, and thus, in this work we aim at addressing the fundamental questions: how to select the best multi-hop paths and how to allocate rates over these paths subject to latency constraints?
+1 	In this regard, we propose a new system design, which exploits multiple antenna diversity, mmWave bandwidth, and traffic splitting techniques to improve the downlink transmission.
+1 	The studied problem is cast as a network utility maximization, subject to an upper delay bound constraint, network stability, and network dynamics.
+1 	By leveraging stochastic optimization, the problem is decoupled into: path selection and rate allocation sub-problems, whereby a framework which selects the best paths is proposed using reinforcement learning techniques.
+1 	Moreover, the rate allocation is a nonconvex program, which is converted into a convex one by using the successive convex approximation method.
+1 	Via mathematical analysis, we provide a comprehensive performance analysis and convergence proofs for the proposed solution.
+2 	Numerical results show that our approach ensures reliable communication with a guaranteed probability of up to $99.9999\%$, and reduces latency by $50.64\%$ and $92.9\%$ as compared to baseline models.
+2 	Furthermore, the results showcase the key trade-off between latency and network arrival rate.
+
+
+# 287
+### http://arxiv.org/abs/1806.05026v1
+## An Analytical Model for Wireless Mesh Networks with Collision-Free TDMA and Finite Queues
+
+0 	Wireless mesh networks are a promising technology for connecting sensors and actuators with high flexibility and low investment costs.
+0 	In industrial applications, however, reliability is essential.
+0 	Therefore, two time-slotted medium access methods, DSME and TSCH, were added to the IEEE 802.15.4 standard.
+0 	They allow collision-free communication in multi-hop networks and provide channel hopping for mitigating external interferences.
+0 	The slot schedule used in these networks is of high importance for the network performance.
+1 	This paper supports the development of efficient schedules by providing an analytical model for the assessment of such schedules, focused on TSCH.
+1 	A Markov chain model for the finite queue on every node is introduced that takes the slot distribution into account.
+1 	The models of all nodes are interconnected to calculate network metrics such as packet delivery ratio, end-to-end delay and throughput.
+1 	An evaluation compares the model with a simulation of the Orchestra schedule.
+2 	The model is applied to Orchestra as well as to two simple distributed scheduling algorithms to demonstrate the importance of traffic-awareness for achieving high throughput.
+
+
+
+# 289
+### http://arxiv.org/abs/1807.02205v1
+## OSDF: An Intent-based Software Defined Network Programming Framework
+
+0 	Software Defined Networking (SDN) offers flexibility to program a network based on a set of network requirements.
+0 	Programming the networks using SDN is not completely straightforward because a programmer must deal with low level details.
+0 	To solve the problem, researchers proposed a set of network programming languages that provide a set of high level abstractions to hide low level hardware details.
+0 	Most of the proposed languages provide abstractions related to packet processing and flows, and still require a programmer to specify low-level match-action fields to configure and monitor a network.
+0 	Recently, in an attempt to raise the level at which programmers work, researchers have begun to investigate Intent-based, descriptive northbound interfaces.
+0 	The work is still in early stages, and further investigation is required before intent-based systems will be adopted by enterprise networks.
+1 	To help achieve the goal of moving to an intent-based design, we propose an SDN-based network programming framework, the Open Software Defined Framework (OSDF).
+1 	OSDF provides a high level Application Programming Interface (API) that can be used by managers and network administrators to express network requirements for applications and policies for multiple domains.
+1 	OSDF also provides a set of high level network operation services that handle common network configuration, monitoring, and Quality of Service (QoS) provisioning.
+1 	OSDF is equipped with a policy conflict management module to help a network administrator detect and resolve policy conflicts.
+1 	The paper shows how OSDF can be used and explains application-based policies.
+2 	Finally, the paper reports the results of both testbed measurements and simulations that are used to evaluate the framework from multiple perspectives, including functionality and performance.

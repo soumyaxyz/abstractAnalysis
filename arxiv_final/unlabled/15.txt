@@ -1,0 +1,286 @@
+
+
+# 211
+### http://arxiv.org/abs/1702.06384v1
+## Splitarchitecture: SDN for the carrier domain
+
+-1 	The concept of SDN has emerged as a way to address numerous challenges with traditional network architectures by decoupling network control and forwarding.
+-1 	So far, the use cases for SDN mainly targeted data-center applications.
+-1 	This article considers SDN for network carriers, facing operation of large-scale networks with millions of customers, multiple technologies, and high availability demands.
+-1 	With specific carrier-grade features such as scalability, reliability, flexibility, modularity, and virtualization in mind, the SPARC EU project has developed the SPARC SplitArchitecture concept.
+-1 	The SplitArchitecture control plane allows hierarchical layering of several control plane layers which can be flexibly mapped to data plane layers.
+-1 	Between control layers open interfaces are used.
+-1 	Furthermore, SplitArchitecture proposes an additional split of forwarding and processing functions in data path elements, enabling switch based OAM functionality and handling of tunneling techniques.
+-1 	The SplitArchitecture concept is evaluated in a prototype demonstrating an SDN version of BRAS: the floating BRAS.
+-1 	The floating BRAS allows creation of residential Internet access services with dynamically managed BRAS instances.
+-1 	The demo is based on a controller enabling protected MPLS transport connections spanning SDN-controlled aggregation and IP/MPLS-based core domains.
+-1 	The prototype showcases how SplitArchitecture enables virtualization of service nodes in an SDN-controlled network, leading to increased flexibility in configuration and placement of service creation functions.
+-1 	Overall, the results show that it is technically and economically beneficial to apply SDN, and specifically the SplitArchitecture concept, to the carrier domain.
+
+
+# 212
+### http://arxiv.org/abs/1702.07044v2
+## FM Backscatter: Enabling Connected Cities and Smart Fabrics
+
+-1 	This paper enables connectivity on everyday objects by transforming them into FM radio stations.
+-1 	To do this, we show for the first time that ambient FM radio signals can be used as a signal source for backscatter communication.
+-1 	Our design creates backscatter transmissions that can be decoded on any FM receiver including those in cars and smartphones.
+-1 	This enables us to achieve a previously infeasible capability: backscattering information to cars and smartphones in outdoor environments.
+-1 	Our key innovation is a modulation technique that transforms backscatter, which is a multiplication operation on RF signals, into an addition operation on the audio signals output by FM receivers.
+-1 	This enables us to embed both digital data as well as arbitrary audio into ambient analog FM radio signals.
+-1 	We build prototype hardware of our design and successfully embed audio transmissions over ambient FM signals.
+-1 	Further, we achieve data rates of up to 3.
+-1 	2 kbps and ranges of 5-60 feet, while consuming as little as 11.
+-1 	07{\mu}W of power.
+-1 	To demonstrate the potential of our design, we also fabricate our prototype on a cotton t-shirt by machine sewing patterns of a conductive thread to create a smart fabric that can transmit data to a smartphone.
+-1 	We also embed FM antennas into posters and billboards and show that they can communicate with FM receivers in cars and smartphones.
+
+
+# 213
+### http://arxiv.org/abs/1702.07489v1
+## SIFM: A network architecture for seamless flow mobility between LTE and WiFi networks - Analysis and Testbed Implementation
+
+-1 	This paper deals with cellular (e.g. LTE) networks that selectively offload the mobile data traffic onto WiFi (IEEE 802.
+-1 	11) networks to improve network performance.
+-1 	We propose the Seamless Internetwork Flow Mobility (SIFM) architecture that provides seamless flow-mobility support using concepts of Software Defined Networking (SDN).
+-1 	The SDN paradigm decouples the control and data plane, leading to a centralized network intelligence and state.
+-1 	The SIFM architecture utilizes this aspect of SDN and moves the mobility decisions to a centralized Flow Controller (FC).
+-1 	This provides a global network view while making mobility decisions and also reduces the complexity at the PGW.
+-1 	We implement and evaluate both basic PMIPv6 and the SIFM architectures by incorporating salient LTE and WiFi network features in the ns-3 simulator.
+-1 	Performance experiments validate that seamless mobility is achieved.
+-1 	Also, the SIFM architecture shows an improved network performance when compared to the base PMIPv6 architecture.
+-1 	A proof-of-concept prototype of the SIFM architecture has been implemented on an experimental testbed.
+-1 	The LTE network is emulated by integrating USRP B210x with the OpenLTE eNodeB and OpenLTE EPC.
+-1 	The WiFi network is emulated using hostapd and dnsmasq daemons running on Ubuntu 12.
+-1 	04.
+-1 	An off-the-shelf LG G2 mobile phone running Android 4.
+-1 	2.
+-1 	2 is used as the user equipment.
+-1 	We demonstrate seamless mobility between the LTE network and the WiFi network with the help of ICMP ping and a TCP chat application.
+
+
+# 214
+### http://arxiv.org/abs/1702.07928v1
+## A New Taxonomy for Symbiotic EM Sensors
+
+-1 	It is clear that the EM spectrum is now rapidly reaching saturation, especially for frequencies below 10~GHz.
+-1 	Governments, who influence the regulatory authorities around the world, have resorted to auctioning the use of spectrum, in a sense to gauge the importance of a particular user.
+-1 	Billions of USD are being paid for modest bandwidths.
+-1 	The earth observation, astronomy and similar science driven communities cannot compete financially with such a pressure system, so this is where governments have to step in and assess /regulate the situation.
+-1 	It has been a pleasure to see a situation where the communications and broadcast communities have come together to formulate sharing of an important part of the spectrum (roughly, 50 MHz to 800 MHz) in an IEEE standard, IEEE802.
+-1 	22.
+-1 	This standard (known as the "TV White Space Network" (built on lower level standards) shows a way that fixed and mobile users can collaborate in geographically widespread regions, using cognitive radio and geographic databases of users.
+-1 	This White Space (WS) standard is well described in the literature and is not the major topic of this short paper.
+-1 	We wish to extend the idea of the WS concept to include the idea of EM sensors (such as Radar) adopting this approach to spectrum sharing, providing a quantum leap in access to spectrum.
+-1 	We postulate that networks of sensors, using the tools developed by the WS community, can replace and enhance our present set of EM sensors.
+-1 	We first define what Networks of Sensors entail (with some history), and then go on to define, based on a Taxonomy of Symbiosis defined by de Bary\cite{symb}, how these sensors and other users (especially communications) can co-exist.
+-1 	This new taxonomy is important for understanding, and should replace somewhat outdated terminologies from the radar world.
+
+
+# 215
+### http://arxiv.org/abs/1702.07992v1
+## Simplified Biased Contribution Index (SBCI): A Mechanism to Make P2P Network Fair and Efficient for Resource Sharing
+
+-1 	To balance the load and to discourage the free-riding in peer-to-peer (P2P) networks, many incentive mechanisms and policies have been proposed in recent years.
+-1 	Global peer ranking is one such mechanism.
+-1 	In this mechanism, peers are ranked based on a metric called contribution index.
+-1 	Contribution index is defined in such a manner that peers are motivated to share the resources in the network.
+-1 	Fairness in the terms of upload to download ratio in each peer can be achieved by this method.
+-1 	However, calculation of contribution index is not trivial.
+-1 	It is computed distributively and iteratively in the entire network and requires strict clock synchronization among the peers.
+-1 	A very small error in clock synchronization may lead to wrong results.
+-1 	Furthermore, iterative calculation requires a lot of message overhead and storage capacity, which makes its implementation more complex.
+-1 	In this paper, we are proposing a simple incentive mechanism based on the contributions of peers, which can balance the upload and download amount of resources in each peer.
+-1 	It does not require iterative calculation, therefore, can be implemented with lesser message overhead and storage capacity without requiring strict clock synchronization.
+-1 	This approach is efficient as there are very less rejections among the cooperative peers.
+-1 	It can be implemented in a truly distributed fashion with $O(N)$ time complexity per peer.
+
+
+# 216
+### http://arxiv.org/abs/1703.03909v2
+## To Bond or not to Bond: An Optimal Channel Allocation Algorithm For Flexible Dynamic Channel Bonding in WLANs
+
+-1 	IEEE 802.
+-1 	11 has evolved from 802.
+-1 	11a/b/g/n to 802.
+-1 	11ac to meet rapidly increasing data rate requirements in WLANs.
+-1 	One important technique adopted in 802.
+-1 	11ac is the channel bonding (CB) scheme that combines multiple 20MHz channels for a single transmission in 5GHz band.
+-1 	In order to effectively access channel after a series of contention operations, 802.
+-1 	11ac specifies two different CB operations: Dynamic Channel Bonding (DCB) and Static Channel Bonding (SCB).
+-1 	This paper proposes an optimal channel allocation algorithm to achieve maximal throughputs in DCB WLANs.
+-1 	Specifically, we first adopt a continuous-time Markov Chain (CTMC) model to analyze the equilibrium throughputs.
+-1 	Based on the throughput analysis, we then construct an integer nonlinear programming (INLP) model with the target of maximizing system throughputs.
+-1 	By solving the INLP model, we then propose an optimal channel allocation algorithm based on the Branch-and-Bound Method (BBM).
+-1 	It turns out that the maximal throughput performance can be achieved under the channel allocation scheme with the least overlapped channels among WLANs.
+-1 	Simulations show that the proposed channel allocation algorithm can achieve the maximal system throughput under various network settings.
+-1 	Our analysis on the optimal channel allocation schemes brings new insights into the design and optimization of future WLANs, especially for those adopting channel bonding technique.
+
+
+# 217
+### http://arxiv.org/abs/1703.04192v2
+## Aerial UAV-IoT Sensing for Ubiquitous Immersive Communication and Virtual Human Teleportation
+
+-1 	We consider UAV IoT aerial sensing that delivers multiple VR/AR immersive communication sessions to remote users.
+-1 	The UAV swarm is spatially distributed over a wide area of interest, and each UAV captures a viewpoint of the scene below it.
+-1 	The remote users are interested in visual immersive navigation of specific subareas/scenes of interest, reconstructed on their respective VR/AR devices from the captured data.
+-1 	The reconstruction quality of the immersive scene representations at the users will depend on the sampling/sensing rates associated with each UAV.
+-1 	There is a limit on the aggregate amount of data that the UAV swarm can sample and send towards the users, stemming from physical/transmission capacity constraints.
+-1 	Similarly, each VR/AR application has minimum reconstruction quality requirements for its own session.
+-1 	We propose an optimization framework that makes three contributions in this context.
+-1 	First, we select the optimal sampling rates to be used by each UAV, such that the system and application constraints are not exceed, while the priority weighted reconstruction quality across all VR/AR sessions is maximized.
+-1 	Then, we design an optimal scalable source-channel signal representation that instills into the captured data inherent rate adaptivity, unequal error protection, and minimum required redundancy.
+-1 	Finally, the UAV transmission efficiency is enhanced by the use of small-form-factor multi-beam directional antennas and optimal power/link scheduling across the scalable signal representation layers.
+-1 	Our experiments demonstrate competitive advantages over conventional methods for visual sensing.
+-1 	This is a first-of-its-kind study of an emerging application of prospectively broad societal impact.
+
+
+# 218
+### http://arxiv.org/abs/1703.05907v1
+## On Traffic Engineering with Segment Routing in SDN based WANs
+
+-1 	Segment routing is an emerging technology to simplify traffic engineering implementation in WANs.
+-1 	It expresses an end-to-end logical path as a sequence of segments, each of which is represented by a middlepoint.
+-1 	In this paper, we arguably conduct the first systematic study of traffic engineering with segment routing in SDN based WANs.
+-1 	We first provide a theoretical characterization of the problem.
+-1 	We show that for general segment routing, where flows can take any path that goes through a middlepoint, the resulting traffic engineering is NP-hard.
+-1 	We then consider segment routing with shortest paths only, and prove that the traffic engineering problem can now be solved in (weakly) polynomial time when the number of middlepoints per path is fixed and not part of the input.
+-1 	Our results thus explain, for the first time, the underlying reason why existing work only focuses on segment routing with shortest paths.
+-1 	In the second part of the paper, we study practical traffic engineering using shortest path based segment routing.
+-1 	We note that existing methods work by taking each node as a candidate middlepoint.
+-1 	This requires solving a large-scale linear program which is prohibitively slow.
+-1 	We thus propose to select just a few important nodes as middlepoints for all traffic.
+-1 	We use node centrality concepts from graph theory, notably group shortest path centrality, for middlepoint selection.
+-1 	Our performance evaluation using realistic topologies and traffic traces shows that a small percentage of the most central nodes can achieve good results with orders of magnitude lower runtime.
+
+
+# 219
+### http://arxiv.org/abs/1703.06648v2
+## Multi-Dimensional Auction Mechanisms for Crowdsourced Mobile Video Streaming
+
+-1 	Crowdsourced mobile video streaming enables nearby mobile video users to aggregate network resources to improve their video streaming performances.
+-1 	However, users are often selfish and may not be willing to cooperate without proper incentives.
+-1 	Designing an incentive mechanism for such a scenario is challenging due to the users' asynchronous downloading behaviors and their private valuations for multi-bitrate coded videos.
+-1 	In this work, we propose both single-object and multi-object multi-dimensional auction mechanisms, through which users sell the opportunities for downloading single and multiple video segments with multiple bitrates, respectively.
+-1 	Both auction mechanisms can achieves truthfulness (i.
+-1 	e, truthful private information revelation) and efficiency (i.e., social welfare maximization).
+-1 	Simulations with real traces show that crowdsourced mobile streaming facilitated by the auction mechanisms outperforms noncooperative stream ing by 48.
+-1 	6% (on average) in terms of social welfare.
+-1 	To evaluate the real-world performance, we also construct a demo system for crowdsourced mobile streaming and implement our proposed auction mechanism.
+-1 	Experiments over the demo system further show that those users who provide resources to others and those users who receive helps can increase their welfares by 15.
+-1 	5% and 35.
+-1 	4% (on average) via cooperation, respectively.
+
+
+# 220
+### http://arxiv.org/abs/1703.07876v2
+## An iBeacon based Proximity and Indoor Localization System
+
+-1 	Indoor localization and Location Based Services (LBS) can greatly benefit from the widescale proliferation of communication devices.
+-1 	The basic requirements of a system that can provide the aforementioned services are energy efficiency, scalability, lower costs, wide reception range, high localization accuracy and availability.
+-1 	Different technologies such as WiFi, UWB, RFID have been leveraged to provide LBS and Proximity Based Services (PBS), however they do not meet the aforementioned requirements.
+-1 	Apple's Bluetooth Low Energy (BLE) based iBeacon solution primarily intends to provide Proximity Based Services (PBS).
+-1 	However, it suffers from poor proximity detection accuracy due to its reliance on Received Signal Strength Indicator (RSSI) that is prone to multipath fading and drastic fluctuations in the indoor environment.
+-1 	Therefore, in this paper, we present our iBeacon based accurate proximity and indoor localization system.
+-1 	Our two algorithms Server-Side Running Average (SRA) and Server-Side Kalman Filter (SKF) improve the proximity detection accuracy of iBeacons by 29% and 32% respectively, when compared with Apple's current moving average based approach.
+-1 	We also present our novel cascaded Kalman Filter-Particle Filter (KFPF) algorithm for indoor localization.
+-1 	Our cascaded filter approach uses a Kalman Filter (KF) to reduce the RSSI fluctuation and then inputs the filtered RSSI values into a Particle Filter (PF) to improve the accuracy of indoor localization.
+-1 	Our experimental results, obtained through experiments in a space replicating real-world scenario, show that our cascaded filter approach outperforms the use of only PF by 28.
+-1 	16% and 25.
+-1 	59% in 2-Dimensional (2D) and 3-Dimensional (3D) environments respectively, and achieves a localization error as low as 0.
+-1 	70 meters in 2D environment and 0.
+-1 	947 meters in 3D environment.
+
+
+# 221
+### http://arxiv.org/abs/1703.10804v1
+## An Approach for Spatial-temporal Traffic Modeling in Mobile Cellular Networks
+
+-1 	The volume and types of traffic data in mobile cellular networks have been increasing continuously.
+-1 	Meanwhile, traffic data change dynamically in several dimensions such as time and space.
+-1 	Thus, traffic modeling is essential for theoretical analysis and energy efficient design of future ultra-dense cellular networks.
+-1 	In this paper, the authors try to build a tractable and accurate model to describe the traffic variation pattern for a single base station in real cellular networks.
+-1 	Firstly a sinusoid superposition model is proposed for describing the temporal traffic variation of multiple base stations based on real data in a current cellular network.
+-1 	It shows that the mean traffic volume of many base stations in an area changes periodically and has three main frequency components.
+-1 	Then, lognormal distribution is verified for spatial modeling of real traffic data.
+-1 	The spatial traffic distributions at both spare time and busy time are analyzed.
+-1 	Moreover, the parameters of the model are presented in three typical regions: park, campus and central business district.
+-1 	Finally, an approach for combined spatial-temporal traffic modeling of single base station is proposed based on the temporal and spatial traffic distribution of multiple base stations.
+-1 	All the three models are evaluated through comparison with real data in current cellular networks.
+-1 	The results show that these models can accurately describe the variation pattern of real traffic data in cellular networks.
+
+
+# 222
+### http://arxiv.org/abs/1704.03873v1
+## Architectural Challenges and Solutions for Collocated LWIP - A Network Layer Perspective
+
+-1 	Achieving a tighter level of aggregation between LTE and Wi-Fi networks at the radio access network (a.
+-1 	k.
+-1 	a.
+-1 	LTE-Wi-Fi Aggregation or LWA) has become one of the most prominent solutions in the era of 5G to boost network capacity and improve end user's quality of experience.
+-1 	LWA offers flexible resource scheduling decisions for steering user traffic via LTE and Wi-Fi links.
+-1 	In this work, we propose a Collocated LTE/WLAN Radio Level Integration architecture at IP layer (C-LWIP), an enhancement over 3GPP non-collocated LWIP architecture.
+-1 	We have evaluated C-LWIP performance in various link aggregation strategies (LASs).
+-1 	A C-LWIP node (i.e., the node having collocated, aggregated LTE eNodeB and Wi-Fi access point functionalities) is implemented in NS-3 which introduces a traffic steering layer (i.e., Link Aggregation Layer) for efficient integration of LTE and Wi-Fi.
+-1 	Using extensive simulations, we verified the correctness of C-LWIP module in NS-3 and evaluated the aggregation benefits over standalone LTE and Wi-Fi networks with respect to varying number of users and traffic types.
+-1 	We found that split bearer performs equivalently to switched bearer for UDP flows and switched bearer outperforms split bearer in the case of TCP flows.
+-1 	Also, we have enumerated the potential challenges to be addressed for unleashing C-LWIP capabilities.
+-1 	Our findings also include WoD-Link Aggregation Strategy which is shown to improve system throughput by 50% as compared to Naive-LAS in a densely populated indoor stadium environment.
+
+
+# 223
+### http://arxiv.org/abs/1704.04174v2
+## Does Bidirectional Traffic Do More Harm Than Good in LoRaWAN Based LPWA Networks?
+
+-1 	The need for low power, long range and low cost connectivity to meet the requirements of IoT applications has led to the emergence of Low Power Wide Area (LPWA) networking technologies.
+-1 	The promise of these technologies to wirelessly connect massive numbers of geographically dispersed devices at a low cost continues to attract a great deal of attention in the academic and commercial communities.
+-1 	Several rollouts are already underway even though the performance of these technologies is yet to be fully understood.
+-1 	In light of these developments, tools to carry out `what-if analyses' and pre-deployment studies are needed to understand the implications of choices that are made at design time.
+-1 	While there are several promising technologies in the LPWA space, this paper specifically focuses on the LoRa/LoRaWAN technology.
+-1 	In particular, we present LoRaWANSim, a simulator which extends the LoRaSim tool to add support for the LoRaWAN MAC protocol, which employs bidirectional communication.
+-1 	This is a salient feature not available in any other LoRa simulator.
+-1 	Subsequently, we provide vital insights into the performance of LoRaWAN based networks through extensive simulations.
+-1 	In particular, we show that the achievable network capacity reported in earlier studies is quite optimistic.
+-1 	The introduction of downlink traffic can have a significant impact on the uplink throughput.
+-1 	The number of transmit attempts recommended in the LoRaWAN specification may not always be the best choice.
+-1 	We also highlight the energy consumption versus reliability trade-offs associated with the choice of number of retransmission attempts.
+
+
+# 224
+### http://arxiv.org/abs/1704.04448v2
+## Adaptive TTL-Based Caching for Content Delivery
+
+-1 	Content Delivery Networks (CDNs) deliver a majority of the user-requested content on the Internet, including web pages, videos, and software downloads.
+-1 	A CDN server caches and serves the content requested by users.
+-1 	Designing caching algorithms that automatically adapt to the heterogeneity, burstiness, and non-stationary nature of real-world content requests is a major challenge and is the focus of our work.
+-1 	While there is much work on caching algorithms for stationary request traffic, the work on non-stationary request traffic is very limited.
+-1 	Consequently, most prior models are inaccurate for production CDN traffic that is non-stationary.
+-1 	We propose two TTL-based caching algorithms and provide provable guarantees for content request traffic that is bursty and non-stationary.
+-1 	The first algorithm called d-TTL dynamically adapts a TTL parameter using a stochastic approximation approach.
+-1 	Given a feasible target hit rate, we show that the hit rate of d-TTL converges to its target value for a general class of bursty traffic that allows Markov dependence over time and non-stationary arrivals.
+-1 	The second algorithm called f-TTL uses two caches, each with its own TTL.
+-1 	The first-level cache adaptively filters out non-stationary traffic, while the second-level cache stores frequently-accessed stationary traffic.
+-1 	Given feasible targets for both the hit rate and the expected cache size, f-TTL asymptotically achieves both targets.
+-1 	We implement d-TTL and f-TTL and evaluate both algorithms using an extensive nine-day trace consisting of 500 million requests from a production CDN server.
+-1 	We show that both d-TTL and f-TTL converge to their hit rate targets with an error of about 1.
+-1 	3%.
+-1 	But, f-TTL requires a significantly smaller cache size than d-TTL to achieve the same hit rate, since it effectively filters out the non-stationary traffic for rarely-accessed objects.
+
+
+# 225
+### http://arxiv.org/abs/1705.07511v1
+## ARABIS: an Asynchronous Acoustic Indoor Positioning System for Mobile Devices
+
+-1 	Acoustic ranging based indoor positioning solutions have the advantage of higher ranging accuracy and better compatibility with commercial-off-the-self consumer devices.
+-1 	However, similar to other time-domain based approaches using Time-of-Arrival and Time-Difference-of-Arrival, they suffer from performance degradation in presence of multi-path propagation and low received signal-to-noise ratio (SNR) in indoor environments.
+-1 	In this paper, we improve upon our previous work on asynchronous acoustic indoor positioning and develop ARABIS, a robust and low-cost acoustic positioning system (IPS) for mobile devices.
+-1 	We develop a low-cost acoustic board custom-designed to support large operational ranges and extensibility.
+-1 	To mitigate the effects of low SNR and multi-path propagation, we devise a robust algorithm that iteratively removes possible outliers by taking advantage of redundant TDoA estimates.
+-1 	Experiments have been carried in two testbeds of sizes 10.
+-1 	67m*7.
+-1 	76m and 15m*15m, one in an academic building and one in a convention center.
+-1 	The proposed system achieves average and 95% quantile localization errors of 7.
+-1 	4cm and 16.
+-1 	0cm in the first testbed with 8 anchor nodes and average and 95% quantile localization errors of 20.
+-1 	4cm and 40.
+-1 	0cm in the second testbed with 4 anchor nodes only.

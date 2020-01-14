@@ -1,0 +1,290 @@
+
+
+# 286
+### http://arxiv.org/abs/1805.07743v4
+## Joint Path Selection and Rate Allocation Framework for 5G Self-Backhauled mmWave Networks
+
+-1 	Owing to severe path loss and unreliable transmission over a long distance at higher frequency bands, we investigate the problem of path selection and rate allocation for multi-hop self-backhaul millimeter wave (mmWave) networks.
+-1 	Enabling multi-hop mmWave transmissions raises a potential issue of increased latency, and thus, in this work we aim at addressing the fundamental questions: how to select the best multi-hop paths and how to allocate rates over these paths subject to latency constraints?
+-1 	In this regard, we propose a new system design, which exploits multiple antenna diversity, mmWave bandwidth, and traffic splitting techniques to improve the downlink transmission.
+-1 	The studied problem is cast as a network utility maximization, subject to an upper delay bound constraint, network stability, and network dynamics.
+-1 	By leveraging stochastic optimization, the problem is decoupled into: path selection and rate allocation sub-problems, whereby a framework which selects the best paths is proposed using reinforcement learning techniques.
+-1 	Moreover, the rate allocation is a nonconvex program, which is converted into a convex one by using the successive convex approximation method.
+-1 	Via mathematical analysis, we provide a comprehensive performance analysis and convergence proofs for the proposed solution.
+-1 	Numerical results show that our approach ensures reliable communication with a guaranteed probability of up to $99.
+-1 	9999\%$, and reduces latency by $50.
+-1 	64\%$ and $92.
+-1 	9\%$ as compared to baseline models.
+-1 	Furthermore, the results showcase the key trade-off between latency and network arrival rate.
+
+
+# 287
+### http://arxiv.org/abs/1806.05026v1
+## An Analytical Model for Wireless Mesh Networks with Collision-Free TDMA and Finite Queues
+
+-1 	Wireless mesh networks are a promising technology for connecting sensors and actuators with high flexibility and low investment costs.
+-1 	In industrial applications, however, reliability is essential.
+-1 	Therefore, two time-slotted medium access methods, DSME and TSCH, were added to the IEEE 802.
+-1 	15.
+-1 	4 standard.
+-1 	They allow collision-free communication in multi-hop networks and provide channel hopping for mitigating external interferences.
+-1 	The slot schedule used in these networks is of high importance for the network performance.
+-1 	This paper supports the development of efficient schedules by providing an analytical model for the assessment of such schedules, focused on TSCH.
+-1 	A Markov chain model for the finite queue on every node is introduced that takes the slot distribution into account.
+-1 	The models of all nodes are interconnected to calculate network metrics such as packet delivery ratio, end-to-end delay and throughput.
+-1 	An evaluation compares the model with a simulation of the Orchestra schedule.
+-1 	The model is applied to Orchestra as well as to two simple distributed scheduling algorithms to demonstrate the importance of traffic-awareness for achieving high throughput.
+
+
+# 288
+### http://arxiv.org/abs/1806.05908v1
+## Survey and Performance Evaluation of the Upcoming Next Generation WLAN Standard - IEEE 802.11ax
+
+-1 	With the ever-increasing demand for wireless traffic and quality of serives (QoS), wireless local area networks (WLANs) have developed into one of the most dominant wireless networks that fully influence human life.
+-1 	As the most widely used WLANs standard, Institute of Electrical and Electronics Engineers (IEEE) 802.
+-1 	11 will release the upcoming next generation WLANs standard amendment: IEEE 802.
+-1 	11ax.
+-1 	This article comprehensively surveys and analyzes the application scenarios, technical requirements, standardization process, key technologies, and performance evaluations of IEEE 802.
+-1 	11ax.
+-1 	Starting from the technical objectives and requirements of IEEE 802.
+-1 	11ax, this article pays special attention to high-dense deployment scenarios.
+-1 	After that, the key technologies of IEEE 802.
+-1 	11ax, including the physical layer (PHY) enhancements, multi-user (MU) medium access control (MU-MAC), spatial reuse (SR), and power efficiency are discussed in detail, covering both standardization technologies as well as the latest academic studies.
+-1 	Furthermore, performance requirements of IEEE 802.
+-1 	11ax are evaluated via a newly proposed systems and link-level integrated simulation platform (SLISP).
+-1 	Simulations results confirm that IEEE 802.
+-1 	11ax significantly improves the user experience in high-density deployment, while successfully achieves the average per user throughput requirement in project authorization request (PAR) by four times compared to the legacy IEEE 802.
+-1 	11.
+-1 	Finally, potential advancement beyond IEEE 802.
+-1 	11ax are discussed to complete this holistic study on the latest IEEE 802.
+-1 	11ax.
+-1 	To the best of our knowledge, this article is the first study to directly investigate and analyze the latest stable version of IEEE 802.
+-1 	11ax, and the first work to thoroughly and deeply evaluate the compliance of the performance requirements of IEEE 802.
+-1 	11ax.
+
+
+# 289
+### http://arxiv.org/abs/1807.02205v1
+## OSDF: An Intent-based Software Defined Network Programming Framework
+
+-1 	Software Defined Networking (SDN) offers flexibility to program a network based on a set of network requirements.
+-1 	Programming the networks using SDN is not completely straightforward because a programmer must deal with low level details.
+-1 	To solve the problem, researchers proposed a set of network programming languages that provide a set of high level abstractions to hide low level hardware details.
+-1 	Most of the proposed languages provide abstractions related to packet processing and flows, and still require a programmer to specify low-level match-action fields to configure and monitor a network.
+-1 	Recently, in an attempt to raise the level at which programmers work, researchers have begun to investigate Intent-based, descriptive northbound interfaces.
+-1 	The work is still in early stages, and further investigation is required before intent-based systems will be adopted by enterprise networks.
+-1 	To help achieve the goal of moving to an intent-based design, we propose an SDN-based network programming framework, the Open Software Defined Framework (OSDF).
+-1 	OSDF provides a high level Application Programming Interface (API) that can be used by managers and network administrators to express network requirements for applications and policies for multiple domains.
+-1 	OSDF also provides a set of high level network operation services that handle common network configuration, monitoring, and Quality of Service (QoS) provisioning.
+-1 	OSDF is equipped with a policy conflict management module to help a network administrator detect and resolve policy conflicts.
+-1 	The paper shows how OSDF can be used and explains application-based policies.
+-1 	Finally, the paper reports the results of both testbed measurements and simulations that are used to evaluate the framework from multiple perspectives, including functionality and performance.
+
+
+# 290
+### http://arxiv.org/abs/1807.02237v1
+## Building Transmission Backbone for Highway Vehicular Networks: Framework and Analysis
+
+-1 	The highway vehicular ad hoc networks, where vehicles are wirelessly inter-connected, rely on the multi-hop transmissions for end-to-end communications.
+-1 	This, however, is severely challenged by the unreliable wireless connections, signal attenuation and channel contentions in the dynamic vehicular environment.
+-1 	To overcome the network dynamics, selecting appropriate relays for end-to-end connections is important.
+-1 	Different from the previous efforts (\emph{e.
+-1 	g.},
+-1 	clustering and cooperative downloading), this paper explores the existence of stable vehicles and propose building a stable multi-hop transmission backbone network in the highway vehicular ad hoc network.
+-1 	Our work is composed of three parts.
+-1 	Firstly, by analyzing the real-world vehicle traffic traces, we observe that the large-size vehicles, \emph{e.
+-1 	g.},
+-1 	trucks, are typically stable with low variations of mobility and stable channel condition of low signal attenuation; this makes their inter-connections stable in both connection time and transmission rate.
+-1 	Secondly, by exploring the stable vehicles, we propose a distributed protocol to build a multi-hop backbone link for end-to-end transmissions, accordingly forming a two-tier network architecture in highway vehicular ad hoc networks.
+-1 	Lastly, to show the resulting data performance, we develop a queueing analysis model to evaluate the end-to-end transmission delay and throughput.
+-1 	Using extensive simulations, we show that the proposed transmission backbone can significantly improve the reliability of multi-hop data transmissions with higher throughput, less transmission interruptions and end-to-end delay.
+
+
+# 291
+### http://arxiv.org/abs/1807.04618v2
+## Proofs and Performance Evaluation of Greedy Multi-Channel Neighbor Discovery Approaches
+
+-1 	The accelerating penetration of physical environments by objects with information processing and wireless communication capabilities requires approaches to find potential communication partners and discover services.
+-1 	In the present work, we focus on passive discovery approaches in multi-channel wireless networks based on overhearing periodic beacon transmissions of neighboring devices which are otherwise agnostic to the discovery process.
+-1 	We propose a family of low-complexity algorithms that generate listening schedules guaranteed to discover all neighbors.
+-1 	The presented approaches simultaneously depending on the beacon periods optimize the worst case discovery time, the mean discovery time, and the mean number of neighbors discovered until any arbitrary in time.
+-1 	The presented algorithms are fully compatible with technologies such as IEEE 802.
+-1 	11 and IEEE 802.
+-1 	15.
+-1 	4.
+-1 	Complementing the proposed low-complexity algorithms, we formulate the problem of computing discovery schedules that minimize the mean discovery time for arbitrary beacon periods as an integer linear problem.
+-1 	We study the performance of the proposed approaches analytically, by means of numerical experiments, and by extensively simulating them under realistic conditions.
+-1 	We observe that the generated listening schedules significantly - by up to factor 4 for the mean discovery time, and by up to 300% for the mean number of neighbors discovered until each point in time - outperform the Passive Scan, a discovery approach defined in the IEEE 802.
+-1 	15.
+-1 	4 standard.
+-1 	Based on the gained insights, we discuss how the selection of the beacon periods influences the efficiency of the discovery process, and provide recommendations for the design of systems and protocols.
+
+
+# 292
+### http://arxiv.org/abs/1807.05220v1
+## Greedy Multi-Channel Neighbor Discovery
+
+-1 	The accelerating penetration of physical environments by objects with information processing and wireless communication capabilities requires approaches to find potential communication partners and discover services.
+-1 	In the present work, we focus on passive discovery approaches in multi-channel wireless networks based on overhearing periodic beacon transmissions of neighboring devices which are otherwise agnostic to the discovery process.
+-1 	We propose a family of low-complexity algorithms that generate listening schedules guaranteed to discover all neighbors.
+-1 	The presented approaches simultaneously depending on the beacon periods optimize the worst case discovery time, the mean discovery time, and the mean number of neighbors discovered until any arbitrary in time.
+-1 	The presented algorithms are fully compatible with technologies such as IEEE 802.
+-1 	11 and IEEE 802.
+-1 	15.
+-1 	4.
+-1 	Complementing the proposed low-complexity algorithms, we formulate the problem of computing discovery schedules that minimize the mean discovery time for arbitrary beacon periods as an integer linear problem.
+-1 	We study the performance of the proposed approaches analytically, by means of numerical experiments, and by extensively simulating them under realistic conditions.
+-1 	We observe that the generated listening schedules significantly - by up to factor 4 for the mean discovery time, and by up to 300% for the mean number of neighbors discovered until each point in time - outperform the Passive Scan, a discovery approach defined in the IEEE 802.
+-1 	15.
+-1 	4 standard.
+-1 	Based on the gained insights, we discuss how the selection of the beacon periods influences the efficiency of the discovery process, and provide recommendations for the design of systems and protocols.
+
+
+# 293
+### http://arxiv.org/abs/1808.02975v2
+## Auto-Scaling Network Resources using Machine Learning to Improve QoS and Reduce Cost
+
+-1 	Virtualization of network functions (as virtual routers, virtual firewalls, etc.)
+-1 	enables network owners to efficiently respond to the increasing dynamicity of network services.
+-1 	Virtual Network Functions (VNFs) are easy to deploy, update, monitor, and manage.
+-1 	The number of VNF instances, similar to generic computing resources in cloud, can be easily scaled based on load.
+-1 	Hence, auto-scaling (of resources without human intervention) has been receiving attention.
+-1 	Prior studies on auto-scaling use measured network traffic load to dynamically react to traffic changes.
+-1 	In this study, we propose a proactive Machine Learning (ML) based approach to perform auto-scaling of VNFs in response to dynamic traffic changes.
+-1 	Our proposed ML classifier learns from past VNF scaling decisions and seasonal/spatial behavior of network traffic load to generate scaling decisions ahead of time.
+-1 	Compared to existing approaches for ML-based auto-scaling, our study explores how the properties (e.g., start-up time) of underlying virtualization technology impacts Quality of Service (QoS) and cost savings.
+-1 	We consider four different virtualization technologies: Xen and KVM, based on hypervisor virtualization, and Docker and LXC, based on container virtualization.
+-1 	Our results show promising accuracy of the ML classifier using real data collected from a private ISP.
+-1 	We report in-depth analysis of the learning process (learning-curve analysis), feature ranking (feature selection, Principal Component Analysis (PCA), etc.),
+-1 	impact of different sets of features, training time, and testing time.
+-1 	Our results show how the proposed methods improve QoS and reduce operational cost for network owners.
+-1 	We also demonstrate a practical use-case example (Software-Defined Wide Area Network (SD-WAN) with VNFs and backbone network) to show that our ML methods save significant cost for network service leasers.
+
+
+# 294
+### http://arxiv.org/abs/1808.03907v1
+## Seamless roaming and guaranteed communication using a synchronized single-hop multi-gateway 802.15.4e TSCH network
+
+-1 	Industrial wireless sensor networks (WSNs) are being used to improve the efficiency, productivity and safety of industrial processes.
+-1 	An open standard that is commonly used in such cases is IEEE 802.
+-1 	15.
+-1 	4e.
+-1 	Its TSCH mode employs a time synchronized based MAC scheme together with channel hopping to alleviate the impact of channel fading.
+-1 	Until now, most of the industrial WSNs have been designed to only support static nodes and are not able to deal with mobility.
+-1 	In this paper, we show how a single-hop, multi-gateway IEEE 802.
+-1 	15.
+-1 	4e TSCH network architecture can tackle the mobility problem.
+-1 	We introduce the Virtual Grand Master (VGM) concept that moves the synchronization point from separated Backbone Border Routers (BBRs) towards the backbone network.
+-1 	With time synchronization of all BBRs, mobile nodes can roam from one BBR to another without time desynchronization.
+-1 	In addition to time synchronization, we introduce a mechanism to synchronize the schedules between BBRs to support fast handover of mobile nodes.
+
+
+# 295
+### http://arxiv.org/abs/1808.05640v1
+## A Socio-inspired CALM Approach to Channel Assignment Performance Prediction and WMN Capacity Estimation
+
+-1 	A significant amount of research literature is dedicated to interference mitigation in Wireless Mesh Networks (WMNs), with a special emphasis on designing channel allocation (CA) schemes which alleviate the impact of interference on WMN performance.
+-1 	But having countless CA schemes at one's disposal makes the task of choosing a suitable CA for a given WMN extremely tedious and time consuming.
+-1 	In this work, we propose a new interference estimation and CA performance prediction algorithm called CALM, which is inspired by social theory.
+-1 	We borrow the sociological idea of a "sui generis" social reality, and apply it to WMNs with significant success.
+-1 	To achieve this, we devise a novel Sociological Idea Borrowing Mechanism that facilitates easy operationalization of sociological concepts in other domains.
+-1 	Further, we formulate a heuristic Mixed Integer Programming (MIP) model called NETCAP which makes use of link quality estimates generated by CALM to offer a reliable framework for network capacity prediction.
+-1 	We demonstrate the efficacy of CALM by evaluating its theoretical estimates against experimental data obtained through exhaustive simulations on ns-3 802.
+-1 	11g environment, for a comprehensive CA test-set of forty CA schemes.
+-1 	We compare CALM with three existing interference estimation metrics, and demonstrate that it is consistently more reliable.
+-1 	CALM boasts of accuracy of over 90% in performance testing, and in stress testing too it achieves an accuracy of 88%, while the accuracy of other metrics drops to under 75%.
+-1 	It reduces errors in CA performance prediction by as much as 75% when compared to other metrics.
+-1 	Finally, we validate the expected network capacity estimates generated by NETCAP, and show that they are quite accurate, deviating by as low as 6.
+-1 	4% on an average when compared to experimentally recorded results in performance testing.
+
+
+# 296
+### http://arxiv.org/abs/1808.06722v1
+## Mechanisms for Resilient Video Transmission
+
+-1 	Wireless networks are envisaged to be one of the most important technologies to provide cost-efficient content delivery, including for video applications.
+-1 	They will allow thousands of thousands of fixed and mobile users to access, produce, share, and consume video content in a ubiquitous way.
+-1 	Real-time video services over these networks are becoming a part of everyday life and have been used to spread information ranging from education to entertainment content.
+-1 	However, the challenge of dealing with the fluctuating bandwidth, scarce resources, and time-varying error rate of these networks, highlights the need for error-resilient video transmission.
+-1 	In this context, the combination of Forward Error Correction (FEC) and Unequal Error Protection (UEP) approaches is known to provide the distribution of video applications for wireless users with Quality of Experience (QoE) assurance.
+-1 	This thesis proposed a procedure to assess the video characteristics and their related impact on the perceived quality to end-users.
+-1 	This thesis proposes a series of cross-layer video-aware and FEC-based mechanisms with UEP to enhance video transmission in several types of wireless networks.
+-1 	A number of methods to set an adaptive amount of redundancy were used in these mechanisms, such as heuristic techniques, random neural networks, ant colony optimisation, and fuzzy logic.
+-1 	In the first one, heuristic techniques, the mechanisms rely on human experience to define the best strategy.
+-1 	The advantages and drawbacks of the proposed mechanisms were demonstrated in realistic simulations using real video sequences and actual network traces.
+-1 	The assessments were conducted with well-known QoE metrics.
+-1 	The results show that all the proposed mechanisms were able to outperform the competitors on both perceived video quality and network footprint.
+
+
+# 297
+### http://arxiv.org/abs/1808.09242v1
+## Introducing Development Features for Virtualized Network Services
+
+-1 	Network virtualization and softwarizing network functions are trends aiming at higher network efficiency, cost reduction and agility.
+-1 	They are driven by the evolution in Software Defined Networking (SDN) and Network Function Virtualization (NFV).
+-1 	This shows that software will play an increasingly important role within telecommunication services, which were previously dominated by hardware appliances.
+-1 	Service providers can benefit from this, as it enables faster introduction of new telecom services, combined with an agile set of possibilities to optimize and fine-tune their operations.
+-1 	However, the provided telecom services can only evolve if the adequate software tools are available.
+-1 	In this article, we explain how the development, deployment and maintenance of such an SDN/NFV-based telecom service puts specific requirements on the platform providing it.
+-1 	A Software Development Kit (SDK) is introduced, allowing service providers to adequately design, test and evaluate services before they are deployed in production and also update them during their lifetime.
+-1 	This continuous cycle between development and operations, a concept known as DevOps, is a well known strategy in software development.
+-1 	To extend its context further to SDN/NFV-based services, the functionalities provided by traditional cloud platforms are not yet sufficient.
+-1 	By giving an overview of the currently available tools and their limitations, the gaps in DevOps for SDN/NFV services are highlighted.
+-1 	The benefit of such an SDK is illustrated by a secure content delivery network service (enhanced with deep packet inspection and elastic routing capabilities).
+-1 	With this use-case, the dynamics between developing and deploying a service are further illustrated.
+
+
+# 298
+### http://arxiv.org/abs/1809.02455v2
+## Sub-6GHz Assisted MAC for Millimeter Wave Vehicular Communications
+
+-1 	Sub-6GHz vehicular communications (using DSRC, ITS-G5 or C-V2X) have been developed to support active safety applications.
+-1 	Future connected and automated driving applications can require larger bandwidth and higher data rates than currently supported by sub-6GHz V2X technologies.
+-1 	This has triggered the interest in developing mmWave vehicular communications.
+-1 	However, solutions are necessary to solve the challenges resulting from the use of high-frequency bands and the high mobility of vehicles.
+-1 	This paper contributes to this active research area by proposing a sub-6GHz assisted mmWave MAC that decouples the mmWave data and control planes.
+-1 	The proposal offloads mmWave MAC control functions (beam alignment, neighbor identification and scheduling) to a sub-6GHz V2X technology, and reserves the mmWave channel for the data plane.
+-1 	This approach improves the operation of the MAC as the control functions benefit from the longer range, and the broadcast and omnidirectional transmissions of sub-6GHz V2X technologies.
+-1 	This simulation study demonstrates that the proposed sub-6GHz assisted mmWave MAC reduces the control overhead and delay, and increases the spatial sharing compared to a mmWave-only configuration (IEEE 802.
+-1 	11ad tailored to vehicular networks).
+-1 	The proposed MAC is here evaluated for V2V communications using 802.
+-1 	11p for the control plane and 802.
+-1 	11ad for the data plane.
+-1 	However, the proposal is not restricted to these technologies, and can be adapted to other technologies such as C-V2X and 5G NR.
+
+
+# 299
+### http://arxiv.org/abs/1809.02826v3
+## Delay-Constrained Input-Queued Switch
+
+-1 	In this paper, we study the delay-constrained input-queued switch where each packet has a deadline and it will expire if it is not delivered before its deadline.
+-1 	Such new scenario is motivated by the proliferation of real-time applications in multimedia communication systems, tactile Internet, networked controlled systems, and cyber-physical systems.
+-1 	The delay-constrained input-queued switch is completely different from the well-understood delay-unconstrained one and thus poses new challenges.
+-1 	We focus on three fundamental problems centering around the performance metric of timely throughput: (i) how to characterize the capacity region? (
+-1 	ii) how to design a feasibility/throughput-optimal scheduling policy?
+-1 	and (iii) how to design a network-utility-maximization scheduling policy?
+-1 	We use three different approaches to solve these three fundamental problems.
+-1 	The first approach is based on Markov Decision Process (MDP) theory, which can solve all three problems.
+-1 	However, it suffers from the curse of dimensionality.
+-1 	The second approach breaks the curse of dimensionality by exploiting the combinatorial features of the problem.
+-1 	It gives a new capacity region characterization with only a polynomial number of linear constraints.
+-1 	The third approach is based on the framework of Lyapunov optimization, where we design a polynomial-time maximum-weight T-disjoint-matching scheduling policy which is proved to be feasibility/throughput-optimal.
+-1 	Our three approaches apply to the frame-synchronized traffic pattern but our MDP-based approach can be extended to more general traffic patterns.
+
+
+# 300
+### http://arxiv.org/abs/1809.03412v1
+## S2VC: An SDN-based Framework for Maximizing QoE in SVC-Based HTTP Adaptive Streaming
+
+-1 	HTTP adaptive streaming (HAS) is quickly becoming the dominant video delivery technique for adaptive streaming over the Internet.
+-1 	Still considered as its primary challenges are determining the optimal rate adaptation and improving both the quality of experience (QoE) and QoE-fairness.
+-1 	Most of the proposed approaches have relied on local information to find a result.
+-1 	However, employing techniques that provide a comprehensive and central view of the network resources can lead to more gains in performance.
+-1 	By leveraging software defined networking (SDN), this paper proposes an SDN-based framework, named S2VC, to maximize QoE metrics and QoE-fairness in SVC-based HTTP adaptive streaming.
+-1 	The proposed framework determines both the optimal adaptation and data paths for delivering the requested video files from HTTP-media servers to DASH clients.
+-1 	In fact, by utilizing an SDN controller and its complete view of the network, we introduce an SVC flow optimizer (SFO) application module to determine the optimal solution in a centralized and time slot fashion.
+-1 	In the current approach, we first formulate the problem as a mixed integer linear programming (MILP) optimization model.
+-1 	The MILP is designed in such a way that it applies defined policies, e.g. setting priorities for clients in obtaining video quality.
+-1 	Secondly, we show that this problem is NP-complete and propose an LP-relaxation model to enable S2VC framework for performing rate adaptation on a large-scale network.
+-1 	Finally, we conduct experiments by emulating the proposed framework in Mininet, with the usage of Floodlight as the SDN controller.
+-1 	In terms of improving QoE-fairness and QoE metrics, the effectiveness of the proposed framework is validated by a comparison with different approaches.

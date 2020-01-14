@@ -1,0 +1,281 @@
+
+
+# 256
+### http://arxiv.org/abs/1711.01683v2
+## ENGINE:Cost Effective Offloading in Mobile Edge Computing with Fog-Cloud Cooperation
+
+-1 	Mobile Edge Computing (MEC) as an emerging paradigm utilizing cloudlet or fog nodes to extend remote cloud computing to the edge of the network, is foreseen as a key technology towards next generation wireless networks.
+-1 	By offloading computation intensive tasks from resource constrained mobile devices to fog nodes or the remote cloud, the energy of mobile devices can be saved and the computation capability can be enhanced.
+-1 	For fog nodes, they can rent the resource rich remote cloud to help them process incoming tasks from mobile devices.
+-1 	In this architecture, the benefit of short computation and computation delay of mobile devices can be fully exploited.
+-1 	However, existing studies mostly assume fog nodes possess unlimited computing capacity, which is not practical, especially when fog nodes are also energy constrained mobile devices.
+-1 	To provide incentive of fog nodes and reduce the computation cost of mobile devices, we provide a cost effective offloading scheme in mobile edge computing with the cooperation between fog nodes and the remote cloud with task dependency constraint.
+-1 	The mobile devices have limited budget and have to determine which task should be computed locally or sent to the fog.
+-1 	To address this issue, we first formulate the offloading problem as a task finish time inimization problem with given budgets of mobile devices, which is NP-hard.
+-1 	We then devise two more algorithms to study the network performance.
+-1 	Simulation results show that the proposed greedy algorithm can achieve the near optimal performance.
+-1 	On average, the Brute Force method and the greedy algorithm outperform the simulated annealing algorithm by about 28.
+-1 	13% on the application finish time.
+
+
+# 257
+### http://arxiv.org/abs/1711.03660v1
+## TARCO: Two-Stage Auction for D2D Relay Aided Computation Resource Allocation in Hetnet
+
+-1 	In heterogeneous cellular network, task scheduling for computation offloading is one of the biggest challenges.
+-1 	Most works focus on alleviating heavy burden of macro base stations by moving the computation tasks on macro-cell user equipment (MUE) to remote cloud or small-cell base stations.
+-1 	But the selfishness of network users is seldom considered.
+-1 	Motivated by the cloud edge computing, this paper provides incentive for task transfer from macro cell users to small cell base stations.
+-1 	The proposed incentive scheme utilizes small cell user equipment to provide relay service.
+-1 	The problem of computation offloading is modelled as a two-stage auction, in which the remote MUEs with common social character can form a group and then buy the computation resource of small-cell base stations with the relay of small cell user equipment.
+-1 	A two-stage auction scheme named TARCO is contributed to maximize utilities for both sellers and buyers in the network.
+-1 	The truthful, individual rationality and budget balance of the TARCO are also proved in this paper.
+-1 	In addition, two algorithms are proposed to further refine TARCO on the social welfare of the network.
+-1 	Extensive simulation results demonstrate that, TARCO is better than random algorithm by about 104.
+-1 	90% in terms of average utility of MUEs, while the performance of TARCO is further improved up to 28.
+-1 	75% and 17.
+-1 	06% by the proposed two algorithms, respectively.
+
+
+# 258
+### http://arxiv.org/abs/1711.08405v1
+## A study of research trends and issues in wireless ad hoc networks
+
+-1 	Ad hoc network enables network creation on the fly without support of any predefined infrastructure.
+-1 	The spontaneous erection of networks in anytime and anywhere fashion enables development of various novel applications based on ad hoc networks.
+-1 	However, at the same ad hoc network presents several new challenges.
+-1 	Different research proposals have came forward to resolve these challenges.
+-1 	This chapter provides a survey of current issues, solutions and research trends in wireless ad hoc network.
+-1 	Even though various surveys are already available on the topic, rapid developments in recent years call for an updated account on this topic.
+-1 	The chapter has been organized as follows.
+-1 	In the first part of the chapter, various ad hoc network's issues arising at different layers of TCP/IP protocol stack are presented.
+-1 	An overview of research proposals to address each of these issues is also provided.
+-1 	The second part of the chapter investigates various emerging models of ad hoc networks, discusses their distinctive properties and highlights various research issues arising due to these properties.
+-1 	We specifically provide discussion on ad hoc grids, ad hoc clouds, wireless mesh networks and cognitive radio ad hoc networks.
+-1 	The chapter ends with presenting summary of the current research on ad hoc network, ignored research areas and directions for further research.
+
+
+# 259
+### http://arxiv.org/abs/1712.00237v1
+## Demystifying Mobile Web Browsing under Multiple Protocols
+
+-1 	With the popularity of mobile devices, such as smartphones, tablets, users prefer visiting Web pages on mobile devices.
+-1 	Meanwhile, HTTP(S) plays as the major protocol to deliver Web contents, and has served the Web well for more than 15 years.
+-1 	However, as the Web pages grow increasingly complex to provide more content and functionality, the shortcomings and inflexibility of HTTP become more and more urgent to solve, e.g., the sluggish page load, insecure content, redundant transfer, etc.
+-1 	SPDY and HTTP/2 are promoted to solve the shortcomings and inflexibilities of HTTP/1.
+-1 	x.
+-1 	We are interested in how Web pages perform on smartphones with different protocols, including HTTP, HTTPS, SPDY, and HTTP/2.
+-1 	In this paper, we divide our experiments into two parts.
+-1 	First, in order to simplify our analysis, we develop our own HTTP client ignoring complicated process in real browsers to fetch synthetic Web pages with pre-specified object sizes and object numbers with different protocols, respectively.
+-1 	Meanwhile, we emulate different network conditions between client and server using Traffic Control.
+-1 	In order to test with real browsers, we clone Alexa top 200 websites, which have the corresponding mobile version, into our local host.
+-1 	Meanwhile, we control mobile Chrome browser to load those Web pages with different protocols and emulate different network conditions using Traffic Control.
+-1 	We identify how Web page characteristics and network conditions affect Web performance on smartphones for each protocol.
+-1 	We also conduct experiments on a low-end device to observe if a less powerful processor could affect Web page performance for each protocol.
+
+
+# 260
+### http://arxiv.org/abs/1712.02391v1
+## Utilizing hyperplanar substructures to perform efficient range-based WSN localization
+
+-1 	A wireless sensor network (WSN) consists of multiple wireless sensor nodes that communicate each other to fulfill a particular task.
+-1 	In this paper, we emphasize on the networks whose deployments admit lower dimensional substructures, such as collinear groups in 2D, or coplanar groups in 3D.
+-1 	When these groups are given as a part of the input, we describe an algorithm to utilize this information to perform a low-cost localization.
+-1 	In emergency situations such as fire, earthquake etc.
+-1 	inside a building, wireless sensor networks might be very crucial to provide critical information and help the rescue teams to move very quickly by decreasing their burden of exploring the environment.
+-1 	Thus, it is very important to develop a system that provides information quickly and without consuming too much energy.
+-1 	We observe that in these type of environments, sensor nodes tend to form hyperplanar groups.
+-1 	A hyperplane is a subspace of one dimension less than its ambient space, and accordingly, a hyperplanar group of sensor nodes is a group of nodes that sit on the same hyperplane.
+-1 	When we consider a floor of a building, the nodes can be deployed on the corridors to form collinear groups, and when we consider the whole building, the sensor nodes will sit on the floors to form coplanar groups.
+-1 	Therefore, we study range-based WSN localization problem in 3D environments that induce hyperplanar groupings.
+-1 	First, we show that it is an \NP-hard problem to obtain hyperplanar groups, even if we are given the equations of the hyperplanes.
+-1 	Then, we describe an algorithm that assumes each sensor node is aware of its hyperplanar group, and performs a localization when the sensor nodes are deployed in the corridors on each floor of a building.
+-1 	In this case, grouping information allows us to localize a network, which cannot be localized by conventional range-based localization algorithms.
+
+
+# 261
+### http://arxiv.org/abs/1712.02436v1
+## Performance Improvement by Introducing Mobility in Wireless Communication Networks
+
+-1 	Communication technology is a major contributor to our lifestyles.
+-1 	Improving the performance of communication system brings with various benefits to human beings.
+-1 	This report covers two typical such systems: wireless sensor networks and cellular networks.
+-1 	We study the influence of mobility in these networks.
+-1 	In wireless sensor networks, we consider the usage of mobile sinks to collect sensory data from static nodes.
+-1 	For the latter case, we design data collection protocols for a single mobile sink which aim at balancing the energy consumption among sensor nodes to improve the network lifetime.
+-1 	We also design an algorithm for multiple mobile sinks to collect urgent sensory information within the allowed latency.
+-1 	Regarding the mobility in cellular networks, we mean the service providers are mobile.
+-1 	Conventional approaches usually consider how to optimally deploy static base stations according to a certain metric, such as throughput.
+-1 	Base station densification is a solution, but it is not cost efficient.
+-1 	Introducing mobility is to let the base stations fly in the sky, resulting in less investment.
+-1 	We consider one of the key issues of using drones to serve cellular users: drone deployment.
+-1 	We have implemented all the proposed algorithms by either simulations or experiments, and the results have confirmed the effectiveness of these approaches.
+
+
+# 262
+### http://arxiv.org/abs/1712.03053v1
+## Wireless Aggregation at Nearly Constant Rate
+
+-1 	One of the most fundamental tasks in sensor networks is the computation of a (compressible) aggregation function of the input measurements.
+-1 	What rate of computation can be maintained, by properly choosing the aggregation tree, the TDMA schedule of the tree edges, and the transmission powers?
+-1 	This can be viewed as the convergecast capacity of a wireless network.
+-1 	We show here that the optimal rate is effectively a constant.
+-1 	This holds even in \emph{arbitrary} networks, under the physical model of interference.
+-1 	This compares with previous bounds that are logarithmic (e.g., $\Omega(1/\log n)$).
+-1 	Namely, we show that a rate of $\Omega(1/\log^* \Delta)$ is possible, where $\Delta$ is the length diversity (ratio between the furthest to the shortest distance between nodes).
+-1 	It also implies that the \emph{scheduling complexity} of wireless connectivity is $O(\log^* \Delta)$.
+-1 	This is achieved using the natural minimum spanning tree (MST).
+-1 	Our method crucially depends on choosing the appropriate power assignment for the instance at hand, since without power control, only a trivial linear rate can be guaranteed.
+-1 	We also show that there is a fixed power assignment that allows for a rate of $\Omega(1/\log\log \Delta)$.
+-1 	Surprisingly, these bounds are best possible.
+-1 	No aggregation network can guarantee a rate better than $O(1/\log\log \Delta)$ using fixed power assignment.
+-1 	Also, when using arbitrary power control, there are instances whose MSTs cannot be scheduled in fewer than $\Omega(1/\log^* \Delta)$ slots.
+
+
+# 263
+### http://arxiv.org/abs/1712.03336v1
+## Mobile Edge Caching: An Optimal Auction Approach
+
+-1 	With the explosive growth of wireless data, the sheer size of the mobile traffic is challenging the capacity of current wireless systems.
+-1 	To tackle this challenge, mobile edge caching has emerged as a promising paradigm recently, in which the service providers (SPs) prefetch some popular contents in advance and cache them locally at the network edge.
+-1 	When requested, those locally cached contents can be directly delivered to users with low latency, thus alleviating the traffic load over backhaul channels during peak hours and enhancing the quality-of-experience (QoE) of users simultaneously.
+-1 	Due to the limited available cache space, it makes sense for the SP to cache the most profitable contents.
+-1 	Nevertheless, users' true valuations of contents are their private knowledge, which is unknown to the SP in general.
+-1 	This information asymmetry poses a significant challenge for effective caching at the SP side.
+-1 	Further, the cached contents can be delivered with different quality, which needs to be chosen judiciously to balance delivery costs and user satisfaction.
+-1 	To tackle these difficulties, in this paper, we propose an optimal auction mechanism from the perspective of the SP.
+-1 	In the auction, the SP determines the cache space allocation over contents and user payments based on the users' (possibly untruthful) reports of their valuations so that the SP's expected revenue is maximized.
+-1 	The advocated mechanism is designed to elicit true valuations from the users (incentive compatibility) and to incentivize user participation (individual rationality).
+-1 	In addition, we devise a computationally efficient method for calculating the optimal cache space allocation and user payments.
+-1 	We further examine the optimal choice of the content delivery quality for the case with a large number of users and derive a closed-form solution to compute the optimal delivery quality.
+
+
+# 264
+### http://arxiv.org/abs/1712.09726v1
+## CHOKeD: A Fair Active Queue Management System
+
+-1 	Fairness is the significant factor to sustain best effort delivery of network services.
+-1 	Now-a-days, real-time multimedia applications have evolved largely over the Internet.
+-1 	Most of multimedia services are unresponsive during network congestion.
+-1 	Unresponsive traffic streams steal most network bandwidth and starve out some other flows which are responsive during network congestion.
+-1 	In the presence of these unresponsive traffic flows, protection of responsive flows has become a major issue.
+-1 	Many Active Queue Management (AQM) based solutions have been recommended to protect responsive traffic flows from unresponsive ones and to ensure fairness among all traffic flows.
+-1 	The thesis proposes a novel AQM scheme CHOKeD, to deliver fairness among all flows of a congested link.
+-1 	It is a completely stateless approach.
+-1 	CHOKeD is based on dynamic drawing factor to penalize unresponsive traffic.
+-1 	It successfully protects responsive flows in the presence of unresponsive flows.
+-1 	CHOKeD features such as fairness, high throughput of responsive traffic and stateless design, are encouraging factors for its deployment over the edge as well as the network core routers.
+-1 	Extensive simulations have been carried out to evaluate its performance under real-time network scenarios
+
+
+# 265
+### http://arxiv.org/abs/1801.00074v1
+## Randomized Communication in Radio Networks
+
+-1 	A communication network is called a radio network if its nodes exchange messages in the following restricted way.
+-1 	First, a send operation performed by a node delivers copies of the same message to all directly reachable nodes.
+-1 	Secondly, a node can successfully receive an incoming message only if exactly one of its neighbors sent a message in that step.
+-1 	It is this semantics of how ports at nodes send and receive messages that defines the networks rather than the fact that only radio waves are used as a medium of communication; but if that is the case then just a single frequency is used.
+-1 	We discuss algorithmic aspects of exchanging information in such networks, concentrating on distributed randomized protocols.
+-1 	Specific problems and solutions depend a lot on the topology of the underlying reachability graph and how much the nodes know about it.
+-1 	In single-hop networks each pair of nodes can communicate directly.
+-1 	This kind of networks is also known as the multiple access channel.
+-1 	Popular broadcasting protocols used on such channels are Aloha and the exponential backoff.
+-1 	Multi-hop networks may have arbitrary topology and packets need to be routed hopping through a sequence of adjacent nodes.
+-1 	Distributed protocols run by such networks are usually robust enough not to expect the nodes to know their neighbors.
+-1 	These ad-hoc networks and protocols model the situation when nodes are mobile and do not rely on a fixed infrastructure.
+
+
+# 266
+### http://arxiv.org/abs/1801.02621v1
+## An Energy Conserving Routing Scheme for Wireless Body Sensor Nanonetwork Communication
+
+-1 	Current developments in nanotechnology make electromagnetic communication (EC) possible at the nanoscale for applications involving Wireless [Body] Sensor Networks (W[B]SNs).
+-1 	This specialized branch of WSN has emerged as an important research area contributing to medical treatment, social welfare, and sports.
+-1 	The concept is based on the interaction of integrated nanoscale machines by means of wireless communications.
+-1 	One key hurdle for advancing nanocommunications is the lack of an apposite networking protocol to address the upcoming needs of the nanonetworks.
+-1 	Recently, some key challenges have been identified, such as nanonodes with extreme energy constraints, limited computational capabilities, Terahertz frequency bands with limited transmission range, etc.,
+-1 	in designing protocols for wireless nanosensor networks (WNN).
+-1 	This work proposes an improved performance scheme of nanocommunication over Terahertz bands for wireless BSNs making it suitable for smart e-health applications.
+-1 	The scheme contains -- a new energy-efficient forwarding routine for EC in WNN consisting of hybrid clusters with centralized scheduling, a model designed for channel behavior taking into account the aggregated impact of molecular absorption, spreading loss, and shadowing, and an energy model for energy harvesting and consumption.
+-1 	The outage probability is derived for both single and multilinks and extended to determine the outage capacity.
+-1 	The outage probability for a multilink is derived using a cooperative fusion technique at a predefined fusion node.
+-1 	Simulated using a Nano-Sim simulator, performance of the proposed model has been evaluated for energy efficiency, outage capacity, and outage probability.
+-1 	The results demonstrate the efficiency of the proposed scheme through maximized energy utilization in both single and multihop communication, multisensor fusion enhances the link quality of the transmission.
+
+
+# 267
+### http://arxiv.org/abs/1801.02705v2
+## Analyzing Mobility-Traffic Correlations in Large WLAN Traces: Flutes vs. Cellos
+
+-1 	Two major factors affecting mobile network performance are mobility and traffic patterns.
+-1 	Simulations and analytical-based performance evaluations rely on models to approximate factors affecting the network.
+-1 	Hence, the understanding of mobility and traffic is imperative to the effective evaluation and efficient design of future mobile networks.
+-1 	Current models target either mobility or traffic, but do not capture their interplay.
+-1 	Many trace-based mobility models have largely used pre-smartphone datasets (e.g., AP-logs), or much coarser granularity (e.g., cell-towers) traces.
+-1 	This raises questions regarding the relevance of existing models, and motivates our study to revisit this area.
+-1 	In this study, we conduct a multidimensional analysis, to quantitatively characterize mobility and traffic spatio-temporal patterns, for laptops and smartphones, leading to a detailed integrated mobility-traffic analysis.
+-1 	Our study is data-driven, as we collect and mine capacious datasets (with 30TB, 300k devices) that capture all of these dimensions.
+-1 	The investigation is performed using our systematic (FLAMeS) framework.
+-1 	Overall, dozens of mobility and traffic features have been analyzed.
+-1 	The insights and lessons learnt serve as guidelines and a first step towards future integrated mobility-traffic models.
+-1 	In addition, our work acts as a stepping-stone towards a richer, more-realistic suite of mobile test scenarios and benchmarks.
+
+
+# 268
+### http://arxiv.org/abs/1801.04613v4
+## Software Defined Networks based Smart Grid Communication: A Comprehensive Survey
+
+-1 	The current power grid is no longer a feasible solution due to ever-increasing user demand of electricity, old infrastructure, and reliability issues and thus require transformation to a better grid a.
+-1 	k.
+-1 	a.,
+-1 	smart grid (SG).
+-1 	The key features that distinguish SG from the conventional electrical power grid are its capability to perform two-way communication, demand side management, and real time pricing.
+-1 	Despite all these advantages that SG will bring, there are certain issues which are specific to SG communication system.
+-1 	For instance, network management of current SG systems is complex, time consuming, and done manually.
+-1 	Moreover, SG communication (SGC) system is built on different vendor specific devices and protocols.
+-1 	Therefore, the current SG systems are not protocol independent, thus leading to interoperability issue.
+-1 	Software defined network (SDN) has been proposed to monitor and manage the communication networks globally.
+-1 	This article serves as a comprehensive survey on SDN-based SGC.
+-1 	In this article, we first discuss taxonomy of advantages of SDNbased SGC.
+-1 	We then discuss SDN-based SGC architectures, along with case studies.
+-1 	Our article provides an in-depth discussion on routing schemes for SDN-based SGC.
+-1 	We also provide detailed survey of security and privacy schemes applied to SDN-based SGC.
+-1 	We furthermore present challenges, open issues, and future research directions related to SDN-based SGC.
+
+
+# 269
+### http://arxiv.org/abs/1801.05168v2
+## A First Look at QUIC in the Wild
+
+-1 	For the first time since the establishment of TCP and UDP, the Internet transport layer is subject to a major change by the introduction of QUIC.
+-1 	Initiated by Google in 2012, QUIC provides a reliable, connection-oriented low-latency and fully encrypted transport.
+-1 	In this paper, we provide the first broad assessment of QUIC usage in the wild.
+-1 	We monitor the entire IPv4 address space since August 2016 and about 46% of the DNS namespace to detected QUIC-capable infrastructures.
+-1 	Our scans show that the number of QUIC-capable IPs has more than tripled since then to over 617.
+-1 	59 K.
+-1 	We find around 161K domains hosted on QUIC-enabled infrastructure, but only 15K of them present valid certificates over QUIC.
+-1 	Second, we analyze one year of traffic traces provided by MAWI, one day of a major European tier-1 ISP and from a large IXP to understand the dominance of QUIC in the Internet traffic mix.
+-1 	We find QUIC to account for 2.
+-1 	6% to 9.
+-1 	1% of the current Internet traffic, depending on the vantage point.
+-1 	This share is dominated by Google pushing up to 42.
+-1 	1% of its traffic via QUIC.
+
+
+# 270
+### http://arxiv.org/abs/1802.02828v2
+## PTP: Path-specified Transport Protocol for Concurrent Multipath Transmission in Named Data Networks
+
+-1 	Named Data Networking (NDN) is a promising Future Internet architecture to support content distribution.
+-1 	Its inherent addressless routing paradigm brings valuable characteristics to improve the transmission robustness and efficiency, e.g. users are enabled to download content from multiple providers concurrently.
+-1 	However, multipath transmission NDN is different from that in Multipath TCP, i.e. the "paths" in NDN are transparent to and uncontrollable by users.
+-1 	To this end, the user controls the traffic on all transmission paths as an entirety, which leads to a noticeable problem of low bandwidth utilization.
+-1 	In particular, the congestion of a certain path will trigger the traffic reduction on the other transmission paths that are underutilized.
+-1 	Some solutions have been proposed by letting routers balance the loads of different paths to avoid congesting a certain path prematurely.
+-1 	However, the complexity of obtaining an optimal load balancing solution (of solving a Multi-Commodity Flow problem) becomes higher with the increasing network size, which limits the universal NDN deployments.
+-1 	This paper introduces a compromising solution - Path-specified Transport Protocol (PTP).
+-1 	PTP supports both the label switching and the addressless routing schemes.
+-1 	Specifically, the label switching scheme facilitates users to precisely control the traffic on each transmission path, and the addressless routing scheme maintains the valuable feature of retrieving content from any provider to guarantee robustness.
+-1 	As the traffic on a transmission path can be explicitly controlled by consumers, load balancing is no longer needed in routers, which reduce the computational burden of routers and consequently increase the system scalability.
+-1 	The experimental results show that PTP significantly increases the users' downloading rates and improved the network throughput.

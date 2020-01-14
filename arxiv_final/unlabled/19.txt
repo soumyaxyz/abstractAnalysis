@@ -1,0 +1,298 @@
+
+
+# 271
+### http://arxiv.org/abs/1802.03843v1
+## Spectrum Sensing Strategy to Enhance the QoS in White-Fi Networks
+
+-1 	The rapidly growing number of wireless devices running applications that require high bandwidths, has resulted in increasing demands for the unlicensed frequency spectrum.
+-1 	Given the scarcity of allocated unlicensed frequencies, meeting such demands can become a serious concern.
+-1 	Cognitive Radio (CR)technology opens the door for the opportunistic use of the licensed spectrum to partially address the issues relevant to the limited availability of unlicensed frequencies.
+-1 	Combining CR and Wi-Fi to form the socalled White-Fi networks, has been proposed for achieving higher spectrum utilization.
+-1 	This article discusses the spectrum sensing in White-Fi networks and the impacts that it has on the QoS of typical applications.
+-1 	It also reports the analysis of such impacts through various simulation studies.
+-1 	Our results demonstrate the advantages of an adaptive sensing strategy that is capable of changing the related parameters based on QoS requirements.
+-1 	We also propose such a sensing strategy that can adapt to the IEEE 802.
+-1 	11e requirements.
+-1 	The goal of the proposed strategy is the enhancement of the overall QoS of the applications while maintaining efficient sensing of the spectrum.
+-1 	Simulation results of the scenarios that implement the proposed mechanisms demonstrate noticeable QoS improvements compared to cases where common sensing methods are utilized in IEEE802.
+-1 	11 networks.
+
+
+# 272
+### http://arxiv.org/abs/1802.08818v1
+## Optimal QoS Constraint Service Composition in Mobile Ad Hoc Networks
+
+-1 	In recent year's computational capability of the mobile nodes have been greatly improved.
+-1 	The mobile nodes have the capability of running different applications.
+-1 	Implementation of services in Mobile Ad Hoc Networks (MANETs) increases the flexibility of using mobile devices for running a wide variety of applications.
+-1 	Single service cannot satisfy the user needs.
+-1 	The complex needs of the users can be satisfied by the service composition.
+-1 	Service composition means, combining the atomic services into a complex service.
+-1 	In this paper we propose QoS constraint service composition in MANETs.
+-1 	We considered both service QoS parameters as well node parameters.
+-1 	Response time and throughput as parameters for services and energy and hop count as node parameters.
+-1 	These four QoS parameters are optimized using a mathematical model Hammerstein model to generate a single output.
+-1 	Based on generated output, max valued (optimal) services are considered in service composition path.
+-1 	The simulation results shown that, our proposed method outperforms than the traditional AODV method of service composition.
+
+
+# 273
+### http://arxiv.org/abs/1803.03780v1
+## Energy and Delay Optimization for Cache-Enabled Dense Small Cell Networks
+
+-1 	Caching popular files in small base stations (SBSs) has been proved to be an effective way to reduce bandwidth pressure on the backhaul links of dense small cell networks (DSCNs).
+-1 	Many existing studies on cache-enabled DSCNs attempt to improve user experience by optimizing end-to-end file delivery delay.
+-1 	However, under practical scenarios where files (e.g., video files) have diverse quality of service requirements, energy consumption at SBSs should also be concerned from the network perspective.
+-1 	In this paper,we attempt to optimize these two critical metrics in cache-enabled DSCNs.
+-1 	Firstly, we formulate the energy-delay optimization problem as a Mixed Integer Programming (MIP) problem, where file placement, user association and power control are jointly considered.
+-1 	To model the tradeoff relationship between energy consumption and end-to-end file delivery delay, a utility function linearly combining these two metrics is used as an objective function of the optimization problem.
+-1 	Then, we solve the problem in two stages, i.e. caching stage and delivery stage, based on the observation that caching is performed during off-peak time.
+-1 	At the caching stage, a local popular file placement policy is proposed by estimating user preference at each SBS.
+-1 	At the delivery stage, with given caching status at SBSs, the MIP problem is further decomposed by Benders' decomposition method.
+-1 	An efficient algorithm is proposed to approach the optimal association and power solution by iteratively shrinking the gap of the upper and lower bounds.
+-1 	Finally, extension simulations are performed to validate our analytical and algorithmic work.
+-1 	The results demonstrate that the proposed algorithms can achieve the optimal tradeoff between energy consumption and end-to-end file delivery delay.
+
+
+# 274
+### http://arxiv.org/abs/1803.07808v1
+## IEEE 802.11ay based mmWave WLANs: Design Challenges and Solutions
+
+-1 	Millimeter-wave (mmWave) with large spectrum available is considered as the most promising frequency band for future wireless communications.
+-1 	The IEEE 802.
+-1 	11ad and IEEE 802.
+-1 	11ay operating on 60 GHz mmWave are the two most expected wireless local area network (WLAN) technologies for ultra-high-speed communications.
+-1 	For the IEEE 802.
+-1 	11ay standard still under development, there are plenty of proposals from companies and researchers who are involved with the IEEE 802.
+-1 	11ay task group.
+-1 	In this survey, we conduct a comprehensive review on the medium access control layer (MAC) related issues for the IEEE 802.
+-1 	11ay, some cross-layer between physical layer (PHY) and MAC technologies are also included.
+-1 	We start with MAC related technologies in the IEEE 802.
+-1 	11ad and discuss design challenges on mmWave communications, leading to some MAC related technologies for the IEEE 802.
+-1 	11ay.
+-1 	We then elaborate on important design issues for IEEE 802.
+-1 	11ay.
+-1 	Specifically, we review the channel bonding and aggregation for the IEEE 802.
+-1 	11ay, and point out the major differences between the two technologies.
+-1 	Then, we describe channel access and channel allocation in the IEEE 802.
+-1 	11ay, including spatial sharing and interference mitigation technologies.
+-1 	After that, we present an in-depth survey on beamforming training (BFT), beam tracking, single-user multiple-input-multiple-output (SU-MIMO) beamforming and multi-user multiple-input-multiple-output (MU-MIMO) beamforming.
+-1 	Finally, we discuss some open design issues and future research directions for mmWave WLANs.
+-1 	We hope that this paper provides a good introduction to this exciting research area for future wireless systems.
+
+
+# 275
+### http://arxiv.org/abs/1803.08634v2
+## Joint Head Selection and Airtime Allocation for Data Dissemination in Mobile Social Networks
+
+-1 	Mobile social networks (MSNs) enable people with similar interests to interact without Internet access.
+-1 	By forming a temporary group, users can disseminate their data to other interested users in proximity with short-range communication technologies.
+-1 	However, due to user mobility, airtime available for users in the same group to disseminate data is limited.
+-1 	In addition, for practical consideration, a star network topology among users in the group is expected.
+-1 	For the former, unfair airtime allocation among the users will undermine their willingness to participate in MSNs.
+-1 	For the latter, a group head is required to connect other users.
+-1 	These two problems have to be properly addressed to enable real implementation and adoption of MSNs.
+-1 	To this aim, we propose a Nash bargaining-based joint head selection and airtime allocation scheme for data dissemination within the group.
+-1 	Specifically, the bargaining game of joint head selection and airtime allocation is first formulated.
+-1 	Then, Nash bargaining solution (NBS) based optimization problems are proposed for a homogeneous case and a more general heterogeneous case.
+-1 	For both cases, the existence of solution to the optimization problem is proved, which guarantees Pareto optimality and proportional fairness.
+-1 	Next, an algorithm, allowing distributed implementation, for join head selection and airtime allocation is introduced.
+-1 	Finally, numerical results are presented to evaluate the performance, validate intuitions and derive insights of the proposed scheme.
+
+
+# 276
+### http://arxiv.org/abs/1803.10369v2
+## SRLA: A real time sliding time window super point cardinality estimation algorithm for high speed network based on GPU
+
+-1 	Super point is a special host in network which communicates with lots of other hosts in a certain time period.
+-1 	The number of hosts contacting with a super point is called as its cardinality.
+-1 	Cardinality estimating plays important roles in network management and security.
+-1 	All of existing works focus on how to estimate super point's cardinality under discrete time window.
+-1 	But discrete time window causes great delay and the accuracy of estimating result is subject to the starting of the window.
+-1 	sliding time window, moving forwarding a small slice every time, offers a more accuracy and timely scale to monitor super point's cardinality.
+-1 	On the other hand, super point's cardinality estimating under sliding time window is more difficult because it requires an algorithm to record the cardinality incrementally and report them immediately at the end of the sliding duration.
+-1 	This paper firstly solves this problem by devising a sliding time window available algorithm SRLA.
+-1 	SRLA records hosts cardinality by a novel structure which could be updated incrementally.
+-1 	In order to reduce the cardinality estimating time at the end of every sliding time window, SRLA generates a super point candidate list while scanning packets and calculates the cardinality of hosts in the candidate list only.
+-1 	It also has the ability to run parallel to deal with high speed network in line speed.
+-1 	This paper gives the way to deploy SRLA on a common GPU.
+-1 	Experiments on real world traffics which have 40 GB/s bandwidth show that SRLA successfully estimates super point's cardinality within 100 milliseconds under sliding time window when running on a low cost Nvidia GPU, GTX650 with 1 GB memory.
+-1 	The estimating time of SRLA is much smaller than that of other algorithms which consumes more than 2000 milliseconds under discrete time window.
+
+
+# 277
+### http://arxiv.org/abs/1803.10657v1
+## Scheduling strategies and throughput optimization for the Uplink for IEEE 802.11ax and IEEE 802.11ac based networks
+
+-1 	The new IEEE 802.
+-1 	11 standard, IEEE 802.
+-1 	11ax, has the challenging goal of serving more Uplink (UL) traffic and users as compared with his predecessor IEEE 802.
+-1 	11ac, en- abling consistent and reliable streams of data (average throughput) per station.
+-1 	In this paper we explore several new IEEE 802.
+-1 	11ax UL scheduling mechanisms and compare between the maximum throughputs of unidirectional UDP Multi Users (MU) triadic.
+-1 	The evaluation is conducted based on Multiple-Input-Multiple-Output (MIMO) and Orthogonal Frequency Division Multiple Acceess (OFDMA) transmission multiplexing format in IEEE 802.
+-1 	11ax vs. the CSMA/CA MAC in IEEE 802.
+-1 	11ac in the Single User (SU) and MU modes for 1, 4, 8, 16, 32 and 64 stations scenario in reliable and unreliable channels.
+-1 	The comparison is conducted as a function of the Modulation and Coding Schemes (MCS) in use.
+-1 	In IEEE 802.
+-1 	11ax we consider two new flavors of ac- knowledgment operation settings, where the maximum acknowledgment windows are 64 or 256 respectively.
+-1 	In SU scenario IEEE 802.
+-1 	11ax throughputs outperform IEEE 802.
+-1 	11ac by about 64% and 85% in reliable and unreliable channels respectively.
+-1 	In MU-MIMO scenario IEEE 802.
+-1 	11ax throughputs outperform IEEE 802.
+-1 	11ac by up to 263% and 270% in reliable and unreliable channels respectively.
+-1 	Also, as the number of stations increases, the advantage of IEEE 802.
+-1 	11ax in terms of the access delay also increases.
+
+
+# 278
+### http://arxiv.org/abs/1804.00294v1
+## QoS-Aware Routing in Wireless Networks Using Aerial Vehicles
+
+-1 	The next generation wireless networks need efficient mechanisms for data dissemination that should support users with better Quality of Service (QoS).
+-1 	Nevertheless, the existing solutions are unable to handle this demand and require either network redeployment or replanning.
+-1 	Moreover, this upsurges the overall operational cost and complexity of the network.
+-1 	This problem can be addressed by deploying Unmanned Aerial Vehicles (UAVs), which can act as on-demand relays in next generation wireless networks.
+-1 	In this work, a novel strategy comprising a series of algorithms based on neural networks is devised, which resolves the issues related to data dissemination, QoS, capacity, and coverage.
+-1 	When compared with the existing methods, the proposed approach demonstrates better outcomes for various parameters, namely, throughput, message disseminations, service dissemination rate, UAV allocation time, route acquisition delay, link utilization and signal to noise ratio for end users.
+-1 	The experimental results exhibit the fact that the proposed approach utilizes 39.
+-1 	6%, 41.
+-1 	6%, 43.
+-1 	5%, 44.
+-1 	4%, and 46.
+-1 	9% lesser iterations than the EEDD, A-Star, OCD, GPCR, and GyTAR, respectively.
+-1 	Therefore, it is evident that the proposed approach surpasses the existing methods by means of superior performance and augmented efficiency.
+
+
+# 279
+### http://arxiv.org/abs/1804.00710v2
+## 5G and Beyond: Smart Devices as part of the Network Fabric
+
+-1 	5G networks mainly rely on infrastructure-centric cellular solutions to address data traffic and service demands.
+-1 	Continuously scaling infrastructure-centric cellular networks is not exempt of challenges, and beyond 5G networks should consider the active coexistence and coordination of infrastructure-centric and device-centric wireless networks.
+-1 	Device-centric wireless networks will build from D2D and MCNs.
+-1 	Device-centric wireless networks can push the limits of edge computing and networking to smart devices (including smartphones, vehicles, machines and robots), and exploit their mobile computing, storage and connectivity capabilities.
+-1 	These capabilities can be more efficiently utilized using demand-driven opportunistic networking that establishes the connections between devices and nodes based on their capacity to support the requested demand and services.
+-1 	This paper presents results from experimental field tests that demonstrate the cellular spectral efficiency gains that can be achieved from the combined use of device-centric wireless communications and demand-driven opportunistic networking.
+-1 	The field trials demonstrate that these technologies can improve the cellular spectral efficiency of conventional cellular communications by up to a factor of 4.
+-1 	7 and 12 in outdoor pedestrian and vehicular scenarios, respectively.
+-1 	These gains have been obtained using 4G and IEEE 802.
+-1 	11 technologies.
+-1 	However, the potential of device-centric wireless networks is not constrained to any particular radio interface.
+-1 	The results presented in this paper provide empirical evidences that further motivate progressing towards a new paradigm where edge networking capabilities are moved to smart mobile devices that become part of the network fabric, and can opportunistically and locally integrate network management functions to ensure that sufficient resources are placed where the demand arises.
+
+
+# 280
+### http://arxiv.org/abs/1804.02723v1
+## TCP Decoupling for Next Generation Communication System
+
+-1 	In traditional networks, interfaces of network nodes are duplex.
+-1 	But, emerging communication technologies such as visible light communication, millimeter-wave communications, can only provide a unidirectional interface when cost is limited.
+-1 	It's urgent to find effective solutions to utilize such new unidirectional communication skills.
+-1 	Decoupling implies separating one single resource to two independent resources.
+-1 	This idea can be applied at physical layer, link layer, network layer, even transport layer.
+-1 	TCP decoupling is an end to end solution provided at transport layer.
+-1 	With decoupled TCP, two distinct unidirectional path can be created to meet the requirements of reliable information transfer.
+-1 	However, it is not an easy task to decouple a bidirectional logical path at transport layer.
+-1 	In this paper, we dwell on the idea of TCP decoupling.
+-1 	Advantages of decoupling at transport layer are analyzed also.
+-1 	In addition, an experiment is carried out to figure out how to implement a decouple TCP.
+-1 	Our results show decoupling at transport layer is possible and the modified protocol is available.
+
+
+# 281
+### http://arxiv.org/abs/1804.09089v2
+## Automated Network Service Scaling in NFV: Concepts, Mechanisms and Scaling Workflow
+
+-1 	Next-generation systems are anticipated to be digital platforms supporting innovative services with rapidly changing traffic patterns.
+-1 	To cope with this dynamicity in a cost-efficient manner, operators need advanced service management capabilities such as those provided by NFV.
+-1 	NFV enables operators to scale network services with higher granularity and agility than today.
+-1 	For this end, automation is key.
+-1 	In search of this automation, the European Telecommunications Standards Institute (ETSI) has defined a reference NFV framework that make use of model-driven templates called Network Service Descriptors (NSDs) to operate network services through their lifecycle.
+-1 	For the scaling operation, an NSD defines a discrete set of instantiation levels among which a network service instance can be resized throughout its lifecycle.
+-1 	Thus, the design of these levels is key for ensuring an effective scaling.
+-1 	In this article, we provide an overview of the automation of the network service scaling operation in NFV, addressing the options and boundaries introduced by ETSI normative specifications.
+-1 	We start by providing a description of the NSD structure, focusing on how instantiation levels are constructed.
+-1 	For illustrative purposes, we propose an NSD for a representative NS.
+-1 	This NSD includes different instantiation levels that enable different ways to automatically scale this NS.
+-1 	Then, we show the different scaling procedures the NFV framework has available, and how it may automate their triggering.
+-1 	Finally, we propose an ETSI-compliant workflow to describe in detail a representative scaling procedure.
+-1 	This workflow clarifies the interactions and information exchanges between the functional blocks in the NFV framework when performing the scaling operation.
+
+
+# 282
+### http://arxiv.org/abs/1804.10354v1
+## Attacks and Defenses in Mobile IP: Modeling with Stochastic Game Petri Net
+
+-1 	The urging need for seamless connectivity in mobile environment has contributed to the rapid expansion of Mobile IP.
+-1 	Mobile IP uses wireless transmission medium, thereby making it subject to many security threats during various phases of route optimization.
+-1 	Modeling Mobile IP attacks reasonably and efficiently is the basis for defending against those attacks, which requires quantitative analysis and modeling approaches for expressing threat propagation in Mobile IP.
+-1 	In this Paper, we present four well-known Mobile IP attacks, such as Denial-of-Service (DoS) attack, bombing attack, redirection attack and replay attack and model them with Stochastic Game Petri Net (SGPN).
+-1 	Furthermore, we propose mixed strategy based defense strategies for the aforementioned attacks and model them with SGPN.
+-1 	Finally, we calculate the Nash Equilibrium of the attacker-defender game and thereby obtain the steady state probability of the vulnerable attack states.
+-1 	We show that, under the optimal strategy, an IDS needs to remain active 72.
+-1 	4%, 70%, 68.
+-1 	4% and 66.
+-1 	6% of the time to restrict the attacker's success rate to 8.
+-1 	5%, 6.
+-1 	4%, 7.
+-1 	2% and 8.
+-1 	3% respectively for the aforementioned attacks, thus performing better than the state-of-the-art approach.
+
+
+# 283
+### http://arxiv.org/abs/1805.00004v1
+## Maximum Likelihood Coordinate Systems for Wireless Sensor Networks: from physical coordinates to topology coordinates
+
+-1 	Many WSN protocols require the location coordinates of the sensor nodes, as it is useful to consider the data collected by the sensors in the context of the location from which they were collected.
+-1 	Thus, one of the major challenges in WSNs is to determine the coordinates of sensors while minimizing the hardware cost.
+-1 	To address this, numerous localization algorithms have been proposed in the literature.
+-1 	However, outcomes of these algorithms are affected by noise, fading, and interference.
+-1 	As a result, their levels of accuracy may become unacceptable in complex environments that contain obstacles and reflecting surfaces.
+-1 	The alternative is to use topological maps based only on connectivity information.
+-1 	Since they do not contain information about physical distances, however, they are not faithful representatives of the physical layout.
+-1 	Thus, the primary goal of this research is to discover a topology map that provides more accurate information about physical layouts.
+-1 	In doing so, this research has resulted in four main contributions.
+-1 	First, a novel concept Maximum-Likelihood Topology Map for RF WSNs is presented.
+-1 	This topology map provides a more accurate physical representation, by using the probability of packet reception.
+-1 	The second contribution is Millimetre wave Topology Map calculation, which is a novel topology mapping algorithm based on maximum likelihood estimation for millimetre wave WSNs.
+-1 	The third contribution is a distributed algorithm being proposed to calculate the topology coordinates of sensors by themselves as two algorithms above calculate centrally, which requires time.
+-1 	Since a topology map contains significant non-linear distortions, two WSN applications i.e. target searching and extremum seeking, which use a proposed topology map to localize the sensors and perform its specified task are presented as the final contribution of this dissertation.
+
+
+# 284
+### http://arxiv.org/abs/1805.02719v1
+## Mobility-Aware Analysis of 5G and B5G Cellular Networks: A Tutorial
+
+-1 	Providing network connectivity to mobile users is a key requirement for cellular wireless networks.
+-1 	User mobility impacts network performance as well as user perceived service quality.
+-1 	For efficient network dimensioning and optimization, it is therefore required to characterize the mobility-aware network performance metrics such as the handoff rate, handoff probability, sojourn time, direction switch rate, and users' throughput or coverage.
+-1 	This characterization is particularly challenging for heterogeneous, dense/ultra-dense, and random cellular networks such as the emerging 5G and beyond 5G (B5G) networks.
+-1 	In this article, we provide a tutorial on mobility-aware performance analysis of both the spatially random and non-random, single-tier and multi-tier cellular networks.
+-1 	We first provide a summary of the different mobility models which include purely random models, spatially correlated, and temporally correlated models.
+-1 	The differences among various mobility models, their statistical properties, and their pros and cons are presented.
+-1 	We then describe two main analytical approaches for mobility-aware performance analysis of both random and non-random cellular networks.
+-1 	For the first approach, we describe a general methodology and present several case studies for different cellular network tessellations such as square lattice, hexagon lattice, single-tier and multi-tier models in which base-stations (BSs) follow a homogeneous Poisson Point Process (PPP).
+-1 	For the second approach, we also outline the general methodology.
+-1 	In addition, we discuss some limitations/imperfections of the existing techniques and provide corrections to these imperfections.
+-1 	Finally, we point out specific 5G application scenarios where the impact of mobility would be significant and outline the challenges associated with mobility-aware analysis of those scenarios.
+
+
+# 285
+### http://arxiv.org/abs/1805.06053v2
+## SAS-Assisted Coexistence-Aware Dynamic Channel Assignment in CBRS Band
+
+-1 	The paradigm of shared spectrum allows secondary devices to opportunistically access spectrum bands underutilized by primary owners.
+-1 	Recently, the FCC has targeted the sharing of the 3.
+-1 	5 GHz (3550-3700 MHz) federal spectrum with commercial systems such as small cells.
+-1 	The rules require a Spectrum Access System (SAS) to accommodate three service tiers: 1) Incumbent Access, 2) Priority Access (PA), and 3) Generalized Authorized Access (GAA).
+-1 	In this work, we study the SAS-assisted dynamic channel assignment (CA) for PA and GAA tiers.
+-1 	We introduce the node-channel-pair conflict graph to capture pairwise interference, channel and geographic contiguity constraints, spatially varying channel availability, and coexistence awareness.
+-1 	The proposed conflict graph allows us to formulate PA CA and GAA CA with binary conflicts as max-cardinality and max-reward CA, respectively.
+-1 	Approximate solutions can be found by a heuristic-based algorithm that search for the maximum weighted independent set.
+-1 	We further formulate GAA CA with non-binary conflicts as max-utility CA.
+-1 	We show that the utility function is submodular, and the problem is an instance of matroid-constrained submodular maximization.
+-1 	A polynomial-time algorithm based on local search is proposed that provides a provable performance guarantee.
+-1 	Extensive simulations using a real-world Wi-Fi hotspot location dataset are conducted to evaluate the proposed algorithms.
+-1 	Our results have demonstrated the advantages of the proposed graph representation and improved performance of the proposed algorithms over the baseline algorithms.

@@ -1,0 +1,291 @@
+
+
+# 1
+### http://arxiv.org/abs/cs/9809093v1
+## A Delay Based Approach for Congestion Avoidance in Interconnected Heterogeneous Computer Networks
+
+-1 	In heterogeneous networks, achieving congestion avoidance is difficult because the congestion feedback from one subnetwork may have no meaning to source on other other subnetworks.
+-1 	We propose using changes in round-trip delay as an implicit feedback.
+-1 	Using a black-box model of the network, we derive an expression for the optimal window as a function of the gradient of the delay-window curve.
+-1 	The problems of selfish optimum and social optimum are also addressed.
+-1 	It is shown that without a careful design, it is possible to get into a race condition during heavy congestion, where each user wants more resources than others, thereby leading to a diverging congestion   It is shown that congestion avoidance using round trip delay is a promising approach.
+-1 	The aproach has the advantage that there is absolutely no overhead for the network itself.
+-1 	It is exemplified by a simple scheme.
+-1 	The performance of the scheme is analyzed using a simulation model.
+-1 	The scheme is shown to be efficient, fair, convergent and adaptive to changes in network configuration.
+-1 	The scheme as described works only for networks that can ne modelled with queueing servers with constant service times.
+-1 	Further research is required to extend it for implementation in practical networks.
+-1 	Several directions for future research have beensuggested.
+
+
+# 2
+### http://arxiv.org/abs/cs/9809095v1
+## Congestion Avoidance in Computer Networks with a Connectionless Network Layer, Part I: Concepts, Goals and Methodology
+
+-1 	Congestion is said to occur in the network when the resource demands exceed the capacity and packets are lost due to too much queuing in the network.
+-1 	During congestion, the network throughput may drop to zero and the path delay may become very high.
+-1 	A congestion control scheme helps the network to recover from the congestion state.
+-1 	A congestion avoidance scheme allows a network to operate in the region of low delay and high throughput.
+-1 	Such schemes prevent a network from entering the congested state.
+-1 	Congestion avoidance is a prevention mechanism while congestion control is a recovery mechanism.
+-1 	We compare the concept of congestion avoidance with that of flow control and congestion control.
+-1 	A number of possible alternative for congestion avoidance have been identified.
+-1 	From these a few were selected for study.
+-1 	The criteria for selection and goals for these schemes have been described.
+-1 	In particular, we wanted the scheme to be globally efficient, fair, dynamic, convergent, robust, distributed, configuration independent, etc.
+-1 	These goals and the test cases used to verify whether a particular scheme has met the goals have been described.
+-1 	We model the network and the user policies for congestion avoidance as a feedback control system.
+-1 	The key components of a generic congestion avoidance scheme are: congestion detection, congestion feedback, feedback selector, signal filter, decision function, and increase/decrease algorithms.
+-1 	These components have been explained.
+
+
+# 3
+### http://arxiv.org/abs/cs/9905006v1
+## The Design and Analysis of Virtual Network Configuration for a Wireless Mobile ATM Network
+
+-1 	This research concentrates on the design and analysis of an algorithm referred to as Virtual Network Configuration (VNC) which uses predicted future states of a system for faster network configuration and management.
+-1 	VNC is applied to the configuration of a wireless mobile ATM network.
+-1 	VNC is built on techniques from parallel discrete event simulation merged with constraints from real-time systems and applied to mobile ATM configuration and handoff.
+-1 	Configuration in a mobile network is a dynamic and continuous process.
+-1 	Factors such as load, distance, capacity and topology are all constantly changing in a mobile environment.
+-1 	The VNC algorithm anticipates configuration changes and speeds the reconfiguration process by pre-computing and caching results.
+-1 	VNC propagates local prediction results throughout the VNC enhanced system.
+-1 	The Global Positioning System is an enabling technology for the use of VNC in mobile networks because it provides location information and accurate time for each node.
+-1 	This research has resulted in well defined structures for the encapsulation of physical processes within Logical Processes and a generic library for enhancing a system with VNC.
+-1 	Enhancing an existing system with VNC is straight forward assuming the existing physical processes do not have side effects.
+-1 	The benefit of prediction is gained at the cost of additional traffic and processing.
+-1 	This research includes an analysis of VNC and suggestions for optimization of the VNC algorithm and its parameters.
+
+
+# 4
+### http://arxiv.org/abs/cs/0002011v1
+## An Internet Multicast System for the Stock Market
+
+-1 	We are moving toward a distributed, international, twenty-four hour, electronic stock exchange.
+-1 	The exchange will use the global Internet, or internet technology.
+-1 	This system is a natural application of multicast because there are a large number of receivers that should receive the same information simultaneously.
+-1 	The data requirements for the stock exchange are discussed.
+-1 	The current multicast protocols lack the reliability, fairness, and scalability needed in this application.
+-1 	We describe a distributed architecture together with a reliable multicast protocol, a modification of the RMP protocol, that has characteristics appropriate for this application.
+-1 	The architecture is used in three applications: In the first, we construct a unified stock ticker of the transactions that are being conducted on the various physical and electronic exchanges.
+-1 	Our objective is to deliver the the same combined ticker reliably and simultaneously to all receivers, anywhere in the world.
+-1 	In the second, we construct a unified sequence of buy and sell offers that are delivered to a single exchange or a collection of exchanges.
+-1 	Our objective is to give all traders the same fair access to an exchange independent of their relative distances to the exchange or the loss characteristics of the international network.
+-1 	In the third, we construct a distributed, electronic trading floor that can replace the current exchanges.
+-1 	This application uses the innovations from the first two applications to combine their fairness attributes.
+
+
+# 5
+### http://arxiv.org/abs/cs/0105031v1
+## State Analysis and Aggregation Study for Multicast-based Micro Mobility
+
+-1 	IP mobility addresses the problem of changing the network point-of-attachment transparently during movement.
+-1 	Mobile IP is the proposed standard by IETF.
+-1 	Several studies, however, have shown that Mobile IP has several drawbacks, such as triangle routing and poor handoff performance.
+-1 	Multicast-based mobility has been proposed as a promising solution to the above problems, incurring less end-to-end delays and fast smooth handoff.
+-1 	Nonetheless, such architecture suffers from multicast state scalability problems with the growth in number of mobile nodes.
+-1 	This architecture also requires ubiquitous multicast deployment and more complex security measures.
+-1 	To alleviate these problems, we propose an intra-domain multicast-based mobility solution.
+-1 	A mobility proxy allocates a multicast address for each mobile that moves to its domain.
+-1 	The mobile uses this multicast address within a domain for micro mobility.
+-1 	Also, aggregation is considered to reduce the multicast state.
+-1 	We conduct multicast state analysis to study the efficiency of several aggregation techniques.
+-1 	We use extensive simulation to evaluate our protocol's performance over a variety of real and generated topologies.
+-1 	We take aggregation gain as metric for our evaluation.
+-1 	Our simulation results show that in general leaky aggregation obtains better gains than perfect aggregation.
+-1 	Also, we notice that aggregation gain increases with the increase in number of visiting mobile nodes and with the decrease in number of mobility proxies within a domain.
+
+
+# 6
+### http://arxiv.org/abs/cs/0208024v1
+## Contact-Based Architecture for Resource Discovery (CARD) in Large Scale MANets
+
+-1 	In this paper we propose a novel architecture, CARD, for resource discovery in large scale Mobile Ad hoc Networks (MANets) which, may scale up to thousands of nodes and may span wide geographical regions.
+-1 	Unlike previously proposed schemes, our architecture avoids expensive mechanisms such as global flooding as well as complex coordination between nodes to form a hierarchy.
+-1 	CARD is also independent of any external source of information such as GPS.
+-1 	In our architecture nodes within a limited number of hops from each node form the neighborhood of that node.
+-1 	Resources within the neighborhood can be readily accessed with the help of a proactive scheme within the neighborhood.
+-1 	For accessing resources beyond the neighborhood, each node also maintains a few distant nodes called contacts.
+-1 	Contacts help in creating a small world in the network and provide an efficient way to query for resources beyond the neighborhood.
+-1 	As the number of contacts of a node increases, the network view (reachability) of the node increases.
+-1 	Paths to contacts are validated periodically to adapt to mobility.
+-1 	We present mechanisms for contact selection and maintenance that attempt to increase reachability while minimizing overhead.
+-1 	Our simulation results show a clear trade-off between increase in reachability on one hand, and contact selection and maintenance overhead on the other.
+-1 	Our results suggest that CARD can be configured to provide a desirable reachability distribution for different network sizes.
+-1 	Comparisons with other schemes for resource discovery, such as flooding and bordercasting, show our architecture to be much more efficient and scalable.
+
+
+# 7
+### http://arxiv.org/abs/cs/0208025v1
+## Efficient Micro-Mobility using Intra-domain Multicast-based Mechanisms (M&M)
+
+-1 	One of the most important metrics in the design of IP mobility protocols is the handover performance.
+-1 	The current Mobile IP (MIP) standard has been shown to exhibit poor handover performance.
+-1 	Most other work attempts to modify MIP to slightly improve its efficiency, while others propose complex techniques to replace MIP.
+-1 	Rather than taking these approaches, we instead propose a new architecture for providing efficient and smooth handover, while being able to co-exist and inter-operate with other technologies.
+-1 	Specifically, we propose an intra-domain multicast-based mobility architecture, where a visiting mobile is assigned a multicast address to use while moving within a domain.
+-1 	Efficient handover is achieved using standard multicast join/prune mechanisms.
+-1 	Two approaches are proposed and contrasted.
+-1 	The first introduces the concept proxy-based mobility, while the other uses algorithmic mapping to obtain the multicast address of visiting mobiles.
+-1 	We show that the algorithmic mapping approach has several advantages over the proxy approach, and provide mechanisms to support it.
+-1 	Network simulation (using NS-2) is used to evaluate our scheme and compare it to other routing-based micro-mobility schemes - CIP and HAWAII.
+-1 	The proactive handover results show that both M&M and CIP shows low handoff delay and packet reordering depth as compared to HAWAII.
+-1 	The reason for M&M's comparable performance with CIP is that both use bi-cast in proactive handover.
+-1 	The M&M, however, handles multiple border routers in a domain, where CIP fails.
+-1 	We also provide a handover algorithm leveraging the proactive path setup capability of M&M, which is expected to outperform CIP in case of reactive handover.
+
+
+# 8
+### http://arxiv.org/abs/cs/0209011v1
+## Gossip Based Ad-Hoc Routing
+
+-1 	Many ad hoc routing protocols are based on some variant of flooding.
+-1 	Despite various optimizations, many routing messages are propagated unnecessarily.
+-1 	We propose a gossiping-based approach, where each node forwards a message with some probability, to reduce the overhead of the routing protocols.
+-1 	Gossiping exhibits bimodal behavior in sufficiently large networks: in some executions, the gossip dies out quickly and hardly any node gets the message; in the remaining executions, a substantial fraction of the nodes gets the message.
+-1 	The fraction of executions in which most nodes get the message depends on the gossiping probability and the topology of the network.
+-1 	In the networks we have considered, using gossiping probability between 0.
+-1 	6 and 0.
+-1 	8 suffices to ensure that almost every node gets the message in almost every execution.
+-1 	For large networks, this simple gossiping protocol uses up to 35% fewer messages than flooding, with improved performance.
+-1 	Gossiping can also be combined with various optimizations of flooding to yield further benefits.
+-1 	Simulations show that adding gossiping to AODV results in significant performance improvement, even in networks as small as 150 nodes.
+-1 	We expect that the improvement should be even more significant in larger networks.
+
+
+# 9
+### http://arxiv.org/abs/cs/0411013v1
+## Efficient Algorithms for Large-Scale Topology Discovery
+
+-1 	There is a growing interest in discovery of internet topology at the interface level.
+-1 	A new generation of highly distributed measurement systems is currently being deployed.
+-1 	Unfortunately, the research community has not examined the problem of how to perform such measurements efficiently and in a network-friendly manner.
+-1 	In this paper we make two contributions toward that end.
+-1 	First, we show that standard topology discovery methods (e.g., skitter) are quite inefficient, repeatedly probing the same interfaces.
+-1 	This is a concern, because when scaled up, such methods will generate so much traffic that they will begin to resemble DDoS attacks.
+-1 	We measure two kinds of redundancy in probing (intra- and inter-monitor) and show that both kinds are important.
+-1 	We show that straightforward approaches to addressing these two kinds of redundancy must take opposite tacks, and are thus fundamentally in conflict.
+-1 	Our second contribution is to propose and evaluate Doubletree, an algorithm that reduces both types of redundancy simultaneously on routers and end systems.
+-1 	The key ideas are to exploit the tree-like structure of routes to and from a single point in order to guide when to stop probing, and to probe each path by starting near its midpoint.
+-1 	Our results show that Doubletree can reduce both types of measurement load on the network dramatically, while permitting discovery of nearly the same set of nodes and links.
+-1 	We then show how to enable efficient communication between monitors through the use of Bloom filters.
+
+
+# 10
+### http://arxiv.org/abs/cs/0411017v1
+## Analysis of 802.11b MAC: A QoS, Fairness, and Performance Perspective
+
+-1 	Wireless LANs have achieved a tremendous amount of growth in recent years.
+-1 	Among various wireless LAN technologies, the IEEE 802.
+-1 	11b based wireless LAN technology can be cited as the most prominent technology today.
+-1 	Despite being widely deployed, 802.
+-1 	11b cannot be termed as a well matured technology.
+-1 	Although 802.
+-1 	11b is adequate for basic connectivity and packet switching, It is evident that there is ample scope for its improvement in areas like quality of service, fairness, performance, security, etc.
+-1 	In this survey report, we identify and argue that the Medium Access Controller for 802.
+-1 	11b networks is the prime area for these improvements.
+-1 	To enunciate our claims we highlight some of the quality of service, fairness, and performance issues related to 802.
+-1 	11b MAC.
+-1 	We also describe and analyze some of the current research aimed at addressing these issues.
+-1 	We then propose a novel scheme called the Intelligent Collision Avoidance, seeking to enhance the MAC to address some of the performance issues in 802.
+-1 	11b and similar networks.
+
+
+# 11
+### http://arxiv.org/abs/cs/0411054v1
+## J2EE Deployment: The JOnAS Case Study
+
+-1 	La specification J2EE (Java 2 platform Enterprise Edition) definit une architecture de serveur d'application Java.
+-1 	Jusqu'a J2EE 1.
+-1 	3, seuls les aspects de deploiement concernant le developpeur d'applications etaient adresses.
+-1 	Avec J2EE 1.
+-1 	4, les interfaces et les etapes de deploiement ont ete plus precisement specifiees dans la specification "J2EE Deployment".
+-1 	JOnAS (Java Open Application Server) est une plate-forme J2EE developpee au sein du consortium ObjectWeb.
+-1 	Les aspects deploiement sont en cours de developpement.
+-1 	Cet article decrit les concepts lies au deploiement dans J2EE, ainsi que les problematiques levees lors de leur mise en oeuvre pour JOnAS.
+-1 	Il n'a pas pour but de presenter un travail abouti, mais illustre le deploiement par un cas concret et ebauche une liste de besoins non encore satisfaits dans le domaine.
+-1 	-----   The J2EE (Java 2 platform Enterprise Edition) specification defines an architecture for Java Application Servers.
+-1 	Until J2EE 1.
+-1 	3, the deployment aspect was addressed from the developer point of view only.
+-1 	Since J2EE 1.
+-1 	4, deployment APIs and steps have been more precisely specified within the "J2EE Deployment Specification".
+-1 	JOnAS (Java Open Application Server) is a J2EE platform implementation by ObjectWeb.
+-1 	The deployment aspects are under development.
+-1 	This article describes the J2EE Deployment concepts, and the issues raised when implementing deployment features within JOnAS.
+-1 	It does not provide a complete solution, but illustrates deployment through a concrete example and initiates a list of non fulfilled requirements.
+
+
+# 12
+### http://arxiv.org/abs/cs/0411058v1
+## Deployment in dynamic environments
+
+-1 	Information and communication technologies are moving towards a new stage where applications will be dynamically deployed, uninstalled, updated and (re)configured.
+-1 	Several approaches have been followed with the goal of creating a fully automated and context-aware deployment system.
+-1 	Ideally, this system should be capable of handling the dynamics of this new situation, without losing sight of other factors, such as performance, security, availability or scalability.
+-1 	We will take some of the technologies that follow the principles of Service Oriented Architectures, SOA, as a paradigm of dynamic environments.
+-1 	SOA promote the breaking down of applications into sets of loosely coupled elements, called services.
+-1 	Services can be dynamically bound, deployed, reconfigured, uninstalled and updated.
+-1 	First of all, we will try to offer a broad view on the specific deployment issues that arise in these environments.
+-1 	Later on, we will present our approach to the problem.
+-1 	One of the essential points that has to be tackled to develop an automated deployment engine will be to have enough information to carry out tasks without human intervention.
+-1 	In the article we will focus on the format and contents of deployment descriptors.
+-1 	Additionally, we will go into the details of the deployment framework for OSGi enabled gateways that has been developed by our research group.
+-1 	Finally we will give some concluding remarks and some ideas for future work
+
+
+# 13
+### http://arxiv.org/abs/cs/0411070v1
+## Data Path Processing in Fast Programmable Routers
+
+-1 	Internet is growing at a fast pace.
+-1 	The link speeds are surging toward 40 Gbps with the emergence of faster link technologies.
+-1 	New applications are coming up which require intelligent processing at the intermediate routers.
+-1 	Switches and routers are becoming the bottlenecks in fast communication.
+-1 	On one hand faster links deliver more packets every second and on the other hand intelligent processing consumes more CPU cycles at the router.
+-1 	The conflicting goals of providing faster but computationally expensive processing call for new approaches in designing routers.
+-1 	This survey takes a look at the core functionalities, like packet classification, buffer memory management, switch scheduling and output link scheduling performed by a router in its data path processing and discusses the algorithms that aim to reduce the performance bound for these operations.
+-1 	An important requirement for the routers is to provide Quality of Service guarantees.
+-1 	We propose an algorithm to guarantee QoS in Input Queued Routers.
+-1 	The hardware solution to speed up router operation was Application Specific Integrated Circuits (ASICs).
+-1 	But the inherent inflexibility of the method is a demerit as network standards and application requirements are constantly evolving, which seek a faster turnaround time to keep up with the changes.
+-1 	The promise of Network Processors (NP) is the flexibility of general-purpose processors together with the speed of ASICs.
+-1 	We will study the architectural choices for the design of Network Processors and focus on some of the commercially available NPs.
+-1 	There is a plethora of NP vendors in the market.
+-1 	The discussion on the NP benchmarks sets the normalizing platform to evaluate these NPs.
+
+
+# 14
+### http://arxiv.org/abs/cs/0411079v1
+## Supporting Bandwidth Guarantee and Mobility for Real-Time Applications on Wireless LANs
+
+-1 	The proliferation of IEEE 802.
+-1 	11-based wireless LANs opens up avenues for creation of several tetherless and mobility oriented services.
+-1 	Most of these services, like voice over WLAN, media streaming etc.,
+-1 	generate delay and bandwidth sensitive traffic.
+-1 	These traffic flows require undisrupted network connectivity with some QoS guarantees.
+-1 	Unfortunately, there is no adequate support built into these wireless LANs towards QoS provisioning.
+-1 	Further, the network layer handoff latency incurred by mobile nodes in these wireless LANs is too high for real-time applications to function properly.
+-1 	In this paper, we describe a QoS mechanism, called Rether, to effectively support bandwidth guarantee on wireless LANs.
+-1 	Rether is designed to support the current wireless LAN technologies like 802.
+-1 	11b and 802.
+-1 	11a with a specific capability of being tailored for QoS oriented technology like 802.
+-1 	11e.
+-1 	We also describe a low-latency handoff mechanism which expedites network level handoff to provide real-time applications with an added advantage of seamless mobility.
+
+
+# 15
+### http://arxiv.org/abs/cs/0504002v1
+## On the Effect of Fading on Ad hoc Networking
+
+-1 	Most MANET (Mobile Ad hoc NETwork) research assumes idealized propagation models.
+-1 	Experimental results have shown significant divergence from simulation results due to the effect of signal fading in realistic wireless communication channels.
+-1 	In this paper, we characterize the impact of fading on protocol performance.
+-1 	We first study the effect of fading on MAC performance and show that its effect can be dominating.
+-1 	One of our important conclusions is that eliminating RTS/CTS packets results in more effective operation under fading.
+-1 	We also identify an unfairness problem that arises due to backoffs in the presence of fading.
+-1 	Moreover, fading results in several subtle interactions between the MAC and routing layers.
+-1 	We identify several of these problems and make observations about effective approaches for addressing them.
+-1 	For example, the criteria for determining the best path should not only consider the link status but also the link order.
+-1 	In addition, because routing protocols rely on MAC level transmission failure (when the retry limit is exceeded), route failure errors are often generated unnecessarily.
+-1 	Finally, because MAC level broadcasts are unreliable, they are especially vulnerable to fading.
+-1 	We analyze these effects and outline preliminary solutions to them.

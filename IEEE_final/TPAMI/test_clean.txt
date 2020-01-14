@@ -1,0 +1,609 @@
+### 1
+##### 10.1109/TPAMI.2019.2952095
+#### Learning to Localize Sound Sources in Visual Scenes: Analysis and Applications
+
+
+0	  Visual events are usually accompanied by sounds in our daily lives.
+0	  However, can the machines learn to correlate the visual scene and sound, as well as localize the sound source only by observing them like humans?
+1	  To investigate its empirical learnability, in this work we first present a novel unsupervised algorithm to address the problem of localizing sound sources in visual scenes.
+1	  In order to achieve this goal, a two-stream network structure which handles each modality, with attention mechanism is developed for sound source localization.
+1	  The network naturally reveals the localized response in the scene without human annotation.
+1	  In addition, a new sound source dataset is developed for performance evaluation.
+2	  Nevertheless, our empirical evaluation shows that the unsupervised method generates false conclusions in some cases.
+2	  Thereby, we show that this false conclusion cannot be fixed without human prior knowledge due to the well-known correlation and causality mismatch misconception.
+2	  We show that the false conclusion can be effectively corrected even with a small amount of supervision, i.e., semi-supervised setup.
+2	  We present the versatility of the learned audio and visual embeddings on the cross-modal content alignment and we incorporate this proposed algorithm into sound saliency based automatic camera view panning in 360 degree videos.
+
+
+### 2
+##### 10.1109/TPAMI.2019.2952114
+#### InLoc: Indoor Visual Localization with Dense Matching and View Synthesis
+
+
+0	  We seek to predict the 6 degree-of-freedom (6DoF) pose of a query photograph with respect to a large indoor 3D map.
+0	  The contributions of this work are three-fold.
+1	  First, we develop a new large-scale visual localization method targeted for indoor spaces.
+1	  The method proceeds along three steps: (i) efficient retrieval of candidate poses that scales to large-scale environments, (ii) pose estimation using dense matching rather than sparse local features to deal with weakly textured indoor scenes, and (iii) pose verification by virtual view synthesis that is robust to significant changes in viewpoint, scene layout, and occlusion.
+1	  Second, we release a new dataset with reference 6DoF poses for large-scale indoor localization.
+1	  Query photographs are captured by mobile phones at a different time than the reference 3D map, thus presenting a realistic indoor localization scenario.
+2	  Third, we demonstrate that our method significantly outperforms current state-of-the-art indoor localization approaches on this new challenging data.
+#	  Code and data are publicly available.
+
+
+### 3
+##### 10.1109/TPAMI.2019.2952353
+#### Assessing Transferability from Simulation to Reality for Reinforcement Learning
+
+
+0	  Learning robot control policies from physics simulations is of great interest to the robotics community as it may render the learning process faster, cheaper, and safer by alleviating the need for expensive real-world experiments.
+0	  However, the direct transfer of learned behavior from simulation to reality is a major challenge.
+0	  Optimizing a policy on a slightly faulty simulator can easily lead to the maximization of the ‘Simulation Optimization Bias’ (SOB).
+0	  In this case, the optimizer exploits modeling errors of the simulator such that the resulting behavior can potentially damage the robot.
+1	  We tackle this challenge by applying domain randomization, i.e., randomizing the parameters of the physics simulations during learning.
+1	  We propose an algorithm called Simulation-based Policy Optimization with Transferability Assessment (SPOTA) which uses an estimator of the SOB to formulate a stopping criterion for training.
+2	  The introduced estimator quantifies the over-fitting to the set of domains experienced while training.
+2	  Our experimental results on two different second order nonlinear systems show that the new simulation-based policy search algorithm is able to learn a control policy exclusively from a randomized simulator, which can be applied directly to real systems without any additional training.
+
+
+### 4
+##### 10.1109/TPAMI.2019.2952096
+#### Scalar Quantization as Sparse Least Square Optimization
+
+
+0	  Quantization aims to form new vectors or matrices with shared values close to the original.
+0	  In recent years, the popularity of scalar quantization has been soaring as it has been found huge utilities in reducing the resource cost of neural networks.
+0	  Popular clustering-based techniques suffers substantially from the problems of dependency on the seed, empty or out-of-the-range clusters, and high time complexity.
+1	  To overcome the problems, scalar quantization is examined from a new perspective, namely sparse least square optimization.
+1	  Specifically, several quantization algorithms based on l1 least square are proposed and implemented.
+1	  In addition, similar schemes with l1+ l2 and l0 regularization are proposed.
+1	  Furthermore, to compute quantization results with given amount of values/clusters, this paper proposes an iterative method and a clustering-based method, and both of them are built on sparse least square.
+1	  The algorithms proposed are tested under three data scenarios and their computational performance, including information loss, time consumption and distribution of values of sparse vectors are compared.
+2	  The paper offers a new perspective to probe the area of quantization, and the algorithms proposed are superior especially under bit-width reducing scenarios, when the required post-quantization resolution is not significantly lower than the original scalar.
+
+
+### 5
+##### 10.1109/TPAMI.2019.2951664
+#### Affine Invariants of Vector Fields
+
+
+0	  Vector fields are a special kind of multidimensional data, which are in a certain sense similar to digital color images, but are distinct from them in several aspects.
+0	  In each pixel, the field is assigned to a vector that shows the direction and the magnitude of the quantity, which has been measured.
+0	  To detect the patterns of interest in the field, special matching methods must be developed.
+1	  In this paper, we propose a method for the description and matching of vector field patterns under an unknown affine transformation of the field.
+1	  Unlike digital images, transformations of vector fields act not only on the spatial coordinates but also on the field values, which makes the detection different from the image case.
+1	  To measure the similarity between the template and the field patch, we propose original invariants with respect to total affine transformation.
+1	  They are designed from the vector field moments.
+2	  It is demonstrated by experiments on real data from fluid mechanics that they perform significantly better than potential competitors.
+
+
+### 6
+##### 10.1109/TPAMI.2019.2951667
+#### A Temporally-Aware Interpolation Network for Video Frame Inpainting
+
+
+0	  In this work, we explore video frame inpainting, a task that lies at the intersection of general video inpainting, frame interpolation, and video prediction.
+0	  Although our problem can be addressed by applying methods from other video interpolation or extrapolation tasks, doing so fails to leverage the additional context information that our problem provides.
+1	  To this end, we devise a method specifically designed for video frame inpainting that is composed of two modules: a bidirectional video prediction module and a temporally-aware frame interpolation module.
+1	  The prediction module makes two intermediate predictions of the missing frames, each conditioned on the preceding and following frames respectively, using a shared convolutional LSTM-based encoder-decoder.
+1	  The interpolation module blends the intermediate predictions by using time information and hidden activations from the video prediction module to resolve disagreements between the predictions.
+2	  Our experiments demonstrate that our approach produces smoother and more accurate results than state-of-the-art methods for general video inpainting, frame interpolation, and video prediction.
+
+
+### 7
+##### 10.1109/TPAMI.2019.2946796
+#### SpaRTA Tracking across occlusions via partitioning of 3D clouds of points
+
+
+0	  Any 3D tracking algorithm has to deal with occlusions: multiple targets get so close to each other that the loss of their identities becomes likely, hence potentially affecting the very quality of the data with interrupted trajectories and identity switches.
+1	  Here, we present a novel tracking method that addresses the problem of occlusions within large groups of featureless objects by means of three steps: i) it represents each target as a cloud of points in 3D; ii) once a 3D cluster corresponding to an occlusion occurs, it defines a partitioning problem by introducing a cost function that uses both attractive and repulsive spatio-temporal proximity links; iii) it minimizes the cost function through a semi-definite optimization technique specifically designed to cope with the presence of multi-minima landscapes.
+1	  The algorithm is designed to work on 3D data regardless of the experimental method used: multi--camera systems, lidars, radars and RGB-D systems.
+2	  By performing tests on public data-sets, we show that the new algorithm produces a significant improvement over the state-of-the-art tracking methods, both by reducing the number of identity switches and by increasing the accuracy of the estimated positions of the targets in real space.
+
+
+### 8
+##### 10.1109/TPAMI.2019.2950923
+#### Effects of Image Degradation and Degradation Removal to CNN-based Image Classification
+
+
+0	  Just like many other topics in computer vision, image classification has achieved significant progress recently by using deep learning neural networks, especially the Convolutional Neural Networks (CNNs).
+0	  Most of the existing works focused on classifying very clear natural images, evidenced by the widely used image databases such as Caltech-256, PASCAL VOCs and ImageNet.
+0	  However, in many real applications, the acquired images may contain certain degradations that lead to various kinds of blurring, noise, and distortions.
+0	  One important and interesting problem is the effect of such degradations to the performance of CNN-based image classification and whether degradation removal helps CNN-based image classification.
+1	  More specifically, we wonder whether image classification performance drops with each kind of degradation, whether this drop can be avoided by including degraded images into training, and whether existing computer vision algorithms that attempt to remove such degradations can help improve the image classification performance.
+1	  In this paper, we empirically study those problems for nine kinds of degraded images - hazy images, motion-blurred images, fish-eye images, underwater images, low resolution images, salt-and-peppered images, images with white Gaussian noise, Gaussian-blurred images and out-of-focus images.
+2	  We expect this work can draw more interests from the community to study the classification of degraded images.
+
+
+### 9
+##### 10.1109/TPAMI.2019.2950631
+#### Ideals of the Multiview Variety
+
+
+0	  The multiview variety of an arrangement of cameras is the Zariski closure of the images of world points in the cameras.
+0	  The prime vanishing ideal of this complex projective variety is called the multiview ideal.
+1	  We show that the bifocal and trifocal polynomials from the cameras generate the multiview ideal when the foci are distinct.
+0	  In the computer vision literature, many sets of (determinantal) polynomials have been proposed to describe the multiview variety.
+1	  We establish precise algebraic relationships between the multiview ideal and these various ideals.
+2	  When the camera foci are noncoplanar, we prove that the ideal of bifocal polynomials saturate to give the multiview ideal.
+2	  Finally, we prove that all the ideals we consider coincide when dehomogenized, to cut out the space of finite images.
+
+
+### 10
+##### 10.1109/TPAMI.2019.2948619
+#### Joint Embedding of Graphs
+
+
+0	  Feature extraction and dimension reduction for networks is critical in a wide variety of domains.
+0	  Efficiently and accurately learning features for multiple graphs has important applications in statistical inference on graphs.
+1	  We propose a method to jointly embed multiple undirected graphs.
+1	  Given a set of graphs, the joint embedding method identifies a linear subspace spanned by rank one symmetric matrices and projects adjacency matrices of graphs into this subspace.
+1	  The projection coefficients can be treated as features of the graphs, while the embedding components can represent vertex features.
+1	  We also propose a random graph model for multiple graphs that generalizes other classical models for graphs.
+1	  We show through theory and numerical experiments that under the model, the joint embedding method produces estimates of parameters with small errors.
+2	  Via simulation experiments, we demonstrate that the joint embedding method produces features which lead to state of the art performance in classifying graphs.
+2	  Applying the joint embedding method to human brain graphs, we find it extracts interpretable features with good prediction accuracy in different tasks.
+
+
+### 11
+##### 10.1109/TPAMI.2019.2950025
+#### Visual Semantic Information Pursuit: A Survey
+
+
+0	  Visual semantic information comprises two important parts: the meaning of each visual semantic unit and the coherent visual semantic relation conveyed by these visual semantic units.
+0	  Essentially, the former one is a visual perception task while the latter one corresponds to visual context reasoning.
+0	  Remarkable advances in visual perception have been achieved due to the success of deep learning.
+0	  In contrast, visual semantic information pursuit, a visual scene semantic interpretation task combining visual perception and visual context reasoning, is still in its early stage.
+0	  It is the core task of many different computer vision applications, such as object detection, visual semantic segmentation, visual relationship detection or scene graph generation.
+0	  Since it helps to enhance the accuracy and the consistency of the resulting interpretation, visual context reasoning is often incorporated with visual perception in current deep end-to-end visual semantic information pursuit methods.
+0	  Surprisingly, a comprehensive review for this exciting area is still lacking.
+1	  In this survey, we present a unified theoretical paradigm for all these methods, followed by an overview of the major developments and the future trends in each potential direction.
+1	  The common benchmark datasets, the evaluation metrics and the comparisons of the corresponding methods are also introduced.
+
+
+### 12
+##### 10.1109/TPAMI.2019.2949299
+#### 3D Fingerprint Recognition based on Ridge-valley-guided 3D Reconstruction and 3D Topology Polymer Feature Extraction
+
+
+0	  Automated fingerprint recognition system (AFRS) for 3D fingerprints is essential and highly promising in biometric security.
+0	  Despite the progress in 3D AFRSs, high-quality real-time 3D fingerprint reconstruction and high-accuracy 3D fingerprint recognition remain two challenging issues.
+1	  To address these issues, we propose a robust 3D AFRS based on ridge-valley-guided 3D fingerprint reconstruction and 3D topology feature extraction.
+1	  The proposed 3D fingerprint reconstruction considers the unique fingerprint characteristic of ridge-valley (RV) and achieves real-time reconstruction.
+1	  Different from traditional triangulation-based methods that establish correspondence between points by cross-correlation-based searching, we propose to establish RV correspondence (RVC) between ridges/valleys by defining and calculating a RVC matrix based on the topology of RV curves.
+1	  To enhance depth reconstruction, curve-based smoothing is proposed to refine our novel RV disparity map.
+1	  The proposed 3D fingerprint recognition is based on three-dimensional topology polymer (TTP) feature extraction.
+1	  The TTP codes 3D topology by projecting the 3D minutiae onto multiple planes and extracting their corresponding 2D topologies, which has proven to be effective and efficient.
+2	  Comprehensive experimental results demonstrate that our method outperforms the state-of-the-art methods in terms of both reconstruction and recognition accuracy.
+2	  Thanks to the significantly short running time, our method is applicable to practical applications.
+
+
+### 13
+##### 10.1109/TPAMI.2019.2950198
+#### Exploring Explicit Domain Supervision for Latent Space Disentanglement in Unpaired Image-to-Image Translation
+
+
+0	  Image-to-image translation tasks have been widely investigated with Generative Adversarial Networks (GANs).
+0	  However, existing approaches are mostly designed in an unsupervised manner while little attention has been paid to domain information within unpaired data.
+1	  In this paper, we treat domain information as explicit supervision and design an unpaired image-to-image translation framework, Domain-supervised GAN (DosGAN), which takes the first step towards the exploration of explicit domain supervision.
+1	  In contrast to representing domain characteristics using different generators or domain codes, we pre-train a classification network to explicitly classify the domain of an image.
+1	  After pre-training, this network is used to extract the domain-specific features of each image.
+1	  Such features, together with the domain-independent features extracted by another encoder (shared across different domains), are used to generate image in target domain.
+2	  Extensive experiments on multiple facial attribute translation, multiple identity translation, multiple season translation and conditional edges-to-shoes/handbags demonstrate the effectiveness of our method.
+2	  In addition, we can transfer the domain-specific feature extractor obtained on the Facescrub dataset with domain supervision information to unseen domains, such as faces in the CelebA dataset.
+2	  We also succeed in achieving conditional translation with any two images in CelebA, while previous models like StarGAN cannot handle this task.
+
+
+### 14
+##### 10.1109/TPAMI.2019.2950317
+#### Bilinear image translation for temporal analysis of photo collections
+
+
+1	  We propose an approach for analyzing unpaired visual data annotated with time stamps by generating how images would have looked like if they were from different times.
+1	  To isolate and transfer time dependent appearance variations, we introduce a new trainable bilinear factor separation module.
+1	  We analyze its relation to classical factored representations and concatenation-based auto-encoders.
+1	  We demonstrate this new module has clear advantages compared to standard concatenation when used in a bottleneck encoder-decoder convolutional neural network architecture.
+1	  We also show that it can be inserted in a recent adversarial image translation architecture, enabling transfer to multiple different target time periods using a single network.
+1	  We apply our model to a challenging collection of more than 13,000 cars manufactured between 1920 and 2000 and a dataset of high school yearbook portraits from 1930 to 2009.
+1	  This allows us, for a given new input image, to generate a "history-lapse video" revealing changes over time by simply varying the latent variable corresponding to time.
+2	  We show that by analyzing the generated history-lapse videos we can identify object deformations across time, extracting interesting changes in visual style over decades.
+
+
+### 15
+##### 10.1109/TPAMI.2019.2949414
+#### Forecasting People Trajectories and Head Poses by Jointly Reasoning on Tracklets and Vislets
+
+
+0	  In this work, we explore the correlation between people trajectories and their head orientations.
+1	  We argue that people trajectory and head pose forecasting can be modelled as a joint problem.
+0	  Recent approaches on trajectory forecasting leverage short-term trajectories (aka tracklets) of pedestrians to predict their future paths.
+0	  In addition, sociological cues, such as expected destination or pedestrian interaction, are often combined with tracklets.
+1	  In this paper, we propose MiXing-LSTM (MX-LSTM) to capture the interplay between positions and head orientations (vislets) thanks to a joint unconstrained optimization of full covariance matrices during the LSTM backpropagation.
+1	  We additionally exploit the head orientations as a proxy for the visual attention, when modeling social interactions.
+2	  MX-LSTM predicts future pedestrians location and head pose, increasing the standard capabilities of the current approaches on long-term trajectory forecasting.
+2	  Compared to the state-of-the-art, our approach shows better performances on an extensive set of public benchmarks.
+2	  MX-LSTM is particularly effective when people move slowly, i.e. the most challenging scenario for all other models.
+2	  The proposed approach also allows for accurate predictions on a longer time horizon.
+
+
+### 16
+##### 10.1109/TPAMI.2019.2949302
+#### Corner detection using second-order generalized Gaussian directional derivative representations
+
+
+0	  Corner detection is a critical component of many image analysis and image understanding tasks such as object recognition and image matching.
+0	  Our research indicates that existing corner detection algorithms cannot properly depict the difference between edges and corners and this results in wrong corner detections.
+1	  In this paper, the capability of second-order generalized (isotropic and anisotropic) Gaussian directional derivative filters to suppress Gaussian noise is evaluated.
+1	  The second-order generalized Gaussian directional derivative representations of step edge, L-type corner, Y- or T-type corner, X-type corner, and star-type corner are investigated and obtained.
+1	  A number of properties for edges and corners are discovered which enable us to propose a new image corner detection method.
+1	  Finally, the criteria on detection accuracy and average repeatability under affine image transformation, JPEG compression, and noise degradation, and the criteria on region repeatability are used to evaluate the proposed detector against nine state-of-the-art methods.
+2	  The experimental results show that our proposed detector outperforms all the other tested detectors.
+
+
+### 17
+##### 10.1109/TPAMI.2019.2949562
+#### Weakly-Supervised Learning of Category-specific 3D Object Shapes
+
+
+0	  Category-specific 3D object shape models have greatly boosted the recent advances in object detection, recognition and segmentation.
+0	  However, even the most advanced approach for learning 3D object shapes still requires heavy manual annotations on large-scale 2D images.
+0	  In particular, annotating figure-ground segmentation is unbearably labor-intensive and time-consuming.
+1	  To alleviate the costs of such manual annotations, we make an effort to learn category-specific 3D shape models by using weakly-labeled 2D images, where only object categories and keypoints are annotated.
+1	  By exploring the underlying relationship between two tasks: object segmentation and category-specific 3D shape reconstruction, we propose a novel weakly-supervised learning framework to jointly address these two tasks and collaborate them to boost the final performance of the learned 3D shape models.
+2	  Moreover, learning without using figure-ground segmentation leads to ambiguous solutions.
+1	  To this end, we develop the confidence weighting schemes in the viewpoint estimation and 3D shape learning procedure.
+2	  These schemes effectively reduce the confusion caused by the noisy data and thus increase the chances for obtaining more reliable 3D object shapes.
+2	  Comprehensive experiments on the challenging PASCAL VOC benchmark show that our framework achieves comparable performance of the state-of-the-art methods that use expensive manual segmentation annotations
+
+
+### 18
+##### 10.1109/TPAMI.2019.2948348
+#### Adversarial Margin Maximization Networks
+
+
+0	  The tremendous recent success of deep neural networks (DNNs) has sparked a surge of interest in understanding their predictive ability.
+0	  Unlike the human visual system which is able to generalize robustly and learn with little supervision, DNNs normally require a massive amount of data to learn new concepts.
+0	  In addition, research works also show that DNNs are vulnerable to adversarial examples---maliciously generated images which seem perceptually similar to the natural ones but are actually formed to fool learning models, which means the models have problem generalizing to unseen data with certain type of distortions.
+1	  In this paper, we analyze the generalization ability of DNNs comprehensively and attempt to improve it from a geometric point of view.
+1	  We propose adversarial margin maximization (AMM), a learning-based regularization which exploits an adversarial perturbation as a proxy.
+2	  It encourages a large margin in the input space, just like the support vector machines.
+1	  With a differentiable formulation of the perturbation, we train the regularized DNNs simply through back-propagation in an end-to-end manner.
+2	  Experimental results on various datasets (including MNIST, CIFAR-10/100, SVHN and ImageNet) and different DNN architectures demonstrate the superiority of our method over previous state-of-the-arts.
+#	  Code and models for reproducing our results will be made publicly available.
+
+
+### 19
+##### 10.1109/TPAMI.2019.2948352
+#### Orthogonal Deep Neural Networks
+
+
+0	  In this paper, we introduce the algorithms of Orthogonal Deep Neural Networks (OrthDNNs) to connect with recent interest of spectrally regularized deep learning methods.
+0	  OrthDNNs are theoretically motivated by generalization analysis of modern DNNs, with the aim to find solution properties of network weights that guarantee better generalization.
+1	  To this end, we first prove that DNNs are of local isometry on data distributions of practical interest; by using a new covering of the sample space and introducing the local isometry property of DNNs into generalization analysis, we establish a new generalization error bound that is characterized by singular value spectrum of each of networks' weight matrices.
+2	  We prove that the optimal bound w.r.t. the degree of isometry is attained when each weight matrix has a spectrum of equal singular values, among which that with orthonormal rows/columns is the most straightforward choice, suggesting the algorithms of OrthDNNs.
+1	  We present both algorithms of strict and approximate OrthDNNs, and for the later ones we propose Singular Value Bounding, which performs as well as strict OrthDNNs but at a much lower computational cost.
+1	  We also propose algorithms to make compatible use of batch normalization with OrthDNNs.
+2	  Extensive comparative studies show the efficacy of OrthDNNs.
+
+
+### 20
+##### 10.1109/TPAMI.2019.2948011
+#### Large scale shadow annotation and detection using lazy annotation and stacked CNNs
+
+
+0	  Recent shadow detection algorithms have shown initial success on small datasets of images from specific domains.
+0	  However, shadow detection on broader image domains is still challenging due to the lack of representative annotated training data.
+1	  In this paper we propose "lazy annotation", an efficient annotation method where an annotator only needs to mark the important shadow areas and some non-shadow areas.
+1	  This yields data with noisy labels that are not yet useful for training a shadow detector.
+1	  We address the problem of label noise by jointly learning a shadow region classifier and recovering the labels in the training set.
+2	  Experimental results show that a classifier trained with recovered labels achieves comparable performance to a classifier trained on the properly annotated data.
+1	  These results motivated us to collect a new dataset that is 20 times larger than existing datasets and contains a large variety of scenes and image types.
+1	  In addition, we propose a stacked Convolutional Neural Network architecture that efficiently trains on patch level shadow examples while incorporating image level semantic information.
+2	  Our proposed pipeline, trained on recovered labels, performs at state-of-the art level.
+
+
+### 21
+##### 10.1109/TPAMI.2019.2947440
+#### Interpreting the Rhetoric of Visual Advertisements
+
+
+0	  Visual media have important persuasive power, but prior computer vision approaches have predominantly ignored the persuasive aspects of images.
+1	  In this work, we propose a suite of data and techniques that enable progress on understanding the messages that visual advertisements convey.
+1	  We make available a dataset of 64,832 image ads and 3,477 video ads, annotated with ten types of information: the topic and sentiment of the ad; whether it is funny, exciting, or effective; what action it prompts the viewer to do, and what arguments it provides for why this action should be taken; symbolic associations that the ad relies on; the metaphorical object transformations on which especially creative ads rely; and the climax in video ads.
+1	  We develop methods that use multimodal cues, i.e. both visuals and slogans, for both the image and video domains.
+1	  Our methods rely on finding poignant content spatially and temporally.
+1	  We also examine the creative story construction in ads: for videos, we learn to predict when the climax occurs (if any), and how effective the story is; for images, we analyze how object transformations in ads metaphorically depict product properties.
+
+
+### 22
+##### 10.1109/TPAMI.2019.2947374
+#### Learning Depth with Convolutional Spatial Propagation Network
+
+
+0	  Depth prediction is one of the fundamental problems in computer vision.
+1	  In this paper, we propose a simple yet effective convolutional spatial propagation network (CSPN) to learn the affinity matrix for various depth estimation tasks.
+2	  We can append this module to any output from a state-of-the-art (SOTA) network to improve their performances.
+1	  In practice, we further extend CSPN in two aspects: 1) take a sparse depth map as additional input, which is useful for the task of sparse to dense (a.k.a depth completion); 2) we propose 3D CSPN to handle features with one additional dimension, which is effective in the task of stereo matching using 3D cost volume.
+2	  For the tasks of depth completion, we experimented the proposed CPSN conjunct algorithms over NYU v2 and KITTI datasets, where we show that our proposed algorithms not only produce high quality (e.g., 30% more reduction in depth error), but also run faster (e.g., 2 to 5 × faster) than previous SOTA spatial propagation network.
+2	  We also evaluated our stereo matching algorithm on the Scene Flow and KITTI Stereo datasets, and rank 1st on both the KITTI Stereo 2012 and 2015 benchmarks, which demonstrates the effectiveness of the proposed module again.
+
+
+### 23
+##### 10.1109/TPAMI.2019.2947427
+#### Appearance and Pose-Conditioned Human Image Generation using Deformable GANs
+
+
+0	  In this paper, we address the problem of generating person images conditioned on both pose and appearance information.
+1	  Specifically, given an image xa of a person and a target pose P(xb), extracted from a different image xb, we synthesize a new image of that person in pose P(xb), while preserving the visual details in xa.
+1	  In order to deal with pixel-to-pixel misalignments caused by the pose differences between P(xa) and P(xb), we introduce deformable skip connections in the generator of our Generative Adversarial Network.
+1	  Moreover, a nearest-neighbour loss is proposed instead of the common L1 and L2 losses in order to match the details of the generated image with the target image.
+2	  Quantitative and qualitative results, using common datasets and protocols recently proposed for this task, show that our approach is competitive with respect to the state of the art.
+1	  Moreover, we conduct an extensive evaluation using off-the-shell person re-identification (Re-ID) systems trained with person-generation based augmented data, which is one of the main important applications for this task.
+2	  Our experiments show that our Deformable GANs can significantly boost the Re-ID accuracy and are even better than data-augmentation methods specifically trained using Re-ID losses.
+
+
+### 24
+##### 10.1109/TPAMI.2019.2947048
+#### SurfelMeshing: Online Surfel-Based Mesh Reconstruction
+
+
+1	  We address the problem of mesh reconstruction from live RGB-D video, assuming a calibrated camera and poses provided externally (e.g., by a SLAM system).
+1	  In contrast to most existing approaches, we do not fuse depth measurements in a volume but in a dense surfel cloud.
+1	  We asynchronously (re)triangulate the smoothed surfels to reconstruct a surface mesh.
+1	  This novel approach enables to maintain a dense surface representation of the scene during SLAM which can quickly adapt to loop closures.
+2	  This is possible by deforming the surfel cloud and asynchronously remeshing the surface where necessary.
+2	  The surfel-based representation also naturally supports strongly varying scan resolution.
+2	  In particular, it reconstructs colors at the input camera's resolution.
+2	  Moreover, in contrast to many volumetric approaches, ours can reconstruct thin objects since objects do not need to enclose a volume.
+2	  We demonstrate our approach in a number of experiments, showing that it produces reconstructions that are competitive with the state-of-the-art, and we discuss its advantages and limitations.
+#	  The algorithm (excluding loop closure functionality) is available as open source at https://github.com/puzzlepaint/surfelmeshing.
+
+
+### 25
+##### 10.1109/TPAMI.2019.2946806
+#### Deep Depth from Uncalibrated Small Motion Clip
+
+
+0	  We propose a novel approach to infer a high-quality depth map from a set of images with small viewpoint variations.
+0	  In general, techniques for depth estimation from small motion consist of camera pose estimation and dense reconstruction.
+1	  In contrast to prior approaches that recover scene geometry and camera motions using pre-calibrated cameras, we introduce a self-calibrating bundle adjustment method tailored for small motion which enables computation of camera poses without the need for camera calibration.
+1	  For dense depth reconstruction, we present a convolutional neural network called DPSNet (Deep Plane Sweep Network) whose design is inspired by best practices of traditional geometry-based approaches.
+1	  Rather than directly estimating depth or optical flow correspondence from image pairs as done in many previous deep learning methods, DPSNet takes a plane sweep approach that involves building a cost volume from deep features using the plane sweep algorithm, regularizing the cost volume, and regressing the depth map from the cost volume.
+1	  The cost volume is constructed using a differentiable warping process that allows for end-to-end training of the network.
+2	  Through the effective incorporation of conventional multiview stereo concepts within a deep learning framework, the proposed method achieves state-of-the-art results on a variety of challenging datasets.
+
+
+### 26
+##### 10.1109/TPAMI.2019.2946823
+#### Fine-grained Video Captioning via Graph-based Multi-granularity Interaction Learning
+
+
+0	  Team sports auto-narrative requires simultaneous modeling of fine-grained individual actions and uncovering of spatio-temporal dependency structures of frequent group interactions, and then accurate mapping of these complex interaction details into long and detailed commentary.
+1	  We propose a novel framework - Graph-based Learning for Multi-Granularity Interaction Representation (GLMGIR) for fine-grained team sports auto-narrative task.
+1	  A multi-granular interaction module is proposed to extract among-subjects' interactive actions in a progressive way for encoding both intra- and inter-team interactions.
+1	  Based on the above multi-granular representations, a multi-granular attention module is developed to consider action/event descriptions of multiple spatio-temporal resolutions.
+1	  Both modules are integrated seamlessly and work in a collaborative way to generate the final narrative.
+1	  In the meantime, we collect a new video dataset called Sports Video Narrative dataset (SVN).
+1	  It is a novel direction as it contains 6K team sports videos with 10K ground-truth narratives.
+1	  Furthermore, as previous metrics, DO NOT cope with fine-grained sports narrative task well, we hence develop a novel evaluation metric named Fine-grained Captioning Evaluation (FCE), which measures how accurate the generated linguistic description reflects fine-grained action details as well as the overall spatio-temporal interactional structure.
+2	  Extensive experiments on our SVN dataset have demonstrated the effectiveness of the proposed framework for fine-grained team sports video auto-narrative.
+
+
+### 27
+##### 10.1109/TPAMI.2019.2946370
+#### Bayesian Joint Matrix Decomposition for Data Integration with Heterogeneous Noise
+
+
+0	  Matrix decomposition is a popular and fundamental approach in machine learning and data mining.
+0	  It has been successfully applied into various fields.
+0	  Most matrix decomposition methods focus on decomposing a data matrix from one single source.
+0	  However, it is common that data are from different sources with heterogeneous noise.
+0	  A few of matrix decomposition methods have been extended for such multi-view data integration and pattern discovery.
+0	  While only few methods were designed to consider the heterogeneity of noise in such multi-view data for data integration explicitly.
+1	  To this end, we propose a joint matrix decomposition framework (BJMD), which models the heterogeneity of noise by Gaussian distribution in a Bayesian framework.
+1	  We develop two algorithms to solve this model: one is a variational Bayesian inference algorithm, which makes full use of the posterior distribution; and another is a maximum a posterior algorithm, which is more scalable and can be easily paralleled.
+2	  Extensive experiments on synthetic and real-world datasets demonstrate that BJMD is superior or competitive to the state-of-the-art methods.
+
+
+### 28
+##### 10.1109/TPAMI.2019.2946567
+#### Sinusoidal Sampling Enhanced Compressive Camera for High Speed Imaging
+
+
+0	  Compressive sensing technique allows capturing fast phenomena at much higher frame rate than the camera sensor, by recovering a frame sequence from their encoded combination.
+0	  However, most conventional compressive video sensing methods limit the achieved frame rate improvement to tenfold and only support low resolution recovery.
+1	  Making use of camera's redundant spatial resolution for further frame rate improve, here we report a novel compressive video acquisition technique termed Sinusoidal Sampling Enhanced Compressive Camera (S2EC2) to encode denser frames within a snapshot.
+1	  Specifically, we decompose the dense frames into groups and apply combinational coding: random codes within each group for compressive acquisition; group specific sinusoidal codes to multiplex different groups onto the high resolution sensor.
+1	  The sinusoidal codes designed for these groups would shift their frequency components by different offsets in the Fourier domain and staggered the dominant frequencies of the coded measurements of these groups.
+1	  Correspondingly, the reconstruction successfully separate coded measurements of different groups and recovers frames within each group.
+1	  Besides, we also solve the implementation problem of insufficient gray scale spatial light modulation speed, and build a prototype achieving 2000 fps reconstruction with a 15.6 fps camera (the actual compression ratio is 0.009).
+2	  The extensive experiments validate the proposed approach.
+
+
+### 29
+##### 10.1109/TPAMI.2019.2946159
+#### Complex-Valued Disparity: Unified Depth Model of Depth from Stereo, Depth from Focus, and Depth from Defocus Based on the Light Field Gradient
+
+
+1	  This paper proposes a unified depth model based on the light field gradient, in which estimated disparity is represented by the complex number.
+1	  The complex-valued disparity by the proposed depth model can be represented in both the Cartesian and polar coordinates.
+1	  In the Cartesian representation, the proposed depth model is represented by real and imaginary parts of the disparity.
+1	  The real part can be used for disparity estimation with respect to the in-focus plane, whereas the imaginary part represents the non-Lambertian-ness.
+1	  In the polar representation, the proposed depth model is expressed by the disparity magnitude and disparity angle.
+2	  The disparity magnitude shows the relationship among depth from stereo, depth from focus, and depth from defocus, whereas the disparity angle shows whether or not the bundles of rays are flipped with respect to the in-focus plane.
+2	  For disparity analysis, we present the real response, imaginary response, magnitude response, and angle response, which are represented by the three-dimensional volume.
+2	  Experimental results on synthetic and real light field images show that the real and magnitude responses of the proposed depth model are valid for local disparity estimation.
+
+
+### 30
+##### 10.1109/TPAMI.2019.2945942
+#### A review of domain adaptation without target labels
+
+
+0	  Domain adaptation has become a prominent problem setting in machine learning and related fields.
+0	  This review asks the question: how can a classifier learn from a source domain and generalize to a target domain?
+1	  We present a categorization of approaches, divided into, what we refer to as, sample-based, feature-based and inference-based methods.
+1	  Sample-based methods focus on weighting individual observations during training based on their importance to the target domain.
+1	  Feature-based methods revolve around on mapping, projecting and representing features such that a source classifier performs well on the target domain and inference-based methods incorporate adaptation into the parameter estimation procedure, for instance through constraints on the optimization procedure.
+1	  Additionally, we review a number of conditions that allow for formulating bounds on the cross-domain generalization error.
+2	  Our categorization highlights recurring ideas and raises questions important to further research.
+
+
+### 31
+##### 10.1109/TPAMI.2019.2945574
+#### Approximate Graph Laplacians for Multimodal Data Clustering
+
+
+0	  One of the important approaches of handling data heterogeneity in multimodal data clustering is modeling each modality using a separate similarity graph.
+0	  Information from the multiple graphs is integrated by combining them into a unified graph.
+0	  A major challenge here is how to preserve cluster information while removing noise from individual graphs.
+1	  In this regard, a novel algorithm, termed as CoALa, is proposed that integrates noise-free approximations of multiple similarity graphs.
+1	  The proposed method first approximates a graph using the most informative eigenpairs of its Laplacian which contain cluster information.
+1	  The approximate Laplacians are then integrated for the construction of a low-rank subspace that best preserves overall cluster information of multiple graphs.
+2	  However, this approximate subspace differs from the full-rank subspace which integrates information from all the eigenpairs of each Laplacian.
+1	  Matrix perturbation theory is used to theoretically evaluate how far approximate subspace deviates from the full-rank one for a given value of approximation rank.
+1	  Finally, spectral clustering is performed on the approximate subspace to identify the clusters.
+2	  Experimental results on several real-life cancer and benchmark data sets demonstrate that the proposed algorithm significantly and consistently outperforms state-of-the-art integrative clustering approaches.
+
+
+### 32
+##### 10.1109/TPAMI.2019.2944806
+#### MFQE 2.0: A New Approach for Multi-frame Quality Enhancement on Compressed Video
+
+
+0	  The past few years have witnessed great success in applying deep learning to enhance the quality of compressed image/video.
+0	  The existing approaches mainly focus on enhancing the quality of a single frame, not considering the similarity between consecutive frames.
+0	  Since heavy fluctuation exists across compressed video frames as investigated in this paper, frame similarity can be utilized for quality enhancement of low-quality frames given their neighbouring high-quality frames.
+0	  This task is Multi-Frame Quality Enhancement (MFQE).
+1	  Accordingly, this paper proposes an MFQE approach for compressed video, as the first attempt in this direction.
+1	  In our approach, we firstly develop a Bidirectional Long Short-Term Memory (BiLSTM) based detector to locate Peak Quality Frames (PQFs) in compressed video.
+1	  Then, a novel Multi-Frame Convolutional Neural Network (MF-CNN) is designed to enhance the quality of compressed video, in which the non-PQF and its nearest two PQFs are the input.
+1	  In MF-CNN, motion between the non-PQF and PQFs is compensated by a motion compensation subnet.
+1	  Subsequently, a quality enhancement subnet fuses the non-PQF and compensated PQFs, and then reduces the compression artifacts of the non-PQF.
+1	  Also, PQF quality is enhanced in the same way.
+2	  Finally, experiments validate the effectiveness and generalization ability of our MFQE approach in advancing the state-of-the-art quality enhancement of compressed video.
+
+
+### 33
+##### 10.1109/TPAMI.2019.2944808
+#### SEWA DB: A Rich Database for Audio-Visual Emotion and Sentiment Research in the Wild
+
+
+0	  Natural human-computer interaction and audio-visual human behaviour sensing systems, which would achieve robust performance in-the-wild are more needed than ever as digital devices are becoming indispensable part of our life more and more.
+0	  Accurately annotated real-world data are the crux in devising such systems.
+0	  However, existing databases usually consider controlled settings, low demographic variability, and a single task.
+1	  In this paper, we introduce the SEWA database of more than 2000 minutes of audio-visual data of 398 people coming from six cultures, 50% female, and uniformly spanning the age range of 18 to 65 years old.
+1	  Subjects were recorded in two different contexts: while watching adverts and while discussing adverts in a video chat.
+2	  The database includes rich annotations of the recordings in terms of facial landmarks, facial action units (FAU), various vocalisations, mirroring, and continuously valued valence, arousal, liking, agreement, and prototypic examples of (dis)liking.
+2	  This database aims to be an extremely valuable resource for researchers in affective computing and automatic human sensing and is expected to push forward the research in human behaviour analysis, including cultural studies.
+2	  Along with the database, we provide extensive baseline experiments for automatic FAU detection and automatic valence, arousal and (dis)liking intensity estimation.
+
+
+### 34
+##### 10.1109/TPAMI.2019.2945027
+#### High-dimensional Dense Residual Convolutional Neural Network for Light Field Reconstruction
+
+
+0	  We consider the problem of high-dimensional light field reconstruction and develop a learning-based framework for spatial and angular super-resolution.
+0	  Many current approaches either require disparity clues or restore the spatial and angular details separately.
+0	  Such methods have difficulties with non-Lambertian surfaces or occlusions.
+1	  In contrast, we formulate light field super-resolution (LFSR) as tensor restoration and develop a learning framework based on a two-stage restoration with 4-dimensional (4D) convolution.
+1	  This allows our model to learn the features capturing the geometry information encoded in multiple adjacent views.
+2	  Such geometric features vary near the occlusion regions and indicate the foreground object border.
+1	  To train a feasible network, we propose a novel normalization operation based on a group of views in the feature maps, design a stage-wise loss function, and develop the multi-range training strategy to further improve the performance.
+1	  Evaluations are conducted on a number of light field datasets including real-world scenes, synthetic data, and microscope light fields.
+2	  The proposed method achieves superior performance and less execution time comparing with other state-of-the-art schemes.
+
+
+### 35
+##### 10.1109/TPAMI.2019.2944597
+#### A Graph-based Approach for Making Consensus-based Decisions in Image Search and Person Re-identification
+
+
+0	  Image matching and retrieval is the underlying problem in various directions of computer vision research, such as image search, biometrics, and person re-identification.
+0	  The problem involves searching for the closest match to a query image in a database of images.
+0	  This work presents a method for generating a consensus amongst multiple algorithms for image matching and retrieval.
+1	  The proposed algorithm, Shortest Hamiltonian Path Estimation (SHaPE), maps the process of ranking candidates based on a set of scores to a graph-theoretic problem.
+1	  This mapping is extended to incorporate results from multiple sets of scores obtained from different matching algorithms.
+1	  The problem of consensus-based decision-making is solved by searching for a suitable path in the graph under specified constraints using a two-step process.
+1	  First, a greedy algorithm is employed to generate an approximate solution.
+1	  In the second step, the graph is extended and the problem is solved by applying Ant Colony Optimization.
+2	  Experiments are performed for image search and person re-identification to illustrate the efficiency of SHaPE in image matching and retrieval.
+2	  Although SHaPE is presented in the context of image retrieval, it can be applied, in general, to any problem involving the ranking of candidates based on multiple sets of scores.
+
+
+### 36
+##### 10.1109/TPAMI.2019.2944377
+#### Video Anomaly Detection With Sparse Coding Inspired Deep Neural Networks
+
+
+1	  This paper presents an anomaly detection method that is based on a sparse coding inspired Deep Neural Networks (DNN).
+1	  Specifically, we propose a Temporally-coherent Sparse Coding (TSC), where a temporally-coherent term is used to preserve the similarity between two neighboring frames.
+1	  The optimization of sparse coefficients in TSC is equivalent to a special stacked Recurrent Neural Networks (sRNN) architecture.
+1	  Further, to reduce the computational cost in alternatively updating the dictionary and sparse coefficients in TSC optimization and to alleviate hyperparameters selection in TSC, we stack one more layer on top of the TSC-inspired sRNN to reconstruct the inputs, and arrive at an sRNN-AE.
+1	  We further improve sRNN-AE in the following aspects: i) we propose to learn a data-dependent similarity measurement between neighboring frames in sRNN-AE; ii) we reduce the depth of the sRNN in sRNN-AE; iii) we conduct temporal pooling over the appearance features of several consecutive frames for motion characterization.
+1	  We also build a large-scale anomaly detection dataset for performance evaluation.
+2	  Extensive experiments on both a toy dataset under controlled settings and real datasets demonstrate the effectiveness of our sRNN-AE method for anomaly detection.
+
+
+### 37
+##### 10.1109/TPAMI.2019.2943860
+#### Nonlinear Regression via Deep Negative Correlation Learning
+
+
+0	  Nonlinear regression has been extensively employed in many computer vision problems (e.g., crowd counting, age estimation, affective computing).
+0	  Under the umbrella of deep learning, two common solutions exist i) transforming nonlinear regression to a robust loss function which is jointly optimizable with the deep convolutional network, and ii) utilizing ensemble of deep networks.
+0	  Although some improved performance is achieved, the former may be lacking due to the intrinsic limitation of choosing a single hypothesis and the latter usually suffers from much larger computational complexity.
+0	  To cope with those issues, we propose to regress via an efficient "divide and conquer" manner.
+1	  The core of our approach is the generalization of negative correlation learning that has been shown, both theoretically and empirically, to work well for non-deep regression problems.
+1	  Without extra parameters, the proposed method controls the bias-variance-covariance trade-off systematically and usually yields a deep regression ensemble where each base model is both "accurate" and "diversified."
+2	  Moreover, we show that each sub-problem in the proposed method has less Rademacher Complexity and thus is easier to optimize.
+2	  Extensive experiments on several diverse and challenging tasks including crowd counting, personality analysis, age estimation, and image super-resolution demonstrate the superiority over challenging baselines.
+
+
+### 38
+##### 10.1109/TPAMI.2019.2943456
+#### Interpretable Visual Question Answering by Reasoning on Dependency Trees
+
+
+0	  Collaborative reasoning for understanding each image-question pair is very critical but underexplored for an interpretable visual question answering system.
+0	  Although very recent works also attempted to use explicit compositional processes to assemble multiple subtasks embedded in the questions, their models heavily rely on annotations or handcrafted rules to obtain valid reasoning processes, leading to either heavy workloads or poor performance on composition reasoning.
+1	  In this paper, to better align image and language domains in diverse and unrestricted cases, we propose a novel neural network model that performs global reasoning on a dependency tree parsed from the question, and we thus phrase our model as parse-tree-guided reasoning network (PTGRN).
+1	  This network consists of three collaborative modules: i) an attention module to exploit the local visual evidence for each word parsed from the question, ii) a gated residual composition module to compose the previously mined evidence, and iii) a parse-tree-guided propagation module to pass the mined evidence along the parse tree.
+2	  Our PTGRN is thus capable of building an interpretable VQA system that gradually derives the image cues following a question-driven parse-tree reasoning route.
+2	  Experiments on relational datasets demonstrate the superiority of our PTGRN over current state-of-the-art VQA methods.
+
+
+### 39
+##### 10.1109/TPAMI.2019.2942928
+#### Progressive Fusion for Unsupervised Binocular Depth Estimation using Cycled Networks
+
+
+0	  Recent deep monocular depth estimation approaches based on supervised regression have achieved remarkable performance.
+0	  However, they require costly ground truth annotations during training.
+0	  To cope with this issue, in this paper we present a novel unsupervised deep learning approach for predicting depth maps.
+1	  We introduce a new network architecture, named Progressive Fusion Network (PFN), that is specifically designed for stereo depth estimation.
+1	  This network is based on a multi-scale refinement strategy that combines the information provided by both images.
+1	  In addition, we propose to stack twice this network in order to form a cycle.
+1	  This cycle approach can be interpreted as a form of data-augmentation since, at training time, the network learns both from the training set images (in the forward half-cycle) but also from the synthesized images (in the backward half-cycle).
+1	  The architecture is jointly trained with adversarial learning.
+2	  Extensive experiments on the publicly available datasets KITTI, Cityscapes and ApolloScape demonstrate the effectiveness of the proposed model which outperforms previous unsupervised deep learning methods for depth prediction.
+
+
+### 40
+##### 10.1109/TPAMI.2019.2942592
+#### Adversarial Distillation for Learning with Privileged Provisions
+
+
+0	  Knowledge distillation aims to train a student (model) for accurate inference in a resource-constrained environment.
+0	  Traditionally, the student is trained by a high-capacity teacher (model) whose training is resource-intensive.
+0	  The student trained this way is suboptimal because it is difficult to learn the real data distribution from the teacher.
+1	  To address this issue, we propose to train the student against a discriminator in a minimax game.
+2	  Such a minimax game has an issue that it can take an excessively long time for the training to converge.
+1	  To address this issue, we propose adversarial distillation consisting of a student, a teacher, and a discriminator.
+2	  The discriminator is now a multi-class classifier that distinguishes among the real data, the student, and the teacher.
+1	  The student and the teacher aim to fool the discriminator via adversarial losses, while they learn from each other via distillation losses.
+2	  By optimizing the adversarial and the distillation losses simultaneously, the student and the teacher can learn the real data distribution.
+1	  To accelerate the training, we propose to obtain low-variance gradient updates from the discriminator using a Gumbel-Softmax trick.
+2	  We conduct extensive experiments to demonstrate the superiority of the proposed adversarial distillation under both accuracy and training speed.
+
+

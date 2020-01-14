@@ -1,0 +1,297 @@
+
+
+# 61
+### http://arxiv.org/abs/1105.4261v1
+## Physical-Layer Network Coding: Tutorial, Survey, and Beyond
+
+-1 	The concept of physical-layer network coding (PNC) was proposed in 2006 for application in wireless networks.
+-1 	Since then it has developed into a subfield of network coding with wide followings.
+-1 	The basic idea of PNC is to exploit the network coding operation that occurs naturally when electromagnetic (EM) waves are superimposed on one another.
+-1 	This simple idea turns out to have profound and fundamental ramifications.
+-1 	Subsequent works by various researchers have led to many new results in the domains of 1) wireless communication; 2) wireless information theory; and 3) wireless networking.
+-1 	The purpose of this paper is fourfold.
+-1 	First, we give a brief tutorial on the basic concept of PNC.
+-1 	Second, we survey and discuss recent key results in the three aforementioned areas.
+-1 	Third, we examine a critical issue in PNC: synchronization.
+-1 	It has been a common belief that PNC requires tight synchronization.
+-1 	Our recent results suggest, however, that PNC may actually benefit from asynchrony.
+-1 	Fourth, we propose that PNC is not just for wireless networks; it can also be useful in optical networks.
+-1 	We provide an example showing that the throughput of a passive optical network (PON) could potentially be raised by 100% with PNC.
+
+
+# 62
+### http://arxiv.org/abs/1105.6024v1
+## Optimum Sleep-Wake Scheduling of Sensors for Quickest Event Detection in Small Extent Wireless Sensor Networks
+
+-1 	We consider the problem of quickest event detection with sleep-wake scheduling in small extent wireless sensor networks in which, at each time slot, each sensor node in the awake state observes a sample and communicates the information to the fusion centre.
+-1 	The sensor nodes in the sleep state do not sample or communicate any information to the fusion centre (FC), thereby conserving energy.
+-1 	At each time slot, the FC, after having received the samples from the sensor nodes in the wake state, makes a decision to stop (and thus declare that the event has occurred) or to continue observing.
+-1 	If it decides to continue, the FC also makes the decision of choosing the number of sensor nodes to be in the wake state in the next time slot.
+-1 	We consider three alternative approaches to the problem of choosing the number of sensor nodes to be in the wake state in time slot k+1, based on the information available at time slot k, namely, 1.
+-1 	optimal control of M_{k+1}, the number of sensor nodes to be in the awake state in time slot k+1, 2.
+-1 	optimal control of q_{k+1}, the probability of a sensor node to be in the awake state in time slot k+1, and 3.
+-1 	optimal probability q that a sensor node is in the awake state in any time slot.
+-1 	In each case, we formulate the problem as a sequential decision process.
+-1 	We show that a sufficient statistic for the decision at time k is the a posteriori probability of change Pi_k.
+-1 	Also, we show that the optimal stopping rule is a threshold rule on Pi_k.
+-1 	The optimal policy for M_{k+1} can keep very few sensors wake during the prechange phase and then quickly increase the number of sensors in the wake state when a change is "suspected".
+-1 	Among the three sleep-wake algorithms described, we observe that the total cost is minimum for the optimum control of M_{k+1} and is maximum for the optimum control on q.
+
+
+# 63
+### http://arxiv.org/abs/1108.2606v1
+## Tensor-Based Link Prediction in Intermittently Connected Wireless Networks
+
+-1 	Through several studies, it has been highlighted that mobility patterns in mobile networks are driven by human behaviors.
+-1 	This effect has been particularly observed in intermittently connected networks like DTN (Delay Tolerant Networks).
+-1 	Given that common social intentions generate similar human behavior, it is relevant to exploit this knowledge in the network protocols design, e.g. to identify the closeness degree between two nodes.
+-1 	In this paper, we propose a temporal link prediction technique for DTN which quantifies the behavior similarity between each pair of nodes and makes use of it to predict future links.
+-1 	Our prediction method keeps track of the spatio-temporal aspects of nodes behaviors organized as a third-order tensor that aims to records the evolution of the network topology.
+-1 	After collapsing the tensor information, we compute the degree of similarity for each pair of nodes using the Katz measure.
+-1 	This metric gives us an indication on the link occurrence between two nodes relying on their closeness.
+-1 	We show the efficiency of this method by applying it on three mobility traces: two real traces and one synthetic trace.
+-1 	Through several simulations, we demonstrate the effectiveness of the technique regarding another approach based on a similarity metric used in DTN.
+-1 	The validity of this method is proven when the computation of score is made in a distributed way (i.e. with local information).
+-1 	We attest that the tensor-based technique is effective for temporal link prediction applied to the intermittently connected networks.
+-1 	Furthermore, we think that this technique can go beyond the realm of DTN and we believe this can be further applied on every case of figure in which there is a need to derive the underlying social structure of a network of mobile users.
+
+
+# 64
+### http://arxiv.org/abs/1108.2776v1
+## Vehicular Ad Hoc and Sensor Networks; Principles and Challenges
+
+-1 	The rapid increase of vehicular traffic and congestion on the highways began hampering the safe and efficient movement of traffic.
+-1 	Consequently, year by year, we see the ascending rate of car accidents and casualties in most of the countries.
+-1 	Therefore, exploiting the new technologies, e.g. wireless sensor networks, is required as a solution of reduction of these saddening and reprehensible statistics.
+-1 	This has motivated us to propose a novel and comprehensive system to utilize Wireless Sensor Networks for vehicular networks.
+-1 	We coin the vehicular network employing wireless Sensor networks as Vehicular Ad Hoc and Sensor Network, or VASNET in short.
+-1 	The proposed VASNET is particularly for highway traffic .VASNET is a self-organizing Ad Hoc and sensor network comprised of a large number of sensor nodes.
+-1 	In VASNET there are two kinds of sensor nodes, some are embedded on the vehicles-vehicular nodes- and others are deployed in predetermined distances besides the highway road, known as Road Side Sensor nodes (RSS).
+-1 	The vehicular nodes are used to sense the velocity of the vehicle for instance.
+-1 	We can have some Base Stations (BS) such as Police Traffic Station, Firefighting Group and Rescue Team.
+-1 	The base stations may be stationary or mobile.
+-1 	VASNET provides capability of wireless communication between vehicular nodes and stationary nodes, to increase safety and comfort for vehicles on the highway roads.
+-1 	In this paper we explain main fundamentals and challenges of VASNET.
+
+
+# 65
+### http://arxiv.org/abs/1108.5494v1
+## Geographic Trough Filling for Internet Datacenters
+
+-1 	To reduce datacenter energy consumption and cost, current practice has considered demand-proportional resource provisioning schemes, where servers are turned on/off according to the load of requests.
+-1 	Most existing work considers instantaneous (Internet) requests only, which are explicitly or implicitly assumed to be delay-sensitive.
+-1 	On the other hand, in datacenters, there exist a vast amount of delay-tolerant jobs, such as background/maintainance jobs.
+-1 	In this paper, we explicitly differentiate delay-sensitive jobs and delay tolerant jobs.
+-1 	We focus on the problem of using delay-tolerant jobs to fill the extra capacity of datacenters, referred to as trough/valley filling.
+-1 	Giving a higher priority to delay-sensitive jobs, our schemes complement to most existing demand-proportional resource provisioning schemes.
+-1 	Our goal is to design intelligent trough filling mechanisms that are energy efficient and also achieve good delay performance.
+-1 	Specifically, we propose two joint dynamic speed scaling and traffic shifting schemes, one subgradient-based and the other queue-based.
+-1 	Our schemes assume little statistical information of the system, which is usually difficult to obtain in practice.
+-1 	In both schemes, energy cost saving comes from dynamic speed scaling, statistical multiplexing, electricity price diversity, and service efficiency diversity.
+-1 	In addition, good delay performance is achieved in the queue-based scheme via load shifting and capacity allocation based on queue conditions.
+-1 	Practical issues that may arise in datacenter networks are considered, including capacity and bandwidth constraint, service agility constraint, and load shifting cost.
+-1 	We use both artificial and real datacenter traces to evaluate the proposed schemes.
+
+
+# 66
+### http://arxiv.org/abs/1109.1147v1
+## P2P Domain Classification using Decision Tree
+
+-1 	In Peer-to-Peer context, a challenging problem is how to find the appropriate peer to deal with a given query without overly consuming bandwidth?
+-1 	Different methods proposed routing strategies of queries taking into account the P2P network at hand.
+-1 	This paper considers an unstructured P2P system based on an organization of peers around Super-Peers that are connected to Super-Super- Peer according to their semantic domains; By analyzing the queries log file, a predictive model that avoids flooding queries in the P2P network is constructed after predicting the appropriate Super-Peer, and hence the peer to answer the query.
+-1 	A challenging problem in a schema-based Peer-to-Peer (P2P) system is how to locate peers that are relevant to a given query.
+-1 	In this paper, architecture, based on (Super-)Peers is proposed, focusing on query routing.
+-1 	The approach to be implemented, groups together (Super-)Peers that have similar interests for an efficient query routing method.
+-1 	In such groups, called Super-Super-Peers (SSP), Super-Peers submit queries that are often processed by members of this group.
+-1 	A SSP is a specific Super-Peer which contains knowledge about: 1.
+-1 	its Super-Peers and 2.
+-1 	The other SSP.
+-1 	Knowledge is extracted by using data mining techniques (e.g. Decision Tree algorithms) starting from queries of peers that transit on the network.
+-1 	The advantage of this distributed knowledge is that, it avoids making semantic mapping between heterogeneous data sources owned by (Super-)Peers, each time the system decides to route query to other (Super-) Peers.
+-1 	The set of SSP improves the robustness in queries routing mechanism, and the scalability in P2P Network.
+-1 	Compared with a baseline approach,the proposal architecture shows the effect of the data mining with better performance in respect to response time and precision.
+
+
+# 67
+### http://arxiv.org/abs/1109.4306v2
+## Enabling Adaptive Rate and Relay Selection for 802.11 Mobile Ad Hoc Networks
+
+-1 	Mobile ad hoc networks (MANETs) are self-configuring wireless networks that lack permanent infrastructure and are formed among mobile nodes on demand.
+-1 	Rapid node mobility results in dramatic channel variation, or fading, that degrades MANET performance.
+-1 	Employing channel state information (CSI) at the transmitter can improve the throughput of routing and medium access control (MAC) protocols for mobile ad hoc networks.
+-1 	Several routing algorithms in the literature explicitly incorporate the fading signal strength into the routing metric, thus selecting the routes with strong channel conditions.
+-1 	While these studies show that adaptation to the time-variant channel gain is beneficial in MANETs, they do not address the effect of the outdated fading CSI at the transmitter.
+-1 	For realistic mobile node speeds, the channel gain is rapidly varying, and becomes quickly outdated due the feedback delay.
+-1 	We analyze the link throughput of joint rate adaptation and adaptive relay selection in the presence of imperfect CSI.
+-1 	Moreover, for an 802.
+-1 	11 network that employs geographic opportunistic routing with adaptive rate and relay selection, we propose a novel method to reduce the effect of the feedback delay at the MAC layer in the presence of Rayleigh fading.
+-1 	This method exploits channel reciprocity and fading prediction and does not require significant modification to the existing 802.
+-1 	11 frame structure.
+-1 	Extensive network simulations demonstrate that the proposed approach significantly improves the throughput, delay, and packet delivery ratio for high mobile velocities relative to previously proposed approaches that employ outdated CSI at the transmitter.
+
+
+# 68
+### http://arxiv.org/abs/1110.2270v1
+## Noise Analysis and Detection Based on RF Energy Duration in wireless LAN
+
+-1 	Noise is the major problem while working with wireless LAN.
+-1 	In this paper we analyze the noise by using active receiving antenna and also propose the detection mechanism based on RF energy duration.
+-1 	The standard back off mechanism of 802.
+-1 	11 wireless LAN (WLAN) increases the contention window when a transmission failure occurs in order to alleviate contentions in a WLAN.
+-1 	In addition, many proposed schemes for 802.
+-1 	11 WLAN behave adaptively to transmission failures.
+-1 	Transmission failures in WLANs occur mostly by two causes: collision and channel noise.
+-1 	However, in 802.
+-1 	11 WLAN, a station cannot know the cause of a transmission failure, thus the adaptive schemes assume the ideal situation in which all transmission failures occur by only one of two causes.
+-1 	For this reason, they may behave erroneously in a real world where transmission failures occur by both causes.
+-1 	In this paper, we propose a novel scheme to detect collision, which utilizes transmission time information and RF energy duration on the channel.
+-1 	By detecting collisions, a station can differentiate the causes of transmission failures and the adaptive schemes can operate correctly by using the detection information.
+
+
+# 69
+### http://arxiv.org/abs/1110.3425v1
+## CellSense: An Accurate Energy-Efficient GSM Positioning System
+
+-1 	Context-aware applications have been gaining huge interest in the last few years.
+-1 	With cell phones becoming ubiquitous computing devices, cell phone localization has become an important research problem.
+-1 	In this paper, we present CellSense, a prob- abilistic RSSI-based fingerprinting location determi- nation system for GSM phones.
+-1 	We discuss the chal- lenges of implementing a probabilistic fingerprinting localization technique in GSM networks and present the details of the CellSense systemand how it addresses these challenges.
+-1 	We then extend the proposed system using a hybrid technique that combines probabilistic and deterministic estimation to achieve both high ac- curacy and low computational overhead.
+-1 	Moreover, the accuracy of the hybrid technique is robust to changes in its parameter values.
+-1 	To evaluate our proposed system, we implemented CellSense on Android-based phones.
+-1 	Results from two different testbeds, represent- ing urban and rural environments, for three differ- ent cellular providers show that CellSense provides at least 108.
+-1 	57% enhancement in accuracy in rural areas and at least 89.
+-1 	03% in urban areas compared to the current state of the art RSSI-based GSM localization systems.
+-1 	In additional, the proposed hybrid technique provides more than 6 times and 5.
+-1 	4 times reduction in computational requirements compared to the state of the art RSSI-based GSM localization systems for the rural and urban testbeds respectively.
+-1 	We also evaluate the effect of changing the different system parameters on the accuracy-complexity tradeoff and how the cell towers density and fingerprint density affect the system performance.
+
+
+# 70
+### http://arxiv.org/abs/1110.3579v1
+## Network on Chip: a New Approach of QoS Metric Modeling Based on Calculus Theory
+
+-1 	A NoC is composed by IP cores (Intellectual Propriety) and switches connected among themselves by communication channels.
+-1 	End-to-End Delay (EED) communication is accomplished by the exchange of data among IP cores.
+-1 	Often, the structure of particular messages is not adequate for the communication purposes.
+-1 	This leads to the concept of packet switching.
+-1 	In the context of NoCs, packets are composed by header, payload, and trailer.
+-1 	Packets are divided into small pieces called Flits.
+-1 	It appears of importance, to meet the required performance in NoC hardware resources.
+-1 	It should be specified in an earlier step of the system design.
+-1 	The main attention should be given to the choice of some network parameters such as the physical buffer size in the node.
+-1 	The EED and packet loss are some of the critical QoS metrics.
+-1 	Some real-time and multimedia applications bound up these parameters and require specific hardware resources and particular management approaches in the NoC switch.
+-1 	A traffic contract (SLA, Service Level Agreement) specifies the ability of a network or protocol to give guaranteed performance, throughput or latency bounds based on mutually agreed measures, usually by prioritizing traffic.
+-1 	A defined Quality of Service (QoS) may be required for some types of network real time traffic or multimedia applications.
+-1 	The main goal of this paper is, using the Network on Chip modeling architecture, to define a QoS metric.
+-1 	We focus on the network delay bound and packet losses.
+-1 	This approach is based on the Network Calculus theory, a mathematical model to represent the data flows behavior between IPs interconnected over NoC.
+-1 	We propose an approach of QoS-metric based on QoS-parameter prioritization factors for multi applications-service using calculus model.
+
+
+# 71
+### http://arxiv.org/abs/1111.2619v1
+## A Security Architecture for Data Aggregation and Access Control in Smart Grids
+
+-1 	We propose an integrated architecture for smart grids, that supports data aggregation and access control.
+-1 	Data can be aggregated by home area network, building area network and neighboring area network in such a way that the privacy of customers is protected.
+-1 	We use homomorphic encryption technique to achieve this.
+-1 	The consumer data that is collected is sent to the substations where it is monitored by remote terminal units (RTU).
+-1 	The proposed access control mechanism gives selective access to consumer data stored in data repositories and used by different smart grid users.
+-1 	Users can be maintenance units, utility centers, pricing estimator units or analyzing and prediction groups.
+-1 	We solve this problem of access control using cryptographic technique of attribute-based encryption.
+-1 	RTUs and users have attributes and cryptographic keys distributed by several key distribution centers (KDC).
+-1 	RTUs send data encrypted under a set of attributes.
+-1 	Users can decrypt information provided they have valid attributes.
+-1 	The access control scheme is distributed in nature and does not rely on a single KDC to distribute keys.
+-1 	Bobba \emph{et al.}
+-1 	\cite{BKAA09} proposed an access control scheme, which relies on a centralized KDC and is thus prone to single-point failure.
+-1 	The other requirement is that the KDC has to be online, during data transfer which is not required in our scheme.
+-1 	Our access control scheme is collusion resistant, meaning that users cannot collude and gain access to data, when they are not authorized to access.
+-1 	We theoretically analyze our schemes and show that the computation overheads are low enough to be carried out in smart grids.
+-1 	To the best of our knowledge, ours is the first work on smart grids, which integrates these two important security components (privacy preserving data aggregation and access control) and presents an overall security architecture in smart grids.
+
+
+# 72
+### http://arxiv.org/abs/1112.0097v1
+## 1-D Coordinate Based on Local Information for MAC and Routing Issues in WSNs
+
+-1 	More and more critical Wireless Sensor Networks (WSNs) applications are emerging.
+-1 	Those applications need reliability and respect of time constraints.
+-1 	The underlying mechanisms such as MAC and routing must handle such requirements.
+-1 	Our approach to the time constraint problem is to bound the hop-count between a node and the sink and the time it takes to do a hop so the end-to-end delay can be bounded and the communications are thus real-time.
+-1 	For reliability purpose we propose to select forwarder nodes depending on how they are connected in the direction of the sink.
+-1 	In order to be able to do so we need a coordinate (or a metric) that gives information on hop-count, that allows to strongly differentiate nodes and gives information on the connectivity of each node keeping in mind the intrinsic constraints of WSWs such as energy consumption, autonomy, etc.
+-1 	Due to the efficiency and scalability of greedy routing in WSNs and the financial cost of GPS chips, Virtual Coordinate Systems (VCSs) for WSNs have been proposed.
+-1 	A category of VCSs is based on the hop-count from the sink, this scheme leads to many nodes having the same coordinate.
+-1 	The main advantage of this system is that the hops number of a packet from a source to the sink is known.
+-1 	Nevertheless, it does not allow to differentiate the nodes with the same hop-count.
+-1 	In this report we propose a novel hop-count-based VCS which aims at classifying the nodes having the same hop-count depending on their connectivity and at differentiating nodes in a 2-hop neighborhood.
+-1 	Those properties make the coordinates, which also can be viewed as a local identifier, a very powerful metric which can be used in WSNs mechanisms.
+
+
+# 73
+### http://arxiv.org/abs/1112.1480v1
+## Multiuser Cellular Network
+
+-1 	Modern radio communication is faced with a problem about how to distribute restricted frequency to users in a certain space.
+-1 	Since our task is to minimize the number of repeaters, a natural idea is enlarging coverage area.
+-1 	However, coverage has restrictions.
+-1 	First, service area has to be divided economically as repeater's coverage is limited.
+-1 	In this paper, our fundamental method is to adopt seamless cellular network division.
+-1 	Second, underlying physics content in frequency distribution problem is interference between two close frequencies.
+-1 	Consequently, we choose a proper frequency width of 0.
+-1 	1MHz and a relevantly reliable setting to apply one frequency several times.
+-1 	We make a few general assumptions to simplify real situation.
+-1 	For instance, immobile users yield to homogenous distribution; repeaters can receive and transmit information in any given frequency in duplex operation; coverage is mainly decided by antenna height.
+-1 	Two models are built up to solve 1000 users and 10000 users situations respectively.
+-1 	In order to utilize restricted frequency and PL code, three stratified terms - "cell", "cluster", "group" - are introduced to describe the models in detail.
+-1 	Under our analysis, 91 repeaters for 1000 users and 469 repeaters for 10000 users are viable results.
+-1 	Next, to test stability and sensitivity of models, we give total consideration to the variation of sum of users, antenna height, and frequency width and service radius.
+-1 	Evaluation about models is offered qualitatively.
+-1 	Finally, two practical cases are put forward to gain a partial knowledge of mountainous area.
+-1 	The brief method in dealing with mountains is classified discussion in two ideal conditions.
+-1 	It may provide some constructive suggestions to avoid shortcomings or take proper measures in similar locations.
+
+
+# 74
+### http://arxiv.org/abs/1112.4955v2
+## Coded Path Protection: Efficient Conversion of Sharing to Coding
+
+-1 	Link failures in wide area networks are common and cause significant data losses.
+-1 	Mesh-based protection schemes offer high capacity efficiency but they are slow and require complex signaling.
+-1 	Additionally, real-time reconfiguration of a cross-connect threatens their transmission integrity.
+-1 	On the other hand, coding-based protection schemes are proactive.
+-1 	Therefore, they have higher restoration speed, lower signaling complexity, and higher transmission integrity.
+-1 	This paper introduces a coding-based protection scheme, named Coded Path Protection (CPP).
+-1 	In CPP, a backup copy of the primary data is encoded with other data streams, resulting in capacity savings.
+-1 	This paper presents an optimal and simple capacity placement and coding group formation algorithm.
+-1 	The algorithm converts the sharing structure of any solution of a Shared Path Protection (SPP) technique into a coding structure with minimum extra capacity.
+-1 	We conducted quantitative and qualitative comparisons of our technique with the SPP and, another technique, known as p-cycle protection.
+-1 	Simulation results confirm that the CPP is significantly faster than the SPP and p-cycle techniques.
+-1 	CPP incurs marginal extra capacity on top of SPP.
+-1 	Its capacity efficiency is lower than the p-cycle technique for dense networks but can be higher for sparse networks.
+-1 	In addition, unlike p-cycle protection, CPP is inherently suitable for the wavelength continuity constraint in optical networks.
+
+
+# 75
+### http://arxiv.org/abs/1203.2041v1
+## Towards MAC/Anycast Diversity in IEEE 802.11n MIMO Networks
+
+-1 	Opportunistic Routing (OR) is a novel routing technique for wireless mesh networks that exploits the broadcast nature of the wireless medium.
+-1 	OR combines frames from multiple receivers and therefore creates a form of Spatial Diversity, called MAC Diversity.
+-1 	The gain from OR is especially high in networks where the majority of links has a high packet loss probability.
+-1 	The updated IEEE 802.
+-1 	11n standard improves the physical layer with the ability to use multiple transmit and receive antennas, i.e. Multiple-Input and Multiple-Output (MIMO), and therefore already offers spatial diversity on the physical layer, i.e. called Physical Diversity, which improves the reliability of a wireless link by reducing its error rate.
+-1 	In this paper we quantify the gain from MAC diversity as utilized by OR in the presence of PHY diversity as provided by a MIMO system like 802.
+-1 	11n.
+-1 	We experimented with an IEEE 802.
+-1 	11n indoor testbed and analyzed the nature of packet losses.
+-1 	Our experiment results show negligible MAC diversity gains for both interference-prone 2.
+-1 	4 GHz and interference-free 5 GHz channels when using 802.
+-1 	11n.
+-1 	This is different to the observations made with single antenna systems based on 802.
+-1 	11b/g, as well as in initial studies with 802.
+-1 	11n.

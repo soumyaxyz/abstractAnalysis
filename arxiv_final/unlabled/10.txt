@@ -1,0 +1,295 @@
+
+
+# 136
+### http://arxiv.org/abs/1602.04440v1
+## A new scheme for maximizing the lifetime of heterogeneous wireless sensor networks
+
+-1 	Heterogeneous wireless sensor network consists of wireless sensor nodes with different abilities, such as different computing power and different initial energy.
+-1 	We present in this paper a new scheme for maximizing heterogeneous WSN lifetime.
+-1 	The proposed scheme employs two types of sensor nodes that are named (consistent with IEEE 802.
+-1 	15.
+-1 	4 standard) Full Function Device (FFD) and Reduced Function Device (RFD).
+-1 	The FFDs are the expensive sensor nodes with high power and computational capabilities compared to the RFDs which are cheap sensors with a limited power supply.
+-1 	The scheme divides the network into smaller sub-networks (regions) that are built from sectors and tracks.
+-1 	The objective of this research is to balance and reduce the communication load on RFDs, reduce the delay, and increase the connectivity and lifetime, by using a limited number of FFDs.
+-1 	We investigate the performance of our scheme via numerical simulation and compare it to other related schemes that are presented for homogeneous WSNs with chain topology, such as Pegasis, Epegasis and Chiron.
+-1 	In addition to extending the lifetime, our scheme also results in reducing the data transmission delay compared to the related schemes.
+-1 	Furthermore, the scheme increases the network security and reduces the RFDs power consumption by preventing the direct communication with the base station (BS).
+-1 	The FFD is the communication bridge between RFDs and BS.
+-1 	The FFD communicate with the BS using the one-hop approach or multi-hop approach through other FFDs.
+
+
+# 137
+### http://arxiv.org/abs/1606.04997v1
+## Adaptive Quorum-Based Channel-Hopping Distributed Coordination Scheme for Cognitive Radio Networks
+
+-1 	One of the most important challenges in deploying cognitive radio networks (CRNs) is to find a common control channel (CCC) to all secondary users (SUs) that enables efficient CR communications.
+-1 	This challenge is attributed to the dynamic time-varying change of network topology, location and spectrum availability conditions.
+-1 	Rendezvous, which is the process of establishing control communications, is an essential requirement to enable efficient communication between any two pair of CR nodes.
+-1 	The most popular CR rendezvous protocols are based on quorum systems (QSs).
+-1 	Quorum systems are systematic approaches, which have several attractive properties that can be utilized to establish communication without the need of a CCC and so overcome the rendezvous (RDV) problem.
+-1 	In this thesis, we propose new channel-hopping-based distributed rendezvous algorithm based on grid-based-quorum techniques.
+-1 	The proposed algorithm increases the probability of RDV within a single cycle by allowing CR nodes to meet more often according to intersection property of quorum systems.
+-1 	Our proposed algorithm is called Adaptive_Quorum-Based Channel-Hopping Distributed Coordination Scheme for Cognitive Radio Networks.
+-1 	The main idea of our algorithm is to dynamically adjusting the selected QS by CR users according to the varying traffic loads in the CRN.
+-1 	The proposed algorithm decreases the average time to rendezvous (TTR) and increase the probability of RDV.
+-1 	We evaluate the performance of our algorithm through Matlab simulations.
+-1 	The performance of proposed algorithm is compared with two different design scheme.
+-1 	The results show that our algorithm can reduce TTR, increase the RDV, and decrease the energy consumption per successful RDV.
+
+
+# 138
+### http://arxiv.org/abs/1606.05047v1
+## Towards Characterizing International Routing Detours
+
+-1 	There are currently no requirements (technical or otherwise) that BGP paths must be contained within national boundaries.
+-1 	Indeed, some paths experience international detours, i.e., originate in one country, cross international boundaries and return to the same country.
+-1 	In most cases these are sensible traffic engineering or peering decisions at ISPs that serve multiple countries.
+-1 	In some cases such detours may be suspicious.
+-1 	Characterizing international detours is useful to a number of players: (a) network engineers trying to diagnose persistent problems, (b) policy makers aiming at adhering to certain national communication policies, (c) entrepreneurs looking for opportunities to deploy new networks, or (d) privacy-conscious states trying to minimize the amount of internal communication traversing different jurisdictions.
+-1 	In this paper we characterize international detours in the Internet during the month of January 2016.
+-1 	To detect detours we sample BGP RIBs every 8 hours from 461 RouteViews and RIPE RIS peers spanning 30 countries.
+-1 	Then geolocate visible ASes by geolocating each BGP prefix announced by each AS, mapping its presence at IXPs and geolocation infrastructure IPs.
+-1 	Finally, analyze each global BGP RIB entry looking for detours.
+-1 	Our analysis shows more than 5K unique BGP prefixes experienced a detour.
+-1 	A few ASes cause most detours and a small fraction of prefixes were affected the most.
+-1 	We observe about 544K detours.
+-1 	Detours either last for a few days or persist the entire month.
+-1 	Out of all the detours, more than 90% were transient detours that lasted for 72 hours or less.
+-1 	We also show different countries experience different characteristics of detours.
+
+
+# 139
+### http://arxiv.org/abs/1606.07613v1
+## Carrier-Grade Anomaly Detection Using Time-to-Live Header Information
+
+-1 	Time-to-Live data in the IP header offers two interesting characteristics: First, different IP stacks pick different start TTL values.
+-1 	Second, each traversed router should decrement the TTL value.
+-1 	The combination of both offers host and route fingerprinting options.
+-1 	We present the first work to investigate Internet-wide TTL behavior at carrier scale and evaluate its fit to detect anomalies, predominantly spoofed source IP addresses.
+-1 	Using purpose-built software, we capture 2 weeks of raw TTL data at a 40 Gbit/s Internet uplink.
+-1 	For further insight, we actively measure observed hosts and conduct large-scale hitlist-based measurements, which yields three complementary data sets for IPv4 and IPv6.
+-1 	A majority (69% IPv4; 81% IPv6) of passively observed multi-packet hosts exhibit one stable TTL value.
+-1 	Active measurements on unstable hosts yield a stable anchor TTL value for more than 85% of responsive hosts.
+-1 	We develop a structure to further classify unstable hosts taking, for example, temporal stability into account.
+-1 	Correlation of TTL values with BGP data is clear, yet unpredictive.
+-1 	The results indicate that carrier-grade TTL anomaly detection can yield significant insights in the following categories: First, the method can flag anomalies based on TTL observations (yet likely at a difficult false positive/false negative trade-off).
+-1 	Second, the method can establish trust that a packet originates from its acclaimed source.
+
+
+# 140
+### http://arxiv.org/abs/1606.08936v1
+## A Time-constraint Satisfying and Cost-reducing node evaluation metric for Message Routing in Mobile Crowd Sensing Networks
+
+-1 	In mobile crowd sensing networks data forwarding through opportunistic contacts between participants.
+-1 	Data is replicated to encountered participants.
+-1 	For optimizing data delivery ratio and reducing redundant data a lot of data forwarding schemes, which selectively replicate data to encountered participants through node's data forwarding metric are proposed.
+-1 	However most of them neglect a kind of redundant data whose Time-To-Live is expired.
+-1 	For reducing this kind of redundant data we proposed a new method to evaluate node's data forwarding metric, which is used to measure the node's probability of forwarding data to destination within data's constraint time.
+-1 	The method is divided into two parts.
+-1 	The first is evaluating nodes whether have possibility to contact destination within time constraint based on transient cluster.
+-1 	We propose a method to detect node's transient cluster, which is based on node's contact rate.
+-1 	Only node, which has possibility to contact destination, has chances to the second step.
+-1 	It effectively reduces the computational complexity.
+-1 	The second is calculating data forwarding probability of node to destination according to individual ICT (inter contact time) distribution.
+-1 	Evaluation results show that our proposed transient cluster detection method is more simple and quick.
+-1 	And from two aspects of data delivery ratio and network overhead our approach outperforms other existing data forwarding approach.
+
+
+# 141
+### http://arxiv.org/abs/0809.1061v1
+## A Novel Proportional Fairness Criterion for Throughput Allocation in Multirate IEEE 802.11
+
+-1 	This paper focuses on multirate IEEE 802.
+-1 	11 Wireless LAN employing the mandatory Distributed Coordination Function (DCF) option.
+-1 	Its aim is threefold.
+-1 	Upon starting from the multi-dimensional Markovian state transition model proposed by Malone \textit{et.
+-1 	al.}
+-1 	for characterizing the behavior of the IEEE 802.
+-1 	11 protocol at the Medium Access Control layer, it presents an extension accounting for packet transmission failures due to channel errors.
+-1 	Second, it establishes the conditions under which a network constituted by $N$ stations, each station transmitting with its own bit rate, $R^{(s)}_d$, and packet rate, $\lambda_s$, can be assumed loaded.
+-1 	Finally, it proposes a modified Proportional Fairness (PF) criterion, suitable for mitigating the \textit{rate anomaly} problem of multirate loaded IEEE 802.
+-1 	11 Wireless LANs, employing the mandatory DCF option.
+-1 	Compared to the widely adopted assumption of saturated network, the proposed fairness criterion can be applied to general loaded networks.
+-1 	The throughput allocation resulting from the proposed algorithm is able to greatly increase the aggregate throughput of the DCF, while ensuring fairness levels among the stations of the same order as the ones guaranteed by the classical PF criterion.
+-1 	Simulation results are presented for some sample scenarios, confirming the effectiveness of the proposed criterion for optimized throughput allocation.
+
+
+# 142
+### http://arxiv.org/abs/1002.1689v1
+## Saturation Throughput Analysis of IEEE 802.11b Wireless Local Area Networks under High Interference Considering Capture Effects
+
+-1 	Distributed contention based Medium Access Control (MAC) protocols are the fundamental components for IEEE 802.
+-1 	11 based Wireless Local Area Networks (WLANs).
+-1 	Contention windows (CW) change dynamically to adapt to the current contention level, Upon each packet collision, a station doubles its CW to reduce further collision of packets.
+-1 	IEEE 802.
+-1 	11 Distributed Coordination Function (DCF) suffers from a common problem in erroneous channel.
+-1 	They cannot distinguish noise lost packets from collision lost packets.
+-1 	In both situations a station does not receive its ACK and doubles the CW to reduce further packet collisions.
+-1 	This increases backoff overhead unnecessarily in addition to the noise lost packets, reduces the throughput significantly.
+-1 	Furthermore, the aggregate throughput of a practical WLAN strongly depends on the channel conditions.
+-1 	In real radio environment, the received signal power at the access point from a station is subjected to deterministic path loss, shadowing and fast multipath fading.
+-1 	In this paper, we propose a new saturation throughput analysis for IEEE 802.
+-1 	11 DCF considering erroneous channel and capture effects.
+-1 	To alleviate the low performance of IEEE 802.
+-1 	11 DCF, we introduce a mechanism that greatly outperforms under noisy environment with low network traffic and compare their performances to the existing standards.
+-1 	We extend the multidimensional Markov chain model initially proposed by Bianchi(3) to characterize the behavior of DCF in order to account both real channel conditions and capture effects, especially in a high interference radio environment.
+
+
+# 143
+### http://arxiv.org/abs/1002.1834v1
+## AROMA: Automatic Generation of Radio Maps for Localization Systems
+
+-1 	WLAN localization has become an active research field recently.
+-1 	Due to the wide WLAN deployment, WLAN localization provides ubiquitous coverage and adds to the value of the wireless network by providing the location of its users without using any additional hardware.
+-1 	However, WLAN localization systems usually require constructing a radio map, which is a major barrier of WLAN localization systems' deployment.
+-1 	The radio map stores information about the signal strength from different signal strength streams at selected locations in the site of interest.
+-1 	Typical construction of a radio map involves measurements and calibrations making it a tedious and time-consuming operation.
+-1 	In this paper, we present the AROMA system that automatically constructs accurate active and passive radio maps for both device-based and device-free WLAN localization systems.
+-1 	AROMA has three main goals: high accuracy, low computational requirements, and minimum user overhead.
+-1 	To achieve high accuracy, AROMA uses 3D ray tracing enhanced with the uniform theory of diffraction (UTD) to model the electric field behavior and the human shadowing effect.
+-1 	AROMA also automates a number of routine tasks, such as importing building models and automatic sampling of the area of interest, to reduce the user's overhead.
+-1 	Finally, AROMA uses a number of optimization techniques to reduce the computational requirements.
+-1 	We present our system architecture and describe the details of its different components that allow AROMA to achieve its goals.
+-1 	We evaluate AROMA in two different testbeds.
+-1 	Our experiments show that the predicted signal strength differs from the measurements by a maximum average absolute error of 3.
+-1 	18 dBm achieving a maximum localization error of 2.
+-1 	44m for both the device-based and device-free cases.
+
+
+# 144
+### http://arxiv.org/abs/1002.1954v1
+## High Throughput of WiMAX MIMO OFDM Including Adaptive Modulation and Coding
+
+-1 	WiMAX technology is based on the IEEE 802.
+-1 	16 specification of which IEEE 802.
+-1 	16-2004 and 802.
+-1 	16e amendment are Physical (PHY) layer specifications.
+-1 	IEEE 802.
+-1 	16-2004 currently supports several multiple-antenna options including Space-Time Codes (STC), Multiple-Input Multiple-Output (MIMO) antenna systems and Adaptive Antenna Systems (AAS).
+-1 	The most recent WiMAX standard (802.
+-1 	16e) supports broadband applications to mobile terminals and laptops.
+-1 	Using Adaptive Modulation and Coding (AMC) we analyze the performance of OFDM physical layer in WiMAX based on the simulation results of Bit Error Rate (BER), and data throughput.
+-1 	The performance analysis of OFDM PHY is done.
+-1 	In this paper, an extension to the basic SISO mode, a number of 2 by 2 MIMO extensions are analysed under different combinations of digital modulation (QPSK, 16QAM and 64QAM) and Convolutional Code (CC) with half, two-third and three quarter rated codes.
+-1 	The intent of this paper is to provide an idea of the benefits of multiple antenna systems over single antenna systems in WiMAX type deployments.
+
+
+# 145
+### http://arxiv.org/abs/1002.2403v1
+## Impact of Random Loss on TCP Performance in Mobile Ad hoc Networks (IEEE 802.11), A Simulation-Based Analysis
+
+-1 	Initially TCP was designed with the notion in mind that wired networks are generally reliable and any segment loss in a transmission is due to congestion in the network rather than an unreliable medium (The assumptions is that the packet loss caused by damage is much less than 1 percent) .
+-1 	This notion doesnt hold in wireless parts of the network.
+-1 	Wireless links are highly unreliable and they lose segments all the time due to a number of factors.
+-1 	Very few papers are available which uses TCP for MANET.
+-1 	In this paper, an attempt have been made to justify the use of TCP variants (Tahoe and Reno) for loss of packet due to random noise introduces in the MANET.
+-1 	For the present analysis the simulation has been carried out for TCP variants (Tahoe and Reno) by introduces 0, 10, 20 and 30 percent noise.
+-1 	The comparison of TCP variants is made by running simulation for 0, 10, 20 and 30 percent of data packet loss due to noise in the transmission link and the effect of throughput and congestion window has been examined.
+-1 	During the simulation we have observed that throughput has been decreased when a drop of multiple segments happens, further we have observed in the case of TCP variant (Reno) throughput is better at 1 percent (Figure 5) which implies a network with short burst of error and low BER, causing only one segment to be lost.
+-1 	When multiple segments are lost due to error prone nature of link, Tahoe perform better than Reno (Figure 13), that gives a significant saving of time (64.
+-1 	28 percent) in comparison with Reno (Table 4).
+-1 	Several simulations have been run with ns 2 simulator in order to acquire a better understanding of these TCP variants and the way they perform their function.
+-1 	We conclude with a discussion of whether these TCP versions can be used in Mobile Ad hoc Network.
+
+
+# 146
+### http://arxiv.org/abs/1002.3084v2
+## Channel Fragmentation in Dynamic Spectrum Access Systems - a Theoretical Study
+
+-1 	Dynamic Spectrum Access systems exploit temporarily available spectrum (`white spaces') and can spread transmissions over a number of non-contiguous sub-channels.
+-1 	Such methods are highly beneficial in terms of spectrum utilization.
+-1 	However, excessive fragmentation degrades performance and hence off-sets the benefits.
+-1 	Thus, there is a need to study these processes so as to determine how to ensure acceptable levels of fragmentation.
+-1 	Hence, we present experimental and analytical results derived from a mathematical model.
+-1 	We model a system operating at capacity serving requests for bandwidth by assigning a collection of gaps (sub-channels) with no limitations on the fragment size.
+-1 	Our main theoretical result shows that even if fragments can be arbitrarily small, the system does not degrade with time.
+-1 	Namely, the average total number of fragments remains bounded.
+-1 	Within the very difficult class of dynamic fragmentation models (including models of storage fragmentation), this result appears to be the first of its kind.
+-1 	Extensive experimental results describe behavior, at times unexpected, of fragmentation under different algorithms.
+-1 	Our model also applies to dynamic linked-list storage allocation, and provides a novel analysis in that domain.
+-1 	We prove that, interestingly, the 50% rule of the classical (non-fragmented) allocation model carries over to our model.
+-1 	Overall, the paper provides insights into the potential behavior of practical fragmentation algorithms.
+
+
+# 147
+### http://arxiv.org/abs/1002.3328v1
+## Error Performance Analysis to Increase Capacity of A Cellular System Using SDMA
+
+-1 	One of the biggest drawbacks of the wireless environment is the limited bandwidth.
+-1 	However, the users sharing this limited bandwidth have been increasing considerably.
+-1 	Space Division Multiple Access (SDMA) is a new technology by which the capacity of existing mobile communication systems can economically be increased.
+-1 	This paper has been presented how the capacity can be enhanced by using SDMA with smart antennas in mobile communications system.
+-1 	Based on Adaptive Antenna Array (AAA) technology the spatial dimension of the existing system is exploited by means of forming independent radio beams in each of the original channels.
+-1 	This paper analyses the comparison of average Bit Error Rate (BER) of SDMA and CDMA technique and the different ways in which SDMA can be introduced to increase the capacity of a cellular system.
+-1 	The probability of error is found for a standard omni directional base station antenna, and another set of curves is found for flat top beam having a directivity of 5.
+-1 	1dB.
+-1 	It is assumed that k separate flat top beams can be formed by base station and pointed each of the k users within the cell of interest.
+-1 	Noticing that for an average probability of error greater than 0.
+-1 	1 in a propagation path loss environment of n=4, the flat top beam will support 200 users, whereas the omni-directional antenna will support only 50 users.
+-1 	This increase the number of user is roughly equal to the directivity offered by the flat top beam system, and illustrates the promise SDMA offers for improving capacity in wireless system.
+-1 	Here multipath fading is not considered.
+
+
+# 148
+### http://arxiv.org/abs/1002.4833v1
+## Analytical Evaluation of Unfairness Problem in Wireless LANs
+
+-1 	The number of users using wireless Local Area Network is increasing exponentially and their behavior is changing day after day.
+-1 	Nowadays, users of wireless LAN are using huge amount of bandwidth because of the explosive growth of some services and applications such as video sharing.
+-1 	This situation imposes massive pressure on the wireless LAN performance especially in term of fairness among wireless stations.
+-1 	The limited resources are not distributed fairly in saturated conditions.
+-1 	The most important resource is the access point buffer space.
+-1 	This importance is a result of access point being the bottleneck between two different types of networks.
+-1 	These two types are wired network with relatively huge bandwidth and wireless network with much smaller bandwidth.
+-1 	Also the unfairness problem is keep getting worse because of the greedy nature Transmission Control Protocol (TCP).
+-1 	In this paper, we conduct a comprehensive study on wireless LAN dynamics and proposed a new mathematical model that describes the performance and effects of its behavior.
+-1 	We validate the proposed model by using the simulation technique.
+-1 	The proposed model was able to produce very good approximation in most of the cases.
+-1 	It also gave us a great insight into the effective variables in the wireless LAN behavior and what are the dimensions of the unfairness problem.
+
+
+# 149
+### http://arxiv.org/abs/1009.1121v1
+## Analyzing Web 2.0 Integration with Next Generation Networks for Services Rendering
+
+-1 	The Next Generation Networks (NGN) aims to integrate for IP-based telecom infrastructures and provide most advance & high speed emerging value added services.
+-1 	NGN capable to provide higher innovative services, these services will able to integrate communication and Web service into a single platform.
+-1 	IP Multimedia Subsystem, a NGN leading technology, enables a variety of NGN-compliant communications services to interoperate while being accessed through different kinds of access networks, preferably broadband.
+-1 	IMS-NGN services essential by both consumer and corporate users are by now used to access services, even communications services through the web and web-based communities and social networks, It is key for success of IMS-based services to be provided with efficient web access, so users can benefit from those new services by using web-based applications and user interfaces, not only NGN-IMS User Equipments and SIP protocol.
+-1 	Many Service are under planning which provided only under convergence of IMS & Web 2.
+-1 	0.
+-1 	Convergence between Web 2.
+-1 	0 and NGN-IMS creates and serves new invented innovative, entertainment and information appealing as well as user centric services and applications.
+-1 	These services merge features from WWW and Communication worlds.
+-1 	On the one hand, interactivity, ubiquity, social orientation, user participation and content generation, etc.
+-1 	are relevant characteristics coming from Web 2.
+-1 	0 services.
+-1 	Parallel IMS enables services including multimedia telephony, media sharing (video-audio), instant messaging with presence and context, online directory, etc.
+-1 	all of them applicable to mobile, fixed or convergent telecom networks.
+-1 	With this paper, this paper brings out the benefits of adopting web 2.
+-1 	0 technologies for telecom services.
+-1 	As the services are today mainly driven by the user's needs, and proposed the concept of unique customizable service interface.
+
+
+# 150
+### http://arxiv.org/abs/1009.1122v1
+## Design & Deploy Web 2.0 enable services over Next Generation Network Platform
+
+-1 	The Next Generation Networks (NGN) aims to integrate for IP-based telecom infrastructures and provide most advance & high speed emerging value added services.
+-1 	NGN capable to provide higher innovative services, these services will able to integrate communication and Web service into a single platform.
+-1 	IP Multimedia Subsystem, a NGN leading technology, enables a variety of NGN-compliant communications services to interoperate while being accessed through different kinds of access networks, preferably broadband.
+-1 	IMS-NGN services essential by both consumer and corporate users are by now used to access services, even communications services through the web and web-based communities and social networks, It is key for success of IMS-based services to be provided with efficient web access, so users can benefit from those new services by using web-based applications and user interfaces, not only NGN-IMS User Equipments and SIP protocol.
+-1 	Many Service are under planning which provided only under convergence of IMS & Web 2.
+-1 	0.
+-1 	Convergence between Web 2.
+-1 	0 and NGN-IMS creates and serves new invented innovative, entertainment and information appealing as well as user centric services and applications.
+-1 	These services merge features from WWW and Communication worlds.
+-1 	On the one hand, interactivity, ubiquity, social orientation, user participation and content generation, etc.
+-1 	are relevant characteristics coming from Web 2.
+-1 	0 services.
+-1 	Parallel IMS enables services including multimedia telephony, media sharing (video-audio), instant messaging with presence and context, online directory, etc.
+-1 	all of them applicable to mobile, fixed or convergent telecom networks.
+-1 	With this paper, this paper brings out the benefits of adopting web 2.
+-1 	0 technologies for telecom services.
+-1 	As the services are today mainly driven by the user's needs, and proposed the concept of unique customizable service interface.

@@ -1,0 +1,282 @@
+
+
+# 91
+### http://arxiv.org/abs/1210.5917v1
+## Dynamic Link adaptation Based on Coexistence-Fingerprint Detection for WSN
+
+-1 	Operating in the ISM band, the wireless sensor network (WSN) risks being interfered by other concurrent networks.
+-1 	Our concerns are the technologies that do not perform listening before transmission such as Bluetooth, and the ones that do not detect other technologies due to their channel sensing techniques like WIFI.
+-1 	To overcome this issue a WSN node should be able to identify the presence of such technologies.
+-1 	This will allow deducing the characteristics of the generated traffic of these technologies, and thus the behavior of the channel can be predicted.
+-1 	These predictions would help to trigger adequate reactions as to avoid or synchronize with the concurrent net- works.
+-1 	Many works exist on link adaptation, but they concern blind adaptations which are unintelligent and solve momentarily the problem that may reappear over time.
+-1 	In this paper, we perform several experiments on a real testbed to categorize the model of the bit errors in corrupted received packets.
+-1 	These experiments are performed under different conditions of channel noise and interferences.
+-1 	This allows us to identify each corruption pattern as a fingerprint for the interfering technology.
+-1 	Then we propose the mechanism FIM to identify on the fly the source of the corruption.
+-1 	With an implementation on "Tmote Sky" motes using Tinyos1.
+-1 	x, We demonstrate the use of FIM for link adaptation in a coexistence environment.
+-1 	Our mechanism led to throughput improvements of 87%-100% depending on the transmission rate and channel quality.
+
+
+# 92
+### http://arxiv.org/abs/1211.1782v1
+## Resource Allocation in Mobile WiMAX Network: An Optimal Approach
+
+-1 	In the last few years there has been significant growth in the area of wireless communication.
+-1 	IEEE 802.
+-1 	16/WiMAX is the network which is designed for providing high speed wide area broadband wireless access; WiMAX is an emerging wireless technology for creating multi-hop Mesh network.
+-1 	Future generation networks will be characterized by variable and high data rates, Quality of Services (QoS), seamless mobility both within a network and between networks of different technologies and service providers.
+-1 	A technology is developed to accomplish these necessities is regular by IEEE, is 802.
+-1 	16, also called as WiMAX (Worldwide Interoperability for Microwave Access).
+-1 	This architecture aims to apply Long range connectivity, High data rates, High security, Low power utilization and Excellent Quality of Services and squat deployment costs to a wireless access technology on a metropolitan level.
+-1 	In this paper we have observed the performance analysis of location based resource allocation for WiMAX and WLAN-WiMAX client and in second phase we observed the rate-adaptive algorithms.
+-1 	We know that base station (BS) is observed the ranging first for all subscribers then established the link between them and in final phase they will allocate the resource with Subcarriers allocation according to the demand (UL) i.e. video, voice and data application.
+-1 	We propose linear approach, Active-Set optimization and Genetic Algorithm for Resource Allocation in downlink Mobile WiMAX networks.
+-1 	Purpose of proposed algorithms is to optimize total throughput.
+-1 	Simulation results show that Genetic Algorithm and Active-Set algorithm performs better than previous methods in terms of higher capacities but GA have high complexity then active set.
+
+
+# 93
+### http://arxiv.org/abs/1211.4294v1
+## Effect of AWGN & Fading (Raleigh & Rician) channels on BER performance of a WiMAX communication System
+
+-1 	The emergence of WIMAX has attracted significant interests from all fields of wireless communications including students, researchers, system engineers and operators.
+-1 	The WIMAX can also be considered to be the main technology in the implementation of other networks like wireless sensor networks.
+-1 	Developing an understanding of the WIMAX system can be achieved by looking at the model of the WIMAX system.
+-1 	This paper discusses the model building of the WIMAX physical layer using computer MATLAB 7.
+-1 	5 versions.
+-1 	This model is a useful tool for BER (Bit error rate) performance evaluation for the real data communication by the WIMAX physical layer under different communication channels AWGN and fading channel (Rayleigh and Rician), different channel encoding rates and digital modulation schemes which is described in this paper.
+-1 	This paper investigates the effect of communication channels of IEEE 802.
+-1 	16 OFDM based WIMAX Physical Layer.
+-1 	The performance measures we presented in this paper are: the bit error rate (BER) versus the ratio of bit energy to noise power spectral density (Eb/No).
+-1 	The system parameters used in this paper are based on IEEE 802.
+-1 	16 standards.
+-1 	The simulation model built for this research work, demonstrates that AWGN channel has better performance than Rayleigh and Rician fading channels.
+-1 	Synthetic data is used to simulate this research work.
+
+
+# 94
+### http://arxiv.org/abs/1211.5720v1
+## Cognitive Radio Transmission Strategies for Primary Markovian Channels
+
+-1 	A fundamental problem in cognitive radio systems is that the cognitive radio is ignorant of the primary channel state and, hence, of the amount of actual harm it inflicts on the primary license holder.
+-1 	Sensing the primary transmitter does not help in this regard.
+-1 	To tackle this issue, we assume in this paper that the cognitive user can eavesdrop on the ACK/NACK Automatic Repeat reQuest (ARQ) fed back from the primary receiver to the primary transmitter.
+-1 	Assuming a primary channel state that follows a Markov chain, this feedback gives the cognitive radio an indication of the primary link quality.
+-1 	Based on the ACK/NACK received, we devise optimal transmission strategies for the cognitive radio so as to maximize a weighted sum of primary and secondary throughput.
+-1 	The actual weight used during network operation is determined by the degree of protection afforded to the primary link.
+-1 	We begin by formulating the problem for a channel with a general number of states.
+-1 	We then study a two-state model where we characterize a scheme that spans the boundary of the primary-secondary rate region.
+-1 	Moreover, we study a three-state model where we derive the optimal strategy using dynamic programming.
+-1 	We also extend our two-state model to a two-channel case, where the secondary user can decide to transmit on a particular channel or not to transmit at all.
+-1 	We provide numerical results for our optimal strategies and compare them with simple greedy algorithms for a range of primary channel parameters.
+-1 	Finally, we investigate the case where some of the parameters are unknown and are learned using hidden Markov models (HMM).
+
+
+# 95
+### http://arxiv.org/abs/1211.7356v1
+## WiGig and IEEE 802.11ad - For multi-gigabyte-per-second WPAN and WLAN
+
+-1 	The Wireless Gigabit Alliance (WiGig) and IEEE 802.
+-1 	11ad are developing a multigigabit wireless personal and local area network (WPAN/WLAN) specification in the 60 GHz millimeter wave band.
+-1 	Chipset manufacturers, original equipment manufacturers (OEMs), and telecom companies are also assisting in this development.
+-1 	60 GHz millimeter wave transmission will scale the speed of WLANs and WPANs to 6.
+-1 	75 Gbit/s over distances less than 10 meters.
+-1 	This technology is the first of its kind and will eliminate the need for cable around personal computers, docking stations, and other consumer electronic devices.
+-1 	High-definition multimedia interface (HDMI), display port, USB 3.
+-1 	0, and peripheral component interconnect express (PCIe) 3.
+-1 	0 cables will all be eliminated.
+-1 	Fast downloads and uploads, wireless sync, and multi-gigabit-per-second WLANs will be possible over shorter distances.
+-1 	60 GHz millimeter wave supports fast session transfer (FST) protocol, which makes it backward compatible with 5 GHz or 2.
+-1 	4 GHz WLAN so that end users experience the same range as in today's WLANs.
+-1 	IEEE 802.
+-1 	11ad specifies the physical (PHY) sublayer and medium access control (MAC) sublayer of the protocol stack.
+-1 	The MAC protocol is based on time-division multiple access (TDMA), and the PHY layer uses single carrier (SC) and orthogonal frequency division multiplexing (OFDM) to simultaneously enable low-power, high-performance applications.
+
+
+# 96
+### http://arxiv.org/abs/1301.1294v2
+## FAST CLOUD: Pushing the Envelope on Delay Performance of Cloud Storage with Coding
+
+-1 	Our paper presents solutions that can significantly improve the delay performance of putting and retrieving data in and out of cloud storage.
+-1 	We first focus on measuring the delay performance of a very popular cloud storage service Amazon S3.
+-1 	We establish that there is significant randomness in service times for reading and writing small and medium size objects when assigned distinct keys.
+-1 	We further demonstrate that using erasure coding, parallel connections to storage cloud and limited chunking (i.e., dividing the object into a few smaller objects) together pushes the envelope on service time distributions significantly (e.g., 76%, 80%, and 85% reductions in mean, 90th, and 99th percentiles for 2 Mbyte files) at the expense of additional storage (e.g., 1.
+-1 	75x).
+-1 	However, chunking and erasure coding increase the load and hence the queuing delays while reducing the supportable rate region in number of requests per second per node.
+-1 	Thus, in the second part of our paper we focus on analyzing the delay performance when chunking, FEC, and parallel connections are used together.
+-1 	Based on this analysis, we develop load adaptive algorithms that can pick the best code rate on a per request basis by using off-line computed queue backlog thresholds.
+-1 	The solutions work with homogeneous services with fixed object sizes, chunk sizes, operation type (e.g., read or write) as well as heterogeneous services with mixture of object sizes, chunk sizes, and operation types.
+-1 	We also present a simple greedy solution that opportunistically uses idle connections and picks the erasure coding rate accordingly on the fly.
+-1 	Both backlog and greedy solutions support the full rate region and provide best mean delay performance when compared to the best fixed coding rate policy.
+-1 	Our evaluations show that backlog based solutions achieve better delay performance at higher percentile values than the greedy solution.
+
+
+# 97
+### http://arxiv.org/abs/1301.7245v1
+## Femtocell Architectures with Spectrum Sharing for Cellular Radio Networks
+
+-1 	Femtocells are an emerging technology aimed at providing gains to both network operators and end-users.
+-1 	These gains come at a cost of increased interference, specifically the cross network interference between the macrocell and femtocell networks.
+-1 	This interference is one of the main performance limiting factors in allowing an underlaid femtocell network to share the spectrum with the cellular network.
+-1 	To manage this interference, we first propose a femtocell architecture that orthog- onally partitions the network bandwidth between the macrocell and femtocell networks.
+-1 	This scheme eliminates the cross network interference thus giving the femtocells more freedom over their use of the spectrum.
+-1 	Specifically, no interference constraint is imposed by the cellular network allowing femto users to transmit at a constant power on randomly selected channels.
+-1 	Although simple, this scheme is enough to give gains up to 200% in sum rate.
+-1 	We then propose a second architecture where both networks share the bandwidth simultaneously.
+-1 	A femtocell power control scheme that relies on minimal coordination with the macrocell base station is used in conjunction with an interference sensing channel assignment mechanism.
+-1 	These two schemes together yield sum rate gains up to 200%.
+-1 	We then develop a technique for macro users to join a nearby femtocell and share a common chan- nel with a femtocell user through the use of successive interfer- ence cancellation.
+-1 	By adding this mechanism to the power control and channel assignment schemes, we show sum rate gains over 300% and up to 90% power savings for macrocell users.
+
+
+# 98
+### http://arxiv.org/abs/1303.5365v2
+## Improving Network Efficiency by Removing Energy Holes in WSNs
+
+-1 	Cluster based Wireless Sensor Networks (WSNs) have been widely used for better performance in terms of energy efficiency.
+-1 	Efficient use of energy is challenging task of designing these protocols.
+-1 	Energy holedare created due to quickly drain the energy of a few nodes due to non-uniform distribution in the network.
+-1 	Normally, energy holes make the data routing failure when nodes transmit data back to the base station.
+-1 	We proposedEnergy-efficient HOleRemoving Mechanism (E-HORM) technique to remove energy holes.
+-1 	In this technique, we use sleep and awake mechanism for sensor nodes to save energy.
+-1 	This approach finds the maximum distance node to calculate the maximum energy for data transmission.
+-1 	We considered it as a threshold energy Eth.
+-1 	Every node first checks its energy level for data transmission.
+-1 	If the energy level is less than Eth, it cannot transmit data.
+-1 	We also explain mathematically the energy consumption and average energy saving of sensor nodes in each round.
+-1 	Extensive simulations showed that when use this approach for WSNs significantly helps to extend the network lifetime and stability period.
+
+
+# 99
+### http://arxiv.org/abs/1306.1651v1
+## Accurate Indoor Localization Using Acoustic Direction Finding via Smart Phones
+
+-1 	We propose and implement a novel indoor localization scheme, Swadloon, built upon an accurate acoustic direction finding.
+-1 	Swadloon leverages sensors of the smartphone without the requirement of any specialized devices.
+-1 	The scheme Swadloon does not rely on any fingerprints and is very easy to use: a user only needs to shake the phone for a short duration before walking and localization.
+-1 	Our Swadloon design exploits a key observation: the relative shift and velocity of the phone-shaking movement corresponds to the subtle phase and frequency shift of the Doppler effects experienced in the received acoustic signal by the phone.
+-1 	A novel method is designed to derive the direction from the phone to the acoustic source by combining the velocity calculated from the subtle Doppler shift with the one from the inertial sensors of the phone.
+-1 	Then a real-time precise localization and tracking is enabled by using a few anchor speakers with known locations.
+-1 	Major challenges in implementing Swadloon are to measure the frequency shift precisely and to estimate the shaking velocity accurately when the speed of phone-shaking is low and changes arbitrarily.
+-1 	We propose rigorous methods to address these challenges, then design and deploy Swadloon in several floors of an indoor building each with area about 2000m^2.
+-1 	Our extensive experiments show that the mean error of direction finding is around 2.
+-1 	1 degree when the acoustic source is within the range of 32m.
+-1 	For indoor localization, the 90-percentile errors are under 0.
+-1 	92m, while the maximum error is 1.
+-1 	73m and the mean is about 0.
+-1 	5m.
+-1 	For real-time tracking, the errors are within 0.
+-1 	4m for walks of 51m.
+
+
+# 100
+### http://arxiv.org/abs/1306.6428v1
+## Internet Control Plane Event Identification using Model Based Change Point Detection Techniques
+
+-1 	In the raise of many global organizations deploying their data centers and content services in India, the prefix reachability performance study from global destinations garners our attention.
+-1 	The events such as failures and attacks occurring in the Internet topology have impact on Autonomous System (AS) paths announced in the control plane and reachability of prefixes from spatially distributed ASes.
+-1 	As a consequence the customer reachability to the services in terms of increased latency and outages for a short or long time are experienced.
+-1 	The challenge in control plane event detection is when the data plane traffic is able to reach the intended destinations correctly.
+-1 	However detection of such events are crucial for the operations of content and data center industries.
+-1 	By monitoring the spatially distributed routing table features like AS path length distributions, spatial prefix reachability distribution and covering to overlap route ratio, we can detect the control plane events.
+-1 	In our work, we study prefix AS paths from the publicly available route-view data and analyze the global reachability as well as reachability to Indian AS topology.
+-1 	To capture the spatial events in a single temporal pattern, we propose a counting based measure using prefixes announced by x % of spatial peers.
+-1 	Employing statistical characteristics change point detection and temporal aberration algorithm on the time series of the proposed measure, we identify the occurrence of long and stochastic control plane events.
+-1 	The impact and duration of the events are also quantified.
+-1 	We validate the mechanisms over the proposed measure using the SEA-Me-We4 cable cut event manifestations in the control plane of Indian AS topology.
+-1 	The cable cut events occurred on 6th June 2012 (long term event) and 17th April 2012 (stochastic event) are considered for validation.
+
+
+# 101
+### http://arxiv.org/abs/1307.0084v2
+## Catch a Breath: Non-invasive Respiration Rate Monitoring via Wireless Communication
+
+-1 	Radio signals are sensitive to changes in the environment, which for example is reflected on the received signal strength (RSS) measurements of low-cost wireless devices.
+-1 	This information has been used effectively in the past years e.g. in device-free localization and tracking.
+-1 	Recent literature has also shown that the fading information of the wireless channel can be exploited to estimate the breathing rate of a person in a non-invasive manner; a research topic we address in this paper.
+-1 	To the best of our knowledge, we demonstrate for the first time that the respiration rate of a person can be accurately estimated using only a single IEEE 802.
+-1 	15.
+-1 	4 compliant TX-RX pair.
+-1 	We exploit channel diversity, low-jitter periodic communication, and oversampling to enhance the breathing estimates, and make use of a decimation filter to decrease the computational requirements of breathing estimation.
+-1 	In addition, we develop a hidden Markov model (HMM) to identify the time instances when breathing estimation is not possible, i.e., during times when other motion than breathing occurs.
+-1 	We experimentally validate the accuracy of the system and the results suggest that the respiration rate can be estimated with a mean error of 0.
+-1 	03 breaths per minute, the lowest breathing rate error reported to date using IEEE 802.
+-1 	15.
+-1 	4 compliant transceivers.
+-1 	We also demonstrate that the breathing of two people can be monitored simultaneously, a result not reported in earlier literature.
+
+
+# 102
+### http://arxiv.org/abs/1307.3402v1
+## Improving Data Security in Infrastructure Networks Based on Unipath Routing
+
+-1 	An infrastructure network is a self-organizing network which uses Access Point (AP) of wireless links that connecting one node with another.
+-1 	These nodes can communicate without using ad hoc, instead these nodes form an arbitrary topology (BSS/ESS) in which these nodes play the role of routers.
+-1 	Though the efficiency of Infrastructure networks is high, they are highly vulnerable to security attacks.
+-1 	Detecting/Preventing these attacks over the network is highly challenging task.
+-1 	Many solutions are proposed to provide authentication, confidentiality, availability, secure routing and intrusion avoidance in infrastructure networks.
+-1 	Providing security in such dynamically changing networks is a hard task.
+-1 	Characteristic of infrastructure network should also be taken into consideration in order to design efficient solutions.
+-1 	In this study, we focus on efficiently increasing the flow transmission confidentiality in infrastructure networks based on multi-path routing.
+-1 	In order to increase confidentiality of transmitted data, we take advantage of the existence of multiple paths between nodes in an infrastructure network with the help of Access Point.
+-1 	In this approach the original data is split into package and are forwarded through access point.
+-1 	The encrypted packets are then forwarded in different disjoint paths that exist between sender and receiver.
+-1 	Even if an attacker succeeds to obtain one or more transmitted packets, the probability of reconstructing the original message is very low.
+
+
+# 103
+### http://arxiv.org/abs/1307.6349v1
+## Communicating Is Crowdsourcing: Wi-Fi Indoor Localization with CSI-based Speed Estimation
+
+-1 	Numerous indoor localization techniques have been proposed recently to meet the intensive demand for location based service, and Wi-Fi fingerprint-based approaches are the most popular and inexpensive solutions.
+-1 	Among them, one of the main trends is to incorporate the built-in sensors of smartphone and to exploit crowdsourcing potentials.
+-1 	However the noisy built-in sensors and multi-tasking limitation of underline OS often hinder the effectiveness of these schemes.
+-1 	In this work, we propose a passive crowdsourcing CSI-based indoor localization scheme, C2 IL.
+-1 	Our scheme C2 IL only requires the locating-device (e.g., a phone) to have a 802.
+-1 	11n wireless connection, and it does not rely on inertial sensors only existing in some smartphones.
+-1 	C2 IL is built upon our innovative method to accurately estimate the moving distance purely based on 802.
+-1 	11n Channel State Information (CSI).
+-1 	Our extensive evaluations show that the moving distance estimation error of our scheme is within 3% of the actual moving distance regardless of varying speeds and environment.
+-1 	Relying on the accurate moving distance estimation as constraints, we are able to construct a more accurate mapping between RSS fingerprints and location.
+-1 	To address the challenges of collecting fingerprints, a crowdsourcing- based scheme is designed to gradually establish the mapping and populate the fingerprints.
+-1 	In C2 IL, we design a trajectory clustering-based localization algorithm to provide precise real-time indoor localization and tracking.
+-1 	We developed and deployed a practical working system of C2 IL in a large office environment.
+-1 	Extensive evaluation results indicate that our scheme C2 IL provides accurate localization with error 2m at 80% at very complex indoor environment with minimal overhead.
+
+
+# 104
+### http://arxiv.org/abs/1307.7111v1
+## LPCH and UDLPCH: Location-aware Routing Techniques in WSNs
+
+-1 	Wireless sensor nodes along with Base Station (BS) constitute a Wireless Sensor Network (WSN).
+-1 	Nodes comprise of tiny power battery.
+-1 	Nodes sense the data and send it to BS.
+-1 	WSNs need protocol for efficient energy consumption of the network.
+-1 	In direct transmission and minimum transmission energy routing protocols, energy consumption is not well distributed.
+-1 	However, LEACH (Low-Energy Adaptive Clustering Hierarchy) is a clustering protocol; randomly selects the Cluster Heads (CHs) in each round.
+-1 	However, random selection of CHs does not guarantee efficient energy consumption of the network.
+-1 	Therefore, we proposed new clustering techniques in routing protocols, Location-aware Permanent CH (LPCH) and User Defined Location-aware Permanent CH (UDLPCH).
+-1 	In both protocols, network field is physically divided in to two regions, equal number of nodes are randomly deployed in each region.
+-1 	In LPCH, number of CHs are selected by LEACH algorithm in first round.
+-1 	However in UDLPCH, equal and optimum number of CHs are selected in each region, throughout the network life time number of CHs are remain same.
+-1 	Simulation results show that stability period and throughput of LPCH is greater than LEACH, stability period and throughput of UDLPCH is greater than LPCH.
+
+
+# 105
+### http://arxiv.org/abs/1309.2208v1
+## A Novel Methodology to Overcome Routing Misbehavior in MANET using Retaliation Model
+
+-1 	MANET is a cooperative network in which nodes are responsible for forwarding as well as routing.
+-1 	Noncooperation is still a big challenge that certainly degrades the performance and reliability of a MANET.
+-1 	This paper presents a novel methodology to overcome routing misbehavior in MANET using Retaliation Model.
+-1 	In this model node misbehavior is watched and an equivalent misbehavior is given in return.
+-1 	This model employs several parameters such as number of packets forwarded, number of packets received for forwarding, packet forwarding ratio etc.
+-1 	to calculate Grade and Bonus Points.
+-1 	The Grade is used to isolate selfish nodes from the routing paths and the Bonus Points defines the number of packets dropped by an honest node in retaliation over its misconducts.
+-1 	The implementation is done in "GloMoSim" on top of the DSR protocol.
+-1 	We obtained up to 40% packet delivery ratio with a cost of a minimum of 7.
+-1 	5% overhead compared to DSR.
+-1 	To minimize total control traffic overhead we have included the FG Model with our model and it reduces the overhead up to 75%.
+-1 	This model enforces cooperation due to its stricter punishment strategy and justifies its name.

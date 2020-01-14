@@ -1,0 +1,268 @@
+
+
+# 76
+### http://arxiv.org/abs/1203.2167v1
+## Design and Implementation of IEEE 802.15.4 Mac Protocol on FPGA
+
+0 	The IEEE 802.15.4 is a wireless standard introduced for low power, low cost wireless communication with moderate data rates.
+0 	In the next few years, it is expected that Low Rate Wireless Personal Area Networks (LR-WPAN) will be used in a wide variety of embedded applications, including home automation, industrial sensing and control, environmental monitoring and sensing.
+1 	In these applications, numerous embedded devices running on batteries are distributed in an area communicating via wireless radios.
+0 	This work presents a method which can be used for comparing current consumption of wireless data transfer embedded systems.
+0 	This paper implements a small subset of the IEEE 802.15.4 protocol to achieve a point to point communication.
+1 	The implemented protocol uses 802.15.4 MAC compliant data and acknowledgment packets.
+1 	Current consumption is measured while doing one data packet transmission.
+1 	Measurements are compared with existing work.
+1 	IEEE 802.15.4 protocol implementation is done using Verilog language.
+2 	Code implementation is done in such a manner so that it can be ported to any platform with minimal changes.
+2 	It can also be modified to suit any special experimental setup requirements.
+
+
+# 77
+### http://arxiv.org/abs/1203.4841v1
+## Achieving Congestion Diversity in Multi-hop Wireless Mesh Networks
+
+0 	This paper reports on the first systematic study of congestion-aware routing algorithms for wireless mesh networks to achieve an improved end-end delay performance.
+0 	In particular, we compare 802.11 compatible implementations of a set of congestion-aware routing protocols against our implementation of state of the art shortest path routing protocol (SRCR).
+1 	We implement congestion-aware routing algorithms Backpressure (BP), Enhanced-Backpressure (E-BP) adapted from [1], [2] suitably adjusted for 802.11 implementation.
+1 	We then propose and implement Congestion Diversity Protocol (CDP) adapted from [3] recognizing the limitations of BP and E-BP for 802.11-based wireless networks.
+1 	SRCR solely utilizes link qualities, while BP relies on queue differential to route packets.
+1	CDP and E-BP rely on distance metrics which take into account queue backlogs and link qualities in the network.
+1 	E-BP computes its metric by summing the ETX and queue differential, while CDP determines its metric by calculating the least draining time to the destination.
+2 	Our small testbed consisting of twelve 802.11g nodes enables us to empirically compare the performance of congestion-aware routing protocols (BP, E-BP and CDP) against benchmark SRCR.
+2 	For medium to high load UDP traffic, we observe that CDP exhibits significant improvement with respect to both end-end delay and throughput over other protocols with no loss of performance for TCP traffic.
+2 	Backpressure-based routing algorithms (BP and E-BP) show poorer performance for UDP and TCP traffic.
+2 	Finally, we carefully study the effects of the modular approach to congestion-aware routing design in which the MAC layer is left intact
+
+
+# 78
+### http://arxiv.org/abs/1203.5874v2
+## Optimizing Channel Access for Event-Driven Wireless Sensor Networks: Analysis and Enhancements
+
+0 	We study the problem of medium access control in domain of event-driven wireless sensor networks (WSNs).
+0 	In this kind of WSN, sensor nodes send data to sink node only when an event occurs in the monitoring area.
+0 	The nodes in this kind of WSNs encounter correlated traffic as a subset of nodes start sending data by sensing a common event simultaneously.
+0 	We wish to rethink of medium access control (MAC) for this type of traffic characteristics.
+0 	For WSNs, many existing MAC protocols utilize the basic CSMA/CA strategy such as IEEE 802.11 Binary Exponential Backoff (BEB) algorithm to handle the collisions among packets when more than one node need to access the channel.
+1 	We show that this BEB algorithm does not work well without incurring access delay or performance degradation due to increased number of collisions and retransmissions when nodes encounter correlated traffic.
+1 	Based on above observations in mind, We present a Adaptive Random Backoff (ARB) algorithm that is capable of mitigating the impact of correlated traffic and capable of minimizing the chance of collisions.
+1 	ARB is based on minor modifications of BEB.
+1 	We show using numerical analysis that our proposals improve the channel access in terms of latency, throughput, and frame dropping probability as compared with IEEE 802.11 DCF.
+1 	Simulations using NS-2 network simulator are conducted to validate the analytical results.
+
+
+# 79
+### http://arxiv.org/abs/1207.0163v3
+## Optimizing TCP Performance in Multi-AP Residential Broadband Connections via Mini-Slot Access
+
+0 	The high bandwidth demand of Internet applications has recently driven the need of increasing the residential download speed.
+0 	A practical solution to the problem has been proposed aggregating the bandwidth of 802.11 Access Points (APs) backhauls in range via 802.11 connections.
+0 	Since 802.11 devices are usually single-radio, the communication to multiple APs on different radio-channels requires the introduction of a time-division multiple access (TDMA) policy at the client station.
+0 	Current investigation in this area supposes that there is a sufficient number of TCP flows to saturate the Asymmetric Digital Subscriber Line (ADSL) behind the APs.
+0 	However, this may be not guaranteed according to the user traffic pattern.
+0 	As a consequence, a TDMA policy introduces additional delays in the end-to-end transmissions that will cause degradation of the TCP throughput and an under-utilization of the AP backhauls.
+0 	In this paper, we first perform an in-depth experimental analysis with a customized 802.11 driver of how the usage of multi-AP TDMA affects the observed Round-Trip-Time (RTT) of TCP flows.
+0 	Then, we introduce a simple analytical model that accurately predicts the TCP RTT when accessing the wireless medium with a Multi-AP TDMA policy.
+1 	Based on this model, we propose a resource allocation algorithm that runs locally at the station and it greatly reduces the observed TCP RTT with a very low computational cost.
+2 	Our proposed scheme can improve up to 1:5 times the aggregate throughput observed by the station compared to state-of-the-art multi-AP TDMA allocations.
+2 	We also show that the throughput performance of the algorithm is very close to the theoretical upper-bound in key simulation scenarios.
+
+
+# 80
+### http://arxiv.org/abs/1207.4265v1
+## Spot: An accurate and efficient multi-entity device-free WLAN localization system
+
+0 	Device-free (DF) localization in WLANs has been introduced as a value-added service that allows tracking indoor entities that do not carry any devices.
+0 	Previous work in DF WLAN localization focused on the tracking of a single entity due to the intractability of the multi-entity tracking problem whose complexity grows exponentially with the number of humans being tracked.
+0 	In this paper, we introduce Spot as an accurate and efficient system for multi-entity DF detection and tracking.
+0 	Spot is based on a probabilistic energy minimization framework that combines a conditional random field with a Markov model to capture the temporal and spatial relations between the entities' poses.
+1 	A novel cross-calibration technique is introduced to reduce the calibration overhead of multiple entities to linear, regardless of the number of humans being tracked.
+1 	This also helps in increasing the system accuracy.
+1 	We design the energy minimization function with the goal of being efficiently solved in mind.
+1 	We show that the designed function can be mapped to a binary graph-cut problem whose solution has a linear complexity on average and a third order polynomial in the worst case.
+1 	We further employ clustering on the estimated location candidates to reduce outliers and obtain more accurate tracking.
+2 	Experimental evaluation in two typical testbeds, with a side-by-side comparison with the state-of-the-art, shows that Spot can achieve a multi-entity tracking accuracy of less than 1.1m.
+2 	This corresponds to at least 36% enhancement in median distance error over the state-of-the-art DF localization systems, which can only track a single entity.
+2 	In addition, Spot can estimate the number of entities correctly to within one difference error.
+2 	This highlights that Spot achieves its goals of having an accurate and efficient software-only DF tracking solution of multiple entities in indoor environments.
+
+
+# 81
+### http://arxiv.org/abs/1207.5298v4
+## Building Blocks of Physical-layer Network Coding
+
+0 	This paper investigates the fundamental building blocks of physical-layer network coding (PNC).
+0 	Most prior work on PNC focused on its application in a simple two-way-relay channel (TWRC) consisting of three nodes only.
+0 	Studies of the application of PNC in general networks are relatively few.
+1 	This paper is an attempt to fill this gap.
+1 	We put forth two ideas: 1) A general network can be decomposed into small building blocks of PNC, referred to as the PNC atoms, for scheduling of PNC transmissions. 2) We identify nine PNC atoms, with TWRC being one of them.
+2 	Three major results are as follows.
+2 	First, using the decomposition framework, the throughput performance of PNC is shown to be significantly better than those of the traditional multi-hop scheme and the conventional network coding scheme. For example, under heavy traffic volume, PNC can achieve 100% throughput gain relative to the traditional multi-hop scheme.
+2 	Second, PNC decomposition based on a variety of different PNC atoms can yield much better performance than PNC decomposition based on the TWRC atom alone.
+2 	Third, three out of the nine atoms are most important to good performance.
+2 	Specifically, the decomposition based on these three atoms is good enough most of the time, and it is not necessary to use the other six atoms.
+
+
+# 82
+### http://arxiv.org/abs/1207.5736v1
+## Differentiated QoS with Modified C/I Based Scheduling Algorithm
+
+0 	Second-generation (2G) digital cellular systems constitute the majority of cellular communication deployed today.
+0 	A variety of services of 2G systems has increased significantly and this will continue to grow even further in the emerging third-generation (3G) systems.
+0 	Universal Mobile Telecommunication System (UMTS) is a third-generation mobile communications system which uses the Wide-Band Code Division Multiple Access (WCDMA) technique to support a wide variety of services, like speech, video telephony, Internet browsing, etc.
+0 	These services require a wide range of Quality of Service (QoS) requirements.
+0 	QoS is an important issue as the number of multimedia services increases day by day.
+0 	Differentiated QoS methods allow the differentiation of users based on their priority levels and channel conditions so that the network can allocate the bandwidth for a particular request based on the QoS requirements.
+0 	These requirements are controlled by Radio Resource Management (RRM) mechanisms.
+1 	In this paper we have proposed two RRM algorithms which are modification to the existing scheduling algorithms.
+1 	One is Prioritized C/I scheduling, which takes the priorities into consideration, and this algorithm serves the user with highest priority.
+1 	Other algorithm is Modified Inverse C/I scheduling, which takes channel conditions into consideration and serves the users in degraded conditions, thereby improving QoS.
+1 	The performance evaluation of two algorithms is done with EURANE extensions for NS-2.
+2 	Simulation results shows the improvement in QoS for the users who are at equidistance from Base Station (BS) but requesting for different services by implementing Prioritized C/I scheduling and also for the users who are in degraded conditions by implementing Modified Inverse C/I scheduling when compared to Max C/I and Inverse C/I scheduling algorithm respectively.
+
+
+# 83
+### http://arxiv.org/abs/1208.0384v1
+## Global Adaptive Routing Algorithm Without Additional Congestion Propagation Network
+
+0 	Adaptive routing algorithm has been employed in multichip interconnection networks in order to improve network performance.
+0 	Does a algorithm use local or global network state?
+0 	This is the key question in adaptive routing.
+0 	In many traffic patterns, the ignorance of global network state, leading to routing selection based only on local congestion information, tends to violate global load balance.
+0 	To attack the load balance issue in adapting routing, some global adaptive routing algorithms introduce a congestion propagation network to obtain global network status information, such as Regional Congestion Awareness (RCA) and Destination Based Adaptive Routing (DBAR).
+0 	However, the congestion propagation network leads to additional power and area consumption which cannot be ignored.
+0 	From another view, if we just increase the bandwidth between neighbor nodes with the wires used to build the congestion propagation network, the network performance could be improved as well.
+0 	In this paper, we propose a global adaptive routing algorithm without employing the additional congestion propagation network.
+1 	Our algorithm obtains the global network state in a novel way, and can offer significant improvement than the base-line local adaptive routing algorithm (xy-adaptive algorithm which selects routing based on local congestion information in each hop) for both medium and high injection rates.
+1 	In wormhole flow control, all the routing information (flit id, source node id, destination node id, vc id and address) is contained in head flit, and data is carried in body flits.
+1 	As a result, there are always many free bits in the head flit, especially when the bandwidth is 128-bits which is normal in interconnection network design.
+1 	Then, we can use these free bits in the head flit to propagate global congestion information but not increase the number of flits.
+
+
+# 84
+### http://arxiv.org/abs/1208.1896v1
+## Bittorrent Network Traffic Forecasting With ARMA
+
+0 	In recent years, there are some major changes in the way content is being distributed over the network.
+0 	The content distribution techniques have recently started to embrace peer-to-peer (P2P) systems as an alternative to the traditional client-server architecture.
+0 	P2P systemsthat are based on the BitTorrent protocol uses end-users' resources to provide a cost effective distribution of bandwidth intensive content to thousands of users.
+0 	The BitTorrent protocol system offers a scalable mechanism for distributing a large volume of data to a set of peers over the Internet.
+0 	With the growing demand for file sharing and content distribution, BitTorrent has become one of the most popular Internet applications and contributes to a signification fraction of the Internet traffic.
+0 	With the wide usage of the BitTorrent protocol system, it has basically solved one of the major problems where data can be quickly transferred to a group of interested parties.
+0 	The strength of the BitTorrent protocol lies in efficient bandwidth utilization for the downloading and uploading processes.
+0 	However, the usage of BitTorrent protocol also causes latency for other applications in terms of network bandwidth which in turn has caused concerns for the Internet Service Providers, who strives for quality of service for all their customers.
+0 	In this paper, we study the network traffic patterns of theBitTorrent network traffic and investigate its behavior by usingthe time series ARMA model.
+0 	Our experimental results show that BitTorrent network traffic can be modeled and forecasted by using ARMA models.
+1 	We compared and evaluated the forecasted network traffic with the real traffic patterns.
+2 	This modeling can be utilized by the Internet Service Providers to manage their network bandwidth and also detect any abnormality in their network.
+
+
+# 85
+### http://arxiv.org/abs/1208.2314v1
+## Analytical Study of Pre-congestion notification (PCN) techniques
+
+0 	Maintaining the quality of service (QOS) and controlling the network congestion are quite complicated tasks.
+0 	They cause degrading the performance of the network, and disturbing the continuous communication process.
+0 	To overcome these issues, one step towards this dilemma has been taken in form of Pre-congestion notification (PCN) technique.
+0 	PCN uses a packet marking technique within a PCN domain over IP networks.
+0 	It is notified by egress node that works as guard at entry point of network.
+0 	Egress node gives feedback to communicating servers whether rate on the link is exceeded than configured admissible threshold or within the limit.
+0 	Based on this feedback, admission decisions are taken to determine whether to allow/block new coming flows or terminate already accepted.
+0 	The actual question is about selection of right algorithm for PCN domain.
+0 	In this paper, we investigate the analytical behavior of some known PCN algorithms.
+0 	We make slide modifications in originality of PCN algorithms without disquieting working process in order to employ those within similar types of scenarios.
+0 	Our goal is to simulate them either in highly congested or less congested realistic scenarios.
+2 	On the basis of simulation done in ns2, we are able to recommend each PCN algorithm for specific conditions.
+2 	Finally, we develop a benchmark that helps researchers and scientific communities to pick the right algorithm.
+2 	Furthermore, the benchmark is designed to achieve specific objectives according to the users' requirements without congesting the network.
+
+
+# 86
+### http://arxiv.org/abs/1208.2409v1
+## Transmission Delay of Multi-hop Heterogeneous Networks for Medical Applications
+
+0 	Nowadays, with increase in ageing population, Health care market keeps growing.
+0 	There is a need for monitoring of Health issues.
+0 	Body Area Network consists of wireless sensors attached on or inside human body for monitoring vital Health related problems e.g, Electro Cardiogram (ECG), ElectroEncephalogram (EEG), ElectronyStagmography(ENG) etc.
+0 	Data is recorded by sensors and is sent towards Health care center.
+0 	Due to life threatening situations, timely sending of data is essential.
+0 	For data to reach Health care center, there must be a proper way of sending data through reliable connection and with minimum delay.
+0 	In this paper transmission delay of different paths, through which data is sent from sensor to Health care center over heterogeneous multi-hop wireless channel is analyzed.
+1 	Data of medical related diseases is sent through three different paths.
+1 	In all three paths, data from sensors first reaches ZigBee, which is the common link in all three paths.
+1 	After ZigBee there are three available networks, through which data is sent.
+1 	Wireless Local Area Network (WLAN), Worldwide Interoperability for Microwave Access (WiMAX), Universal Mobile Telecommunication System (UMTS) are connected with ZigBee.
+1 	Each network (WLAN, WiMAX, UMTS) is setup according to environmental conditions, suitability of device and availability of structure for that device.
+1 	Data from these networks is sent to IP-Cloud, which is further connected to Health care center.
+0 	Main aim of this paper is to calculate delay of each link in each path over multihop wireless channel.
+
+
+# 87
+### http://arxiv.org/abs/1208.5526v1
+## Coded Path Protection Part 1: Efficient Conversion of Sharing to Coding
+
+0 	Link failures in wide area networks are common and cause significant data losses.
+0 	Mesh-based protection schemes offer high capacity efficiency but they are slow and require complex signaling.
+0 	Additionally, real-time reconfigurations of cross-connects threaten their transmission integrity.
+0 	On the other hand, there are other schemes that are proactive.
+0 	Proactivity results in higher restoration speed, lower signaling complexity, and higher transmission integrity.
+0 	This paper introduces a coding-based proactive protection scheme, named Coded Path Protection (CPP).
+1 	In CPP, a backup stream of the primary data is encoded with other data streams, resulting in capacity savings.
+0 	In addition to a systematic approach of building valid coding structures, this paper presents an optimal and simple capacity placement and coding group formation algorithm.
+1 	The algorithm converts the sharing structure of any solution of a Shared Path Protection (SPP) technique into a coding structure with minimum extra capacity.
+1 	We conducted quantitative and qualitative comparisons of our technique with the SPP.
+2 	Simulation results confirm that CPP provides faster link failure recovery than SPP while it incurs marginal extra capacity beyond that of SPP.
+0 	In this Part 1 of the paper, we describe the theory and an algorithm for converting a given SPP solution into a CPP solution.
+
+
+# 88
+### http://arxiv.org/abs/1210.3047v1
+## A Performance Analysis of LAR Protocol for Vehicular Ad Hoc Networks in City Scenarios
+
+0 	In this paper, performance analysis of Location Aided Routing (LAR) protocol in different city scenarios has been done.
+0 	The mobility model considered is Manhattan model.
+0 	This mobility model used to emulate the movement pattern of nodes i.e., vehicles on streets defined by maps.
+0 	Our objective is to provide a qualitative analysis of the LAR protocol in different city scenarios in Vehicular Ad hoc Networks.
+1 	We have considered three different city scenarios for the analysis of the protocol.
+1 	The simulation work has been conducted using the Glomosim 2.03 simulator.
+2 	The results show that LAR1 protocol achieves maximum packet delivery ratio is 99.68 % and maximum average end-to-end delay is 7.319969 ms when the network is sparsely populated.
+2 	Further, for densely populated network maximum achieved packet delivery ratio is 87.58% and average end-to-end delay is 0.017684 ms.
+
+
+# 89
+### http://arxiv.org/abs/1210.3147v1
+## Performance Analysis of Probabilistic Rebroadcasting in Grid FSR for MANET
+
+0 	Mobile Ad-hoc Network (MANET) is the self organizing collection of mobile nodes.
+0 	The communication in MANET is done via a wireless media.
+0 	Ad hoc wireless networks have massive commercial and military potential because of their mobility support.
+0 	Due to demanding real time multimedia applications, Quality of Services (QoS) support in such infrastructure less networks have become essential.
+0 	QoS routing in mobile Ad-Hoc networks is challenging due to rapid change in network topology.
+0 	In this paper, we focused to reduce flooding performance of the Fisheye State Routing (FSR) protocol in Grid using ns-2 network simulator under different performance metrics scenario in respect to number of Nodes.
+0 	For example, the connection establishment is costly in terms of time and resource where the network is mostly affected by connection request flooding.
+1 	The proposed approach presents a way to reduce flooding in MANETs.
+1 	Flooding is dictated by the propagation of connection-request packets from the source to its neighborhood nodes.
+1 	The proposed architecture embarks on the concept of sharing neighborhood information.
+1 	The proposed approach focuses on exposing its neighborhood peer to another node that is referred to as its friend-node, which had requested/forwarded connection request.
+-1 	If there is a high probability for the friend node to communicate through the exposed routes, this could improve the efficacy of bandwidth utilization by reducing flooding, as the routes have been acquired, without any broadcasts.
+1 	Friendship between nodes is quantized based on empirical computations and heuristic algorithms.
+1 	The nodes store the neighborhood information in their cache that is periodically verified for consistency.
+2 	Simulation results show the performance of this proposed method.
+
+
+# 90
+### http://arxiv.org/abs/1210.3702v1
+## Estimation and compensation of inter carrier interference in wimax physical layer under various channel models
+
+0 	WiMAX is Wireless Interoperability for Microwave Access has emerged as a promising solution for transmission of higher data rates for fixed and mobile applications.
+0 	IEEE 802.16d and e are the standards proposed.
+0 	To attain higher data rates the Multi Carrier System with Multiple Input and Multiple Output MIMO is incorporated in the WiMAX.
+0 	And all these sub carriers are considered to be orthogonal to each other.
+0 	As the number of sub carriers is increased there is no guarantee of sustained orthogonality, i.e. at some point the carriers are not independent to each other, and hence where the orthogonality can be loosed which leads to interference and also owing to the synchronization between transmitter and receiver local oscillator, it causes interference known as Inter Carrier Interference (ICI).
+0 	In this scheme at the transmitter side the modulated data and a few predefined pilot symbols are mapped onto the non neighboring sub carriers with weighting coefficients of +1 and -1.
+-1 	With the aid of pilot symbols the frequency offset is exactly estimated by using Maximum Likelihood Estimation MLE and hence can be minimized.
+-1 	At demodulation stage the received signals are linearly combined along with their weighted oefficients and pilot symbols, called as Pilot Aided Self Cancellation Method PASCS.
+-1 	The simulations are carried out on Stanford University Interim (SUI)channels.
+-1 	The simulation results shows that by incorporating this method into WiMAX systems it performs better when the Line Of Sight (LOS) component is present in the transmission and also it improves the Bit Error Rate (BER) and Carrier to Interference Ratio (CIR).
+-1 	The CIR can be improved 20 dB.
+-1 	In this paper the effectiveness of PASCS scheme is compared with the Self Cancellation Method (SCM).
+-1 	It provides accurate estimation of frequency offset and when residual CFO is less significant the ICI can be diminished successfully.

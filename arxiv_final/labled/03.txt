@@ -1,0 +1,262 @@
+
+
+# 31
+### http://arxiv.org/abs/0912.4115v2
+## On Channel-Discontinuity-Constraint Routing in Wireless Networks
+
+0	Multi-channel wireless networks are increasingly being employed as infrastructure networks, e.g. in metro areas.
+0 	Nodes in these networks frequently employ directional antennas to improve spatial throughput.
+0 	In such networks, given a source and destination, it is of interest to compute an optimal path and channel assignment on every link in the path such that the path bandwidth is the same as that of the link bandwidth and such a path satisfies the constraint that no two consecutive links on the path are assigned the same channel, referred to as "Channel Discontinuity Constraint" (CDC).
+0 	CDC-paths are also quite useful for TDMA system, where preferably every consecutive links along a path are assigned different time slots.
+0 	This paper contains several contributions.
+1 	We first present an $O(N^{2})$ distributed algorithm for discovering the shortest CDC-path between given source and destination.
+2	This improves the running time of the $O(N^{3})$ centralized algorithm of Ahuja et al. for finding the minimum-weight CDC-path.
+1 	Our second result is a generalized $t$-spanner for CDC-path; For any $\theta>0$ we show how to construct a sub-network containing only $O(\frac{N}{\theta})$ edges, such that that length of shortest CDC-paths between arbitrary sources and destinations increases by only a factor of at most $(1-2\sin{\tfrac{\theta}{2}})^{-2}$.
+1 	We propose a novel algorithm to compute the spanner in a distributed manner using only $O(n\log{n})$ messages.
+2 	An important conclusion of this scheme is in the case of directional antennas are used.
+2	In this case, it is enough to consider only the two closest nodes in each cone.
+
+
+# 32
+### http://arxiv.org/abs/1003.1479v1
+## Analysis, Modification, and Implementation (AMI) of Scheduling Algorithm for the IEEE 802.116e (Mobile WiMAX)
+
+0 	Mobile WiMAX (Worldwide Interoperability for Microwave Access) is being touted as the most promising and potential broadband wireless technology.
+0 	And the popularity rate has been surging to newer heights as the knowledge-backed service era unfolds steadily.
+0	Especially Mobile WiMAX is being projected as a real and strategic boon for developing counties such as India due to its wireless coverage acreage is phenomenally high.
+0	Mobile WiMAX has spurred tremendous interest from operators seeking to deploy high-performance yet cost-effective broadband wireless networks.
+1	The IEEE 802.16e standard based Mobile WiMAX system will be investigated for the purpose of Quality of Service provisioning.
+1	As a technical challenge, radio resource management will be primarily considered and main is the costly spectrum and the increasingly more demanding applications with ever growing number of subscribers.
+0 	It is necessary to provide Quality of Service (QoS) guaranteed with different characteristics.
+1 	As a possible solution the scheduling algorithms will be taken into main consideration and the present well known algorithms will be described.
+2 	In this paper, we have highlighted the following critical issues for Mobile WiMAX technologies.
+2 	This paper specifically discussed about the below mentioned in detail. -
+2 	QoS Requirements For IEEE 802.16 Service Classes, Achieving efficient radio resource management. -
+2	Deficit Round Robin (DRR) Scheduling algorithm. -
+2	Modified Deficit Round Robin (MDRR) scheduling algorithm's attributes, properties and architecture.
+2	System Model And Scenarios Using OPNET Modeler Software. -
+2 	Simulation Limitations And Constraints.
+
+
+# 33
+### http://arxiv.org/abs/1003.3568v1
+## Key distribution in PKC through Quantas
+
+0 	Cryptography literally means "The art & science of secret writing & sending a message between two parties in such a way that its contents cannot be understood by someone other than the intended recipient".
+0 	and Quantum word is related with "Light".
+0	Thus, Quantum Cryptography is a way of descripting any information in the form of quantum particles.
+0	There are no classical cryptographic systems which are perfectly secure.
+0 	In contrast to Classical cryptography which depends upon Mathematics, Quantum Cryptography utilizes the concepts of Quantum Physics which provides us the security against the cleverest marauders of the present age.
+0	In the view of increasing need of Network and Information Security, we do require methods to overcome the Molecular Computing technologies (A future technology) and other techniques of the various codebrakers.
+0 	Both the parts i.e. Quantum Key distribution and Information transference from Sender to Receiver are much efficient and secure.
+0 	It is based upon BB84 protocol.
+0	It can be of great use for Govt agencies such as Banks, Insurance, Brokerages firms, financial institutions, e-commerce and most important is the Defense & security of any country.
+0 	It is a Cryptographic communication system in which the original users can detect unauthorized eavesdropper and in addition it gives a guarantee of no eavesdropping.
+2	It proves to be the ultra secure mode of communication b/w two intended parties.
+
+
+# 34
+### http://arxiv.org/abs/1003.5104v1
+## Resilient networking in wireless sensor networks
+
+0	This report deals with security in wireless sensor networks (WSNs), especially in network layer.
+0	Multiple secure routing protocols have been proposed in the literature.
+0 	However, they often use the cryptography to secure routing functionalities.
+0 	The cryptography alone is not enough to defend against multiple attacks due to the node compromise.
+0	Therefore, we need more algorithmic solutions.
+0	In this report, we focus on the behavior of routing protocols to determine which properties make them more resilient to attacks.
+0 	Our aim is to find some answers to the following questions.
+0 	Are there any existing protocols, not designed initially for security, but which already contain some inherently resilient properties against attacks under which some portion of the network nodes is compromised?
+0 	If yes, which specific behaviors are making these protocols more resilient?
+1 	We propose in this report an overview of security strategies for WSNs in general, including existing attacks and defensive measures.
+2	In this report we focus at the network layer in particular, and an analysis of the behavior of four particular routing protocols is provided to determine their inherent resiliency to insider attacks.
+2 	The protocols considered are: Dynamic Source Routing (DSR), Gradient-Based Routing (GBR), Greedy Forwarding (GF) and Random Walk Routing (RWR).
+
+
+# 35
+### http://arxiv.org/abs/1003.5432v1
+## Computer Network Topology Design in Limelight of Pascal Graph Property
+
+0 	Constantly growing demands of high productivity and security of computer systems and computer networks call the interest of specialists in the environment of construction of optimum topologies of computer mediums.
+0	In earliest phases of design, the study of the topological influence of the processes that happen in computer systems and computer networks allows to obtain useful information which possesses a significant value in the subsequent design.
+0	It has always been tried to represent the different computer network topologies using appropriate graph models.
+0 	Graphs have huge contributions towards the performance improvement factor of a network.
+0 	Some major contributors are de-Bruijn, Hypercube, Mesh and Pascal.
+0	They had been studied a lot and different new features were always a part of research outcome.
+0 	As per the definition of interconnection network it is equivalent that a suitable graph can represent the physical and logical layout very efficiently.
+1 	In this present study Pascal graph is researched again and a new characteristics has been discovered.
+0	From the perspective of network topologies Pascal graph and its properties were first studied more than two decades back.
+0	Since then, a numerous graph models have emerged with potentials to be used as network topologies.
+2	This new property is guaranteed to make an everlasting mark towards the reliability of this graph to be used as a substantial contributor as a computer network topology.
+2	This shows its credentials over so many other topologies.
+2	This study reviews the characteristics of the Pascal graph and the new property is established using appropriate algorithm and the results.
+
+
+# 36
+### http://arxiv.org/abs/1004.0596v1
+## Effect of Inter Packet Delay in performance analysis of coexistence heterogeneous Wireless Packet Networks
+
+0 	As the explosive growth of the ISM band usage continues, there are many scenarios where different systems operate in the same place at the same time.
+0	One of growing concerns is the coexistence of heterogeneous wireless network systems.
+0	For the successful deployment of mission-critical systems such as wireless sensor networks, it is required to provide a solution for the coexistence.
+1	In this paper, we propose a new scheme using inter packet delay for the coexistence of IEEE 802.15.4 LRWPAN and IEEE 802.11b WLAN.
+1 	To evaluate the effectiveness of the proposed scheme, measurement and simulation study are conducted using Qualnet 4.5 simulation software.
+2 	The simulation results show that the proposed scheme is effective in performance improvement for coexistence network of IEEE 802.15.4 for various topologies.
+
+
+# 37
+### http://arxiv.org/abs/1004.1678v1
+## Node Sensing & Dynamic Discovering Routes for Wireless Sensor Networks
+
+-1	The applications of Wireless Sensor Networks (WSN) contain a wide variety of scenarios.
+-1 	In most of them, the network is composed of a significant number of nodes deployed in an extensive area in which not all nodes are directly connected.
+-1 	Then, the data exchange is supported by multihop communications.
+-1 	Routing protocols are in charge of discovering and maintaining the routes in the network.
+-1 	However, the correctness of a particular routing protocol mainly depends on the capabilities of the nodes and on the application requirements.
+-1 	This paper presents a dynamic discover routing method for communication between sensor nodes and a base station in WSN.
+-1 	This method tolerates failures of arbitrary individual nodes in the network (node failure) or a small part of the network (area failure).
+-1 	Each node in the network does only local routing preservation, needs to record only its neighbor nodes' information, and incurs no extra routing overhead during failure free periods.
+-1 	It dynamically discovers new routes when an intermediate node or a small part of the network in the path from a sensor node to a base station fails.
+-1 	In our planned method, every node decides its path based only on local information, such as its parent node and neighbor nodes' routing information.
+-1 	So, it is possible to form a loop in the routing path.
+-1 	We believe that the loop problem in sensor network routing is not as serious as that in the Internet routing or traditional mobile ad-hoc routing.
+-1 	We are trying to find all possible loops and eliminate the loops as far as possible in WSN.
+
+
+# 38
+### http://arxiv.org/abs/1004.4465v1
+## Mobile Zigbee Sensor Networks
+
+0 	OPNET Modeler accelerates network R&D and improves product quality through high-fidelity modeling and scalable simulation.
+0	It provides a virtual environment for designing protocols and devices, and for testing and demonstrating designs in realistic scenarios prior to production.
+1	OPNET Modeler supports 802.15.4 standard and has been used to make a model of PAN.
+1	Iterations have been performed by changing the Power of the transmitter and the throughput will has been analyzed to arrive at optimal values.
+1	An energy-efficient wireless home network based on IEEE 802.15.4, a novel architecture has been proposed.
+1 	In this architecture, all nodes are classified into stationary nodes and mobile nodes according to the functionality of each node.
+0	Mobile nodes are usually battery-powered, and therefore need low-power operation.
+1	In order to improve power consumption of mobile nodes, effective handover sequence based on MAC broadcast and transmission power control based on LQ (link quality) are employed.
+2	Experimental results demonstrate that by using the proposed architecture, communication time and power consumption of mobile nodes can be reduced by 1.2 seconds and 42.8%, respectively.
+
+
+# 39
+### http://arxiv.org/abs/1004.4759v1
+## Indoor Positioning with Radio Location Fingerprinting
+
+0 	An increasingly important requirement for many novel applications is sensing the positions of people, equipment, etc.
+0	GPS technology has proven itself as a successfull technology for positioning in outdoor environments but indoor no technology has yet gained a similar wide-scale adoption.
+0 	A promising indoor positioning technique is radio-based location fingerprinting, having the major advantage of exploiting already existing radio infrastructures, like IEEE 802.11, which avoids extra deployment costs and effort.
+0 	The research goal of this thesis is to address the limitations of current indoor location fingerprinting systems.
+0 	In particular the aim is to advance location fingerprinting techniques for the challenges of handling heterogeneous clients, scalability to many clients, and interference between communication and positioning.
+2 	The wireless clients used for location fingerprinting are heterogeneous even when only considering clients for the same technology.
+2	Heterogeneity is a challenge for location fingerprinting because it severely decreases the precision of location fingerprinting.
+2 	To support many clients location fingerprinting has to address how to scale estimate calculation, measurement distribution, and distribution of position estimates.
+2 	This is a challenge because of the number of calculations involved and the frequency of measurements and position updates.
+2 	Positioning using location fingerprinting requires the measurement of, for instance, signal strength for nearby base stations.
+2 	However, many wireless communication technologies block communication while collecting such measurements.
+2	This interference is a challenge because it is not desirable that positioning disables communication.
+0	An additional goal is to improve the conceptual foundation of location fingerprinting.
+0 	A better foundation will aid researchers to better survey and design location fingerprinting systems.
+
+
+# 40
+### http://arxiv.org/abs/1004.4821v1
+## Optimum Design of a 4x4 Planar Butler Matrix Array for WLAN Application
+
+0 	In recent years, high-speed wireless communication is in vogue.
+0 	In wireless communication systems, multipath fading, delay and interference occurres by reflection or diffraction.
+0 	In a high-speed wireless communication, it becomes a necessary to separate desired signal from delay or interference signal.
+0	Thus to overcome these problems Smart antenna systems have been developed.
+0	Basically there are two types of smart antenna systems, one is Switched beam system and another Adaptive array system.
+0	This paper presents the optimum design of a 4x4 plannar Butler matrix array as a key component of a switched beam smart antenna system, operating at 5.2 GHz for WLAN with a dielectric substrate, FR4 of er =4.9 and h=1.6mm.
+0 	Conception details, simulation results and measurements are also given for the components (microstrip antenna, hybrid couplers, cross-coupler, phase shifter) used to implement the matrix.
+1	In this dissertation, mathematical calculations for all the components using MATLAB is done and then every individual component is designed using the commercial software SONNET.
+1 	Then these entire components have been combined on a single substrate and simulated using SONNET.
+
+
+# 41
+### http://arxiv.org/abs/1005.0952v1
+## Effective Bandwidth Utilization in IEEE802.11 for VOIP
+
+0	Voice over Internet protocol (VoIP) is one of the most important applications for the IEEE 802.11 wireless local area networks (WLANs).
+0	For network planners who are deploying VoIP over WLANs, one of the important issues is the VoIP capacity.
+0 	VoIP bandwidth consumption over a WAN is one of the most important factors to consider when building a VoIP infrastructure.
+0	Failure to account for VoIP bandwidth requirements will severely limit the reliability of a VoIP system and place a huge burden on the WAN infrastructure.
+0 	Less bandwidth utilization is the key reasons for reduced number of channel accesses in VOIP.
+0 	But in the QoS point of view the free bandwidth of atleast 1-5% will improve the voice quality.
+1	This proposal utilizes the maximum bandwidth by leaving 1-5% free bandwidth.
+1	A Bandwidth Data rate Moderation (BDM) algorithm has been proposed which correlates the data rate specified in IEEE802.11b with the free bandwidth.
+1 	At each time BDM will calculate the bandwidth utilization before sending the packet to improve performance and voice quality of VoIP.
+1	The bandwidth calculation in BDM can be done by using Erlang and VOIP bandwidth calculator.
+2	Finally, ns2 experimental study shows the relationship between bandwidth utilization, free bandwidth and data rate.
+2	The paper concludes that marginal VoIP call rate has been increased by BDM algorithm.
+
+
+# 42
+### http://arxiv.org/abs/1005.4268v1
+## An Adaptive Power Efficient Packet Scheduling Algorithm for Wimax Networks
+
+0 	Admission control schemes and scheduling algorithms are designed to offer QoS services in 802.16/802.16e networks and a number of studies have investigated these issues.
+0 	But the channel condition and priority of traffic classes are very rarely considered in the existing scheduling algorithms.
+0	Although a number of energy saving mechanisms have been proposed for the IEEE 802.16e, to minimize the power consumption of IEEE 802.16e mobile stations with multiple real-time connections has not yet been investigated.
+0	Moreover, they mainly consider non real- time connections in IEEE 802.16e networks.
+1 	In this paper, we propose to design an adaptive power efficient packet scheduling algorithm that provides a minimum fair allocation of the channel bandwidth for each packet flow and additionally minimizes the power consumption.
+1 	In the adaptive scheduling algorithm, packets are transmitted as per allotted slots from different priority of traffic classes adaptively, depending on the channel condition.
+1 	Suppose if the buffer size of the high priority traffic queues with bad channel condition exceeds a threshold, then the priority of those flows will be increased by adjusting the sleep duty cycle of existing low priority traffic, to prevent the starvation.
+2 	By simulation results, we show that our proposed scheduler achieves better channel utilization while minimizing the delay and power consumption.
+
+
+# 43
+### http://arxiv.org/abs/1006.2048v1
+## Stochastic Approximation Algorithm for Optimal Throughput Performance of Wireless LANs
+
+0 	Throughput improvement of the Wireless LANs has been a constant area of research.
+0 	Most of the work in this area, focuses on designing throughput optimal schemes for fully connected networks (no hidden nodes).
+0	But, we demonstrate that the proposed schemes, though perform optimally in fully connected network, achieve significantly lesser throughput even than that of standard IEEE 802.11 in a network with hidden nodes.
+0	This motivates the need for designing schemes that provide near optimal performance even when hidden nodes are present.
+0	The primary reason for the failure of existing protocols in the presence of hidden nodes is that these protocols are based on the model developed by Bianchi.
+0	However this model does not hold when hidden nodes exist.
+0 	Moreover, analyzing networks with hidden nodes is still an open problem.
+0	Thus, designing throughput optimal schemes in networks with hidden nodes is particularly challenging.
+0 	The novelty of our approach is that it is not based on any underlying mathematical model, rather it directly tunes the control variables so as to maximize the throughput.
+1	We demonstrate that this model independent approach achieves maximum throughput in networks with hidden terminals as well.
+1 	Apart from this major contribution, we present stochastic approximation based algorithms for achieving weighted fairness in a connected networks.
+1	We also present a throughput optimal exponential backoff based random access algorithm.
+1	We demonstrate that the exponential backoff based scheme may outperform an optimal p-persistent scheme in networks with hidden terminals.
+2 	This demonstrates the merit of exponential backoff based random access schemes which was deemed unnecessary by results shown by Bianchi.
+
+
+# 44
+### http://arxiv.org/abs/1006.2552v1
+## Similarity Analysis and Modeling in Mobile Societies: The Missing Link
+
+0 	A new generation of "behavior-aware" delay tolerant networks is emerging in what may define future mobile social networks.
+0 	With the introduction of novel behavior-aware protocols, services and architectures, there is a pressing need to understand and realistically model mobile users behavioral characteristics, their similarity and clustering.
+0	Such models are essential for the analysis, performance evaluation, and simulation of future DTNs.
+0 	This paper addresses issues related to mobile user similarity, its definition, analysis and modeling.
+1	To define similarity, we adopt a behavioral-profile based on users location preferences using their on-line association matrix and its SVD, then calculate the behavioral distance to capture user similarity.
+2	This measures the difference of the major spatio-temporal behavioral trends and can be used to cluster users into similarity groups or communities.
+1	We then analyze and contrast similarity distributions of mobile user populations in two settings: (i) based on real measurements from four major campuses with over ten thousand users for a month, and (ii) based on existing mobility models, including random direction and time-varying community models.
+2	Our results show a rich set of similar communities in real mobile societies with distinct behavioral clusters of users.
+2	This is true for all the traces studied, with the trend being consistent over time.
+2	Surprisingly, however, we find that the existing mobility models do not explicitly capture similarity and result in homogeneous users that are all similar to each other.
+2 	Thus the richness and diversity of user behavioral patterns is not captured to any degree in the existing models.
+2 	These findings strongly suggest that similarity should be explicitly captured in future mobility models, which motivates the need to re-visit mobility modeling in the future.
+
+
+# 45
+### http://arxiv.org/abs/1006.2684v1
+## Enhancing the Authentication of Bank Cheque Signatures by Implementing Automated System Using Recurrent Neural Network
+
+0 	The associatie memory feature of the Hopfield type recurrent neural network is used for the pattern storage and pattern authentication.
+0	This paper outlines an optimization relaxation approach for signature verification based on the Hopfield neural network (HNN)which is a recurrent network.
+1 	The standard sample signature of the customer is cross matched with the one supplied on the Cheque.
+1 	The difference percentage is obtained by calculating the different pixels in both the images.
+1 	The network topology is built so that each pixel in the difference image is a neuron in the network.
+1	Each neuron is categorized by its states,which in turn signifies that if the particular pixel is changed.
+2 	The network converges to unwavering condition based on the energy function which is derived in experiments.
+0 	The Hopfield's model allows each node to take on two binary state values (changed/unchanged)for each pixel.
+2	The performance of the proposed technique is evaluated by applying it in various binary and gray scale images.
+2	This paper contributes in finding an automated scheme for verification of authentic signature on bank Cheques.
+2 	The derived energy function allows a trade off between the influence of its neighborhood and its own criterion.
+2 	This device is able to recall as well as complete partially specified inputs.
+1	The network is trained via a storage prescription that forces stable states to correspond to (local)minima of a network "energy" function.
