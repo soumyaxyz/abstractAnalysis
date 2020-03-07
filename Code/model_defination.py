@@ -45,7 +45,7 @@ class abstract_segmentation_model():
 				print("Loaded model weights from disk")
 				return #self.model
 			else :
-				print("Saved weights not found.")
+				print("Saved weights not found.",Path(self.save_location+sufix+".h5"))
 		except Exception as e:
 			print("Saved weights incompatable.")
 			# traceback.print_exc()
@@ -252,7 +252,7 @@ class model_Jin():
 			self.optimazion	= True
 
 
-	def get_model_defination(self, dataset, embeddings, ):
+	def get_model_defination(self, dataset, embeddings ):
 		try:
 						
 			# Build the model
@@ -290,18 +290,18 @@ class model_Jin():
 
 
 				norm = BatchNormalization()(biLSTM_r)
-				feedforward = Dense(dataset.nclasses, name='feed_forword')(norm)
+				abstract_processing_layer = Dense(dataset.nclasses, name='feed_forword')(norm)
 			else:
 				abs_layer_in = Lambda(lambda x: K.reshape(x, shape=(-1, dataset.abs_len, 2*lstm_dim*dataset.maxlen)))(sentence_encoding_layer)
-				feedforward = Dense(dataset.maxlen, name='feed_forword')(abs_layer_in)
-				norm = BatchNormalization()(abs_layer_in)
-				feedforward = Dense(dataset.nclasses, name='feed_forword')(norm)
+				feedforward = Dense(dataset.maxlen, name='feed_forword_1')(abs_layer_in)
+				norm = BatchNormalization()(feedforward)
+				abstract_processing_layer = Dense(dataset.nclasses, name='feed_forword')(norm)
 				
 			### label sequence optimazion layer
 			if self.optimazion:			
-				final_output = CRF(dataset.nclasses, learn_mode='marginal', sparse_target=True)(feedforward)
+				final_output = CRF(dataset.nclasses, learn_mode='marginal', sparse_target=True)(abstract_processing_layer)
 			else:
-				final_output = Activation('softmax')(feedforward) # (None, 35, 4) 
+				final_output = Activation('softmax')(abstract_processing_layer) # (None, 35, 4) 
 
 			model = Model(inputs=[main_input, char_input], outputs=final_output, name='output')
 			model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])

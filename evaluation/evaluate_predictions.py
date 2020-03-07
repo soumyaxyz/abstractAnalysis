@@ -247,6 +247,6 @@ if __name__ == "__main__":
 	# pred_file = '20k_TLT/model_Jin_2k_IEEE_TLT_110.csv'
 	# count(test_file, pred_file)
 
-	file_1 = '../Kappa/TPAMI (sgnk).txt'
-	file_2 = '../Kappa/TPAMI (soum).txt'
+	file_1 = 'arxiv_rest.txt'
+	file_2 = 'pred_arxiv_rest.txt'
 	kappa_calc(file_1, file_2)

@@ -90,6 +90,18 @@ def plot_distribution(line_label, labels, avg_num_of_lines):
 	# 	traceback.print_exc()
 	# 	pdb.set_trace()	
 
+def label_transform(label):
+		switcher = { 
+			u'0'			: 0, 
+			u'1'			: 1,
+			u'2'			: 2, 
+			u'BACKGROUND'	: 0, 
+			u'OBJECTIVE'	: 0, 
+			u'METHODS'		: 1,
+			u'RESULTS'		: 2,  
+			u'CONCLUSIONS'	: 2,
+		}
+		return switcher.get(label.strip(), 0)   # should be 4
 
 #generate more data with standard augmentation
 def count(train_orig): 
@@ -156,9 +168,18 @@ def count(train_orig):
 			new_abstract = True
 			prev 	= curr
 			try:
-				curr 	= int(line.split(" ", 1)[0])
+				line_split 	= line.split("\t", 1)
 			except Exception as e:
-				curr 	= int(line.split("\t", 1)[0])
+				line_split 	= line.split("", 1)
+
+			try:
+				curr 	= int(line_split[0])
+			except ValueError as e:
+				# try:
+				# 	int(label_transform(line_split[0]))
+				# except Exception as e:					
+				# 	pdb.set_trace()
+				curr 	= label_transform(line_split[0])
 			
 
 			abstract_len			+=1

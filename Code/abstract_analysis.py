@@ -7,9 +7,10 @@ from sklearn.metrics import confusion_matrix, accuracy_score, classification_rep
 import keras as K
 
 def partition(X_eval, X_eval_words, Y_eval, traning_size):
-	X_e_train 		= X_eval[:traning_size]
-	X_e_train_words = X_eval_words[:traning_size]
-	Y_e_train 		= Y_eval[:traning_size]
+	# pdb.set_trace()
+	X_e_train 		= X_eval[-traning_size:]
+	X_e_train_words = X_eval_words[-traning_size:]
+	Y_e_train 		= Y_eval[-traning_size:]
 	return ( X_e_train, X_e_train_words, Y_e_train)
 
 def get_results(pred, gold):
@@ -148,7 +149,8 @@ def evaluate_transfer_learning(trained_model, trained_on_dataset, eval_dataset, 
 		pred_E, gold_E = get_prediction_acc(model, X_test, X_test_words, Y_test)
 
 		#
-
+		print('retraning_size : ',retraning_size)
+		print('eval_train_filename : ', eval_train_filename)
 
 
 		if retraning_size > 0:
@@ -180,6 +182,7 @@ def generate_prediction(trained_model, trained_on_dataset, unlabled_dataset, unl
 	evaluation_dataset 				= data_loader.transfer_learning_dataset(trained_on_dataset)
 	unlabled_data 					= evaluation_dataset.get_evaluation_data(unlabled_dataset, unlabled_filename)  
 	unlabled, orig_data, metadata 	= unlabled_data
+
 	(X_test, X_test_words, Y_test)	= unlabled
 
 	eval_pred = trained_model.predict([X_test, X_test_words], verbose=1)
@@ -190,33 +193,56 @@ def generate_prediction(trained_model, trained_on_dataset, unlabled_dataset, unl
 	evaluation_dataset.build_new_file_with_prediction('pred_'+unlabled_filename, metadata, orig_data, pred, gold)
 
 
-def main(retraning_size):
+def main(retraning_size, 
+		generate_baseline 	= False,
+		predict_and_save	= False,
+		fine_tune_with_pred = False, 
+		eval_dataset 		= 'arxiv'):
 	# pdb.set_trace()
 
-	#set configs
-	generate_baseline 	= False
-	predict_and_save	= False	
-	dataset_name 		= 'pubmed_non_rct' 					# initial traning dataset pubmed_non_rct
-	eval_dataset 		= 'IEEE_TLT'						# transfer learning dataset
-	eval_test_filename	= 'test_clean.txt'					# transfer learning dataset test filename
-	eval_train_filename	= 'train_clean.txt'					# transfer learning dataset train filename
-	model_name			= 'model_Jin'   					# model_Dernoncourt, model_Jin
-	load_file_sufix 	= None   	# saved model weights etc      _model_Jin_pubmed_non_rct
-	batch_size 			= 4
-	unlabled_dataset 	= 'IEEE_TPAMI'						# dataset to be labled
-	unlabled_filename	= '2019.txt'						# file to be labled
-
+	
 	# flages for abletive study
 	f_1  = True						# token embeding layer	
 	f_2  = True						# sentence encoding layer
-	f_3  = False						# context enriching layer
+	f_3  = True						# context enriching layer
 	f_4  = True						# sequence optimazion layer
 	flags = (f_1, f_2, f_3, f_4)
+	# flag =''
+	# for f in flags:
+	# 	flag +=str(int(f))
+	flag = str(list(map(int,flags))).replace(', ','')[1:-1]   # same as above
+	if flag == '1111':
+		flag = ''
+	else:
+		flag = '_'+flag
+
+
+
+	#set configs
+	# generate_baseline 	= False
+	# predict_and_save	= False
+	# fine_tune_with_pred = False  		
+
+	dataset_name 		= 'pubmed_non_rct' 								# initial traning dataset pubmed_non_rct
+	# eval_dataset 		= 'arxiv'									# transfer learning dataset
+	eval_test_filename	= 'test_clean.txt'								# transfer learning dataset test filename
+	eval_train_filename	= 'train_clean.txt'								# transfer learning dataset train filename
+	model_name			= 'model_Jin'   								# model_Dernoncourt, model_Jin
+	load_file_sufix 	= 'model_Jin'+flag+'_pubmed_non_rct_14999'   	# saved model weights etc     
+	batch_size 			= 4
+	if predict_and_save:
+		unlabled_dataset 	= 'arxiv'									# dataset to be labled
+		unlabled_filename	= 'arxiv_rest.txt'							# file to be labled
+	if fine_tune_with_pred:
+		predicted_dataset 	= 'arxiv'									# dataset from predicted labels
+		predicted_train_file= 'arxiv_rest.txt'							# corosponding training filename
+
+	
 
 	if retraning_size < 0: 							# train model on initial dataset
 		num_epoch 		= 10
 		embed_top_n     =  50000 #-1   #all
-		get_trained_model(dataset_name, model_name, num_epoch, embed_top_n,  load_file_sufix, batch_size, flags)
+		get_trained_model(dataset_name, model_name, num_epoch, embed_top_n,  None, batch_size, flags)
 
 
 	else:												# evaluate transfer learning using model pre-trained on initial dataset
@@ -238,17 +264,20 @@ def main(retraning_size):
 			trained_model 		= abstract_segmentor.model
 			trained_on_dataset 	= dataset
 		else:
-			trained_model, trained_on_dataset = get_trained_model(dataset_name, model_name, num_epoch, embed_top_n,  None, batch_size , flags)
+			trained_model, trained_on_dataset = get_trained_model(dataset_name, model_name, num_epoch, embed_top_n,  load_file_sufix, batch_size , flags)
 
-		pred_E, gold_E, model = evaluate_transfer_learning(trained_model, trained_on_dataset, eval_dataset, eval_test_filename, eval_train_filename, retraning_size, test_size, retrain_epoch, batch_size)
-		np.savetxt(model_name+'_2k_'+eval_dataset+'_'+str(retraning_size)+'.csv', np.column_stack((pred_E, gold_E)), delimiter=",", fmt='%s')
+		pred_E, gold_E, finetuned_model = evaluate_transfer_learning(trained_model, trained_on_dataset, eval_dataset, eval_test_filename, eval_train_filename, retraning_size, test_size, retrain_epoch, batch_size)
+		np.savetxt(load_file_sufix+'_'+eval_dataset+'_'+str(retraning_size)+'.csv', np.column_stack((pred_E, gold_E)), delimiter=",", fmt='%s')
 
 		if predict_and_save:
-			 generate_prediction(model, trained_on_dataset, unlabled_dataset, unlabled_filename)
+			generate_prediction(finetuned_model, trained_on_dataset, unlabled_dataset, unlabled_filename)
+		elif fine_tune_with_pred:
+			pred_E, gold_E, model = evaluate_transfer_learning(finetuned_model, trained_on_dataset, eval_dataset, eval_test_filename, predicted_train_file, retraning_size, test_size, retrain_epoch, batch_size)
+			np.savetxt(load_file_sufix+'_'+eval_dataset+'_trained_on_predicted.csv', np.column_stack((pred_E, gold_E)), delimiter=",", fmt='%s')
 
+	# import code; code.interact(local=vars())
 
-
-	# pdb.set_trace() 
+	# pdb.set_trace() 71428 
 
 	
 import sys
@@ -265,9 +294,19 @@ except Exception as e:
 
 
 if __name__== "__main__":
-	# for i in range(6,16):
-	# 	retraning_size = i*10
+	
+	# main(retraning_size, True, 'arxiv')
+
+	# main(340, eval_dataset = 'arxiv')
+	# main(340, eval_dataset = 'IEEE_TLT')
+	# main(340, eval_dataset = 'IEEE_TPAMI')
+	main(340, eval_dataset = 'merged', predict_and_save	= True)
+	# main(340,True)
+
+	# print('\n\n\n\n\n now TPAMI')
+	# retraning_sizes = [40,50,80,90,110] 
+	# for retraning_size in retraning_sizes:
+	# for retraning_size in range(80,120,10):
 	# 	main(retraning_size)
-	main(retraning_size)
 
 
