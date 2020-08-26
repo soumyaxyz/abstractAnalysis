@@ -2,10 +2,12 @@ from gensim.models import KeyedVectors
 import numpy as np
 import traceback, pdb
 
+PRETRAINED_EMBEDDINGS = '/users/soumya/abstractAnalysis/ANMLAD/pubmed_adr/word2vec_format_glove.42B.300d.txt'
+
 class glove_embeddings_loader():
 
 	def __init__(self, embed_top_n = -1):				
-		w2v_glove_300d_path = '/users/soumya/abstractAnalysis/ANMLAD/pubmed_adr/word2vec_format_glove.42B.300d.txt'
+		w2v_glove_300d_path = PRETRAINED_EMBEDDINGS
 		self.embed_dim 		= 300
 		self.char_embed_dim = 25	
 

@@ -35,12 +35,12 @@ class training_dataset():
 
 	def get_input_folder(self, dataset):
 		switcher = { 
-			u'pubmed_non_rct'	: u'/users/soumya/PubMedData/output/', 
-			u'pubmed_rct'		: u'/users/soumya/PubmedRCT/20k_num_as_sign/',
-			u'arxiv'			: u'/users/soumya/arxiv_final/', 
-			u'IEEE_TLT'			: u'/users/soumya/IEEE_final/TLT/',
-			u'IEEE_TPAMI'		: u'/users/soumya/IEEE_final/TPAMI/',
-			u'merged'			: u'/users/soumya/Merged/',
+			u'pubmed_non_rct'	: u'../PubMedData/output/', 
+			u'pubmed_rct'		: u'../PubmedRCT/20k_num_as_sign/',  # download form  https://github.com/Franck-Dernoncourt/pubmed-rct
+			u'arxiv'			: u'../arxiv_final/', 
+			u'IEEE_TLT'			: u'../IEEE_final/TLT/',
+			u'IEEE_TPAMI'		: u'../IEEE_final/TPAMI/',
+			u'merged'			: u'../Merged/',
 		}
 		return switcher.get(dataset, u'')  
 

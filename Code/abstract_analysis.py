@@ -1,10 +1,11 @@
-import traceback, pdb
-import numpy as np
-import data_loader, embeddings_loader, model_defination
-from keras.utils import plot_model
-from keras.callbacks import TensorBoard, EarlyStopping, ModelCheckpoint
-from sklearn.metrics import confusion_matrix, accuracy_score, classification_report, recall_score, precision_score, f1_score
-import keras as K
+def imports():
+	import traceback, pdb
+	import numpy as np
+	import data_loader, embeddings_loader, model_defination
+	from keras.utils import plot_model
+	from keras.callbacks import TensorBoard, EarlyStopping, ModelCheckpoint
+	from sklearn.metrics import confusion_matrix, accuracy_score, classification_report, recall_score, precision_score, f1_score
+	import keras as K
 
 def partition(X_eval, X_eval_words, Y_eval, traning_size):
 	# pdb.set_trace()
@@ -280,27 +281,83 @@ def main(retraning_size,
 	# pdb.set_trace() 71428 
 
 	
-import sys
-args = sys.argv
-
-
-
-try:
-	retraning_size =  int(args[1])
-except Exception as e:
-	retraning_size 	= 10
+# import sys
+# args = sys.argv
 
 
 
 
-if __name__== "__main__":
+
+if __name__== "__main__":	
+	import argparse
+
+	parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
+
+	parser.add_argument('eval_dataset', 
+		choices=['arxiv', 'IEEE_TLT', 'IEEE_TPAMI', 'merged'], 
+		# metavar='',
+		nargs='?',
+		default='arxiv', 
+		help='The evaluation dataset, default= arxiv')
+
+	parser.add_argument(#'-r', 
+		'retraning_size',
+		type=int, 
+		nargs='?',
+		default=340, 
+		help='Data size for fine tuning, default= 340')
+
+
+	parser.add_argument('-b', '--generate_baseline', 	 
+		action='store_true', 
+		default=False, 
+		help='For generating baseline without pre training')
+	parser.add_argument('-f', '--fine_tune_with_pred', 	 
+		action='store_true', 
+		default=False, 
+		help='For evaluating the effect of transfer learning')
+	parser.add_argument('-s', '--predict_and_save', 	 
+		action='store_true', 
+		default=False, 
+		help='To generate labels for unlabled abstracts,\nconflicts with -f/--fine_tune_with_pred')
+
+
+	args = parser.parse_args()
+
+
+	# generate_baseline 	= False,
+	# predict_and_save	= False,
+	# fine_tune_with_pred = False, 
+
+	
+
+	if args.retraning_size < 0:
+		print('retraning_size cannot be negative!!')
+	elif args.fine_tune_with_pred and args.predict_and_save:
+		print('-f/--fine_tune_with_pred   and   -s/ --predict_and_save   are conflicting!!')
+	else:
+		print("retraning_size = {} of  type {}".format(args.retraning_size, type(args.retraning_size)))
+		print("generate_baseline = {} of  type {}".format(args.generate_baseline, type(args.generate_baseline)))
+		print("fine_tune_with_pred = {} of  type {}".format(args.fine_tune_with_pred, type(args.fine_tune_with_pred)))
+		print("predict_and_save = {} of  type {}".format(args.predict_and_save, type(args.predict_and_save)))
+		print("eval_dataset = {} of  type {}".format(args.eval_dataset, type(args.eval_dataset)))
+
+		# imports()
+		# main(retraning_size = args.retraning_size, 
+		# 	generate_baseline 	= args.generate_baseline,
+		# 	predict_and_save	= args.predict_and_save,
+		# 	fine_tune_with_pred = args.fine_tune_with_pred, 
+		# 	eval_dataset 		= args.eval_dataset)
+
+
+
 	
 	# main(retraning_size, True, 'arxiv')
 
 	# main(340, eval_dataset = 'arxiv')
 	# main(340, eval_dataset = 'IEEE_TLT')
 	# main(340, eval_dataset = 'IEEE_TPAMI')
-	main(340, eval_dataset = 'merged', predict_and_save	= True)
+	# main(340, eval_dataset = 'merged', predict_and_save	= True)
 	# main(340,True)
 
 	# print('\n\n\n\n\n now TPAMI')
