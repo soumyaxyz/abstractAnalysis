@@ -138,7 +138,7 @@ def get_trained_model(dataset_name, model_name, num_epoch = 10, embed_top_n =  -
 		traceback.print_exc()
 		pdb.set_trace()
 
-def evaluate_transfer_learning(trained_model, trained_on_dataset, eval_dataset, eval_test_filename, eval_train_filename, retraning_size,  test_size, retrain_epoch, batch_size):
+def evaluate_transfer_learning(trained_model, trained_on_dataset, eval_dataset, eval_test_filename, eval_train_filename, retraining_size,  test_size, retrain_epoch, batch_size):
 	try:		
 		# pdb.set_trace()
 		model 								= trained_model		
@@ -150,16 +150,16 @@ def evaluate_transfer_learning(trained_model, trained_on_dataset, eval_dataset, 
 		pred_E, gold_E = get_prediction_acc(model, X_test, X_test_words, Y_test)
 
 		#
-		print('retraning_size : ',retraning_size)
+		print('retraining_size : ',retraining_size)
 		print('eval_train_filename : ', eval_train_filename)
 
 
-		if retraning_size > 0:
+		if retraining_size > 0:
 
 			evaluation_train_data 				= evaluation_dataset.get_evaluation_data(eval_dataset, eval_train_filename)  
 			eval_train , orig_data, metadata 	= evaluation_train_data
 			(X_train, X_train_words, Y_train)	= eval_train
-			(X_train, X_train_words, Y_train)	= partition(X_train, X_train_words, Y_train, retraning_size)
+			(X_train, X_train_words, Y_train)	= partition(X_train, X_train_words, Y_train, retraining_size)
 
 			print ('Retraining now\n' )
 
@@ -194,7 +194,7 @@ def generate_prediction(trained_model, trained_on_dataset, unlabled_dataset, unl
 	evaluation_dataset.build_new_file_with_prediction('pred_'+unlabled_filename, metadata, orig_data, pred, gold)
 
 
-def main(retraning_size, 
+def main(retraining_size, 
 		generate_baseline 	= False,
 		predict_and_save	= False,
 		fine_tune_with_pred = False, 
@@ -240,7 +240,7 @@ def main(retraning_size,
 
 	
 
-	if retraning_size < 0: 							# train model on initial dataset
+	if retraining_size < 0: 							# train model on initial dataset
 		num_epoch 		= 10
 		embed_top_n     =  50000 #-1   #all
 		get_trained_model(dataset_name, model_name, num_epoch, embed_top_n,  None, batch_size, flags)
@@ -267,13 +267,13 @@ def main(retraning_size,
 		else:
 			trained_model, trained_on_dataset = get_trained_model(dataset_name, model_name, num_epoch, embed_top_n,  load_file_sufix, batch_size , flags)
 
-		pred_E, gold_E, finetuned_model = evaluate_transfer_learning(trained_model, trained_on_dataset, eval_dataset, eval_test_filename, eval_train_filename, retraning_size, test_size, retrain_epoch, batch_size)
-		np.savetxt(load_file_sufix+'_'+eval_dataset+'_'+str(retraning_size)+'.csv', np.column_stack((pred_E, gold_E)), delimiter=",", fmt='%s')
+		pred_E, gold_E, finetuned_model = evaluate_transfer_learning(trained_model, trained_on_dataset, eval_dataset, eval_test_filename, eval_train_filename, retraining_size, test_size, retrain_epoch, batch_size)
+		np.savetxt(load_file_sufix+'_'+eval_dataset+'_'+str(retraining_size)+'.csv', np.column_stack((pred_E, gold_E)), delimiter=",", fmt='%s')
 
 		if predict_and_save:
 			generate_prediction(finetuned_model, trained_on_dataset, unlabled_dataset, unlabled_filename)
 		elif fine_tune_with_pred:
-			pred_E, gold_E, model = evaluate_transfer_learning(finetuned_model, trained_on_dataset, eval_dataset, eval_test_filename, predicted_train_file, retraning_size, test_size, retrain_epoch, batch_size)
+			pred_E, gold_E, model = evaluate_transfer_learning(finetuned_model, trained_on_dataset, eval_dataset, eval_test_filename, predicted_train_file, retraining_size, test_size, retrain_epoch, batch_size)
 			np.savetxt(load_file_sufix+'_'+eval_dataset+'_trained_on_predicted.csv', np.column_stack((pred_E, gold_E)), delimiter=",", fmt='%s')
 
 	# import code; code.interact(local=vars())
@@ -301,7 +301,7 @@ if __name__== "__main__":
 		help='The evaluation dataset, default= arxiv')
 
 	parser.add_argument(#'-r', 
-		'retraning_size',
+		'retraining_size',
 		type=int, 
 		nargs='?',
 		default=340, 
@@ -331,28 +331,28 @@ if __name__== "__main__":
 
 	
 
-	if args.retraning_size < 0:
-		print('retraning_size cannot be negative!!')
+	if args.retraining_size < 0:
+		print('retraining_size cannot be negative!!')
 	elif args.fine_tune_with_pred and args.predict_and_save:
 		print('-f/--fine_tune_with_pred   and   -s/ --predict_and_save   are conflicting!!')
 	else:
-		print("retraning_size = {} of  type {}".format(args.retraning_size, type(args.retraning_size)))
-		print("generate_baseline = {} of  type {}".format(args.generate_baseline, type(args.generate_baseline)))
-		print("fine_tune_with_pred = {} of  type {}".format(args.fine_tune_with_pred, type(args.fine_tune_with_pred)))
-		print("predict_and_save = {} of  type {}".format(args.predict_and_save, type(args.predict_and_save)))
-		print("eval_dataset = {} of  type {}".format(args.eval_dataset, type(args.eval_dataset)))
+		# print("retraining_size = {} of  type {}".format(args.retraining_size, type(args.retraining_size)))
+		# print("generate_baseline = {} of  type {}".format(args.generate_baseline, type(args.generate_baseline)))
+		# print("fine_tune_with_pred = {} of  type {}".format(args.fine_tune_with_pred, type(args.fine_tune_with_pred)))
+		# print("predict_and_save = {} of  type {}".format(args.predict_and_save, type(args.predict_and_save)))
+		# print("eval_dataset = {} of  type {}".format(args.eval_dataset, type(args.eval_dataset)))
 
-		# imports()
-		# main(retraning_size = args.retraning_size, 
-		# 	generate_baseline 	= args.generate_baseline,
-		# 	predict_and_save	= args.predict_and_save,
-		# 	fine_tune_with_pred = args.fine_tune_with_pred, 
-		# 	eval_dataset 		= args.eval_dataset)
+		imports()
+		main(retraining_size = args.retraining_size, 
+			generate_baseline 	= args.generate_baseline,
+			predict_and_save	= args.predict_and_save,
+			fine_tune_with_pred = args.fine_tune_with_pred, 
+			eval_dataset 		= args.eval_dataset)
 
 
 
 	
-	# main(retraning_size, True, 'arxiv')
+	# main(retraining_size, True, 'arxiv')
 
 	# main(340, eval_dataset = 'arxiv')
 	# main(340, eval_dataset = 'IEEE_TLT')
@@ -361,9 +361,9 @@ if __name__== "__main__":
 	# main(340,True)
 
 	# print('\n\n\n\n\n now TPAMI')
-	# retraning_sizes = [40,50,80,90,110] 
-	# for retraning_size in retraning_sizes:
-	# for retraning_size in range(80,120,10):
-	# 	main(retraning_size)
+	# retraining_sizes = [40,50,80,90,110] 
+	# for retraining_size in retraining_sizes:
+	# for retraining_size in range(80,120,10):
+	# 	main(retraining_size)
 
 

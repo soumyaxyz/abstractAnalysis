@@ -37,12 +37,12 @@ This repository includes the dataset of segemented  CS abstracts
     python abstract_analysis.py -h
     usage: abstract_analysis.py [-h] [-b] [-f] [-s]
                                 [{arxiv,IEEE_TLT,IEEE_TPAMI,merged}]
-                                [retraning_size]
+                                [retraining_size]
 
     positional arguments:
       {arxiv,IEEE_TLT,IEEE_TPAMI,merged}
                             The evaluation dataset, default= arxiv
-      retraning_size        Data size for fine tuning, default= 340
+      retraining_size        Data size for fine tuning, default= 340
 
     optional arguments:
       -h, --help            show this help message and exit
