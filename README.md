@@ -30,7 +30,7 @@ This repository includes the dataset of segemented  CS abstracts
 ## Usage
 
 1.  Navigate to [Code/](https://github.com/soumyaxyz/abstractAnalysis/blob/master/Code/)
-2. Set the `PRETRAINED_EMBEDDINGS` location<sup>2</sup> in line 5 of [Code/embeddings_loader.py](https://github.com/soumyaxyz/abstractAnalysis/blob/master/Code/embeddings_loader.py)
+2. Set the `PRETRAINED_EMBEDDINGS` location<sup>2</sup> in line 5 of [Code/embeddings_loader.py](https://github.com/soumyaxyz/abstractAnalysis/blob/master/Code/embeddings_loader.py#L5)
 
 3. Run [`abstract_analysis.py`](https://github.com/soumyaxyz/abstractAnalysis/blob/master/Code/abstract_analysis.py) 
 ```
