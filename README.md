@@ -55,3 +55,10 @@ This repository includes the dataset of segemented  CS abstracts
                             conflicts with -f/--fine_tune_with_pred
    ```
   <sup>2</sup>  This might cause issues with [line endings](http://www.cs.toronto.edu/~krueger/csc209h/tut/line-endings.html#:~:text=Text%20files%20created%20on%20DOS,(%22%5Cn%22)). To solve the issue open and save all files in the local system.  
+  
+  
+##  Contributors
+
+- Soumya Banerjee
+- Dr Debarshi Kr Sanyal
+- Dr Samiran Chattopadhyay
